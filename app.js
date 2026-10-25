@@ -265,7 +265,7 @@ if (!window.QS_LITE) {
         var sp = document.createElement('div');
         sp.id = 'qsSplash';
         sp.innerHTML =
-            '<img src="img/icon-192.png" alt="">' +
+            '<img src="icon-192.png" alt="">' +
             '<div class="bis">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>' +
             '<div class="nm">Fahm-ul-Quran</div>' +
             '<div class="sub">Quran aur Duaa seekhein</div>';
@@ -423,7 +423,7 @@ if (!window.QS_LITE) {
         root.setAttribute('aria-labelledby', 'qsInstTitle');
         root.innerHTML =
             '<div class="qs-sheet">' +
-              '<img class="qs-ico" src="img/icon-192.png" alt="">' +
+              '<img class="qs-ico" src="icon-192.png" alt="">' +
               '<h2 id="qsInstTitle">Fahm-ul-Quran app install karein</h2>' +
               '<p id="qsInstMsg">Home screen par app ki tarah kholein.</p>' +
               '<ul id="qsInstPerks">' +
@@ -1092,7 +1092,7 @@ if (!window.QS_LITE) {
 
         el.innerHTML =
             '<div class="qs-onb-top">' +
-                '<img class="qs-onb-logo" src="img/icon-192.png" alt="" onerror="this.style.display=\'none\'">' +
+                '<img class="qs-onb-logo" src="icon-192.png" alt="" onerror="this.style.display=\'none\'">' +
                 '<button class="qs-onb-skip" id="qsOnbSkip" type="button">Skip</button>' +
             '</div>' +
             '<div class="qs-onb-slides" id="qsOnbSlides">' + slidesHTML + '</div>' +

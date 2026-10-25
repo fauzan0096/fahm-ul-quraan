@@ -5,13 +5,15 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
-// v54: Files folders mein: js/ (app, tools, sounds, course, dua), audio/, img/ — root par sirf pages + sw.js + manifest
+// v56: SAB FILES EK HI JAGAH (koi folder nahi) — upload mein kuch chhootta nahi; saare paths root par
+// v55 (login fix): boot guard (file na mile to wajah dikhaye, ?reset=1 se cache saaf), password bade/chhote harf + storage error handle
+// v54: Files folders mein:  (app, tools, sounds, course, dua), ,  — root par sirf pages + sw.js + manifest
 // v53 (rotate on: orientation any): manifest poora (screenshots, icon sizes, display_override, launch_handler, shortcuts); purana Al-Quran Al-Karim icon wapas
 // v52: dono zip mix (language system + tasbeeh); PWABuilder: Background Sync, Periodic Sync, Push Notifications handlers; lang.js, duaTr.js
 // v51: tasbeeh.js (misbaha tile azan/yaad ke saath), terms.html, kill.html cache, native azan ka purana lock code saaf
 // v50: dono zip mile (Quran/themes/backup + profile delete, admin, Kitab wa Sunnat, muttafaq sawal, azan/lock hata); menu order Quran > Sabaq > Games > Tajweed
 // v49: Quran page mein course ke saare alfaz alag rang mein (tap par matlab)
-// v48: nasheed.mp3 hata kar original audio/nature-ambience.mp3 (hawa + paani + parinde, code se bani)
+// v48: nasheed.mp3 hata kar original nature-ambience.mp3 (hawa + paani + parinde, code se bani)
 // v47: quran.html (Indo-Pak Quran, Junagarhi tarjuma, Ibn Kathir tafseer, audio) + fq-quran-v1 cache
 // v46: themes.js (kharidi theme har page par + 3 naye special themes), Bazm-e-Fahm games.html ke andar
 // v45: backup.js (Backup/Restore), offline audio (azan + nasheed, range support), offline Google Fonts, privacy.html cache
@@ -40,14 +42,14 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v54';
+const CACHE_NAME = 'quran-ustad-auto-v56';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
 const FONT_CACHE = 'fq-fonts-v1';
 const QURAN_CACHE = 'fq-quran-v1';   // quran.html ka text/tarjuma/tafseer (offline) — version badalne par bhi nahi mitata
 const KEEP_CACHES = [CACHE_NAME, 'qs-mishary-v1', AUDIO_CACHE, FONT_CACHE, QURAN_CACHE];
-const AUDIO_ASSETS = ['./audio/azan-aksa.mp3', './audio/azan-sweet.mp3', './audio/azan-3.mp3', './audio/nature-ambience.mp3'];
+const AUDIO_ASSETS = ['./azan-aksa.mp3', './azan-sweet.mp3', './azan-3.mp3', './nature-ambience.mp3'];
 
 const ASSETS = [
     './',
@@ -62,15 +64,15 @@ const ASSETS = [
     './kill.html',
     './manifest.json',
     './theme.css',
-    './js/app.js',
-    './js/tools.js',
-    './js/sounds.js',
-    './js/course.js',
-    './js/dua.js',
-    './img/icon.png',
-    './img/icon-192.png',
-    './img/icon-maskable.png',
-    './img/signature.png'
+    './app.js',
+    './tools.js',
+    './sounds.js',
+    './course.js',
+    './dua.js',
+    './icon.png',
+    './icon-192.png',
+    './icon-maskable.png',
+    './signature.png'
 ];
 
 // ===== INSTALL: Naya SW foran ready ho =====
@@ -203,7 +205,7 @@ async function serveAudio(request) {
         status: 206,
         statusText: 'Partial Content',
         headers: {
-            'Content-Type': hit.headers.get('Content-Type') || 'audio/mpeg',
+            'Content-Type': hit.headers.get('Content-Type') || 'mpeg',
             'Content-Length': String(end - start + 1),
             'Content-Range': 'bytes ' + start + '-' + end + '/' + size,
             'Accept-Ranges': 'bytes'
@@ -239,8 +241,8 @@ self.addEventListener('push', (e) => {
     const title = d.title || 'Fahm-ul-Quran';
     e.waitUntil(self.registration.showNotification(title, {
         body: d.body || 'Aaj ka sabaq aur ayat aapka intezar kar rahi hai 📖',
-        icon: './img/icon-192.png',
-        badge: './img/icon-192.png',
+        icon: './icon-192.png',
+        badge: './icon-192.png',
         tag: d.tag || 'fq-push',
         data: { url: d.url || './' }
     }));
