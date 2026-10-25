@@ -1,0 +1,235 @@
+{
+  "id": "./index.html",
+  "name": "Fahm-ul-Quran",
+  "short_name": "Fahm-ul-Quran",
+  "description": "Quran ke 900 alfaz (90 din ka course), masnoon duaein, tajweed, 99 naam aur games — Urdu, Roman, Hindi aur English mein seekhein",
+  "lang": "ur",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "orientation": "any",
+  "background_color": "#0F4C3A",
+  "theme_color": "#0F4C3A",
+  "categories": [
+    "education",
+    "books",
+    "lifestyle"
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "launch_handler": {
+    "client_mode": [
+      "navigate-existing",
+      "auto"
+    ]
+  },
+  "handle_links": "preferred",
+  "edge_side_panel": {
+    "preferred_width": 420
+  },
+  "icons": [
+    {
+      "src": "img/icons/icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/screenshots/home-m.png",
+      "sizes": "540x960",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Home — roz ka maqsad, safar aur shortcuts"
+    },
+    {
+      "src": "img/screenshots/dua-m.png",
+      "sizes": "540x960",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Masnoon duaein"
+    },
+    {
+      "src": "img/screenshots/tajweed-m.png",
+      "sizes": "540x960",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Tajweed ke qawaid"
+    },
+    {
+      "src": "img/screenshots/asma-m.png",
+      "sizes": "540x960",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "99 Asma-ul-Husna"
+    },
+    {
+      "src": "img/screenshots/home-w.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Home"
+    },
+    {
+      "src": "img/screenshots/dua-w.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Masnoon duaein"
+    },
+    {
+      "src": "img/screenshots/tajweed-w.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tajweed ke qawaid"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Quran",
+      "short_name": "Quran",
+      "description": "114 surahein, audio ke saath",
+      "url": "./quran.html",
+      "icons": [
+        {
+          "src": "img/icons/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Sabaq (90 Days)",
+      "short_name": "Sabaq",
+      "description": "Aaj ka sabaq",
+      "url": "./index.html",
+      "icons": [
+        {
+          "src": "img/icons/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Masnoon Duaein",
+      "short_name": "Duaein",
+      "description": "119 duaein",
+      "url": "./dua.html",
+      "icons": [
+        {
+          "src": "img/icons/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Tajweed",
+      "short_name": "Tajweed",
+      "description": "Tajweed ke qawaid",
+      "url": "./tajweed.html",
+      "icons": [
+        {
+          "src": "img/icons/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "99 Naam",
+      "short_name": "Asma",
+      "description": "Asma-ul-Husna",
+      "url": "./asma.html",
+      "icons": [
+        {
+          "src": "img/icons/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Games",
+      "short_name": "Games",
+      "description": "Seekhne wale games",
+      "url": "./games.html",
+      "icons": [
+        {
+          "src": "img/icons/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
