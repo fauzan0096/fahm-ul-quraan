@@ -1,3 +1,44 @@
 plugins {
-    id 'com.android.application' version '8.9.1' apply false
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.quraanustad.app'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.quraanustad.app"
+        minSdk 29
+        targetSdk 36
+        // Play Store par har naye upload ke liye versionCode badhana zaroori hai (GitHub Actions mein apne aap run number)
+        versionCode (System.getenv("GITHUB_RUN_NUMBER") ? System.getenv("GITHUB_RUN_NUMBER").toInteger() : 1)
+        versionName "1.0"
+        // 👇 Apni website ka link (index.html ke APP_LINK wala). GitHub Pages ka link yahan likhein.
+        buildConfigField "String", "APP_URL", "\"https://quraan-ustad.github.io/\""
+    }
+    buildFeatures { buildConfig true }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    // Release signing: sirf tab jab keystore secrets set hon (Play Store ke liye .aab)
+    signingConfigs {
+        release {
+            def ks = System.getenv("KEYSTORE_FILE")
+            if (ks && new File(ks).exists()) {
+                storeFile file(ks)
+                storePassword System.getenv("KEYSTORE_PASSWORD")
+                keyAlias System.getenv("KEY_ALIAS")
+                keyPassword System.getenv("KEY_PASSWORD")
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (System.getenv("KEYSTORE_FILE") && new File(System.getenv("KEYSTORE_FILE")).exists()) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
 }
