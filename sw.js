@@ -5,6 +5,7 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v57: iPhone ke liye apple-touch-icon.png (180x180); ?reset=1 install popup ke flags bhi saaf karta hai
 // v56: SAB FILES EK HI JAGAH (koi folder nahi) — upload mein kuch chhootta nahi; saare paths root par
 // v55 (login fix): boot guard (file na mile to wajah dikhaye, ?reset=1 se cache saaf), password bade/chhote harf + storage error handle
 // v54: Files folders mein:  (app, tools, sounds, course, dua), ,  — root par sirf pages + sw.js + manifest
@@ -42,7 +43,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v56';
+const CACHE_NAME = 'quran-ustad-auto-v57';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -71,6 +72,7 @@ const ASSETS = [
     './dua.js',
     './icon.png',
     './icon-192.png',
+    './apple-touch-icon.png',
     './icon-maskable.png',
     './signature.png'
 ];

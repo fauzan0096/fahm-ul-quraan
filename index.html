@@ -8,7 +8,9 @@
   var bad=[];
   addEventListener('error',function(e){var t=e.target;var u=t&&t!==window&&(t.src||t.href);if(u&&u.indexOf(location.origin)===0){bad.push(u.replace(location.origin,''));}},true);
   function clean(){
+    try{localStorage.removeItem('qsInstalled');localStorage.removeItem('qsInstallSnooze');}catch(e){}
     var jobs=[];
+    try{localStorage.removeItem('qsInstalled');localStorage.removeItem('qsInstallSnooze');}catch(e){} // install popup dobara aaye
     try{if(navigator.serviceWorker)jobs.push(navigator.serviceWorker.getRegistrations().then(function(r){return Promise.all(r.map(function(x){return x.unregister();}));}));}catch(e){}
     try{if(window.caches)jobs.push(caches.keys().then(function(k){return Promise.all(k.filter(function(n){return n.indexOf('quran-ustad-auto')===0;}).map(function(n){return caches.delete(n);}));}));}catch(e){}
     var go=function(){location.replace(location.pathname);};
@@ -29,7 +31,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Fahm-ul-Quran - Complete Course</title>
     <link rel="icon" type="image/png" href="icon.png">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
     <script src="app.js"></script>
     <meta name="mobile-web-app-capable" content="yes">
