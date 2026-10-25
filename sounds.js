@@ -356,7 +356,7 @@
                 return r.blob();
             }).then(function (b) {
                 if (!b || b.size < 2000) throw new Error('khaali file');
-                return new Blob([b], { type: 'audio/mpeg' });
+                return new Blob([b], { type: 'mpeg' });
             }).catch(next);
         }
         return next();
@@ -367,7 +367,7 @@
     function download(key) {
         return fetchVerseBlob(key).then(function (b) {
             return cacheOpen().then(function (c) {
-                return c.put(dlKey(key), new Response(b, { headers: { 'Content-Type': 'audio/mpeg' } }));
+                return c.put(dlKey(key), new Response(b, { headers: { 'Content-Type': 'mpeg' } }));
             });
         }).then(function () {
             try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) {}   // browser kabhi na hataye
@@ -380,7 +380,7 @@
             return r ? r.blob() : null;
         }).then(function (b) {
             if (!b) return null;
-            return (blobMem[key] = URL.createObjectURL(new Blob([b], { type: 'audio/mpeg' })));
+            return (blobMem[key] = URL.createObjectURL(new Blob([b], { type: 'mpeg' })));
         }).catch(function () { return null; });
     }
     function remove(key) {
@@ -425,7 +425,7 @@
     var current = { btn: null, token: 0 };
     var pill = null, watch = null, audio = null;
     // Bahut chhoti khaali awaaz — iPhone par audio "unlock" karne ke liye (tap ke andar chalani padti hai)
-    var SILENT = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
+    var SILENT = 'data:wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
 
     var css = document.createElement('style');
     css.textContent =
@@ -594,10 +594,10 @@
 // ───────────── 3) GAMES (nasheed + effects) ─────────────
 // ==========================================================
 // games-audio.js — Fahm-ul-Quran Games
-//  🎵 Nasheed (audio/nature-ambience.mp3)   🔊 Sound effects (sahi / galat / jeet / game over)
+//  🎵 Nasheed (nature-ambience.mp3)   🔊 Sound effects (sahi / galat / jeet / game over)
 // Install: games.html ke <head> mein ek line:
 //   <script src="games-audio.js" defer></script>
-// Saari awaazein WebAudio se bani hain (koi extra file nahi), sirf audio/nature-ambience.mp3 chahiye.
+// Saari awaazein WebAudio se bani hain (koi extra file nahi), sirf nature-ambience.mp3 chahiye.
 // ==========================================================
 (function () {
     'use strict';
@@ -798,7 +798,7 @@
             a.id = 'kbcNasheed';
             a.loop = true;
             a.preload = 'none';
-            a.src = 'audio/nature-ambience.mp3';
+            a.src = 'nature-ambience.mp3';
             document.body.appendChild(a);
         }
         return a;
@@ -845,7 +845,7 @@
             const p = a.play();
             if (p && p.then) p.then(syncNasheedBtn).catch(function (e) {
                 if (e && e.name === 'NotAllowedError') fail('phone ne block kiya, button dobara dabayein');
-                else fail('"audio/nature-ambience.mp3" file nahi mili ya khul nahi rahi');
+                else fail('"nature-ambience.mp3" file nahi mili ya khul nahi rahi');
             });
             else syncNasheedBtn();
         };
@@ -854,10 +854,10 @@
         a.onerror = function () {
             if (!retried) {
                 retried = true;
-                a.src = 'audio/nature-ambience.mp3?v=' + Date.now();
+                a.src = 'nature-ambience.mp3?v=' + Date.now();
                 a.load();
                 start();
-            } else fail('"audio/nature-ambience.mp3" file nahi mili (repo mein games.html ke saath honi chahiye)');
+            } else fail('"nature-ambience.mp3" file nahi mili (repo mein games.html ke saath honi chahiye)');
         };
         if (a.readyState === 0) a.load();
         start();

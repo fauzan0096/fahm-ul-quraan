@@ -35,67 +35,67 @@
   },
   "icons": [
     {
-      "src": "img/icons/icon-48.png",
+      "src": "icon-48.png",
       "sizes": "48x48",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icons/icon-72.png",
+      "src": "icon-72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icons/icon-96.png",
+      "src": "icon-96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icons/icon-128.png",
+      "src": "icon-128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icons/icon-144.png",
+      "src": "icon-144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icons/icon-152.png",
+      "src": "icon-152.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icon-192.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icons/icon-256.png",
+      "src": "icon-256.png",
       "sizes": "256x256",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icons/icon-384.png",
+      "src": "icon-384.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icon.png",
+      "src": "icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/icon-maskable.png",
+      "src": "icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -103,49 +103,49 @@
   ],
   "screenshots": [
     {
-      "src": "img/screenshots/home-m.png",
+      "src": "home-m.png",
       "sizes": "540x960",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Home — roz ka maqsad, safar aur shortcuts"
     },
     {
-      "src": "img/screenshots/dua-m.png",
+      "src": "dua-m.png",
       "sizes": "540x960",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Masnoon duaein"
     },
     {
-      "src": "img/screenshots/tajweed-m.png",
+      "src": "tajweed-m.png",
       "sizes": "540x960",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Tajweed ke qawaid"
     },
     {
-      "src": "img/screenshots/asma-m.png",
+      "src": "asma-m.png",
       "sizes": "540x960",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "99 Asma-ul-Husna"
     },
     {
-      "src": "img/screenshots/home-w.png",
+      "src": "home-w.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Home"
     },
     {
-      "src": "img/screenshots/dua-w.png",
+      "src": "dua-w.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Masnoon duaein"
     },
     {
-      "src": "img/screenshots/tajweed-w.png",
+      "src": "tajweed-w.png",
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
@@ -160,7 +160,7 @@
       "url": "./quran.html",
       "icons": [
         {
-          "src": "img/icons/icon-96.png",
+          "src": "icon-96.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -173,7 +173,7 @@
       "url": "./index.html",
       "icons": [
         {
-          "src": "img/icons/icon-96.png",
+          "src": "icon-96.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -186,7 +186,7 @@
       "url": "./dua.html",
       "icons": [
         {
-          "src": "img/icons/icon-96.png",
+          "src": "icon-96.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -199,7 +199,7 @@
       "url": "./tajweed.html",
       "icons": [
         {
-          "src": "img/icons/icon-96.png",
+          "src": "icon-96.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -212,7 +212,7 @@
       "url": "./asma.html",
       "icons": [
         {
-          "src": "img/icons/icon-96.png",
+          "src": "icon-96.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -225,7 +225,7 @@
       "url": "./games.html",
       "icons": [
         {
-          "src": "img/icons/icon-96.png",
+          "src": "icon-96.png",
           "sizes": "96x96",
           "type": "image/png"
         }

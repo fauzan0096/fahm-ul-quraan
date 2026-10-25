@@ -376,7 +376,7 @@
     }
 
     // ---------- azan ki awaaz ----------
-    var SND = { aksa: 'audio/azan-aksa.mp3', sweet: 'audio/azan-sweet.mp3', third: 'audio/azan-3.mp3' };
+    var SND = { aksa: 'azan-aksa.mp3', sweet: 'azan-sweet.mp3', third: 'azan-3.mp3' };
     var SND_NAME = { off: '🔇 Awaaz band', aksa: 'Azan Al-Aqsa', sweet: 'Meethi Azan', third: 'Azan 3' };
     function sndPref() { var v = lsGet('ns_snd'); return (v === 'off' || SND[v]) ? v : 'aksa'; }
     var audioEl = null;

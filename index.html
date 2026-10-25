@@ -2,18 +2,42 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
+<script>
+/* Boot guard: koi file load na ho to login screen par saaf wajah dikhaye. Purana cache atak jaye to link ke aakhir mein ?reset=1 lagayein */
+(function(){
+  var bad=[];
+  addEventListener('error',function(e){var t=e.target;var u=t&&t!==window&&(t.src||t.href);if(u&&u.indexOf(location.origin)===0){bad.push(u.replace(location.origin,''));}},true);
+  function clean(){
+    var jobs=[];
+    try{if(navigator.serviceWorker)jobs.push(navigator.serviceWorker.getRegistrations().then(function(r){return Promise.all(r.map(function(x){return x.unregister();}));}));}catch(e){}
+    try{if(window.caches)jobs.push(caches.keys().then(function(k){return Promise.all(k.filter(function(n){return n.indexOf('quran-ustad-auto')===0;}).map(function(n){return caches.delete(n);}));}));}catch(e){}
+    var go=function(){location.replace(location.pathname);};
+    Promise.all(jobs).then(go,go);
+  }
+  if(/[?&]reset=1/.test(location.search)){clean();}
+  addEventListener('load',function(){setTimeout(function(){
+    var miss=[];['FQTheme','QSLang'].forEach(function(n){if(typeof window[n]==='undefined')miss.push(n);});
+    var el=document.getElementById('loginError');
+    var badJs=bad.filter(function(u){return /\.js(\?|$)/.test(u);});
+    if(el&&(miss.length||badJs.length)){
+      el.innerHTML='⚠️ App ki kuch files load nahi hui'+(badJs.length?' ('+badJs.slice(0,3).join(', ')+')':'')+'.<br>GitHub repo mein poora zip ka content (saare folder: js, img, audio) upload karein.<br><a href="?reset=1" style="color:#B8923A;font-weight:700">Purana cache saaf karein</a>';
+    }
+  },900);});
+})();
+</script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Fahm-ul-Quran - Complete Course</title>
-    <link rel="icon" type="image/png" href="img/icon.png">
-    <link rel="apple-touch-icon" href="img/icon.png">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
     <link rel="manifest" href="manifest.json">
-    <script src="js/app.js"></script>
+    <script src="app.js"></script>
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Fahm-ul-Quran">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <script src="js/tools.js" defer></script>
-    <script src="js/sounds.js"></script>
+    <script src="tools.js" defer></script>
+    <script src="sounds.js"></script>
     <meta name="theme-color" content="#0F4C3A">
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Figtree:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,800;1,600&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -258,14 +282,14 @@
     <!-- LOGIN -->
     <div id="loginScreen" class="login-container">
         <div class="login-box">
-            <img class="login-logo" src="img/icon-192.png" alt="">
+            <img class="login-logo" src="icon-192.png" alt="">
             <div class="login-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
             <h1 class="brand-name"><span class="bn-a">Fahm-ul-</span><span class="bn-b">Quran</span></h1>
             <div class="login-sub">فهم القرآن</div>
             <label class="login-label">Aapka Pura Naam</label>
             <input type="text" id="fullNameInput" placeholder="Jaise: Mohammad Fauzan Raza" autocomplete="name" maxlength="40">
             <label class="login-label">Password</label>
-            <input type="password" id="passwordInput" placeholder="Password daalein">
+            <input type="password" id="passwordInput" placeholder="Password daalein" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false">
             <button onclick="handleLogin()">Login</button>
             <p id="loginError" style="color: #ff4d4d; margin-top: 10px; font-size: 13px;"></p>
             <button type="button" onclick="FQBackup.open()" style="background:transparent;color:var(--text-light);border:1.5px dashed var(--border);margin-top:6px;font-size:13px;padding:10px;">📂 Naye phone par? Backup se progress wapas laayein</button>
@@ -276,7 +300,7 @@
     <div id="mainApp" class="hidden">
         <header>
             <div class="header-top">
-                <div class="brand"><img class="brand-logo" src="img/icon-192.png" alt=""><h1 class="brand-name"><span class="bn-a">Fahm-ul-</span><span class="bn-b">Quran</span></h1></div>
+                <div class="brand"><img class="brand-logo" src="icon-192.png" alt=""><h1 class="brand-name"><span class="bn-a">Fahm-ul-</span><span class="bn-b">Quran</span></h1></div>
                 <div class="user-menu">
                     <button class="icon-btn user-chip" onclick="toggleUserMenu(event)">👤 <span id="userChipName">ID</span><span id="userChipStk" class="stk-row"></span> ▾</button>
                     <div class="user-drop hidden" id="userDrop">
@@ -462,7 +486,7 @@
 
     <div id="toast" class="toast">Message</div>
 
-    <script src="js/course.js"></script>
+    <script src="course.js"></script>
     <script>
         const ADMIN_PASSWORD = "Fauzan8087";
         const GUEST_PASSWORD = "quran123";
@@ -506,8 +530,8 @@
         function handleLogin() {
             const err = document.getElementById('loginError');
             const typed = cleanName(document.getElementById('fullNameInput').value);
-            const pwd = document.getElementById('passwordInput').value.trim();
-            const role = pwd === ADMIN_PASSWORD ? 'admin' : (pwd === GUEST_PASSWORD ? 'guest' : null);
+            const pwd = document.getElementById('passwordInput').value.replace(/[\u200B-\u200F\u202A-\u202E\u2060\uFEFF\u00A0]/g, '').trim(); // copy-paste ke chhupe characters hatao
+            const role = pwd === ADMIN_PASSWORD ? 'admin' : (pwd.toLowerCase() === GUEST_PASSWORD ? 'guest' : null); // guest: phone ka auto Bada harf chalega
             if (!role) { err.innerText = "❌ Galat Password!"; return; }
 
             let name;
@@ -521,15 +545,20 @@
                 if (name.toLowerCase() === 'admin' || nameToId(name) === nameToId(ADMIN_DISPLAY_NAME)) { err.innerText = "❌ Ye naam allowed nahi hai, apna naam likhein."; return; }
             }
 
-            const id = nameToId(name);
-            let list = lsJSONSafe('profiles', []);
-            if (!list.some(p => p.id === id)) list.push({ id, name, avatar: '🧒' });
-            localStorage.setItem('profiles', JSON.stringify(list));
+            try {
+                const id = nameToId(name);
+                let list = lsJSONSafe('profiles', []);
+                if (!list.some(p => p.id === id)) list.push({ id, name, avatar: '🧒' });
+                localStorage.setItem('profiles', JSON.stringify(list));
 
-            localStorage.setItem('isLoggedIn', 'true');
-            localStorage.setItem('userRole', role);
-            localStorage.setItem('userId', role === 'admin' ? 'admin' : 'guest'); // purane scripts (progress.js/ui.js) isi ko padhte hain
-            localStorage.setItem('activeProfile', id);
+                localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('userRole', role);
+                localStorage.setItem('userId', role === 'admin' ? 'admin' : 'guest'); // purane scripts (progress.ui.js) isi ko padhte hain
+                localStorage.setItem('activeProfile', id);
+            } catch (e) {
+                err.innerText = "❌ Browser save nahi kar pa raha (Private/Incognito ya in-app browser). Chrome ya Safari ke normal tab mein kholein.";
+                return;
+            }
             location.reload();
         }
         // Logout: sirf session hatao, sabki history (profiles + progress) safe rahe
@@ -1352,8 +1381,8 @@
             const main = isGold ? '#B8923A' : '#0F4C3A';
             const canvas = document.createElement('canvas'); canvas.width = W; canvas.height = H;
             const ctx = canvas.getContext('2d');
-            const sigImg = new Image(); sigImg.src = 'img/signature.png';
-            const logoImg = new Image(); logoImg.src = 'img/icon-192.png';
+            const sigImg = new Image(); sigImg.src = 'signature.png';
+            const logoImg = new Image(); logoImg.src = 'icon-192.png';
             const wait = (im) => new Promise(r => { if (im.complete) r(); else { im.onload = r; im.onerror = r; } });
             const fonts = Promise.all(['700 40px Amiri','400 28px "Noto Nastaliq Urdu"','400 28px Figtree'].map(f => document.fonts ? document.fonts.load(f, 'اAa').catch(()=>{}) : 0));
             Promise.all([wait(sigImg), wait(logoImg), fonts]).then(draw);
@@ -1521,7 +1550,7 @@
             canvas.height = 1920;
             const ctx = canvas.getContext('2d');
 
-            const logoImg = new Image(); logoImg.src = 'img/icon-192.png';
+            const logoImg = new Image(); logoImg.src = 'icon-192.png';
             const drawAyatCard = () => {
                 const g = ctx.createLinearGradient(0, 0, 0, 1920);
                 g.addColorStop(0, '#0F4C3A'); g.addColorStop(1, '#0A2E24');
