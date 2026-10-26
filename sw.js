@@ -5,6 +5,8 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v60: Day 41 ka doosra 'أَتَى' (Ata kiya) hata kar 'كَفَى' (Kaafi hua) — ab har lafz sirf ek din mein
+// v59: nayi nature-ambience.mp3 (3 min) games mein; games.html ka <source type> theek (audio/mpeg); purani 2-min cache wali mp3 refresh hoti hai
 // v57: iPhone ke liye apple-touch-icon.png (180x180); ?reset=1 install popup ke flags bhi saaf karta hai
 // v56: SAB FILES EK HI JAGAH (koi folder nahi) — upload mein kuch chhootta nahi; saare paths root par
 // v55 (login fix): boot guard (file na mile to wajah dikhaye, ?reset=1 se cache saaf), password bade/chhote harf + storage error handle
@@ -43,7 +45,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v57';
+const CACHE_NAME = 'quran-ustad-auto-v60';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -90,7 +92,7 @@ self.addEventListener('install', (e) => {
             // Azan + nasheed offline ke liye (ek baar save, version badalne par dobara nahi)
             caches.open(AUDIO_CACHE).then(cache =>
                 Promise.all(AUDIO_ASSETS.map(url =>
-                    cache.match(url).then(hit => hit || cache.add(url)).catch(err => console.warn('Audio skip:', url))
+                    (url.indexOf('nature-ambience') > -1 ? cache.add(new Request(url, { cache: 'reload' })) : cache.match(url).then(hit => hit || cache.add(url))).catch(err => console.warn('Audio skip:', url))
                 ))
             )
         )
