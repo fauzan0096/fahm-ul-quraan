@@ -346,6 +346,7 @@
                 <a href="tajweed.html" class="top-link-btn"><span class="ti">🎓</span>Tajweed</a>
                 <a href="dua.html" class="top-link-btn"><span class="ti">🤲</span>Duaein</a>
                 <a href="asma.html" class="top-link-btn"><span class="ti">✨</span>99 Naam</a>
+                <a href="arabic-grammar.html" id="adminGrammarLink" class="top-link-btn" style="display:none"><span class="ti">📘</span>Nahw-Sarf</a>
             </nav>
 
             <div class="ayat-card" onclick="showDailyAyat()" role="button" tabindex="0">
@@ -766,6 +767,7 @@
             const isAdm = userRole === 'admin';
             document.getElementById('udExamPanel').style.display = isAdm ? '' : 'none';
             document.getElementById('udDelProfile').style.display = isAdm ? 'none' : '';
+            { const gl = document.getElementById('adminGrammarLink'); if (gl) gl.style.display = isAdm ? '' : 'none'; }   // Nahw-Sarf: filhaal sirf admin
             renderProfileStickers();
             updateXPUI(); renderCourse(); updateStreak(); checkDailyGoal();
         }
