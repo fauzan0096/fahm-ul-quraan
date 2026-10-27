@@ -5,6 +5,7 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v65: Seerat ka button Nahw-Sarf ki tarah top link bar mein (sirf admin)
 // v64: seerat.js (Seerat 30 din, sirf Admin, tap par load — precache nahi) + tools.js mein Arabi (Hijri) tareekh — sunnat.js aur Ruqya Shariah ke saath merge
 // v63: Ruqya Shariah category (dua.html, 19 mustanad entries) + dua.js translations — sunnat.js wale v62 ke saath merge
 // v62: sunnat.js — 'Aaj ki Ayat' ke saath 'Aaj ki Sunnat' (Riyadh-us-Saliheen, Shamela se)
@@ -49,7 +50,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v64';
+const CACHE_NAME = 'quran-ustad-auto-v65';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

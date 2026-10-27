@@ -311,7 +311,6 @@
                         <button class="ud-shop" onclick="FQBackup.open()">💾 Backup / Restore</button>
                         <button class="ud-cert" onclick="handleCertificateClick()">🏆 Completion Certificate</button>
                         <button class="ud-shop" id="udExamPanel" onclick="openAdminExam()" style="display:none">🛠 Exam Panel (Admin)</button>
-                        <button class="ud-shop" id="udSeerat" onclick="openSeerat()" style="display:none">📜 Seerat — 30 din (Admin)</button>
                         <button class="ud-shop" onclick="openShop()">🛒 Inaam Ghar (Shop)</button>
                         <button class="ud-default" onclick="resetTheme()">🔄 Default Theme (kharidi hui safe)</button>
                         <button onclick="logout()" style="margin-top:8px;">🚪 Logout</button>
@@ -348,6 +347,7 @@
                 <a href="dua.html" class="top-link-btn"><span class="ti">🤲</span>Duaein</a>
                 <a href="asma.html" class="top-link-btn"><span class="ti">✨</span>99 Naam</a>
                 <a href="arabic-grammar.html" id="adminGrammarLink" class="top-link-btn" style="display:none"><span class="ti">📘</span>Nahw-Sarf</a>
+                <a href="#" id="adminSeeratLink" class="top-link-btn" onclick="openSeerat();return false;" style="display:none"><span class="ti">📜</span>Seerat</a>
             </nav>
 
             <div class="ayat-card" onclick="showDailyAyat()" role="button" tabindex="0">
@@ -775,9 +775,9 @@
             document.getElementById('userDropRole').innerText = userRole === 'admin' ? 'Admin' : 'Student';
             const isAdm = userRole === 'admin';
             document.getElementById('udExamPanel').style.display = isAdm ? '' : 'none';
-            document.getElementById('udSeerat').style.display = isAdm ? '' : 'none';
             document.getElementById('udDelProfile').style.display = isAdm ? 'none' : '';
             { const gl = document.getElementById('adminGrammarLink'); if (gl) gl.style.display = isAdm ? '' : 'none'; }   // Nahw-Sarf: filhaal sirf admin
+            { const sl = document.getElementById('adminSeeratLink'); if (sl) sl.style.display = isAdm ? '' : 'none'; }   // Seerat: Nahw-Sarf ki tarah filhaal sirf admin
             renderProfileStickers();
             updateXPUI(); renderCourse(); updateStreak(); checkDailyGoal();
         }
