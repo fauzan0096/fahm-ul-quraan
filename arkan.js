@@ -38,19 +38,67 @@
       var s = c.querySelector('.pdone'); if (s) s.textContent = d + '/' + tot + ' پڑھے';
     });
   }
-  // chips: jo hissa nazar aa raha ho wo roshan
+  // ===== Tabs: dua page ki tarah — ek waqt mein ek hissa (lambi scroll nahi, isliye atakta nahi) =====
   var chips = document.querySelectorAll('.chips a');
-  if (chips.length && 'IntersectionObserver' in window) {
-    var map = {}; chips.forEach(function (c) { map[c.getAttribute('href').slice(1)] = c; });
-    var io = new IntersectionObserver(function (es) {
-      es.forEach(function (e) {
-        if (e.isIntersecting) {
-          chips.forEach(function (c) { c.classList.remove('on'); });
-          var c = map[e.target.id];
-          if (c) { c.classList.add('on'); try { c.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' }); } catch (e) {} }
+  var secs2 = document.querySelectorAll('.sec[data-sec]');
+  if (chips.length && secs2.length) {
+    document.documentElement.classList.add('tabs-on');
+    try { history.scrollRestoration = 'manual'; } catch (e) {}
+    var byId = {}, order = [];
+    secs2.forEach(function (s) { byId[s.id] = s; order.push(s.id); });
+    var chipOf = {};
+    chips.forEach(function (c) { chipOf[c.getAttribute('href').slice(1)] = c; });
+    var hdr = document.querySelector('header');
+    var cur = null;
+
+    function show(id, keepScroll) {
+      if (!byId[id]) id = order[0];
+      if (cur === id) return;
+      cur = id;
+      order.forEach(function (k) { byId[k].classList.toggle('active', k === id); });
+      chips.forEach(function (c) { c.classList.remove('on'); });
+      var c = chipOf[id];
+      if (c) {
+        c.classList.add('on');
+        var box = c.parentNode;   // sirf chips ki patti ko sarkao, poore page ko nahi
+        box.scrollLeft = c.offsetLeft - (box.clientWidth - c.offsetWidth) / 2;
+      }
+      var idx = order.indexOf(id);
+      var cnt = document.getElementById('secCount');
+      if (cnt) cnt.textContent = 'حصہ ' + (idx + 1) + ' / ' + order.length;
+
+      if (!keepScroll) {
+        // sirf tab upar le jao jab hissa header ke neeche chhup gaya ho
+        var top = byId[id].getBoundingClientRect().top;
+        var hh = hdr ? hdr.offsetHeight : 90;
+        if (top < hh + 6 || top > window.innerHeight) {
+          var y = byId[id].getBoundingClientRect().top + window.pageYOffset - hh - 10;
+          window.scrollTo(0, Math.max(0, y));
         }
-      });
-    }, { rootMargin: '-25% 0px -65% 0px' });
-    document.querySelectorAll('.sec[id]').forEach(function (s) { io.observe(s); });
+      }
+    }
+    chips.forEach(function (c) {
+      c.addEventListener('click', function (e) { e.preventDefault(); show(c.getAttribute('href').slice(1)); });
+    });
+
+    // har hissay ke neeche pichla / agla
+    order.forEach(function (id, i) {
+      var nav = document.createElement('div');
+      nav.className = 'snav';
+      var prev = i > 0 ? order[i - 1] : null, next = i < order.length - 1 ? order[i + 1] : null;
+      function lbl(k) { var t = byId[k].querySelector('h2'); return t ? t.textContent.replace(/^\s+/, '') : ''; }
+      nav.innerHTML =
+        (prev ? '<button type="button" data-go="' + prev + '"><small>→ پچھلا</small><span>' + lbl(prev) + '</span></button>' : '<span></span>') +
+        (next ? '<button type="button" data-go="' + next + '" class="nx"><small>اگلا ←</small><span>' + lbl(next) + '</span></button>' : '<span></span>');
+      byId[id].appendChild(nav);
+    });
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('.snav button[data-go]');
+      if (b) show(b.getAttribute('data-go'));
+    });
+
+    var h = (location.hash || '').slice(1);
+    show(byId[h] ? h : order[0], true);
+    window.addEventListener('hashchange', function () { var k = location.hash.slice(1); if (byId[k]) show(k); });
   }
 })();

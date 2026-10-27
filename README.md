@@ -38,6 +38,7 @@ Ek simple, mobile-friendly web app (PWA) jisse Quran ke alfaz, namaz ki duaen au
 - Har page: hawale (Quran/Hadith), Hanafi vs Jumhur ka farq, har hisse par ✅ "padh liya" nishan (device par save), chips se seedha hisse par jump, theme (dark/skin) saath.
 - Zakat page par calculator (rate khud likhna hota hai — koi purana rate nahi).
 - Har page ke `<head>` mein admin-check hai (`userRole === 'admin'`), warna `index.html`. Sab ke liye kholna ho to wo chhota script har page se aur `adminArkanLink` ki line (index.html `initApp`) hata dein.
+- **Tabs (v69):** har page mein hisse dua ki tarah tabs hain — ek waqt mein ek hissa dikhta hai (lambi scroll nahi), neeche pichla/agla button. `arkan.js` mein tab logic, `arkan.css` ke aakhir mein design.
 - Styling `arkan.css`, "padh liya" logic `arkan.js`; baaki pages `theme.css` aur `app.js` (FQTheme) istemal karte hain.
 
 ### 🌙 Arabi (Hijri) tareekh (`tools.js` ke andar)

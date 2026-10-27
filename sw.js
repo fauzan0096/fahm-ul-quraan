@@ -5,6 +5,7 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v69: Arkan pages mein tabs (dua ki tarah, ek waqt mein ek hissa — scroll atakna band), pichla/agla button, naya design
 // v68: dono zip merge — Arkan-e-Islam (root par) + Seerat mein Shamail (din 31-34, sirf sahih ahadith, Albani ke hukm ke saath)
 // v67: Arkan-e-Islam ab root par (arkan.html, arkan-kalima.html ...) — folder upload mein 404 deta tha; SW ab cache-first + background refresh (click par foran khule), sab pages precache
 // v66 (purana, folder): arkan-islam/ folder (Kalima, Namaz, Zakat, Roza, Hajj) — filhaal sirf admin, precache nahi (visit par network-first cache hota hai)
@@ -53,7 +54,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v68';
+const CACHE_NAME = 'quran-ustad-auto-v69';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
