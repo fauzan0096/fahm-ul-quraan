@@ -5,7 +5,9 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
-// v66: arkan-islam/ folder (Kalima, Namaz, Zakat, Roza, Hajj) — filhaal sirf admin, precache nahi (visit par network-first cache hota hai)
+// v68: dono zip merge — Arkan-e-Islam (root par) + Seerat mein Shamail (din 31-34, sirf sahih ahadith, Albani ke hukm ke saath)
+// v67: Arkan-e-Islam ab root par (arkan.html, arkan-kalima.html ...) — folder upload mein 404 deta tha; SW ab cache-first + background refresh (click par foran khule), sab pages precache
+// v66 (purana, folder): arkan-islam/ folder (Kalima, Namaz, Zakat, Roza, Hajj) — filhaal sirf admin, precache nahi (visit par network-first cache hota hai)
 // v65: Seerat ka button Nahw-Sarf ki tarah top link bar mein (sirf admin)
 // v64: seerat.js (Seerat 30 din, sirf Admin, tap par load — precache nahi) + tools.js mein Arabi (Hijri) tareekh — sunnat.js aur Ruqya Shariah ke saath merge
 // v63: Ruqya Shariah category (dua.html, 19 mustanad entries) + dua.js translations — sunnat.js wale v62 ke saath merge
@@ -51,7 +53,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v66';
+const CACHE_NAME = 'quran-ustad-auto-v68';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -84,7 +86,16 @@ const ASSETS = [
     './icon-192.png',
     './apple-touch-icon.png',
     './icon-maskable.png',
-    './signature.png'
+    './signature.png',
+    './seerat.js',
+    './arkan.html',
+    './arkan-kalima.html',
+    './arkan-namaz.html',
+    './arkan-zakat.html',
+    './arkan-roza.html',
+    './arkan-hajj.html',
+    './arkan.css',
+    './arkan.js'
 ];
 
 // ===== INSTALL: Naya SW foran ready ho =====
@@ -94,7 +105,7 @@ self.addEventListener('install', (e) => {
         caches.open(CACHE_NAME).then(cache =>
             // Ek file na mile to bhi baaki cache ho jayein (addAll sab fail kar deta hai)
             Promise.all(ASSETS.map(url =>
-                cache.add(url).catch(err => console.warn('Cache skip:', url))
+                cache.add(new Request(url, { cache: 'reload' })).catch(err => console.warn('Cache skip:', url))
             ))
         ).then(() =>
             // Azan + nasheed offline ke liye (ek baar save, version badalne par dobara nahi)
@@ -154,25 +165,26 @@ self.addEventListener('fetch', (e) => {
     const isCSS = url.pathname.endsWith('.css');
     const isJSON = url.pathname.endsWith('.json');
 
-    // 🔥 HTML / JS / CSS / JSON = NETWORK FIRST
-    // Matlab: Pehle internet se naya version lao, agar fail ho toh cache se do
+    // ⚡ HTML / JS / CSS / JSON = CACHE FIRST + background refresh (stale-while-revalidate)
+    // Click par foran cache se khulta hai; peeche network se taaza copy aa kar cache update hoti hai.
+    // Naya upload: sw.js ka CACHE_NAME badlein — install par sab file taaza (reload) cache hoti hai.
     if (isHTML || isJS || isCSS || isJSON) {
         e.respondWith(
-            // cache:'no-cache' = browser ka purana HTTP cache skip, GitHub par upload hote hi naya version aaye
-            fetch(request, { cache: 'no-cache' })
-                .then(response => {
-                    // Naya version mila — cache mein update kar do
-                    if (response && response.status === 200) {
-                        const clone = response.clone();
-                        caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+            caches.open(CACHE_NAME).then(cache =>
+                cache.match(request, { ignoreSearch: true }).then(hit => {
+                    const net = fetch(request, { cache: 'no-cache' }).then(response => {
+                        if (response && response.status === 200) cache.put(request, response.clone());
+                        return response;
+                    });
+                    if (hit) {
+                        e.waitUntil(net.catch(() => {}));   // peeche taaza karo, jawab foran do
+                        return hit;
                     }
-                    return response;
+                    return net.catch(() =>
+                        (request.mode === 'navigate' ? cache.match('./index.html') : undefined) || Response.error()
+                    );
                 })
-                .catch(() => {
-                    // Internet nahi hai — cache se do (?v=... wale link bhi mil jayein)
-                    return caches.match(request, { ignoreSearch: true })
-                        .then(hit => hit || (request.mode === 'navigate' ? caches.match('./index.html') : undefined));
-                })
+            )
         );
         return;
     }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>زکوٰۃ — ارکانِ اسلام</title>
+<script>
+  // 🔒 Filhaal sirf Admin ke liye — baaki sab seedha home par wapas
+  (function () {
+    var ok = false;
+    try { ok = localStorage.getItem('userRole') === 'admin' && localStorage.getItem('isLoggedIn') === 'true'; } catch (e) {}
+    if (!ok) { location.replace('index.html'); }
+  })();
+</script>
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<script>window.QS_LITE=1</script>
+<script src="app.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="arkan.css">
+</head>
+<body data-page="zakat">
+<header>
+  <div class="header-top">
+    <a href="arkan.html" class="icon-btn" aria-label="واپس">→</a>
+    <h1>💰 زکوٰۃ</h1>
+    <button class="icon-btn" onclick="FQTheme.cycle()" aria-label="تھیم">🌙</button>
+  </div>
+  <nav class="chips" aria-label="حصے"><a href="#ahmiyat">🌟 زکوٰۃ کی اہمیت</a><a href="#shart">📋 زکوٰۃ فرض ہونے کی شرائط</a><a href="#nisab">⚖️ نصاب اور شرح</a><a href="#calc">🧮 زکوٰۃ کیلکولیٹر</a><a href="#masarif">🤲 زکوٰۃ کے مستحقین (۸)</a><a href="#fitr">🌾 صدقۂ فطر (زکوٰۃ الفطر)</a></nav>
+</header>
+<main>
+  <div class="admin-note">🔒 فی الحال صرف Admin کو نظر آتا ہے</div>
+  <div class="hero">
+    <div class="em">💰</div>
+    <h2>زکوٰۃ</h2>
+    <div class="sub">مال کی پاکیزگی اور محتاجوں کا حق — نصاب، مستحقین اور کیلکولیٹر</div>
+    <div class="hq">وَآتُوا الزَّكَاةَ</div>
+    <div class="prog"><div class="row"><span id="progText">0 / 6 حصے پڑھ لیے</span><span>📍 آپ کی پیش رفت</span></div><div class="bar"><div class="fill" id="progFill"></div></div></div>
+  </div>
+<section class="sec" id="ahmiyat" data-sec="ahmiyat"><h2><span class="ic">🌟</span>زکوٰۃ کی اہمیت</h2><div class="ar ">وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ</div><p class="tr">"اور نماز قائم کرو اور زکوٰۃ ادا کرو۔"</p><p><span class="ref">سورۃ البقرہ ۲:۴۳</span></p><div class="ar ">خُذْ مِنْ أَمْوَالِهِمْ صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِم بِهَا</div><p class="tr">"ان کے مالوں میں سے صدقہ لو جس سے تم انہیں پاک اور صاف کرو۔"</p><p><span class="ref">سورۃ التوبہ ۹:۱۰۳</span></p><div class="hd"><div class="who">📖 حدیثِ نبوی ﷺ</div><p>اسلام کی بنیاد پانچ چیزوں پر ہے — ان میں زکوٰۃ دینا بھی ہے۔</p><p><span class="ref">صحیح بخاری ۸</span><span class="ref">صحیح مسلم ۱۶</span></p></div><div class="hd"><div class="who">📖 حدیثِ نبوی ﷺ</div><p>اللہ نے ان (مال داروں) پر زکوٰۃ فرض کی ہے جو ان کے مال داروں سے لی جائے اور ان کے محتاجوں کو لوٹائی جائے۔</p><p><span class="ref">صحیح بخاری ۱۳۹۵</span><span class="ref">صحیح مسلم ۱۹</span></p></div><div class="hd"><div class="who">📖 حدیثِ نبوی ﷺ</div><p>ایک شخص نے پوچھا: مجھے ایسا عمل بتائیں جو مجھے جنت میں داخل کرے؟ فرمایا: اللہ کی عبادت کرو، نماز قائم کرو، زکوٰۃ دو اور صلہ رحمی کرو۔</p><p><span class="ref">صحیح بخاری ۱۳۹۷</span><span class="ref">صحیح مسلم ۱۳</span></p></div><button class="done" data-sec="ahmiyat">☐ یہ حصہ پڑھ لیا</button></section>
+<section class="sec" id="shart" data-sec="shart"><h2><span class="ic">📋</span>زکوٰۃ فرض ہونے کی شرائط</h2><ol class="nl"><li><b>اسلام</b> — غیر مسلم پر نہیں۔</li><li><b>عقل و بلوغ</b> — احناف کے نزدیک نابالغ اور پاگل کے مال پر زکوٰۃ نہیں؛ جمہور کے نزدیک ان کے مال میں بھی ہے اور ولی ادا کرے گا۔</li><li><b>نصاب کا مالک ہونا</b> — مال مقررہ مقدار کو پہنچے۔</li><li><b>ضروریات اور قرض سے زائد ہونا</b> — احناف کے نزدیک بنیادی ضرورت (رہائش، لباس، سواری) اور فوری قرض سے فارغ مال پر۔</li><li><b>مالِ نامی</b> — بڑھنے والا مال: سونا، چاندی، نقدی، تجارتی مال، چرنے والے جانور، پیداوار۔</li><li><b>سال گزرنا (حولان الحول)</b> — قمری سال، نصاب پورے سال موجود رہے۔ <span class="ref">سنن ابی داود ۱۵۷۳</span></li></ol><div class="co info">💡 سال کے شروع اور آخر میں نصاب پورا ہو تو درمیان کی کمی معاف ہے (احناف)؛ آخر میں جتنا مال ہو اسی پر زکوٰۃ نکلتی ہے۔</div><button class="done" data-sec="shart">☐ یہ حصہ پڑھ لیا</button></section>
+<section class="sec" id="nisab" data-sec="nisab"><h2><span class="ic">⚖️</span>نصاب اور شرح</h2><div class="tw"><table><tr><th>مال</th><th>نصاب</th><th>شرح</th></tr><tr><td>سونا</td><td>تقریباً 87.48 گرام (ساڑھے سات تولہ) — احناف۔ جمہور: 20 مثقال ≈ 85 گرام</td><td>2.5%</td></tr><tr><td>چاندی</td><td>تقریباً 612.36 گرام (ساڑھے باون تولہ) — احناف۔ جمہور: 200 درہم ≈ 595 گرام</td><td>2.5%</td></tr><tr><td>نقد رقم</td><td>چاندی کے نصاب کی قیمت کے برابر</td><td>2.5%</td></tr><tr><td>تجارتی مال</td><td>چاندی کے نصاب کی قیمت کے برابر</td><td>2.5%</td></tr><tr><td>پیداوار (بارانی)</td><td>5 وسق ≈ 653 کلو (جمہور)۔ احناف: کوئی نصاب نہیں</td><td>10%</td></tr><tr><td>پیداوار (آبپاشی)</td><td>وہی</td><td>5%</td></tr></table></div><div class="hd"><div class="who">📖 حدیثِ نبوی ﷺ</div><div class="ar sm">لَيْسَ فِيمَا دُونَ خَمْسِ أَوَاقٍ صَدَقَةٌ</div><p>پانچ اوقیہ (دو سو درہم) سے کم چاندی میں زکوٰۃ نہیں۔</p><p><span class="ref">صحیح بخاری ۱۴۴۷</span><span class="ref">صحیح مسلم ۹۷۹</span></p></div><div class="hd"><div class="who">📖 حدیثِ نبوی ﷺ</div><p>جسے آسمان (بارش) یا چشمے نے سیراب کیا اس میں دسواں حصہ ہے، اور جسے محنت (سینچائی) سے پانی دیا گیا اس میں بیسواں۔</p><p><span class="ref">صحیح بخاری ۱۴۸۳</span></p></div><div class="co mz">⚖️ <b>سونے چاندی کا فرق:</b> جب سونا، چاندی، نقدی اور تجارتی مال ملے جلے ہوں تو احناف کا عام فتویٰ یہ ہے کہ <b>چاندی کے نصاب</b> کو معیار بنایا جائے (غریبوں کے لیے نفع بخش)۔ سونے کا مستقل نصاب 20 مثقال ہے۔ زیورات پر بھی زکوٰۃ ہے (احناف)؛ جمہور استعمالی زیور پر زکوٰۃ نہیں مانتے۔</div><h3>جانوروں کی زکوٰۃ (مختصر)</h3><div class="tw"><table><tr><th>جانور</th><th>کم از کم نصاب</th><th>واجب</th></tr><tr><td>اونٹ</td><td>5</td><td>1 بکری</td></tr><tr><td>گائے/بھینس</td><td>30</td><td>1 سالہ بچھڑا</td></tr><tr><td>بھیڑ/بکری</td><td>40</td><td>1 بکری</td></tr></table></div><p><span class="ref">صحیح بخاری ۱۴۵۴</span> — (مفصل جدول کے لیے علماء سے رجوع کریں؛ شرط یہ ہے کہ جانور سال کا اکثر حصہ چرنے والے ہوں)۔</p><button class="done" data-sec="nisab">☐ یہ حصہ پڑھ لیا</button></section>
+<section class="sec" id="calc" data-sec="calc"><h2><span class="ic">🧮</span>زکوٰۃ کیلکولیٹر</h2><div class="zc"><div class="co warn">⚠️ سونے چاندی کا <b>آج کا ریٹ</b> اپنے شہر کی صرافہ مارکیٹ سے دیکھ کر خود لکھیں — ریٹ روز بدلتے ہیں، اس لیے کوئی پہلے سے لکھا ہوا ریٹ نہیں رکھا گیا۔</div><label>نصاب کا معیار</label><select id="basis" onchange="calcZakat()"><option value="s612.36">چاندی 612.36 گرام (احناف — عام فتویٰ)</option><option value="g87.48">سونا 87.48 گرام (احناف)</option><option value="s595">چاندی 595 گرام (جمہور)</option><option value="g85">سونا 85 گرام (جمہور)</option></select><div class="g2"><div><label>سونا فی گرام کا ریٹ</label><input type="number" inputmode="decimal" id="goldRate" min="0" oninput="calcZakat()"></div><div><label>چاندی فی گرام کا ریٹ</label><input type="number" inputmode="decimal" id="silverRate" min="0" oninput="calcZakat()"></div></div><div class="g2"><div><label>سونا (گرام)</label><input type="number" inputmode="decimal" id="gold" min="0" oninput="calcZakat()"></div><div><label>چاندی (گرام)</label><input type="number" inputmode="decimal" id="silver" min="0" oninput="calcZakat()"></div></div><label>نقد رقم (گھر + بینک + ہاتھ میں)</label><input type="number" inputmode="decimal" id="cash" min="0" oninput="calcZakat()"><label>تجارتی مال (موجودہ قیمتِ فروخت پر)</label><input type="number" inputmode="decimal" id="biz" min="0" oninput="calcZakat()"><label>وہ قرض جو دوسروں سے واپس ملنا یقینی ہے</label><input type="number" inputmode="decimal" id="recv" min="0" oninput="calcZakat()"><label>آپ کے ذمے فوری قرض / واجب الادا رقم (منہا ہوگی)</label><input type="number" inputmode="decimal" id="debt" min="0" oninput="calcZakat()"><div class="zres" id="zres">رقوم لکھتے ہی نتیجہ یہاں آئے گا۔</div></div><div class="co info">💡 رقوم اپنی کرنسی میں لکھیں (روپے، ریال، ڈالر — جو بھی)۔ یہ تخمینہ ہے؛ ذاتی مسائل (پراویڈنٹ فنڈ، شیئرز، پلاٹ وغیرہ) میں مفتی سے پوچھیں۔</div><button class="done" data-sec="calc">☐ یہ حصہ پڑھ لیا</button></section>
+<section class="sec" id="masarif" data-sec="masarif"><h2><span class="ic">🤲</span>زکوٰۃ کے مستحقین (۸)</h2><div class="ar sm">إِنَّمَا الصَّدَقَاتُ لِلْفُقَرَاءِ وَالْمَسَاكِينِ وَالْعَامِلِينَ عَلَيْهَا وَالْمُؤَلَّفَةِ قُلُوبُهُمْ وَفِي الرِّقَابِ وَالْغَارِمِينَ وَفِي سَبِيلِ اللَّهِ وَابْنِ السَّبِيلِ ۖ فَرِيضَةً مِّنَ اللَّهِ</div><p class="tr">"صدقات صرف فقیروں، مسکینوں، ان کے وصول کرنے والوں، جن کے دل ملانے ہوں، گردنیں چھڑانے، قرض داروں، اللہ کی راہ اور مسافر کے لیے ہیں؛ یہ اللہ کی طرف سے فرض ہے۔"</p><p><span class="ref">سورۃ التوبہ ۹:۶۰</span></p><ol class="nl"><li><b>فقیر</b> — جس کے پاس کچھ نہ ہو یا بہت کم ہو۔</li><li><b>مسکین</b> — جس کے پاس نصاب سے کم ہو اور گزارا مشکل ہو۔</li><li><b>عامل</b> — زکوٰۃ جمع و تقسیم کرنے والا (اسلامی حکومت کی طرف سے)۔</li><li><b>مؤلفۃ القلوب</b> — جن کا دل اسلام کی طرف مائل کرنا ہو۔ (احناف: یہ مد نبی ﷺ کے بعد ختم ہو چکی۔)</li><li><b>فی الرقاب</b> — غلام آزاد کرانا (آج کل نہیں)۔</li><li><b>غارم</b> — ایسا قرض دار جس کے پاس قرض چکانے کے بعد نصاب نہ بچے۔</li><li><b>فی سبیل اللہ</b> — اللہ کی راہ میں (احناف: جہاد/حج سے رکے ہوئے محتاج۔ دیگر: دینی خدمت کی مد میں وسعت)۔</li><li><b>ابن السبیل</b> — مسافر جس کا مال راستے میں ختم ہو جائے، چاہے گھر پر مال دار ہو۔</li></ol><div class="hd"><div class="who">📖 حدیثِ نبوی ﷺ</div><p>زکوٰۃ میں کسی مال دار اور کمانے پر قادر طاقتور شخص کا کوئی حصہ نہیں۔</p><p><span class="ref">سنن ابی داود ۱۶۳۴</span><span class="ref">سنن ترمذی ۶۵۲</span></p></div><h3>کسے زکوٰۃ نہیں دی جا سکتی</h3><ul class="lst"><li><b>نصاب کے مالک</b> (مال دار) کو۔</li><li><b>اپنے اصول و فروع</b> کو (ماں باپ، دادا نانا، اولاد، پوتے نواسے) اور <b>میاں بیوی</b> ایک دوسرے کو۔</li><li><b>بنو ہاشم / آلِ رسول ﷺ</b> (سید) کو۔ <span class="ref">صحیح مسلم ۱۰۷۲</span></li><li><b>غیر مسلم</b> کو (صدقۂ نافلہ دے سکتے ہیں)۔</li><li><b>مسجد، مدرسہ کی عمارت یا کفن دفن</b> میں براہِ راست لگانا — تملیک (مالک بنانا) شرط ہے۔</li></ul><div class="co info">💡 رشتہ دار غریب بھائی بہن، چچا، خالہ وغیرہ کو زکوٰۃ دینا <b>دوہرے اجر</b> (صدقہ + صلہ رحمی) کا باعث ہے۔ <span class="ref">سنن ترمذی ۶۵۸</span></div><button class="done" data-sec="masarif">☐ یہ حصہ پڑھ لیا</button></section>
+<section class="sec" id="fitr" data-sec="fitr"><h2><span class="ic">🌾</span>صدقۂ فطر (زکوٰۃ الفطر)</h2><div class="hd"><div class="who">📖 حدیثِ نبوی ﷺ</div><p>رسول اللہ ﷺ نے صدقۂ فطر ہر غلام، آزاد، مرد، عورت، چھوٹے اور بڑے مسلمان پر ایک صاع کھجور یا ایک صاع جو فرض کیا، اور حکم دیا کہ لوگوں کے نماز کے لیے نکلنے سے پہلے ادا کر دیا جائے۔</p><p><span class="ref">صحیح بخاری ۱۵۰۳</span><span class="ref">صحیح مسلم ۹۸۴</span></p></div><div class="hd"><div class="who">📖 حدیثِ نبوی ﷺ</div><p>یہ روزے کی لغویات اور بے ہودگی سے پاکی اور مسکینوں کی خوراک ہے۔ جس نے نماز سے پہلے ادا کیا وہ مقبول زکوٰۃ ہے، اور بعد میں ادا کیا تو عام صدقہ ہے۔</p><p><span class="ref">سنن ابی داود ۱۶۰۹</span></p></div><ul class="lst"><li><b>کس پر واجب:</b> احناف: جو شخص عید کی صبح نصاب (حاجتِ اصلیہ سے زائد) کا مالک ہو؛ جمہور: جس کے پاس عید کے دن رات کی ضرورت سے زائد خوراک ہو۔</li><li><b>کس کی طرف سے:</b> اپنی اور اپنے نابالغ بچوں کی (بالغ اولاد اور بیوی کی طرف سے بھی دے تو بہتر)۔</li><li><b>وقت:</b> رمضان کے آخر میں، عید کی صبح نماز سے پہلے افضل۔ پہلے ہی دو ایک دن قبل دینا بھی صحابہ سے ثابت ہے۔ <span class="ref">صحیح بخاری ۱۵۱۱</span></li><li><b>اجناس:</b> گندم، جو، کھجور، کشمش، پنیر وغیرہ، اور احناف کے نزدیک ان کی قیمت دینا بھی جائز۔</li></ul><div class="tw"><table><tr><th>جنس</th><th>مقدار (احناف)</th><th>مقدار (جمہور)</th></tr><tr><td>گندم / آٹا</td><td>آدھا صاع (تقریباً 1.6–1.75 کلو)</td><td>ایک صاع (تقریباً 2.5–3 کلو)</td></tr><tr><td>جو، کھجور، کشمش</td><td>ایک صاع (تقریباً 3.3–3.5 کلو)</td><td>ایک صاع</td></tr></table></div><div class="co mz">⚖️ صاع اور کلو کی نسبت میں علماء کے ناپ میں معمولی فرق ہے؛ اپنے مقامی دارالافتاء کا مقرر کردہ رقم کا ریٹ لے لینا آسان ہے۔</div><button class="done" data-sec="fitr">☐ یہ حصہ پڑھ لیا</button></section>
+
+  <div class="co warn">⚠️ <b>اہم:</b> یہ صفحہ بنیادی رہنمائی کے لیے ہے۔ جہاں ائمہ کا اختلاف ہے وہاں «احناف» اور «جمہور» الگ لکھا ہے۔ پیچیدہ اور ذاتی مسائل کے لیے کسی مستند عالم یا مفتی سے رجوع کریں۔</div>
+  <div class="pn"><a href="arkan-namaz.html">→ نماز</a><a href="arkan-roza.html">روزہ ←</a></div>
+</main>
+<script src="arkan.js"></script>
+<script>
+(function(){
+  var RK='arkan_zakat_rates';
+  function el(i){return document.getElementById(i);}
+  function num(i){var v=parseFloat(el(i).value);return isFinite(v)&&v>0?v:0;}
+  function fmt(n){return Math.round(n).toLocaleString('en-US');}
+  try{var r=JSON.parse(localStorage.getItem(RK)||'{}');if(r.g)el('goldRate').value=r.g;if(r.s)el('silverRate').value=r.s;}catch(e){}
+  window.calcZakat=function(){
+    var gr=num('goldRate'),sr=num('silverRate'),g=num('gold'),s=num('silver'),cash=num('cash'),biz=num('biz'),recv=num('recv'),debt=num('debt');
+    try{localStorage.setItem(RK,JSON.stringify({g:gr||'',s:sr||''}));}catch(e){}
+    var out=el('zres'),b=el('basis').value,metal=b.charAt(0),grams=parseFloat(b.slice(1));
+    var rate=metal==='s'?sr:gr, mname=metal==='s'?'چاندی':'سونا';
+    var any=g||s||cash||biz||recv||debt;
+    if(!any){out.innerHTML='رقوم لکھتے ہی نتیجہ یہاں آئے گا۔';return;}
+    if((g&&!gr)||(s&&!sr)){out.innerHTML='<span class="no">⚠️ سونے/چاندی کی مقدار لکھی ہے تو اس کا فی گرام ریٹ بھی لکھیں۔</span>';return;}
+    if(!rate){out.innerHTML='<span class="no">⚠️ نصاب نکالنے کے لیے '+mname+' کا فی گرام ریٹ لکھیں۔</span>';return;}
+    var gv=g*gr,sv=s*sr,total=gv+sv+cash+biz+recv,net=Math.max(0,total-debt),nis=grams*rate;
+    var h='<div class="ln"><span>سونا</span><span>'+fmt(gv)+'</span></div>'+
+      '<div class="ln"><span>چاندی</span><span>'+fmt(sv)+'</span></div>'+
+      '<div class="ln"><span>نقدی</span><span>'+fmt(cash)+'</span></div>'+
+      '<div class="ln"><span>تجارتی مال</span><span>'+fmt(biz)+'</span></div>'+
+      '<div class="ln"><span>یقینی قرض (واپس ملنے والا)</span><span>'+fmt(recv)+'</span></div>'+
+      '<div class="ln"><span>منہا: آپ کا قرض</span><span>− '+fmt(debt)+'</span></div>'+
+      '<div class="ln"><b>کل قابلِ زکوٰۃ مال</b><b>'+fmt(net)+'</b></div>'+
+      '<div class="ln"><span>نصاب ('+mname+' '+grams+' گرام)</span><span>'+fmt(nis)+'</span></div>';
+    if(net>=nis){var z=net*0.025;h='<div class="ok">✅ نصاب پورا ہے — زکوٰۃ واجب ہے (بشرطیکہ سال گزر چکا ہو)</div>'+h+'<div class="big">'+fmt(z)+'</div><div style="text-align:center;font-size:13px">زکوٰۃ = کل مال کا 2.5%</div>';}
+    else{h='<div class="no">❌ مال نصاب سے کم ہے — زکوٰۃ فرض نہیں</div>'+h+'<div style="font-size:13px;margin-top:4px">نصاب میں کمی: '+fmt(nis-net)+'</div>';}
+    out.innerHTML=h;
+  };
+  calcZakat();
+})();
+</script>
+</body>
+</html>

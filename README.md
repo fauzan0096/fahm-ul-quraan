@@ -33,12 +33,12 @@ Ek simple, mobile-friendly web app (PWA) jisse Quran ke alfaz, namaz ki duaen au
 - `seerat.js` sirf tab load hoti hai jab Admin button dabaye, isliye baaqi users ke liye app mein koi nayi cheez nazar nahi aati aur koi bojh nahi.
 - Text badalna ho to `seerat.js` ke `SEERAT_COURSE` mein badlein. Sab ke liye kholna ho to `isAdmin()` ki line (seerat.js) aur `openSeerat()` ka admin-check (index.html) hata dein.
 
-### 🕌 Arkan-e-Islam (`arkan-islam/` folder) — abhi sirf Admin
-- Home ke quick links mein **Nahw-Sarf / Seerat** ke baazu mein **🕌 Arkan-e-Islam** (sirf Admin ko). Andar 5 pages: **Kalima, Namaz, Zakat, Roza, Hajj-Umrah** (+ `index.html` hub).
+### 🕌 Arkan-e-Islam (`arkan.html` + `arkan-kalima.html`, `arkan-namaz.html`, `arkan-zakat.html`, `arkan-roza.html`, `arkan-hajj.html` — sab root par, koi folder nahi) — abhi sirf Admin
+- Home ke quick links mein **Nahw-Sarf / Seerat** ke baazu mein **🕌 Arkan-e-Islam** (sirf Admin ko). Andar 5 pages: **Kalima, Namaz, Zakat, Roza, Hajj-Umrah** (`arkan.html` hub).
 - Har page: hawale (Quran/Hadith), Hanafi vs Jumhur ka farq, har hisse par ✅ "padh liya" nishan (device par save), chips se seedha hisse par jump, theme (dark/skin) saath.
 - Zakat page par calculator (rate khud likhna hota hai — koi purana rate nahi).
-- Har page ke `<head>` mein admin-check hai (`userRole === 'admin'`), warna `../index.html`. Sab ke liye kholna ho to wo chhota script har page se aur `adminArkanLink` ki line (index.html `initApp`) hata dein.
-- Styling `arkan-islam/arkan.css`, "padh liya" logic `arkan-islam/arkan.js`; baaki pages `../theme.css` aur `../app.js` (FQTheme) istemal karte hain.
+- Har page ke `<head>` mein admin-check hai (`userRole === 'admin'`), warna `index.html`. Sab ke liye kholna ho to wo chhota script har page se aur `adminArkanLink` ki line (index.html `initApp`) hata dein.
+- Styling `arkan.css`, "padh liya" logic `arkan.js`; baaki pages `theme.css` aur `app.js` (FQTheme) istemal karte hain.
 
 ### 🌙 Arabi (Hijri) tareekh (`tools.js` ke andar)
 - Header mein ek chhoti line; tap karne par poori tafseel. Location (Namaz ke liye di hui) ya timezone se ilaqa pehchanta hai: Saudi/Arab = Umm al-Qura, Bharat/Pakistan/Bangladesh = aam taur par 1 din peechhe.
