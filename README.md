@@ -19,7 +19,7 @@ Ek simple, mobile-friendly web app (PWA) jisse Quran ke alfaz, namaz ki duaen au
 - 🔥 Streak, ⭐ XP/Levels, 🏅 Badges
 - 🛒 **Inaam Ghar (Shop)** — 3 themes + **16 stickers** (Aam / Khaas / Nayaab / Shahi). **Kharida hua item hamesha profile ke paas rehta hai**; theme badalne/reset karne se kuch khatam nahi hota, Shop se **🎨 Lagayein** dabayein. Stickers (max 3) **profile ke naam ke baazu mein** dikhte hain (Shahi stickers chamakte hain ✨)
 - 📤 Lafz ya badge ki share card (WhatsApp / Insta)
-- 📖 **Aaj ki Ayat**, 👤 alag-alag naam ki alag profile (har ki apni history)
+- 📖 **Aaj ki Ayat + 🌿 Aaj ki Sunnat** — roz ek ayat ke saath ek pyaari sunnat (arabi matn, urdu tarjuma, aaj ka amal, hawala). Sunnat ka matn *Riyadh-us-Saliheen* (Maktaba Shamela) se hu-ba-hu; `sunnat.js` mein 26 sunnatein. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
 
 **Silver/Gold exam mein anbiya ke naam (Adam, Musa, Isa, Muhammad ﷺ wagairah) nahi aate** — na sawal mein, na options mein. Roz ke Day exam mein wo aate hain.
 
@@ -27,6 +27,15 @@ Ek simple, mobile-friendly web app (PWA) jisse Quran ke alfaz, namaz ki duaen au
 
 - 🧠 **Kamzor lafz revision** (galat hue lafz dobara) • 🔔 **Roz ki yaad** (.ics) • 🔖 **Ref. No.** (certificate par)
 - 🏠 **Dashboard**: Maqsad → shortcuts → Aaj ki Ayat → Namaz/Yaad → Safar → Aaj ke lafz
+
+### 📜 Seerat-e-Nabawi ﷺ — 30 din (`seerat.js`) — abhi sirf Admin
+- Admin menu (👤 ▾) mein **📜 Seerat — 30 din (Admin)**. Har din: maqsad, tafseel (khulne wale hisse), ahem nukte, timeline, ghaur-o-fikr, 3 sawal ka chhota imtihan, aur "din mukammal" ka nishan (profile ke saath save).
+- `seerat.js` sirf tab load hoti hai jab Admin button dabaye, isliye baaqi users ke liye app mein koi nayi cheez nazar nahi aati aur koi bojh nahi.
+- Text badalna ho to `seerat.js` ke `SEERAT_COURSE` mein badlein. Sab ke liye kholna ho to `isAdmin()` ki line (seerat.js) aur `openSeerat()` ka admin-check (index.html) hata dein.
+
+### 🌙 Arabi (Hijri) tareekh (`tools.js` ke andar)
+- Header mein ek chhoti line; tap karne par poori tafseel. Location (Namaz ke liye di hui) ya timezone se ilaqa pehchanta hai: Saudi/Arab = Umm al-Qura, Bharat/Pakistan/Bangladesh = aam taur par 1 din peechhe.
+- Azan ke waqt set hon to **Maghrib ke baad** nayi tareekh. Chaand dekhne se farq ho sakta hai, isliye popup mein **−1 / +1 din** se khud theek kar sakte hain (yaad rehta hai).
 
 ### 🤲 Masnoon Duaein (`dua.html`)
 - **119 duaein**: Namaz (59), Subah-Sham Azkar, Roz marra (26, Hisnul Muslim), Mushkil & Pareshani, Bimari & Shifa, Sone se Pehle

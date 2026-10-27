@@ -1,6 +1,6 @@
 /* ==========================================================
    tools.js — Namaz (azan, roz ka sawal, calendar) + Tasbeeh
-   (Is file mein: namaz.js, tasbeeh.js)
+   (Is file mein: namaz.js, hijri.js, tasbeeh.js)
    ========================================================== */
 
 /* ───────────── namaz.js ───────────── */
@@ -622,6 +622,140 @@
 
     window.NS = { open: openPanel, _ics: makeICS, _layers: function () { return layers.length; }, _report: openReport, _times: getTimes };
 
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+;
+
+/* ───────────── hijri.js ───────────── */
+/* Arabi (Hijri) tareekh — header mein ek chhoti line, tap karne par tafseel.
+   • Location (namaz wali ns_loc) ya timezone se ilaqa pehchanta hai: Saudi/Arab = Umm al-Qura; Bharat/Pakistan/Bangladesh = aam taur par 1 din peechhe
+   • Maghrib ke baad (agar azan ke waqt set hon) nayi tareekh — Islami din Maghrib se shuru hota hai
+   • Chaand dekhne se farq pad sakta hai, isliye tap karke ±1 din khud theek kar sakte hain (yaad rehta hai) */
+(function () {
+    'use strict';
+    var MON = ['محرم', 'صفر', 'ربيع الأول', 'ربيع الآخر', 'جمادى الأولى', 'جمادى الآخرة', 'رجب', 'شعبان', 'رمضان', 'شوال', 'ذو القعدة', 'ذو الحجة'];
+    var MON_RO = ['Muharram', 'Safar', 'Rabi-ul-Awwal', 'Rabi-ul-Aakhir', 'Jumada-ul-Ula', 'Jumada-ul-Aakhira', 'Rajab', 'Shaban', 'Ramzan', 'Shawwal', 'Zil-Qada', 'Zil-Hijja'];
+    var styled = false, pop = null;
+
+    function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+    function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+    function jget(k) { try { return JSON.parse(lsGet(k)); } catch (e) { return null; } }
+    function ar(n) { return String(n).replace(/\d/g, function (d) { return '٠١٢٣٤٥٦٧٨٩'.charAt(+d); }); }
+    function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+    // Tabular (civil) calendar — sirf tab jab browser Umm al-Qura na de
+    function civil(dt) {
+        var y = dt.getFullYear(), m = dt.getMonth() + 1, d = dt.getDate();
+        var a = Math.floor((14 - m) / 12), yy = y + 4800 - a, mm = m + 12 * a - 3;
+        var jd = d + Math.floor((153 * mm + 2) / 5) + 365 * yy + Math.floor(yy / 4) - Math.floor(yy / 100) + Math.floor(yy / 400) - 32045;
+        var l = jd - 1948440 + 10632, n = Math.floor((l - 1) / 10631);
+        l = l - 10631 * n + 354;
+        var j = Math.floor((10985 - l) / 5316) * Math.floor(50 * l / 17719) + Math.floor(l / 5670) * Math.floor(43 * l / 15238);
+        l = l - Math.floor((30 - j) / 15) * Math.floor(17719 * j / 50) - Math.floor(j / 16) * Math.floor(15238 * j / 43) + 29;
+        var hm = Math.floor(24 * l / 709), hd = l - Math.floor(709 * hm / 24), hy = 30 * n + j - 30;
+        return { y: hy, m: hm, d: hd };
+    }
+    function umalqura(dt) {
+        try {
+            var parts = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn', { day: 'numeric', month: 'numeric', year: 'numeric' }).formatToParts(dt), o = {};
+            parts.forEach(function (p) { if (p.type === 'day' || p.type === 'month' || p.type === 'year') o[p.type] = parseInt(p.value, 10); });
+            if (o.day >= 1 && o.day <= 30 && o.month >= 1 && o.month <= 12 && o.year > 1300) return { y: o.year, m: o.month, d: o.day };
+        } catch (e) {}
+        return civil(dt);
+    }
+
+    // Ilaqa: location (namaz) ya timezone
+    function region() {
+        var loc = jget('ns_loc'), lat = loc && +loc.lat, lng = loc && +loc.lng;
+        if (loc && isFinite(lat) && isFinite(lng)) {
+            if (lat > 5 && lat < 38 && lng > 60 && lng < 93.5) return { off: -1, ro: 'Aapke ilaqe (Bharat/Pakistan/Bangladesh) ke hisaab se — aam taur par Saudi se 1 din peechhe', loc: true };
+            return { off: 0, ro: 'Aapki location ke hisaab se (Umm al-Qura)', loc: true };
+        }
+        var tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+        if (/^Asia\/(Kolkata|Calcutta|Karachi|Dhaka|Kathmandu|Colombo|Thimphu)/.test(tz)) return { off: -1, ro: 'Timezone ke hisaab se (Bharat/Pakistan/Bangladesh) — aam taur par Saudi se 1 din peechhe', loc: false };
+        return { off: 0, ro: 'Umm al-Qura (Saudi) ke hisaab se', loc: false };
+    }
+    function maghribPassed() {
+        var T = jget('ns_times'), now = new Date(), today = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate());
+        if (!T || !T.t || !T.t.Maghrib || !(T.manual || T.date === today)) return false;
+        var m = /^(\d{1,2}):(\d{2})/.exec(T.t.Maghrib); if (!m) return false;
+        return now.getHours() * 60 + now.getMinutes() >= (+m[1]) * 60 + (+m[2]);
+    }
+    function adj() { var v = parseInt(lsGet('hj_adj'), 10); return isFinite(v) ? Math.max(-2, Math.min(2, v)) : 0; }
+
+    function compute() {
+        var r = region(), now = new Date();
+        var shift = r.off + adj() + (maghribPassed() ? 1 : 0);
+        var base = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0);
+        base.setDate(base.getDate() + shift);
+        var h = umalqura(base);
+        return { h: h, r: r, shift: shift, aft: maghribPassed() };
+    }
+    function fmt(h) { return ar(h.d) + ' ' + MON[h.m - 1] + ' ' + ar(h.y) + ' هـ'; }
+
+    function injectCSS() {
+        if (styled) return; styled = true;
+        var s = document.createElement('style');
+        s.textContent =
+            '.hj-line{max-width:1200px;margin:10px auto 0;text-align:center}' +
+            '.hj-line button{background:rgba(255,255,255,.12);border:1px solid rgba(217,182,90,.45);color:#F3E3A6;border-radius:16px;padding:3px 16px 5px;font-family:"Amiri","Noto Naskh Arabic",serif;font-size:16px;line-height:1.6;cursor:pointer}' +
+            '.hj-pop{position:fixed;inset:0;z-index:2500;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;padding:20px}' +
+            '.hj-box{width:100%;max-width:340px;background:var(--card-bg,#FFFDF6);color:var(--text,#1F2A25);border:1px solid var(--border,#D9D6C3);border-radius:20px;padding:20px 18px;text-align:center;box-shadow:0 16px 40px rgba(0,0,0,.35)}' +
+            '.hj-big{font-family:"Amiri","Noto Naskh Arabic",serif;font-size:26px;line-height:1.8;color:var(--primary,#0F4C3A);font-weight:700}' +
+            '.hj-sub{font-size:14px;margin-top:2px}.hj-sm{font-size:12px;color:var(--text-light,#55645C);line-height:1.7;margin-top:10px}' +
+            '.hj-row{display:flex;gap:8px;margin-top:14px}.hj-row button{flex:1;padding:9px 4px;border-radius:10px;border:1px solid var(--border,#D9D6C3);background:var(--soft-bg,#F4F1E3);color:var(--primary,#0F4C3A);font-weight:700;font-size:13px;cursor:pointer}' +
+            '.hj-x{margin-top:12px;width:100%;padding:10px;border:none;border-radius:10px;background:linear-gradient(180deg,#E3C36E,#C79E3F);color:#2A2008;font-weight:700;cursor:pointer}';
+        document.head.appendChild(s);
+    }
+
+    function ensureLine() {
+        var line = document.getElementById('hijriLine');
+        if (line) return line;
+        var ht = document.querySelector('.header-tools'); if (!ht || !ht.parentNode) return null;
+        injectCSS();
+        line = document.createElement('div'); line.id = 'hijriLine'; line.className = 'hj-line';
+        line.innerHTML = '<button type="button" id="hijriBtn" aria-label="Arabi tareekh"></button>';
+        ht.parentNode.insertBefore(line, ht);
+        line.firstChild.onclick = openPop;
+        return line;
+    }
+    function render() {
+        var line = ensureLine(); if (!line) return;
+        var c = compute(), b = document.getElementById('hijriBtn'), t = fmt(c.h);
+        if (b.textContent !== t) b.textContent = t;
+        if (pop) drawPop();
+    }
+
+    function drawPop() {
+        var c = compute(), g = new Date(), a = adj();
+        var gs = ''; try { gs = g.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }); } catch (e) { gs = g.toDateString(); }
+        pop.innerHTML = '<div class="hj-box">' +
+            '<div class="hj-big">' + fmt(c.h) + '</div>' +
+            '<div class="hj-sub">' + c.h.d + ' ' + MON_RO[c.h.m - 1] + ' ' + c.h.y + ' H</div>' +
+            '<div class="hj-sub" style="margin-top:8px;color:var(--text-light,#55645C)">' + gs + '</div>' +
+            '<div class="hj-sm">' + c.r.ro + (c.aft ? '<br>🌇 Maghrib ho chuka — Islami din badal gaya' : '') +
+            (c.r.loc ? '' : '<br>📍 Sahi hisaab ke liye "Namaz ka Hisaab" mein location set karein') +
+            '<br>Chaand dekhne se 1 din ka farq ho sakta hai.</div>' +
+            '<div class="hj-row"><button data-d="-1">◀ −1 din</button><button data-d="0">Auto' + (a ? ' (' + (a > 0 ? '+' : '') + a + ')' : '') + '</button><button data-d="1">+1 din ▶</button></div>' +
+            '<button class="hj-x" data-d="x">Theek hai</button></div>';
+    }
+    function openPop() {
+        if (pop) return;
+        injectCSS();
+        pop = document.createElement('div'); pop.className = 'hj-pop';
+        pop.onclick = function (e) {
+            if (e.target === pop) return closePop();
+            var d = e.target.getAttribute && e.target.getAttribute('data-d'); if (d == null) return;
+            if (d === 'x') return closePop();
+            if (d === '0') lsSet('hj_adj', '0'); else lsSet('hj_adj', String(Math.max(-2, Math.min(2, adj() + parseInt(d, 10)))));
+            render();
+        };
+        document.body.appendChild(pop); drawPop();
+    }
+    function closePop() { if (pop) { pop.remove(); pop = null; } }
+
+    function init() { render(); setInterval(render, 60000); document.addEventListener('visibilitychange', function () { if (!document.hidden) render(); }); }
+    window.FQHijri = { today: function () { return compute(); }, format: fmt };
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
 ;

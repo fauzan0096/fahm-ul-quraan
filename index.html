@@ -311,6 +311,7 @@
                         <button class="ud-shop" onclick="FQBackup.open()">💾 Backup / Restore</button>
                         <button class="ud-cert" onclick="handleCertificateClick()">🏆 Completion Certificate</button>
                         <button class="ud-shop" id="udExamPanel" onclick="openAdminExam()" style="display:none">🛠 Exam Panel (Admin)</button>
+                        <button class="ud-shop" id="udSeerat" onclick="openSeerat()" style="display:none">📜 Seerat — 30 din (Admin)</button>
                         <button class="ud-shop" onclick="openShop()">🛒 Inaam Ghar (Shop)</button>
                         <button class="ud-default" onclick="resetTheme()">🔄 Default Theme (kharidi hui safe)</button>
                         <button onclick="logout()" style="margin-top:8px;">🚪 Logout</button>
@@ -352,8 +353,8 @@
             <div class="ayat-card" onclick="showDailyAyat()" role="button" tabindex="0">
                 <div class="dg-icon">✨</div>
                 <div class="dg-content">
-                    <div class="dg-title">Aaj ki Ayat / Hadith</div>
-                    <div class="ayat-sub">Rozana ka paigham, doston ko bhejein</div>
+                    <div class="dg-title">Aaj ki Ayat + Sunnat</div>
+                    <div class="ayat-sub">Ek ayat, ek pyaari sunnat — doston ko bhejein</div>
                 </div>
                 <span class="ayat-go">›</span>
             </div>
@@ -400,7 +401,14 @@
             <h2 style="color:var(--gold-bright); font-family:'Amiri', serif; font-size:32px; margin-bottom:20px;">✨ Aaj ka Paigham</h2>
             <div id="ayatAr" style="font-family:'Amiri', serif; font-size:38px; line-height:1.6; direction:rtl; margin-bottom:20px; color:#fff;"></div>
             <div id="ayatUr" style="font-family:'Nastaliq', serif; font-size:20px; line-height:2; direction:rtl; margin-bottom:15px; color:var(--gold-bright);"></div>
-            <div id="ayatRef" style="font-size:14px; color:#A5B3AA; font-weight:bold; margin-bottom:25px;"></div>
+            <div id="ayatRef" style="font-size:14px; color:#A5B3AA; font-weight:bold; margin-bottom:18px;"></div>
+            <div id="sunnatBox" style="border-top:1px solid rgba(217,182,90,.45); padding-top:16px; margin-bottom:22px;">
+                <div style="font-size:15px; font-weight:800; color:var(--gold-bright); letter-spacing:.3px; margin-bottom:10px;">🌿 Aaj ki Sunnat</div>
+                <div id="sunnatAr" style="font-family:'Amiri', serif; font-size:22px; line-height:1.9; direction:rtl; color:#fff; margin-bottom:8px;"></div>
+                <div id="sunnatUr" style="font-family:'Nastaliq', serif; font-size:18px; line-height:2; direction:rtl; color:#F4F1E3; margin-bottom:8px;"></div>
+                <div id="sunnatTip" style="font-family:'Nastaliq', serif; font-size:16px; line-height:2; direction:rtl; color:var(--gold-bright); background:rgba(255,255,255,.07); border-radius:12px; padding:8px 12px; margin-bottom:8px;"></div>
+                <div id="sunnatRef" style="font-size:12px; color:#A5B3AA; font-weight:bold; direction:rtl;"></div>
+            </div>
             <button class="exam-btn" style="background: linear-gradient(180deg, #27a05a, #1f8a4c);" onclick="shareDailyAyat()">📤 WhatsApp / Insta par Share karein</button>
         </div>
     </div>
@@ -490,6 +498,7 @@
     <div id="toast" class="toast">Message</div>
 
     <script src="course.js"></script>
+    <script src="sunnat.js"></script>
     <script>
         const ADMIN_PASSWORD = "Fauzan8087";
         const GUEST_PASSWORD = "quran123";
@@ -766,10 +775,22 @@
             document.getElementById('userDropRole').innerText = userRole === 'admin' ? 'Admin' : 'Student';
             const isAdm = userRole === 'admin';
             document.getElementById('udExamPanel').style.display = isAdm ? '' : 'none';
+            document.getElementById('udSeerat').style.display = isAdm ? '' : 'none';
             document.getElementById('udDelProfile').style.display = isAdm ? 'none' : '';
             { const gl = document.getElementById('adminGrammarLink'); if (gl) gl.style.display = isAdm ? '' : 'none'; }   // Nahw-Sarf: filhaal sirf admin
             renderProfileStickers();
             updateXPUI(); renderCourse(); updateStreak(); checkDailyGoal();
+        }
+
+        // Seerat course: seerat.js sirf Admin ke tap karne par load hota hai (baaqi users ke liye kuch download nahi)
+        function openSeerat() {
+            if (userRole !== 'admin') return;
+            const ud = document.getElementById('userDrop'); if (ud) ud.classList.add('hidden');
+            if (window.FQSeerat) { FQSeerat.open(); return; }
+            window.__srtOpenWhenReady = true;
+            const sc = document.createElement('script'); sc.src = 'seerat.js';
+            sc.onerror = () => { window.__srtOpenWhenReady = false; showToast('Seerat file load nahi hui — net check karein'); };
+            document.head.appendChild(sc);
         }
 
         function pick(w, k) { return QSLang.pick(w, k); }
@@ -1534,6 +1555,7 @@
         ];
 
         let currentAyat = null;
+        let currentSunnat = null;
 
         function showDailyAyat() {
             const dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
@@ -1542,6 +1564,15 @@
             document.getElementById('ayatAr').innerText = currentAyat.ar;
             document.getElementById('ayatUr').innerText = currentAyat.ur;
             document.getElementById('ayatRef').innerText = currentAyat.ref;
+            currentSunnat = (typeof getTodaySunnat === 'function') ? getTodaySunnat() : null;
+            const sb = document.getElementById('sunnatBox');
+            if (currentSunnat) {
+                sb.style.display = '';
+                document.getElementById('sunnatAr').innerText = currentSunnat.ar;
+                document.getElementById('sunnatUr').innerText = currentSunnat.ur;
+                document.getElementById('sunnatTip').innerText = '🌟 ' + currentSunnat.tip;
+                document.getElementById('sunnatRef').innerText = currentSunnat.ref;
+            } else { sb.style.display = 'none'; }
             document.getElementById('ayatModal').classList.remove('hidden');
         }
 
@@ -1568,7 +1599,7 @@
                 ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
 
                 ctx.fillStyle = '#D9B65A'; ctx.font = '700 60px "Amiri", serif';
-                ctx.fillText('بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ', 540, 250);
+                ctx.fillText('بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ', 540, 200);
 
                 const wrapText = (text, maxWidth) => {
                     const words = text.split(' ');
@@ -1583,33 +1614,62 @@
                     return lines;
                 };
 
-                ctx.fillStyle = '#FFFFFF'; ctx.font = '700 90px "Amiri", serif';
+                // --- Ayat (upar) ---
+                const hasS = !!currentSunnat;
+                ctx.fillStyle = '#D9B65A'; ctx.font = '700 40px "Noto Nastaliq Urdu", serif';
+                ctx.fillText('آج کی آیت', 540, 300);
+                let y = 385;
+                ctx.fillStyle = '#FFFFFF'; ctx.font = (hasS ? '700 70px' : '700 90px') + ' "Amiri", serif';
                 const arabicLines = wrapText(currentAyat.ar, 850);
-                const arY = 700 - ((arabicLines.length - 1) * 100);
-                arabicLines.forEach((line, i) => { ctx.fillText(line, 540, arY + (i * 140)); });
+                const aLH = hasS ? 105 : 140;
+                arabicLines.forEach((line, i) => { ctx.fillText(line, 540, y + i * aLH); });
+                y += (arabicLines.length - 1) * aLH + 80;
 
-                ctx.strokeStyle = '#D9B65A'; ctx.lineWidth = 3;
-                ctx.beginPath(); ctx.moveTo(340, 1000); ctx.lineTo(740, 1000); ctx.stroke();
-
-                ctx.fillStyle = '#F4F1E3'; ctx.font = '700 50px "Noto Nastaliq Urdu", serif';
+                ctx.fillStyle = '#F4F1E3'; ctx.font = (hasS ? '700 40px' : '700 50px') + ' "Noto Nastaliq Urdu", serif';
                 const urduLines = wrapText(currentAyat.ur, 850);
-                const urY = 1150 - ((urduLines.length - 1) * 60);
-                urduLines.forEach((line, i) => { ctx.fillText(line, 540, urY + (i * 90)); });
+                const uLH = hasS ? 75 : 90;
+                urduLines.forEach((line, i) => { ctx.fillText(line, 540, y + i * uLH); });
+                y += (urduLines.length - 1) * uLH + 60;
 
-                ctx.fillStyle = '#D9B65A'; ctx.font = '400 35px "Figtree", sans-serif';
-                ctx.fillText(currentAyat.ref, 540, 1450);
+                ctx.fillStyle = '#D9B65A'; ctx.font = '400 32px "Figtree", sans-serif';
+                ctx.fillText(currentAyat.ref, 540, y);
+                y += 50;
+
+                // --- Sunnat (neeche) ---
+                if (hasS) {
+                    ctx.strokeStyle = '#D9B65A'; ctx.lineWidth = 3;
+                    ctx.beginPath(); ctx.moveTo(300, y); ctx.lineTo(780, y); ctx.stroke();
+                    y += 55;
+                    ctx.fillStyle = '#D9B65A'; ctx.font = '700 40px "Noto Nastaliq Urdu", serif';
+                    ctx.fillText('آج کی سنت', 540, y);
+                    y += 65;
+                    ctx.fillStyle = '#FFFFFF'; ctx.font = '700 42px "Amiri", serif';
+                    const sA = wrapText(currentSunnat.ar, 880);
+                    sA.forEach((line, i) => { ctx.fillText(line, 540, y + i * 66); });
+                    y += (sA.length - 1) * 66 + 70;
+                    ctx.fillStyle = '#F4F1E3'; ctx.font = '700 32px "Noto Nastaliq Urdu", serif';
+                    const sU = wrapText(currentSunnat.ur, 860);
+                    sU.forEach((line, i) => { ctx.fillText(line, 540, y + i * 58); });
+                    y += (sU.length - 1) * 58 + 60;
+                    ctx.fillStyle = '#D9B65A'; ctx.font = '700 30px "Noto Nastaliq Urdu", serif';
+                    const sT = wrapText(currentSunnat.tip, 860);
+                    sT.forEach((line, i) => { ctx.fillText(line, 540, y + i * 54); });
+                    y += (sT.length - 1) * 54 + 50;
+                    ctx.fillStyle = 'rgba(255,255,255,0.65)'; ctx.font = '400 26px "Noto Nastaliq Urdu", serif';
+                    ctx.fillText(currentSunnat.ref, 540, y);
+                }
 
                 if (logoImg.complete && logoImg.naturalWidth > 0) {
-                    ctx.drawImage(logoImg, 490, 1580, 100, 100);
+                    ctx.drawImage(logoImg, 500, 1640, 80, 80);
                     ctx.fillStyle = '#FFFFFF'; ctx.font = '700 60px "Amiri", serif';
-                    ctx.fillText('Fahm-ul-Quran', 540, 1720);
+                    ctx.fillText('Fahm-ul-Quran', 540, 1765);
                 } else {
                     ctx.fillStyle = '#FFFFFF'; ctx.font = '700 60px "Amiri", serif';
                     ctx.fillText('Fahm-ul-Quran', 540, 1660);
                 }
                 
                 ctx.fillStyle = 'rgba(255,255,255,0.7)'; ctx.font = '500 30px "Figtree", sans-serif';
-                ctx.fillText('Quran aur Duaa seekhein', 540, 1780);
+                ctx.fillText('Quran aur Duaa seekhein', 540, 1820);
 
                 canvas.toBlob(async function(blob) {
                     if (!blob) { showToast('❌ Image nahi ban saki'); return; }
@@ -1620,7 +1680,7 @@
                             await navigator.share({
                                 files: [file],
                                 title: 'Aaj ki Ayat - Fahm-ul-Quran',
-                                text: 'Aaj ka paigham: ' + currentAyat.ur + ' (' + currentAyat.ref + ')\n\nDownload Fahm-ul-Quran App:\n' + APP_LINK
+                                text: 'Aaj ka paigham: ' + currentAyat.ur + ' (' + currentAyat.ref + ')' + (currentSunnat ? '\n\n🌿 Aaj ki Sunnat: ' + currentSunnat.ur + ' (' + currentSunnat.ref + ')\n' + currentSunnat.tip : '') + '\n\nDownload Fahm-ul-Quran App:\n' + APP_LINK
                             });
                             showToast('📤 Share Ho Gaya!');
                         } catch (e) {

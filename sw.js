@@ -5,6 +5,9 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v64: seerat.js (Seerat 30 din, sirf Admin, tap par load — precache nahi) + tools.js mein Arabi (Hijri) tareekh — sunnat.js aur Ruqya Shariah ke saath merge
+// v63: Ruqya Shariah category (dua.html, 19 mustanad entries) + dua.js translations — sunnat.js wale v62 ke saath merge
+// v62: sunnat.js — 'Aaj ki Ayat' ke saath 'Aaj ki Sunnat' (Riyadh-us-Saliheen, Shamela se)
 // v61: arabic-grammar.html (Nahw-Sarf 30 din ka course) — filhaal sirf admin ko dikhta hai
 // v60: Day 41 ka doosra 'أَتَى' (Ata kiya) hata kar 'كَفَى' (Kaafi hua) — ab har lafz sirf ek din mein
 // v59: nayi nature-ambience.mp3 (3 min) games mein; games.html ka <source type> theek (audio/mpeg); purani 2-min cache wali mp3 refresh hoti hai
@@ -46,7 +49,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v61';
+const CACHE_NAME = 'quran-ustad-auto-v64';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -73,6 +76,7 @@ const ASSETS = [
     './tools.js',
     './sounds.js',
     './course.js',
+    './sunnat.js',
     './dua.js',
     './icon.png',
     './icon-192.png',
