@@ -164,6 +164,7 @@
 #bazm .bz-xp{background:var(--chip-bg,rgba(0,0,0,.06));border-radius:12px;padding:4px 10px;font-size:13px;font-weight:700}
 #bazm .bz-card::after{display:none}
     </style>
+<style>.qi.qi-h{font-size:1.15em;color:#fff;--qi-a:#E3C36E;margin-inline-end:.3em;vertical-align:-.2em}.qi.qi-hb{font-size:26px;color:#fff;--qi-a:#E3C36E}</style>
 </head>
 <body>
 <!-- ⚠️ Deeni disclaimer: tajweed / dua / asma / games / bazm -->
@@ -180,10 +181,10 @@
 <script>(function(){try{if(sessionStorage.getItem('deeniNoticeHide')==='1')document.getElementById('deeniNotice').style.display='none';}catch(e){}})();</script>
     <header>
         <div class="header-top">
-            <h1>🎮 Games</h1>
+            <h1><i class="qi qi-h" data-qi="games"></i>Games</h1>
             <div>
                 <button class="icon-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
-                <a href="index.html" style="color:white; text-decoration:none; font-size:20px;">🏠</a>
+                <a href="index.html" style="color:white; text-decoration:none; font-size:20px;"><i class="qi qi-hb" data-qi="home" style="display:flex"></i></a>
             </div>
         </div>
     </header>
@@ -1588,5 +1589,6 @@
 })();
 
     </script>
+<script src="icons.js"></script>
 </body>
 </html>

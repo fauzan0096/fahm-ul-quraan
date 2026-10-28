@@ -277,7 +277,70 @@
         html { background: #0F4C3A; }
         body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: env(safe-area-inset-top, 0px); background: #14614A; z-index: 1100; pointer-events: none; }
         body::after { display: none !important; }
-    </style>
+    
+        /* v70 design-fix: kat-te alfaz / icons (chhoti screen par) */
+        .xp-badge, .streak-badge { white-space: nowrap; flex: 0 0 auto; }
+        .xp-badge { display: inline-flex; align-items: center; height: 32px; padding: 0 12px; box-shadow: 0 2px 6px rgba(0,0,0,.25); }
+        .header-tools { flex-wrap: nowrap; }
+        .header-tools .ht-spacer { flex: 1 1 4px; min-width: 0; }
+        .header-tools .lang-cycle, .header-tools .icon-btn { flex: 0 0 auto; }
+        .top-link-btn { text-align: center; line-height: 1.35; text-wrap: balance; overflow-wrap: anywhere; }
+        .quick .top-link-btn { min-height: 92px; justify-content: flex-start; }
+        .bottom-nav { align-items: flex-start; }
+        .bottom-nav button, .bottom-nav a { flex: 1 1 0; min-width: 0; align-self: flex-start; justify-content: flex-start; padding: 0 2px; line-height: 1.3; font-family: inherit; cursor: pointer; text-align: center; }
+        @media (max-width: 360px) {
+            .header-tools { gap: 6px; }
+            .xp-badge, .streak-badge { font-size: 11.5px; padding: 0 8px; }
+            .header-tools .lang-cycle { padding: 0 12px; font-size: 14px; }
+            .quick { gap: 8px; }
+            .quick .top-link-btn { font-size: 11.5px; padding: 10px 2px 8px; }
+        }
+</style>
+<style id="qiDesign">
+/* ===== Icon design (icons.js): tiles + bottom bar ===== */
+.top-link-btn .ti{--qi-a:#C79E3F;width:58px;height:58px;border-radius:18px;font-size:38px;color:#0F4C3A;
+  background:linear-gradient(145deg,#E8F5EE,#C9E6D7);box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -2px 4px rgba(15,76,58,.06),0 3px 8px rgba(15,76,58,.14);transition:transform .15s}
+.top-link-btn:active .ti{transform:scale(.92)}
+.ti[data-tone="gold"]{color:#6B4A0E;--qi-a:#B5651D;background:linear-gradient(145deg,#FCF3D9,#F2DB9E)}
+.ti[data-tone="blue"]{color:#1E3F73;--qi-a:#C79E3F;background:linear-gradient(145deg,#E6EEFA,#C8D9F2)}
+.ti[data-tone="teal"]{color:#0E4A55;--qi-a:#C79E3F;background:linear-gradient(145deg,#DFF3F5,#BDE3E8)}
+.ti[data-tone="rose"]{color:#7A2E22;--qi-a:#C79E3F;background:linear-gradient(145deg,#FCEBE5,#F4CFC3)}
+.ti[data-tone="plum"]{color:#4B2A5E;--qi-a:#C79E3F;background:linear-gradient(145deg,#F3E9F6,#DFCBE8)}
+[data-theme="dark"] .top-link-btn .ti{background:linear-gradient(145deg,rgba(120,200,160,.20),rgba(120,200,160,.08));color:#BFE8D2;--qi-a:#E3C36E;box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 3px 8px rgba(0,0,0,.35)}
+[data-theme="dark"] .ti[data-tone="gold"]{background:linear-gradient(145deg,rgba(227,195,110,.24),rgba(227,195,110,.08));color:#F0DCA0;--qi-a:#F0A86B}
+[data-theme="dark"] .ti[data-tone="blue"]{background:linear-gradient(145deg,rgba(120,160,230,.24),rgba(120,160,230,.08));color:#BCD3F5}
+[data-theme="dark"] .ti[data-tone="teal"]{background:linear-gradient(145deg,rgba(90,200,210,.22),rgba(90,200,210,.08));color:#AEE4EA}
+[data-theme="dark"] .ti[data-tone="rose"]{background:linear-gradient(145deg,rgba(240,140,120,.22),rgba(240,140,120,.08));color:#F6C2B6}
+[data-theme="dark"] .ti[data-tone="plum"]{background:linear-gradient(145deg,rgba(200,150,230,.22),rgba(200,150,230,.08));color:#E2C6F0}
+.quick{gap:12px}
+.quick .top-link-btn{min-height:108px;gap:8px;padding:13px 4px 10px;font-size:13px;letter-spacing:.1px}
+.hero-ic{color:#0F4C3A;font-size:32px;--qi-a:#C79E3F}
+.dash .ayat-card .dg-icon{font-size:30px;color:#8A6A1E;--qi-a:#C79E3F}
+.mini-tile .mt-ic{font-size:22px;color:#8A6A1E;--qi-a:#C79E3F}
+[data-theme="dark"] .hero-ic,[data-theme="dark"] .dash .ayat-card .dg-icon,[data-theme="dark"] .mini-tile .mt-ic{color:#E3C36E;--qi-a:#F0DCA0}
+.user-chip .qi{vertical-align:-.2em}
+.user-chip{max-width:48vw;overflow:hidden;text-overflow:ellipsis}
+
+/* neeche ki bar: bade icons, ek seedh mein, chuna hua tab pill mein */
+body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+.bottom-nav{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:start;gap:0;
+  padding:8px 6px calc(8px + env(safe-area-inset-bottom));background:var(--card-bg);border-top:1px solid var(--border);
+  border-radius:22px 22px 0 0;box-shadow:0 -8px 28px rgba(10,46,36,.12);left:0;right:0;width:100%;max-width:none}
+.bottom-nav a,.bottom-nav button{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:3px;
+  padding:0 1px;min-width:0;background:none;border:0;color:var(--text-light);font:inherit;font-size:11.5px;font-weight:700;
+  line-height:1.2;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.bottom-nav .bn-ic{--qi-a:#C79E3F;width:60px;height:38px;border-radius:19px;display:flex;align-items:center;justify-content:center;
+  font-size:31px;color:var(--text);transition:background .2s,transform .15s,color .2s}
+.bottom-nav .bn-lb{display:block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center}
+.bottom-nav a:active .bn-ic,.bottom-nav button:active .bn-ic{transform:scale(.88)}
+.bottom-nav .on{color:var(--primary)}
+.bottom-nav .on .bn-ic{background:linear-gradient(145deg,rgba(15,76,58,.14),rgba(199,158,63,.26));color:var(--primary);box-shadow:inset 0 0 0 1px rgba(184,146,58,.35)}
+[data-theme="dark"] .bottom-nav{box-shadow:0 -8px 28px rgba(0,0,0,.5)}
+[data-theme="dark"] .bottom-nav .on,[data-theme="dark"] .bottom-nav .on .bn-ic{color:#E3C36E}
+[data-theme="dark"] .bottom-nav .on .bn-ic{background:linear-gradient(145deg,rgba(227,195,110,.22),rgba(227,195,110,.08));box-shadow:inset 0 0 0 1px rgba(227,195,110,.35)}
+.toast{bottom:calc(104px + env(safe-area-inset-bottom))}
+@media (max-width:360px){.bottom-nav .bn-ic{width:48px;height:36px;font-size:28px}.bottom-nav a,.bottom-nav button{font-size:10.5px}.top-link-btn .ti{width:50px;height:50px;font-size:33px}.quick .top-link-btn{min-height:96px}}
+</style>
 </head>
 <body>
 
@@ -304,7 +367,7 @@
             <div class="header-top">
                 <div class="brand"><img class="brand-logo" src="icon-192.png" alt=""><h1 class="brand-name"><span class="bn-a">Fahm-ul-</span><span class="bn-b">Quran</span></h1></div>
                 <div class="user-menu">
-                    <button class="icon-btn user-chip" onclick="toggleUserMenu(event)">👤 <span id="userChipName">ID</span><span id="userChipStk" class="stk-row"></span> ▾</button>
+                    <button class="icon-btn user-chip" onclick="toggleUserMenu(event)"><i class="qi" data-qi="user" style="font-size:19px;margin-inline-end:6px"></i><span id="userChipName">ID</span><span id="userChipStk" class="stk-row"></span> ▾</button>
                     <div class="user-drop hidden" id="userDrop">
                         <div class="user-drop-info">Profile: <b id="userDropProfile">-</b><br><small>Role: <span id="userDropRole">-</span></small><div id="userDropStk" class="stk-big-row"></div></div>
                         <button class="ud-shop" onclick="window.NS&&NS.open()">🕌 Namaz ka Hisaab</button>
@@ -330,7 +393,7 @@
         <main class="dash">
             <section class="hero" aria-label="Aaj ka maqsad">
                 <div class="hero-row">
-                    <div class="hero-ic">🎯</div>
+                    <div class="hero-ic"><i class="qi" data-qi="goal"></i></div>
                     <div class="hero-main">
                         <div class="hero-title">Aaj ka Maqsad <span id="dailyGoalPercent">0%</span></div>
                         <div class="hero-sub" id="dailyGoalText">Aaj 10 lafz padhein</div>
@@ -340,19 +403,19 @@
             </section>
 
             <nav class="quick" aria-label="Seekhein aur khelein">
-                <a href="quran.html" class="top-link-btn"><span class="ti">📖</span>Quran</a>
-                <a href="#courseGrid" class="top-link-btn" onclick="event.preventDefault();var g=document.getElementById('courseGrid');if(g)g.scrollIntoView({behavior:'smooth',block:'start'});"><span class="ti">📚</span>Sabaq</a>
-                <a href="games.html" class="top-link-btn"><span class="ti">🎮</span>Games</a>
-                <a href="tajweed.html" class="top-link-btn"><span class="ti">🎓</span>Tajweed</a>
-                <a href="dua.html" class="top-link-btn"><span class="ti">🤲</span>Duaein</a>
-                <a href="asma.html" class="top-link-btn"><span class="ti">✨</span>99 Naam</a>
-                <a href="arabic-grammar.html" id="adminGrammarLink" class="top-link-btn" style="display:none"><span class="ti">📘</span>Nahw-Sarf</a>
-                <a href="#" id="adminSeeratLink" class="top-link-btn" onclick="openSeerat();return false;" style="display:none"><span class="ti">📜</span>Seerat</a>
-                <a href="arkan.html" id="adminArkanLink" class="top-link-btn" style="display:none"><span class="ti">🕌</span>Arkan-e-Islam</a>
+                <a href="quran.html" class="top-link-btn"><span class="ti" data-tone="emerald"><i class="qi" data-qi="quran"></i></span>Quran</a>
+                <a href="#courseGrid" class="top-link-btn" onclick="event.preventDefault();var g=document.getElementById('courseGrid');if(g)g.scrollIntoView({behavior:'smooth',block:'start'});"><span class="ti" data-tone="gold"><i class="qi" data-qi="sabaq"></i></span>Sabaq</a>
+                <a href="games.html" class="top-link-btn"><span class="ti" data-tone="blue"><i class="qi" data-qi="games"></i></span>Games</a>
+                <a href="tajweed.html" class="top-link-btn"><span class="ti" data-tone="teal"><i class="qi" data-qi="tajweed"></i></span>Tajweed</a>
+                <a href="dua.html" class="top-link-btn"><span class="ti" data-tone="rose"><i class="qi" data-qi="dua"></i></span>Duaein</a>
+                <a href="asma.html" class="top-link-btn"><span class="ti" data-tone="plum"><i class="qi" data-qi="asma"></i></span>99 Naam</a>
+                <a href="arabic-grammar.html" id="grammarLink" class="top-link-btn"><span class="ti" data-tone="blue"><i class="qi" data-qi="grammar"></i></span>Nahw-Sarf</a>
+                <a href="#" id="seeratLink" class="top-link-btn" onclick="openSeerat();return false;"><span class="ti" data-tone="gold"><i class="qi" data-qi="seerat"></i></span>Seerat</a>
+                <a href="arkan.html" id="arkanLink" class="top-link-btn"><span class="ti" data-tone="emerald"><i class="qi" data-qi="arkan"></i></span>Arkan‑e‑<wbr>Islam</a>
             </nav>
 
             <div class="ayat-card" onclick="showDailyAyat()" role="button" tabindex="0">
-                <div class="dg-icon">✨</div>
+                <div class="dg-icon"><i class="qi" data-qi="spark"></i></div>
                 <div class="dg-content">
                     <div class="dg-title">Aaj ki Ayat + Sunnat</div>
                     <div class="ayat-sub">Ek ayat, ek pyaari sunnat — doston ko bhejein</div>
@@ -363,7 +426,7 @@
             <div class="mini-row">
                 <div id="namazCard"></div>
                 <div class="mini-tile" id="remindCard" title="Phone ke Calendar mein roz ka alarm lag jayega">
-                    <div class="mt-top"><span class="mt-ic">🔔</span><b>Roz ki yaad</b></div>
+                    <div class="mt-top"><span class="mt-ic"><i class="qi" data-qi="bell"></i></span><b>Roz ki yaad</b></div>
                     <div class="mt-row">
                         <input type="time" id="remindTime" value="20:00" aria-label="Roz ki yaad ka waqt" onchange="localStorage.setItem('remindTime', this.value)">
                         <button type="button" class="mt-go" onclick="setReminder()">Lagayein</button>
@@ -385,14 +448,15 @@
             </div>
         </main>
 
-        <div class="bottom-nav">
-            <a href="quran.html">📖<br>Quran</a>
-            <button onclick="scrollToTop()">📚<br>Sabaq</button>
-            <a href="games.html">🎮<br>Games</a>
-            <a href="tajweed.html">🎓<br>Tajweed</a>
-            <a href="dua.html">🤲<br>Duaein</a>
-            <button onclick="openShop()">🛒<br>Shop</button>
-        </div>
+        <nav class="bottom-nav" aria-label="Main menu">
+            <a href="quran.html"><span class="bn-ic"><i class="qi" data-qi="quran"></i></span><span class="bn-lb">Quran</span></a>
+            <button type="button" onclick="scrollToTop()" class="on" aria-current="page"><span class="bn-ic"><i class="qi" data-qi="sabaq"></i></span><span class="bn-lb">Sabaq</span></button>
+            <a href="games.html"><span class="bn-ic"><i class="qi" data-qi="games"></i></span><span class="bn-lb">Games</span></a>
+            <a href="tajweed.html"><span class="bn-ic"><i class="qi" data-qi="tajweed"></i></span><span class="bn-lb">Tajweed</span></a>
+            <a href="dua.html"><span class="bn-ic"><i class="qi" data-qi="dua"></i></span><span class="bn-lb">Duaein</span></a>
+            <button type="button" onclick="openShop()"><span class="bn-ic"><i class="qi" data-qi="shop"></i></span><span class="bn-lb">Shop</span></button>
+        </nav>
+        <script src="icons.js"></script>
     </div>
 
     <!-- Ayat Modal -->
@@ -777,16 +841,13 @@
             const isAdm = userRole === 'admin';
             document.getElementById('udExamPanel').style.display = isAdm ? '' : 'none';
             document.getElementById('udDelProfile').style.display = isAdm ? 'none' : '';
-            { const gl = document.getElementById('adminGrammarLink'); if (gl) gl.style.display = isAdm ? '' : 'none'; }   // Nahw-Sarf: filhaal sirf admin
-            { const sl = document.getElementById('adminSeeratLink'); if (sl) sl.style.display = isAdm ? '' : 'none'; }   // Seerat: Nahw-Sarf ki tarah filhaal sirf admin
-            { const al = document.getElementById('adminArkanLink'); if (al) al.style.display = isAdm ? '' : 'none'; }   // Arkan-e-Islam: filhaal sirf admin
             renderProfileStickers();
             updateXPUI(); renderCourse(); updateStreak(); checkDailyGoal();
         }
 
-        // Seerat course: seerat.js sirf Admin ke tap karne par load hota hai (baaqi users ke liye kuch download nahi)
+        // Seerat course: seerat.js sirf tap karne par load hota hai (jo nahi kholta uske liye kuch download nahi)
         function openSeerat() {
-            if (userRole !== 'admin') return;
+            if (userRole !== 'admin' && userRole !== 'guest') return;
             const ud = document.getElementById('userDrop'); if (ud) ud.classList.add('hidden');
             if (window.FQSeerat) { FQSeerat.open(); return; }
             window.__srtOpenWhenReady = true;

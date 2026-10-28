@@ -56,6 +56,7 @@
         .hawala { margin-top: 12px; font-size: 13px; opacity: .85; padding: 8px 10px; border-top: 1px dashed rgba(128,128,128,.4); direction: ltr; }
     </style>
     <link rel="stylesheet" href="theme.css">
+<style>.qi.qi-h{font-size:1.15em;color:#fff;--qi-a:#E3C36E;margin-inline-end:.3em;vertical-align:-.2em}.qi.qi-hb{font-size:26px;color:#fff;--qi-a:#E3C36E}</style>
 </head>
 <body>
 <!-- ⚠️ Deeni disclaimer: tajweed / dua / asma / games / bazm -->
@@ -72,13 +73,13 @@
 <script>(function(){try{if(sessionStorage.getItem('deeniNoticeHide')==='1')document.getElementById('deeniNotice').style.display='none';}catch(e){}})();</script>
     <header>
         <div class="header-top">
-            <h1>📖 Tajweed ke Qawaid</h1>
+            <h1><i class="qi qi-h" data-qi="tajweed"></i>Tajweed ke Qawaid</h1>
             <div class="header-controls">
                 <button class="size-btn" data-qs-lang onclick="QSLang.cycle()" title="Matlab ki zubaan" style="min-width:52px">اردو</button>
                 <button class="size-btn" onclick="changeScale(-0.1)">A-</button>
                 <button class="size-btn" onclick="changeScale(0.1)">A+</button>
                 <button class="icon-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
-                <a href="index.html" style="color:white; text-decoration:none; font-size:20px;">🏠</a>
+                <a href="index.html" style="color:white; text-decoration:none; font-size:20px;"><i class="qi qi-hb" data-qi="home" style="display:flex"></i></a>
             </div>
         </div>
     </header>
@@ -199,5 +200,6 @@
         QSLang.onChange(filterCards);
         renderCards();
     </script>
+<script src="icons.js"></script>
 </body>
 </html>

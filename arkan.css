@@ -149,3 +149,64 @@ body[data-theme="dark"] .snav button.nx{color:#fff}
 .done{border-radius:16px;padding:8px 12px}
 .pcard{border-radius:20px;box-shadow:0 6px 18px rgba(15,76,58,.10)}
 .pcard .pe{background:linear-gradient(145deg,var(--hdr-a,#14614A),var(--hdr-b,#0F4C3A));font-size:26px;box-shadow:0 3px 10px rgba(15,76,58,.3)}
+
+/* ===== v70: Roman / हिंदी / English — LTR layout (Urdu RTL hi rehta hai) ===== */
+html[data-mlang="ro"] body,html[data-mlang="en"] body,html[data-mlang="hi"] body{direction:ltr;font-family:'Figtree','Amiri',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.75;font-size:16px}
+html[data-mlang="hi"] body{font-family:'Noto Sans Devanagari','Figtree','Amiri',system-ui,sans-serif;line-height:1.85}
+html[data-mlang="ro"] .sec p,html[data-mlang="en"] .sec p,html[data-mlang="hi"] .sec p{text-align:left}
+html[data-mlang="ro"] .hero h2,html[data-mlang="en"] .hero h2,html[data-mlang="hi"] .hero h2,
+html[data-mlang="ro"] header h1,html[data-mlang="en"] header h1,html[data-mlang="hi"] header h1{font-family:'Figtree','Amiri','Noto Sans Devanagari',sans-serif;line-height:1.35}
+html[data-mlang="hi"] .hero h2,html[data-mlang="hi"] header h1{font-family:'Noto Sans Devanagari','Amiri',sans-serif}
+html[data-mlang="ro"] .hero .sub,html[data-mlang="en"] .hero .sub,html[data-mlang="hi"] .hero .sub{line-height:1.6}
+html[data-mlang="ro"] .tr,html[data-mlang="en"] .tr,html[data-mlang="hi"] .tr{line-height:1.7}
+/* chhoti patti, bullets, border — sab seedhi taraf se */
+html[data-mlang="ro"] .lst li,html[data-mlang="en"] .lst li,html[data-mlang="hi"] .lst li,
+html[data-mlang="ro"] .nl li,html[data-mlang="en"] .nl li,html[data-mlang="hi"] .nl li{padding:3px 0 3px 36px;line-height:1.7}
+html[data-mlang="ro"] .lst li::before,html[data-mlang="en"] .lst li::before,html[data-mlang="hi"] .lst li::before{right:auto;left:4px}
+html[data-mlang="ro"] .nl li::before,html[data-mlang="en"] .nl li::before,html[data-mlang="hi"] .nl li::before{right:auto;left:0}
+html[data-mlang="ro"] .hd,html[data-mlang="en"] .hd,html[data-mlang="hi"] .hd{border-right:none;border-left:4px solid var(--gold,#B8923A)}
+html[data-mlang="ro"] td:first-child,html[data-mlang="en"] td:first-child,html[data-mlang="hi"] td:first-child{text-align:left}
+html[data-mlang="ro"] .ref,html[data-mlang="en"] .ref,html[data-mlang="hi"] .ref,
+html[data-mlang="ro"] .prog .row,html[data-mlang="en"] .prog .row,html[data-mlang="hi"] .prog .row{direction:ltr}
+html[data-mlang="ro"] .ar,html[data-mlang="en"] .ar,html[data-mlang="hi"] .ar,
+html[data-mlang="ro"] .hq,html[data-mlang="en"] .hq,html[data-mlang="hi"] .hq{direction:rtl}
+html[data-mlang="ro"] .zc input,html[data-mlang="en"] .zc input,html[data-mlang="hi"] .zc input{text-align:left}
+html[data-mlang="ro"] .zc select,html[data-mlang="en"] .zc select,html[data-mlang="hi"] .zc select{direction:ltr;font-family:inherit}
+html[data-mlang="ro"] .sec h2,html[data-mlang="en"] .sec h2,html[data-mlang="hi"] .sec h2{background:linear-gradient(260deg,var(--ak-gold-soft),transparent 85%)}
+/* wapas ka teer aur ‹ nishan ulta */
+html[data-mlang="ro"] .pcard .go,html[data-mlang="en"] .pcard .go,html[data-mlang="hi"] .pcard .go{display:inline-flex;transform:scaleX(-1)}
+html[data-mlang="ro"] .snav button,html[data-mlang="en"] .snav button,html[data-mlang="hi"] .snav button{text-align:left;align-items:flex-start}
+html[data-mlang="ro"] .snav button.nx,html[data-mlang="en"] .snav button.nx,html[data-mlang="hi"] .snav button.nx{text-align:right;align-items:flex-end}
+html[data-mlang="ro"] .snav button span,html[data-mlang="en"] .snav button span,html[data-mlang="hi"] .snav button span{direction:ltr}
+html[data-mlang="ro"] .chips a,html[data-mlang="en"] .chips a,html[data-mlang="hi"] .chips a{line-height:1.9}
+html[data-mlang="ro"] .pcard .pt,html[data-mlang="en"] .pcard .pt,html[data-mlang="hi"] .pcard .pt{line-height:1.5}
+html[data-mlang="ro"] .pcard .ps,html[data-mlang="en"] .pcard .ps,html[data-mlang="hi"] .pcard .ps{line-height:1.5}
+html[data-mlang="ro"] .pn a,html[data-mlang="en"] .pn a,html[data-mlang="hi"] .pn a{direction:ltr}
+
+/* header: bhasha ka button chhota, taake theme button se na takraye; LTR mein wapas ka teer ← */
+header .lang-btn{font-size:12px!important;padding:0 9px!important;min-width:0!important;width:auto!important;height:32px;border-radius:16px!important;white-space:nowrap;background:rgba(255,255,255,.16)!important;font-family:'Figtree','Noto Sans Devanagari','Noto Nastaliq Urdu',sans-serif!important;line-height:32px}
+header .header-controls{display:flex;align-items:center;gap:6px;flex:0 0 auto}
+header h1{min-width:0}
+html[data-mlang="ro"] header .header-top>a.icon-btn:first-child,html[data-mlang="en"] header .header-top>a.icon-btn:first-child,html[data-mlang="hi"] header .header-top>a.icon-btn:first-child{font-size:0}
+html[data-mlang="ro"] header .header-top>a.icon-btn:first-child::before,html[data-mlang="en"] header .header-top>a.icon-btn:first-child::before,html[data-mlang="hi"] header .header-top>a.icon-btn:first-child::before{content:"\2190";font-size:20px;line-height:1}
+.sal{font-family:"Amiri","Noto Naskh Arabic","Traditional Arabic",serif;line-height:1}
+
+/* ===== v70: kat-te alfaz / icons ki design-fix ===== */
+/* pichla/agla: lamba naam ab kat-ta nahi, wrap hota hai */
+.snav{align-items:stretch}
+.snav button{min-height:66px;justify-content:center;padding:8px 12px 10px}
+.snav button span{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.8;display:block;max-width:100%;text-wrap:balance}
+/* chips ki patti: kinaron par halka fade (scroll ka ishara), snap, aur alfaz kabhi nahi tootte */
+.chips{scroll-snap-type:x proximity;scroll-padding:0 24px;-webkit-overflow-scrolling:touch;
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 20px,#000 calc(100% - 20px),transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0,#000 20px,#000 calc(100% - 20px),transparent 100%)}
+.chips a{scroll-snap-align:center;white-space:nowrap}
+.chips::after,.chips::before{content:"";flex:0 0 6px}
+/* icon aur matn ke darmiyan jagah, taake emoji alfaz se chipak kar kat-ta na lage */
+.sec h2 .ic{margin-inline-end:8px}
+.hero h2,.sec h2,.pcard h3{text-wrap:balance}
+.hero .sub{text-wrap:balance}
+@media (max-width:360px){
+  .snav{flex-direction:column}
+  .snav button{width:100%}
+}

@@ -10,7 +10,7 @@ Ek simple, mobile-friendly web app (PWA) jisse Quran ke alfaz, namaz ki duaen au
 - Har din 10 alfaz (kul 900) — Arabic + Roman + meaning, **Mashq** aur tafseel
 - Meaning 4 zubaanon mein: **اردو / Roman / हिंदी / English** (ek button, index + dua + tajweed + asma sab par ek saath)
 - Arabic lafz aur **Mashq par tap karke Qari ki awaaz** suniye 🔊
-- 📖 **Har lafz ke saath Quran ki ayat** (abhi Day 1–50: lafz 1–500, poore): ayat mein wo lafz **alag rang** mein, **surah aur ayat ka hawala**, aur ayat par tap karke **Qari Mishary Alafasy** ki awaaz. Har ayat ke neeche **⬇️ Download** (app mein save, net ke bina bhi sunein), **📥 MP3 file** (phone mein file utaarein) aur **🗑 Hatao**; din ke upar **Is din ki sab ayaat / Sab ayaat** ek saath download. Ayat ka text Maktaba Shamila se.
+- 📖 **Har lafz ke saath Quran ki ayat** (Day 1–90: **sabhi 900 lafz** par ayat): ayat mein wo lafz **alag rang** mein, **surah aur ayat ka hawala**, aur ayat par tap karke **Qari Mishary Alafasy** ki awaaz. Har ayat ke neeche **⬇️ Download** (app mein save, net ke bina bhi sunein), **📥 MP3 file** (phone mein file utaarein) aur **🗑 Hatao**; din ke upar **Is din ki sab ayaat / Sab ayaat** ek saath download. Ayat ka text Maktaba Shamila se.
 - 📝 **Daily Exam** — roz 10 sawal, 8 sahi hon to agla din unlock
 - 🗺️ **92 padav ka safar**: 90 din + beech mein 🥈 Silver (Day 50 ke baad) + aakhir mein 🥇 Gold
 - 🥈 **Silver Exam (500 lafz)** — Day 50 poora hote hi **50 mushkil sawal**. **80% (40/50)** laayen to Silver Completion Certificate milta hai. **Jab tak pass nahi, Day 51 se aage sab band (🔒).**
@@ -28,18 +28,29 @@ Ek simple, mobile-friendly web app (PWA) jisse Quran ke alfaz, namaz ki duaen au
 - 🧠 **Kamzor lafz revision** (galat hue lafz dobara) • 🔔 **Roz ki yaad** (.ics) • 🔖 **Ref. No.** (certificate par)
 - 🏠 **Dashboard**: Maqsad → shortcuts → Aaj ki Ayat → Namaz/Yaad → Safar → Aaj ke lafz
 
-### 📜 Seerat-e-Nabawi ﷺ — 30 din (`seerat.js`) — abhi sirf Admin
-- Admin menu (👤 ▾) mein **📜 Seerat — 30 din (Admin)**. Har din: maqsad, tafseel (khulne wale hisse), ahem nukte, timeline, ghaur-o-fikr, 3 sawal ka chhota imtihan, aur "din mukammal" ka nishan (profile ke saath save).
-- `seerat.js` sirf tab load hoti hai jab Admin button dabaye, isliye baaqi users ke liye app mein koi nayi cheez nazar nahi aati aur koi bojh nahi.
-- Text badalna ho to `seerat.js` ke `SEERAT_COURSE` mein badlein. Sab ke liye kholna ho to `isAdmin()` ki line (seerat.js) aur `openSeerat()` ka admin-check (index.html) hata dein.
+### 📜 Seerat-e-Nabawi ﷺ — 30 din (`seerat.js`) — ab sab ke liye khula
+- Home ke quick links mein **📜 Seerat** (login ke baad sab ko). Har din: maqsad, tafseel (khulne wale hisse), ahem nukte, timeline, ghaur-o-fikr, 3 sawal ka chhota imtihan, aur "din mukammal" ka nishan (profile ke saath save).
+- `seerat.js` sirf tab load hoti hai jab Seerat button dabaya jaye, isliye jo na kholey uske liye koi bojh nahi.
+- Text badalna ho to `seerat.js` ke `SEERAT_COURSE` mein badlein. (Seerat 4 zubaan: app ki zubaan follow karta hai.)
 
-### 🕌 Arkan-e-Islam (`arkan.html` + `arkan-kalima.html`, `arkan-namaz.html`, `arkan-zakat.html`, `arkan-roza.html`, `arkan-hajj.html` — sab root par, koi folder nahi) — abhi sirf Admin
-- Home ke quick links mein **Nahw-Sarf / Seerat** ke baazu mein **🕌 Arkan-e-Islam** (sirf Admin ko). Andar 5 pages: **Kalima, Namaz, Zakat, Roza, Hajj-Umrah** (`arkan.html` hub).
+### 🕌 Arkan-e-Islam (`arkan.html` + `arkan-kalima.html`, `arkan-namaz.html`, `arkan-zakat.html`, `arkan-roza.html`, `arkan-hajj.html` — sab root par, koi folder nahi) — ab sab ke liye khula
+- Home ke quick links mein **Nahw-Sarf / Seerat** ke baazu mein **🕌 Arkan-e-Islam** (sab ko). Andar 5 pages: **Kalima, Namaz, Zakat, Roza, Hajj-Umrah** (`arkan.html` hub).
 - Har page: hawale (Quran/Hadith), Hanafi vs Jumhur ka farq, har hisse par ✅ "padh liya" nishan (device par save), chips se seedha hisse par jump, theme (dark/skin) saath.
 - Zakat page par calculator (rate khud likhna hota hai — koi purana rate nahi).
-- Har page ke `<head>` mein admin-check hai (`userRole === 'admin'`), warna `index.html`. Sab ke liye kholna ho to wo chhota script har page se aur `adminArkanLink` ki line (index.html `initApp`) hata dein.
+- Har page ke `<head>` mein sirf login-check hai (`isLoggedIn`), warna `index.html` (login screen).
+- **4 zubaanen (v70):** Arkan ke saare pages ek hi language button se **اردو / Roman / हिंदी / English** mein (matn, hawale, tables, calculator, buttons — sab). Arabi (ayat/hadees/dua) hamesha wahi rehti hai. Translations `arkan-lang.js` mein (har matn `data-i` se juda); naya matn jodte waqt uska tarjuma wahin jodein.
 - **Tabs (v69):** har page mein hisse dua ki tarah tabs hain — ek waqt mein ek hissa dikhta hai (lambi scroll nahi), neeche pichla/agla button. `arkan.js` mein tab logic, `arkan.css` ke aakhir mein design.
 - Styling `arkan.css`, "padh liya" logic `arkan.js`; baaki pages `theme.css` aur `app.js` (FQTheme) istemal karte hain.
+
+### 📘 Nahw-Sarf (`arabic-grammar.html` + `grammar-course.js`) — ab sab ke liye khula
+- 30 din (15 Sarf + 15 Nahw), **4 zubaanein**: اردو / Roman / हिंदी / English — header ka zubaan button (baaqi pages jaisa `QSLang`).
+- Course ka sara text `grammar-course.js` mein (`GRAMMAR_COURSE`); Arabic alfaz `{{ ... }}` mein, page unhein har zubaan mein ek jaise Arabic font mein dikhata hai.
+- Quiz: options har baar shuffle, galat jawab par sahi jawab bhi dikhta hai, zubaan badalne par jawab/natija bana rehta hai. Gardaan table mein ghaib/hazir/mutakallim ke rang.
+
+### 🎨 Icon set (`icons.js`) — v71
+- Emoji ki jagah apne SVG icons (hara line + sunehri accent): Quran, Sabaq, Games, Tajweed, Duaein, 99 Naam, Nahw-Sarf, Seerat, Arkan, Shop, Maqsad, Ayat, Yaad, Profile, Home.
+- Istemaal: `<i class="qi" data-qi="quran"></i>` (size `font-size` se, rang `color` se, accent `--qi-a` se). Naya icon: `icons.js` ke `ICONS` mein ek entry.
+- Home ke 9 tiles (3x3, alag-alag rang ke tile, dark mode ke saath) aur neeche ki bar (bade icons, chuna hua tab pill mein) isi se.
 
 ### 🌙 Arabi (Hijri) tareekh (`tools.js` ke andar)
 - Header mein ek chhoti line; tap karne par poori tafseel. Location (Namaz ke liye di hui) ya timezone se ilaqa pehchanta hai: Saudi/Arab = Umm al-Qura, Bharat/Pakistan/Bangladesh = aam taur par 1 din peechhe.

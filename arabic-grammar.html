@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>نحو و صرف — 30 دن کا سفر</title>
+  <title>Nahw wa Sarf — 30 Day Journey</title>
   <script>
-    // 🔒 Filhaal sirf Admin ke liye — baaki sab seedha home par wapas
+    // 🔒 Login zaroori — login nahi to seedha home (login screen) par
     (function () {
       var ok = false;
-      try { ok = localStorage.getItem('userRole') === 'admin' && localStorage.getItem('isLoggedIn') === 'true'; } catch (e) {}
+      try { ok = localStorage.getItem('isLoggedIn') === 'true'; } catch (e) {}
       if (!ok) { location.replace('index.html'); }
     })();
   </script>
@@ -19,840 +19,445 @@
   <script src="app.js"></script>
   <script src="sounds.js"></script>
   <script src="tools.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="grammar-course.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Devanagari:wght@400;500;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="theme.css">
   <style>
-    :root { --primary: #0F4C3A; --gold: #B8923A; --bg: #EDF0E7; --card: #FFFDF6; --text: #1F2A25; --border: #D9D6C3; --soft: #F4F1E3; --light: #55645C; --sarf: #0F4C3A; --nahw: #1e40af; }
+    :root { --primary: #0F4C3A; --gold: #B8923A; --bg: #EDF0E7; --card: #FFFDF6; --text: #1F2A25; --border: #D9D6C3; --soft: #F4F1E3; --light: #55645C; --sarf: #0F4C3A; --nahw: #1e40af; --ghaib: #2e9d62; --hazir: #B8923A; --mutakallim: #7c3aed; }
+    body[data-skin] { --soft: var(--soft-bg, #F4F1E3); }
     * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-    body { font-family: 'Figtree', system-ui, sans-serif; background: var(--bg); color: var(--text); padding-bottom: 30px; line-height: 1.6; }
-    header { position: sticky; top: 0; z-index: 100; background: linear-gradient(180deg, #14614A, var(--primary)); color: #fff; padding: 14px 16px; padding-top: calc(14px + env(safe-area-inset-top)); border-bottom: 3px solid var(--gold); }
-    .header-top { display: flex; justify-content: space-between; align-items: center; max-width: 900px; margin: 0 auto; gap: 10px; }
-    .header-top h1 { font-family: 'Amiri', serif; font-size: 20px; font-weight: 700; flex: 1; text-align: center; }
-    .icon-btn { background: rgba(255,255,255,.14); border: none; color: white; width: 38px; height: 38px; border-radius: 50%; font-size: 18px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+    body { font-family: 'Figtree', system-ui, sans-serif; background: var(--bg); color: var(--text); padding-bottom: 40px; line-height: 1.6; }
+    button { font-family: inherit; }
+
+    /* ---- Zubaan ke hisaab se font/direction (sirf content, header nahi) ---- */
+    html[data-mlang="u"] main { direction: rtl; text-align: right; font-family: 'Noto Nastaliq Urdu', 'Amiri', serif; }
+    html[data-mlang="hi"] main, html[data-mlang="hi"] .opt-btn, html[data-mlang="hi"] .back-btn, html[data-mlang="hi"] .next-day-btn, html[data-mlang="hi"] .submit-exam { font-family: 'Noto Sans Devanagari', 'Figtree', system-ui, sans-serif; }
+    html[data-mlang="ro"] main, html[data-mlang="en"] main, html[data-mlang="hi"] main { direction: ltr; text-align: left; }
+    html[data-mlang="u"] .opt-btn, html[data-mlang="u"] .back-btn, html[data-mlang="u"] .next-day-btn, html[data-mlang="u"] .submit-exam { font-family: 'Noto Nastaliq Urdu', 'Amiri', serif; }
+
+    /* ---- Arabic alfaz (har zubaan mein ek jaisa) ---- */
+    .ar { font-family: 'Amiri', serif; font-size: 1.32em; line-height: 1; font-weight: 400; color: var(--arabic, var(--primary)); direction: rtl; unicode-bidi: isolate; display: inline; padding: 0 .08em; }
+    .exam-box .ar, .day-header .ar, .gardaan-table th .ar { color: inherit; }
+
+    header { position: sticky; top: 0; z-index: 100; background: linear-gradient(180deg, #14614A, var(--primary)); color: #fff; padding: 12px 16px; padding-top: calc(12px + env(safe-area-inset-top)); border-bottom: 3px solid var(--gold); }
+    .header-top { display: flex; justify-content: space-between; align-items: center; max-width: 900px; margin: 0 auto; gap: 10px; direction: ltr; }
+    .header-top h1 { font-family: 'Amiri', serif; font-size: 20px; font-weight: 700; flex: 1; text-align: center; line-height: 1.3; }
+    .icon-btn { background: rgba(255,255,255,.14); border: none; color: white; width: 38px; height: 38px; border-radius: 50%; font-size: 18px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; flex: none; }
+    .icon-btn.lang-btn { width: auto; min-width: 62px; padding: 0 12px; border-radius: 19px; font-size: 13px; font-weight: 700; border: 1px solid rgba(217,182,90,.55); }
+    .icon-btn:focus-visible, .back-btn:focus-visible, .opt-btn:focus-visible, .day-card:focus-visible, .next-day-btn:focus-visible, .submit-exam:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
     main { max-width: 900px; margin: 0 auto; padding: 16px; }
     .admin-note { background: #FFF3CD; border: 1px solid #F4C25A; color: #6B5426; border-radius: 12px; padding: 8px 12px; font-size: 12.5px; margin-bottom: 12px; text-align: center; }
-    .days-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 10px; }
-    .day-card { background: var(--card); border-radius: 20px; padding: 20px; border: 1px solid var(--border); border-top: 5px solid var(--gold); box-shadow: 0 8px 24px rgba(10,46,36,.08); cursor: pointer; position: relative; overflow: hidden; transition: transform .2s; }
-    .day-card:active { transform: scale(.98); }
-    .day-card.completed { border-top-color: #2e9d62; }
-    .day-card.sarf { border-top-color: var(--sarf); }
-    .day-card.nahw { border-top-color: var(--nahw); }
-    .day-emoji { font-size: 38px; line-height: 1; margin-bottom: 8px; }
-    .day-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--gold); margin-bottom: 4px; }
-    .day-title { font-size: 17px; font-weight: 700; color: var(--primary); margin-bottom: 6px; line-height: 1.4; }
-    .day-roman { font-size: 12.5px; color: var(--light); margin-bottom: 8px; font-style: italic; }
-    .day-meta { display: flex; gap: 8px; font-size: 11.5px; color: var(--light); flex-wrap: wrap; }
-    .day-meta span { background: var(--soft); padding: 3px 9px; border-radius: 10px; }
-    .day-badge { position: absolute; top: 18px; right: 18px; background: #2e9d62; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; }
-    .day-xp { position: absolute; bottom: 18px; right: 18px; font-size: 12px; font-weight: 700; color: var(--gold); background: rgba(184,146,58,.12); padding: 4px 10px; border-radius: 20px; }
-    .progress-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 14px 16px; margin-bottom: 16px; }
-    .progress-row { display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+
+    .progress-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 14px 16px; margin-bottom: 8px; }
+    .progress-row { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; font-weight: 700; margin-bottom: 8px; }
     .progress-row small { color: var(--light); font-weight: 500; }
     .progress-bar { height: 10px; background: var(--border); border-radius: 10px; overflow: hidden; }
     .progress-fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--primary), #4ade80); border-radius: 10px; transition: width .6s; }
+
+    .group-title { display: flex; align-items: center; gap: 10px; margin: 22px 2px 10px; font-size: 14px; font-weight: 700; color: var(--primary); }
+    .group-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--border), transparent); }
+    html[data-mlang="u"] .group-title::after { background: linear-gradient(270deg, var(--border), transparent); }
+    .group-title i { width: 12px; height: 12px; border-radius: 50%; background: var(--sarf); flex: none; }
+    .group-title.nahw i { background: var(--nahw); }
+    .group-title.nahw { color: var(--nahw); }
+
+    .days-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+    .day-card { background: var(--card); border-radius: 18px; padding: 16px; border: 1px solid var(--border); border-top: 5px solid var(--gold); box-shadow: 0 6px 18px rgba(10,46,36,.07); cursor: pointer; position: relative; display: flex; flex-direction: column; gap: 4px; transition: transform .18s, box-shadow .18s; min-height: 170px; text-align: inherit; font: inherit; color: inherit; width: 100%; }
+    .day-card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(10,46,36,.12); }
+    .day-card:active { transform: scale(.98); }
+    .day-card.sarf { border-top-color: var(--sarf); }
+    .day-card.nahw { border-top-color: var(--nahw); }
+    .day-card.completed { background: linear-gradient(180deg, rgba(46,157,98,.08), var(--card) 60%); }
+    .day-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .day-emoji { font-size: 32px; line-height: 1.1; }
+    .day-label { font-size: 11px; font-weight: 700; letter-spacing: .8px; color: var(--gold); }
+    .day-title { font-size: 16px; font-weight: 700; color: var(--primary); line-height: 1.5; }
+    html[data-mlang="u"] .day-title { line-height: 2; }
+    .day-sub { font-size: 12.5px; color: var(--light); }
+    .day-sub.rtl { direction: rtl; font-family: 'Noto Nastaliq Urdu', 'Amiri', serif; }
+    .day-sub.en { font-style: italic; direction: ltr; text-align: left; font-family: 'Figtree', system-ui, sans-serif; }
+    html[data-mlang="u"] .day-sub.en { text-align: right; }
+    .day-goal { font-size: 12.5px; color: var(--light); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .day-foot { margin-top: auto; padding-top: 8px; display: flex; gap: 8px; align-items: center; justify-content: space-between; font-size: 12px; font-weight: 700; }
+    .day-xp { color: var(--gold); background: rgba(184,146,58,.12); padding: 3px 10px; border-radius: 20px; }
+    .day-score { color: #2e7d32; background: rgba(46,157,98,.14); padding: 3px 10px; border-radius: 20px; }
+    .day-badge { background: #2e9d62; color: white; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex: none; }
+
     .detail-view { display: none; }
     .detail-view.active { display: block; }
     .back-btn { background: transparent; border: 1.5px solid var(--border); color: var(--text); padding: 10px 16px; border-radius: 12px; font-weight: 700; font-size: 14px; cursor: pointer; margin-bottom: 14px; display: inline-flex; align-items: center; gap: 6px; }
-    .day-header { background: linear-gradient(135deg, var(--primary), #176951); color: #fff; border-radius: 20px; padding: 22px 18px; margin-bottom: 18px; border: 1px solid rgba(184,146,58,.4); }
+    .day-header { background: linear-gradient(135deg, var(--primary), #176951); color: #fff; border-radius: 20px; padding: 20px 18px; margin-bottom: 16px; border: 1px solid rgba(184,146,58,.4); }
     .day-header.nahw-h { background: linear-gradient(135deg, #1e40af, #3b82f6); }
-    .day-header .label { font-size: 12px; color: var(--gold); font-weight: 700; letter-spacing: 1.5px; margin-bottom: 4px; }
-    .day-header h2 { font-family: 'Amiri', serif; font-size: 22px; line-height: 1.4; margin-bottom: 6px; color: #fff; }
-    .day-header .roman { font-size: 13px; opacity: .85; font-style: italic; margin-bottom: 12px; }
-    .day-header .meta { display: flex; gap: 8px; flex-wrap: wrap; font-size: 12px; }
-    .day-header .meta span { background: rgba(217,182,90,.22); color: var(--gold); padding: 4px 10px; border-radius: 12px; font-weight: 600; }
-    .goal-box { background: linear-gradient(135deg, rgba(184,146,58,.15), rgba(184,146,58,.05)); border-left: 4px solid var(--gold); border-radius: 12px; padding: 12px 14px; margin-bottom: 18px; font-size: 14px; line-height: 1.7; }
+    .day-header .label { font-size: 12px; color: #F3D98B; font-weight: 700; letter-spacing: 1.2px; margin-bottom: 4px; }
+    .day-header h2 { font-family: 'Amiri', serif; font-size: 23px; line-height: 1.45; margin-bottom: 6px; color: #fff; }
+    html[data-mlang="u"] .day-header h2 { font-family: 'Noto Nastaliq Urdu', 'Amiri', serif; line-height: 1.9; }
+    html[data-mlang="hi"] .day-header h2 { font-family: 'Noto Sans Devanagari', serif; font-size: 20px; }
+    html[data-mlang="ro"] .day-header h2, html[data-mlang="en"] .day-header h2 { font-family: 'Figtree', 'Amiri', serif; font-size: 21px; }
+    .day-header .sub { font-size: 13px; opacity: .88; }
+    .day-header .sub.en { font-style: italic; direction: ltr; unicode-bidi: plaintext; }
+    .day-header .sub.rtl { direction: rtl; font-family: 'Noto Nastaliq Urdu', 'Amiri', serif; font-size: 15px; }
+    .goal-box { background: linear-gradient(135deg, rgba(184,146,58,.15), rgba(184,146,58,.05)); border-inline-start: 4px solid var(--gold); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; font-size: 14px; line-height: 1.8; }
     .goal-box b { color: var(--primary); }
     .section { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px 16px; margin-bottom: 14px; }
-    .section h3 { font-size: 16px; color: var(--primary); margin-bottom: 10px; font-weight: 700; padding-bottom: 8px; border-bottom: 1px dashed var(--border); }
-    .section p { font-size: 14.5px; line-height: 1.9; color: var(--text); text-align: justify; }
-    .section p + p { margin-top: 10px; }
-    .gardaan-box { background: var(--card); border: 2px solid var(--gold); border-radius: 16px; padding: 14px; margin-bottom: 14px; overflow-x: auto; }
-    .gardaan-box h3 { font-size: 15px; color: var(--gold); margin-bottom: 12px; text-align: center; font-family: 'Amiri', serif; }
-    .gardaan-table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 400px; }
-    .gardaan-table th { background: var(--primary); color: #fff; padding: 8px 6px; font-size: 12px; text-align: center; }
-    .gardaan-table td { padding: 8px 6px; border-bottom: 1px solid var(--border); text-align: center; }
-    .gardaan-table td.ar { font-family: 'Amiri', serif; font-size: 22px; direction: rtl; color: var(--primary); font-weight: 700; }
-    .gardaan-table td.ur { direction: rtl; font-size: 13px; }
+    .section h3 { font-size: 16px; color: var(--primary); margin-bottom: 10px; font-weight: 700; padding-bottom: 8px; border-bottom: 1px dashed var(--border); line-height: 1.6; }
+    .section p { font-size: 15px; line-height: 1.95; color: var(--text); text-align: start; }
+    html[data-mlang="u"] .section p { font-size: 15px; line-height: 2.3; }
+    .gardaan-box { background: var(--card); border: 2px solid var(--gold); border-radius: 16px; padding: 14px; margin-bottom: 14px; }
+    .gardaan-box h3 { font-size: 15px; color: var(--gold); margin-bottom: 8px; text-align: center; line-height: 1.7; }
+    .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: center; font-size: 11.5px; color: var(--light); margin-bottom: 10px; }
+    .legend span::before { content: ''; display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-inline-end: 5px; vertical-align: -1px; background: var(--c); }
+    .tbl-scroll { overflow-x: auto; border-radius: 10px; }
+    .gardaan-table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 340px; }
+    .gardaan-table th { background: var(--primary); color: #fff; padding: 8px 6px; font-size: 12px; text-align: center; white-space: nowrap; }
+    .gardaan-table td { padding: 7px 6px; border-bottom: 1px solid var(--border); text-align: center; }
+    .gardaan-table td.n { color: var(--light); font-size: 11.5px; width: 28px; }
+    .gardaan-table td.ar-c { font-family: 'Amiri', serif; font-size: 22px; direction: rtl; color: var(--arabic, var(--primary)); font-weight: 700; line-height: 1.5; white-space: nowrap; }
     .gardaan-table td.sg { font-size: 11.5px; color: var(--light); font-weight: 600; }
+    .gardaan-table td.mn { font-size: 13px; }
+    .gardaan-table tr { border-inline-start: 4px solid var(--c, transparent); }
+    .gardaan-table tr.g3 { --c: var(--ghaib); }
+    .gardaan-table tr.g2 { --c: var(--hazir); }
+    .gardaan-table tr.g1 { --c: var(--mutakallim); }
+    .gardaan-table tr.g3 td:first-child, .gardaan-table tr.g2 td:first-child, .gardaan-table tr.g1 td:first-child { box-shadow: inset 4px 0 0 var(--c); }
+    html[data-mlang="u"] .gardaan-table tr.g3 td:first-child, html[data-mlang="u"] .gardaan-table tr.g2 td:first-child, html[data-mlang="u"] .gardaan-table tr.g1 td:first-child { box-shadow: inset -4px 0 0 var(--c); }
     .gardaan-table tr:nth-child(even) { background: var(--soft); }
     .facts-box { background: linear-gradient(135deg, #FFF8E1, #FFF3CD); border: 1px solid #F4C25A; border-radius: 16px; padding: 16px; margin-bottom: 14px; }
     .facts-box h3 { color: #8B6F3A; font-size: 15px; margin-bottom: 10px; }
-    .facts-box ul { padding-right: 20px; padding-left: 0; direction: rtl; }
+    .facts-box ul { padding-inline-start: 20px; }
     .facts-box li { font-size: 14px; line-height: 1.9; margin-bottom: 4px; color: #6B5426; }
-    .reflection-box { background: linear-gradient(135deg, rgba(46,157,98,.12), rgba(46,157,98,.03)); border-left: 4px solid #2e9d62; border-radius: 12px; padding: 14px 16px; margin-bottom: 20px; }
+    .facts-box .ar { color: #4a3a14; }
+    .reflection-box { background: linear-gradient(135deg, rgba(46,157,98,.12), rgba(46,157,98,.03)); border-inline-start: 4px solid #2e9d62; border-radius: 12px; padding: 14px 16px; margin-bottom: 20px; }
     .reflection-box h3 { color: #2e7d32; font-size: 15px; margin-bottom: 8px; }
     .reflection-box p { font-size: 14.5px; line-height: 1.9; font-style: italic; color: #2e5a35; }
-    .exam-box { background: linear-gradient(135deg, var(--primary), #176951); border-radius: 20px; padding: 20px 18px; color: white; margin-top: 24px; border: 2px solid var(--gold); }
+    html[data-mlang="u"] .reflection-box p { font-style: normal; line-height: 2.2; }
+    body[data-theme="dark"] .facts-box { background: linear-gradient(135deg, rgba(217,182,90,.14), rgba(217,182,90,.05)); border-color: rgba(217,182,90,.4); }
+    body[data-theme="dark"] .facts-box h3, body[data-theme="dark"] .facts-box li { color: #E7D39A; }
+    body[data-theme="dark"] .facts-box .ar { color: #F6E9B8; }
+    body[data-theme="dark"] .reflection-box h3, body[data-theme="dark"] .reflection-box p { color: #9fe0b8; }
+    body[data-theme="dark"] .admin-note { background: rgba(244,194,90,.12); color: #E7D39A; border-color: rgba(244,194,90,.4); }
+    body[data-theme="dark"] .day-score { color: #9fe0b8; }
+    body[data-theme="dark"] .group-title.nahw, body[data-theme="dark"] .group-title { color: var(--text); }
+
+    .exam-box { background: linear-gradient(135deg, var(--primary), #176951); border-radius: 20px; padding: 20px 16px; color: white; margin-top: 24px; border: 2px solid var(--gold); }
     .exam-box.nahw-e { background: linear-gradient(135deg, #1e40af, #3b82f6); }
-    .exam-box h3 { font-size: 17px; color: var(--gold); margin-bottom: 4px; font-family: 'Amiri', serif; }
-    .exam-box .exam-sub { font-size: 12px; opacity: .85; margin-bottom: 16px; }
+    .exam-box h3 { font-size: 17px; color: #F3D98B; margin-bottom: 4px; }
+    .exam-box .exam-sub { font-size: 12.5px; opacity: .9; margin-bottom: 16px; }
     .question { margin-bottom: 18px; }
-    .q-text { font-size: 14.5px; font-weight: 600; margin-bottom: 8px; line-height: 1.6; }
-    .opt-btn { display: block; width: 100%; text-align: right; padding: 11px 14px; background: rgba(255,255,255,.08); color: #fff; border: 1.5px solid rgba(217,182,90,.35); border-radius: 12px; font-size: 14px; cursor: pointer; margin-bottom: 8px; font-family: inherit; direction: rtl; transition: all .2s; }
-    .opt-btn.correct { background: rgba(46,157,98,.5); border-color: #4ade80; font-weight: 700; }
-    .opt-btn.wrong { background: rgba(220,53,69,.4); border-color: #f87171; }
+    .q-text { font-size: 15px; font-weight: 600; margin-bottom: 10px; line-height: 1.7; }
+    .opt-btn { display: flex; align-items: center; gap: 10px; width: 100%; text-align: start; padding: 11px 14px; background: rgba(255,255,255,.1); color: #fff; border: 1.5px solid rgba(217,182,90,.4); border-radius: 12px; font-size: 14.5px; cursor: pointer; margin-bottom: 8px; transition: background .2s, border-color .2s; min-height: 46px; }
+    .opt-btn:not(:disabled):hover { background: rgba(255,255,255,.18); }
+    .opt-btn.correct { background: rgba(46,157,98,.55); border-color: #4ade80; font-weight: 700; }
+    .opt-btn.wrong { background: rgba(220,53,69,.45); border-color: #f87171; }
+    .opt-btn.reveal { border-color: #4ade80; border-style: dashed; background: rgba(46,157,98,.25); }
     .opt-btn:disabled { cursor: default; }
-    .opt-btn .letter { display: inline-block; width: 22px; height: 22px; line-height: 22px; text-align: center; background: rgba(217,182,90,.3); color: #fff; border-radius: 50%; font-size: 12px; margin-left: 8px; font-weight: 700; }
-    .submit-exam { width: 100%; padding: 15px; border: none; border-radius: 14px; background: linear-gradient(180deg, #E3C36E, #C79E3F); color: #2A2008; font-size: 16px; font-weight: 800; cursor: pointer; margin-top: 8px; font-family: inherit; }
+    .opt-btn .letter { flex: none; width: 24px; height: 24px; line-height: 24px; text-align: center; background: rgba(217,182,90,.35); color: #fff; border-radius: 50%; font-size: 12px; font-weight: 700; font-family: 'Figtree', 'Noto Sans Devanagari', 'Amiri', sans-serif; }
+    .opt-btn .txt { flex: 1; }
+    .opt-btn .mark { flex: none; }
+    .submit-exam { width: 100%; padding: 15px; border: none; border-radius: 14px; background: linear-gradient(180deg, #E3C36E, #C79E3F); color: #2A2008; font-size: 16px; font-weight: 800; cursor: pointer; margin-top: 8px; }
     .submit-exam:disabled { opacity: .55; cursor: not-allowed; }
-    .exam-result { text-align: center; padding: 16px; border-radius: 12px; margin-top: 12px; font-weight: 700; font-size: 15px; line-height: 1.6; }
+    .exam-result { text-align: center; padding: 16px; border-radius: 12px; margin-top: 12px; font-weight: 700; font-size: 15px; line-height: 1.7; }
     .exam-result.pass { background: rgba(46,157,98,.3); color: #bbf7d0; }
     .exam-result.fail { background: rgba(220,53,69,.25); color: #fecaca; }
-    .next-day-btn { display: block; width: 100%; padding: 15px; margin-top: 20px; background: linear-gradient(180deg, #17614B, var(--primary)); color: white; border: none; border-radius: 14px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: inherit; }
-    .xp-toast { position: fixed; top: 50%; left: 50%; z-index: 9999; transform: translate(-50%, -50%) scale(0); background: linear-gradient(135deg, var(--gold), #8f7312); color: white; padding: 20px 40px; border-radius: 22px; font-size: 22px; font-weight: 800; box-shadow: 0 15px 50px rgba(0,0,0,.5); }
+    .nav-row { display: flex; gap: 10px; margin-top: 20px; }
+    .nav-row .next-day-btn { margin-top: 0; flex: 2; }
+    .nav-row .prev-day-btn { flex: 1; background: transparent; color: var(--text); border: 1.5px solid var(--border); padding: 15px 10px; border-radius: 14px; font-size: 14px; font-weight: 700; cursor: pointer; }
+    .next-day-btn { display: block; width: 100%; padding: 15px; margin-top: 20px; background: linear-gradient(180deg, #17614B, var(--primary)); color: white; border: none; border-radius: 14px; font-size: 15px; font-weight: 700; cursor: pointer; }
+    .exam-box + .next-day-btn, #examResult + .next-day-btn { margin-top: 12px; }
+    .xp-toast { position: fixed; top: 50%; left: 50%; z-index: 9999; transform: translate(-50%, -50%) scale(0); background: linear-gradient(135deg, var(--gold), #8f7312); color: white; padding: 20px 40px; border-radius: 22px; font-size: 22px; font-weight: 800; box-shadow: 0 15px 50px rgba(0,0,0,.5); pointer-events: none; }
     .xp-toast.show { animation: pop 1.6s ease forwards; }
     @keyframes pop { 0% { transform: translate(-50%,-50%) scale(0); } 20% { transform: translate(-50%,-50%) scale(1.2); } 80% { transform: translate(-50%,-50%) scale(1); opacity: 1; } 100% { transform: translate(-50%,-50%) scale(1); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } .xp-toast.show { animation: none; transform: translate(-50%,-50%) scale(1); } }
+    @media (max-width: 380px) { .header-top h1 { font-size: 17px; } .icon-btn.lang-btn { min-width: 54px; padding: 0 9px; } }
   </style>
 </head>
 <body>
   <header>
     <div class="header-top">
-      <a href="index.html" class="icon-btn">←</a>
-      <h1>📖 نحو و صرف</h1>
-      <button class="icon-btn" onclick="FQTheme.cycle()">🌙</button>
+      <a href="index.html" class="icon-btn" id="homeBtn" aria-label="Home">←</a>
+      <h1 id="pageH1">📖 نحو و صرف</h1>
+      <button class="icon-btn lang-btn" data-qs-lang onclick="QSLang.cycle()" title="Zubaan / Language">اردو</button>
+      <button class="icon-btn" onclick="FQTheme.cycle()" aria-label="Theme">🌙</button>
     </div>
   </header>
-  <main>
+  <main id="app">
     <div id="homeView">
-      <div class="admin-note">🔒 Filhaal sirf Admin ko nazar aata hai (review mode — saare din khule hain)</div>
-      <div class="progress-wrap">
-        <div class="progress-row"><span>📍 آپ کا سفر</span><small id="progText">0 / 30 دن</small></div>
-        <div class="progress-bar"><div class="progress-fill" id="progFill"></div></div>
+            <div class="progress-wrap">
+        <div class="progress-row"><span id="progLabel"></span><small id="progText"></small></div>
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progBar"><div class="progress-fill" id="progFill"></div></div>
       </div>
-      <div class="days-grid" id="daysGrid"></div>
+      <div id="daysWrap"></div>
     </div>
     <div id="detailView" class="detail-view">
-      <button class="back-btn" onclick="goHome()">← واپس</button>
+      <button class="back-btn" id="backBtn" onclick="goHome()"></button>
       <div id="detailContent"></div>
     </div>
   </main>
 
   <script>
-    const arabicCourse = { days: [
-      // ========== صرف - دن 1-15 ==========
-      {
-        day: 1, type: 'sarf', emoji: '🔤', title: 'صرف کیا ہے؟',
-        roman: 'What is Sarf?', goal: 'صرف کی تعریف اور اہمیت سمجھنا۔',
-        sections: [
-          { h: '📖 صرف کی تعریف', p: 'صرف عربی زبان کا وہ علم ہے جس میں لفظوں کی شکل و صورت، ان کی تبدیلیوں، اور ان سے نئے لفظ بنانے کے قواعد کا مطالعہ کیا جاتا ہے۔ سادہ الفاظ میں، صرف "لفظ کی فیکٹری" ہے — ایک جڑ سے کئی الفاظ کیسے بنتے ہیں، یہ صرف سکھاتا ہے۔' },
-          { h: '🎯 کیوں ضروری ہے؟', p: 'قرآن سمجھنے کے لیے صرف بہت ضروری ہے۔ جب آپ کو ایک جڑ (مثلاً ک ت ب) معلوم ہو، تو آپ اس سے بننے والے کئی الفاظ خود سمجھ سکتے ہیں — كَتَبَ (لکھا)، كِتَاب (کتاب)، كَاتِب (لکھنے والا)، مَكْتُوب (لکھا ہوا)، مَكْتَب (لکھنے کی جگہ)۔ یہ صرف کی طاقت ہے۔' },
-          { h: '🌟 صرف کا فائدہ', p: 'عربی میں بہت سے الفاظ چند سو بنیادی جڑوں سے بنتے ہیں۔ اس لیے جڑیں اور وزن سیکھ لیں تو ہر لفظ الگ سے رٹنا نہیں پڑتا، اور ایک جڑ سے کئی الفاظ (عموماً 10-15 تک) سمجھ آ جاتے ہیں۔' }
-        ],
-        keyFacts: ['صرف = لفظ کی شکل کا علم', 'ایک جڑ سے کئی الفاظ', 'قرآن سمجھنے کے لیے ضروری', 'لفظوں کی فیکٹری'],
-        reflection: 'صرف سیکھنا مشکل لگتا ہے، مگر یہ عربی زبان کی کنجی ہے۔ ہمیں چاہیے کہ صبر سے سیکھیں، اللہ مدد فرمائے گا۔',
-        quiz: [
-          { q: 'صرف کس چیز کا علم ہے؟', opts: ['لفظ کی شکل کا', 'جملے کی ساخت کا', 'آواز کا'], correct: 0 },
-          { q: 'صرف کیوں ضروری ہے؟', opts: ['صرف رسم الخط کے لیے', 'قرآن سمجھنے کے لیے', 'شاعری کے لیے'], correct: 1 },
-          { q: 'ایک جڑ سے کتنے الفاظ بن سکتے ہیں؟', opts: ['1-2', '10-15 تک', 'ہزاروں'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 2, type: 'sarf', emoji: '🚪', title: 'کلمہ کی تین اقسام',
-        roman: 'Three Types of Kalima', goal: 'اسم، فعل، حرف کا فرق سمجھنا۔',
-        sections: [
-          { h: '📖 کلمہ کی تعریف', p: 'کلمہ وہ لفظ ہے جو اکیلا معنی دے۔ عربی میں ہر کلمہ تین میں سے ایک ہوتا ہے: اسم، فعل، یا حرف۔' },
-          { h: '🚪 اسم (Noun)', p: 'اسم وہ کلمہ ہے جو کسی چیز، شخص، جگہ، یا معنی کا نام ہو، اور زمانے سے جڑا نہ ہو۔ مثالیں: اللَّه (اللہ)، كِتَاب (کتاب)، بَيْت (گھر)، مُحَمَّد (محمد ﷺ)، مَسْجِد (مسجد)۔ پہچان: ال سے شروع، یا تنوین (ـٌ) پر ختم، یا چیز/شخص کا نام۔' },
-          { h: '🏃 فعل (Verb)', p: 'فعل وہ کلمہ ہے جو کسی کام کو ظاہر کرے، اور زمانے سے جڑا ہو (ماضی، حال، امر)۔ مثالیں: كَتَبَ (لکھا)، يَكْتُبُ (وہ لکھتا ہے)، اُكْتُبْ (لکھو!)۔ پہچان: ماضی میں اکثر ـَ پر ختم، مضارع میں ي، ت، أ، ن سے شروع۔' },
-          { h: '🔗 حرف (Particle)', p: 'حرف وہ کلمہ ہے جو اکیلا معنی نہ دے، بلکہ دوسرے الفاظ کو جوڑے۔ مثالیں: فِي (میں)، مِن (سے)، إِلَى (کی طرف)، عَلَى (پر)، وَ (اور)۔ حرف عموماً چھوٹا ہوتا ہے، اور دوسروں سے مل کر معنی دیتا ہے۔' }
-        ],
-        keyFacts: ['اسم = چیز کا نام', 'فعل = کام', 'حرف = جوڑنے والا', 'ہر کلمہ تین میں سے ایک ہے'],
-        reflection: 'اسم، فعل، حرف — یہ تینوں مل کر جملہ بناتے ہیں، جیسے اینٹ، پتھر، سیمنٹ مل کر گھر بناتے ہیں۔',
-        quiz: [
-          { q: 'اللَّه کون سا کلمہ ہے؟', opts: ['اسم', 'فعل', 'حرف'], correct: 0 },
-          { q: 'كَتَبَ کون سا؟', opts: ['اسم', 'فعل', 'حرف'], correct: 1 },
-          { q: 'فِي کون سا؟', opts: ['اسم', 'فعل', 'حرف'], correct: 2 }
-        ], xp: 100
-      },
-      {
-        day: 3, type: 'sarf', emoji: '🌱', title: 'جذر (Root) — لفظ کی بنیاد',
-        roman: 'The Root System', goal: 'عربی میں لفظ کی جڑ کا نظام سمجھنا۔',
-        sections: [
-          { h: '🌱 جذر کیا ہے؟', p: 'عربی میں تقریباً ہر لفظ 3 حروف کی جڑ (جذر) سے بنتا ہے۔ جذر وہ بنیادی مادہ ہے جس سے کئی الفاظ بنتے ہیں۔ جذر میں کوئی حرکت (فتح، کسر، ضم) نہیں ہوتی، صرف حروف ہوتے ہیں۔' },
-          { h: '📝 جذر کی مثالیں', p: 'ك ت ب = لکھنا۔ اس سے: كَتَبَ (اس نے لکھا)، كِتَاب (کتاب)، كَاتِب (لکھنے والا)، مَكْتُوب (لکھا ہوا)، مَكْتَب (لکھنے کی جگہ/میز)، كُتُب (کتابیں)۔ ر ح م = رحم۔ اس سے: رَحْمَة (رحمت)، رَحِيم (بہت رحم والا)، رَحْمَٰن (نہایت مہربان)، مَرْحُوم (جس پر رحم ہوا)۔' },
-          { h: '🎯 جذر کی اہمیت', p: 'جذر معلوم ہو تو نئے الفاظ خود بخود سمجھ آتے ہیں۔ مثلاً اگر آپ کو معلوم ہے "ع ل م" کا مطلب "جاننا" ہے، تو عَلِمَ (جاننا)، عِلْم (علم)، عَالِم (جاننے والا)، مَعْلُوم (معلوم)، عَلِيم (بہت جاننے والا)، تَعْلِيم (سکھانا) — یہ سب سمجھ آ جائیں گے۔' }
-        ],
-        keyFacts: ['جذر = 3 حروف کی بنیاد', 'کوئی حرکت نہیں ہوتی', 'ایک جذر سے کئی الفاظ', 'جذر = لفظ کی جڑ'],
-        reflection: 'جذر سمجھنا صرف کی کنجی ہے۔ ایک بار جذر سیکھا، تو پوری لفظ کی دنیا کھل جاتی ہے۔',
-        quiz: [
-          { q: 'عربی میں جذر عام طور پر کتنے حروف کا ہوتا ہے؟', opts: ['2', '3', '5'], correct: 1 },
-          { q: 'كِتَاب کی جڑ کیا ہے؟', opts: ['ك ت ب', 'ك ت ا', 'ك ب ت'], correct: 0 },
-          { q: 'جذر میں حرکت ہوتی ہے؟', opts: ['ہاں', 'نہیں'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 4, type: 'sarf', emoji: '📐', title: 'وزن (Pattern) — لفظ کا سانچہ',
-        roman: 'The Pattern (Wazn)', goal: 'لفظ کا وزن اور اس کی اہمیت سمجھنا۔',
-        sections: [
-          { h: '📐 وزن کیا ہے؟', p: 'وزن وہ سانچہ (ڈھانچہ) ہے جس پر لفظ بنتا ہے۔ عربی میں ہر لفظ ایک خاص وزن پر بنتا ہے۔ وزن میں تین حروف ف، ع، ل استعمال ہوتے ہیں (جذر کے نمائندے)۔ مثلاً: فَعَلَ، فَاعِل، مَفْعُول، فِعَال، أَفْعَال۔' },
-          { h: '🔧 وزن کا استعمال', p: 'جذر کو وزن میں ڈال کر نیا لفظ بنتا ہے۔ مثال: جذر "ك ت ب" کو وزن "فَاعِل" میں ڈالو → كَاتِب (لکھنے والا)۔ وزن "مَفْعُول" میں ڈالو → مَكْتُوب (لکھا ہوا)۔ وزن "فِعَال" میں ڈالو → كِتَاب (کتاب)۔' },
-          { h: '🌟 وزن کی اہمیت', p: 'وزن سمجھے تو آپ خود نئے الفاظ بنا سکتے ہیں، اور نئے الفاظ سمجھ سکتے ہیں۔ مثلاً جب آپ قرآن میں "مُؤْمِن" دیکھیں، تو معلوم ہو کہ یہ وزن "مُفْعِل" ہے، جذر "ا م ن" ہے، تو مطلب ہے "ایمان لانے والا"۔' }
-        ],
-        keyFacts: ['وزن = لفظ کا سانچہ', 'ف، ع، ل = نمائندہ حروف', 'جذر + وزن = نیا لفظ', 'وزن سمجھنا ضروری'],
-        reflection: 'وزن صرف کا سب سے طاقتور اوزار ہے۔ یہ سیکھنے کے بعد آپ خود نئے الفاظ بنا سکیں گے۔',
-        quiz: [
-          { q: 'وزن میں کون سے حروف نمائندہ ہیں؟', opts: ['ا ب ج', 'ف ع ل', 'ك ت ب'], correct: 1 },
-          { q: 'كَاتِب کس وزن پر ہے؟', opts: ['فَاعِل', 'مَفْعُول', 'فِعَال'], correct: 0 },
-          { q: 'مَكْتُوب کس وزن پر ہے؟', opts: ['فَاعِل', 'مَفْعُول', 'فِعَال'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 5, type: 'sarf', emoji: '⏮️', title: 'فعل ماضی کی گردان (14 صیغے)',
-        roman: 'Fail-e-Madi Gardaan', goal: 'ماضی کے 14 صیغوں کا مکمل علم۔',
-        sections: [
-          { h: '📖 فعل ماضی کیا ہے؟', p: 'فعل ماضی وہ فعل ہے جو گزرے ہوئے زمانے کو ظاہر کرے۔ مثلاً: كَتَبَ (اس نے لکھا)، قَالَ (اس نے کہا)، ذَهَبَ (وہ گیا)۔ ماضی میں 14 صیغے ہوتے ہیں — ہر فاعل کے لیے ایک صیغہ۔' },
-          { h: '🎯 14 صیغے کیوں؟', p: 'عربی میں فاعل کے مطابق فعل بدلتا ہے — واحد، تثنیہ، جمع (ایک، دو، تین+)۔ مذکر اور مؤنث کے الگ۔ غائب، حاضر، متکلم کے الگ۔ حساب: غائب کے 6 (3 گنتی × 2 جنس) + حاضر کے 6 + متکلم کے 2 (واحد، جمع) = 14 صیغے۔' }
-        ],
-        gardaan: {
-          title: 'فعل ماضی کی گردان — كَتَبَ (اس نے لکھا)',
-          headers: ['#', 'صیغہ', 'عربی', 'اردو'],
-          rows: [
-            ['1', 'واحد مذکر غائب', 'كَتَبَ', 'اس نے لکھا'],
-            ['2', 'تثنیہ مذکر غائب', 'كَتَبَا', 'ان دو نے لکھا'],
-            ['3', 'جمع مذکر غائب', 'كَتَبُوا', 'ان سب نے لکھا'],
-            ['4', 'واحد مؤنث غائب', 'كَتَبَتْ', 'اس (عورت) نے لکھا'],
-            ['5', 'تثنیہ مؤنث غائب', 'كَتَبَتَا', 'ان دو (عورتوں) نے لکھا'],
-            ['6', 'جمع مؤنث غائب', 'كَتَبْنَ', 'ان سب (عورتوں) نے لکھا'],
-            ['7', 'واحد مذکر حاضر', 'كَتَبْتَ', 'تو نے لکھا'],
-            ['8', 'تثنیہ مذکر حاضر', 'كَتَبْتُمَا', 'تم دو نے لکھا'],
-            ['9', 'جمع مذکر حاضر', 'كَتَبْتُمْ', 'تم سب نے لکھا'],
-            ['10', 'واحد مؤنث حاضر', 'كَتَبْتِ', 'تو (عورت) نے لکھا'],
-            ['11', 'تثنیہ مؤنث حاضر', 'كَتَبْتُمَا', 'تم دو (عورتوں) نے لکھا'],
-            ['12', 'جمع مؤنث حاضر', 'كَتَبْتُنَّ', 'تم سب (عورتوں) نے لکھا'],
-            ['13', 'واحد متکلم', 'كَتَبْتُ', 'میں نے لکھا'],
-            ['14', 'جمع متکلم', 'كَتَبْنَا', 'ہم نے لکھا']
-          ]
-        },
-        keyFacts: ['ماضی = گزرا ہوا زمانہ', '14 صیغے ہیں', 'فاعل کے مطابق بدلتا ہے', 'غائب، حاضر، متکلم'],
-        reflection: 'یہ 14 صیغے یاد کرنا ضروری ہے — یہ صرف کی بنیاد ہے۔ ایک بار یاد ہو جائیں، پھر ہر ماضی کا فعل سمجھ آئے گا۔',
-        quiz: [
-          { q: 'كَتَبُوا کس کے لیے ہے؟', opts: ['اس نے لکھا', 'ان سب نے لکھا', 'تم نے لکھا'], correct: 1 },
-          { q: 'كَتَبْتُ کس کے لیے؟', opts: ['میں نے لکھا', 'تو نے لکھا', 'اس نے لکھا'], correct: 0 },
-          { q: 'ماضی میں کتنے صیغے ہیں؟', opts: ['6', '14', '10'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 6, type: 'sarf', emoji: '⏭️', title: 'فعل مضارع کی گردان (14 صیغے)',
-        roman: 'Fail-e-Mudari Gardaan', goal: 'مضارع کے 14 صیغوں کا مکمل علم۔',
-        sections: [
-          { h: '📖 مضارع کیا ہے؟', p: 'فعل مضارع وہ ہے جو حال یا مستقبل کو ظاہر کرے۔ مثلاً: يَكْتُبُ (وہ لکھتا ہے/لکھے گا)، يَقُولُ (وہ کہتا ہے)، يَذْهَبُ (وہ جاتا ہے)۔ مضارع میں بھی 14 صیغے ہوتے ہیں۔' },
-          { h: '🎯 مضارع کی پہچان', p: 'مضارع شروع میں ي (وہ مذکر)، ت (وہ مؤنث یا تم)، أ (میں)، ن (ہم) سے شروع ہوتا ہے۔ یہی چار حروف مضارع کے نشان ہیں — انہیں "أنيت" کے حروف کہتے ہیں۔' }
-        ],
-        gardaan: {
-          title: 'فعل مضارع کی گردان — يَكْتُبُ (وہ لکھتا ہے)',
-          headers: ['#', 'صیغہ', 'عربی', 'اردو'],
-          rows: [
-            ['1', 'واحد مذکر غائب', 'يَكْتُبُ', 'وہ لکھتا ہے'],
-            ['2', 'تثنیہ مذکر غائب', 'يَكْتُبَانِ', 'وہ دو لکھتے ہیں'],
-            ['3', 'جمع مذکر غائب', 'يَكْتُبُونَ', 'وہ سب لکھتے ہیں'],
-            ['4', 'واحد مؤنث غائب', 'تَكْتُبُ', 'وہ (عورت) لکھتی ہے'],
-            ['5', 'تثنیہ مؤنث غائب', 'تَكْتُبَانِ', 'وہ دو (عورتیں) لکھتی ہیں'],
-            ['6', 'جمع مؤنث غائب', 'يَكْتُبْنَ', 'وہ سب (عورتیں) لکھتی ہیں'],
-            ['7', 'واحد مذکر حاضر', 'تَكْتُبُ', 'تو لکھتا ہے'],
-            ['8', 'تثنیہ مذکر حاضر', 'تَكْتُبَانِ', 'تم دو لکھتے ہو'],
-            ['9', 'جمع مذکر حاضر', 'تَكْتُبُونَ', 'تم سب لکھتے ہو'],
-            ['10', 'واحد مؤنث حاضر', 'تَكْتُبِينَ', 'تو (عورت) لکھتی ہے'],
-            ['11', 'تثنیہ مؤنث حاضر', 'تَكْتُبَانِ', 'تم دو (عورتیں) لکھتی ہو'],
-            ['12', 'جمع مؤنث حاضر', 'تَكْتُبْنَ', 'تم سب (عورتیں) لکھتی ہو'],
-            ['13', 'واحد متکلم', 'أَكْتُبُ', 'میں لکھتا ہوں'],
-            ['14', 'جمع متکلم', 'نَكْتُبُ', 'ہم لکھتے ہیں']
-          ]
-        },
-        keyFacts: ['مضارع = حال/مستقبل', '14 صیغے ہیں', 'ي، ت، أ، ن سے شروع', 'ان حروف کو "أنيت" کہتے ہیں'],
-        reflection: 'مضارع یاد کرنا آسان ہے، کیونکہ یہ ي، ت، أ، ن سے شروع ہوتا ہے۔ بس چار حروف یاد رکھیں۔',
-        quiz: [
-          { q: 'يَكْتُبُ کس کے لیے؟', opts: ['وہ لکھتا ہے', 'میں لکھتا ہوں', 'تم لکھتے ہو'], correct: 0 },
-          { q: 'أَكْتُبُ کس کے لیے؟', opts: ['میں لکھتا ہوں', 'ہم لکھتے ہیں', 'وہ لکھتا ہے'], correct: 0 },
-          { q: 'مضارع کے نشان کیا ہیں؟', opts: ['ف، ع، ل', 'ي، ت، أ، ن', 'ك، ت، ب'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 7, type: 'sarf', emoji: '❗', title: 'فعل امر کی گردان (6 صیغے)',
-        roman: 'Fail-e-Amr Gardaan', goal: 'امر کے 6 صیغوں کا مکمل علم۔',
-        sections: [
-          { h: '📖 فعل امر کیا ہے؟', p: 'فعل امر وہ ہے جس سے کسی کام کا حکم دیا جائے۔ مثلاً: اُكْتُبْ (لکھو!)، اِقْرَأْ (پڑھو!)، اِذْهَبْ (جاؤ!)۔ امر میں صرف 6 صیغے ہوتے ہیں (حاضر کے، کیونکہ حکم حاضر کو دیا جاتا ہے)۔' },
-          { h: '🎯 امر کی پہچان', p: 'امر مضارع کے حاضر صیغے سے بنتا ہے: شروع کا "ت" ہٹاتے ہیں، آخر میں جزم (سکون) دیتے ہیں، اور ضرورت ہو تو شروع میں ہمزہ وصل (ا) لگاتے ہیں۔ مثلاً: تَكْتُبُ → اُكْتُبْ۔ یا سمجھیں: "کرو، جاؤ، لکھو" — یہ امر کے معنی ہیں۔' }
-        ],
-        gardaan: {
-          title: 'فعل امر کی گردان — اُكْتُبْ (لکھو!)',
-          headers: ['#', 'صیغہ', 'عربی', 'اردو'],
-          rows: [
-            ['1', 'واحد مذکر حاضر', 'اُكْتُبْ', 'تو لکھ'],
-            ['2', 'تثنیہ مذکر حاضر', 'اُكْتُبَا', 'تم دو لکھو'],
-            ['3', 'جمع مذکر حاضر', 'اُكْتُبُوا', 'تم سب لکھو'],
-            ['4', 'واحد مؤنث حاضر', 'اُكْتُبِي', 'تو (عورت) لکھ'],
-            ['5', 'تثنیہ مؤنث حاضر', 'اُكْتُبَا', 'تم دو (عورتیں) لکھو'],
-            ['6', 'جمع مؤنث حاضر', 'اُكْتُبْنَ', 'تم سب (عورتیں) لکھو']
-          ]
-        },
-        keyFacts: ['امر = حکم', 'صرف 6 صیغے', 'مضارع حاضر سے بنتا ہے', 'حاضر کے لیے'],
-        reflection: 'امر چھوٹا ہے، مگر قرآن میں بہت آیا ہے — "قُلْ" (کہہ دو)، "اقْرَأْ" (پڑھو)، "اعْبُدُوا" (عبادت کرو)۔ یہ یاد ہونا ضروری ہے۔',
-        quiz: [
-          { q: 'امر میں کتنے صیغے ہیں؟', opts: ['6', '14', '10'], correct: 0 },
-          { q: 'اُكْتُبْ کا مطلب؟', opts: ['لکھو', 'لکھا', 'لکھتا ہے'], correct: 0 },
-          { q: 'امر کسے دیا جاتا ہے؟', opts: ['غائب کو', 'حاضر کو', 'متکلم کو'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 8, type: 'sarf', emoji: '🚫', title: 'فعل نہی کی گردان (6 صیغے)',
-        roman: 'Fail-e-Nahi Gardaan', goal: 'نہی کے 6 صیغوں کا مکمل علم۔',
-        sections: [
-          { h: '📖 فعل نہی کیا ہے؟', p: 'فعل نہی وہ ہے جس سے کسی کام سے روکا جائے۔ یہ "لَا" (مت) کے ساتھ آتا ہے۔ مثلاً: لَا تَكْتُبْ (مت لکھو)، لَا تَذْهَبْ (مت جاؤ)۔ نہی بھی صرف حاضر کے لیے ہوتا ہے، اس لیے 6 صیغے۔' },
-          { h: '🎯 نہی کی پہچان', p: 'نہی مضارع سے بنتا ہے، پہلے "لَا" لگاتے ہیں، اور آخر میں جزم (سکون) دیتے ہیں۔ مثلاً: تَكْتُبُ → لَا تَكْتُبْ۔' }
-        ],
-        gardaan: {
-          title: 'فعل نہی کی گردان — لَا تَكْتُبْ (مت لکھو)',
-          headers: ['#', 'صیغہ', 'عربی', 'اردو'],
-          rows: [
-            ['1', 'واحد مذکر حاضر', 'لَا تَكْتُبْ', 'تو مت لکھ'],
-            ['2', 'تثنیہ مذکر حاضر', 'لَا تَكْتُبَا', 'تم دو مت لکھو'],
-            ['3', 'جمع مذکر حاضر', 'لَا تَكْتُبُوا', 'تم سب مت لکھو'],
-            ['4', 'واحد مؤنث حاضر', 'لَا تَكْتُبِي', 'تو (عورت) مت لکھ'],
-            ['5', 'تثنیہ مؤنث حاضر', 'لَا تَكْتُبَا', 'تم دو (عورتیں) مت لکھو'],
-            ['6', 'جمع مؤنث حاضر', 'لَا تَكْتُبْنَ', 'تم سب (عورتیں) مت لکھو']
-          ]
-        },
-        keyFacts: ['نہی = منع', '6 صیغے', 'لَا سے شروع', 'مضارع سے بنتا ہے'],
-        reflection: 'نہی قرآن میں بہت آیا ہے — "لَا تَقْرَبُوا" (مت قریب جاؤ)، "لَا تَأْكُلُوا" (مت کھاؤ)۔ یہ یاد کرنا ضروری ہے۔',
-        quiz: [
-          { q: 'نہی میں کتنے صیغے ہیں؟', opts: ['6', '14', '10'], correct: 0 },
-          { q: 'لَا تَكْتُبْ کا مطلب؟', opts: ['مت لکھو', 'لکھو', 'لکھا'], correct: 0 },
-          { q: 'نہی کس سے بنتا ہے؟', opts: ['ماضی سے', 'مضارع سے', 'امر سے'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 9, type: 'sarf', emoji: '🔑', title: 'ثلاثی مجرد کے 6 ابواب (1-3)',
-        roman: 'Six Abwab - Part 1', goal: 'پہلے 3 ابواب (نصر، ضرب، فتح) سمجھنا۔',
-        sections: [
-          { h: '📖 باب کیا ہے؟', p: 'ثلاثی مجرد (3 حروف کی جڑ کا سادہ فعل) کے 6 ابواب ہیں۔ ہر باب کی پہچان: ماضی کے دوسرے حرف (عین) کی حرکت + مضارع کے دوسرے حرف کی حرکت۔ یاد رکھنے کا نسخہ: "نصر، ضرب، فتح، علم، حسن، حسب"۔' },
-          { h: '1️⃣ باب نصر (فتح → ضم)', p: 'ماضی کے عین پر فتح، مضارع کے عین پر ضم۔ مثال: نَصَرَ يَنْصُرُ (مدد کی، مدد کرتا ہے)، كَتَبَ يَكْتُبُ (لکھا، لکھتا ہے)، دَخَلَ يَدْخُلُ (داخل ہوا، داخل ہوتا ہے)، خَرَجَ يَخْرُجُ (نکلا، نکلتا ہے)۔' },
-          { h: '2️⃣ باب ضرب (فتح → کسر)', p: 'ماضی کے عین پر فتح، مضارع کے عین پر کسر۔ مثال: ضَرَبَ يَضْرِبُ (مارا، مارتا ہے)، جَلَسَ يَجْلِسُ (بیٹھا، بیٹھتا ہے)، رَجَعَ يَرْجِعُ (لوٹا، لوٹتا ہے)۔' },
-          { h: '3️⃣ باب فتح (فتح → فتح)', p: 'ماضی کے عین پر فتح، مضارع کے عین پر بھی فتح۔ اس باب میں عموماً عین یا لام کلمہ حلقی حرف (ء، ہ، ع، ح، غ، خ) ہوتا ہے۔ مثال: فَتَحَ يَفْتَحُ (کھولا، کھولتا ہے)، ذَهَبَ يَذْهَبُ (گیا، جاتا ہے)، قَرَأَ يَقْرَأُ (پڑھا، پڑھتا ہے)۔' }
-        ],
-        keyFacts: ['6 ابواب: نصر، ضرب، فتح، علم، حسن، حسب', 'باب 1: فتح → ضم', 'باب 2: فتح → کسر', 'باب 3: فتح → فتح'],
-        reflection: 'ابواب یاد کرنا ضروری ہے، کیونکہ ہر فعل کا باب الگ ہے، اور مضارع کا وزن باب سے طے ہوتا ہے۔',
-        quiz: [
-          { q: 'كَتَبَ يَكْتُبُ کون سا باب؟', opts: ['نصر', 'ضرب', 'فتح'], correct: 0 },
-          { q: 'جَلَسَ يَجْلِسُ کون سا باب؟', opts: ['نصر', 'ضرب', 'فتح'], correct: 1 },
-          { q: 'فَتَحَ يَفْتَحُ کون سا باب؟', opts: ['نصر', 'ضرب', 'فتح'], correct: 2 }
-        ], xp: 100
-      },
-      {
-        day: 10, type: 'sarf', emoji: '🔑', title: 'ثلاثی مجرد کے 6 ابواب (4-6)',
-        roman: 'Six Abwab - Part 2', goal: 'باقی 3 ابواب (علم، حسن، حسب) سمجھنا۔',
-        sections: [
-          { h: '4️⃣ باب علم (کسر → فتح)', p: 'ماضی کے عین پر کسر، مضارع کے عین پر فتح۔ مثال: عَلِمَ يَعْلَمُ (جاننا)، سَمِعَ يَسْمَعُ (سننا)، فَهِمَ يَفْهَمُ (سمجھنا)، شَرِبَ يَشْرَبُ (پینا)، جَهِلَ يَجْهَلُ (نادان ہونا)۔' },
-          { h: '5️⃣ باب حسن (ضم → ضم)', p: 'ماضی کے عین پر ضم، مضارع کے عین پر بھی ضم۔ یہ اکثر صفات (خوبیاں) کے لیے ہوتا ہے۔ مثال: حَسُنَ يَحْسُنُ (اچھا ہونا)، كَرُمَ يَكْرُمُ (بزرگ ہونا)، شَرُفَ يَشْرُفُ (شریف ہونا)۔' },
-          { h: '6️⃣ باب حسب (کسر → کسر)', p: 'ماضی کے عین پر کسر، مضارع کے عین پر بھی کسر۔ یہ کم فعل ہیں، مگر یاد رکھیں۔ مثال: حَسِبَ يَحْسِبُ (گمان کرنا)، وَرِثَ يَرِثُ (وارث بننا)، وَلِيَ يَلِي (قریب ہونا)۔' }
-        ],
-        keyFacts: ['باب 4: کسر → فتح (علم)', 'باب 5: ضم → ضم (حسن)', 'باب 6: کسر → کسر (حسب)', '"نصر، ضرب، فتح، علم، حسن، حسب"'],
-        reflection: 'ابواب مکمل ہو گئے۔ اب کوئی بھی ثلاثی مجرد فعل آئے، آپ اس کا باب پہچان سکیں گے۔',
-        quiz: [
-          { q: 'عَلِمَ يَعْلَمُ کون سا باب؟', opts: ['نصر', 'علم', 'حسب'], correct: 1 },
-          { q: 'حَسُنَ يَحْسُنُ کون سا باب؟', opts: ['حسن', 'حسب', 'علم'], correct: 0 },
-          { q: 'حَسِبَ يَحْسِبُ کون سا باب؟', opts: ['حسن', 'حسب', 'علم'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 11, type: 'sarf', emoji: '🔨', title: 'اسم فاعل اور اسم مفعول',
-        roman: 'Active & Passive Participle', goal: 'اسم فاعل اور اسم مفعول کا فرق سمجھنا۔',
-        sections: [
-          { h: '🔨 اسم فاعل', p: 'وہ اسم جو کام کرنے والے کو ظاہر کرے۔ ثلاثی مجرد کا وزن "فَاعِل" ہے۔ مثلاً: كَاتِب (لکھنے والا)، عَالِم (جاننے والا)، نَاصِر (مدد کرنے والا)، ظَالِم (ظلم کرنے والا)، خَالِق (پیدا کرنے والا)۔' },
-          { h: '🔧 اسم مفعول', p: 'وہ اسم جس پر کام کیا گیا ہو۔ ثلاثی مجرد کا وزن "مَفْعُول" ہے۔ مثلاً: مَكْتُوب (لکھا ہوا)، مَعْلُوم (معلوم)، مَنْصُور (جس کی مدد کی گئی)، مَظْلُوم (جس پر ظلم ہوا)، مَخْلُوق (پیدا کیا گیا)۔' },
-          { h: '🎯 فرق', p: 'اسم فاعل = کرنے والا (active)۔ اسم مفعول = جس پر کیا گیا (passive)۔ مثلاً: كَاتِب (لکھنے والا) vs مَكْتُوب (لکھا ہوا)۔ ظَالِم (ظلم کرنے والا) vs مَظْلُوم (جس پر ظلم ہوا)۔ (مزید فیہ ابواب میں وزن بدل جاتا ہے، جیسے مُؤْمِن = ایمان لانے والا۔)' }
-        ],
-        keyFacts: ['اسم فاعل = کرنے والا (فَاعِل)', 'اسم مفعول = جس پر کیا گیا (مَفْعُول)', 'كَاتِب = لکھنے والا', 'مَكْتُوب = لکھا ہوا'],
-        reflection: 'اسم فاعل اور اسم مفعول قرآن میں بہت آتے ہیں۔ یہ سمجھنا ضروری ہے کہ کون کام کر رہا ہے، اور کس پر کام ہو رہا ہے۔',
-        quiz: [
-          { q: 'كَاتِب کیا ہے؟', opts: ['اسم فاعل', 'اسم مفعول'], correct: 0 },
-          { q: 'مَكْتُوب کیا ہے؟', opts: ['اسم فاعل', 'اسم مفعول'], correct: 1 },
-          { q: 'ظَالِم کا مطلب؟', opts: ['ظلم کرنے والا', 'جس پر ظلم ہوا'], correct: 0 }
-        ], xp: 100
-      },
-      {
-        day: 12, type: 'sarf', emoji: '📍', title: 'اسم ظرف اور اسم آلہ',
-        roman: 'Adverb & Instrument', goal: 'ظرف (زمان/مکان) اور آلہ کے اسم سمجھنا۔',
-        sections: [
-          { h: '📍 اسم ظرف (زمان/مکان)', p: 'وہ اسم جو وقت یا جگہ کو ظاہر کرے۔ وزن "مَفْعَل" یا "مَفْعِل" ہے۔ مثلاً: مَسْجِد (سجدے کی جگہ)، مَكْتَب (لکھنے کی جگہ/میز)، مَدْرَسَة (پڑھنے کی جگہ/اسکول)، مَغْرِب (غروب کا وقت)، مَشْرِق (طلوع کا وقت/جگہ)۔' },
-          { h: '🔧 اسم آلہ', p: 'وہ اسم جو کسی کام کا آلہ (اوزار) ظاہر کرے۔ وزن "مِفْعَال" یا "مِفْعَل" ہے۔ مثلاً: مِفْتَاح (چابی — کھولنے کا آلہ)، مِصْبَاح (چراغ — روشن کرنے کا آلہ)، مِنْشَار (آرا — چیرنے کا آلہ)، مِيزَان (ترازو — تولنے کا آلہ)۔' },
-          { h: '🎯 یاد رکھیں', p: 'ظرف کا وزن مَفْعَل/مَفْعِل (میم پر فتح)۔ آلہ کا وزن مِفْعَال/مِفْعَل (میم پر کسر)۔ فرق میم کی حرکت میں ہے۔' }
-        ],
-        keyFacts: ['اسم ظرف = جگہ یا وقت', 'اسم آلہ = اوزار', 'ظرف: مَفْعَل/مَفْعِل', 'آلہ: مِفْعَال/مِفْعَل'],
-        reflection: 'اسم ظرف اور اسم آلہ روزمرہ زندگی کے الفاظ ہیں — مَسْجِد، مَكْتَب، مِفْتَاح، مِيزَان۔ یہ یاد کرنا آسان ہے۔',
-        quiz: [
-          { q: 'مَسْجِد کیا ہے؟', opts: ['اسم ظرف', 'اسم آلہ'], correct: 0 },
-          { q: 'مِفْتَاح کیا ہے؟', opts: ['اسم ظرف', 'اسم آلہ'], correct: 1 },
-          { q: 'مِفْتَاح کا مطلب؟', opts: ['چابی', 'مسجد', 'میز'], correct: 0 }
-        ], xp: 100
-      },
-      {
-        day: 13, type: 'sarf', emoji: '⭐', title: 'صفت مشبہ اور اسم تفضیل',
-        roman: 'Adjective & Comparative', goal: 'دائمی صفت اور زیادہ کی صفت سمجھنا۔',
-        sections: [
-          { h: '⭐ صفت مشبہ', p: 'وہ اسم جو دائمی صفت کو ظاہر کرے۔ وزن "فَعِيل" یا "فَعْلَان" ہے۔ مثلاً: رَحِيم (بہت رحم والا)، كَرِيم (بہت کرم والا)، عَلِيم (بہت جاننے والا)، عَظِيم (بہت عظمت والا)، سَمِيع (بہت سننے والا)، بَصِير (بہت دیکھنے والا)۔ یہ اللہ کے اسمائے حسنیٰ میں بہت آتے ہیں۔' },
-          { h: '📊 اسم تفضیل', p: 'وہ اسم جو زیادہ (comparative) یا سب سے زیادہ (superlative) ظاہر کرے۔ وزن "أَفْعَل" ہے۔ مثلاً: أَكْبَر (سب سے بڑا/زیادہ بڑا)، أَعْلَى (سب سے بلند)، أَحْسَن (سب سے بہتر)، أَعْلَم (سب سے زیادہ جاننے والا)، أَكْرَم (سب سے زیادہ کرم والا)۔' },
-          { h: '🎯 فرق', p: 'صفت مشبہ = دائمی صفت (رَحِيم = ہمیشہ رحم کرنے والا)۔ اسم تفضیل = زیادہ/سب سے زیادہ (أَرْحَم = سب سے زیادہ رحم کرنے والا)۔ "اللَّهُ أَكْبَرُ" (اللہ سب سے بڑا ہے) — یہ اسم تفضیل ہے۔' }
-        ],
-        keyFacts: ['صفت مشبہ = دائمی صفت (فَعِيل)', 'اسم تفضیل = زیادہ/سب سے زیادہ (أَفْعَل)', 'رَحِيم = بہت رحم والا', 'أَرْحَم = سب سے زیادہ رحم والا'],
-        reflection: 'اللہ کے 99 ناموں میں کئی صفت مشبہ ہیں — رَحِيم، كَرِيم، عَلِيم، عَظِيم۔ یہ یاد کرنا بہت مفید ہے۔',
-        quiz: [
-          { q: 'رَحِيم کیا ہے؟', opts: ['صفت مشبہ', 'اسم تفضیل'], correct: 0 },
-          { q: 'أَكْبَر کیا ہے؟', opts: ['صفت مشبہ', 'اسم تفضیل'], correct: 1 },
-          { q: 'أَكْبَر کا مطلب؟', opts: ['سب سے بڑا', 'بہت بڑا'], correct: 0 }
-        ], xp: 100
-      },
-      {
-        day: 14, type: 'sarf', emoji: '👥', title: 'جمع (Plurals)',
-        roman: 'Plurals in Arabic', goal: 'جمع کی مختلف قسمیں سمجھنا۔',
-        sections: [
-          { h: '👥 جمع مذکر سالم', p: 'مذکر (مرد) کی باقاعدہ جمع۔ مفرد کے آخر میں "ُونَ" (رفع) یا "ِينَ" (نصب/جر) لگاتے ہیں۔ مثلاً: مُسْلِم → مُسْلِمُونَ (مسلمان)، مُؤْمِن → مُؤْمِنُونَ (مومنین)، كَاتِب → كَاتِبُونَ (لکھنے والے)۔ قرآن میں: الْمُسْلِمُونَ، الْمُؤْمِنُونَ، الْمُجْرِمُونَ، الظَّالِمُونَ۔' },
-          { h: '👥 جمع مؤنث سالم', p: 'مؤنث (عورت) کی باقاعدہ جمع۔ مفرد کے آخر سے ـة ہٹا کر "َاتٌ" لگاتے ہیں۔ مثلاً: مُسْلِمَة → مُسْلِمَاتٌ (مسلمان عورتیں)، مُؤْمِنَة → مُؤْمِنَاتٌ (مومن عورتیں)، صَالِحَة → صَالِحَاتٌ (نیک عورتیں)۔ قرآن میں: الْمُؤْمِنَاتُ، الصَّالِحَاتُ، الْمُحْصَنَاتُ۔' },
-          { h: '👥 جمع مکسر', p: 'وہ جمع جو باقاعدہ قاعدے سے نہیں بنتی، بلکہ وزن بدل جاتا ہے۔ مثلاً: بَيْت → بُيُوت (گھر)، كِتَاب → كُتُب (کتابیں)، قَلْب → قُلُوب (دل)، عَالِم → عُلَمَاء (علماء)، رَسُول → رُسُل (رسول)، نَبِيّ → أَنْبِيَاء (نبی)۔ یہ یاد کرنے پڑتے ہیں۔' }
-        ],
-        keyFacts: ['جمع مذکر سالم: ـُونَ / ـِينَ', 'جمع مؤنث سالم: ـَاتٌ', 'جمع مکسر: وزن بدلتا ہے', 'یہ یاد کرنے پڑتے ہیں'],
-        reflection: 'قرآن میں جمع بہت آتا ہے۔ جمع مذکر و مؤنث سالم آسان ہیں (قاعدہ ہے)، جمع مکسر مشکل ہیں (یاد کرنے پڑتے ہیں)۔',
-        quiz: [
-          { q: 'مُسْلِمُونَ کون سی جمع ہے؟', opts: ['جمع مذکر سالم', 'جمع مؤنث سالم', 'جمع مکسر'], correct: 0 },
-          { q: 'كُتُب کون سی جمع ہے؟', opts: ['جمع مذکر سالم', 'جمع مؤنث سالم', 'جمع مکسر'], correct: 2 },
-          { q: 'كِتَاب کی جمع کیا ہے؟', opts: ['كَاتِب', 'كُتُب', 'مَكْتَب'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 15, type: 'sarf', emoji: '🏆', title: 'ثلاثی مزید فیہ + صرف کا خلاصہ',
-        roman: 'Augmented Verbs & Review', goal: 'مزید فیہ ابواب کا تعارف اور صرف کا خلاصہ۔',
-        sections: [
-          { h: '📖 ثلاثی مزید فیہ', p: 'جب جذر کے 3 حروف میں 1، 2، یا 3 حروف مزید بڑھائے جائیں تو "مزید فیہ" باب بنتے ہیں۔ یہاں 8 اہم ابواب کا تعارف ہے: إفعال (أَكْرَمَ يُكْرِمُ)، تفعيل (عَلَّمَ يُعَلِّمُ)، مفاعلة (جَاهَدَ يُجَاهِدُ)، تفعُّل (تَعَلَّمَ يَتَعَلَّمُ)، تفاعُل (تَعَاوَنَ يَتَعَاوَنُ)، انفعال (اِنْكَسَرَ يَنْكَسِرُ)، افتعال (اِجْتَمَعَ يَجْتَمِعُ)، استفعال (اِسْتَغْفَرَ يَسْتَغْفِرُ)۔' },
-          { h: '🎯 چند مثالیں', p: 'أَكْرَمَ (عزت دی) — إفعال۔ عَلَّمَ (سکھایا) — تفعيل۔ جَاهَدَ (جہاد کیا) — مفاعلة۔ تَعَلَّمَ (سیکھا) — تفعُّل۔ تَعَاوَنَ (تعاون کیا) — تفاعُل۔ اِنْكَسَرَ (ٹوٹا) — انفعال۔ اِجْتَمَعَ (جمع ہوا) — افتعال۔ اِسْتَغْفَرَ (بخشش مانگی) — استفعال۔' },
-          { h: '🎯 صرف کا خلاصہ', p: '15 دن میں صرف کے بنیادی اصول سیکھے: کلمہ کی 3 اقسام، جذر، وزن، ماضی/مضارع/امر/نہی کی گردان، 6 ابواب، اسم فاعل/مفعول/ظرف/آلہ، صفت مشبہ، اسم تفضیل، جمع۔ اب آپ عربی لفظ کا وزن اور جذر پہچاننے کی بنیاد رکھتے ہیں۔' }
-        ],
-        keyFacts: ['8 اہم مزید فیہ ابواب', 'إفعال، تفعيل، مفاعلة', 'تفعُّل، تفاعُل', 'انفعال، افتعال، استفعال'],
-        reflection: 'صرف مکمل ہو گیا! یہ بہت بڑی کامیابی ہے۔ اب آپ عربی لفظوں کی دنیا میں داخل ہو گئے ہیں۔ اللہ آپ کے علم میں برکت دے۔',
-        quiz: [
-          { q: 'أَكْرَمَ کون سا باب؟', opts: ['إفعال', 'تفعيل', 'مفاعلة'], correct: 0 },
-          { q: 'عَلَّمَ کون سا باب؟', opts: ['إفعال', 'تفعيل', 'مفاعلة'], correct: 1 },
-          { q: 'اِسْتَغْفَرَ کون سا باب؟', opts: ['استفعال', 'افتعال', 'انفعال'], correct: 0 }
-        ], xp: 100
-      },
-      // ========== نحو - دن 16-30 ==========
-      {
-        day: 16, type: 'nahw', emoji: '📖', title: 'نحو کیا ہے؟',
-        roman: 'What is Nahw?', goal: 'نحو کی تعریف اور اہمیت سمجھنا۔',
-        sections: [
-          { h: '📖 نحو کی تعریف', p: 'نحو عربی زبان کا وہ علم ہے جس میں جملے کی ساخت، الفاظ کی ترتیب، اور اعراب (لفظ کے آخری حرف کی حرکت) کے قواعد کا مطالعہ کیا جاتا ہے۔ سادہ الفاظ میں، نحو "جملے کا نقشہ" ہے — کون سا لفظ کہاں رکھنا ہے، اور کیوں۔' },
-          { h: '🎯 نحو کیوں ضروری ہے؟', p: 'قرآن کی آیات سمجھنے کے لیے نحو ضروری ہے۔ ایک ہی لفظ، مختلف اعراب کے ساتھ، مختلف معنی دیتا ہے۔ مثلاً: ضَرَبَ زَيْدٌ عَمْرًا (زید نے عمرو کو مارا) اور ضَرَبَ زَيْدًا عَمْرٌو (عمرو نے زید کو مارا) — اعراب سے فاعل اور مفعول کا فرق پتا چلتا ہے۔' },
-          { h: '🌟 صرف vs نحو', p: 'صرف = لفظ کی شکل (کلمہ کیسے بنا؟)۔ نحو = لفظ کا جملے میں مقام (کلمہ کیا کام کر رہا ہے؟)۔ دونوں مل کر عربی سمجھنے کی مکمل کنجی ہیں۔' }
-        ],
-        keyFacts: ['نحو = جملے کی ساخت کا علم', 'اعراب = آخری حرف کی حرکت', 'قرآن سمجھنے کے لیے ضروری', 'صرف + نحو = مکمل عربی'],
-        reflection: 'نحو مشکل لگتا ہے، مگر یہ عربی جملے سمجھنے کی کنجی ہے۔ ہمیں چاہیے کہ صبر سے سیکھیں۔',
-        quiz: [
-          { q: 'نحو کس چیز کا علم ہے؟', opts: ['لفظ کی شکل کا', 'جملے کی ساخت کا', 'آواز کا'], correct: 1 },
-          { q: 'اعراب کیا ہے؟', opts: ['پہلے حرف کی حرکت', 'آخری حرف کی حرکت', 'درمیانی حرف کی حرکت'], correct: 1 },
-          { q: 'نحو کیوں ضروری ہے؟', opts: ['قرآن سمجھنے کے لیے', 'شاعری کے لیے', 'رسم الخط کے لیے'], correct: 0 }
-        ], xp: 100
-      },
-      {
-        day: 17, type: 'nahw', emoji: '🎵', title: 'اعراب — چار حالتیں',
-        roman: "I'rab - Four States", goal: 'رفع، نصب، جر، جزم سمجھنا۔',
-        sections: [
-          { h: '🎵 اعراب کیا ہے؟', p: 'اعراب لفظ کے آخری حرف کی حرکت یا حرف ہے، جو جملے میں لفظ کا مقام بتاتا ہے۔ عربی میں چار اعرابی حالتیں ہیں: رفع، نصب، جر، جزم۔' },
-          { h: '📊 رفع (ـُ / ـٌ)', p: 'علامت: پیش (ـُ) یا دو پیش (ـٌ)۔ کب آتا ہے؟ مبتدأ، خبر، فاعل، نائب فاعل میں۔ مثال: الطَّالِبُ مُجْتَهِدٌ (طالب محنتی ہے) — دونوں مرفوع۔ كَتَبَ الطَّالِبُ (طالب نے لکھا) — الطالب مرفوع (فاعل)۔' },
-          { h: '📊 نصب (ـَ / ـً)', p: 'علامت: زبر (ـَ) یا دو زبر (ـً)۔ کب آتا ہے؟ مفعول بہ، حال، تمیز، خبرِ کان میں۔ مثال: كَتَبَ الطَّالِبُ الدَّرْسَ (طالب نے سبق لکھا) — الدرس منصوب (مفعول)۔' },
-          { h: '📊 جر (ـِ / ـٍ)', p: 'علامت: زیر (ـِ) یا دو زیر (ـٍ)۔ کب آتا ہے؟ حرفِ جر کے بعد، مضاف الیہ میں۔ مثال: فِي الْبَيْتِ (گھر میں) — البیت مجرور۔ كِتَابُ الطَّالِبِ (طالب کی کتاب) — الطالب مجرور۔' },
-          { h: '📊 جزم (ـْ)', p: 'علامت: سکون (ـْ)۔ صرف فعل مضارع میں آتا ہے، جب لَم، لَا ناہیہ، إِن شرطیہ وغیرہ پہلے ہوں۔ مثال: لَمْ يَكْتُبْ (اس نے نہیں لکھا) — یکتب مجزوم۔' }
-        ],
-        keyFacts: ['رفع: ـُ (مبتدأ، خبر، فاعل)', 'نصب: ـَ (مفعول، حال)', 'جر: ـِ (حرفِ جر کے بعد)', 'جزم: ـْ (فعل مضارع)'],
-        reflection: 'چار اعرابی حالتیں یاد رکھنا نحو کی بنیاد ہے۔ رفع، نصب، جر، جزم — یہ چاروں یاد ہوں، تو آگے آسان ہوگا۔',
-        quiz: [
-          { q: 'فَاعِل کا اعراب کیا ہے؟', opts: ['رفع', 'نصب', 'جر'], correct: 0 },
-          { q: 'مَفْعُول کا اعراب؟', opts: ['رفع', 'نصب', 'جر'], correct: 1 },
-          { q: 'حرفِ جر کے بعد کیا اعراب؟', opts: ['رفع', 'نصب', 'جر'], correct: 2 }
-        ], xp: 100
-      },
-      {
-        day: 18, type: 'nahw', emoji: '🏠', title: 'جملہ اسمیہ — مبتدأ و خبر',
-        roman: 'Nominal Sentence', goal: 'جملہ اسمیہ کی ساخت سمجھنا۔',
-        sections: [
-          { h: '🏠 جملہ اسمیہ کیا ہے؟', p: 'وہ جملہ جو اسم سے شروع ہو، اسے جملہ اسمیہ کہتے ہیں۔ اس میں دو بنیادی حصے ہوتے ہیں: مبتدأ (وہ جس کے بارے میں بات ہو) اور خبر (اس کی خبر)۔' },
-          { h: '📖 مبتدأ', p: 'جملے کا وہ اسم جس کے بارے میں بات کی جائے۔ مبتدأ ہمیشہ مرفوع ہوتا ہے۔ مثال: "اللَّهُ أَحَدٌ" میں اللَّهُ مبتدأ ہے (مرفوع)۔ "الطَّالِبُ مُجْتَهِدٌ" میں الطَّالِبُ مبتدأ ہے۔' },
-          { h: '📖 خبر', p: 'مبتدأ کی خبر دینے والا حصہ۔ خبر بھی مرفوع ہوتی ہے۔ مثال: "اللَّهُ أَحَدٌ" میں أَحَدٌ خبر ہے۔ "الطَّالِبُ مُجْتَهِدٌ" میں مُجْتَهِدٌ خبر ہے۔ کبھی خبر جملہ یا جار مجرور ہو سکتی ہے۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'اللَّهُ نُورُ السَّمَاوَاتِ (اللہ آسمانوں کا نور ہے) — اللَّهُ مبتدأ، نُورُ خبر۔ الْحَمْدُ لِلَّهِ (تمام تعریف اللہ کے لیے) — الْحَمْدُ مبتدأ، لِلَّهِ جار مجرور بطور خبر۔ قُلْ هُوَ اللَّهُ أَحَدٌ (کہہ دو: وہ اللہ ایک ہے) — هُوَ ضمیرِ شان، اللَّهُ مبتدأ، أَحَدٌ خبر۔' }
-        ],
-        keyFacts: ['جملہ اسمیہ = اسم سے شروع', 'مبتدأ = جس کے بارے میں بات', 'خبر = اس کی خبر', 'دونوں مرفوع ہوتے ہیں'],
-        reflection: 'جملہ اسمیہ عربی کے سب سے عام جملوں میں سے ہے۔ قرآن کی بہت سی آیات اسمیہ ہیں — "اللَّهُ أَحَدٌ"، "الْحَمْدُ لِلَّهِ"، "هُوَ الْحَيُّ"۔',
-        quiz: [
-          { q: 'اللَّهُ أَحَدٌ میں مبتدأ کون؟', opts: ['اللَّهُ', 'أَحَدٌ'], correct: 0 },
-          { q: 'مبتدأ کا اعراب؟', opts: ['رفع', 'نصب', 'جر'], correct: 0 },
-          { q: 'خبر کا اعراب؟', opts: ['رفع', 'نصب', 'جر'], correct: 0 }
-        ], xp: 100
-      },
-      {
-        day: 19, type: 'nahw', emoji: '🏃', title: 'جملہ فعلیہ — فعل، فاعل، مفعول',
-        roman: 'Verbal Sentence', goal: 'جملہ فعلیہ کی مکمل ساخت سمجھنا۔',
-        sections: [
-          { h: '🏃 جملہ فعلیہ کیا ہے؟', p: 'وہ جملہ جو فعل سے شروع ہو، اسے جملہ فعلیہ کہتے ہیں۔ ترتیب: فعل + فاعل + مفعول بہ (اگر ہو)۔ مثال: كَتَبَ الطَّالِبُ الدَّرْسَ (طالب نے سبق لکھا)۔' },
-          { h: '📖 فاعل', p: 'جملے میں وہ اسم جو کام کرنے والا ہو۔ فاعل ہمیشہ مرفوع ہوتا ہے۔ مثال: "كَتَبَ الطَّالِبُ" میں الطَّالِبُ فاعل ہے۔ "قَالَ مُوسَىٰ" میں مُوسَىٰ فاعل ہے (مرفوع، مگر آخر میں الف مقصورہ کی وجہ سے ظاہری حرکت نہیں)۔' },
-          { h: '📖 مفعول بہ', p: 'وہ اسم جس پر کام کیا گیا ہو۔ مفعول بہ منصوب ہوتا ہے۔ مثال: "كَتَبَ الطَّالِبُ الدَّرْسَ" میں الدَّرْسَ مفعول بہ ہے (منصوب)۔ "قَرَأَ الْوَلَدُ الْكِتَابَ" میں الْكِتَابَ مفعول ہے۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'خَلَقَ اللَّهُ السَّمَاوَاتِ (اللہ نے آسمان پیدا کیے) — خَلَقَ فعل، اللَّهُ فاعل، السَّمَاوَاتِ مفعول (جمع مؤنث سالم ہونے کی وجہ سے نصب کسرہ سے ہے)۔ عَلَّمَ الْإِنسَانَ (انسان کو سکھایا) — عَلَّمَ فعل، فاعل مستتر (وہ یعنی اللہ)، الْإِنسَانَ مفعول۔ قَالَ يَا آدَمُ (اس نے کہا: اے آدم!) — قَالَ فعل، فاعل مستتر۔' }
-        ],
-        keyFacts: ['جملہ فعلیہ = فعل سے شروع', 'فعل + فاعل + مفعول', 'فاعل مرفوع', 'مفعول منصوب'],
-        reflection: 'جملہ فعلیہ قرآن کا دوسرا بڑا حصہ ہے۔ "خَلَقَ، عَلَّمَ، قَالَ، جَعَلَ" — یہ سب فعلیہ جملے ہیں۔',
-        quiz: [
-          { q: 'كَتَبَ الطَّالِبُ میں فاعل کون؟', opts: ['كَتَبَ', 'الطَّالِبُ'], correct: 1 },
-          { q: 'فاعل کا اعراب؟', opts: ['رفع', 'نصب', 'جر'], correct: 0 },
-          { q: 'مفعول کا اعراب؟', opts: ['رفع', 'نصب', 'جر'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 20, type: 'nahw', emoji: '🔄', title: 'کان اور اس کی بہنیں',
-        roman: 'Kana & Its Sisters', goal: 'کان اور اس کی بہنوں کا عمل سمجھنا۔',
-        sections: [
-          { h: '🔄 کان (كَانَ)', p: 'كَانَ (تھا) ایک ناقص فعل ہے جو مبتدأ و خبر پر آتا ہے، اور ان کے اعراب بدل دیتا ہے: مبتدأ کو مرفوع (اسمِ کان) رہنے دیتا ہے، مگر خبر کو منصوب (خبرِ کان) کر دیتا ہے۔ مثال: كَانَ الطَّالِبُ مُجْتَهِدًا (طالب محنتی تھا) — الطالب اسمِ کان (مرفوع)، مجتهدًا خبرِ کان (منصوب)۔' },
-          { h: '👥 کان کی بہنیں', p: 'كَانَ کے ساتھ 12 بہنیں ہیں: صَارَ (ہو گیا)، أَصْبَحَ (صبح ہوئی)، أَضْحَى (چاشت ہوئی)، أَمْسَى (شام ہوئی)، ظَلَّ (دن رہا)، بَاتَ (رات رہی)، مَا زَالَ (ہمیشہ رہا)، مَا دَامَ (جب تک رہے)، مَا بَرِحَ (نہیں ہٹا)، مَا فَتِئَ (نہیں رکا)، مَا انْفَكَّ (نہیں جدا ہوا)، لَيْسَ (نہیں ہے)۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'وَكَانَ اللَّهُ غَفُورًا رَّحِيمًا (اللہ بخشنے والا رحم کرنے والا تھا) — اللَّهُ اسمِ کان، غَفُورًا رَّحِيمًا خبرِ کان۔ وَأَصْبَحَ فُؤَادُ أُمِّ مُوسَىٰ فَارِغًا (موسیٰ کی ماں کا دل خالی ہو گیا)۔ وَكَانَ اللَّهُ عَلِيمًا حَكِيمًا (اللہ جاننے والا حکمت والا تھا/ہے)۔' }
-        ],
-        keyFacts: ['کان مبتدأ کو مرفوع رکھتا ہے', 'کان خبر کو منصوب کرتا ہے', '12 بہنیں ہیں', 'اسمِ کان مرفوع، خبرِ کان منصوب'],
-        reflection: 'کان اور اس کی بہنیں قرآن میں بہت آتی ہیں — "كَانَ اللَّهُ غَفُورًا"، "أَصْبَحَ..."۔ یہ سمجھنا ضروری ہے۔',
-        quiz: [
-          { q: 'كَانَ کیا کرتا ہے؟', opts: ['مبتدأ منصوب، خبر مرفوع', 'مبتدأ مرفوع، خبر منصوب'], correct: 1 },
-          { q: 'كَانَ الطَّالِبُ مُجْتَهِدًا میں خبر کون؟', opts: ['الطَّالِبُ', 'مُجْتَهِدًا'], correct: 1 },
-          { q: 'لَيْسَ کیا ہے؟', opts: ['کان کی بہن', 'حرف'], correct: 0 }
-        ], xp: 100
-      },
-      {
-        day: 21, type: 'nahw', emoji: '❗', title: 'إنَّ اور اس کی بہنیں',
-        roman: 'Inna & Its Sisters', goal: 'إنَّ اور اس کی بہنوں کا عمل سمجھنا۔',
-        sections: [
-          { h: '❗ إنَّ (بے شک)', p: 'إنَّ (بے شک) ایک حرفِ مشبہ بالفعل ہے جو مبتدأ و خبر پر آتا ہے: مبتدأ کو منصوب (اسمِ إنَّ) کر دیتا ہے، مگر خبر کو مرفوع (خبرِ إنَّ) رہنے دیتا ہے۔ مثال: إِنَّ اللَّهَ غَفُورٌ (بے شک اللہ بخشنے والا ہے) — اللَّهَ اسمِ إنَّ (منصوب)، غَفُورٌ خبرِ إنَّ (مرفوع)۔' },
-          { h: '👥 إنَّ کی بہنیں', p: 'إنَّ کی 5 بہنیں ہیں: أَنَّ (کہ)، كَأَنَّ (گویا)، لَكِنَّ (لیکن)، لَيْتَ (کاش)، لَعَلَّ (شاید)۔ إنَّ کو ملا کر کل 6 حروف ہیں۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ (بے شک اللہ سننے والا دیکھنے والا ہے)۔ إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ (بے شک اللہ ہر چیز پر قادر ہے)۔ وَلَٰكِنَّ اللَّهَ ذُو فَضْلٍ عَلَى الْعَالَمِينَ (لیکن اللہ جہانوں پر فضل والا ہے)۔ يَا لَيْتَ قَوْمِي يَعْلَمُونَ (کاش میری قوم جانتی)۔ لَعَلَّ اللَّهَ يُحْدِثُ بَعْدَ ذَٰلِكَ أَمْرًا (شاید اللہ اس کے بعد کوئی نیا معاملہ پیدا کر دے)۔' }
-        ],
-        keyFacts: ['إنَّ مبتدأ کو منصوب کرتا ہے', 'إنَّ خبر کو مرفوع رکھتا ہے', '6 حروف: إنَّ، أنَّ، كأنَّ، لكنَّ، ليتَ، لعلَّ', 'اسمِ إنَّ منصوب، خبرِ إنَّ مرفوع'],
-        reflection: 'إنَّ اور اس کی بہنیں قرآن میں بہت آتی ہیں۔ "إِنَّ اللَّهَ..." بہت عام ہے۔ یہ یاد کرنا ضروری ہے۔',
-        quiz: [
-          { q: 'إِنَّ کیا کرتا ہے؟', opts: ['مبتدأ منصوب، خبر مرفوع', 'مبتدأ مرفوع، خبر منصوب'], correct: 0 },
-          { q: 'إِنَّ اللَّهَ غَفُورٌ میں اسمِ إنَّ کون؟', opts: ['اللَّهَ', 'غَفُورٌ'], correct: 0 },
-          { q: 'لَيْتَ کا معنی؟', opts: ['کاش', 'بے شک', 'لیکن'], correct: 0 }
-        ], xp: 100
-      },
-      {
-        day: 22, type: 'nahw', emoji: '🔗', title: 'حروفِ جر (Prepositions)',
-        roman: 'Prepositions of Jarr', goal: 'حروفِ جر اور ان کے بعد اعراب سمجھنا۔',
-        sections: [
-          { h: '🔗 حروفِ جر کیا ہیں؟', p: 'وہ حروف جو اسم سے پہلے آئیں اور اسے مجرور کر دیں۔ عربی میں بہت سے حروفِ جر ہیں، مگر قرآن میں یہ زیادہ آتے ہیں: بِ (سے، ساتھ)، لِ (کے لیے)، فِي (میں)، مِن (سے)، إِلَى (کی طرف)، عَلَى (پر)، عَن (سے)، كَ (جیسا)، رُبَّ (کبھی کبھی)۔' },
-          { h: '📖 استعمال', p: 'حرفِ جر کے بعد اسم مجرور ہوتا ہے۔ مثال: فِي الْبَيْتِ (گھر میں) — البیت مجرور۔ مِنَ السَّمَاءِ (آسمان سے) — السماء مجرور۔ إِلَى اللَّهِ (اللہ کی طرف) — اللَّهِ مجرور (زیر کے ساتھ)۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'الْحَمْدُ لِلَّهِ (تمام تعریف اللہ کے لیے) — لِلَّهِ جار مجرور۔ بِسْمِ اللَّهِ (اللہ کے نام سے) — بِ جار۔ فِي الْأَرْضِ (زمین میں)۔ مِنْ خَيْرٍ (بھلائی سے)۔ عَلَى الْعَرْشِ (عرش پر)۔' }
-        ],
-        keyFacts: ['حروفِ جر اسم سے پہلے آتے ہیں', 'اسم کو مجرور کرتے ہیں', 'بِ، لِ، فِي، مِن، إِلَى، عَلَى', 'قرآن میں بہت آتے ہیں'],
-        reflection: 'حروفِ جر سمجھے تو آپ خود سمجھ سکیں گے کہ کون سی چیز کہاں ہے — "فِي" (میں)، "عَلَى" (پر)، "إِلَى" (کی طرف)۔',
-        quiz: [
-          { q: 'حرفِ جر کے بعد کون سا اعراب؟', opts: ['رفع', 'نصب', 'جر'], correct: 2 },
-          { q: 'فِي کا مطلب؟', opts: ['میں', 'سے', 'پر'], correct: 0 },
-          { q: 'عَلَى کا مطلب؟', opts: ['میں', 'پر', 'کی طرف'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 23, type: 'nahw', emoji: '➕', title: 'اضافت (Possessive)',
-        roman: 'Idafa', goal: 'اضافت کی ساخت سمجھنا۔',
-        sections: [
-          { h: '➕ اضافت کیا ہے؟', p: 'اضافت دو اسموں کا آپس میں جڑنا ہے، جس میں پہلا اسم دوسرے کا مالک ہوتا ہے، یا دونوں میں تعلق ہوتا ہے۔ اردو میں "کا، کے، کی" سے آتا ہے۔' },
-          { h: '📖 مضاف و مضاف الیہ', p: 'اضافت میں دو حصے ہوتے ہیں: مضاف (پہلا اسم — ال اور تنوین کے بغیر)، مضاف الیہ (دوسرا اسم — مجرور)۔ مثال: كِتَابُ الطَّالِبِ (طالب کی کتاب) — كِتَابُ مضاف، الطَّالِبِ مضاف الیہ (مجرور)۔ بَابُ الْبَيْتِ (گھر کا دروازہ)۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'رَبُّ الْعَالَمِينَ (جہانوں کا رب) — رَبُّ مضاف، العالمین مضاف الیہ۔ مَالِكِ يَوْمِ الدِّينِ (بدلے کے دن کا مالک) — يَوْمِ مضاف، الدِّينِ مضاف الیہ۔ رَبُّ الْعَرْشِ الْعَظِيمِ (عظیم عرش کا رب) — الْعَظِيمِ، العرش کی صفت ہے۔ بَيْتُ اللَّهِ (اللہ کا گھر)۔' },
-          { h: '⚠️ اہم قاعدہ', p: 'مضاف کبھی "ال" کے ساتھ نہیں آتا (الكِتَابُ الطَّالِبِ غلط ہے، صرف كِتَابُ الطَّالِبِ صحیح ہے)۔ مضاف کی تنوین بھی نہیں آتی (كِتَابٌ الطَّالِبِ غلط ہے)۔' }
-        ],
-        keyFacts: ['اضافت = دو اسم کا رشتہ', 'مضاف (پہلا) ال کے بغیر', 'مضاف الیہ (دوسرا) مجرور', 'مضاف کی تنوین نہیں آتی'],
-        reflection: 'اضافت عربی کا بہت اہم قاعدہ ہے۔ "کتاب اللہ"، "رسول اللہ"، "بیت اللہ" — یہ سب اضافت ہیں۔',
-        quiz: [
-          { q: 'كِتَابُ الطَّالِبِ میں مضاف کون؟', opts: ['كِتَابُ', 'الطَّالِبِ'], correct: 0 },
-          { q: 'مضاف الیہ کا اعراب؟', opts: ['رفع', 'نصب', 'جر'], correct: 2 },
-          { q: 'مضاف ال کے ساتھ آ سکتا ہے؟', opts: ['ہاں', 'نہیں'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 24, type: 'nahw', emoji: '🎨', title: 'صفت اور موصوف',
-        roman: 'Adjective & Noun', goal: 'صفت اور موصوف کا رشتہ سمجھنا۔',
-        sections: [
-          { h: '🎨 صفت و موصوف کیا ہے؟', p: 'صفت وہ اسم ہے جو موصوف کی خوبی یا حالت بیان کرے۔ اردو میں "اچھا، بڑا، نیک، کریم" جیسی صفات۔ عربی میں صفت موصوف کے بعد آتی ہے، اور موصوف کے اعراب، جنس، تعداد میں موافق ہوتی ہے۔' },
-          { h: '📖 اہم اصول', p: 'صفت چار چیزوں میں موصوف کے مطابق ہوتی ہے: 1) اعراب (رفع/نصب/جر)، 2) جنس (مذکر/مؤنث)، 3) تعداد (واحد/تثنیہ/جمع)، 4) معرفہ/نکرہ۔ مثال: رَجُلٌ كَرِيمٌ (کریم آدمی) — دونوں نکرہ، مرفوع، مذکر۔ الْمُسْلِمُونَ الصَّالِحُونَ (نیک مسلمان) — دونوں معرفہ، مرفوع، جمع۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'اللَّهُ غَفُورٌ رَّحِيمٌ (اللہ بخشنے والا رحم کرنے والا ہے) — یہاں غفور، رحیم خبریں ہیں۔ رَسُولٌ كَرِيمٌ (کریم رسول) — كَرِيمٌ صفت۔ يَوْمٌ عَظِيمٌ (عظیم دن)۔ عَلَى صِرَاطٍ مُّسْتَقِيمٍ (سیدھے راستے پر)۔' }
-        ],
-        keyFacts: ['صفت موصوف کی خوبی بتاتی ہے', 'موصوف کے بعد آتی ہے', '4 چیزوں میں موافق: اعراب، جنس، تعداد، معرفہ/نکرہ', 'قرآن میں بہت آتی ہے'],
-        reflection: 'صفت و موصوف عربی جملوں کی خوبصورتی ہے۔ "رَسُولٌ كَرِيمٌ"، "يَوْمٌ عَظِيمٌ" — چھوٹی چھوٹی ترکیبیں، بڑے معنی۔',
-        quiz: [
-          { q: 'صفت موصوف کے کہاں آتی ہے؟', opts: ['پہلے', 'بعد میں'], correct: 1 },
-          { q: 'صفت کتنی چیزوں میں موافق ہوتی ہے؟', opts: ['2', '4'], correct: 1 },
-          { q: 'رَجُلٌ كَرِيمٌ میں صفت کون؟', opts: ['رَجُلٌ', 'كَرِيمٌ'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 25, type: 'nahw', emoji: '🔀', title: 'عطف، بدل، تاکید',
-        roman: 'Conjunction, Substitute, Emphasis', goal: 'یہ تینوں توابع سمجھنا۔',
-        sections: [
-          { h: '🔀 عطف (Conjunction)', p: 'عطف دو چیزوں کو حرفِ عطف سے جوڑنا ہے۔ حروفِ عطف: وَ (اور)، فَ (پھر)، ثُمَّ (اس کے بعد)، أَوْ (یا)، بَلْ (بلکہ)، لَكِنْ (لیکن)۔ معطوف، معطوف علیہ کے اعراب میں آتا ہے۔ مثال: جَاءَ زَيْدٌ وَعَمْرٌو (زید اور عمرو آئے) — دونوں مرفوع۔' },
-          { h: '🔀 بدل (Substitute)', p: 'بدل وہ اسم ہے جو مبدل منہ (پہلا اسم) کی جگہ مقصود ہو، اور اس کی وضاحت کرے۔ بدل، مبدل منہ کے اعراب میں آتا ہے۔ مثال: رَأَيْتُ زَيْدًا أَخَاكَ (میں نے زید کو دیکھا، تمہارے بھائی کو) — أَخَاكَ بدل ہے (منصوب)۔' },
-          { h: '🔀 تاکید (Emphasis)', p: 'تاکید وہ اسم ہے جو پہلے اسم کو تاکید (زور) دے۔ الفاظ: نَفْس، عَيْن (خود)، كُلّ (سب)، جَمِيع (تمام)، كِلَا (دونوں)۔ تاکید بھی مؤکَّد کے اعراب میں آتی ہے۔ مثال: جَاءَ الْقَوْمُ كُلُّهُمْ (سب لوگ آئے)۔' }
-        ],
-        keyFacts: ['عطف = حرفِ عطف سے جوڑنا', 'بدل = پہلے اسم کی جگہ مقصود', 'تاکید = زور دینا', 'سب اپنے اصل کے اعراب میں'],
-        reflection: 'یہ تینوں توابع ہیں (پیروکار) — اپنے پہلے اسم کے اعراب میں آتے ہیں۔ یہ سمجھنا آسان ہے۔',
-        quiz: [
-          { q: 'وَ کیا ہے؟', opts: ['حرفِ جر', 'حرفِ عطف', 'حرفِ نصب'], correct: 1 },
-          { q: 'بدل کا اعراب؟', opts: ['مبدل منہ کے اعراب میں', 'ہمیشہ رفع', 'ہمیشہ نصب'], correct: 0 },
-          { q: 'كُلُّ کس کے لیے استعمال ہوتا ہے؟', opts: ['عطف', 'بدل', 'تاکید'], correct: 2 }
-        ], xp: 100
-      },
-      {
-        day: 26, type: 'nahw', emoji: '🔗', title: 'اسمِ موصول اور اسمِ اشارہ',
-        roman: 'Relative & Demonstrative', goal: 'موصول اور اشارہ کے اسم سمجھنا۔',
-        sections: [
-          { h: '🔗 اسمِ موصول (Relative Pronouns)', p: 'وہ اسم جو کسی جملے کو پہلے اسم سے جوڑے۔ اردو میں "جو"۔ عربی میں: الَّذِي (جو — واحد مذکر)، الَّتِي (جو — واحد مؤنث)، الَّذِينَ (جو — جمع مذکر)، اللَّاتِي (جو — جمع مؤنث)، مَا (جو — غیر عاقل)، مَنْ (جو — عاقل)۔ مثال: الَّذِي خَلَقَ (جس نے پیدا کیا)۔' },
-          { h: '📍 اسمِ اشارہ (Demonstratives)', p: 'وہ اسم جو کسی چیز کی طرف اشارہ کرے۔ قریب کے لیے: هَذَا (یہ — مذکر)، هَذِهِ (یہ — مؤنث)۔ دور کے لیے: ذَلِكَ (وہ — مذکر)، تِلْكَ (وہ — مؤنث)۔ جمع: هَؤُلَاءِ (یہ سب)، أُولَٰئِكَ (وہ سب)۔ مثال: هَذَا الْكِتَابُ (یہ کتاب)، ذَلِكَ الْيَوْمُ (وہ دن)۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'الْحَمْدُ لِلَّهِ الَّذِي خَلَقَ السَّمَاوَاتِ (تمام تعریف اللہ کے لیے جس نے آسمان پیدا کیے)۔ ذَلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ (یہ وہ کتاب ہے جس میں کوئی شک نہیں)۔ هَذَا خَلْقُ اللَّهِ (یہ اللہ کی مخلوق ہے)۔ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ (کون ہے جو اس کے پاس سفارش کرے)۔' }
-        ],
-        keyFacts: ['اسمِ موصول = الَّذِي، الَّتِي', 'اسمِ اشارہ = هَذَا، ذَلِكَ', 'قریب اور دور کے الگ', 'قرآن میں بہت آتے ہیں'],
-        reflection: 'اسم موصول اور اشارہ عربی جملوں کو جوڑنے کا اہم ذریعہ ہیں۔ "الَّذِي" کا استعمال قرآن میں بہت زیادہ ہے۔',
-        quiz: [
-          { q: 'الَّذِي کس کے لیے؟', opts: ['واحد مذکر', 'واحد مؤنث', 'جمع'], correct: 0 },
-          { q: 'هَذَا کا معنی؟', opts: ['وہ', 'یہ', 'جو'], correct: 1 },
-          { q: 'ذَلِكَ کس کے لیے؟', opts: ['قریب مذکر', 'دور مذکر', 'قریب مؤنث'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 27, type: 'nahw', emoji: '👤', title: 'ضمائر (Pronouns)',
-        roman: 'Personal Pronouns', goal: 'ضمائر کی اقسام سمجھنا۔',
-        sections: [
-          { h: '👤 منفصل ضمائر', p: 'جو الگ لفظ ہوں۔ رفع کے لیے: أَنَا (میں)، نَحْنُ (ہم)، أَنْتَ (تو مذکر)، أَنْتِ (تو مؤنث)، أَنْتُمَا (تم دو)، أَنْتُمْ (تم سب مذکر)، أَنْتُنَّ (تم سب مؤنث)، هُوَ (وہ مذکر)، هِيَ (وہ مؤنث)، هُمَا (وہ دو)، هُمْ (وہ سب مذکر)، هُنَّ (وہ سب مؤنث)۔' },
-          { h: '👤 متصل ضمائر', p: 'جو دوسرے لفظ سے جڑے ہوں۔ مثال: ـهُ (اس کا — مذکر)، ـهَا (اس کا — مؤنث)، ـهُمْ (ان کا)، ـكَ (تیرا)، ـكِ (تیرا — مؤنث)، ـي (میرا)، ـنَا (ہمارا)۔ مثال: كِتَابُهُ (اس کی کتاب)، كِتَابُهَا (اس عورت کی کتاب)۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'قُلْ هُوَ اللَّهُ أَحَدٌ (کہہ دو: وہ اللہ ایک ہے)۔ إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ (بے شک ہم نے آپ کو کوثر دی)۔ أَنْتَ مَوْلَانَا (تو ہمارا مولیٰ ہے)۔ رَبِّ اغْفِرْ لِي (اے میرے رب! مجھے بخش دے) — ـي متکلم واحد کا ضمیر۔' }
-        ],
-        keyFacts: ['منفصل = الگ لفظ', 'متصل = جڑا ہوا', 'هُوَ، هِيَ، أَنَا، نَحْنُ', 'قرآن میں بہت آتے ہیں'],
-        reflection: 'ضمائر عربی جملوں کا لازمی حصہ ہیں۔ "هُوَ" بہت آیات میں آتا ہے — "هُوَ اللَّهُ"، "هُوَ الْحَيُّ"، "هُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ"۔',
-        quiz: [
-          { q: 'أَنَا کا معنی؟', opts: ['میں', 'تو', 'وہ'], correct: 0 },
-          { q: 'هِيَ کس کے لیے؟', opts: ['وہ مذکر', 'وہ مؤنث', 'تم'], correct: 1 },
-          { q: 'كِتَابُهُ میں ـهُ کس کے لیے؟', opts: ['میرا', 'تیرا', 'اس کا (مذکر)'], correct: 2 }
-        ], xp: 100
-      },
-      {
-        day: 28, type: 'nahw', emoji: '🎭', title: 'حال اور تمیز',
-        roman: 'Hal & Tamyeez', goal: 'حال اور تمیز کے منصوبات سمجھنا۔',
-        sections: [
-          { h: '🎭 حال', p: 'حال وہ اسم منصوب ہے جو فاعل یا مفعول کی کیفیت (فعل کے وقت) بیان کرے۔ سوال: "کیسے؟"۔ مثال: جَاءَ زَيْدٌ رَاكِبًا (زید سوار ہو کر آیا) — رَاكِبًا حال ہے۔ ضَرَبْتُهُ مُجَرَّدًا (میں نے اسے اس حال میں مارا کہ وہ بے لباس/بے ہتھیار تھا)۔' },
-          { h: '🎭 تمیز', p: 'تمیز وہ اسم منصوب ہے جو کسی مبہم چیز کی وضاحت کرے۔ سوال: "کس چیز میں؟"۔ مثال: امْتَلَأَ الْكُوبُ مَاءً (پیالہ پانی سے بھر گیا) — مَاءً تمیز ہے۔ تَصَبَّبَ زَيْدٌ عَرَقًا (زید پسینے میں شرابور ہو گیا)۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'فَخَرَجَ مِنْهَا خَائِفًا يَتَرَقَّبُ (وہ وہاں سے ڈرتا ہوا نکلا) — خَائِفًا حال ہے۔ وَاشْتَعَلَ الرَّأْسُ شَيْبًا (سر بڑھاپے سے بھڑک اٹھا) — شَيْبًا تمیز ہے۔ وَفَجَّرْنَا الْأَرْضَ عُيُونًا (اور ہم نے زمین کو چشموں سے پھاڑ دیا) — عُيُونًا تمیز ہے۔' }
-        ],
-        keyFacts: ['حال = کیفیت (کیسے؟)', 'تمیز = وضاحت (کس چیز میں؟)', 'دونوں منصوب ہیں', 'قرآن میں آتے ہیں'],
-        reflection: 'حال اور تمیز عربی جملوں کی خوبصورتی ہیں — یہ کیفیت اور وضاحت دیتے ہیں۔ "سوار ہو کر آیا"، "پانی سے بھر گیا" — یہ حال و تمیز ہیں۔',
-        quiz: [
-          { q: 'حال کا اعراب؟', opts: ['رفع', 'نصب', 'جر'], correct: 1 },
-          { q: 'جَاءَ رَاكِبًا میں رَاكِبًا کیا ہے؟', opts: ['حال', 'تمیز', 'مفعول'], correct: 0 },
-          { q: 'تمیز کا سوال؟', opts: ['کیسے؟', 'کس چیز میں؟', 'کب؟'], correct: 1 }
-        ], xp: 100
-      },
-      {
-        day: 29, type: 'nahw', emoji: '📊', title: 'مجرورات اور مجزومات',
-        roman: 'Majroorat & Majzomat', goal: 'جر اور جزم والے الفاظ سمجھنا۔',
-        sections: [
-          { h: '📊 مجرورات', p: 'وہ اسم جو جر کی حالت میں ہوں: 1) حرفِ جر کے بعد (فِي الْبَيْتِ)، 2) مضاف الیہ (كِتَابُ الطَّالِبِ)، 3) تابع (صفت، عطف، بدل، تاکید) جو مجرور ہو۔ یہ تین جگہیں ہیں۔' },
-          { h: '📊 مجزومات', p: 'وہ فعل مضارع جو جزم کی حالت میں ہوں: 1) لَمْ کے بعد (لَمْ يَكْتُبْ)، 2) لَمَّا کے بعد (لَمَّا يَكْتُبْ)، 3) لَا ناہیہ کے بعد (لَا تَكْتُبْ)، 4) إِنْ شرطیہ کے بعد، 5) شرط کے جواب میں۔ یہ پانچ جگہیں ہیں۔' },
-          { h: '🌟 قرآنی مثالیں', p: 'لَمْ يَلِدْ وَلَمْ يُولَدْ (نہ اس نے جنا، نہ وہ جنا گیا) — يَلِدْ، يُولَدْ مجزوم ہیں۔ لَا تَحْزَنْ (غم نہ کر) — تَحْزَنْ مجزوم۔ إِنْ تَنصُرُوا اللَّهَ يَنصُرْكُمْ (اگر تم اللہ کی مدد کرو گے، وہ تمہاری مدد کرے گا) — تَنصُرُوا مجزوم (نون گر گیا)، يَنصُرْكُمْ مجزوم (جوابِ شرط)۔' }
-        ],
-        keyFacts: ['مجرورات = حرفِ جر، مضاف الیہ، تابع', 'مجزومات = لَم، لَمَّا، لَا ناہیہ، إِنْ شرطیہ کے بعد', 'جزم = سکون (یا نون کا گرنا)', 'قرآن میں بہت آتے ہیں'],
-        reflection: 'مجرورات اور مجزومات کو یاد رکھیں — یہ نحو کی مکمل صورتحال ہے۔ چاروں حالتیں (رفع، نصب، جر، جزم) مکمل۔',
-        quiz: [
-          { q: 'حرفِ جر کے بعد اسم کا اعراب؟', opts: ['رفع', 'نصب', 'جر'], correct: 2 },
-          { q: 'لَمْ کے بعد فعل مضارع کا اعراب؟', opts: ['رفع', 'نصب', 'جزم'], correct: 2 },
-          { q: 'لَا تَكْتُبْ میں تَكْتُبْ کا اعراب؟', opts: ['مرفوع', 'منصوب', 'مجزوم'], correct: 2 }
-        ], xp: 100
-      },
-      {
-        day: 30, type: 'nahw', emoji: '🏆', title: 'نحو کا مکمل خلاصہ',
-        roman: 'Complete Review of Nahw', goal: 'پورے نحو کا خلاصہ اور امتحان۔',
-        sections: [
-          { h: '🏆 15 دن میں کیا سیکھا؟', p: 'نحو کی تعریف، اعراب کی 4 حالتیں، جملہ اسمیہ (مبتدأ، خبر)، جملہ فعلیہ (فعل، فاعل، مفعول)، کان و بہنیں، إنَّ و بہنیں، حروفِ جر، اضافت، صفت و موصوف، عطف، بدل، تاکید، اسمِ موصول، اسمِ اشارہ، ضمائر، حال، تمیز، مجرورات، مجزومات۔' },
-          { h: '🌟 اعمال کا خلاصہ', p: 'عوامل (وہ چیزیں جو اعراب بدلیں): 1) فعل — فاعل کو رفع، مفعول کو نصب۔ 2) کان — مبتدأ کو رفع، خبر کو نصب۔ 3) إنَّ — مبتدأ کو نصب، خبر کو رفع۔ 4) حرفِ جر — اسم کو جر۔ 5) لَم، لَا ناہیہ، إِنْ شرطیہ — فعل کو جزم۔ 6) أنْ، لَنْ، كَيْ — فعل کو نصب۔' },
-          { h: '🎯 آگے کا سفر', p: 'یہ 30 دن کی بنیاد ہے۔ اب آپ قرآن کے سادہ جملے سمجھنے کی طرف بڑھ سکتے ہیں، اعراب پہچان سکتے ہیں، جملے کا ڈھانچہ سمجھ سکتے ہیں۔ آگے مزید مشق کریں — قرآن کا ترجمہ پڑھیں، اعراب دیکھیں، جملوں کا تجزیہ کریں۔' }
-        ],
-        keyFacts: ['15 دن نحو مکمل', '4 اعرابی حالتیں', '6 اہم عوامل', 'قرآن سمجھنے کی بنیاد'],
-        reflection: 'مبارک ہو! آپ نے 30 دن کا مکمل صرف و نحو کا سفر طے کر لیا۔ اللہ آپ کے علم میں برکت دے، اور اسے نفع بخش بنائے۔ آمین۔',
-        quiz: [
-          { q: 'رفع، نصب، جر کے علاوہ چوتھی حالت؟', opts: ['جزم', 'وقف', 'وصل'], correct: 0 },
-          { q: 'كَانَ کیا کرتا ہے؟', opts: ['مبتدأ منصوب، خبر مرفوع', 'مبتدأ مرفوع، خبر منصوب'], correct: 1 },
-          { q: 'إِنَّ کیا کرتا ہے؟', opts: ['مبتدأ منصوب، خبر مرفوع', 'مبتدأ مرفوع، خبر منصوب'], correct: 0 }
-        ], xp: 100
-      }
-    ]};
+    // ============ Course data: grammar-course.js (4 zubaanein) ============
+    const COURSE = window.GRAMMAR_COURSE || [];
+    const TOTAL = COURSE.length;
 
-    // Progress storage
+    // ============ UI text (4 zubaanein) ============
+    const UI = {
+      u: {
+        title: 'نحو و صرف — 30 دن کا سفر', h1: '📖 نحو و صرف',
+        admin: '🔒 فی الحال صرف ایڈمن کو نظر آتا ہے (ریویو موڈ — سارے دن کھلے ہیں)',
+        journey: '📍 آپ کا سفر', daysOf: (a, b) => a + ' / ' + b + ' دن',
+        dayWord: 'دن', sarf: 'صرف', nahw: 'نحو',
+        gSarf: 'صرف — لفظ کی بناوٹ (دن 1–15)', gNahw: 'نحو — جملے کی ساخت (دن 16–30)',
+        back: '← واپس', goal: '🎯 مقصد:', facts: '💡 یاد رکھنے والی باتیں', refl: '🤲 سبق',
+        exam: n => '📝 امتحان — ' + n + ' سوالات', examSub: 'سارے سوالات کے جواب دیں، پھر "جمع کریں" دبائیں',
+        submit: '✅ امتحان جمع کریں', next: d => 'اگلا دن (دن ' + d + ') →', prev: '← پچھلا', allDone: '🎉 سارے دن مکمل — واپس', allDone2: '🎉 سارے دن مکمل — واپس جائیں',
+        pass: (s, t) => '🎉 مبارک ہو! آپ نے ' + s + '/' + t + ' صحیح کیے۔', passSub: (d, xp) => 'دن ' + d + ' مکمل! +' + xp + ' XP',
+        fail: (s, t) => '😢 آپ نے ' + s + '/' + t + ' صحیح کیے۔', failSub: 'پاس ہونے کے لیے کم از کم 2 صحیح جواب چاہیے۔ دوبارہ کوشش کریں۔',
+        retry: '🔄 دوبارہ کوشش کریں', hdr: ['#', 'صیغہ', 'عربی', 'معنی'],
+        letters: ['ا', 'ب', 'ج', 'د'], right: 'صحیح جواب',
+        num: { s: 'واحد', d: 'تثنیہ', p: 'جمع' }, gen: { m: 'مذکر', f: 'مؤنث' }, per: { 3: 'غائب', 2: 'حاضر', 1: 'متکلم' }, perN: { 3: 'غائب', 2: 'حاضر', 1: 'متکلم' }
+      },
+      ro: {
+        title: 'Nahw wa Sarf — 30 din ka safar', h1: '📖 Nahw wa Sarf',
+        admin: '🔒 Filhaal sirf Admin ko nazar aata hai (review mode — saare din khule hain)',
+        journey: '📍 Aapka safar', daysOf: (a, b) => a + ' / ' + b + ' din',
+        dayWord: 'Din', sarf: 'Sarf', nahw: 'Nahw',
+        gSarf: 'Sarf — lafz ki banawat (din 1–15)', gNahw: 'Nahw — jumle ki sakht (din 16–30)',
+        back: '← Wapas', goal: '🎯 Maqsad:', facts: '💡 Yaad rakhne wali baatein', refl: '🤲 Sabaq',
+        exam: n => '📝 Imtihan — ' + n + ' sawalat', examSub: 'Saare sawalon ke jawab dein, phir "Jama karein" dabayein',
+        submit: '✅ Imtihan jama karein', next: d => 'Agla din (din ' + d + ') →', prev: '← Pichla', allDone: '🎉 Saare din mukammal — wapas', allDone2: '🎉 Saare din mukammal — wapas jayein',
+        pass: (s, t) => '🎉 Mubarak ho! Aapne ' + s + '/' + t + ' sahi kiye.', passSub: (d, xp) => 'Din ' + d + ' mukammal! +' + xp + ' XP',
+        fail: (s, t) => '😢 Aapne ' + s + '/' + t + ' sahi kiye.', failSub: 'Pass hone ke liye kam az kam 2 sahi jawab chahiye. Dobara koshish karein.',
+        retry: '🔄 Dobara koshish karein', hdr: ['#', 'Sigha', 'Arabi', 'Matlab'],
+        letters: ['A', 'B', 'C', 'D'], right: 'Sahi jawab',
+        num: { s: 'Wahid', d: 'Tasniya', p: 'Jama' }, gen: { m: 'Muzakkar', f: 'Muannas' }, per: { 3: 'Ghaib', 2: 'Hazir', 1: 'Mutakallim' }, perN: { 3: 'Ghaib', 2: 'Hazir', 1: 'Mutakallim' }
+      },
+      hi: {
+        title: 'नह्व व सर्फ़ — 30 दिन का सफ़र', h1: '📖 नह्व व सर्फ़',
+        admin: '🔒 फ़िलहाल सिर्फ़ एडमिन को नज़र आता है (रिव्यू मोड — सारे दिन खुले हैं)',
+        journey: '📍 आपका सफ़र', daysOf: (a, b) => a + ' / ' + b + ' दिन',
+        dayWord: 'दिन', sarf: 'सर्फ़', nahw: 'नह्व',
+        gSarf: 'सर्फ़ — लफ़्ज़ की बनावट (दिन 1–15)', gNahw: 'नह्व — जुमले की बनावट (दिन 16–30)',
+        back: '← वापस', goal: '🎯 मक़सद:', facts: '💡 याद रखने वाली बातें', refl: '🤲 सबक़',
+        exam: n => '📝 इम्तिहान — ' + n + ' सवाल', examSub: 'सारे सवालों के जवाब दें, फिर "जमा करें" दबाएँ',
+        submit: '✅ इम्तिहान जमा करें', next: d => 'अगला दिन (दिन ' + d + ') →', prev: '← पिछला', allDone: '🎉 सारे दिन मुकम्मल — वापस', allDone2: '🎉 सारे दिन मुकम्मल — वापस जाएँ',
+        pass: (s, t) => '🎉 मुबारक हो! आपने ' + s + '/' + t + ' सही किए।', passSub: (d, xp) => 'दिन ' + d + ' मुकम्मल! +' + xp + ' XP',
+        fail: (s, t) => '😢 आपने ' + s + '/' + t + ' सही किए।', failSub: 'पास होने के लिए कम से कम 2 सही जवाब चाहिए। दोबारा कोशिश करें।',
+        retry: '🔄 दोबारा कोशिश करें', hdr: ['#', 'सीग़ा', 'अरबी', 'मतलब'],
+        letters: ['क', 'ख', 'ग', 'घ'], right: 'सही जवाब',
+        num: { s: 'वाहिद', d: 'तसनिया', p: 'जमा' }, gen: { m: 'मुज़क्कर', f: 'मुअन्नस' }, per: { 3: 'ग़ायब', 2: 'हाज़िर', 1: 'मुतकल्लिम' }, perN: { 3: 'ग़ायब', 2: 'हाज़िर', 1: 'मुतकल्लिम' }
+      },
+      en: {
+        title: 'Nahw wa Sarf — 30 Day Journey', h1: '📖 Nahw wa Sarf',
+        admin: '🔒 Currently visible to Admin only (review mode — all days unlocked)',
+        journey: '📍 Your journey', daysOf: (a, b) => a + ' / ' + b + ' days',
+        dayWord: 'Day', sarf: 'Sarf', nahw: 'Nahw',
+        gSarf: 'Sarf — how words are formed (days 1–15)', gNahw: 'Nahw — how sentences work (days 16–30)',
+        back: '← Back', goal: '🎯 Goal:', facts: '💡 Key points to remember', refl: '🤲 Lesson',
+        exam: n => '📝 Quiz — ' + n + ' questions', examSub: 'Answer all questions, then press "Submit"',
+        submit: '✅ Submit quiz', next: d => 'Next day (day ' + d + ') →', prev: '← Previous', allDone: '🎉 All days complete — back', allDone2: '🎉 All days complete — go back',
+        pass: (s, t) => '🎉 Congratulations! You got ' + s + '/' + t + ' correct.', passSub: (d, xp) => 'Day ' + d + ' complete! +' + xp + ' XP',
+        fail: (s, t) => '😢 You got ' + s + '/' + t + ' correct.', failSub: 'You need at least 2 correct answers to pass. Please try again.',
+        retry: '🔄 Try again', hdr: ['#', 'Form', 'Arabic', 'Meaning'],
+        letters: ['A', 'B', 'C', 'D'], right: 'Correct answer',
+        num: { s: 'Singular', d: 'Dual', p: 'Plural' }, gen: { m: 'Masc.', f: 'Fem.' }, per: { 3: 'Ghaib (3rd)', 2: 'Hazir (2nd)', 1: 'Mutakallim (1st)' }, perN: { 3: 'Ghaib (3rd person)', 2: 'Hazir (2nd person)', 1: 'Mutakallim (1st person)' }
+      }
+    };
+    const lang = () => { try { const v = QSLang.get(); return UI[v] ? v : 'u'; } catch (e) { return 'u'; } };
+    const T = () => UI[lang()];
+
+    // ============ Helpers ============
+    const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    // {{Arabic}} -> <span class="ar">…</span> (Arabic hamesha ek hi font/direction mein)
+    const fmt = s => esc(s).replace(/\{\{(.*?)\}\}/g, '<span class="ar" lang="ar" dir="rtl">$1</span>');
+    const plain = s => String(s).replace(/\{\{(.*?)\}\}/g, '$1');
+    const tx = d => d.t[lang()] || d.t.u;
+    const dirAttr = () => lang() === 'u' ? 'rtl' : 'ltr';
+    const langAttr = () => ({ u: 'ur', ro: 'ur-Latn', hi: 'hi', en: 'en' })[lang()];
+
+    // ============ Progress storage ============
     function courseKey() { return 'p_' + (localStorage.getItem('activeProfile') || 'guest') + '_arabicCourse'; }
     function courseLoad() { try { return JSON.parse(localStorage.getItem(courseKey())) || { completed: [], xp: 0, scores: {} }; } catch (e) { return { completed: [], xp: 0, scores: {} }; } }
     function courseSave(d) { try { localStorage.setItem(courseKey(), JSON.stringify(d)); } catch (e) {} }
 
-    function renderHome() {
-      const prog = courseLoad();
-      const total = arabicCourse.days.length;
-      const done = prog.completed.length;
-      document.getElementById('progText').textContent = done + ' / ' + total + ' دن';
-      document.getElementById('progFill').style.width = (done / total * 100) + '%';
-      const grid = document.getElementById('daysGrid');
-      grid.innerHTML = arabicCourse.days.map((d) => {
-        const isDone = prog.completed.includes(d.day);
-        const score = prog.scores[d.day];
-        const goalShort = d.goal.length > 35 ? d.goal.substring(0, 35) + '...' : d.goal;
-        return `<div class="day-card ${d.type} ${isDone ? 'completed' : ''}" onclick="openDay(${d.day})">
-          ${isDone ? '<div class="day-badge">✓</div>' : ''}
-          <div class="day-emoji">${d.emoji}</div>
-          <div class="day-label">دن ${d.day} • ${d.type === 'sarf' ? 'صرف' : 'نحو'}</div>
-          <div class="day-title">${d.title}</div>
-          <div class="day-roman">${d.roman}</div>
-          <div class="day-meta">
-            <span>🎯 ${goalShort}</span>
-            ${isDone && score ? `<span>🏅 ${score}/3</span>` : ''}
-          </div>
-          <div class="day-xp">+${d.xp} XP</div>
-        </div>`;
-      }).join('');
+    // ============ State ============
+    let currentDay = null, answers = {}, qOrder = [], result = null;
+
+    function applyStatic() {
+      const t = T();
+      document.documentElement.lang = langAttr();
+      document.title = t.title;
+      document.getElementById('pageH1').textContent = t.h1;
+      document.getElementById('progLabel').textContent = t.journey;
+      document.getElementById('backBtn').textContent = t.back;
+      const app = document.getElementById('app'); app.setAttribute('dir', dirAttr()); app.setAttribute('lang', langAttr());
     }
 
-    let currentDay = null;
-    function openDay(n) {
-      currentDay = arabicCourse.days.find(d => d.day === n);
+    function cardHTML(d) {
+      const t = T(), x = tx(d), prog = courseLoad();
+      const isDone = prog.completed.includes(d.day), score = prog.scores[d.day];
+      const sub = lang() === 'u' ? '<div class="day-sub en">' + esc(d.sub) + '</div>' : '<div class="day-sub rtl" lang="ur">' + fmt(d.t.u.title) + '</div>';
+      return '<button type="button" class="day-card ' + d.type + (isDone ? ' completed' : '') + '" onclick="openDay(' + d.day + ')">' +
+        '<div class="day-top"><div class="day-emoji" aria-hidden="true">' + d.emoji + '</div>' + (isDone ? '<div class="day-badge" aria-label="done">✓</div>' : '') + '</div>' +
+        '<div class="day-label">' + esc(t.dayWord) + ' ' + d.day + ' • ' + esc(d.type === 'sarf' ? t.sarf : t.nahw) + '</div>' +
+        '<div class="day-title">' + fmt(x.title) + '</div>' + sub +
+        '<div class="day-goal">🎯 ' + fmt(x.goal) + '</div>' +
+        '<div class="day-foot"><span class="day-xp">+' + d.xp + ' XP</span>' + (isDone && score ? '<span class="day-score">🏅 ' + score + '/' + d.correct.length + '</span>' : '') + '</div></button>';
+    }
+
+    function renderHome() {
+      applyStatic();
+      const t = T(), prog = courseLoad(), done = prog.completed.length;
+      document.getElementById('progText').textContent = t.daysOf(done, TOTAL);
+      document.getElementById('progFill').style.width = (done / TOTAL * 100) + '%';
+      document.getElementById('progBar').setAttribute('aria-valuenow', Math.round(done / TOTAL * 100));
+      const sarf = COURSE.filter(d => d.type === 'sarf'), nahw = COURSE.filter(d => d.type === 'nahw');
+      document.getElementById('daysWrap').innerHTML =
+        '<div class="group-title"><i></i>' + esc(t.gSarf) + '</div><div class="days-grid">' + sarf.map(cardHTML).join('') + '</div>' +
+        '<div class="group-title nahw"><i></i>' + esc(t.gNahw) + '</div><div class="days-grid">' + nahw.map(cardHTML).join('') + '</div>';
+    }
+
+    function shuffle(n) { const a = Array.from({ length: n }, (_, i) => i); for (let i = n - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+    function newQuizState() { answers = {}; result = null; qOrder = currentDay.correct.map((_, qi) => shuffle(tx(currentDay).quiz[qi].opts.length)); }
+
+    function openDay(n, fromPop) {
+      currentDay = COURSE.find(d => d.day === n);
       if (!currentDay) return;
       document.getElementById('homeView').style.display = 'none';
       document.getElementById('detailView').classList.add('active');
-      renderDetail(currentDay);
+      newQuizState();
+      renderDetail();
       window.scrollTo(0, 0);
+      if (!fromPop) { try { history.pushState({ day: n }, '', '#day' + n); } catch (e) {} }
     }
-    function goHome() {
+    function goHome(fromPop) {
       currentDay = null;
       document.getElementById('homeView').style.display = 'block';
       document.getElementById('detailView').classList.remove('active');
       renderHome();
       window.scrollTo(0, 0);
+      if (!fromPop && location.hash) { try { if (history.state && history.state.day) history.back(); else history.replaceState(null, '', location.pathname); } catch (e) {} }
+    }
+    window.addEventListener('popstate', () => { if (currentDay) goHome(true); });
+
+    function sighaLabel(k) {
+      const t = T(), per = k.slice(-1);
+      if (per === '1') return t.num[k[0]] + ' ' + t.perN[1];
+      return t.num[k[0]] + ' ' + t.gen[k[1]] + ' ' + t.perN[per];
     }
 
-    function renderDetail(d) {
-      const prog = courseLoad();
-      const isDone = prog.completed.includes(d.day);
-      let html = `<div class="day-header ${d.type === 'nahw' ? 'nahw-h' : ''}">
-        <div class="label">دن ${d.day} • ${d.type === 'sarf' ? '🔤 صرف' : '📖 نحو'}</div>
-        <h2>${d.emoji} ${d.title}</h2>
-        <div class="roman">${d.roman}</div>
-        <div class="meta"><span>🎯 ${d.goal}</span></div>
-      </div>
-      <div class="goal-box"><b>🎯 مقصد:</b> ${d.goal}</div>`;
+    function renderDetail() {
+      const d = currentDay, t = T(), x = tx(d), prog = courseLoad(), isDone = prog.completed.includes(d.day);
+      const sub = lang() === 'u' ? '<div class="sub en">' + esc(d.sub) + '</div>' : '<div class="sub rtl" lang="ur">' + fmt(d.t.u.title) + '</div>';
+      let html = '<div class="day-header ' + (d.type === 'nahw' ? 'nahw-h' : '') + '">' +
+        '<div class="label">' + esc(t.dayWord) + ' ' + d.day + ' • ' + (d.type === 'sarf' ? '🔤 ' + esc(t.sarf) : '📖 ' + esc(t.nahw)) + '</div>' +
+        '<h2>' + d.emoji + ' ' + fmt(x.title) + '</h2>' + sub + '</div>' +
+        '<div class="goal-box"><b>' + esc(t.goal) + '</b> ' + fmt(x.goal) + '</div>';
 
-      d.sections.forEach(s => {
-        html += `<div class="section"><h3>${s.h}</h3><p>${s.p}</p></div>`;
-      });
+      x.sections.forEach(s => { html += '<div class="section"><h3>' + fmt(s.h) + '</h3><p>' + fmt(s.p) + '</p></div>'; });
 
-      if (d.gardaan) {
-        html += `<div class="gardaan-box"><h3>📊 ${d.gardaan.title}</h3>
-          <table class="gardaan-table"><thead><tr>${d.gardaan.headers.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>
-          ${d.gardaan.rows.map(r => `<tr>${r.map((c, i) => `<td class="${i === 2 ? 'ar' : i === 3 ? 'ur' : i === 1 ? 'sg' : ''}">${c}</td>`).join('')}</tr>`).join('')}
-          </tbody></table></div>`;
+      if (x.gardaan && d.forms) {
+        html += '<div class="gardaan-box"><h3>📊 ' + fmt(x.gardaan.title) + '</h3>' +
+          '<div class="legend"><span style="--c:var(--ghaib)">' + esc(t.per[3]) + '</span><span style="--c:var(--hazir)">' + esc(t.per[2]) + '</span><span style="--c:var(--mutakallim)">' + esc(t.per[1]) + '</span></div>' +
+          '<div class="tbl-scroll"><table class="gardaan-table"><thead><tr>' + t.hdr.map(h => '<th>' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' +
+          d.forms.map((f, i) => '<tr class="g' + d.sg[i].slice(-1) + '"><td class="n">' + (i + 1) + '</td><td class="sg">' + esc(sighaLabel(d.sg[i])) + '</td><td class="ar-c" lang="ar" dir="rtl">' + esc(f) + '</td><td class="mn">' + fmt(x.gardaan.meanings[i]) + '</td></tr>').join('') +
+          '</tbody></table></div></div>';
       }
 
-      if (d.keyFacts && d.keyFacts.length) {
-        html += `<div class="facts-box"><h3>💡 یاد رکھنے والی باتیں</h3><ul>${d.keyFacts.map(f => `<li>${f}</li>`).join('')}</ul></div>`;
-      }
+      if (x.keyFacts && x.keyFacts.length) html += '<div class="facts-box"><h3>' + esc(t.facts) + '</h3><ul>' + x.keyFacts.map(f => '<li>' + fmt(f) + '</li>').join('') + '</ul></div>';
+      html += '<div class="reflection-box"><h3>' + esc(t.refl) + '</h3><p>' + fmt(x.reflection) + '</p></div>';
 
-      html += `<div class="reflection-box"><h3>🤲 سبق</h3><p>${d.reflection}</p></div>`;
-
-      html += `<div class="exam-box ${d.type === 'nahw' ? 'nahw-e' : ''}">
-        <h3>📝 امتحان — ${d.quiz.length} سوالات</h3>
-        <div class="exam-sub">سارے سوالات کے جواب دیں، پھر "جمع کریں" دبائیں</div>
-        <div id="questionsWrap">`;
-
-      d.quiz.forEach((q, qi) => {
-        html += `<div class="question" data-q="${qi}"><div class="q-text">${qi + 1}. ${q.q}</div>`;
-        q.opts.forEach((opt, oi) => {
-          html += `<button class="opt-btn" data-q="${qi}" data-o="${oi}" onclick="answerQ(${qi}, ${oi}, ${oi === q.correct})">
-            <span class="letter">${['ا','ب','ج'][oi]}</span>${opt}</button>`;
+      html += '<div class="exam-box ' + (d.type === 'nahw' ? 'nahw-e' : '') + '"><h3>' + esc(t.exam(x.quiz.length)) + '</h3><div class="exam-sub">' + esc(t.examSub) + '</div><div id="questionsWrap">';
+      x.quiz.forEach((q, qi) => {
+        html += '<div class="question" data-q="' + qi + '"><div class="q-text">' + (qi + 1) + '. ' + fmt(q.q) + '</div>';
+        qOrder[qi].forEach((oi, pos) => {
+          html += '<button type="button" class="opt-btn" data-q="' + qi + '" data-o="' + oi + '" onclick="answerQ(' + qi + ',' + oi + ')"><span class="letter" aria-hidden="true">' + esc(t.letters[pos] || pos + 1) + '</span><span class="txt">' + fmt(q.opts[oi]) + '</span><span class="mark"></span></button>';
         });
-        html += `</div>`;
+        html += '</div>';
       });
-
-      html += `</div><button class="submit-exam" id="submitExam" onclick="submitExam()" disabled>✅ امتحان جمع کریں</button><div id="examResult"></div></div>`;
-
-      if (isDone) {
-        if (d.day < arabicCourse.days.length) {
-          html += `<button class="next-day-btn" onclick="openDay(${d.day + 1})">اگلا دن (دن ${d.day + 1}) →</button>`;
-        } else {
-          html += `<button class="next-day-btn" onclick="goHome()">🎉 سارے دن مکمل — واپس</button>`;
-        }
-      }
+      html += '</div><button type="button" class="submit-exam" id="submitExam" onclick="submitExam()" disabled>' + esc(t.submit) + '</button><div id="examResult" aria-live="polite"></div><div id="afterResult"></div></div>';
+      html += '<div class="nav-row" id="navRow">' + navHTML(d, isDone) + '</div>';
 
       document.getElementById('detailContent').innerHTML = html;
-      answers = {};
+      reapply();
     }
 
-    let answers = {};
-    function answerQ(qi, oi, correct) {
-      if (answers[qi] !== undefined) return;
-      answers[qi] = { oi, correct };
-      const qEl = document.querySelector(`.question[data-q="${qi}"]`);
+    function navHTML(d, isDone) {
+      const t = T();
+      let h = d.day > 1 ? '<button type="button" class="prev-day-btn" onclick="openDay(' + (d.day - 1) + ')">' + esc(t.prev) + '</button>' : '';
+      if (isDone) h += d.day < TOTAL ? '<button type="button" class="next-day-btn" onclick="openDay(' + (d.day + 1) + ')">' + esc(t.next(d.day + 1)) + '</button>' : '<button type="button" class="next-day-btn" onclick="goHome()">' + esc(t.allDone) + '</button>';
+      return h;
+    }
+
+    // language badalne par jawab/natija wapas lagao
+    function reapply() {
+      Object.keys(answers).forEach(qi => paintAnswer(+qi, answers[qi].oi));
+      const n = currentDay.correct.length;
+      if (Object.keys(answers).length === n && !result) document.getElementById('submitExam').disabled = false;
+      if (result) showResult();
+    }
+    function paintAnswer(qi, oi) {
+      const qEl = document.querySelector('.question[data-q="' + qi + '"]'); if (!qEl) return;
+      const ok = oi === currentDay.correct[qi];
       qEl.querySelectorAll('.opt-btn').forEach(b => b.disabled = true);
-      const clicked = qEl.querySelector(`.opt-btn[data-o="${oi}"]`);
-      if (correct) { clicked.classList.add('correct'); clicked.innerHTML = '✅ ' + clicked.innerHTML; if (window.QSSFX) QSSFX.correct(); }
-      else { clicked.classList.add('wrong'); clicked.innerHTML = '❌ ' + clicked.innerHTML; if (window.QSSFX) QSSFX.wrong(); }
-      if (Object.keys(answers).length === currentDay.quiz.length) document.getElementById('submitExam').disabled = false;
+      const clicked = qEl.querySelector('.opt-btn[data-o="' + oi + '"]');
+      clicked.classList.add(ok ? 'correct' : 'wrong');
+      clicked.querySelector('.mark').textContent = ok ? '✅' : '❌';
+      if (!ok) { const r = qEl.querySelector('.opt-btn[data-o="' + currentDay.correct[qi] + '"]'); r.classList.add('reveal'); r.querySelector('.mark').textContent = '✔'; r.setAttribute('aria-label', T().right); }
+    }
+    function answerQ(qi, oi) {
+      if (answers[qi] !== undefined) return;
+      const ok = oi === currentDay.correct[qi];
+      answers[qi] = { oi, correct: ok };
+      paintAnswer(qi, oi);
+      if (window.QSSFX) { try { ok ? QSSFX.correct() : QSSFX.wrong(); } catch (e) {} }
+      if (Object.keys(answers).length === currentDay.correct.length) document.getElementById('submitExam').disabled = false;
     }
 
     function submitExam() {
-      const total = currentDay.quiz.length;
-      let score = 0;
-      currentDay.quiz.forEach((q, qi) => { if (answers[qi] && answers[qi].correct) score++; });
+      const total = currentDay.correct.length;
+      let score = 0; Object.values(answers).forEach(a => { if (a.correct) score++; });
       const pass = score >= 2;
-      const resultBox = document.getElementById('examResult');
+      result = { score, total, pass };
       document.getElementById('submitExam').disabled = true;
       if (pass) {
         const prog = courseLoad();
         if (!prog.completed.includes(currentDay.day)) {
-          prog.completed.push(currentDay.day);
-          prog.xp += currentDay.xp;
-          prog.scores[currentDay.day] = score;
-          courseSave(prog);
+          prog.completed.push(currentDay.day); prog.xp += currentDay.xp; prog.scores[currentDay.day] = score; courseSave(prog);
           try { if (typeof window.addXP === 'function') window.addXP(currentDay.xp); } catch (e) {}
           showXPToast('⭐ +' + currentDay.xp + ' XP!');
         }
-        resultBox.className = 'exam-result pass';
-        resultBox.innerHTML = `🎉 مبارک ہو! آپ نے ${score}/${total} صحیح کیے۔<br><span style="font-size:13px;opacity:.85">دن ${currentDay.day} مکمل! +${currentDay.xp} XP</span>`;
-        if (window.QSSFX) QSSFX.win();
-        const dayNow = currentDay.day;
-        setTimeout(() => {
-          const btn = document.createElement('button');
-          btn.className = 'next-day-btn';
-          if (dayNow < arabicCourse.days.length) {
-            btn.textContent = 'اگلا دن (دن ' + (dayNow + 1) + ') →';
-            btn.onclick = () => openDay(dayNow + 1);
-          } else {
-            btn.textContent = '🎉 سارے دن مکمل — واپس جائیں';
-            btn.onclick = goHome;
-          }
-          resultBox.after(btn);
-        }, 400);
+        if (window.QSSFX) { try { QSSFX.win(); } catch (e) {} }
+      } else if (window.QSSFX) { try { QSSFX.wrong(); } catch (e) {} }
+      showResult();
+    }
+    function showResult() {
+      const t = T(), d = currentDay, r = result, box = document.getElementById('examResult'), after = document.getElementById('afterResult');
+      document.getElementById('submitExam').disabled = true;
+      if (r.pass) {
+        box.className = 'exam-result pass';
+        box.innerHTML = esc(t.pass(r.score, r.total)) + '<br><span style="font-size:13px;opacity:.9">' + esc(t.passSub(d.day, d.xp)) + '</span>';
+        after.innerHTML = '';
+        document.getElementById('navRow').innerHTML = navHTML(d, true);
       } else {
-        resultBox.className = 'exam-result fail';
-        resultBox.innerHTML = `😢 آپ نے ${score}/${total} صحیح کیے۔<br><span style="font-size:13px;opacity:.85">پاس ہونے کے لیے کم از کم 2 صحیح جواب چاہیے۔ دوبارہ کوشش کریں۔</span>`;
-        if (window.QSSFX) QSSFX.wrong();
-        setTimeout(() => {
-          const btn = document.createElement('button');
-          btn.className = 'next-day-btn';
-          btn.textContent = '🔄 دوبارہ کوشش کریں';
-          btn.onclick = () => { answers = {}; renderDetail(currentDay); };
-          resultBox.after(btn);
-        }, 400);
+        box.className = 'exam-result fail';
+        box.innerHTML = esc(t.fail(r.score, r.total)) + '<br><span style="font-size:13px;opacity:.9">' + esc(t.failSub) + '</span>';
+        after.innerHTML = '<button type="button" class="next-day-btn" onclick="retryDay()">' + esc(t.retry) + '</button>';
       }
     }
+    function retryDay() { newQuizState(); renderDetail(); document.getElementById('questionsWrap').scrollIntoView({ block: 'start' }); }
 
     function showXPToast(msg) {
       let t = document.getElementById('xpToast');
       if (!t) { t = document.createElement('div'); t.id = 'xpToast'; t.className = 'xp-toast'; document.body.appendChild(t); }
-      t.textContent = msg;
-      t.classList.remove('show');
-      void t.offsetWidth;
-      t.classList.add('show');
+      t.textContent = msg; t.classList.remove('show'); void t.offsetWidth; t.classList.add('show');
     }
 
+    // zubaan badle to jahan hain wahin dobara draw
+    try { QSLang.onChange(() => { if (currentDay) renderDetail(); else renderHome(); }); } catch (e) {}
+    try { QSLang.paint(); } catch (e) {}
     renderHome();
+    // seedha #dayN link se khulne par
+    (function () { const m = /^#day(\d+)$/.exec(location.hash); if (m) openDay(+m[1], true); })();
   </script>
 </body>
 </html>

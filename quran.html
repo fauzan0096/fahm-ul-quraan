@@ -81,6 +81,7 @@
         /* theme.css ke card/header rules yahan ke apne simple design se na ulajhein */
         header { padding-top: calc(14px + env(safe-area-inset-top)); }
     </style>
+<style>.qi.qi-h{font-size:1.15em;color:#fff;--qi-a:#E3C36E;margin-inline-end:.3em;vertical-align:-.2em}.qi.qi-hb{font-size:26px;color:#fff;--qi-a:#E3C36E}</style>
 </head>
 <body>
 <!-- ⚠️ Deeni disclaimer: tajweed / dua / asma / games / bazm -->
@@ -98,12 +99,12 @@
 
     <header>
         <div class="header-top">
-            <h1>📖 Quran Majeed</h1>
+            <h1><i class="qi qi-h" data-qi="quran"></i>Quran Majeed</h1>
             <div class="header-controls">
                 <button class="size-btn" onclick="changeScale(-0.1)" title="Chhota">A-</button>
                 <button class="size-btn" onclick="changeScale(0.1)" title="Bada">A+</button>
                 <button class="icon-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
-                <a href="index.html" style="color:white; text-decoration:none; font-size:20px;" title="Back to App">🏠</a>
+                <a href="index.html" style="color:white; text-decoration:none; font-size:20px;" title="Back to App"><i class="qi qi-hb" data-qi="home" style="display:flex"></i></a>
             </div>
         </div>
     </header>
@@ -459,5 +460,6 @@
     if (h && +h[1] >= 1 && +h[1] <= 114) loadChapters().then(function () { openSurah(+h[1], h[2] ? +h[2] : 0); }).catch(function () {});
 })();
 </script>
+<script src="icons.js"></script>
 </body>
 </html>

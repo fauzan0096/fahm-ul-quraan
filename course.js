@@ -90,7 +90,7 @@ const courseData = [
         { a: "مِثْل", r: "Mithl", u: "جیسا", u_ro: "Jaisa", u_hi: "जैसा", u_en: "Like, similar to", m: "مِثْل", t: "مثال", t_ro: "Misaal", t_hi: "मिसाल", t_en: "Example" },
         { a: "أَيّ", r: "Ayy", u: "کون سا", u_ro: "Kaun sa", u_hi: "कौन सा", u_en: "Which", m: "أَيّ", t: "کون", t_ro: "Kaun", t_hi: "कौन", t_en: "Which" },
         { a: "مَاذَا", r: "Maadhaa", u: "کیا", u_ro: "Kya", u_hi: "क्या", u_en: "What", m: "مَاذَا", t: "کیا", t_ro: "Kya", t_hi: "क्या", t_en: "What" },
-        { a: "لِمَاذَا", r: "Limaadhaa", u: "کیوں", u_ro: "Kyun", u_hi: "क्यों", u_en: "Why", m: "لِمَاذَا", t: "کیوں", t_ro: "Kyun", t_hi: "क्यों", t_en: "Why" },
+        { a: "لِمَ", r: "Lima", u: "کیوں", u_ro: "Kyun", u_hi: "क्यों", u_en: "Why", m: "لِمَ", t: "کیوں", t_ro: "Kyun", t_hi: "क्यों", t_en: "Why" },
         { a: "أَيْنَ", r: "Ayna", u: "کہاں", u_ro: "Kahaan", u_hi: "कहाँ", u_en: "Where", m: "أَيْنَ", t: "کہاں", t_ro: "Kahaan", t_hi: "कहाँ", t_en: "Where" },
         { a: "كَيْفَ", r: "Kayfa", u: "کیسے", u_ro: "Kaise", u_hi: "कैसे", u_en: "How", m: "كَيْفَ", t: "کیسے", t_ro: "Kaise", t_hi: "कैसे", t_en: "How" },
         { a: "مَتَى", r: "Mataa", u: "کب", u_ro: "Kab", u_hi: "कब", u_en: "When", m: "مَتَى", t: "کب", t_ro: "Kab", t_hi: "कब", t_en: "When" },
@@ -367,7 +367,7 @@ const courseData = [
         { a: "إِخْلَاص", r: "Ikhlaas", u: "اخلاص", u_ro: "Ikhlaas", u_hi: "इख़लास", u_en: "Sincerity", m: "الْإِخْلَاصُ", t: "اخلاص", t_ro: "Ikhlaas", t_hi: "इख़लास", t_en: "Ikhlas" },
         { a: "هُدَى", r: "Hudaa", u: "ہدایت", u_ro: "Hidaayat", u_hi: "हिदायत", u_en: "Guidance", m: "الْهُدَى", t: "ہدایت", t_ro: "Hidaayat", t_hi: "हिदायत", t_en: "Guidance" },
         { a: "ضَلَال", r: "Dalaal", u: "گمراہی", u_ro: "Gumraahi", u_hi: "गुमराही", u_en: "Misguidance", m: "الضَّلَالُ", t: "گمراہی", t_ro: "Gumraahi", t_hi: "गुमराही", t_en: "Straying" },
-        { a: "طَهَارَة", r: "Tahaarah", u: "پاکیزگی", u_ro: "Paakeezgi", u_hi: "पाकीज़गी", u_en: "Purity", m: "الطَّهَارَةُ", t: "پاکیزگی", t_ro: "Paakeezgi", t_hi: "पाकीज़गी", t_en: "Purity" },
+        { a: "طَهُور", r: "Tahoor", u: "نہایت پاک", u_ro: "Nihayat paak", u_hi: "निहायत पाक", u_en: "Purifying, pure", m: "طَهُور", t: "پاکیزگی", t_ro: "Paakeezgi", t_hi: "पाकीज़गी", t_en: "Purity" },
         { a: "قِبْلَة", r: "Qiblah", u: "قبلہ", u_ro: "Qibla", u_hi: "क़िबला", u_en: "Direction of prayer", m: "الْقِبْلَةُ", t: "قبلہ", t_ro: "Qibla", t_hi: "क़िबला", t_en: "Qibla" },
         { a: "عِبَادَة", r: "Ibaadah", u: "عبادت", u_ro: "Ibaadat", u_hi: "इबादत", u_en: "Worship", m: "الْعِبَادَةُ", t: "عبادت", t_ro: "Ibaadat", t_hi: "इबादत", t_en: "Worship" },
         { a: "جِهَاد", r: "Jihaad", u: "جہاد", u_ro: "Jihaad", u_hi: "जिहाद", u_en: "Striving, jihad", m: "الْجِهَادُ", t: "کوشش", t_ro: "Koshish", t_hi: "कोशिश", t_en: "Striving" }
@@ -415,9 +415,9 @@ const courseData = [
         { a: "خُلْد", r: "Khuld", u: "ہمیشگی", u_ro: "Hamesgi", u_hi: "हमेशगी", u_en: "Eternity", m: "الْخُلْدُ", t: "ہمیشہ", t_ro: "Hamesha", t_hi: "हमेशा", t_en: "Forever" },
         { a: "خَالِدِين", r: "Khaalideen", u: "ہمیشہ رہنے والے", u_ro: "Hamesha rehne wale", u_hi: "हमेशा रहने वाले", u_en: "Abiding forever", m: "خَالِدِينَ", t: "ہمیشہ", t_ro: "Hamesha", t_hi: "हमेशा", t_en: "Everlasting" },
         { a: "فَوْز", r: "Fawz", u: "کامیابی", u_ro: "Kaamyaabi", u_hi: "कामयाबी", u_en: "Triumph, success", m: "الْفَوْزُ", t: "کامیابی", t_ro: "Kaamyaabi", t_hi: "कामयाबी", t_en: "Success" },
-        { a: "فَلَاح", r: "Falaah", u: "کامیابی", u_ro: "Kaamyaabi", u_hi: "कामयाबी", u_en: "Success, salvation", m: "الْفَلَاحُ", t: "بھلائی", t_ro: "Bhalaai", t_hi: "भलाई", t_en: "Success" },
+        { a: "مُفْلِحُون", r: "Muflihoon", u: "کامیاب لوگ", u_ro: "Kaamyaab log", u_hi: "कामयाब लोग", u_en: "The successful", m: "مُفْلِحُون", t: "بھلائی", t_ro: "Bhalaai", t_hi: "भलाई", t_en: "Success" },
         { a: "خُسْرَان", r: "Khusraan", u: "نقصان", u_ro: "Nuqsaan", u_hi: "नुक़सान", u_en: "Loss", m: "الْخُسْرَانُ", t: "نقصان", t_ro: "Nuqsaan", t_hi: "नुक़सान", t_en: "Loss" },
-        { a: "هَلَاك", r: "Halaak", u: "ہلاکت", u_ro: "Halaakat", u_hi: "हलाकत", u_en: "Destruction", m: "الْهَلَاكُ", t: "تباہی", t_ro: "Tabaahi", t_hi: "तबाही", t_en: "Destruction" },
+        { a: "تَهْلُكَة", r: "Tahlukah", u: "ہلاکت", u_ro: "Halaakat", u_hi: "हलाकत", u_en: "Destruction", m: "تَهْلُكَة", t: "تباہی", t_ro: "Tabaahi", t_hi: "तबाही", t_en: "Destruction" },
         { a: "نَجَاة", r: "Najaah", u: "نجات", u_ro: "Najaat", u_hi: "नजात", u_en: "Salvation, deliverance", m: "النَّجَاةُ", t: "نجات", t_ro: "Najaat", t_hi: "नजात", t_en: "Deliverance" }
     ] },
     { day: 35, words: [
@@ -610,7 +610,7 @@ const courseData = [
         { a: "غَلَبَ", r: "Ghalaba", u: "غالب آیا", u_ro: "Ghaalib aaya", u_hi: "ग़ालिब आया", u_en: "He prevailed", m: "غَلَبَ", t: "غالب", t_ro: "Ghaalib", t_hi: "ग़ालिब", t_en: "Prevailed" },
         { a: "ضَرَبَ", r: "Daraba", u: "مارا", u_ro: "Maara", u_hi: "मारा", u_en: "He struck", m: "ضَرَبَ", t: "مارنا", t_ro: "Maarna", t_hi: "मारना", t_en: "Struck" },
         { a: "فَتَحَ", r: "Fataha", u: "کھولا", u_ro: "Khola", u_hi: "खोला", u_en: "He opened", m: "فَتَحَ", t: "کھولنا", t_ro: "Kholna", t_hi: "खोलना", t_en: "Opened" },
-        { a: "طَلَبَ", r: "Talaba", u: "مانگا", u_ro: "Maanga", u_hi: "माँगा", u_en: "He sought", m: "طَلَبَ", t: "مانگنا", t_ro: "Maangna", t_hi: "माँगना", t_en: "Sought" }
+        { a: "طَلَبًا", r: "Talaban", u: "تلاش، طلب", u_ro: "Talaash, talab", u_hi: "तलाश, तलब", u_en: "Search, seeking", m: "طَلَبًا", t: "مانگنا", t_ro: "Maangna", t_hi: "माँगना", t_en: "Sought" }
     ] },
     { day: 51, words: [
         { a: "الرَّءُوف", r: "Ar-Ra'oof", u: "نہایت شفقت والا", u_ro: "Nihayat shafqat wala", u_hi: "निहायत शफ़क़त वाला", u_en: "Most Compassionate", m: "إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَحِيمٌ", t: "شفقت کرنے والا", t_ro: "Shafqat karne wala", t_hi: "शफ़क़त करने वाला", t_en: "Full of tenderness" },
@@ -640,7 +640,7 @@ const courseData = [
         { a: "تُرَاب", r: "Turaab", u: "خاک، مٹی", u_ro: "Khaak, mitti", u_hi: "ख़ाक, मिट्टी", u_en: "Dust, earth", m: "خَلَقَهُ مِنْ تُرَابٍ", t: "مٹی", t_ro: "Mitti", t_hi: "मिट्टी", t_en: "Dust" },
         { a: "ذَرَّة", r: "Dharr", u: "ذرا، ننھا سا", u_ro: "Zaraa, nanha sa", u_hi: "ज़र्रा, नन्हा सा", u_en: "Atom, tiny speck", m: "مِثْقَالَ ذَرَّةٍ", t: "ذرا برابر", t_ro: "Zaraa barabar", t_hi: "ज़र्रा बराबर", t_en: "Atom's weight" },
         { a: "كَثِيب", r: "Katheeb", u: "ریت کا ٹیلہ", u_ro: "Rait ka teela", u_hi: "रेत का टीला", u_en: "Sand dune", m: "كَثِيبًا مَّهِيلًا", t: "بہتی ریت", t_ro: "Behti rait", t_hi: "बहती रेत", t_en: "Loose sand" },
-        { a: "عَصَا", r: "'Asaa", u: "لاٹھی", u_ro: "Laathi", u_hi: "लाठी", u_en: "Staff", m: "وَأَلْقَىٰ عَصَاهُ", t: "لاٹھی", t_ro: "Laathi", t_hi: "लाठी", t_en: "Staff" },
+        { a: "عَصَا", r: "'Asaa", u: "لاٹھی", u_ro: "Laathi", u_hi: "लाठी", u_en: "Staff", m: "فَأَلْقَىٰ عَصَاهُ", t: "لاٹھی", t_ro: "Laathi", t_hi: "लाठी", t_en: "Staff" },
         { a: "سَفِينَة", r: "Safeenah", u: "کشتی", u_ro: "Kashti", u_hi: "कश्ती", u_en: "Ship, boat", m: "رَكِبَا فِي السَّفِينَةِ", t: "کشتی", t_ro: "Kashti", t_hi: "कश्ती", t_en: "Boat" },
         { a: "رُمَّان", r: "Rummaan", u: "انار", u_ro: "Anaar", u_hi: "अनार", u_en: "Pomegranate", m: "وَنَخْلٌ وَرُمَّانٌ", t: "انار", t_ro: "Anaar", t_hi: "अनार", t_en: "Pomegranate" },
         { a: "تِين", r: "Teen", u: "انجیر", u_ro: "Anjeer", u_hi: "अंजीर", u_en: "Fig", m: "وَالتِّينِ وَالزَّيْتُونِ", t: "انجیر", t_ro: "Anjeer", t_hi: "अंजीर", t_en: "Fig" },
@@ -654,19 +654,19 @@ const courseData = [
         { a: "قِثَّاء", r: "Qiththaa'", u: "کھیرا", u_ro: "Kheera", u_hi: "खीरा", u_en: "Cucumber", m: "وَقِثَّائِهَا", t: "کھیرا", t_ro: "Kheera", t_hi: "खीरा", t_en: "Cucumber" },
         { a: "فُوم", r: "Foom", u: "لہسن، گندم", u_ro: "Lehsan, gandum", u_hi: "लहसुन, गेहूँ", u_en: "Garlic, wheat", m: "وَفُومِهَا", t: "لہسن", t_ro: "Lehsan", t_hi: "लहसुन", t_en: "Garlic" },
         { a: "بَيْض", r: "Bayd", u: "انڈے", u_ro: "Ande", u_hi: "अंडे", u_en: "Eggs", m: "بَيْضٌ مَّكْنُونٌ", t: "محفوظ انڈے", t_ro: "Mehfooz ande", t_hi: "महफ़ूज़ अंडे", t_en: "Guarded eggs" },
-        { a: "شَرَاب", r: "Sharaab", u: "مشروب", u_ro: "Mashroob", u_hi: "मशरूब", u_en: "Drink", m: "وَلَهُمْ فِيهَا شَرَابٌ", t: "پینے کی چیز", t_ro: "Peene ki cheez", t_hi: "पीने की चीज़", t_en: "Beverage" },
+        { a: "شَرَاب", r: "Sharaab", u: "مشروب", u_ro: "Mashroob", u_hi: "मशरूब", u_en: "Drink", m: "لَكُمْ مِنْهُ شَرَابٌ", t: "پینے کی چیز", t_ro: "Peene ki cheez", t_hi: "पीने की चीज़", t_en: "Beverage" },
         { a: "خَمْر", r: "Khamr", u: "شراب (نشہ آور)", u_ro: "Sharaab (nasha-aawar)", u_hi: "शराब (नशा)", u_en: "Intoxicant, wine", m: "إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ", t: "نشہ آور", t_ro: "Nasha-aawar", t_hi: "नशा देने वाला", t_en: "Intoxicant" },
-        { a: "زَيْت", r: "Zayt", u: "تیل", u_ro: "Tail", u_hi: "तेल", u_en: "Oil", m: "مِن شَجَرَةٍ مُّبَارَكَةٍ زَيْتُونَةٍ", t: "زیتون کا تیل", t_ro: "Zaitoon ka tail", t_hi: "ज़ैतून का तेल", t_en: "Olive oil" },
-        { a: "سَمْن", r: "Samn", u: "گھی، مکھن", u_ro: "Ghee, makkhan", u_hi: "घी, मक्खन", u_en: "Clarified butter", m: "مِن سَمْنٍ أَلْوَانُهُ", t: "گھی", t_ro: "Ghee", t_hi: "घी", t_en: "Butter" },
-        { a: "خُبْز", r: "Khubz", u: "روٹی", u_ro: "Roti", u_hi: "रोटी", u_en: "Bread", m: "وَلَمْ تَطْعَمْ خُبْزًا", t: "روٹی", t_ro: "Roti", t_hi: "रोटी", t_en: "Bread" }
+        { a: "زَيْت", r: "Zayt", u: "تیل", u_ro: "Tail", u_hi: "तेल", u_en: "Oil", m: "يَكَادُ زَيْتُهَا يُضِيءُ", t: "زیتون کا تیل", t_ro: "Zaitoon ka tail", t_hi: "ज़ैतून का तेल", t_en: "Olive oil" },
+        { a: "بَصَل", r: "Basal", u: "پیاز", u_ro: "Pyaaz", u_hi: "प्याज़", u_en: "Onion", m: "بَصَل", t: "پیاز", t_ro: "Pyaaz", t_hi: "प्याज़", t_en: "Onion" },
+        { a: "خُبْز", r: "Khubz", u: "روٹی", u_ro: "Roti", u_hi: "रोटी", u_en: "Bread", m: "أَحْمِلُ فَوْقَ رَأْسِي خُبْزًا", t: "روٹی", t_ro: "Roti", t_hi: "रोटी", t_en: "Bread" }
     ] },
     { day: 55, words: [
         { a: "مَرَض", r: "Marad", u: "بیماری", u_ro: "Beemari", u_hi: "बीमारी", u_en: "Illness", m: "فِي قُلُوبِهِم مَّرَضٌ", t: "بیماری", t_ro: "Beemari", t_hi: "बीमारी", t_en: "Disease" },
         { a: "شِفَاء", r: "Shifaa'", u: "شفا", u_ro: "Shifa", u_hi: "शिफ़ा", u_en: "Healing", m: "شِفَاءٌ لِّمَا فِي الصُّدُورِ", t: "شفا", t_ro: "Shifa", t_hi: "शिफ़ा", t_en: "Cure" },
         { a: "حَزَن", r: "Hazan", u: "غم", u_ro: "Gham", u_hi: "ग़म", u_en: "Grief, sorrow", m: "لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا", t: "غم", t_ro: "Gham", t_hi: "ग़म", t_en: "Sorrow" },
         { a: "فَرَح", r: "Farah", u: "خوشی", u_ro: "Khushi", u_hi: "ख़ुशी", u_en: "Joy, happiness", m: "وَيَوْمَئِذٍ يَفْرَحُ الْمُؤْمِنُونَ", t: "خوشی", t_ro: "Khushi", t_hi: "ख़ुशी", t_en: "Joy" },
-        { a: "خَوْف", r: "Khawf", u: "ڈر", u_ro: "Dar", u_hi: "डर", u_en: "Fear", m: "وَهُمْ مِّنْ خَشْيَةِ رَبِّهِمْ وَجِلُونَ", t: "خوف", t_ro: "Khawf", t_hi: "ख़ौफ़", t_en: "Fear" },
-        { a: "أَمْن", r: "Amn", u: "امن، سکون", u_ro: "Aman, sukoon", u_hi: "अमन, सुकून", u_en: "Security, peace", m: "وَأَمَنًا مِّنَ الْخَوْفِ", t: "امن", t_ro: "Aman", t_hi: "अमन", t_en: "Safety" },
+        { a: "خَوْف", r: "Khawf", u: "ڈر", u_ro: "Dar", u_hi: "डर", u_en: "Fear", m: "وَآمَنَهُمْ مِنْ خَوْفٍ", t: "خوف", t_ro: "Khawf", t_hi: "ख़ौफ़", t_en: "Fear" },
+        { a: "أَمْن", r: "Amn", u: "امن، سکون", u_ro: "Aman, sukoon", u_hi: "अमन, सुकून", u_en: "Security, peace", m: "مِنْ بَعْدِ خَوْفِهِمْ أَمْنًا", t: "امن", t_ro: "Aman", t_hi: "अमन", t_en: "Safety" },
         { a: "ضُرّ", r: "Durr", u: "تکلیف", u_ro: "Takleef", u_hi: "तकलीफ़", u_en: "Harm, distress", m: "مَسَّنِيَ الضُّرُّ", t: "تکلیف", t_ro: "Takleef", t_hi: "तकलीफ़", t_en: "Affliction" },
         { a: "نَفْع", r: "Naf'", u: "فائدہ", u_ro: "Faaida", u_hi: "फ़ायदा", u_en: "Benefit", m: "لَا يَنْفَعُ", t: "فائدہ", t_ro: "Faaida", t_hi: "फ़ायदा", t_en: "Benefit" },
         { a: "فَضْل", r: "Fadl", u: "فضل، کرم", u_ro: "Fazl, karam", u_hi: "फ़ज़्ल, करम", u_en: "Grace, bounty", m: "ذُو الْفَضْلِ الْعَظِيمِ", t: "فضل", t_ro: "Fazl", t_hi: "फ़ज़्ल", t_en: "Bounty" },
@@ -675,8 +675,8 @@ const courseData = [
     { day: 56, words: [
         { a: "صِدْق", r: "Sidq", u: "سچائی", u_ro: "Sachchai", u_hi: "सच्चाई", u_en: "Truthfulness", m: "فِي مَقْعَدِ صِدْقٍ", t: "سچائی", t_ro: "Sachchai", t_hi: "सच्चाई", t_en: "Truth" },
         { a: "كَذِب", r: "Kadhib", u: "جھوٹ", u_ro: "Jhoot", u_hi: "झूठ", u_en: "Falsehood", m: "إِنَّ اللَّهَ لَا يَهْدِي مَنْ هُوَ كَاذِبٌ كَفَّارٌ", t: "جھوٹ", t_ro: "Jhoot", t_hi: "झूठ", t_en: "Lie" },
-        { a: "عَدْل", r: "'Adl", u: "انصاف", u_ro: "Insaaf", u_hi: "इंसाफ़", u_en: "Justice", m: "اعْدِلُوا هُوَ أَقْرَبُ لِلتَّقْوَىٰ", t: "انصاف", t_ro: "Insaaf", t_hi: "इंसाफ़", t_en: "Justice" },
-        { a: "ظُلْم", r: "Zulm", u: "ظلم، بے انصافی", u_ro: "Zulm, be-insaafi", u_hi: "ज़ुल्म, बेइंसाफ़ी", u_en: "Wrongdoing, oppression", m: "وَلَا تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ", t: "ظلم", t_ro: "Zulm", t_hi: "ज़ुल्म", t_en: "Injustice" },
+        { a: "عَدْل", r: "'Adl", u: "انصاف", u_ro: "Insaaf", u_hi: "इंसाफ़", u_en: "Justice", m: "يَأْمُرُ بِالْعَدْلِ", t: "انصاف", t_ro: "Insaaf", t_hi: "इंसाफ़", t_en: "Justice" },
+        { a: "ظُلْم", r: "Zulm", u: "ظلم، بے انصافی", u_ro: "Zulm, be-insaafi", u_hi: "ज़ुल्म, बेइंसाफ़ी", u_en: "Wrongdoing, oppression", m: "إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ", t: "ظلم", t_ro: "Zulm", t_hi: "ज़ुल्म", t_en: "Injustice" },
         { a: "إِثْم", r: "Ithm", u: "گناہ", u_ro: "Gunah", u_hi: "गुनाह", u_en: "Sin", m: "وَالْإِثْمَ وَالْبَغْيَ", t: "گناہ", t_ro: "Gunah", t_hi: "गुनाह", t_en: "Sin" },
         { a: "عَفْو", r: "'Afw", u: "معافی، درگزر", u_ro: "Maafi, darguzar", u_hi: "माफ़ी, दरगुज़र", u_en: "Pardon, forgiveness", m: "وَالْعَافِينَ عَنِ النَّاسِ", t: "درگزر", t_ro: "Darguzar", t_hi: "दरगुज़र", t_en: "Pardoning" },
         { a: "غَيْظ", r: "Ghayz", u: "غصہ", u_ro: "Gussa", u_hi: "ग़ुस्सा", u_en: "Rage, anger", m: "وَالْكَاظِمِينَ الْغَيْظَ", t: "غصہ", t_ro: "Gussa", t_hi: "ग़ुस्सा", t_en: "Anger" },
@@ -686,14 +686,14 @@ const courseData = [
     ] },
     { day: 57, words: [
         { a: "أَصْلَحَ", r: "Aslaha", u: "اصلاح کی", u_ro: "Islaah ki", u_hi: "इसलाह की", u_en: "He reformed", m: "وَأَصْلَحَ فَلَا خَوْفٌ عَلَيْهِمْ", t: "اصلاح کرنا", t_ro: "Islaah karna", t_hi: "इसलाह करना", t_en: "To reform" },
-        { a: "أَفْسَدَ", r: "Afsada", u: "فساد پھیلایا", u_ro: "Fasaad phailaaya", u_hi: "फ़साद फैलाया", u_en: "He corrupted", m: "وَيُفْسِدُونَ فِي الْأَرْضِ", t: "فساد کرنا", t_ro: "Fasaad karna", t_hi: "फ़साद करना", t_en: "To spread corruption" },
-        { a: "أَسْرَفَ", r: "Asrafa", u: "حد سے بڑھا", u_ro: "Had se badha", u_hi: "हद से बढ़ा", u_en: "He exceeded limits", m: "وَلَا تُسْرِفُوا", t: "حد سے بڑھنا", t_ro: "Had se badhna", t_hi: "हद से बढ़ना", t_en: "To overstep" },
+        { a: "أَفْسَدَ", r: "Afsada", u: "فساد پھیلایا", u_ro: "Fasaad phailaaya", u_hi: "फ़साद फैलाया", u_en: "He corrupted", m: "أَفْسَدُوهَا", t: "فساد کرنا", t_ro: "Fasaad karna", t_hi: "फ़साद करना", t_en: "To spread corruption" },
+        { a: "أَسْرَفَ", r: "Asrafa", u: "حد سے بڑھا", u_ro: "Had se badha", u_hi: "हद से बढ़ा", u_en: "He exceeded limits", m: "الَّذِينَ أَسْرَفُوا", t: "حد سے بڑھنا", t_ro: "Had se badhna", t_hi: "हद से बढ़ना", t_en: "To overstep" },
         { a: "تَصَدَّقَ", r: "Tasaddaqa", u: "صدقہ دیا", u_ro: "Sadqa diya", u_hi: "सदक़ा दिया", u_en: "He gave charity", m: "وَأَن تَصَدَّقُوا خَيْرٌ لَّكُمْ", t: "صدقہ دینا", t_ro: "Sadqa dena", t_hi: "सदक़ा देना", t_en: "To give charity" },
         { a: "أَقْرَضَ", r: "Aqrada", u: "قرض دیا", u_ro: "Qarz diya", u_hi: "क़र्ज़ दिया", u_en: "He lent", m: "مَّن ذَا الَّذِي يُقْرِضُ اللَّهَ قَرْضًا حَسَنًا", t: "قرض دینا", t_ro: "Qarz dena", t_hi: "क़र्ज़ देना", t_en: "To lend" },
         { a: "اسْتَغْفَرَ", r: "Istaghfara", u: "بخشش مانگی", u_ro: "Bakhshish maangi", u_hi: "बख़्शिश माँगी", u_en: "He sought forgiveness", m: "فَاسْتَغْفَرُوا لِذُنُوبِهِمْ", t: "بخشش مانگنا", t_ro: "Bakhshish maangna", t_hi: "बख़्शिश माँगना", t_en: "To seek forgiveness" },
-        { a: "سَبَّحَ", r: "Sabbaha", u: "تسبیح کی", u_ro: "Tasbeeh ki", u_hi: "तस्बीह की", u_en: "He glorified", m: "يُسَبِّحُ لِلَّهِ مَا فِي السَّمَاوَاتِ", t: "تسبیح کرنا", t_ro: "Tasbeeh karna", t_hi: "तस्बीह करना", t_en: "To glorify" },
-        { a: "ذَكَرَ", r: "Dhakara", u: "یاد کیا", u_ro: "Yaad kiya", u_hi: "याद किया", u_en: "He remembered", m: "فَاذْكُرُونِي أَذْكُرْكُمْ", t: "یاد کرنا", t_ro: "Yaad karna", t_hi: "याद करना", t_en: "To remember" },
-        { a: "شَكَرَ", r: "Shakara", u: "شکر کیا", u_ro: "Shukr kiya", u_hi: "शुक्र किया", u_en: "He was grateful", m: "وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ", t: "شکر کرنا", t_ro: "Shukr karna", t_hi: "शुक्र करना", t_en: "To be grateful" },
+        { a: "سَبَّحَ", r: "Sabbaha", u: "تسبیح کی", u_ro: "Tasbeeh ki", u_hi: "तस्बीह की", u_en: "He glorified", m: "سَبَّحَ لِلَّهِ مَا فِي السَّمَاوَاتِ", t: "تسبیح کرنا", t_ro: "Tasbeeh karna", t_hi: "तस्बीह करना", t_en: "To glorify" },
+        { a: "ذَكَرَ", r: "Dhakara", u: "یاد کیا", u_ro: "Yaad kiya", u_hi: "याद किया", u_en: "He remembered", m: "وَذَكَرَ اسْمَ رَبِّهِ", t: "یاد کرنا", t_ro: "Yaad karna", t_hi: "याद करना", t_en: "To remember" },
+        { a: "شَكَرَ", r: "Shakara", u: "شکر کیا", u_ro: "Shukr kiya", u_hi: "शुक्र किया", u_en: "He was grateful", m: "وَمَنْ شَكَرَ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ", t: "شکر کرنا", t_ro: "Shukr karna", t_hi: "शुक्र करना", t_en: "To be grateful" },
         { a: "صَلَّى", r: "Sallaa", u: "نماز پڑھی / رحمت بھیجی", u_ro: "Namaaz padhi / rahmat bheji", u_hi: "नमाज़ पढ़ी / रहमत भेजी", u_en: "He prayed / sent blessings", m: "وَصَلِّ عَلَيْهِمْ", t: "نماز پڑھنا", t_ro: "Namaaz padhna", t_hi: "नमाज़ पढ़ना", t_en: "To pray" }
     ] },
     { day: 58, words: [
@@ -725,22 +725,22 @@ const courseData = [
         { a: "أَمْر", r: "Amr", u: "حکم، معاملہ", u_ro: "Hukm, mu'aamla", u_hi: "हुक्म, मामला", u_en: "Command, matter", m: "أَلَا لَهُ الْخَلْقُ وَالْأَمْرُ", t: "حکم", t_ro: "Hukm", t_hi: "हुक्म", t_en: "Command" },
         { a: "عِلْم", r: "'Ilm", u: "علم", u_ro: "Ilm", u_hi: "इल्म", u_en: "Knowledge", m: "رَبِّ زِدْنِي عِلْمًا", t: "علم", t_ro: "Ilm", t_hi: "इल्म", t_en: "Knowledge" },
         { a: "قَوْل", r: "Qawl", u: "بات، قول", u_ro: "Baat, qawl", u_hi: "बात, क़ौल", u_en: "Word, saying", m: "وَقُولُوا قَوْلًا سَدِيدًا", t: "بات", t_ro: "Baat", t_hi: "बात", t_en: "Saying" },
-        { a: "عَمَل", r: "'Amal", u: "عمل، کام", u_ro: "Amal, kaam", u_hi: "अमल, काम", u_en: "Deed, action", m: "وَلَا يُظْلَمُونَ عَمَلًا", t: "عمل", t_ro: "Amal", t_hi: "अमल", t_en: "Deed" },
+        { a: "عَمَل", r: "'Amal", u: "عمل، کام", u_ro: "Amal, kaam", u_hi: "अमल, काम", u_en: "Deed, action", m: "أَحْسَنُ عَمَلًا", t: "عمل", t_ro: "Amal", t_hi: "अमल", t_en: "Deed" },
         { a: "بَاطِل", r: "Baatil", u: "باطل، جھوٹ", u_ro: "Baatil, jhoot", u_hi: "बातिल, झूठ", u_en: "Falsehood", m: "وَزَهَقَ الْبَاطِلُ إِنَّ الْبَاطِلَ كَانَ زَهُوقًا", t: "باطل", t_ro: "Baatil", t_hi: "बातिल", t_en: "Falsehood" },
         { a: "وَعْد", r: "Wa'd", u: "وعدہ", u_ro: "Waada", u_hi: "वादा", u_en: "Promise", m: "إِنَّ وَعْدَ اللَّهِ حَقٌّ", t: "وعدہ", t_ro: "Waada", t_hi: "वादा", t_en: "Promise" },
         { a: "عَهْد", r: "'Ahd", u: "عہد، وعدہ", u_ro: "Ahd, waada", u_hi: "अहद, वादा", u_en: "Covenant", m: "وَأَوْفُوا بِعَهْدِي", t: "عہد", t_ro: "Ahd", t_hi: "अहद", t_en: "Covenant" },
-        { a: "أَمَانَة", r: "Amaanah", u: "امانت", u_ro: "Amaanat", u_hi: "अमानत", u_en: "Trust", m: "أَنْ تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا", t: "امانت", t_ro: "Amaanat", t_hi: "अमानत", t_en: "Trust" },
-        { a: "رِزْق", r: "Rizq", u: "رزق، روزی", u_ro: "Rizq, rozi", u_hi: "रिज़्क़, रोज़ी", u_en: "Provision, sustenance", m: "وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ", t: "رزق", t_ro: "Rizq", t_hi: "रिज़्क़", t_en: "Sustenance" }
+        { a: "أَمَانَة", r: "Amaanah", u: "امانت", u_ro: "Amaanat", u_hi: "अमानत", u_en: "Trust", m: "عَرَضْنَا الْأَمَانَةَ", t: "امانت", t_ro: "Amaanat", t_hi: "अमानत", t_en: "Trust" },
+        { a: "رِزْق", r: "Rizq", u: "رزق، روزی", u_ro: "Rizq, rozi", u_hi: "रिज़्क़, रोज़ी", u_en: "Provision, sustenance", m: "وَفِي السَّمَاءِ رِزْقُكُمْ", t: "رزق", t_ro: "Rizq", t_hi: "रिज़्क़", t_en: "Sustenance" }
     ] },
     { day: 61, words: [
-        { a: "بِرّ", r: "Birr", u: "نیکی، بھلائی", u_ro: "Neki, bhalaai", u_hi: "नेकी, भलाई", u_en: "Righteousness", m: "لَيْسَ الْبِرَّ أَنْ تُوَلُّوا", t: "نیکی", t_ro: "Neki", t_hi: "नेकी", t_en: "Righteousness" },
+        { a: "بِرّ", r: "Birr", u: "نیکی، بھلائی", u_ro: "Neki, bhalaai", u_hi: "नेकी, भलाई", u_en: "Righteousness", m: "لَنْ تَنَالُوا الْبِرَّ", t: "نیکی", t_ro: "Neki", t_hi: "नेकी", t_en: "Righteousness" },
         { a: "شَرّ", r: "Sharr", u: "برائی", u_ro: "Buraai", u_hi: "बुराई", u_en: "Evil", m: "مِنْ شَرِّ مَا خَلَقَ", t: "برائی", t_ro: "Buraai", t_hi: "बुराई", t_en: "Evil" },
         { a: "سُوء", r: "Soo'", u: "برا، برائی", u_ro: "Bura, buraai", u_hi: "बुरा, बुराई", u_en: "Evil, harm", m: "يَسُومُونَكُمْ سُوءَ الْعَذَابِ", t: "برائی", t_ro: "Buraai", t_hi: "बुराई", t_en: "Evil" },
-        { a: "نُصْح", r: "Nush", u: "خیر خواہی", u_ro: "Khair-khwaahi", u_hi: "ख़ैरख़्वाही", u_en: "Sincere advice", m: "أَبْلُغُكُمْ نُصْحِي", t: "خیر خواہی", t_ro: "Khair-khwaahi", t_hi: "ख़ैरख़्वाही", t_en: "Sincere counsel" },
+        { a: "نُصْح", r: "Nush", u: "خیر خواہی", u_ro: "Khair-khwaahi", u_hi: "ख़ैरख़्वाही", u_en: "Sincere advice", m: "وَلَا يَنْفَعُكُمْ نُصْحِي", t: "خیر خواہی", t_ro: "Khair-khwaahi", t_hi: "ख़ैरख़्वाही", t_en: "Sincere counsel" },
         { a: "تَقْوِيم", r: "Taqweem", u: "سیدھا کرنا", u_ro: "Seedha karna", u_hi: "सीधा करना", u_en: "Proportion, molding", m: "فِي أَحْسَنِ تَقْوِيمٍ", t: "سیدھا کرنا", t_ro: "Seedha karna", t_hi: "सीधा करना", t_en: "Proportioning" },
         { a: "رُشْد", r: "Rushd", u: "ہدایت، سیدھا راستہ", u_ro: "Hidaayat, seedha raasta", u_hi: "हिदायत, सीधा रास्ता", u_en: "Right guidance", m: "تَبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ", t: "ہدایت", t_ro: "Hidaayat", t_hi: "हिदायत", t_en: "Guidance" },
         { a: "طَيِّب", r: "Tayyib", u: "پاکیزہ، اچھا", u_ro: "Paakeeza, achchha", u_hi: "पाकीज़ा, अच्छा", u_en: "Good, pure", m: "طَيِّبَاتِ مَا رَزَقْنَاكُمْ", t: "پاکیزہ", t_ro: "Paakeeza", t_hi: "पाकीज़ा", t_en: "Pure" },
-        { a: "خَبِيث", r: "Khabeeth", u: "ناپاک، برا", u_ro: "Naapaak, bura", u_hi: "नापाक, बुरा", u_en: "Impure, bad", m: "الْخَبِيثَ مِنْهُ", t: "ناپاک", t_ro: "Naapaak", t_hi: "नापाक", t_en: "Impure" },
+        { a: "خَبِيث", r: "Khabeeth", u: "ناپاک، برا", u_ro: "Naapaak, bura", u_hi: "नापाक, बुरा", u_en: "Impure, bad", m: "لَا يَسْتَوِي الْخَبِيثُ وَالطَّيِّبُ", t: "ناپاک", t_ro: "Naapaak", t_hi: "नापाक", t_en: "Impure" },
         { a: "رَجَاء", r: "Rajaa'", u: "امید", u_ro: "Umeed", u_hi: "उम्मीद", u_en: "Hope", m: "وَيَرْجُونَ رَحْمَتَهُ", t: "امید", t_ro: "Umeed", t_hi: "उम्मीद", t_en: "Hope" },
         { a: "نَقْص", r: "Naqs", u: "کمی، نقصان", u_ro: "Kami, nuqsaan", u_hi: "कमी, नुक़सान", u_en: "Deficiency, loss", m: "بِنَقْصٍ مِنَ الْأَمْوَالِ", t: "کمی", t_ro: "Kami", t_hi: "कमी", t_en: "Loss" }
     ] },
@@ -752,20 +752,20 @@ const courseData = [
         { a: "الْآخِر", r: "Al-Aakhir", u: "سب کے بعد", u_ro: "Sab ke baad", u_hi: "सब के बाद", u_en: "The Last", m: "هُوَ الْأَوَّلُ وَالْآخِرُ", t: "آخری", t_ro: "Aakhri", t_hi: "आख़िरी", t_en: "The Last" },
         { a: "الظَّاهِر", r: "Az-Zaahir", u: "ظاہر، عیاں", u_ro: "Zaahir, ayaan", u_hi: "ज़ाहिर, अयाँ", u_en: "The Manifest", m: "وَالظَّاهِرُ وَالْبَاطِنُ", t: "ظاہر", t_ro: "Zaahir", t_hi: "ज़ाहिर", t_en: "Manifest" },
         { a: "الْبَاطِن", r: "Al-Baatin", u: "چھپا ہوا، باطن", u_ro: "Chhupa hua, baatin", u_hi: "छुपा हुआ, बातिन", u_en: "The Hidden", m: "وَالظَّاهِرُ وَالْبَاطِنُ", t: "باطن", t_ro: "Baatin", t_hi: "बातिन", t_en: "Hidden" },
-        { a: "الْوَالِي", r: "Al-Waalee", u: "حکمرانی کرنے والا", u_ro: "Hukmraani karne wala", u_hi: "हुक्मरानी करने वाला", u_en: "The Governor", m: "وَمَا لَهُم مِّن دُونِهِ مِن وَالٍ", t: "حاکم", t_ro: "Haakim", t_hi: "हाकिम", t_en: "Governor" },
-        { a: "الْمُحْيِي", r: "Al-Muhyee", u: "زندہ کرنے والا", u_ro: "Zinda karne wala", u_hi: "ज़िंदा करने वाला", u_en: "The Giver of Life", m: "إِنَّهُ هُوَ يُحْيِي وَيُمِيتُ", t: "زندہ کرنے والا", t_ro: "Zinda karne wala", t_hi: "ज़िंदा करने वाला", t_en: "Giver of life" },
-        { a: "الْمُمِيت", r: "Al-Mumeet", u: "موت دینے والا", u_ro: "Maut dene wala", u_hi: "मौत देने वाला", u_en: "The Bringer of Death", m: "إِنَّهُ هُوَ يُحْيِي وَيُمِيتُ", t: "موت دینے والا", t_ro: "Maut dene wala", t_hi: "मौत देने वाला", t_en: "Causer of death" }
+        { a: "الْوَالِي", r: "Al-Waalee", u: "حکمرانی کرنے والا", u_ro: "Hukmraani karne wala", u_hi: "हुक्मरानी करने वाला", u_en: "The Governor", m: "وَمَا لَهُمْ مِنْ دُونِهِ مِنْ وَالٍ", t: "حاکم", t_ro: "Haakim", t_hi: "हाकिम", t_en: "Governor" },
+        { a: "الْمُحْيِي", r: "Al-Muhyee", u: "زندہ کرنے والا", u_ro: "Zinda karne wala", u_hi: "ज़िंदा करने वाला", u_en: "The Giver of Life", m: "يُحْيِي وَيُمِيتُ", t: "زندہ کرنے والا", t_ro: "Zinda karne wala", t_hi: "ज़िंदा करने वाला", t_en: "Giver of life" },
+        { a: "الْمُمِيت", r: "Al-Mumeet", u: "موت دینے والا", u_ro: "Maut dene wala", u_hi: "मौत देने वाला", u_en: "The Bringer of Death", m: "يُحْيِي وَيُمِيتُ", t: "موت دینے والا", t_ro: "Maut dene wala", t_hi: "मौत देने वाला", t_en: "Causer of death" }
     ] },
     { day: 63, words: [
-        { a: "صَدِيق", r: "Sadeeq", u: "دوست", u_ro: "Dost", u_hi: "दोस्त", u_en: "Friend", m: "وَمَا لِيَ مِن صَدِيقٍ", t: "دوست", t_ro: "Dost", t_hi: "दोस्त", t_en: "Friend" },
+        { a: "صَدِيق", r: "Sadeeq", u: "دوست", u_ro: "Dost", u_hi: "दोस्त", u_en: "Friend", m: "أَوْ صَدِيقِكُمْ", t: "دوست", t_ro: "Dost", t_hi: "दोस्त", t_en: "Friend" },
         { a: "جَار", r: "Jaar", u: "پڑوسی", u_ro: "Parosi", u_hi: "पड़ोसी", u_en: "Neighbour", m: "وَالْجَارِ ذِي الْقُرْبَىٰ", t: "پڑوسی", t_ro: "Parosi", t_hi: "पड़ोसी", t_en: "Neighbour" },
         { a: "ضَيْف", r: "Dayf", u: "مہمان", u_ro: "Mehmaan", u_hi: "मेहमान", u_en: "Guest", m: "هَلْ أَتَاكَ حَدِيثُ ضَيْفِ إِبْرَاهِيمَ", t: "مہمان", t_ro: "Mehmaan", t_hi: "मेहमान", t_en: "Guest" },
-        { a: "بَعِيد", r: "Ba'eed", u: "دور", u_ro: "Door", u_hi: "दूर", u_en: "Far", m: "وَمَا هُوَ مِنِّي بِبَعِيدٍ", t: "دور", t_ro: "Door", t_hi: "दूर", t_en: "Far" },
-        { a: "شَيْخ", r: "Shaykh", u: "بزرگ، بوڑھا", u_ro: "Buzurg, boorha", u_hi: "बुज़ुर्ग, बूढ़ा", u_en: "Elder, old man", m: "قَالَتْ يَا وَيْلَتَىٰ شَيْخًا", t: "بزرگ", t_ro: "Buzurg", t_hi: "बुज़ुर्ग", t_en: "Elder" },
-        { a: "فَتَى", r: "Fataa", u: "جوان، نوجوان", u_ro: "Jawaan, naujawaan", u_hi: "जवान, नौजवान", u_en: "Young man", m: "وَدَخَلَ الْمَدِينَةَ فَتًى", t: "جوان", t_ro: "Jawaan", t_hi: "जवान", t_en: "Youth" },
+        { a: "بَعِيد", r: "Ba'eed", u: "دور", u_ro: "Door", u_hi: "दूर", u_en: "Far", m: "وَمَا قَوْمُ لُوطٍ مِنْكُمْ بِبَعِيدٍ", t: "دور", t_ro: "Door", t_hi: "दूर", t_en: "Far" },
+        { a: "شَيْخ", r: "Shaykh", u: "بزرگ، بوڑھا", u_ro: "Buzurg, boorha", u_hi: "बुज़ुर्ग, बूढ़ा", u_en: "Elder, old man", m: "وَهَذَا بَعْلِي شَيْخًا", t: "بزرگ", t_ro: "Buzurg", t_hi: "बुज़ुर्ग", t_en: "Elder" },
+        { a: "فَتَى", r: "Fataa", u: "جوان، نوجوان", u_ro: "Jawaan, naujawaan", u_hi: "जवान, नौजवान", u_en: "Young man", m: "سَمِعْنَا فَتًى", t: "جوان", t_ro: "Jawaan", t_hi: "जवान", t_en: "Youth" },
         { a: "رَفِيق", r: "Rafeeq", u: "ساتھی", u_ro: "Saathi", u_hi: "साथी", u_en: "Companion", m: "حَسُنَ أُولَٰئِكَ رَفِيقًا", t: "ساتھی", t_ro: "Saathi", t_hi: "साथी", t_en: "Companion" },
-        { a: "طَاغُوت", r: "Taaghoot", u: "باطل معبود، سرکش", u_ro: "Baatil maabood, sarkash", u_hi: "बातिल माबूद, सरकश", u_en: "False god, tyrant", m: "الطَّاغُوتَ فَمَنْ يَكْفُرْ", t: "باطل معبود", t_ro: "Baatil maabood", t_hi: "बातिल माबूद", t_en: "False deity" },
-        { a: "خَصِيم", r: "Khaseem", u: "جھگڑنے والا، حریف", u_ro: "Jhagadne wala, hareef", u_hi: "झगड़ने वाला, हरीफ़", u_en: "Opponent, adversary", m: "بَلْ هُوَ خَصِيمٌ مُّبِينٌ", t: "حریف", t_ro: "Hareef", t_hi: "हरीफ़", t_en: "Adversary" },
+        { a: "طَاغُوت", r: "Taaghoot", u: "باطل معبود، سرکش", u_ro: "Baatil maabood, sarkash", u_hi: "बातिल माबूद, सरकश", u_en: "False god, tyrant", m: "فَمَنْ يَكْفُرْ بِالطَّاغُوتِ", t: "باطل معبود", t_ro: "Baatil maabood", t_hi: "बातिल माबूद", t_en: "False deity" },
+        { a: "خَصِيم", r: "Khaseem", u: "جھگڑنے والا، حریف", u_ro: "Jhagadne wala, hareef", u_hi: "झगड़ने वाला, हरीफ़", u_en: "Opponent, adversary", m: "فَإِذَا هُوَ خَصِيمٌ مُبِينٌ", t: "حریف", t_ro: "Hareef", t_hi: "हरीफ़", t_en: "Adversary" },
         { a: "أَمِين", r: "Ameen", u: "اماندار", u_ro: "Amaandaar", u_hi: "अमानदार", u_en: "Trustworthy", m: "إِنِّي لَكُمْ رَسُولٌ أَمِينٌ", t: "اماندار", t_ro: "Amaandaar", t_hi: "अमानदार", t_en: "Trustworthy" }
     ] },
     { day: 64, words: [
@@ -782,55 +782,55 @@ const courseData = [
     ] },
     { day: 65, words: [
         { a: "بَغَى", r: "Baghaa", u: "سرکشی کی، حد سے بڑھا", u_ro: "Sarkashi ki, had se badha", u_hi: "सरकशी की, हद से बढ़ा", u_en: "He transgressed", m: "يَبْغُونَ فِي الْأَرْضِ", t: "سرکشی", t_ro: "Sarkashi", t_hi: "सरकशी", t_en: "Transgression" },
-        { a: "فَسَقَ", r: "Fasaqa", u: "نافرمانی کی", u_ro: "Nafarmaani ki", u_hi: "नाफ़रमानी की", u_en: "He deviated", m: "إِلَّا إِبْلِيسَ فَسَقَ", t: "نافرمانی", t_ro: "Nafarmaani", t_hi: "नाफ़रमानी", t_en: "Deviation" },
-        { a: "أَجْرَمَ", r: "Ajrama", u: "جرم کیا", u_ro: "Jurm kiya", u_hi: "जुर्म किया", u_en: "He committed crime", m: "وَمَن يُجْرِمْ فَلَا يَجِدْ", t: "جرم", t_ro: "Jurm", t_hi: "जुर्म", t_en: "Crime" },
+        { a: "فَسَقَ", r: "Fasaqa", u: "نافرمانی کی", u_ro: "Nafarmaani ki", u_hi: "नाफ़रमानी की", u_en: "He deviated", m: "فَفَسَقَ عَنْ أَمْرِ رَبِّهِ", t: "نافرمانی", t_ro: "Nafarmaani", t_hi: "नाफ़रमानी", t_en: "Deviation" },
+        { a: "أَجْرَمَ", r: "Ajrama", u: "جرم کیا", u_ro: "Jurm kiya", u_hi: "जुर्म किया", u_en: "He committed crime", m: "إِنَّ الَّذِينَ أَجْرَمُوا", t: "جرم", t_ro: "Jurm", t_hi: "जुर्म", t_en: "Crime" },
         { a: "كَسَبَ", r: "Kasaba", u: "کمایا", u_ro: "Kamaaya", u_hi: "कमाया", u_en: "He earned", m: "لَهَا مَا كَسَبَتْ", t: "کمانا", t_ro: "Kamaana", t_hi: "कमाना", t_en: "Earning" },
         { a: "حَاقَ", r: "Haaqa", u: "گھیر لیا، آ پڑا", u_ro: "Gher liya, aa pada", u_hi: "घेर लिया, आ पड़ा", u_en: "It encompassed", m: "وَحَاقَ بِهِم مَّا كَانُوا", t: "گھیر لینا", t_ro: "Gher lena", t_hi: "घेर लेना", t_en: "Encompassed" },
         { a: "بَاءَ", r: "Baa'a", u: "لوٹا، واپس ہوا", u_ro: "Lauta, waapas hua", u_hi: "लौटा, वापस हुआ", u_en: "He returned with", m: "وَبَاءُوا بِغَضَبٍ", t: "لوٹنا", t_ro: "Lautna", t_hi: "लौटना", t_en: "Returned" },
         { a: "أَصَابَ", r: "Asaaba", u: "پہنچا، مارا", u_ro: "Pahuncha, maara", u_hi: "पहुँचा, मारा", u_en: "It struck", m: "مَا أَصَابَكَ مِنْ حَسَنَةٍ", t: "پہنچنا", t_ro: "Pahunchna", t_hi: "पहुँचना", t_en: "Struck" },
-        { a: "أَطَاعَ", r: "Ataa'a", u: "اطاعت کی", u_ro: "Itaat ki", u_hi: "इताअत की", u_en: "He obeyed", m: "مَنْ يُطِعِ الرَّسُولَ", t: "اطاعت", t_ro: "Itaat", t_hi: "इताअत", t_en: "Obedience" },
-        { a: "خَالَفَ", r: "Khaalafa", u: "مخالفت کی", u_ro: "Mukhaalifat ki", u_hi: "मुख़ालिफ़त की", u_en: "He opposed", m: "يُخَالِفُونَهُ", t: "مخالفت", t_ro: "Mukhaalifat", t_hi: "मुख़ालिफ़त", t_en: "Opposition" },
+        { a: "أَطَاعَ", r: "Ataa'a", u: "اطاعت کی", u_ro: "Itaat ki", u_hi: "इताअत की", u_en: "He obeyed", m: "فَقَدْ أَطَاعَ اللَّهَ", t: "اطاعت", t_ro: "Itaat", t_hi: "इताअत", t_en: "Obedience" },
+        { a: "خَالَفَ", r: "Khaalafa", u: "مخالفت کی", u_ro: "Mukhaalifat ki", u_hi: "मुख़ालिफ़त की", u_en: "He opposed", m: "الَّذِينَ يُخَالِفُونَ عَنْ أَمْرِهِ", t: "مخالفت", t_ro: "Mukhaalifat", t_hi: "मुख़ालिफ़त", t_en: "Opposition" },
         { a: "صَدَّ", r: "Sadda", u: "روکا، ہٹایا", u_ro: "Roka, hataaya", u_hi: "रोका, हटाया", u_en: "He turned away", m: "صَدُّوا عَن سَبِيلِ اللَّهِ", t: "روکنا", t_ro: "Rokna", t_hi: "रोकना", t_en: "To turn away" }
     ] },
     { day: 66, words: [
-        { a: "لَبِسَ", r: "Labisa", u: "پہنا", u_ro: "Pehna", u_hi: "पहना", u_en: "He wore", m: "لِبَاسًا يُوَارِي سَوْآتِكُمْ", t: "پہننا", t_ro: "Pehna", t_hi: "पहना", t_en: "To wear" },
+        { a: "لَبِسَ", r: "Labisa", u: "پہنا", u_ro: "Pehna", u_hi: "पहना", u_en: "He wore", m: "وَيَلْبَسُونَ ثِيَابًا خُضْرًا", t: "پہننا", t_ro: "Pehna", t_hi: "पहना", t_en: "To wear" },
         { a: "قَعَدَ", r: "Qa'ada", u: "بیٹھا", u_ro: "Baitha", u_hi: "बैठा", u_en: "He sat", m: "الْقَاعِدُونَ مِنَ الْمُؤْمِنِينَ", t: "بیٹھنا", t_ro: "Baithna", t_hi: "बैठना", t_en: "To sit" },
-        { a: "اضْطَجَعَ", r: "Idtaja'a", u: "لیٹا", u_ro: "Leta", u_hi: "लेटा", u_en: "He lay down", m: "يَذْكُرُونَ اللَّهَ قِيَامًا وَقُعُودًا", t: "لیٹنا", t_ro: "Letna", t_hi: "लेटना", t_en: "To lie" },
+        { a: "رُقُود", r: "Ruqood", u: "سوئے ہوئے", u_ro: "Soye hue", u_hi: "सोए हुए", u_en: "Sleeping ones", m: "رُقُود", t: "سوئے ہوئے", t_ro: "Soye hue", t_hi: "सोए हुए", t_en: "Sleeping ones" },
         { a: "مَشَى", r: "Mashaa", u: "چلا", u_ro: "Chala", u_hi: "चला", u_en: "He walked", m: "وَيَمْشِي فِي الْأَسْوَاقِ", t: "چلنا", t_ro: "Chalna", t_hi: "चलना", t_en: "To walk" },
         { a: "جَرَى", r: "Jaraa", u: "بہا، دوڑا", u_ro: "Baha, dauda", u_hi: "बहा, दौड़ा", u_en: "It flowed/ran", m: "تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ", t: "بہنا", t_ro: "Bahna", t_hi: "बहना", t_en: "To flow" },
         { a: "رَكِبَ", r: "Rakiba", u: "سوار ہوا", u_ro: "Sawaar hua", u_hi: "सवार हुआ", u_en: "He rode", m: "لِتَرْكَبُوهَا", t: "سوار ہونا", t_ro: "Sawaar hona", t_hi: "सवार होना", t_en: "To ride" },
         { a: "حَمَلَ", r: "Hamala", u: "اٹھایا", u_ro: "Uthaaya", u_hi: "उठाया", u_en: "He carried", m: "فَحَمَلَتْهُ فَانتَبَذَتْ", t: "اٹھانا", t_ro: "Uthaana", t_hi: "उठाना", t_en: "To carry" },
-        { a: "وَضَعَ", r: "Wada'a", u: "رکھا، جنم دیا", u_ro: "Rakha, janam diya", u_hi: "रखा, जन्म दिया", u_en: "He placed / gave birth", m: "فَلَمَّا وَضَعَتْ", t: "رکھنا", t_ro: "Rakhna", t_hi: "रखना", t_en: "To place" },
+        { a: "وَضَعَ", r: "Wada'a", u: "رکھا، جنم دیا", u_ro: "Rakha, janam diya", u_hi: "रखा, जन्म दिया", u_en: "He placed / gave birth", m: "فَلَمَّا وَضَعَتْهَا", t: "رکھنا", t_ro: "Rakhna", t_hi: "रखना", t_en: "To place" },
         { a: "سَقَى", r: "Saqaa", u: "پانی پلایا", u_ro: "Paani pilaaya", u_hi: "पानी पिलाया", u_en: "He watered", m: "وَسَقَاهُمْ رَبُّهُمْ شَرَابًا", t: "پانی پلانا", t_ro: "Paani pilaana", t_hi: "पानी पिलाना", t_en: "To water" },
-        { a: "لَبِثَ", r: "Labitha", u: "ٹھہرا، رکا", u_ro: "Thehra, ruka", u_hi: "ठहरा, रुका", u_en: "He remained", m: "لَبِثْتُ يَوْمًا", t: "ٹھہرنا", t_ro: "Thehrna", t_hi: "ठहरना", t_en: "To remain" }
+        { a: "لَبِثَ", r: "Labitha", u: "ٹھہرا، رکا", u_ro: "Thehra, ruka", u_hi: "ठहरा, रुका", u_en: "He remained", m: "قَالُوا لَبِثْنَا يَوْمًا", t: "ٹھہرنا", t_ro: "Thehrna", t_hi: "ठहरना", t_en: "To remain" }
     ] },
     { day: 67, words: [
-        { a: "قُنُوت", r: "Qunoot", u: "اطاعت، عبادت میں کھڑا رہنا", u_ro: "Itaat, ibaadat mein khada rehna", u_hi: "इताअत, इबादत में खड़ा रहना", u_en: "Devotion, obedience", m: "وَمِنَ الْقَانِتِينَ", t: "فرمانبرداری", t_ro: "Farmaabardaari", t_hi: "फ़रमाँबरदारी", t_en: "Devoted obedience" },
-        { a: "خُشُوع", r: "Khushoo'", u: "عاجزی، جھکنا", u_ro: "Aajzi, jhukna", u_hi: "आजिज़ी, झुकना", u_en: "Humility", m: "فِي صَلَاتِهِمْ خَاشِعُونَ", t: "عاجزی", t_ro: "Aajzi", t_hi: "आजिज़ी", t_en: "Humility" },
+        { a: "قُنُوت", r: "Qunoot", u: "اطاعت، عبادت میں کھڑا رہنا", u_ro: "Itaat, ibaadat mein khada rehna", u_hi: "इताअत, इबादत में खड़ा रहना", u_en: "Devotion, obedience", m: "وَكَانَتْ مِنَ الْقَانِتِينَ", t: "فرمانبرداری", t_ro: "Farmaabardaari", t_hi: "फ़रमाँबरदारी", t_en: "Devoted obedience" },
+        { a: "خُشُوع", r: "Khushoo'", u: "عاجزی، جھکنا", u_ro: "Aajzi, jhukna", u_hi: "आजिज़ी, झुकना", u_en: "Humility", m: "وَيَزِيدُهُمْ خُشُوعًا", t: "عاجزی", t_ro: "Aajzi", t_hi: "आजिज़ी", t_en: "Humility" },
         { a: "تَهَجُّد", r: "Tahajjud", u: "رات کی نماز", u_ro: "Raat ki namaaz", u_hi: "रात की नमाज़", u_en: "Night prayer", m: "وَمِنَ اللَّيْلِ فَتَهَجَّدْ بِهِ", t: "رات کی نماز", t_ro: "Raat ki namaaz", t_hi: "रात की नमाज़", t_en: "Night prayer" },
         { a: "هَمْس", r: "Hams", u: "دھیمی آواز، سرگوشی", u_ro: "Dheemi aawaaz, sargoshi", u_hi: "धीमी आवाज़, सरगोशी", u_en: "Whisper", m: "لَا تَسْمَعُ إِلَّا هَمْسًا", t: "دھیمی آواز", t_ro: "Dheemi aawaaz", t_hi: "धीमी आवाज़", t_en: "Whisper" },
         { a: "تَرْتِيل", r: "Tarteel", u: "ٹھہر ٹھہر کر پڑھنا", u_ro: "Thehar thehar kar padhna", u_hi: "ठहर-ठहर कर पढ़ना", u_en: "Measured recitation", m: "وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا", t: "ٹھہر کر پڑھنا", t_ro: "Thehar kar padhna", t_hi: "ठहर कर पढ़ना", t_en: "Reciting slowly" },
         { a: "تَكْبِير", r: "Takbeer", u: "اللہ اکبر کہنا", u_ro: "Allahu Akbar kehna", u_hi: "अल्लाहु अकबर कहना", u_en: "Magnifying Allah", m: "وَكَبِّرْهُ تَكْبِيرًا", t: "بڑائی بیان کرنا", t_ro: "Baraai bayaan karna", t_hi: "बड़ाई बयान करना", t_en: "Declaring greatness" },
-        { a: "تَحْمِيد", r: "Tahmeed", u: "الحمدللہ کہنا", u_ro: "Alhamdulillah kehna", u_hi: "अल्हम्दुलिल्लाह कहना", u_en: "Praising Allah", m: "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ", t: "تعریف", t_ro: "Taareef", t_hi: "तारीफ़", t_en: "Praise" },
-        { a: "تَهْلِيل", r: "Tahleel", u: "لا الہ الا اللہ کہنا", u_ro: "La ilaha illallah kehna", u_hi: "ला इलाहा इल्लल्लाह कहना", u_en: "Declaring Oneness", m: "لَا إِلَٰهَ إِلَّا اللَّهُ", t: "کلمہ", t_ro: "Kalma", t_hi: "कलमा", t_en: "Declaration of Oneness" },
+        { a: "اسْتِغْفَار", r: "Istighfaar", u: "بخشش مانگنا", u_ro: "Bakhshish maangna", u_hi: "बख़्शिश माँगना", u_en: "Seeking forgiveness", m: "اسْتِغْفَار", t: "بخشش مانگنا", t_ro: "Bakhshish maangna", t_hi: "बख़्शिश माँगना", t_en: "Seeking forgiveness" },
+        { a: "قِيَام", r: "Qiyaam", u: "کھڑے ہونا (عبادت میں)", u_ro: "Khade hona (ibaadat mein)", u_hi: "खड़े होना (इबादत में)", u_en: "Standing (in worship)", m: "قِيَام", t: "کھڑے ہونا (عبادت میں)", t_ro: "Khade hona (ibaadat mein)", t_hi: "खड़े होना (इबादत में)", t_en: "Standing (in worship)" },
         { a: "تَضَرُّع", r: "Tadarru'", u: "عاجزی سے دعا", u_ro: "Aajzi se dua", u_hi: "आजिज़ी से दुआ", u_en: "Humble supplication", m: "تَضَرُّعًا وَخُفْيَةً", t: "عاجزی", t_ro: "Aajzi", t_hi: "आजिज़ी", t_en: "Humble pleading" },
         { a: "خُفْيَة", r: "Khufyah", u: "چھپے ہوئے، خاموشی سے", u_ro: "Chhupe hue, khaamoshi se", u_hi: "छुपे हुए, ख़ामोशी से", u_en: "Secretly", m: "تَضَرُّعًا وَخُفْيَةً", t: "چھپ کر", t_ro: "Chhup kar", t_hi: "छुप कर", t_en: "In secret" }
     ] },
     { day: 68, words: [
-        { a: "عَمّ", r: "'Amm", u: "چچا", u_ro: "Chachcha", u_hi: "चच्चा", u_en: "Paternal uncle", m: "أَوْ أَعْمَامُكُمْ", t: "چچا", t_ro: "Chachcha", t_hi: "चच्चा", t_en: "Paternal uncle" },
-        { a: "عَمَّة", r: "'Ammah", u: "پھوپھی", u_ro: "Phoophi", u_hi: "फूफी", u_en: "Paternal aunt", m: "أَوْ عَمَّاتُكُمْ", t: "پھوپھی", t_ro: "Phoophi", t_hi: "फूफी", t_en: "Paternal aunt" },
-        { a: "خَال", r: "Khaal", u: "ماموں", u_ro: "Maamoon", u_hi: "मामूँ", u_en: "Maternal uncle", m: "أَوْ أَخْوَالُكُمْ", t: "ماموں", t_ro: "Maamoon", t_hi: "मामूँ", t_en: "Maternal uncle" },
-        { a: "خَالَة", r: "Khaalah", u: "خالہ", u_ro: "Khaala", u_hi: "ख़ाला", u_en: "Maternal aunt", m: "أَوْ خَالَاتُكُمْ", t: "خالہ", t_ro: "Khaala", t_hi: "ख़ाला", t_en: "Maternal aunt" },
+        { a: "عَمّ", r: "'Amm", u: "چچا", u_ro: "Chachcha", u_hi: "चच्चा", u_en: "Paternal uncle", m: "بُيُوتِ أَعْمَامِكُمْ", t: "چچا", t_ro: "Chachcha", t_hi: "चच्चा", t_en: "Paternal uncle" },
+        { a: "عَمَّة", r: "'Ammah", u: "پھوپھی", u_ro: "Phoophi", u_hi: "फूफी", u_en: "Paternal aunt", m: "بُيُوتِ عَمَّاتِكُمْ", t: "پھوپھی", t_ro: "Phoophi", t_hi: "फूफी", t_en: "Paternal aunt" },
+        { a: "خَال", r: "Khaal", u: "ماموں", u_ro: "Maamoon", u_hi: "मामूँ", u_en: "Maternal uncle", m: "بُيُوتِ أَخْوَالِكُمْ", t: "ماموں", t_ro: "Maamoon", t_hi: "मामूँ", t_en: "Maternal uncle" },
+        { a: "خَالَة", r: "Khaalah", u: "خالہ", u_ro: "Khaala", u_hi: "ख़ाला", u_en: "Maternal aunt", m: "بُيُوتِ خَالَاتِكُمْ", t: "خالہ", t_ro: "Khaala", t_hi: "ख़ाला", t_en: "Maternal aunt" },
         { a: "نَسَب", r: "Nasab", u: "نسب، خاندانی تعلق", u_ro: "Nasab, khaandani ta'alluq", u_hi: "नसब, ख़ानदानी ताल्लुक़", u_en: "Lineage", m: "فَجَعَلَهُ نَسَبًا وَصِهْرًا", t: "نسب", t_ro: "Nasab", t_hi: "नसब", t_en: "Lineage" },
         { a: "صِهْر", r: "Sihr", u: "سسرال کا رشتہ", u_ro: "Susraal ka rishta", u_hi: "ससुराल का रिश्ता", u_en: "In-law relation", m: "فَجَعَلَهُ نَسَبًا وَصِهْرًا", t: "سسرال کا رشتہ", t_ro: "Susraal ka rishta", t_hi: "ससुराल का रिश्ता", t_en: "In-law" },
-        { a: "نَسْل", r: "Nasl", u: "اولاد، نسل", u_ro: "Aulaad, nasl", u_hi: "औलाद, नस्ल", u_en: "Descendants", m: "بَنِينَ وَحَفَدَةً", t: "اولاد", t_ro: "Aulaad", t_hi: "औलाद", t_en: "Offspring" },
+        { a: "نَسْل", r: "Nasl", u: "اولاد، نسل", u_ro: "Aulaad, nasl", u_hi: "औलाद, नस्ल", u_en: "Descendants", m: "وَيُهْلِكَ الْحَرْثَ وَالنَّسْلَ", t: "اولاد", t_ro: "Aulaad", t_hi: "औलाद", t_en: "Offspring" },
         { a: "صَاحِبَة", r: "Saahibah", u: "بیوی، ساتھی عورت", u_ro: "Biwi, saathi aurat", u_hi: "बीवी, साथी औरत", u_en: "Wife, female companion", m: "أَنَّىٰ يَكُونُ لَهُ وَلَدٌ وَلَمْ تَكُن لَّهُ صَاحِبَةٌ", t: "بیوی", t_ro: "Biwi", t_hi: "बीवी", t_en: "Wife" },
-        { a: "بَعْل", r: "Ba'l", u: "شوہر", u_ro: "Shauhar", u_hi: "शौहर", u_en: "Husband", m: "وَبُعُولَتُهُنَّ", t: "شوہر", t_ro: "Shauhar", t_hi: "शौहर", t_en: "Husband" },
+        { a: "بَعْل", r: "Ba'l", u: "شوہر", u_ro: "Shauhar", u_hi: "शौहर", u_en: "Husband", m: "وَهَذَا بَعْلِي شَيْخًا", t: "شوہر", t_ro: "Shauhar", t_hi: "शौहर", t_en: "Husband" },
         { a: "عَجُوز", r: "'Ajooz", u: "بڑھیا، بوڑھی عورت", u_ro: "Budhiya, boorhi aurat", u_hi: "बुढ़िया, बूढ़ी औरत", u_en: "Old woman", m: "قَالَتْ يَا وَيْلَتَىٰ أَأَلِدُ وَأَنَا عَجُوزٌ", t: "بڑھیا", t_ro: "Budhiya", t_hi: "बुढ़िया", t_en: "Old woman" }
     ] },
     { day: 69, words: [
-        { a: "مِيكَال", r: "Meekaal", u: "میکائیل (فرشتہ)", u_ro: "Mikaail (farishta)", u_hi: "मीकाईल (फ़रिश्ता)", u_en: "Mika'il (angel)", m: "وَمِيكَالَ", t: "میکائیل", t_ro: "Mikaail", t_hi: "मीकाईल", t_en: "Mika'il" },
-        { a: "جِبْرِيل", r: "Jibreel", u: "جبرائیل (فرشتہ)", u_ro: "Jibraail (farishta)", u_hi: "जिब्राईल (फ़रिश्ता)", u_en: "Jibril (Gabriel)", m: "قُلْ مَن كَانَ عَدُوًّا لِّجِبْرِيلَ", t: "جبرائیل", t_ro: "Jibraail", t_hi: "जिब्राईल", t_en: "Jibril" },
+        { a: "مِيكَال", r: "Meekaal", u: "میکائیل (فرشتہ)", u_ro: "Mikaail (farishta)", u_hi: "मीकाईल (फ़रिश्ता)", u_en: "Mika'il (angel)", m: "وَجِبْرِيلَ وَمِيكَالَ", t: "میکائیل", t_ro: "Mikaail", t_hi: "मीकाईल", t_en: "Mika'il" },
+        { a: "جِبْرِيل", r: "Jibreel", u: "جبرائیل (فرشتہ)", u_ro: "Jibraail (farishta)", u_hi: "जिब्राईल (फ़रिश्ता)", u_en: "Jibril (Gabriel)", m: "وَجِبْرِيلَ وَمِيكَالَ", t: "جبرائیل", t_ro: "Jibraail", t_hi: "जिब्राईल", t_en: "Jibril" },
         { a: "إِبْلِيس", r: "Iblees", u: "ابلیس (شیطان)", u_ro: "Iblees (shaitaan)", u_hi: "इबलीस (शैतान)", u_en: "Iblis (Satan)", m: "إِلَّا إِبْلِيسَ أَبَىٰ", t: "ابلیس", t_ro: "Iblees", t_hi: "इबलीस", t_en: "Iblis" },
         { a: "هَارُوت", r: "Haaroot", u: "ہاروت (فرشتہ)", u_ro: "Haaroot (farishta)", u_hi: "हारूत (फ़रिश्ता)", u_en: "Harut (angel)", m: "هَارُوتَ وَمَارُوتَ", t: "ہاروت", t_ro: "Haaroot", t_hi: "हारूत", t_en: "Harut" },
         { a: "مَارُوت", r: "Maaroot", u: "ماروت (فرشتہ)", u_ro: "Maaroot (farishta)", u_hi: "मारूत (फ़रिश्ता)", u_en: "Marut (angel)", m: "هَارُوتَ وَمَارُوتَ", t: "ماروت", t_ro: "Maaroot", t_hi: "मारूत", t_en: "Marut" },
@@ -843,7 +843,7 @@ const courseData = [
     { day: 70, words: [
         { a: "إِدْرِيس", r: "Idrees", u: "ادریس علیہ السلام", u_ro: "Idrees alaihis-salaam", u_hi: "इदरीस अलैहिस्सलाम", u_en: "Idris (Enoch)", m: "وَاذْكُرْ فِي الْكِتَابِ إِدْرِيسَ", t: "نبی", t_ro: "Nabi", t_hi: "नबी", t_en: "Prophet" },
         { a: "إِلْيَاس", r: "Ilyaas", u: "الیاس علیہ السلام", u_ro: "Ilyaas alaihis-salaam", u_hi: "इल्यास अलैहिस्सलाम", u_en: "Ilyas (Elias)", m: "وَإِنَّ إِلْيَاسَ لَمِنَ الْمُرْسَلِينَ", t: "نبی", t_ro: "Nabi", t_hi: "नबी", t_en: "Prophet" },
-        { a: "الْيَسَع", r: "Al-Yasa'", u: "الیسع علیہ السلام", u_ro: "Al-Yasa alaihis-salaam", u_hi: "अल-यसअ अलैहिस्सलाम", u_en: "Alyasa (Elisha)", m: "وَإِسْمَاعِيلَ وَالْيَسَعَ", t: "نبی", t_ro: "Nabi", t_hi: "नबी", t_en: "Prophet" },
+        { a: "الْيَسَع", r: "Al-Yasa'", u: "الیسع علیہ السلام", u_ro: "Al-Yasa alaihis-salaam", u_hi: "अल-यसअ अलैहिस्सलाम", u_en: "Alyasa (Elisha)", m: "وَاذْكُرْ إِسْمَاعِيلَ وَالْيَسَعَ", t: "نبی", t_ro: "Nabi", t_hi: "नबी", t_en: "Prophet" },
         { a: "ذُو الْكِفْل", r: "Dhul-Kifl", u: "ذوالکفل علیہ السلام", u_ro: "Dhul-Kifl alaihis-salaam", u_hi: "ज़ुल-किफ़्ल अलैहिस्सलाम", u_en: "Dhul-Kifl", m: "وَإِسْمَاعِيلَ وَإِدْرِيسَ وَذَا الْكِفْلِ", t: "نبی", t_ro: "Nabi", t_hi: "नबी", t_en: "Prophet" },
         { a: "عُزَيْر", r: "'Uzayr", u: "عزیر", u_ro: "Uzayr", u_hi: "उज़ैर", u_en: "Uzayr (Ezra)", m: "وَقَالَتِ الْيَهُودُ عُزَيْرٌ ابْنُ اللَّهِ", t: "عزیر", t_ro: "Uzayr", t_hi: "उज़ैर", t_en: "Uzayr" },
         { a: "جَالُوت", r: "Jaaloot", u: "جالوت (بادشاہ)", u_ro: "Jaaloot (baadshaah)", u_hi: "जालूत (बादशाह)", u_en: "Jalut (Goliath)", m: "وَقَتَلَ دَاوُودُ جَالُوتَ", t: "جالوت", t_ro: "Jaaloot", t_hi: "जालूत", t_en: "Jalut" },
@@ -980,7 +980,7 @@ const courseData = [
         { a: "حَظّ", r: "Hazz", u: "نصیب، حصہ", u_ro: "Naseeb, hissa", u_hi: "नसीब, हिस्सा", u_en: "Portion", m: "ذُو حَظٍّ عَظِيمٍ", t: "نصیب", t_ro: "Naseeb", t_hi: "नसीब", t_en: "Portion" },
         { a: "زِينَة", r: "Zeenah", u: "سجاوٹ، آرائش", u_ro: "Sajaawat, aaraaish", u_hi: "सजावट, आराइश", u_en: "Adornment", m: "زِينَةَ اللَّهِ", t: "سجاوٹ", t_ro: "Sajaawat", t_hi: "सजावट", t_en: "Adornment" },
         { a: "عَطَاء", r: "'Ataa'", u: "عطیہ، بخشش", u_ro: "Atiya, bakhshish", u_hi: "अतिया, बख़्शिश", u_en: "Gift", m: "عَطَاءً حِسَابًا", t: "عطیہ", t_ro: "Atiya", t_hi: "अतिया", t_en: "Gift" },
-        { a: "بَرَكَة", r: "Barakah", u: "برکت", u_ro: "Barkat", u_hi: "बरकत", u_en: "Blessing", m: "بَرَكَاتٍ مِّنَ السَّمَاءِ", t: "برکت", t_ro: "Barkat", t_hi: "बरकत", t_en: "Blessing" },
+        { a: "بَرَكَات", r: "Barakaat", u: "برکتیں", u_ro: "Barkatein", u_hi: "बरकतें", u_en: "Blessings", m: "بَرَكَات", t: "برکت", t_ro: "Barkat", t_hi: "बरकत", t_en: "Blessing" },
         { a: "رَغَد", r: "Raghad", u: "کشادگی، فراخی", u_ro: "Kushaadgi, faraakhi", u_hi: "कुशादगी, फ़राख़ी", u_en: "Abundance", m: "رَغَدًا حَيْثُ شِئْتُمَا", t: "فراخی", t_ro: "Faraakhi", t_hi: "फ़राख़ी", t_en: "Abundance" },
         { a: "سِعَة", r: "Si'ah", u: "کشادگی، وسعت", u_ro: "Kushaadgi, wusat", u_hi: "कुशादगी, वुसत", u_en: "Ampleness", m: "وَبَسَطَكُمْ بَسْطَةً", t: "کشادگی", t_ro: "Kushaadgi", t_hi: "कुशादगी", t_en: "Ampleness" }
     ] },
@@ -990,7 +990,7 @@ const courseData = [
         { a: "مَيْسِر", r: "Maysir", u: "جوا", u_ro: "Jua", u_hi: "जुआ", u_en: "Gambling", m: "إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ", t: "جوا", t_ro: "Jua", t_hi: "जुआ", t_en: "Gambling" },
         { a: "مِثْقَال", r: "Mithqaal", u: "وزن، تول", u_ro: "Wazan, tol", u_hi: "वज़न, तोल", u_en: "Weight", m: "مِثْقَالَ حَبَّةٍ", t: "وزن", t_ro: "Wazan", t_hi: "वज़न", t_en: "Weight" },
         { a: "دِينَار", r: "Deenaar", u: "دینار (سونا)", u_ro: "Deenaar (sona)", u_hi: "दीनार (सोना)", u_en: "Dinar (gold)", m: "دِينَارًا", t: "دینار", t_ro: "Deenaar", t_hi: "दीनार", t_en: "Dinar" },
-        { a: "دِرْهَم", r: "Dirham", u: "درہم (چاندی)", u_ro: "Dirham (chaandi)", u_hi: "दिरहम (चाँदी)", u_en: "Dirham (silver)", m: "دَرَاهِمَ مَعْدُودَةٍ", t: "درہم", t_ro: "Dirham", t_hi: "दिरहम", t_en: "Dirham" },
+        { a: "دَرَاهِم", r: "Daraahim", u: "درہم (جمع)", u_ro: "Dirham (jama)", u_hi: "दिरहम (जमा)", u_en: "Dirhams", m: "دَرَاهِم", t: "درہم", t_ro: "Dirham", t_hi: "दिरहम", t_en: "Dirham" },
         { a: "وَزْن", r: "Wazn", u: "تولنا، وزن", u_ro: "Tolna, wazan", u_hi: "तोलना, वज़न", u_en: "Weight", m: "وَلَا تُخْسِرُوا الْمِيزَانَ", t: "وزن", t_ro: "Wazan", t_hi: "वज़न", t_en: "Weight" },
         { a: "كَيْل", r: "Kayl", u: "ناپنا", u_ro: "Naapna", u_hi: "नापना", u_en: "Measuring", m: "وَيْلٌ لِّلْمُطَفِّفِينَ", t: "ناپنا", t_ro: "Naapna", t_hi: "नापना", t_en: "Measuring" },
         { a: "مِكْيَال", r: "Mikyaal", u: "ناپنے کا پیمانہ", u_ro: "Naapne ka paimaana", u_hi: "नापने का पैमाना", u_en: "Measure", m: "أَوْفُوا الْكَيْلَ وَلَا تَكُونُوا", t: "پیمانہ", t_ro: "Paimana", t_hi: "पैमाना", t_en: "Measure" },
@@ -1018,7 +1018,7 @@ const courseData = [
         { a: "ثُمُن", r: "Thumun", u: "آٹھواں حصہ", u_ro: "Aathwa hissa", u_hi: "आठवाँ हिस्सा", u_en: "One eighth", m: "الثُّمُنُ", t: "آٹھواں حصہ", t_ro: "Aathwa hissa", t_hi: "आठवाँ हिस्सा", t_en: "One eighth" },
         { a: "عِشْرُون", r: "'Ishroon", u: "بیس", u_ro: "Bees", u_hi: "बीस", u_en: "Twenty", m: "عِشْرُونَ صَابِرُونَ", t: "بیس", t_ro: "Bees", t_hi: "बीस", t_en: "Twenty" },
         { a: "ثَلَاثُون", r: "Thalaathoon", u: "تیس", u_ro: "Tees", u_hi: "तीस", u_en: "Thirty", m: "ثَلَاثِينَ لَيْلَةً", t: "تیس", t_ro: "Tees", t_hi: "तीस", t_en: "Thirty" },
-        { a: "مِائَتَان", r: "Mi'ataan", u: "دو سو", u_ro: "Do sau", u_hi: "दो सौ", u_en: "Two hundred", m: "مِائَتَانِ", t: "دو سو", t_ro: "Do sau", t_hi: "दो सौ", t_en: "Two hundred" }
+        { a: "مِائَتَيْنِ", r: "Mi'atayn", u: "دو سو", u_ro: "Do sau", u_hi: "दो सौ", u_en: "Two hundred", m: "مِائَتَيْنِ", t: "دو سو", t_ro: "Do sau", t_hi: "दो सौ", t_en: "Two hundred" }
     ] },
     { day: 85, words: [
         { a: "يَمِين", r: "Yameen", u: "دایاں، دائیں طرف", u_ro: "Daayaan, daayen taraf", u_hi: "दायाँ, दाएँ तरफ़", u_en: "Right", m: "أَصْحَابُ الْيَمِينِ", t: "دایاں", t_ro: "Daayaan", t_hi: "दायाँ", t_en: "Right" },
@@ -1029,7 +1029,7 @@ const courseData = [
         { a: "أَمَام", r: "Amaam", u: "سامنے", u_ro: "Saamne", u_hi: "सामने", u_en: "Front, before", m: "أَمَامَهُ", t: "سامنے", t_ro: "Saamne", t_hi: "सामने", t_en: "Before" },
         { a: "وَرَاء", r: "Waraa'", u: "پیچھے، ورائے", u_ro: "Peechhe, waraaye", u_hi: "पीछे, वराए", u_en: "Behind", m: "وَرَاءَ", t: "پیچھے", t_ro: "Peechhe", t_hi: "पीछे", t_en: "Behind" },
         { a: "وَسَط", r: "Wasat", u: "بیچ، درمیان", u_ro: "Beech, darmiyaan", u_hi: "बीच, दरमियान", u_en: "Middle", m: "أُمَّةً وَسَطًا", t: "درمیان", t_ro: "Darmiyaan", t_hi: "दरमियान", t_en: "Middle" },
-        { a: "نَاحِيَة", r: "Naahiyah", u: "طرف، کنارہ", u_ro: "Taraf, kinaara", u_hi: "तरफ़, किनारा", u_en: "Side, direction", m: "بِالْوَادِ نَادَىٰ", t: "طرف", t_ro: "Taraf", t_hi: "तरफ़", t_en: "Side" },
+        { a: "أَرْجَاء", r: "Arjaa", u: "طرف، کنارے", u_ro: "Taraf, kinaare", u_hi: "तरफ़, किनारे", u_en: "Sides, edges", m: "أَرْجَاء", t: "طرف", t_ro: "Taraf", t_hi: "तरफ़", t_en: "Side" },
         { a: "جَانِب", r: "Jaanib", u: "طرف، کنارہ", u_ro: "Taraf, kinaara", u_hi: "तरफ़, किनारा", u_en: "Side", m: "مِن جَانِبِ الطُّورِ", t: "طرف", t_ro: "Taraf", t_hi: "तरफ़", t_en: "Side" }
     ] },
     { day: 86, words: [
@@ -1038,7 +1038,7 @@ const courseData = [
         { a: "سُنْبُلَة", r: "Sunbulah", u: "بالی، خوشہ", u_ro: "Baali, khosha", u_hi: "बाली, ख़ोशा", u_en: "Ear of corn", m: "سَبعَ سَنَابِلَ", t: "بالی", t_ro: "Baali", t_hi: "बाली", t_en: "Ear of corn" },
         { a: "زَهْرَة", r: "Zahrah", u: "پھول، بہار", u_ro: "Phool, bahaar", u_hi: "फूल, बहार", u_en: "Flower, bloom", m: "زَهْرَةَ الْحَيَاةِ الدُّنْيَا", t: "پھول", t_ro: "Phool", t_hi: "फूल", t_en: "Blossom" },
         { a: "نَوَى", r: "Nawaa", u: "گٹھلی، بیج", u_ro: "Guthli, beej", u_hi: "गुठली, बीज", u_en: "Kernel, seed", m: "فَالِقُ الْحَبِّ وَالنَّوَىٰ", t: "بیج", t_ro: "Beej", t_hi: "बीज", t_en: "Seed" },
-        { a: "لُبّ", r: "Lubb", u: "گودا، عقل", u_ro: "Gooda, aql", u_hi: "गूदा, अक़्ल", u_en: "Inner core, intellect", m: "أُولُو الْأَلْبَابِ", t: "عقل والے", t_ro: "Aql waale", t_hi: "अक़्ल वाले", t_en: "People of understanding" },
+        { a: "أَلْبَاب", r: "Albaab", u: "عقلیں", u_ro: "Aqlein", u_hi: "अक़्लें", u_en: "Minds, intellects", m: "أَلْبَاب", t: "عقل والے", t_ro: "Aql waale", t_hi: "अक़्ल वाले", t_en: "People of understanding" },
         { a: "جَنَاح", r: "Janaah", u: "پر، بازو", u_ro: "Par, baazu", u_hi: "पर, बाज़ू", u_en: "Wing", m: "وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ", t: "پر", t_ro: "Par", t_hi: "पर", t_en: "Wing" },
         { a: "خَالِص", r: "Khaalis", u: "خالص، صاف", u_ro: "Khaalis, saaf", u_hi: "ख़ालिस, साफ़", u_en: "Pure", m: "لَبَنًا خَالِصًا", t: "خالص", t_ro: "Khaalis", t_hi: "ख़ालिस", t_en: "Pure" },
         { a: "يَنْبُوع", r: "Yanboo'", u: "چشمہ", u_ro: "Chashma", u_hi: "चश्मा", u_en: "Spring", m: "حَتَّىٰ تَفْجُرَ لَنَا مِنَ الْأَرْضِ يَنبُوعًا", t: "چشمہ", t_ro: "Chashma", t_hi: "चश्मा", t_en: "Spring" },
@@ -1051,30 +1051,30 @@ const courseData = [
         { a: "فَرَّ", r: "Farra", u: "بھاگا", u_ro: "Bhaaga", u_hi: "भागा", u_en: "He fled", m: "فَفِرُّوا إِلَى اللَّهِ", t: "بھاگنا", t_ro: "Bhaagna", t_hi: "भागना", t_en: "To flee" },
         { a: "الْحَمْدُ لِلَّهِ", r: "Alhamdulillah", u: "تمام تعریف اللہ کے لیے ہے", u_ro: "Sab taareef Allah ke liye hai", u_hi: "सब तारीफ़ अल्लाह के लिए है", u_en: "All praise is for Allah", m: "الْحَمْدُ لِلَّهِ", t: "سورہ فاتحہ", t_ro: "Surah Fatiha", t_hi: "सूरह फ़ातिहा", t_en: "From Surah Al-Fatiha" },
         { a: "سُبْحَانَ اللَّهِ", r: "SubhanAllah", u: "اللہ پاک ہے", u_ro: "Allah paak hai", u_hi: "अल्लाह पाक है", u_en: "Glory be to Allah", m: "سُبْحَانَ اللَّهِ", t: "تسبیح", t_ro: "Tasbeeh", t_hi: "तस्बीह", t_en: "Glorification" },
-        { a: "اللَّهُ أَكْبَرُ", r: "Allahu Akbar", u: "اللہ سب سے بڑا ہے", u_ro: "Allah sab se bada hai", u_hi: "अल्लाह सबसे बड़ा है", u_en: "Allah is the Greatest", m: "اللَّهُ أَكْبَرُ", t: "تکبیر", t_ro: "Takbeer", t_hi: "तकबीर", t_en: "Takbeer" },
+        { a: "هُوَ الْعَلِيُّ الْكَبِيرُ", r: "Huwal Aliyyul Kabeer", u: "وہی بلند، بڑا ہے", u_ro: "Wohi buland, bada hai", u_hi: "वही बुलंद, बड़ा है", u_en: "He is the Most High, the Most Great", m: "هُوَ الْعَلِيُّ الْكَبِيرُ", t: "وہی بلند، بڑا ہے", t_ro: "Wohi buland, bada hai", t_hi: "वही बुलंद, बड़ा है", t_en: "He is the Most High, the Most Great" },
         { a: "لَا إِلَهَ إِلَّا اللَّهُ", r: "La ilaha illallah", u: "اللہ کے سوا کوئی معبود نہیں", u_ro: "Allah ke siwa koi maabood nahin", u_hi: "अल्लाह के सिवा कोई माबूद नहीं", u_en: "There is no god but Allah", m: "لَا إِلَهَ إِلَّا اللَّهُ", t: "کلمہ", t_ro: "Kalma", t_hi: "कलमा", t_en: "The Shahadah" },
         { a: "بِسْمِ اللَّهِ", r: "Bismillah", u: "اللہ کے نام سے", u_ro: "Allah ke naam se", u_hi: "अल्लाह के नाम से", u_en: "In the name of Allah", m: "بِسْمِ اللَّهِ", t: "شروعات", t_ro: "Shuruaat", t_hi: "शुरुआत", t_en: "Beginning" },
-        { a: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ", r: "Allahumma salli 'ala Muhammad", u: "اے اللہ! محمد ﷺ پر رحمت نازل فرما", u_ro: "Ae Allah! Muhammad ﷺ par rahmat naazil farma", u_hi: "ऐ अल्लाह! मुहम्मद ﷺ पर रहमत नाज़िल फ़रमा", u_en: "O Allah, send blessings upon Muhammad", m: "اللَّهُمَّ صَلِّ", t: "درود شریف", t_ro: "Darood Shareef", t_hi: "दरूद शरीफ़", t_en: "Salawat upon the Prophet" }
+        { a: "صَلُّوا عَلَيْهِ", r: "Sallu alayhi", u: "ان پر درود بھیجو", u_ro: "Un par durood bhejo", u_hi: "उन पर दरूद भेजो", u_en: "Send blessings upon him", m: "صَلُّوا عَلَيْهِ", t: "ان پر درود بھیجو", t_ro: "Un par durood bhejo", t_hi: "उन पर दरूद भेजो", t_en: "Send blessings upon him" }
     ] },
     { day: 88, words: [
-        { a: "رَبَّنَا لَكَ الْحَمْدُ", r: "Rabbana lakal hamd", u: "اے ہمارے رب! تیری ہی تعریف ہے", u_ro: "Ae hamare Rabb! Teri hi taareef hai", u_hi: "ऐ हमारे रब! तेरी ही तारीफ़ है", u_en: "Our Lord, to You is all praise", m: "رَبَّنَا لَكَ الْحَمْدُ", t: "رکوع سے اٹھنا", t_ro: "Rukoo se uthna", t_hi: "रुकू से उठना", t_en: "Said rising from bowing" },
-        { a: "اللَّهُمَّ بَارِكْ", r: "Allahumma barik", u: "اے اللہ! برکت نازل فرما", u_ro: "Ae Allah! Barkat naazil farma", u_hi: "ऐ अल्लाह! बरकत नाज़िल फ़रमा", u_en: "O Allah, bless", m: "اللَّهُمَّ بَارِكْ", t: "درود ابراہیمی", t_ro: "Darood Ibraheemi", t_hi: "दरूद इब्राहीमी", t_en: "Part of Salawat Ibrahimiyya" },
-        { a: "سُبْحَانَ رَبِّيَ الْعَظِيمِ", r: "Subhana Rabbiyal Azeem", u: "میرا رب بہت عظمت والا ہے", u_ro: "Mera Rabb bahut azmat wala hai", u_hi: "मेरा रब बहुत अज़मत वाला है", u_en: "Glory to my Lord, the Magnificent", m: "سُبْحَانَ رَبِّيَ الْعَظِيمِ", t: "رکوع کی تسبیح", t_ro: "Rukoo ki tasbeeh", t_hi: "रुकू की तस्बीह", t_en: "Glorification in bowing" },
-        { a: "سُبْحَانَ رَبِّيَ الْأَعْلَى", r: "Subhana Rabbiyal A'la", u: "میرا رب بہت بلند ہے", u_ro: "Mera Rabb bahut buland hai", u_hi: "मेरा रब बहुत बुलंद है", u_en: "Glory to my Lord, the Most High", m: "سُبْحَانَ رَبِّيَ الْأَعْلَى", t: "سجدہ کی تسبیح", t_ro: "Sajda ki tasbeeh", t_hi: "सज्दा की तस्बीह", t_en: "Glorification in prostration" },
+        { a: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ", r: "Alhamdu lillahi Rabbil Aalameen", u: "سب تعریف اللہ کے لیے جو سارے جہانوں کا رب ہے", u_ro: "Sab taareef Allah ke liye jo saare jahaanon ka Rabb hai", u_hi: "सब तारीफ़ अल्लाह के लिए जो सारे जहानों का रब है", u_en: "All praise is for Allah, Lord of the worlds", m: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ", t: "سب تعریف اللہ کے لیے جو سارے جہانوں کا رب ہے", t_ro: "Sab taareef Allah ke liye jo saare jahaanon ka Rabb hai", t_hi: "सब तारीफ़ अल्लाह के लिए जो सारे जहानों का रब है", t_en: "All praise is for Allah, Lord of the worlds" },
+        { a: "رَبِّ أَنْزِلْنِي مُنْزَلًا مُبَارَكًا", r: "Rabbi anzilni munzalan mubarakan", u: "اے میرے رب! مجھے برکت والی جگہ اتار", u_ro: "Ae mere Rabb! Mujhe barkat wali jagah utaar", u_hi: "ऐ मेरे रब! मुझे बरकत वाली जगह उतार", u_en: "My Lord, let me land at a blessed landing place", m: "رَبِّ أَنْزِلْنِي مُنْزَلًا مُبَارَكًا", t: "اے میرے رب! مجھے برکت والی جگہ اتار", t_ro: "Ae mere Rabb! Mujhe barkat wali jagah utaar", t_hi: "ऐ मेरे रब! मुझे बरकत वाली जगह उतार", t_en: "My Lord, let me land at a blessed landing place" },
+        { a: "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ", r: "Fasabbih bismi Rabbikal Azeem", u: "اپنے عظمت والے رب کے نام کی تسبیح کرو", u_ro: "Apne azmat wale Rabb ke naam ki tasbeeh karo", u_hi: "अपने अज़मत वाले रब के नाम की तस्बीह करो", u_en: "So glorify the name of your Magnificent Lord", m: "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ", t: "اپنے عظمت والے رب کے نام کی تسبیح کرو", t_ro: "Apne azmat wale Rabb ke naam ki tasbeeh karo", t_hi: "अपने अज़मत वाले रब के नाम की तस्बीह करो", t_en: "So glorify the name of your Magnificent Lord" },
+        { a: "سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى", r: "Sabbihisma Rabbikal A'la", u: "اپنے سب سے بلند رب کے نام کی تسبیح کرو", u_ro: "Apne sab se buland Rabb ke naam ki tasbeeh karo", u_hi: "अपने सबसे बुलंद रब के नाम की तस्बीह करो", u_en: "Glorify the name of your Lord, the Most High", m: "سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى", t: "اپنے سب سے بلند رب کے نام کی تسبیح کرو", t_ro: "Apne sab se buland Rabb ke naam ki tasbeeh karo", t_hi: "अपने सबसे बुलंद रब के नाम की तस्बीह करो", t_en: "Glorify the name of your Lord, the Most High" },
         { a: "رَبِّ اغْفِرْ لِي", r: "Rabbighfir li", u: "اے میرے رب! مجھے بخش دے", u_ro: "Ae mere Rabb! Mujhe bakhsh de", u_hi: "ऐ मेरे रब! मुझे बख़्श दे", u_en: "My Lord, forgive me", m: "رَبِّ اغْفِرْ لِي", t: "دو سجدوں کے بیچ", t_ro: "Do sajdon ke beech", t_hi: "दो सज्दों के बीच", t_en: "Between two prostrations" },
-        { a: "اللَّهُمَّ اغْفِرْ لِي", r: "Allahummaghfir li", u: "اے اللہ! مجھے بخش دے", u_ro: "Ae Allah! Mujhe bakhsh de", u_hi: "ऐ अल्लाह! मुझे बख़्श दे", u_en: "O Allah, forgive me", m: "اللَّهُمَّ اغْفِرْ لِي", t: "دعا", t_ro: "Dua", t_hi: "दुआ", t_en: "Supplication" },
+        { a: "وَاغْفِرْ لَنَا", r: "Waghfir lana", u: "اور ہمیں بخش دے", u_ro: "Aur hamein bakhsh de", u_hi: "और हमें बख़्श दे", u_en: "And forgive us", m: "وَاغْفِرْ لَنَا", t: "اور ہمیں بخش دے", t_ro: "Aur hamein bakhsh de", t_hi: "और हमें बख़्श दे", t_en: "And forgive us" },
         { a: "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً", r: "Rabbana atina fid-dunya hasanah", u: "اے ہمارے رب! ہمیں دنیا میں بھلائی دے", u_ro: "Ae hamare Rabb! Hamein duniya mein bhalaai de", u_hi: "ऐ हमारे रब! हमें दुनिया में भलाई दे", u_en: "Our Lord, grant us good in this world", m: "رَبَّنَا آتِنَا", t: "جامع دعا", t_ro: "Jaame dua", t_hi: "जामे दुआ", t_en: "Comprehensive supplication" },
         { a: "رَبِّ زِدْنِي عِلْمًا", r: "Rabbi zidni ilma", u: "اے میرے رب! میرے علم میں اضافہ فرما", u_ro: "Ae mere Rabb! Mere ilm mein izaafa farma", u_hi: "ऐ मेरे रब! मेरे इल्म में इज़ाफ़ा फ़रमा", u_en: "My Lord, increase me in knowledge", m: "رَبِّ زِدْنِي عِلْمًا", t: "علم کی دعا", t_ro: "Ilm ki dua", t_hi: "इल्म की दुआ", t_en: "Supplication for knowledge" },
         { a: "رَبِّ اشْرَحْ لِي صَدْرِي", r: "Rabbish rah li sadri", u: "اے میرے رب! میرا سینہ کھول دے", u_ro: "Ae mere Rabb! Mera seena khol de", u_hi: "ऐ मेरे रब! मेरा सीना खोल दे", u_en: "My Lord, expand my chest for me", m: "رَبِّ اشْرَحْ لِي صَدْرِي", t: "موسیٰ علیہ السلام کی دعا", t_ro: "Moosa AS ki dua", t_hi: "मूसा अ.स. की दुआ", t_en: "Prayer of Musa" },
-        { a: "يَا حَيُّ يَا قَيُّومُ", r: "Ya Hayyu ya Qayyum", u: "اے زندہ! اے قائم رکھنے والے!", u_ro: "Ae Zinda! Ae Qaaim rakhne wale!", u_hi: "ऐ ज़िंदा! ऐ क़ायम रखने वाले!", u_en: "O Ever-Living, O Sustainer", m: "يَا حَيُّ يَا قَيُّومُ", t: "پریشانی کی دعا", t_ro: "Pareshaani ki dua", t_hi: "परेशानी की दुआ", t_en: "Supplication in distress" }
+        { a: "الْحَيُّ الْقَيُّومُ", r: "Al-Hayyul Qayyoom", u: "زندہ، قائم رکھنے والا", u_ro: "Zinda, Qaaim rakhne wala", u_hi: "ज़िंदा, क़ायम रखने वाला", u_en: "The Ever-Living, the Sustainer", m: "الْحَيُّ الْقَيُّومُ", t: "زندہ، قائم رکھنے والا", t_ro: "Zinda, Qaaim rakhne wala", t_hi: "ज़िंदा, क़ायम रखने वाला", t_en: "The Ever-Living, the Sustainer" }
     ] },
     { day: 89, words: [
-        { a: "اللَّهُمَّ أَنْتَ السَّلَامُ", r: "Allahumma antas-salam", u: "اے اللہ! تو سلامتی والا ہے", u_ro: "Ae Allah! Tu salaamati wala hai", u_hi: "ऐ अल्लाह! तू सलामती वाला है", u_en: "O Allah, You are Peace", m: "اللَّهُمَّ أَنْتَ السَّلَامُ", t: "نماز کے بعد", t_ro: "Namaaz ke baad", t_hi: "नमाज़ के बाद", t_en: "After prayer" },
-        { a: "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ", r: "La hawla wa la quwwata illa billah", u: "طاقت نہیں مگر اللہ سے", u_ro: "Taaqat nahin magar Allah se", u_hi: "ताक़त नहीं मगर अल्लाह से", u_en: "There is no power or might except with Allah", m: "لَا حَوْلَ وَلَا قُوَّةَ", t: "جنت کا خزانہ", t_ro: "Jannat ka khazaana", t_hi: "जन्नत का ख़ज़ाना", t_en: "Treasure of Paradise" },
-        { a: "أَشْهَدُ أَنْ لَّا إِلَهَ إِلَّا اللَّهُ", r: "Ashhadu an la ilaha illallah", u: "میں گواہی دیتا ہوں", u_ro: "Main gawaahi deta hoon", u_hi: "मैं गवाही देता हूँ", u_en: "I bear witness that there is no god but Allah", m: "أَشْهَدُ أَنْ", t: "تشہد", t_ro: "Tashahhud", t_hi: "तशह्हुद", t_en: "Part of Tashahhud" },
-        { a: "أَسْتَغْفِرُ اللَّهَ", r: "Astaghfirullah", u: "میں اللہ سے بخشش مانگتا ہوں", u_ro: "Main Allah se bakhshish maangta hoon", u_hi: "मैं अल्लाह से बख़्शिश माँगता हूँ", u_en: "I seek forgiveness from Allah", m: "أَسْتَغْفِرُ اللَّهَ", t: "استغفار", t_ro: "Astaghfaar", t_hi: "इस्तग़फ़ार", t_en: "Seeking forgiveness" },
-        { a: "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَافِيَةَ", r: "Allahumma inni as'alukal-'afiyata", u: "اے اللہ! میں عافیت مانگتا ہوں", u_ro: "Ae Allah! Main aafiyat maangta hoon", u_hi: "ऐ अल्लाह! मैं आफ़ियत माँगता हूँ", u_en: "O Allah, I ask You for well-being", m: "الْعَافِيَةَ", t: "صبح شام کی دعا", t_ro: "Subah shaam ki dua", t_hi: "सुबह-शाम की दुआ", t_en: "Morning and evening supplication" },
-        { a: "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى", r: "Allahumma inni as'alukal-huda", u: "اے اللہ! میں ہدایت مانگتا ہوں", u_ro: "Ae Allah! Main hidaayat maangta hoon", u_hi: "ऐ अल्लाह! मैं हिदायत माँगता हूँ", u_en: "O Allah, I ask You for guidance", m: "الْهُدَى", t: "ہدایت", t_ro: "Hidaayat", t_hi: "हिदायत", t_en: "Seeking guidance" },
+        { a: "السَّلَامُ", r: "As-Salaam", u: "سلامتی دینے والا", u_ro: "Salaamati dene wala", u_hi: "सलामती देने वाला", u_en: "The Source of Peace", m: "السَّلَامُ", t: "نماز کے بعد", t_ro: "Namaaz ke baad", t_hi: "नमाज़ के बाद", t_en: "After prayer" },
+        { a: "لَا قُوَّةَ إِلَّا بِاللَّهِ", r: "Laa quwwata illa billah", u: "طاقت نہیں مگر اللہ سے", u_ro: "Taaqat nahin magar Allah se", u_hi: "ताक़त नहीं मगर अल्लाह से", u_en: "There is no power except with Allah", m: "لَا قُوَّةَ إِلَّا بِاللَّهِ", t: "طاقت نہیں مگر اللہ سے", t_ro: "Taaqat nahin magar Allah se", t_hi: "ताक़त नहीं मगर अल्लाह से", t_en: "There is no power except with Allah" },
+        { a: "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ", r: "Shahidallahu annahu laa ilaaha illa Huwa", u: "اللہ نے گواہی دی کہ اس کے سوا کوئی معبود نہیں", u_ro: "Allah ne gawaahi di ke uske siwa koi maabood nahin", u_hi: "अल्लाह ने गवाही दी कि उसके सिवा कोई माबूद नहीं", u_en: "Allah bears witness that there is no god but Him", m: "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ", t: "اللہ نے گواہی دی کہ اس کے سوا کوئی معبود نہیں", t_ro: "Allah ne gawaahi di ke uske siwa koi maabood nahin", t_hi: "अल्लाह ने गवाही दी कि उसके सिवा कोई माबूद नहीं", t_en: "Allah bears witness that there is no god but Him" },
+        { a: "وَاسْتَغْفِرِ اللَّهَ", r: "Wastaghfirillah", u: "اور اللہ سے بخشش مانگو", u_ro: "Aur Allah se bakhshish maango", u_hi: "और अल्लाह से बख़्शिश माँगो", u_en: "And seek forgiveness from Allah", m: "وَاسْتَغْفِرِ اللَّهَ", t: "اور اللہ سے بخشش مانگو", t_ro: "Aur Allah se bakhshish maango", t_hi: "और अल्लाह से बख़्शिश माँगो", t_en: "And seek forgiveness from Allah" },
+        { a: "وَاعْفُ عَنَّا", r: "Wa'fu anna", u: "اور ہمیں معاف کر دے", u_ro: "Aur hamein maaf kar de", u_hi: "और हमें माफ़ कर दे", u_en: "And pardon us", m: "وَاعْفُ عَنَّا", t: "اور ہمیں معاف کر دے", t_ro: "Aur hamein maaf kar de", t_hi: "और हमें माफ़ कर दे", t_en: "And pardon us" },
+        { a: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ", r: "Ihdinas-Siratal Mustaqeem", u: "ہمیں سیدھا راستہ دکھا", u_ro: "Hamein seedha raasta dikha", u_hi: "हमें सीधा रास्ता दिखा", u_en: "Guide us to the straight path", m: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ", t: "ہمیں سیدھا راستہ دکھا", t_ro: "Hamein seedha raasta dikha", t_hi: "हमें सीधा रास्ता दिखा", t_en: "Guide us to the straight path" },
         { a: "رَبَّنَا آتِنَا", r: "Rabbana atina", u: "اے ہمارے رب! ہمیں دے", u_ro: "Ae hamare Rabb! Hamein de", u_hi: "ऐ हमारे रब! हमें दे", u_en: "Our Lord, grant us", m: "رَبَّنَا آتِنَا", t: "دعا", t_ro: "Dua", t_hi: "दुआ", t_en: "Supplication" },
         { a: "مِنَ الصَّالِحِينَ", r: "Minas-saliheen", u: "نیک لوگوں میں سے", u_ro: "Nek logon mein se", u_hi: "नेक लोगों में से", u_en: "Among the righteous", m: "مِنَ الصَّالِحِينَ", t: "نیکی", t_ro: "Neki", t_hi: "नेकी", t_en: "Goodness" },
         { a: "يَا أَيُّهَا النَّاسُ", r: "Ya ayyuhan-naas", u: "اے لوگو!", u_ro: "Ae logo!", u_hi: "ऐ लोगो!", u_en: "O people!", m: "يَا أَيُّهَا النَّاسُ", t: "پکار", t_ro: "Pukaar", t_hi: "पुकार", t_en: "Address" },
@@ -1083,21 +1083,21 @@ const courseData = [
     { day: 90, words: [
         { a: "أَطِيعُوا اللَّهَ", r: "Atee'ullah", u: "اللہ کی اطاعت کرو", u_ro: "Allah ki itaat karo", u_hi: "अल्लाह की इताअत करो", u_en: "Obey Allah", m: "أَطِيعُوا اللَّهَ", t: "اطاعت", t_ro: "Itaat", t_hi: "इताअत", t_en: "Obedience" },
         { a: "وَأَطِيعُوا الرَّسُولَ", r: "Wa atee'ur-rasool", u: "رسول کی اطاعت کرو", u_ro: "Rasool ki itaat karo", u_hi: "रसूल की इताअत करो", u_en: "And obey the Messenger", m: "وَأَطِيعُوا الرَّسُولَ", t: "اطاعت", t_ro: "Itaat", t_hi: "इताअत", t_en: "Obedience" },
-        { a: "وَاذْكُرُوا نِعْمَتَ اللَّهِ", r: "Wadhkuru ni'matallah", u: "اللہ کی نعمت یاد کرو", u_ro: "Allah ki nemat yaad karo", u_hi: "अल्लाह की नेमत याद करो", u_en: "And remember Allah's favor", m: "وَاذْكُرُوا", t: "یاد", t_ro: "Yaad", t_hi: "याद", t_en: "Remembrance" },
+        { a: "وَاذْكُرُوا نِعْمَةَ اللَّهِ", r: "Wazkuru ni'matallah", u: "اللہ کی نعمت یاد کرو", u_ro: "Allah ki nemat yaad karo", u_hi: "अल्लाह की नेमत याद करो", u_en: "Remember Allah's favour", m: "وَاذْكُرُوا نِعْمَةَ اللَّهِ", t: "اللہ کی نعمت یاد کرو", t_ro: "Allah ki nemat yaad karo", t_hi: "अल्लाह की नेमत याद करो", t_en: "Remember Allah's favour" },
         { a: "وَاشْكُرُوا لِلَّهِ", r: "Washkuru lillah", u: "اللہ کا شکر کرو", u_ro: "Allah ka shukr karo", u_hi: "अल्लाह का शुक्र करो", u_en: "And be grateful to Allah", m: "وَاشْكُرُوا", t: "شکر", t_ro: "Shukr", t_hi: "शुक्र", t_en: "Gratitude" },
-        { a: "وَلَا تَكْفُرُوا", r: "Wa la takfuru", u: "انکار نہ کرو", u_ro: "Inkaar na karo", u_hi: "इनकार न करो", u_en: "And do not disbelieve", m: "وَلَا تَكْفُرُوا", t: "انکار", t_ro: "Inkaar", t_hi: "इनकार", t_en: "Disbelief" },
+        { a: "وَلَا تَكْفُرُونِ", r: "Wa laa takfuroon", u: "اور ناشکری نہ کرو", u_ro: "Aur naashukri na karo", u_hi: "और नाशुक्री न करो", u_en: "And do not be ungrateful", m: "وَلَا تَكْفُرُونِ", t: "اور ناشکری نہ کرو", t_ro: "Aur naashukri na karo", t_hi: "और नाशुक्री न करो", t_en: "And do not be ungrateful" },
         { a: "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ", r: "Innallaha ma'as-sabireen", u: "اللہ صبر کرنے والوں کے ساتھ ہے", u_ro: "Allah sabr karne walon ke saath hai", u_hi: "अल्लाह सब्र करने वालों के साथ है", u_en: "Indeed Allah is with the patient", m: "مَعَ الصَّابِرِينَ", t: "صبر", t_ro: "Sabr", t_hi: "सब्र", t_en: "Patience" },
         { a: "إِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ", r: "Innallaha ghafoorur-raheem", u: "اللہ بخشنے والا رحم کرنے والا ہے", u_ro: "Allah bakhshne wala rahm karne wala hai", u_hi: "अल्लाह बख़्शने वाला रहम करने वाला है", u_en: "Indeed Allah is Forgiving, Merciful", m: "غَفُورٌ رَّحِيمٌ", t: "رحمت", t_ro: "Rahmat", t_hi: "रहमत", t_en: "Mercy" },
         { a: "إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ", r: "Innallaha 'ala kulli shay'in qadeer", u: "اللہ ہر چیز پر قادر ہے", u_ro: "Allah har cheez par qaadir hai", u_hi: "अल्लाह हर चीज़ पर क़ादिर है", u_en: "Indeed Allah has power over all things", m: "عَلَىٰ كُلِّ شَيْءٍ", t: "قدرت", t_ro: "Qudrat", t_hi: "क़ुदरत", t_en: "Power" },
         { a: "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ", r: "Innallaha samee'un baseer", u: "اللہ سننے والا دیکھنے والا ہے", u_ro: "Allah sunne wala dekhne wala hai", u_hi: "अल्लाह सुनने वाला देखने वाला है", u_en: "Indeed Allah is All-Hearing, All-Seeing", m: "سَمِيعٌ بَصِيرٌ", t: "سننا دیکھنا", t_ro: "Sunna dekhna", t_hi: "सुनना देखना", t_en: "Hearing and seeing" },
-        { a: "إِنَّ اللَّهَ لَا يُحِبُّ الظَّالِمِينَ", r: "Innallaha la yuhibbuz-zalimeen", u: "اللہ ظالموں کو پسند نہیں کرتا", u_ro: "Allah zaalimon ko pasand nahin karta", u_hi: "अल्लाह ज़ालिमों को पसंद नहीं करता", u_en: "Indeed Allah does not love wrongdoers", m: "لَا يُحِبُّ", t: "ظلم", t_ro: "Zulm", t_hi: "ज़ुल्म", t_en: "Wrongdoing" }
+        { a: "وَاللَّهُ لَا يُحِبُّ الظَّالِمِينَ", r: "Wallahu laa yuhibbuz-zaalimeen", u: "اور اللہ ظالموں کو پسند نہیں کرتا", u_ro: "Aur Allah zaalimon ko pasand nahin karta", u_hi: "और अल्लाह ज़ालिमों को पसंद नहीं करता", u_en: "And Allah does not like the wrongdoers", m: "وَاللَّهُ لَا يُحِبُّ الظَّالِمِينَ", t: "اور اللہ ظالموں کو پسند نہیں کرتا", t_ro: "Aur Allah zaalimon ko pasand nahin karta", t_hi: "और अल्लाह ज़ालिमों को पसंद नहीं करता", t_en: "And Allah does not like the wrongdoers" }
     ] }
 ];
 ;
 
 /* ───────────── wordAyat.js ───────────── */
 /* ==========================================
-   WORD -> QURAN KI AYAT (Day 1-50: lafz 1-500 (poora))
+   WORD -> QURAN KI AYAT (Day 1-90: sabhi 900 lafz par ayat)
    Har lafz ke liye ek ayat; us ayat mein wo lafz alag rang mein dikhta hai.
    Ayat ka text aur surah ka naam: Maktaba Shamila (shamela_get_aya / search_quran, 'body').
    Awaaz: Qari Mishary Alafasy (poori ayat) — qari.js ke zariye.
@@ -1364,11 +1364,6 @@ const wordAyat = {
  "مَاذَا": {
   "k": "16:24",
   "i": 3
- },
- "لِمَاذَا": {
-  "k": "3:70",
-  "i": 2,
-  "n": "Quran mein 'لِمَاذَا' is shakal mein nahi aata — Quran mein 'کیوں' ke liye 'لِمَ' aata hai (neeche ayat mein)."
  },
  "أَيْنَ": {
   "k": "75:10",
@@ -2308,11 +2303,6 @@ const wordAyat = {
   "k": "36:24",
   "i": 3
  },
- "طَهَارَة": {
-  "k": "74:4",
-  "i": 1,
-  "n": "Quran mein 'طَهَارَة' lafz nahi aata — uski jad se 'طَهِّرْ' (paak karo) aata hai."
- },
  "قِبْلَة": {
   "k": "2:144",
   "i": 7
@@ -2735,11 +2725,6 @@ const wordAyat = {
   "k": "2:76",
   "i": 14
  },
- "طَلَبَ": {
-  "k": "18:41",
-  "i": 7,
-  "n": "Quran mein 'طَلَبَ' fe'l nahi aata; isi jad ka 'طَلَبًا' (talash) aata hai."
- },
  "نَهَى": {
   "k": "79:40",
   "i": 5
@@ -2888,19 +2873,9 @@ const wordAyat = {
   "k": "85:11",
   "i": 12
  },
- "فَلَاح": {
-  "k": "91:9",
-  "i": 1,
-  "n": "Quran mein 'falaah' ka ye roop nahi aata; isi jad ka lafz «أَفْلَحَ» (kaamyaab hua) is ayat mein hai"
- },
  "خُسْرَان": {
   "k": "39:15",
   "i": 17
- },
- "هَلَاك": {
-  "k": "28:88",
-  "i": 12,
-  "n": "Quran mein 'halaak' ka ye roop nahi aata; isi jad ka lafz «هَالِكٌ» (ho jaane wala) is ayat mein hai"
  },
  "نَجَاة": {
   "k": "40:41",
@@ -3435,8 +3410,1414 @@ const wordAyat = {
  "إِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ": {
   "k": "2:173",
   "i": 21
+ },
+ "الرَّءُوف": {
+  "k": "22:65",
+  "i": 25
+ },
+ "الْبَرّ": {
+  "k": "52:28",
+  "i": 7
+ },
+ "الْمُقِيت": {
+  "k": "4:85",
+  "i": 21,
+  "n": "Quran mein 'مُقِيتًا' (nigahbaan, quwwat dene wala) aata hai."
+ },
+ "الْحَفِيظ": {
+  "k": "34:21",
+  "i": 20
+ },
+ "الْحَكَم": {
+  "k": "6:114",
+  "i": 3,
+  "n": "Quran mein 'حَكَمًا' (faisla karne wala) aata hai."
+ },
+ "اثْنَان": {
+  "k": "16:51",
+  "i": 5,
+  "n": "Quran mein 'اثْنَيْنِ' (do) aata hai."
+ },
+ "أَرْبَعَة": {
+  "k": "9:2",
+  "i": 3
+ },
+ "خَمْسَة": {
+  "k": "18:22",
+  "i": 5
+ },
+ "سِتَّة": {
+  "k": "50:38",
+  "i": 7
+ },
+ "سَبْعَة": {
+  "k": "18:22",
+  "i": 11
+ },
+ "تِسْعَة": {
+  "k": "17:101",
+  "i": 3,
+  "n": "Quran mein 'تِسْعَ' (nau) aata hai."
+ },
+ "ذَرَّة": {
+  "k": "99:7",
+  "i": 3
+ },
+ "كَثِيب": {
+  "k": "73:14",
+  "i": 6,
+  "n": "Quran mein 'كَثِيبًا' (rait ka teela) aata hai."
+ },
+ "عَصَا": {
+  "k": "7:107",
+  "i": 1,
+  "n": "Quran mein 'عَصَاهُ' (unki laathi) aata hai."
+ },
+ "سَفِينَة": {
+  "k": "18:71",
+  "i": 5
+ },
+ "كَوْكَب": {
+  "k": "12:4",
+  "i": 9,
+  "n": "Quran mein 'كَوْكَبًا' (sitaara) aata hai."
+ },
+ "عُرْجُون": {
+  "k": "36:39",
+  "i": 5,
+  "n": "Quran mein 'كَالْعُرْجُونِ' (khajoor ke puraane guchhe ki tarah) aata hai."
+ },
+ "عَدَس": {
+  "k": "2:61",
+  "i": 20,
+  "n": "Quran mein 'وَعَدَسِهَا' (aur uski masoor) aata hai."
+ },
+ "بَقْل": {
+  "k": "2:61",
+  "i": 17,
+  "n": "Quran mein 'بَقْلِهَا' (uski sabzi) aata hai."
+ },
+ "قِثَّاء": {
+  "k": "2:61",
+  "i": 18,
+  "n": "Quran mein 'وَقِثَّائِهَا' (aur uska kheera) aata hai."
+ },
+ "فُوم": {
+  "k": "2:61",
+  "i": 19,
+  "n": "Quran mein 'وَفُومِهَا' (aur uska lehsan/gandum) aata hai."
+ },
+ "بَيْض": {
+  "k": "37:49",
+  "i": 1
+ },
+ "شَرَاب": {
+  "k": "16:10",
+  "i": 8
+ },
+ "زَيْت": {
+  "k": "24:35",
+  "i": 26,
+  "n": "Quran mein 'زَيْتُهَا' (uska tel) aata hai."
+ },
+ "خُبْز": {
+  "k": "12:36",
+  "i": 17,
+  "n": "Quran mein 'خُبْزًا' (roti) aata hai."
+ },
+ "شِفَاء": {
+  "k": "10:57",
+  "i": 7
+ },
+ "فَرَح": {
+  "k": "30:4",
+  "i": 10,
+  "n": "Quran mein 'يَفْرَحُ' (khush hota hai) aata hai."
+ },
+ "خَوْف": {
+  "k": "106:4",
+  "i": 6
+ },
+ "أَمْن": {
+  "k": "24:55",
+  "i": 25,
+  "n": "Quran mein 'أَمْنًا' (aman) aata hai."
+ },
+ "نَفْع": {
+  "k": "26:88",
+  "i": 2,
+  "n": "Quran mein 'يَنْفَعُ' (faaida deta hai) aata hai."
+ },
+ "صِدْق": {
+  "k": "54:55",
+  "i": 2
+ },
+ "عَدْل": {
+  "k": "16:90",
+  "i": 3
+ },
+ "ظُلْم": {
+  "k": "31:13",
+  "i": 12
+ },
+ "غَيْظ": {
+  "k": "3:134",
+  "i": 6
+ },
+ "حَسَد": {
+  "k": "113:5",
+  "i": 4
+ },
+ "أَصْلَحَ": {
+  "k": "6:48",
+  "i": 8
+ },
+ "أَفْسَدَ": {
+  "k": "27:34",
+  "i": 6,
+  "n": "Quran mein 'أَفْسَدُوهَا' (unhon ne use bigaad diya) aata hai."
+ },
+ "أَسْرَفَ": {
+  "k": "39:53",
+  "i": 3,
+  "n": "Quran mein 'أَسْرَفُوا' (unhon ne had se badhaya) aata hai."
+ },
+ "أَقْرَضَ": {
+  "k": "57:11",
+  "i": 3,
+  "n": "Quran mein 'يُقْرِضُ' (qarz deta hai) aata hai."
+ },
+ "اسْتَغْفَرَ": {
+  "k": "3:135",
+  "i": 9,
+  "n": "Quran mein 'فَاسْتَغْفَرُوا' (phir unhon ne bakhshish maangi) aata hai."
+ },
+ "سَبَّحَ": {
+  "k": "57:1",
+  "i": 0
+ },
+ "ذَكَرَ": {
+  "k": "87:15",
+  "i": 0
+ },
+ "شَكَرَ": {
+  "k": "27:40",
+  "i": 28
+ },
+ "سُوق": {
+  "k": "25:7",
+  "i": 8,
+  "n": "Quran mein 'الْأَسْوَاقِ' (bazaaron) aata hai."
+ },
+ "قَصْر": {
+  "k": "25:10",
+  "i": 16,
+  "n": "Quran mein 'قُصُورًا' (mehal) aata hai."
+ },
+ "سَرِير": {
+  "k": "15:47",
+  "i": 8,
+  "n": "Quran mein 'سُرُرٍ' (takht) aata hai."
+ },
+ "سُرَادِق": {
+  "k": "18:29",
+  "i": 16,
+  "n": "Quran mein 'سُرَادِقُهَا' (uska khaima) aata hai."
+ },
+ "بُنْيَان": {
+  "k": "61:4",
+  "i": 9
+ },
+ "سُور": {
+  "k": "57:13",
+  "i": 17
+ },
+ "مِصْبَاح": {
+  "k": "24:35",
+  "i": 8
+ },
+ "زُجَاجَة": {
+  "k": "24:35",
+  "i": 11
+ },
+ "مِشْكَاة": {
+  "k": "24:35",
+  "i": 6,
+  "n": "Quran mein 'كَمِشْكَاةٍ' (taaq ki tarah) aata hai."
+ },
+ "أَوْتَاد": {
+  "k": "78:7",
+  "i": 1,
+  "n": "Quran mein 'أَوْتَادًا' (mekhein) aata hai."
+ },
+ "بَرْزَخ": {
+  "k": "23:100",
+  "i": 12
+ },
+ "مِيعَاد": {
+  "k": "3:9",
+  "i": 12
+ },
+ "قُبُور": {
+  "k": "100:9",
+  "i": 6
+ },
+ "بَعْث": {
+  "k": "22:7",
+  "i": 8,
+  "n": "Quran mein 'يَبْعَثُ' (dobara uthata hai) aata hai."
+ },
+ "رَقِيب": {
+  "k": "50:18",
+  "i": 6
+ },
+ "عَتِيد": {
+  "k": "50:18",
+  "i": 7
+ },
+ "كِرَام": {
+  "k": "80:16",
+  "i": 0
+ },
+ "عَمَل": {
+  "k": "67:2",
+  "i": 7,
+  "n": "Quran mein 'عَمَلًا' (amal) aata hai."
+ },
+ "عَهْد": {
+  "k": "2:40",
+  "i": 8,
+  "n": "Quran mein 'بِعَهْدِي' (mere ahd ko) aata hai."
+ },
+ "أَمَانَة": {
+  "k": "33:72",
+  "i": 2
+ },
+ "رِزْق": {
+  "k": "51:22",
+  "i": 2,
+  "n": "Quran mein 'رِزْقُكُمْ' (tumhara rizq) aata hai."
+ },
+ "بِرّ": {
+  "k": "3:92",
+  "i": 2,
+  "n": "Quran mein 'الْبِرَّ' (neki ko) aata hai."
+ },
+ "نُصْح": {
+  "k": "11:34",
+  "i": 2,
+  "n": "Quran mein 'نُصْحِي' (meri khair-khwaahi) aata hai."
+ },
+ "تَقْوِيم": {
+  "k": "95:4",
+  "i": 5
+ },
+ "رُشْد": {
+  "k": "2:256",
+  "i": 6
+ },
+ "طَيِّب": {
+  "k": "2:172",
+  "i": 5,
+  "n": "Quran mein 'طَيِّبَاتِ' (paakeeza cheezein) aata hai."
+ },
+ "خَبِيث": {
+  "k": "5:100",
+  "i": 3
+ },
+ "رَجَاء": {
+  "k": "17:57",
+  "i": 9,
+  "n": "Quran mein 'وَيَرْجُونَ' (aur woh umeed rakhte hain) aata hai."
+ },
+ "نَقْص": {
+  "k": "2:155",
+  "i": 5
+ },
+ "الْمَاجِد": {
+  "k": "85:15",
+  "i": 2,
+  "n": "Quran mein 'الْمَجِيدُ' (buzurgi wala (Quran mein 'Majeed')) aata hai."
+ },
+ "الْقَادِر": {
+  "k": "77:23",
+  "i": 2,
+  "n": "Quran mein 'الْقَادِرُونَ' (qudrat rakhne wale) aata hai."
+ },
+ "الْمُقْتَدِر": {
+  "k": "54:55",
+  "i": 5
+ },
+ "الْأَوَّل": {
+  "k": "57:3",
+  "i": 1
+ },
+ "الظَّاهِر": {
+  "k": "57:3",
+  "i": 3
+ },
+ "الْبَاطِن": {
+  "k": "57:3",
+  "i": 4
+ },
+ "الْوَالِي": {
+  "k": "13:11",
+  "i": 34,
+  "n": "Quran mein 'وَالٍ' (hukmraan) aata hai."
+ },
+ "الْمُحْيِي": {
+  "k": "57:2",
+  "i": 4,
+  "n": "Quran mein 'يُحْيِي' (zinda karta hai) aata hai."
+ },
+ "الْمُمِيت": {
+  "k": "57:2",
+  "i": 5,
+  "n": "Quran mein 'وَيُمِيتُ' (aur maut deta hai) aata hai."
+ },
+ "صَدِيق": {
+  "k": "24:61",
+  "i": 48,
+  "n": "Quran mein 'صَدِيقِكُمْ' (tumhara dost) aata hai."
+ },
+ "جَار": {
+  "k": "4:36",
+  "i": 12
+ },
+ "ضَيْف": {
+  "k": "51:24",
+  "i": 3
+ },
+ "بَعِيد": {
+  "k": "11:89",
+  "i": 21,
+  "n": "Quran mein 'بِبَعِيدٍ' (door ke saath) aata hai."
+ },
+ "شَيْخ": {
+  "k": "11:72",
+  "i": 7,
+  "n": "Quran mein 'شَيْخًا' (boorha) aata hai."
+ },
+ "فَتَى": {
+  "k": "21:60",
+  "i": 2
+ },
+ "رَفِيق": {
+  "k": "4:69",
+  "i": 17,
+  "n": "Quran mein 'رَفِيقًا' (saathi) aata hai."
+ },
+ "طَاغُوت": {
+  "k": "2:256",
+  "i": 11
+ },
+ "خَصِيم": {
+  "k": "16:4",
+  "i": 6
+ },
+ "أَمِين": {
+  "k": "26:107",
+  "i": 3
+ },
+ "عَمّ": {
+  "k": "24:61",
+  "i": 33,
+  "n": "Quran mein 'أَعْمَامِكُمْ' (tumhare chachaon) aata hai."
+ },
+ "عَمَّة": {
+  "k": "24:61",
+  "i": 36,
+  "n": "Quran mein 'عَمَّاتِكُمْ' (tumhari phoophiyon) aata hai."
+ },
+ "خَال": {
+  "k": "24:61",
+  "i": 39,
+  "n": "Quran mein 'أَخْوَالِكُمْ' (tumhare maamoon) aata hai."
+ },
+ "خَالَة": {
+  "k": "24:61",
+  "i": 42,
+  "n": "Quran mein 'خَالَاتِكُمْ' (tumhari khaalaon) aata hai."
+ },
+ "عَجُوز": {
+  "k": "11:72",
+  "i": 4
+ },
+ "بَعْل": {
+  "k": "11:72",
+  "i": 6,
+  "n": "Quran mein 'بَعْلِي' (mera shauhar) aata hai."
+ },
+ "أَيْكَة": {
+  "k": "26:176",
+  "i": 2
+ },
+ "بَابِل": {
+  "k": "2:102",
+  "i": 20,
+  "n": "Quran mein 'بِبَابِلَ' (baabil mein) aata hai."
+ },
+ "بَدْر": {
+  "k": "3:123",
+  "i": 3,
+  "n": "Quran mein 'بِبَدْرٍ' (badr mein) aata hai."
+ },
+ "حُنَيْن": {
+  "k": "9:25",
+  "i": 7
+ },
+ "سِينَا": {
+  "k": "23:20",
+  "i": 4,
+  "n": "Quran mein 'سَيْنَاءَ' (seena (Quran ka imlaa)) aata hai."
+ },
+ "كَهْف": {
+  "k": "18:9",
+  "i": 4
+ },
+ "رَقِيم": {
+  "k": "18:9",
+  "i": 5
+ },
+ "جُرُف": {
+  "k": "9:109",
+  "i": 15
+ },
+ "هَارُوت": {
+  "k": "2:102",
+  "i": 21
+ },
+ "مَارُوت": {
+  "k": "2:102",
+  "i": 22
+ },
+ "بَغَى": {
+  "k": "10:23",
+  "i": 4,
+  "n": "Quran mein 'يَبْغُونَ' (woh sarkashi karte hain) aata hai."
+ },
+ "فَسَقَ": {
+  "k": "18:50",
+  "i": 11,
+  "n": "Quran mein 'فَفَسَقَ' (phir usne nafarmaani ki) aata hai."
+ },
+ "أَجْرَمَ": {
+  "k": "83:29",
+  "i": 2,
+  "n": "Quran mein 'أَجْرَمُوا' (unhon ne jurm kiya) aata hai."
+ },
+ "حَاقَ": {
+  "k": "16:34",
+  "i": 4
+ },
+ "بَاءَ": {
+  "k": "2:61",
+  "i": 40,
+  "n": "Quran mein 'وَبَاءُوا' (aur woh laute) aata hai."
+ },
+ "أَصَابَ": {
+  "k": "4:79",
+  "i": 1,
+  "n": "Quran mein 'أَصَابَكَ' (tujhe pahuncha) aata hai."
+ },
+ "أَطَاعَ": {
+  "k": "4:80",
+  "i": 4
+ },
+ "خَالَفَ": {
+  "k": "24:63",
+  "i": 17,
+  "n": "Quran mein 'يُخَالِفُونَ' (woh mukhaalifat karte hain) aata hai."
+ },
+ "صَدَّ": {
+  "k": "47:1",
+  "i": 2,
+  "n": "Quran mein 'وَصَدُّوا' (aur unhon ne roka) aata hai."
+ },
+ "لَبِسَ": {
+  "k": "18:31",
+  "i": 14,
+  "n": "Quran mein 'وَيَلْبَسُونَ' (aur woh pehnte hain) aata hai."
+ },
+ "قَعَدَ": {
+  "k": "4:95",
+  "i": 2,
+  "n": "Quran mein 'الْقَاعِدُونَ' (baithne wale) aata hai."
+ },
+ "مَشَى": {
+  "k": "25:7",
+  "i": 6,
+  "n": "Quran mein 'وَيَمْشِي' (aur chalta hai) aata hai."
+ },
+ "جَرَى": {
+  "k": "25:10",
+  "i": 10,
+  "n": "Quran mein 'تَجْرِي' (behti hain) aata hai."
+ },
+ "رَكِبَ": {
+  "k": "18:71",
+  "i": 3,
+  "n": "Quran mein 'رَكِبَا' (dono sawaar hue) aata hai."
+ },
+ "حَمَلَ": {
+  "k": "19:22",
+  "i": 0,
+  "n": "Quran mein 'فَحَمَلَتْهُ' (phir us (aurat) ne use uthaaya) aata hai."
+ },
+ "وَضَعَ": {
+  "k": "3:36",
+  "i": 1,
+  "n": "Quran mein 'وَضَعَتْهَا' (us ne use janam diya) aata hai."
+ },
+ "سَقَى": {
+  "k": "76:21",
+  "i": 9,
+  "n": "Quran mein 'وَسَقَاهُمْ' (aur unhein pilaaya) aata hai."
+ },
+ "لَبِثَ": {
+  "k": "18:19",
+  "i": 10,
+  "n": "Quran mein 'لَبِثْنَا' (hum thehre) aata hai."
+ },
+ "قُنُوت": {
+  "k": "66:12",
+  "i": 16,
+  "n": "Quran mein 'الْقَانِتِينَ' (farmaabardaar) aata hai."
+ },
+ "خُشُوع": {
+  "k": "17:109",
+  "i": 4,
+  "n": "Quran mein 'خُشُوعًا' (aajizi) aata hai."
+ },
+ "تَهَجُّد": {
+  "k": "17:79",
+  "i": 2
+ },
+ "هَمْس": {
+  "k": "20:108",
+  "i": 12,
+  "n": "Quran mein 'هَمْسًا' (dhimi aawaaz) aata hai."
+ },
+ "تَرْتِيل": {
+  "k": "73:4",
+  "i": 5,
+  "n": "Quran mein 'تَرْتِيلًا' (thehar thehar kar padhna) aata hai."
+ },
+ "تَكْبِير": {
+  "k": "17:111",
+  "i": 20,
+  "n": "Quran mein 'تَكْبِيرًا' (badaai bayaan karna) aata hai."
+ },
+ "تَضَرُّع": {
+  "k": "6:63",
+  "i": 8,
+  "n": "Quran mein 'تَضَرُّعًا' (girgira kar) aata hai."
+ },
+ "نَسَب": {
+  "k": "25:54",
+  "i": 7,
+  "n": "Quran mein 'نَسَبًا' (khaandaani rishta) aata hai."
+ },
+ "صِهْر": {
+  "k": "25:54",
+  "i": 8,
+  "n": "Quran mein 'وَصِهْرًا' (aur susraal) aata hai."
+ },
+ "نَسْل": {
+  "k": "2:205",
+  "i": 9
+ },
+ "صَاحِبَة": {
+  "k": "6:101",
+  "i": 10
+ },
+ "مِيكَال": {
+  "k": "2:98",
+  "i": 7
+ },
+ "جِبْرِيل": {
+  "k": "2:98",
+  "i": 6
+ },
+ "لَوْح": {
+  "k": "85:22",
+  "i": 1
+ },
+ "مَحْفُوظ": {
+  "k": "85:22",
+  "i": 2
+ },
+ "غِلْمَان": {
+  "k": "52:24",
+  "i": 2
+ },
+ "وِلْدَان": {
+  "k": "56:17",
+  "i": 2
+ },
+ "إِدْرِيس": {
+  "k": "19:56",
+  "i": 3
+ },
+ "إِلْيَاس": {
+  "k": "37:123",
+  "i": 1
+ },
+ "الْيَسَع": {
+  "k": "38:48",
+  "i": 2
+ },
+ "ذُو الْكِفْل": {
+  "k": "38:48",
+  "i": 4,
+  "n": "Quran mein 'وَذَا الْكِفْلِ' (zul-kifl, nasb ki haalat mein) aata hai."
+ },
+ "عُزَيْر": {
+  "k": "9:30",
+  "i": 2
+ },
+ "جَالُوت": {
+  "k": "2:251",
+  "i": 5
+ },
+ "أَحْمَد": {
+  "k": "61:6",
+  "i": 23
+ },
+ "يَأْجُوج": {
+  "k": "21:96",
+  "i": 3
+ },
+ "مَأْجُوج": {
+  "k": "21:96",
+  "i": 4
+ },
+ "أَوْحَى": {
+  "k": "53:10",
+  "i": 0
+ },
+ "بَيَّنَ": {
+  "k": "57:17",
+  "i": 8
+ },
+ "فَصَّلَ": {
+  "k": "6:98",
+  "i": 9
+ },
+ "أَلْهَمَ": {
+  "k": "91:8",
+  "i": 0
+ },
+ "بَلَّغَ": {
+  "k": "72:28",
+  "i": 3
+ },
+ "حَفِظَ": {
+  "k": "15:9",
+  "i": 6
+ },
+ "أَقْرَأَ": {
+  "k": "96:1",
+  "i": 0
+ },
+ "ذَكَّرَ": {
+  "k": "88:21",
+  "i": 0
+ },
+ "رَغِبَ": {
+  "k": "94:8",
+  "i": 2
+ },
+ "سَعَى": {
+  "k": "53:39",
+  "i": 5
+ },
+ "جَاهَدَ": {
+  "k": "29:6",
+  "i": 1
+ },
+ "سَارَعَ": {
+  "k": "3:133",
+  "i": 0
+ },
+ "شَاوَرَ": {
+  "k": "42:38",
+  "i": 6
+ },
+ "تَوَاصَى": {
+  "k": "103:3",
+  "i": 5
+ },
+ "تَعَاوَنَ": {
+  "k": "5:2",
+  "i": 37
+ },
+ "اسْتَعَانَ": {
+  "k": "1:5",
+  "i": 3
+ },
+ "أَخْلَصَ": {
+  "k": "39:2",
+  "i": 7
+ },
+ "اسْتَقَامَ": {
+  "k": "46:13",
+  "i": 6
+ },
+ "أَشْرَكَ": {
+  "k": "4:48",
+  "i": 14
+ },
+ "أَلْحَدَ": {
+  "k": "41:40",
+  "i": 2
+ },
+ "غَلّ": {
+  "k": "3:161",
+  "i": 9
+ },
+ "سَرَقَ": {
+  "k": "5:38",
+  "i": 0
+ },
+ "زَنَى": {
+  "k": "17:32",
+  "i": 2
+ },
+ "قَذَفَ": {
+  "k": "34:48",
+  "i": 3
+ },
+ "اغْتَابَ": {
+  "k": "49:12",
+  "i": 14
+ },
+ "سَخِرَ": {
+  "k": "21:41",
+  "i": 7
+ },
+ "اسْتَهْزَأَ": {
+  "k": "21:41",
+  "i": 1
+ },
+ "مَوْعِد": {
+  "k": "54:46",
+  "i": 2
+ },
+ "سَاهِرَة": {
+  "k": "79:14",
+  "i": 2
+ },
+ "طَامَّة": {
+  "k": "79:34",
+  "i": 2
+ },
+ "صَاخَّة": {
+  "k": "80:33",
+  "i": 2
+ },
+ "قَارِعَة": {
+  "k": "101:1",
+  "i": 0
+ },
+ "حَاقَّة": {
+  "k": "69:1",
+  "i": 0
+ },
+ "غَاشِيَة": {
+  "k": "88:1",
+  "i": 3
+ },
+ "وَاقِعَة": {
+  "k": "56:1",
+  "i": 2
+ },
+ "زَلْزَلَة": {
+  "k": "22:1",
+  "i": 5
+ },
+ "مَرِيض": {
+  "k": "48:17",
+  "i": 10
+ },
+ "أَعْرَج": {
+  "k": "48:17",
+  "i": 6
+ },
+ "أَعْمَى": {
+  "k": "48:17",
+  "i": 2
+ },
+ "أَصَمّ": {
+  "k": "47:23",
+  "i": 4
+ },
+ "أَبْكَم": {
+  "k": "2:18",
+  "i": 1
+ },
+ "مُضْغَة": {
+  "k": "23:14",
+  "i": 6
+ },
+ "شَفَة": {
+  "k": "90:9",
+  "i": 1
+ },
+ "نُحَاس": {
+  "k": "55:35",
+  "i": 5
+ },
+ "قِطْمِير": {
+  "k": "35:13",
+  "i": 27
+ },
+ "صَفْرَاء": {
+  "k": "2:69",
+  "i": 13
+ },
+ "حَمَأ": {
+  "k": "15:26",
+  "i": 6
+ },
+ "مَسْنُون": {
+  "k": "15:26",
+  "i": 7
+ },
+ "خَشَب": {
+  "k": "63:4",
+  "i": 9
+ },
+ "حَطَب": {
+  "k": "111:4",
+  "i": 2
+ },
+ "صَرَخَ": {
+  "k": "36:43",
+  "i": 4
+ },
+ "أَذَّنَ": {
+  "k": "22:27",
+  "i": 0
+ },
+ "جَادَلَ": {
+  "k": "11:32",
+  "i": 3
+ },
+ "حَاجَّ": {
+  "k": "3:66",
+  "i": 8
+ },
+ "سَبَّ": {
+  "k": "6:108",
+  "i": 1
+ },
+ "لَعَنَ": {
+  "k": "4:52",
+  "i": 2
+ },
+ "حَلَفَ": {
+  "k": "9:56",
+  "i": 0
+ },
+ "اسْتَغَاثَ": {
+  "k": "8:9",
+  "i": 1
+ },
+ "اسْتَنْصَرَ": {
+  "k": "28:18",
+  "i": 7
+ },
+ "نَاجَى": {
+  "k": "58:12",
+  "i": 4
+ },
+ "بَرَأَ": {
+  "k": "59:24",
+  "i": 3
+ },
+ "صَوَّرَ": {
+  "k": "3:6",
+  "i": 2
+ },
+ "فَطَرَ": {
+  "k": "6:79",
+  "i": 4
+ },
+ "أَبْدَأَ": {
+  "k": "29:19",
+  "i": 3
+ },
+ "أَعَادَ": {
+  "k": "29:19",
+  "i": 7
+ },
+ "ذَرَأَ": {
+  "k": "23:79",
+  "i": 2
+ },
+ "بَثَّ": {
+  "k": "42:29",
+  "i": 6
+ },
+ "أَنْبَتَ": {
+  "k": "80:27",
+  "i": 0
+ },
+ "أَنْشَأَ": {
+  "k": "6:98",
+  "i": 2
+ },
+ "أَحْصَى": {
+  "k": "72:28",
+  "i": 9
+ },
+ "خَشَعَ": {
+  "k": "20:108",
+  "i": 6
+ },
+ "أَنْكَرَ": {
+  "k": "12:58",
+  "i": 8
+ },
+ "تَدَبَّرَ": {
+  "k": "47:24",
+  "i": 1
+ },
+ "أَنْعَمَ": {
+  "k": "1:7",
+  "i": 2
+ },
+ "أَدْرَى": {
+  "k": "69:3",
+  "i": 1
+ },
+ "تَبَيَّنَ": {
+  "k": "2:256",
+  "i": 5
+ },
+ "زَعَمَ": {
+  "k": "64:7",
+  "i": 0
+ },
+ "عَقَلَ": {
+  "k": "12:2",
+  "i": 5
+ },
+ "شَعَرَ": {
+  "k": "2:9",
+  "i": 9
+ },
+ "أَحَسّ": {
+  "k": "3:52",
+  "i": 1
+ },
+ "مَنَعَ": {
+  "k": "107:7",
+  "i": 0
+ },
+ "بَخِلَ": {
+  "k": "92:8",
+  "i": 2
+ },
+ "بَسَطَ": {
+  "k": "2:245",
+  "i": 13
+ },
+ "قَبَضَ": {
+  "k": "2:245",
+  "i": 12
+ },
+ "وَهَبَ": {
+  "k": "14:39",
+  "i": 3
+ },
+ "غَنِمَ": {
+  "k": "8:69",
+  "i": 2
+ },
+ "بَاعَ": {
+  "k": "2:275",
+  "i": 17
+ },
+ "اشْتَرَى": {
+  "k": "2:16",
+  "i": 2
+ },
+ "اتَّخَذَ": {
+  "k": "2:116",
+  "i": 1
+ },
+ "كَنْز": {
+  "k": "18:82",
+  "i": 9
+ },
+ "حَظّ": {
+  "k": "28:79",
+  "i": 18
+ },
+ "زِينَة": {
+  "k": "18:46",
+  "i": 2
+ },
+ "رَغَد": {
+  "k": "2:35",
+  "i": 8
+ },
+ "سِعَة": {
+  "k": "65:7",
+  "i": 2
+ },
+ "تِجَارَة": {
+  "k": "24:37",
+  "i": 3
+ },
+ "مَيْسِر": {
+  "k": "5:90",
+  "i": 5
+ },
+ "مِثْقَال": {
+  "k": "99:7",
+  "i": 2
+ },
+ "دِينَار": {
+  "k": "3:75",
+  "i": 13
+ },
+ "وَزْن": {
+  "k": "55:9",
+  "i": 1
+ },
+ "كَيْل": {
+  "k": "6:152",
+  "i": 12
+ },
+ "مِكْيَال": {
+  "k": "11:84",
+  "i": 15
+ },
+ "قِسْط": {
+  "k": "5:42",
+  "i": 21
+ },
+ "سَنَة": {
+  "k": "29:14",
+  "i": 8
+ },
+ "عَام": {
+  "k": "29:14",
+  "i": 11
+ },
+ "صَيْف": {
+  "k": "106:2",
+  "i": 3
+ },
+ "شِتَاء": {
+  "k": "106:2",
+  "i": 2
+ },
+ "سَحَر": {
+  "k": "54:34",
+  "i": 8
+ },
+ "أُفُق": {
+  "k": "81:23",
+  "i": 2
+ },
+ "صُبْح": {
+  "k": "11:81",
+  "i": 25
+ },
+ "ضُحَى": {
+  "k": "93:1",
+  "i": 0
+ },
+ "أَصِيل": {
+  "k": "33:42",
+  "i": 2
+ },
+ "بِضْع": {
+  "k": "12:42",
+  "i": 16
+ },
+ "نِصْف": {
+  "k": "4:12",
+  "i": 1
+ },
+ "ثُلُث": {
+  "k": "4:12",
+  "i": 72
+ },
+ "رُبُع": {
+  "k": "4:12",
+  "i": 15
+ },
+ "سُدُس": {
+  "k": "4:12",
+  "i": 63
+ },
+ "ثُمُن": {
+  "k": "4:12",
+  "i": 39
+ },
+ "عِشْرُون": {
+  "k": "8:65",
+  "i": 9
+ },
+ "ثَلَاثُون": {
+  "k": "46:15",
+  "i": 11
+ },
+ "يَمِين": {
+  "k": "18:17",
+  "i": 8
+ },
+ "شِمَال": {
+  "k": "18:17",
+  "i": 13
+ },
+ "مَشْرِق": {
+  "k": "2:115",
+  "i": 1
+ },
+ "مَغْرِب": {
+  "k": "2:115",
+  "i": 2
+ },
+ "أَمَام": {
+  "k": "75:5",
+  "i": 4
+ },
+ "وَرَاء": {
+  "k": "18:79",
+  "i": 11
+ },
+ "وَسَط": {
+  "k": "2:143",
+  "i": 3
+ },
+ "خَرْدَل": {
+  "k": "21:47",
+  "i": 14
+ },
+ "سُنْبُلَة": {
+  "k": "2:261",
+  "i": 14
+ },
+ "زَهْرَة": {
+  "k": "20:131",
+  "i": 9
+ },
+ "نَوَى": {
+  "k": "6:95",
+  "i": 4
+ },
+ "جَنَاح": {
+  "k": "17:24",
+  "i": 2
+ },
+ "خَالِص": {
+  "k": "39:3",
+  "i": 3
+ },
+ "يَنْبُوع": {
+  "k": "17:90",
+  "i": 9
+ },
+ "خَلِيفَة": {
+  "k": "2:30",
+  "i": 8
+ },
+ "أَوَى": {
+  "k": "18:10",
+  "i": 1
+ },
+ "جَزَى": {
+  "k": "76:12",
+  "i": 0
+ },
+ "ذَاقَ": {
+  "k": "65:9",
+  "i": 0
+ },
+ "فَرَّ": {
+  "k": "80:34",
+  "i": 1
+ },
+ "سُبْحَانَ اللَّهِ": {
+  "k": "12:108",
+  "i": 11
+ },
+ "لَا إِلَهَ إِلَّا اللَّهُ": {
+  "k": "47:19",
+  "i": 2
+ },
+ "رَبِّ اغْفِرْ لِي": {
+  "k": "7:151",
+  "i": 1
+ },
+ "رَبِّ زِدْنِي عِلْمًا": {
+  "k": "20:114",
+  "i": 14
+ },
+ "يَا أَيُّهَا النَّاسُ": {
+  "k": "2:21",
+  "i": 0
+ },
+ "اتَّقُوا اللَّهَ": {
+  "k": "3:102",
+  "i": 3
+ },
+ "أَطِيعُوا اللَّهَ": {
+  "k": "4:59",
+  "i": 3
+ },
+ "وَأَطِيعُوا الرَّسُولَ": {
+  "k": "4:59",
+  "i": 5
+ },
+ "وَاشْكُرُوا لِلَّهِ": {
+  "k": "2:172",
+  "i": 8
+ },
+ "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ": {
+  "k": "2:153",
+  "i": 6
+ },
+ "إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ": {
+  "k": "2:20",
+  "i": 19
+ },
+ "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ": {
+  "k": "31:28",
+  "i": 7
+ },
+ "لِمَ": {
+  "k": "3:70",
+  "i": 2
+ },
+ "طَهُور": {
+  "k": "25:48",
+  "i": 12
+ },
+ "مُفْلِحُون": {
+  "k": "2:5",
+  "i": 7
+ },
+ "تَهْلُكَة": {
+  "k": "2:195",
+  "i": 8
+ },
+ "طَلَبًا": {
+  "k": "18:41",
+  "i": 7
+ },
+ "أَرْجَاء": {
+  "k": "69:17",
+  "i": 2
+ },
+ "هُوَ الْعَلِيُّ الْكَبِيرُ": {
+  "k": "22:62",
+  "i": 14
+ },
+ "صَلُّوا عَلَيْهِ": {
+  "k": "33:56",
+  "i": 9
+ },
+ "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ": {
+  "k": "1:2",
+  "i": 0
+ },
+ "رَبِّ أَنْزِلْنِي مُنْزَلًا مُبَارَكًا": {
+  "k": "23:29",
+  "i": 1
+ },
+ "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ": {
+  "k": "56:74",
+  "i": 0
+ },
+ "سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى": {
+  "k": "87:1",
+  "i": 0
+ },
+ "وَاغْفِرْ لَنَا": {
+  "k": "2:286",
+  "i": 40
+ },
+ "الْحَيُّ الْقَيُّومُ": {
+  "k": "2:255",
+  "i": 5
+ },
+ "السَّلَامُ": {
+  "k": "59:23",
+  "i": 9
+ },
+ "لَا قُوَّةَ إِلَّا بِاللَّهِ": {
+  "k": "18:39",
+  "i": 8
+ },
+ "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ": {
+  "k": "3:18",
+  "i": 0
+ },
+ "وَاسْتَغْفِرِ اللَّهَ": {
+  "k": "4:106",
+  "i": 0
+ },
+ "وَاعْفُ عَنَّا": {
+  "k": "2:286",
+  "i": 38
+ },
+ "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ": {
+  "k": "1:6",
+  "i": 0
+ },
+ "وَاذْكُرُوا نِعْمَةَ اللَّهِ": {
+  "k": "5:7",
+  "i": 0
+ },
+ "وَلَا تَكْفُرُونِ": {
+  "k": "2:152",
+  "i": 4
+ },
+ "وَاللَّهُ لَا يُحِبُّ الظَّالِمِينَ": {
+  "k": "3:57",
+  "i": 7
+ },
+ "بَرَكَات": {
+  "k": "11:73",
+  "i": 7
+ },
+ "دَرَاهِم": {
+  "k": "12:20",
+  "i": 3
+ },
+ "مِائَتَيْنِ": {
+  "k": "8:65",
+  "i": 12
+ },
+ "أَلْبَاب": {
+  "k": "3:190",
+  "i": 10
+ },
+ "بَصَل": {
+  "k": "2:61",
+  "i": 21
+ },
+ "رُقُود": {
+  "k": "18:18",
+  "i": 3
+ },
+ "اسْتِغْفَار": {
+  "k": "9:114",
+  "i": 2
+ },
+ "قِيَام": {
+  "k": "25:64",
+  "i": 4
  }
 };
+
 const ayatText = {
  "1:1": {
   "sn": "الفاتحة",
@@ -5462,6 +6843,1246 @@ const ayatText = {
   "sn": "الجن",
   "sr": "Al-Jinn",
   "t": "وَأَنَّهُ لَمَّا قَامَ عَبْدُ اللَّهِ يَدْعُوهُ كَادُوا يَكُونُونَ عَلَيْهِ لِبَدًا"
+ },
+ "22:65": {
+  "sn": "الحج",
+  "sr": "Al-Hajj",
+  "t": "أَلَمْ تَرَ أَنَّ اللَّهَ سَخَّرَ لَكُمْ مَا فِي الْأَرْضِ وَالْفُلْكَ تَجْرِي فِي الْبَحْرِ بِأَمْرِهِ وَيُمْسِكُ السَّمَاءَ أَنْ تَقَعَ عَلَى الْأَرْضِ إِلَّا بِإِذْنِهِ إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَحِيمٌ"
+ },
+ "52:28": {
+  "sn": "الطور",
+  "sr": "At-Tur",
+  "t": "إِنَّا كُنَّا مِنْ قَبْلُ نَدْعُوهُ إِنَّهُ هُوَ الْبَرُّ الرَّحِيمُ"
+ },
+ "4:85": {
+  "sn": "النساء",
+  "sr": "An-Nisa",
+  "t": "مَنْ يَشْفَعْ شَفَاعَةً حَسَنَةً يَكُنْ لَهُ نَصِيبٌ مِنْهَا وَمَنْ يَشْفَعْ شَفَاعَةً سَيِّئَةً يَكُنْ لَهُ كِفْلٌ مِنْهَا وَكَانَ اللَّهُ عَلَى كُلِّ شَيْءٍ مُقِيتًا"
+ },
+ "34:21": {
+  "sn": "سبأ",
+  "sr": "Saba",
+  "t": "وَمَا كَانَ لَهُ عَلَيْهِمْ مِنْ سُلْطَانٍ إِلَّا لِنَعْلَمَ مَنْ يُؤْمِنُ بِالْآخِرَةِ مِمَّنْ هُوَ مِنْهَا فِي شَكٍّ وَرَبُّكَ عَلَى كُلِّ شَيْءٍ حَفِيظٌ"
+ },
+ "6:114": {
+  "sn": "الأنعام",
+  "sr": "Al-An'am",
+  "t": "أَفَغَيْرَ اللَّهِ أَبْتَغِي حَكَمًا وَهُوَ الَّذِي أَنْزَلَ إِلَيْكُمُ الْكِتَابَ مُفَصَّلًا وَالَّذِينَ آتَيْنَاهُمُ الْكِتَابَ يَعْلَمُونَ أَنَّهُ مُنَزَّلٌ مِنْ رَبِّكَ بِالْحَقِّ فَلَا تَكُونَنَّ مِنَ الْمُمْتَرِينَ"
+ },
+ "16:51": {
+  "sn": "النحل",
+  "sr": "An-Nahl",
+  "t": "وَقَالَ اللَّهُ لَا تَتَّخِذُوا إِلَهَيْنِ اثْنَيْنِ إِنَّمَا هُوَ إِلَهٌ وَاحِدٌ فَإِيَّايَ فَارْهَبُونِ"
+ },
+ "9:2": {
+  "sn": "التوبة",
+  "sr": "At-Tawbah",
+  "t": "فَسِيحُوا فِي الْأَرْضِ أَرْبَعَةَ أَشْهُرٍ وَاعْلَمُوا أَنَّكُمْ غَيْرُ مُعْجِزِي اللَّهِ وَأَنَّ اللَّهَ مُخْزِي الْكَافِرِينَ"
+ },
+ "18:22": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "سَيَقُولُونَ ثَلَاثَةٌ رَابِعُهُمْ كَلْبُهُمْ وَيَقُولُونَ خَمْسَةٌ سَادِسُهُمْ كَلْبُهُمْ رَجْمًا بِالْغَيْبِ وَيَقُولُونَ سَبْعَةٌ وَثَامِنُهُمْ كَلْبُهُمْ قُلْ رَبِّي أَعْلَمُ بِعِدَّتِهِمْ مَا يَعْلَمُهُمْ إِلَّا قَلِيلٌ فَلَا تُمَارِ فِيهِمْ إِلَّا مِرَاءً ظَاهِرًا وَلَا تَسْتَفْتِ فِيهِمْ مِنْهُمْ أَحَدًا"
+ },
+ "50:38": {
+  "sn": "ق",
+  "sr": "Qaaf",
+  "t": "وَلَقَدْ خَلَقْنَا السَّمَاوَاتِ وَالْأَرْضَ وَمَا بَيْنَهُمَا فِي سِتَّةِ أَيَّامٍ وَمَا مَسَّنَا مِنْ لُغُوبٍ"
+ },
+ "17:101": {
+  "sn": "الإسراء",
+  "sr": "Al-Isra",
+  "t": "وَلَقَدْ آتَيْنَا مُوسَى تِسْعَ آيَاتٍ بَيِّنَاتٍ فَاسْأَلْ بَنِي إِسْرَائِيلَ إِذْ جَاءَهُمْ فَقَالَ لَهُ فِرْعَوْنُ إِنِّي لَأَظُنُّكَ يَامُوسَى مَسْحُورًا"
+ },
+ "99:7": {
+  "sn": "الزلزلة",
+  "sr": "Az-Zalzalah",
+  "t": "فَمَنْ يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ"
+ },
+ "73:14": {
+  "sn": "المزمل",
+  "sr": "Al-Muzzammil",
+  "t": "يَوْمَ تَرْجُفُ الْأَرْضُ وَالْجِبَالُ وَكَانَتِ الْجِبَالُ كَثِيبًا مَهِيلًا"
+ },
+ "7:107": {
+  "sn": "الأعراف",
+  "sr": "Al-A'raf",
+  "t": "فَأَلْقَى عَصَاهُ فَإِذَا هِيَ ثُعْبَانٌ مُبِينٌ"
+ },
+ "18:71": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "فَانْطَلَقَا حَتَّى إِذَا رَكِبَا فِي السَّفِينَةِ خَرَقَهَا قَالَ أَخَرَقْتَهَا لِتُغْرِقَ أَهْلَهَا لَقَدْ جِئْتَ شَيْئًا إِمْرًا"
+ },
+ "36:39": {
+  "sn": "يس",
+  "sr": "Ya-Sin",
+  "t": "وَالْقَمَرَ قَدَّرْنَاهُ مَنَازِلَ حَتَّى عَادَ كَالْعُرْجُونِ الْقَدِيمِ"
+ },
+ "2:61": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "وَإِذْ قُلْتُمْ يَامُوسَى لَنْ نَصْبِرَ عَلَى طَعَامٍ وَاحِدٍ فَادْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُنْبِتُ الْأَرْضُ مِنْ بَقْلِهَا وَقِثَّائِهَا وَفُومِهَا وَعَدَسِهَا وَبَصَلِهَا قَالَ أَتَسْتَبْدِلُونَ الَّذِي هُوَ أَدْنَى بِالَّذِي هُوَ خَيْرٌ اهْبِطُوا مِصْرًا فَإِنَّ لَكُمْ مَا سَأَلْتُمْ وَضُرِبَتْ عَلَيْهِمُ الذِّلَّةُ وَالْمَسْكَنَةُ وَبَاءُوا بِغَضَبٍ مِنَ اللَّهِ ذَلِكَ بِأَنَّهُمْ كَانُوا يَكْفُرُونَ بِآيَاتِ اللَّهِ وَيَقْتُلُونَ النَّبِيِّينَ بِغَيْرِ الْحَقِّ ذَلِكَ بِمَا عَصَوْا وَكَانُوا يَعْتَدُونَ"
+ },
+ "37:49": {
+  "sn": "الصافات",
+  "sr": "As-Saffat",
+  "t": "كَأَنَّهُنَّ بَيْضٌ مَكْنُونٌ"
+ },
+ "16:10": {
+  "sn": "النحل",
+  "sr": "An-Nahl",
+  "t": "هُوَ الَّذِي أَنْزَلَ مِنَ السَّمَاءِ مَاءً لَكُمْ مِنْهُ شَرَابٌ وَمِنْهُ شَجَرٌ فِيهِ تُسِيمُونَ"
+ },
+ "24:35": {
+  "sn": "النور",
+  "sr": "An-Noor",
+  "t": "اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ مَثَلُ نُورِهِ كَمِشْكَاةٍ فِيهَا مِصْبَاحٌ الْمِصْبَاحُ فِي زُجَاجَةٍ الزُّجَاجَةُ كَأَنَّهَا كَوْكَبٌ دُرِّيٌّ يُوقَدُ مِنْ شَجَرَةٍ مُبَارَكَةٍ زَيْتُونَةٍ لَا شَرْقِيَّةٍ وَلَا غَرْبِيَّةٍ يَكَادُ زَيْتُهَا يُضِيءُ وَلَوْ لَمْ تَمْسَسْهُ نَارٌ نُورٌ عَلَى نُورٍ يَهْدِي اللَّهُ لِنُورِهِ مَنْ يَشَاءُ وَيَضْرِبُ اللَّهُ الْأَمْثَالَ لِلنَّاسِ وَاللَّهُ بِكُلِّ شَيْءٍ عَلِيمٌ"
+ },
+ "12:36": {
+  "sn": "يوسف",
+  "sr": "Yusuf",
+  "t": "وَدَخَلَ مَعَهُ السِّجْنَ فَتَيَانِ قَالَ أَحَدُهُمَا إِنِّي أَرَانِي أَعْصِرُ خَمْرًا وَقَالَ الْآخَرُ إِنِّي أَرَانِي أَحْمِلُ فَوْقَ رَأْسِي خُبْزًا تَأْكُلُ الطَّيْرُ مِنْهُ نَبِّئْنَا بِتَأْوِيلِهِ إِنَّا نَرَاكَ مِنَ الْمُحْسِنِينَ"
+ },
+ "10:57": {
+  "sn": "يونس",
+  "sr": "Yunus",
+  "t": "يَاأَيُّهَا النَّاسُ قَدْ جَاءَتْكُمْ مَوْعِظَةٌ مِنْ رَبِّكُمْ وَشِفَاءٌ لِمَا فِي الصُّدُورِ وَهُدًى وَرَحْمَةٌ لِلْمُؤْمِنِينَ"
+ },
+ "30:4": {
+  "sn": "الروم",
+  "sr": "Ar-Rum",
+  "t": "فِي بِضْعِ سِنِينَ لِلَّهِ الْأَمْرُ مِنْ قَبْلُ وَمِنْ بَعْدُ وَيَوْمَئِذٍ يَفْرَحُ الْمُؤْمِنُونَ"
+ },
+ "106:4": {
+  "sn": "قريش",
+  "sr": "Quraysh",
+  "t": "الَّذِي أَطْعَمَهُمْ مِنْ جُوعٍ وَآمَنَهُمْ مِنْ خَوْفٍ"
+ },
+ "24:55": {
+  "sn": "النور",
+  "sr": "An-Noor",
+  "t": "وَعَدَ اللَّهُ الَّذِينَ آمَنُوا مِنْكُمْ وَعَمِلُوا الصَّالِحَاتِ لَيَسْتَخْلِفَنَّهُمْ فِي الْأَرْضِ كَمَا اسْتَخْلَفَ الَّذِينَ مِنْ قَبْلِهِمْ وَلَيُمَكِّنَنَّ لَهُمْ دِينَهُمُ الَّذِي ارْتَضَى لَهُمْ وَلَيُبَدِّلَنَّهُمْ مِنْ بَعْدِ خَوْفِهِمْ أَمْنًا يَعْبُدُونَنِي لَا يُشْرِكُونَ بِي شَيْئًا وَمَنْ كَفَرَ بَعْدَ ذَلِكَ فَأُولَئِكَ هُمُ الْفَاسِقُونَ"
+ },
+ "26:88": {
+  "sn": "الشعراء",
+  "sr": "Ash-Shu'ara",
+  "t": "يَوْمَ لَا يَنْفَعُ مَالٌ وَلَا بَنُونَ"
+ },
+ "54:55": {
+  "sn": "القمر",
+  "sr": "Al-Qamar",
+  "t": "فِي مَقْعَدِ صِدْقٍ عِنْدَ مَلِيكٍ مُقْتَدِرٍ"
+ },
+ "16:90": {
+  "sn": "النحل",
+  "sr": "An-Nahl",
+  "t": "إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَى وَيَنْهَى عَنِ الْفَحْشَاءِ وَالْمُنْكَرِ وَالْبَغْيِ يَعِظُكُمْ لَعَلَّكُمْ تَذَكَّرُونَ"
+ },
+ "3:134": {
+  "sn": "آل عمران",
+  "sr": "Aal-e-Imran",
+  "t": "الَّذِينَ يُنْفِقُونَ فِي السَّرَّاءِ وَالضَّرَّاءِ وَالْكَاظِمِينَ الْغَيْظَ وَالْعَافِينَ عَنِ النَّاسِ وَاللَّهُ يُحِبُّ الْمُحْسِنِينَ"
+ },
+ "113:5": {
+  "sn": "الفلق",
+  "sr": "Al-Falaq",
+  "t": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ"
+ },
+ "6:48": {
+  "sn": "الأنعام",
+  "sr": "Al-An'am",
+  "t": "وَمَا نُرْسِلُ الْمُرْسَلِينَ إِلَّا مُبَشِّرِينَ وَمُنْذِرِينَ فَمَنْ آمَنَ وَأَصْلَحَ فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+ },
+ "27:34": {
+  "sn": "النمل",
+  "sr": "An-Naml",
+  "t": "قَالَتْ إِنَّ الْمُلُوكَ إِذَا دَخَلُوا قَرْيَةً أَفْسَدُوهَا وَجَعَلُوا أَعِزَّةَ أَهْلِهَا أَذِلَّةً وَكَذَلِكَ يَفْعَلُونَ"
+ },
+ "39:53": {
+  "sn": "الزمر",
+  "sr": "Az-Zumar",
+  "t": "قُلْ يَاعِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَى أَنْفُسِهِمْ لَا تَقْنَطُوا مِنْ رَحْمَةِ اللَّهِ إِنَّ اللَّهَ يَغْفِرُ الذُّنُوبَ جَمِيعًا إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ"
+ },
+ "57:11": {
+  "sn": "الحديد",
+  "sr": "Al-Hadid",
+  "t": "مَنْ ذَا الَّذِي يُقْرِضُ اللَّهَ قَرْضًا حَسَنًا فَيُضَاعِفَهُ لَهُ وَلَهُ أَجْرٌ كَرِيمٌ"
+ },
+ "3:135": {
+  "sn": "آل عمران",
+  "sr": "Aal-e-Imran",
+  "t": "وَالَّذِينَ إِذَا فَعَلُوا فَاحِشَةً أَوْ ظَلَمُوا أَنْفُسَهُمْ ذَكَرُوا اللَّهَ فَاسْتَغْفَرُوا لِذُنُوبِهِمْ وَمَنْ يَغْفِرُ الذُّنُوبَ إِلَّا اللَّهُ وَلَمْ يُصِرُّوا عَلَى مَا فَعَلُوا وَهُمْ يَعْلَمُونَ"
+ },
+ "57:1": {
+  "sn": "الحديد",
+  "sr": "Al-Hadid",
+  "t": "سَبَّحَ لِلَّهِ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ وَهُوَ الْعَزِيزُ الْحَكِيمُ"
+ },
+ "87:15": {
+  "sn": "الأعلى",
+  "sr": "Al-A'la",
+  "t": "وَذَكَرَ اسْمَ رَبِّهِ فَصَلَّى"
+ },
+ "27:40": {
+  "sn": "النمل",
+  "sr": "An-Naml",
+  "t": "قَالَ الَّذِي عِنْدَهُ عِلْمٌ مِنَ الْكِتَابِ أَنَا آتِيكَ بِهِ قَبْلَ أَنْ يَرْتَدَّ إِلَيْكَ طَرْفُكَ فَلَمَّا رَآهُ مُسْتَقِرًّا عِنْدَهُ قَالَ هَذَا مِنْ فَضْلِ رَبِّي لِيَبْلُوَنِي أَأَشْكُرُ أَمْ أَكْفُرُ وَمَنْ شَكَرَ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ وَمَنْ كَفَرَ فَإِنَّ رَبِّي غَنِيٌّ كَرِيمٌ"
+ },
+ "25:7": {
+  "sn": "الفرقان",
+  "sr": "Al-Furqan",
+  "t": "وَقَالُوا مَالِ هَذَا الرَّسُولِ يَأْكُلُ الطَّعَامَ وَيَمْشِي فِي الْأَسْوَاقِ لَوْلَا أُنْزِلَ إِلَيْهِ مَلَكٌ فَيَكُونَ مَعَهُ نَذِيرًا"
+ },
+ "25:10": {
+  "sn": "الفرقان",
+  "sr": "Al-Furqan",
+  "t": "تَبَارَكَ الَّذِي إِنْ شَاءَ جَعَلَ لَكَ خَيْرًا مِنْ ذَلِكَ جَنَّاتٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ وَيَجْعَلْ لَكَ قُصُورًا"
+ },
+ "15:47": {
+  "sn": "الحجر",
+  "sr": "Al-Hijr",
+  "t": "وَنَزَعْنَا مَا فِي صُدُورِهِمْ مِنْ غِلٍّ إِخْوَانًا عَلَى سُرُرٍ مُتَقَابِلِينَ"
+ },
+ "18:29": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "وَقُلِ الْحَقُّ مِنْ رَبِّكُمْ فَمَنْ شَاءَ فَلْيُؤْمِنْ وَمَنْ شَاءَ فَلْيَكْفُرْ إِنَّا أَعْتَدْنَا لِلظَّالِمِينَ نَارًا أَحَاطَ بِهِمْ سُرَادِقُهَا وَإِنْ يَسْتَغِيثُوا يُغَاثُوا بِمَاءٍ كَالْمُهْلِ يَشْوِي الْوُجُوهَ بِئْسَ الشَّرَابُ وَسَاءَتْ مُرْتَفَقًا"
+ },
+ "61:4": {
+  "sn": "الصف",
+  "sr": "As-Saff",
+  "t": "إِنَّ اللَّهَ يُحِبُّ الَّذِينَ يُقَاتِلُونَ فِي سَبِيلِهِ صَفًّا كَأَنَّهُمْ بُنْيَانٌ مَرْصُوصٌ"
+ },
+ "57:13": {
+  "sn": "الحديد",
+  "sr": "Al-Hadid",
+  "t": "يَوْمَ يَقُولُ الْمُنَافِقُونَ وَالْمُنَافِقَاتُ لِلَّذِينَ آمَنُوا انْظُرُونَا نَقْتَبِسْ مِنْ نُورِكُمْ قِيلَ ارْجِعُوا وَرَاءَكُمْ فَالْتَمِسُوا نُورًا فَضُرِبَ بَيْنَهُمْ بِسُورٍ لَهُ بَابٌ بَاطِنُهُ فِيهِ الرَّحْمَةُ وَظَاهِرُهُ مِنْ قِبَلِهِ الْعَذَابُ"
+ },
+ "78:7": {
+  "sn": "النبأ",
+  "sr": "An-Naba",
+  "t": "وَالْجِبَالَ أَوْتَادًا"
+ },
+ "23:100": {
+  "sn": "المؤمنون",
+  "sr": "Al-Mu'minun",
+  "t": "لَعَلِّي أَعْمَلُ صَالِحًا فِيمَا تَرَكْتُ كَلَّا إِنَّهَا كَلِمَةٌ هُوَ قَائِلُهَا وَمِنْ وَرَائِهِمْ بَرْزَخٌ إِلَى يَوْمِ يُبْعَثُونَ"
+ },
+ "3:9": {
+  "sn": "آل عمران",
+  "sr": "Aal-e-Imran",
+  "t": "رَبَّنَا إِنَّكَ جَامِعُ النَّاسِ لِيَوْمٍ لَا رَيْبَ فِيهِ إِنَّ اللَّهَ لَا يُخْلِفُ الْمِيعَادَ"
+ },
+ "100:9": {
+  "sn": "العاديات",
+  "sr": "Al-Adiyat",
+  "t": "أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِي الْقُبُورِ"
+ },
+ "22:7": {
+  "sn": "الحج",
+  "sr": "Al-Hajj",
+  "t": "وَأَنَّ السَّاعَةَ آتِيَةٌ لَا رَيْبَ فِيهَا وَأَنَّ اللَّهَ يَبْعَثُ مَنْ فِي الْقُبُورِ"
+ },
+ "50:18": {
+  "sn": "ق",
+  "sr": "Qaaf",
+  "t": "مَا يَلْفِظُ مِنْ قَوْلٍ إِلَّا لَدَيْهِ رَقِيبٌ عَتِيدٌ"
+ },
+ "80:16": {
+  "sn": "عبس",
+  "sr": "Abasa",
+  "t": "كِرَامٍ بَرَرَةٍ"
+ },
+ "33:72": {
+  "sn": "الأحزاب",
+  "sr": "Al-Ahzab",
+  "t": "إِنَّا عَرَضْنَا الْأَمَانَةَ عَلَى السَّمَاوَاتِ وَالْأَرْضِ وَالْجِبَالِ فَأَبَيْنَ أَنْ يَحْمِلْنَهَا وَأَشْفَقْنَ مِنْهَا وَحَمَلَهَا الْإِنْسَانُ إِنَّهُ كَانَ ظَلُومًا جَهُولًا"
+ },
+ "51:22": {
+  "sn": "الذاريات",
+  "sr": "Adh-Dhariyat",
+  "t": "وَفِي السَّمَاءِ رِزْقُكُمْ وَمَا تُوعَدُونَ"
+ },
+ "11:34": {
+  "sn": "هود",
+  "sr": "Hud",
+  "t": "وَلَا يَنْفَعُكُمْ نُصْحِي إِنْ أَرَدْتُ أَنْ أَنْصَحَ لَكُمْ إِنْ كَانَ اللَّهُ يُرِيدُ أَنْ يُغْوِيَكُمْ هُوَ رَبُّكُمْ وَإِلَيْهِ تُرْجَعُونَ"
+ },
+ "95:4": {
+  "sn": "التين",
+  "sr": "At-Tin",
+  "t": "لَقَدْ خَلَقْنَا الْإِنْسَانَ فِي أَحْسَنِ تَقْوِيمٍ"
+ },
+ "2:256": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "لَا إِكْرَاهَ فِي الدِّينِ قَدْ تَبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ فَمَنْ يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِنْ بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَى لَا انْفِصَامَ لَهَا وَاللَّهُ سَمِيعٌ عَلِيمٌ"
+ },
+ "2:172": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "يَاأَيُّهَا الَّذِينَ آمَنُوا كُلُوا مِنْ طَيِّبَاتِ مَا رَزَقْنَاكُمْ وَاشْكُرُوا لِلَّهِ إِنْ كُنْتُمْ إِيَّاهُ تَعْبُدُونَ"
+ },
+ "5:100": {
+  "sn": "المائدة",
+  "sr": "Al-Ma'idah",
+  "t": "قُلْ لَا يَسْتَوِي الْخَبِيثُ وَالطَّيِّبُ وَلَوْ أَعْجَبَكَ كَثْرَةُ الْخَبِيثِ فَاتَّقُوا اللَّهَ يَاأُولِي الْأَلْبَابِ لَعَلَّكُمْ تُفْلِحُونَ"
+ },
+ "17:57": {
+  "sn": "الإسراء",
+  "sr": "Al-Isra",
+  "t": "أُولَئِكَ الَّذِينَ يَدْعُونَ يَبْتَغُونَ إِلَى رَبِّهِمُ الْوَسِيلَةَ أَيُّهُمْ أَقْرَبُ وَيَرْجُونَ رَحْمَتَهُ وَيَخَافُونَ عَذَابَهُ إِنَّ عَذَابَ رَبِّكَ كَانَ مَحْذُورًا"
+ },
+ "2:155": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "وَلَنَبْلُوَنَّكُمْ بِشَيْءٍ مِنَ الْخَوْفِ وَالْجُوعِ وَنَقْصٍ مِنَ الْأَمْوَالِ وَالْأَنْفُسِ وَالثَّمَرَاتِ وَبَشِّرِ الصَّابِرِينَ"
+ },
+ "85:15": {
+  "sn": "البروج",
+  "sr": "Al-Buruj",
+  "t": "ذُو الْعَرْشِ الْمَجِيدُ"
+ },
+ "77:23": {
+  "sn": "المرسلات",
+  "sr": "Al-Mursalat",
+  "t": "فَقَدَرْنَا فَنِعْمَ الْقَادِرُونَ"
+ },
+ "57:3": {
+  "sn": "الحديد",
+  "sr": "Al-Hadid",
+  "t": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ"
+ },
+ "13:11": {
+  "sn": "الرعد",
+  "sr": "Ar-Ra'd",
+  "t": "لَهُ مُعَقِّبَاتٌ مِنْ بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِ يَحْفَظُونَهُ مِنْ أَمْرِ اللَّهِ إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّى يُغَيِّرُوا مَا بِأَنْفُسِهِمْ وَإِذَا أَرَادَ اللَّهُ بِقَوْمٍ سُوءًا فَلَا مَرَدَّ لَهُ وَمَا لَهُمْ مِنْ دُونِهِ مِنْ وَالٍ"
+ },
+ "24:61": {
+  "sn": "النور",
+  "sr": "An-Noor",
+  "t": "لَيْسَ عَلَى الْأَعْمَى حَرَجٌ وَلَا عَلَى الْأَعْرَجِ حَرَجٌ وَلَا عَلَى الْمَرِيضِ حَرَجٌ وَلَا عَلَى أَنْفُسِكُمْ أَنْ تَأْكُلُوا مِنْ بُيُوتِكُمْ أَوْ بُيُوتِ آبَائِكُمْ أَوْ بُيُوتِ أُمَّهَاتِكُمْ أَوْ بُيُوتِ إِخْوَانِكُمْ أَوْ بُيُوتِ أَخَوَاتِكُمْ أَوْ بُيُوتِ أَعْمَامِكُمْ أَوْ بُيُوتِ عَمَّاتِكُمْ أَوْ بُيُوتِ أَخْوَالِكُمْ أَوْ بُيُوتِ خَالَاتِكُمْ أَوْ مَا مَلَكْتُمْ مَفَاتِحَهُ أَوْ صَدِيقِكُمْ لَيْسَ عَلَيْكُمْ جُنَاحٌ أَنْ تَأْكُلُوا جَمِيعًا أَوْ أَشْتَاتًا فَإِذَا دَخَلْتُمْ بُيُوتًا فَسَلِّمُوا عَلَى أَنْفُسِكُمْ تَحِيَّةً مِنْ عِنْدِ اللَّهِ مُبَارَكَةً طَيِّبَةً كَذَلِكَ يُبَيِّنُ اللَّهُ لَكُمُ الْآيَاتِ لَعَلَّكُمْ تَعْقِلُونَ"
+ },
+ "4:36": {
+  "sn": "النساء",
+  "sr": "An-Nisa",
+  "t": "وَاعْبُدُوا اللَّهَ وَلَا تُشْرِكُوا بِهِ شَيْئًا وَبِالْوَالِدَيْنِ إِحْسَانًا وَبِذِي الْقُرْبَى وَالْيَتَامَى وَالْمَسَاكِينِ وَالْجَارِ ذِي الْقُرْبَى وَالْجَارِ الْجُنُبِ وَالصَّاحِبِ بِالْجَنْبِ وَابْنِ السَّبِيلِ وَمَا مَلَكَتْ أَيْمَانُكُمْ إِنَّ اللَّهَ لَا يُحِبُّ مَنْ كَانَ مُخْتَالًا فَخُورًا"
+ },
+ "51:24": {
+  "sn": "الذاريات",
+  "sr": "Adh-Dhariyat",
+  "t": "هَلْ أَتَاكَ حَدِيثُ ضَيْفِ إِبْرَاهِيمَ الْمُكْرَمِينَ"
+ },
+ "11:89": {
+  "sn": "هود",
+  "sr": "Hud",
+  "t": "وَيَاقَوْمِ لَا يَجْرِمَنَّكُمْ شِقَاقِي أَنْ يُصِيبَكُمْ مِثْلُ مَا أَصَابَ قَوْمَ نُوحٍ أَوْ قَوْمَ هُودٍ أَوْ قَوْمَ صَالِحٍ وَمَا قَوْمُ لُوطٍ مِنْكُمْ بِبَعِيدٍ"
+ },
+ "11:72": {
+  "sn": "هود",
+  "sr": "Hud",
+  "t": "قَالَتْ يَاوَيْلَتَا أَأَلِدُ وَأَنَا عَجُوزٌ وَهَذَا بَعْلِي شَيْخًا إِنَّ هَذَا لَشَيْءٌ عَجِيبٌ"
+ },
+ "21:60": {
+  "sn": "الأنبياء",
+  "sr": "Al-Anbiya",
+  "t": "قَالُوا سَمِعْنَا فَتًى يَذْكُرُهُمْ يُقَالُ لَهُ إِبْرَاهِيمُ"
+ },
+ "4:69": {
+  "sn": "النساء",
+  "sr": "An-Nisa",
+  "t": "وَمَنْ يُطِعِ اللَّهَ وَالرَّسُولَ فَأُولَئِكَ مَعَ الَّذِينَ أَنْعَمَ اللَّهُ عَلَيْهِمْ مِنَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ وَحَسُنَ أُولَئِكَ رَفِيقًا"
+ },
+ "16:4": {
+  "sn": "النحل",
+  "sr": "An-Nahl",
+  "t": "خَلَقَ الْإِنْسَانَ مِنْ نُطْفَةٍ فَإِذَا هُوَ خَصِيمٌ مُبِينٌ"
+ },
+ "26:107": {
+  "sn": "الشعراء",
+  "sr": "Ash-Shu'ara",
+  "t": "إِنِّي لَكُمْ رَسُولٌ أَمِينٌ"
+ },
+ "26:176": {
+  "sn": "الشعراء",
+  "sr": "Ash-Shu'ara",
+  "t": "كَذَّبَ أَصْحَابُ الْأَيْكَةِ الْمُرْسَلِينَ"
+ },
+ "2:102": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "وَاتَّبَعُوا مَا تَتْلُو الشَّيَاطِينُ عَلَى مُلْكِ سُلَيْمَانَ وَمَا كَفَرَ سُلَيْمَانُ وَلَكِنَّ الشَّيَاطِينَ كَفَرُوا يُعَلِّمُونَ النَّاسَ السِّحْرَ وَمَا أُنْزِلَ عَلَى الْمَلَكَيْنِ بِبَابِلَ هَارُوتَ وَمَارُوتَ وَمَا يُعَلِّمَانِ مِنْ أَحَدٍ حَتَّى يَقُولَا إِنَّمَا نَحْنُ فِتْنَةٌ فَلَا تَكْفُرْ فَيَتَعَلَّمُونَ مِنْهُمَا مَا يُفَرِّقُونَ بِهِ بَيْنَ الْمَرْءِ وَزَوْجِهِ وَمَا هُمْ بِضَارِّينَ بِهِ مِنْ أَحَدٍ إِلَّا بِإِذْنِ اللَّهِ وَيَتَعَلَّمُونَ مَا يَضُرُّهُمْ وَلَا يَنْفَعُهُمْ وَلَقَدْ عَلِمُوا لَمَنِ اشْتَرَاهُ مَا لَهُ فِي الْآخِرَةِ مِنْ خَلَاقٍ وَلَبِئْسَ مَا شَرَوْا بِهِ أَنْفُسَهُمْ لَوْ كَانُوا يَعْلَمُونَ"
+ },
+ "3:123": {
+  "sn": "آل عمران",
+  "sr": "Aal-e-Imran",
+  "t": "وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ وَأَنْتُمْ أَذِلَّةٌ فَاتَّقُوا اللَّهَ لَعَلَّكُمْ تَشْكُرُونَ"
+ },
+ "9:25": {
+  "sn": "التوبة",
+  "sr": "At-Tawbah",
+  "t": "لَقَدْ نَصَرَكُمُ اللَّهُ فِي مَوَاطِنَ كَثِيرَةٍ وَيَوْمَ حُنَيْنٍ إِذْ أَعْجَبَتْكُمْ كَثْرَتُكُمْ فَلَمْ تُغْنِ عَنْكُمْ شَيْئًا وَضَاقَتْ عَلَيْكُمُ الْأَرْضُ بِمَا رَحُبَتْ ثُمَّ وَلَّيْتُمْ مُدْبِرِينَ"
+ },
+ "23:20": {
+  "sn": "المؤمنون",
+  "sr": "Al-Mu'minun",
+  "t": "وَشَجَرَةً تَخْرُجُ مِنْ طُورِ سَيْنَاءَ تَنْبُتُ بِالدُّهْنِ وَصِبْغٍ لِلْآكِلِينَ"
+ },
+ "18:9": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "أَمْ حَسِبْتَ أَنَّ أَصْحَابَ الْكَهْفِ وَالرَّقِيمِ كَانُوا مِنْ آيَاتِنَا عَجَبًا"
+ },
+ "9:109": {
+  "sn": "التوبة",
+  "sr": "At-Tawbah",
+  "t": "أَفَمَنْ أَسَّسَ بُنْيَانَهُ عَلَى تَقْوَى مِنَ اللَّهِ وَرِضْوَانٍ خَيْرٌ أَمْ مَنْ أَسَّسَ بُنْيَانَهُ عَلَى شَفَا جُرُفٍ هَارٍ فَانْهَارَ بِهِ فِي نَارِ جَهَنَّمَ وَاللَّهُ لَا يَهْدِي الْقَوْمَ الظَّالِمِينَ"
+ },
+ "10:23": {
+  "sn": "يونس",
+  "sr": "Yunus",
+  "t": "فَلَمَّا أَنْجَاهُمْ إِذَا هُمْ يَبْغُونَ فِي الْأَرْضِ بِغَيْرِ الْحَقِّ يَاأَيُّهَا النَّاسُ إِنَّمَا بَغْيُكُمْ عَلَى أَنْفُسِكُمْ مَتَاعَ الْحَيَاةِ الدُّنْيَا ثُمَّ إِلَيْنَا مَرْجِعُكُمْ فَنُنَبِّئُكُمْ بِمَا كُنْتُمْ تَعْمَلُونَ"
+ },
+ "18:50": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "وَإِذْ قُلْنَا لِلْمَلَائِكَةِ اسْجُدُوا لِآدَمَ فَسَجَدُوا إِلَّا إِبْلِيسَ كَانَ مِنَ الْجِنِّ فَفَسَقَ عَنْ أَمْرِ رَبِّهِ أَفَتَتَّخِذُونَهُ وَذُرِّيَّتَهُ أَوْلِيَاءَ مِنْ دُونِي وَهُمْ لَكُمْ عَدُوٌّ بِئْسَ لِلظَّالِمِينَ بَدَلًا"
+ },
+ "83:29": {
+  "sn": "المطففين",
+  "sr": "Al-Mutaffifin",
+  "t": "إِنَّ الَّذِينَ أَجْرَمُوا كَانُوا مِنَ الَّذِينَ آمَنُوا يَضْحَكُونَ"
+ },
+ "16:34": {
+  "sn": "النحل",
+  "sr": "An-Nahl",
+  "t": "فَأَصَابَهُمْ سَيِّئَاتُ مَا عَمِلُوا وَحَاقَ بِهِمْ مَا كَانُوا بِهِ يَسْتَهْزِئُونَ"
+ },
+ "4:80": {
+  "sn": "النساء",
+  "sr": "An-Nisa",
+  "t": "مَنْ يُطِعِ الرَّسُولَ فَقَدْ أَطَاعَ اللَّهَ وَمَنْ تَوَلَّى فَمَا أَرْسَلْنَاكَ عَلَيْهِمْ حَفِيظًا"
+ },
+ "24:63": {
+  "sn": "النور",
+  "sr": "An-Noor",
+  "t": "لَا تَجْعَلُوا دُعَاءَ الرَّسُولِ بَيْنَكُمْ كَدُعَاءِ بَعْضِكُمْ بَعْضًا قَدْ يَعْلَمُ اللَّهُ الَّذِينَ يَتَسَلَّلُونَ مِنْكُمْ لِوَاذًا فَلْيَحْذَرِ الَّذِينَ يُخَالِفُونَ عَنْ أَمْرِهِ أَنْ تُصِيبَهُمْ فِتْنَةٌ أَوْ يُصِيبَهُمْ عَذَابٌ أَلِيمٌ"
+ },
+ "18:31": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "أُولَئِكَ لَهُمْ جَنَّاتُ عَدْنٍ تَجْرِي مِنْ تَحْتِهِمُ الْأَنْهَارُ يُحَلَّوْنَ فِيهَا مِنْ أَسَاوِرَ مِنْ ذَهَبٍ وَيَلْبَسُونَ ثِيَابًا خُضْرًا مِنْ سُنْدُسٍ وَإِسْتَبْرَقٍ مُتَّكِئِينَ فِيهَا عَلَى الْأَرَائِكِ نِعْمَ الثَّوَابُ وَحَسُنَتْ مُرْتَفَقًا"
+ },
+ "4:95": {
+  "sn": "النساء",
+  "sr": "An-Nisa",
+  "t": "لَا يَسْتَوِي الْقَاعِدُونَ مِنَ الْمُؤْمِنِينَ غَيْرُ أُولِي الضَّرَرِ وَالْمُجَاهِدُونَ فِي سَبِيلِ اللَّهِ بِأَمْوَالِهِمْ وَأَنْفُسِهِمْ فَضَّلَ اللَّهُ الْمُجَاهِدِينَ بِأَمْوَالِهِمْ وَأَنْفُسِهِمْ عَلَى الْقَاعِدِينَ دَرَجَةً وَكُلًّا وَعَدَ اللَّهُ الْحُسْنَى وَفَضَّلَ اللَّهُ الْمُجَاهِدِينَ عَلَى الْقَاعِدِينَ أَجْرًا عَظِيمًا"
+ },
+ "19:22": {
+  "sn": "مريم",
+  "sr": "Maryam",
+  "t": "فَحَمَلَتْهُ فَانْتَبَذَتْ بِهِ مَكَانًا قَصِيًّا"
+ },
+ "3:36": {
+  "sn": "آل عمران",
+  "sr": "Aal-e-Imran",
+  "t": "فَلَمَّا وَضَعَتْهَا قَالَتْ رَبِّ إِنِّي وَضَعْتُهَا أُنْثَى وَاللَّهُ أَعْلَمُ بِمَا وَضَعَتْ وَلَيْسَ الذَّكَرُ كَالْأُنْثَى وَإِنِّي سَمَّيْتُهَا مَرْيَمَ وَإِنِّي أُعِيذُهَا بِكَ وَذُرِّيَّتَهَا مِنَ الشَّيْطَانِ الرَّجِيمِ"
+ },
+ "76:21": {
+  "sn": "الإنسان",
+  "sr": "Al-Insan",
+  "t": "عَالِيَهُمْ ثِيَابُ سُنْدُسٍ خُضْرٌ وَإِسْتَبْرَقٌ وَحُلُّوا أَسَاوِرَ مِنْ فِضَّةٍ وَسَقَاهُمْ رَبُّهُمْ شَرَابًا طَهُورًا"
+ },
+ "18:19": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "وَكَذَلِكَ بَعَثْنَاهُمْ لِيَتَسَاءَلُوا بَيْنَهُمْ قَالَ قَائِلٌ مِنْهُمْ كَمْ لَبِثْتُمْ قَالُوا لَبِثْنَا يَوْمًا أَوْ بَعْضَ يَوْمٍ قَالُوا رَبُّكُمْ أَعْلَمُ بِمَا لَبِثْتُمْ فَابْعَثُوا أَحَدَكُمْ بِوَرِقِكُمْ هَذِهِ إِلَى الْمَدِينَةِ فَلْيَنْظُرْ أَيُّهَا أَزْكَى طَعَامًا فَلْيَأْتِكُمْ بِرِزْقٍ مِنْهُ وَلْيَتَلَطَّفْ وَلَا يُشْعِرَنَّ بِكُمْ أَحَدًا"
+ },
+ "17:109": {
+  "sn": "الإسراء",
+  "sr": "Al-Isra",
+  "t": "وَيَخِرُّونَ لِلْأَذْقَانِ يَبْكُونَ وَيَزِيدُهُمْ خُشُوعًا"
+ },
+ "17:79": {
+  "sn": "الإسراء",
+  "sr": "Al-Isra",
+  "t": "وَمِنَ اللَّيْلِ فَتَهَجَّدْ بِهِ نَافِلَةً لَكَ عَسَى أَنْ يَبْعَثَكَ رَبُّكَ مَقَامًا مَحْمُودًا"
+ },
+ "20:108": {
+  "sn": "طه",
+  "sr": "Ta-Ha",
+  "t": "يَوْمَئِذٍ يَتَّبِعُونَ الدَّاعِيَ لَا عِوَجَ لَهُ وَخَشَعَتِ الْأَصْوَاتُ لِلرَّحْمَنِ فَلَا تَسْمَعُ إِلَّا هَمْسًا"
+ },
+ "73:4": {
+  "sn": "المزمل",
+  "sr": "Al-Muzzammil",
+  "t": "أَوْ زِدْ عَلَيْهِ وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا"
+ },
+ "17:111": {
+  "sn": "الإسراء",
+  "sr": "Al-Isra",
+  "t": "وَقُلِ الْحَمْدُ لِلَّهِ الَّذِي لَمْ يَتَّخِذْ وَلَدًا وَلَمْ يَكُنْ لَهُ شَرِيكٌ فِي الْمُلْكِ وَلَمْ يَكُنْ لَهُ وَلِيٌّ مِنَ الذُّلِّ وَكَبِّرْهُ تَكْبِيرًا"
+ },
+ "6:63": {
+  "sn": "الأنعام",
+  "sr": "Al-An'am",
+  "t": "قُلْ مَنْ يُنَجِّيكُمْ مِنْ ظُلُمَاتِ الْبَرِّ وَالْبَحْرِ تَدْعُونَهُ تَضَرُّعًا وَخُفْيَةً لَئِنْ أَنْجَانَا مِنْ هَذِهِ لَنَكُونَنَّ مِنَ الشَّاكِرِينَ"
+ },
+ "25:54": {
+  "sn": "الفرقان",
+  "sr": "Al-Furqan",
+  "t": "وَهُوَ الَّذِي خَلَقَ مِنَ الْمَاءِ بَشَرًا فَجَعَلَهُ نَسَبًا وَصِهْرًا وَكَانَ رَبُّكَ قَدِيرًا"
+ },
+ "2:205": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "وَإِذَا تَوَلَّى سَعَى فِي الْأَرْضِ لِيُفْسِدَ فِيهَا وَيُهْلِكَ الْحَرْثَ وَالنَّسْلَ وَاللَّهُ لَا يُحِبُّ الْفَسَادَ"
+ },
+ "6:101": {
+  "sn": "الأنعام",
+  "sr": "Al-An'am",
+  "t": "بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ أَنَّى يَكُونُ لَهُ وَلَدٌ وَلَمْ تَكُنْ لَهُ صَاحِبَةٌ وَخَلَقَ كُلَّ شَيْءٍ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ"
+ },
+ "2:98": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "مَنْ كَانَ عَدُوًّا لِلَّهِ وَمَلَائِكَتِهِ وَرُسُلِهِ وَجِبْرِيلَ وَمِيكَالَ فَإِنَّ اللَّهَ عَدُوٌّ لِلْكَافِرِينَ"
+ },
+ "85:22": {
+  "sn": "البروج",
+  "sr": "Al-Buruj",
+  "t": "فِي لَوْحٍ مَحْفُوظٍ"
+ },
+ "52:24": {
+  "sn": "الطور",
+  "sr": "At-Tur",
+  "t": "وَيَطُوفُ عَلَيْهِمْ غِلْمَانٌ لَهُمْ كَأَنَّهُمْ لُؤْلُؤٌ مَكْنُونٌ"
+ },
+ "56:17": {
+  "sn": "الواقعة",
+  "sr": "Al-Waqi'ah",
+  "t": "يَطُوفُ عَلَيْهِمْ وِلْدَانٌ مُخَلَّدُونَ"
+ },
+ "19:56": {
+  "sn": "مريم",
+  "sr": "Maryam",
+  "t": "وَاذْكُرْ فِي الْكِتَابِ إِدْرِيسَ إِنَّهُ كَانَ صِدِّيقًا نَبِيًّا"
+ },
+ "37:123": {
+  "sn": "الصافات",
+  "sr": "As-Saffat",
+  "t": "وَإِنَّ إِلْيَاسَ لَمِنَ الْمُرْسَلِينَ"
+ },
+ "38:48": {
+  "sn": "ص",
+  "sr": "Saad",
+  "t": "وَاذْكُرْ إِسْمَاعِيلَ وَالْيَسَعَ وَذَا الْكِفْلِ وَكُلٌّ مِنَ الْأَخْيَارِ"
+ },
+ "9:30": {
+  "sn": "التوبة",
+  "sr": "At-Tawbah",
+  "t": "وَقَالَتِ الْيَهُودُ عُزَيْرٌ ابْنُ اللَّهِ وَقَالَتِ النَّصَارَى الْمَسِيحُ ابْنُ اللَّهِ ذَلِكَ قَوْلُهُمْ بِأَفْوَاهِهِمْ يُضَاهِئُونَ قَوْلَ الَّذِينَ كَفَرُوا مِنْ قَبْلُ قَاتَلَهُمُ اللَّهُ أَنَّى يُؤْفَكُونَ"
+ },
+ "2:251": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "فَهَزَمُوهُمْ بِإِذْنِ اللَّهِ وَقَتَلَ دَاوُودُ جَالُوتَ وَآتَاهُ اللَّهُ الْمُلْكَ وَالْحِكْمَةَ وَعَلَّمَهُ مِمَّا يَشَاءُ وَلَوْلَا دَفْعُ اللَّهِ النَّاسَ بَعْضَهُمْ بِبَعْضٍ لَفَسَدَتِ الْأَرْضُ وَلَكِنَّ اللَّهَ ذُو فَضْلٍ عَلَى الْعَالَمِينَ"
+ },
+ "61:6": {
+  "sn": "الصف",
+  "sr": "As-Saff",
+  "t": "وَإِذْ قَالَ عِيسَى ابْنُ مَرْيَمَ يَابَنِي إِسْرَائِيلَ إِنِّي رَسُولُ اللَّهِ إِلَيْكُمْ مُصَدِّقًا لِمَا بَيْنَ يَدَيَّ مِنَ التَّوْرَاةِ وَمُبَشِّرًا بِرَسُولٍ يَأْتِي مِنْ بَعْدِي اسْمُهُ أَحْمَدُ فَلَمَّا جَاءَهُمْ بِالْبَيِّنَاتِ قَالُوا هَذَا سِحْرٌ مُبِينٌ"
+ },
+ "21:96": {
+  "sn": "الأنبياء",
+  "sr": "Al-Anbiya",
+  "t": "حَتَّى إِذَا فُتِحَتْ يَأْجُوجُ وَمَأْجُوجُ وَهُمْ مِنْ كُلِّ حَدَبٍ يَنْسِلُونَ"
+ },
+ "53:10": {
+  "sn": "النجم",
+  "sr": "An-Najm",
+  "t": "فَأَوْحَى إِلَى عَبْدِهِ مَا أَوْحَى"
+ },
+ "57:17": {
+  "sn": "الحديد",
+  "sr": "Al-Hadid",
+  "t": "اعْلَمُوا أَنَّ اللَّهَ يُحْيِ الْأَرْضَ بَعْدَ مَوْتِهَا قَدْ بَيَّنَّا لَكُمُ الْآيَاتِ لَعَلَّكُمْ تَعْقِلُونَ"
+ },
+ "6:98": {
+  "sn": "الأنعام",
+  "sr": "Al-An'am",
+  "t": "وَهُوَ الَّذِي أَنْشَأَكُمْ مِنْ نَفْسٍ وَاحِدَةٍ فَمُسْتَقَرٌّ وَمُسْتَوْدَعٌ قَدْ فَصَّلْنَا الْآيَاتِ لِقَوْمٍ يَفْقَهُونَ"
+ },
+ "91:8": {
+  "sn": "الشمس",
+  "sr": "Ash-Shams",
+  "t": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا"
+ },
+ "72:28": {
+  "sn": "الجن",
+  "sr": "Al-Jinn",
+  "t": "لِيَعْلَمَ أَنْ قَدْ أَبْلَغُوا رِسَالَاتِ رَبِّهِمْ وَأَحَاطَ بِمَا لَدَيْهِمْ وَأَحْصَى كُلَّ شَيْءٍ عَدَدًا"
+ },
+ "88:21": {
+  "sn": "الغاشية",
+  "sr": "Al-Ghashiyah",
+  "t": "فَذَكِّرْ إِنَّمَا أَنْتَ مُذَكِّرٌ"
+ },
+ "94:8": {
+  "sn": "الشرح",
+  "sr": "Ash-Sharh",
+  "t": "وَإِلَى رَبِّكَ فَارْغَبْ"
+ },
+ "53:39": {
+  "sn": "النجم",
+  "sr": "An-Najm",
+  "t": "وَأَنْ لَيْسَ لِلْإِنْسَانِ إِلَّا مَا سَعَى"
+ },
+ "29:6": {
+  "sn": "العنكبوت",
+  "sr": "Al-Ankabut",
+  "t": "وَمَنْ جَاهَدَ فَإِنَّمَا يُجَاهِدُ لِنَفْسِهِ إِنَّ اللَّهَ لَغَنِيٌّ عَنِ الْعَالَمِينَ"
+ },
+ "3:133": {
+  "sn": "آل عمران",
+  "sr": "Ali 'Imran",
+  "t": "وَسَارِعُوا إِلَى مَغْفِرَةٍ مِنْ رَبِّكُمْ وَجَنَّةٍ عَرْضُهَا السَّمَاوَاتُ وَالْأَرْضُ أُعِدَّتْ لِلْمُتَّقِينَ"
+ },
+ "42:38": {
+  "sn": "الشورى",
+  "sr": "Ash-Shura",
+  "t": "وَالَّذِينَ اسْتَجَابُوا لِرَبِّهِمْ وَأَقَامُوا الصَّلَاةَ وَأَمْرُهُمْ شُورَى بَيْنَهُمْ وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَ"
+ },
+ "5:2": {
+  "sn": "المائدة",
+  "sr": "Al-Ma'idah",
+  "t": "يَاأَيُّهَا الَّذِينَ آمَنُوا لَا تُحِلُّوا شَعَائِرَ اللَّهِ وَلَا الشَّهْرَ الْحَرَامَ وَلَا الْهَدْيَ وَلَا الْقَلَائِدَ وَلَا آمِّينَ الْبَيْتَ الْحَرَامَ يَبْتَغُونَ فَضْلًا مِنْ رَبِّهِمْ وَرِضْوَانًا وَإِذَا حَلَلْتُمْ فَاصْطَادُوا وَلَا يَجْرِمَنَّكُمْ شَنَآنُ قَوْمٍ أَنْ صَدُّوكُمْ عَنِ الْمَسْجِدِ الْحَرَامِ أَنْ تَعْتَدُوا وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ وَاتَّقُوا اللَّهَ إِنَّ اللَّهَ شَدِيدُ الْعِقَابِ"
+ },
+ "46:13": {
+  "sn": "الأحقاف",
+  "sr": "Al-Ahqaf",
+  "t": "إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+ },
+ "4:48": {
+  "sn": "النساء",
+  "sr": "An-Nisa",
+  "t": "إِنَّ اللَّهَ لَا يَغْفِرُ أَنْ يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذَلِكَ لِمَنْ يَشَاءُ وَمَنْ يُشْرِكْ بِاللَّهِ فَقَدِ افْتَرَى إِثْمًا عَظِيمًا"
+ },
+ "41:40": {
+  "sn": "فصلت",
+  "sr": "Fussilat",
+  "t": "إِنَّ الَّذِينَ يُلْحِدُونَ فِي آيَاتِنَا لَا يَخْفَوْنَ عَلَيْنَا أَفَمَنْ يُلْقَى فِي النَّارِ خَيْرٌ أَمْ مَنْ يَأْتِي آمِنًا يَوْمَ الْقِيَامَةِ اعْمَلُوا مَا شِئْتُمْ إِنَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ"
+ },
+ "3:161": {
+  "sn": "آل عمران",
+  "sr": "Ali 'Imran",
+  "t": "وَمَا كَانَ لِنَبِيٍّ أَنْ يَغُلَّ وَمَنْ يَغْلُلْ يَأْتِ بِمَا غَلَّ يَوْمَ الْقِيَامَةِ ثُمَّ تُوَفَّى كُلُّ نَفْسٍ مَا كَسَبَتْ وَهُمْ لَا يُظْلَمُونَ"
+ },
+ "5:38": {
+  "sn": "المائدة",
+  "sr": "Al-Ma'idah",
+  "t": "وَالسَّارِقُ وَالسَّارِقَةُ فَاقْطَعُوا أَيْدِيَهُمَا جَزَاءً بِمَا كَسَبَا نَكَالًا مِنَ اللَّهِ وَاللَّهُ عَزِيزٌ حَكِيمٌ"
+ },
+ "17:32": {
+  "sn": "الإسراء",
+  "sr": "Al-Isra",
+  "t": "وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا"
+ },
+ "34:48": {
+  "sn": "سبأ",
+  "sr": "Saba",
+  "t": "قُلْ إِنَّ رَبِّي يَقْذِفُ بِالْحَقِّ عَلَّامُ الْغُيُوبِ"
+ },
+ "49:12": {
+  "sn": "الحجرات",
+  "sr": "Al-Hujurat",
+  "t": "يَاأَيُّهَا الَّذِينَ آمَنُوا اجْتَنِبُوا كَثِيرًا مِنَ الظَّنِّ إِنَّ بَعْضَ الظَّنِّ إِثْمٌ وَلَا تَجَسَّسُوا وَلَا يَغْتَبْ بَعْضُكُمْ بَعْضًا أَيُحِبُّ أَحَدُكُمْ أَنْ يَأْكُلَ لَحْمَ أَخِيهِ مَيْتًا فَكَرِهْتُمُوهُ وَاتَّقُوا اللَّهَ إِنَّ اللَّهَ تَوَّابٌ رَحِيمٌ"
+ },
+ "21:41": {
+  "sn": "الأنبياء",
+  "sr": "Al-Anbiya",
+  "t": "وَلَقَدِ اسْتُهْزِئَ بِرُسُلٍ مِنْ قَبْلِكَ فَحَاقَ بِالَّذِينَ سَخِرُوا مِنْهُمْ مَا كَانُوا بِهِ يَسْتَهْزِئُونَ"
+ },
+ "54:46": {
+  "sn": "القمر",
+  "sr": "Al-Qamar",
+  "t": "بَلِ السَّاعَةُ مَوْعِدُهُمْ وَالسَّاعَةُ أَدْهَى وَأَمَرُّ"
+ },
+ "79:14": {
+  "sn": "النازعات",
+  "sr": "An-Nazi'at",
+  "t": "فَإِذَا هُمْ بِالسَّاهِرَةِ"
+ },
+ "79:34": {
+  "sn": "النازعات",
+  "sr": "An-Nazi'at",
+  "t": "فَإِذَا جَاءَتِ الطَّامَّةُ الْكُبْرَى"
+ },
+ "80:33": {
+  "sn": "عبس",
+  "sr": "Abasa",
+  "t": "فَإِذَا جَاءَتِ الصَّاخَّةُ"
+ },
+ "101:1": {
+  "sn": "القارعة",
+  "sr": "Al-Qari'ah",
+  "t": "الْقَارِعَةُ"
+ },
+ "69:1": {
+  "sn": "الحاقة",
+  "sr": "Al-Haqqah",
+  "t": "الْحَاقَّةُ"
+ },
+ "88:1": {
+  "sn": "الغاشية",
+  "sr": "Al-Ghashiyah",
+  "t": "هَلْ أَتَاكَ حَدِيثُ الْغَاشِيَةِ"
+ },
+ "56:1": {
+  "sn": "الواقعة",
+  "sr": "Al-Waqi'ah",
+  "t": "إِذَا وَقَعَتِ الْوَاقِعَةُ"
+ },
+ "22:1": {
+  "sn": "الحج",
+  "sr": "Al-Hajj",
+  "t": "يَاأَيُّهَا النَّاسُ اتَّقُوا رَبَّكُمْ إِنَّ زَلْزَلَةَ السَّاعَةِ شَيْءٌ عَظِيمٌ"
+ },
+ "48:17": {
+  "sn": "الفتح",
+  "sr": "Al-Fath",
+  "t": "لَيْسَ عَلَى الْأَعْمَى حَرَجٌ وَلَا عَلَى الْأَعْرَجِ حَرَجٌ وَلَا عَلَى الْمَرِيضِ حَرَجٌ وَمَنْ يُطِعِ اللَّهَ وَرَسُولَهُ يُدْخِلْهُ جَنَّاتٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ وَمَنْ يَتَوَلَّ يُعَذِّبْهُ عَذَابًا أَلِيمًا"
+ },
+ "47:23": {
+  "sn": "محمد",
+  "sr": "Muhammad",
+  "t": "أُولَئِكَ الَّذِينَ لَعَنَهُمُ اللَّهُ فَأَصَمَّهُمْ وَأَعْمَى أَبْصَارَهُمْ"
+ },
+ "2:18": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "صُمٌّ بُكْمٌ عُمْيٌ فَهُمْ لَا يَرْجِعُونَ"
+ },
+ "23:14": {
+  "sn": "المؤمنون",
+  "sr": "Al-Mu'minun",
+  "t": "ثُمَّ خَلَقْنَا النُّطْفَةَ عَلَقَةً فَخَلَقْنَا الْعَلَقَةَ مُضْغَةً فَخَلَقْنَا الْمُضْغَةَ عِظَامًا فَكَسَوْنَا الْعِظَامَ لَحْمًا ثُمَّ أَنْشَأْنَاهُ خَلْقًا آخَرَ فَتَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ"
+ },
+ "55:35": {
+  "sn": "الرحمن",
+  "sr": "Ar-Rahman",
+  "t": "يُرْسَلُ عَلَيْكُمَا شُوَاظٌ مِنْ نَارٍ وَنُحَاسٌ فَلَا تَنْتَصِرَانِ"
+ },
+ "35:13": {
+  "sn": "فاطر",
+  "sr": "Fatir",
+  "t": "يُولِجُ اللَّيْلَ فِي النَّهَارِ وَيُولِجُ النَّهَارَ فِي اللَّيْلِ وَسَخَّرَ الشَّمْسَ وَالْقَمَرَ كُلٌّ يَجْرِي لِأَجَلٍ مُسَمًّى ذَلِكُمُ اللَّهُ رَبُّكُمْ لَهُ الْمُلْكُ وَالَّذِينَ تَدْعُونَ مِنْ دُونِهِ مَا يَمْلِكُونَ مِنْ قِطْمِيرٍ"
+ },
+ "2:69": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "قَالُوا ادْعُ لَنَا رَبَّكَ يُبَيِّنْ لَنَا مَا لَوْنُهَا قَالَ إِنَّهُ يَقُولُ إِنَّهَا بَقَرَةٌ صَفْرَاءُ فَاقِعٌ لَوْنُهَا تَسُرُّ النَّاظِرِينَ"
+ },
+ "15:26": {
+  "sn": "الحجر",
+  "sr": "Al-Hijr",
+  "t": "وَلَقَدْ خَلَقْنَا الْإِنْسَانَ مِنْ صَلْصَالٍ مِنْ حَمَإٍ مَسْنُونٍ"
+ },
+ "63:4": {
+  "sn": "المنافقون",
+  "sr": "Al-Munafiqun",
+  "t": "وَإِذَا رَأَيْتَهُمْ تُعْجِبُكَ أَجْسَامُهُمْ وَإِنْ يَقُولُوا تَسْمَعْ لِقَوْلِهِمْ كَأَنَّهُمْ خُشُبٌ مُسَنَّدَةٌ يَحْسَبُونَ كُلَّ صَيْحَةٍ عَلَيْهِمْ هُمُ الْعَدُوُّ فَاحْذَرْهُمْ قَاتَلَهُمُ اللَّهُ أَنَّى يُؤْفَكُونَ"
+ },
+ "111:4": {
+  "sn": "المسد",
+  "sr": "Al-Masad",
+  "t": "وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ"
+ },
+ "36:43": {
+  "sn": "يس",
+  "sr": "Ya-Sin",
+  "t": "وَإِنْ نَشَأْ نُغْرِقْهُمْ فَلَا صَرِيخَ لَهُمْ وَلَا هُمْ يُنْقَذُونَ"
+ },
+ "11:32": {
+  "sn": "هود",
+  "sr": "Hud",
+  "t": "قَالُوا يَانُوحُ قَدْ جَادَلْتَنَا فَأَكْثَرْتَ جِدَالَنَا فَأْتِنَا بِمَا تَعِدُنَا إِنْ كُنْتَ مِنَ الصَّادِقِينَ"
+ },
+ "3:66": {
+  "sn": "آل عمران",
+  "sr": "Ali 'Imran",
+  "t": "هَاأَنْتُمْ هَؤُلَاءِ حَاجَجْتُمْ فِيمَا لَكُمْ بِهِ عِلْمٌ فَلِمَ تُحَاجُّونَ فِيمَا لَيْسَ لَكُمْ بِهِ عِلْمٌ وَاللَّهُ يَعْلَمُ وَأَنْتُمْ لَا تَعْلَمُونَ"
+ },
+ "6:108": {
+  "sn": "الأنعام",
+  "sr": "Al-An'am",
+  "t": "وَلَا تَسُبُّوا الَّذِينَ يَدْعُونَ مِنْ دُونِ اللَّهِ فَيَسُبُّوا اللَّهَ عَدْوًا بِغَيْرِ عِلْمٍ كَذَلِكَ زَيَّنَّا لِكُلِّ أُمَّةٍ عَمَلَهُمْ ثُمَّ إِلَى رَبِّهِمْ مَرْجِعُهُمْ فَيُنَبِّئُهُمْ بِمَا كَانُوا يَعْمَلُونَ"
+ },
+ "4:52": {
+  "sn": "النساء",
+  "sr": "An-Nisa",
+  "t": "أُولَئِكَ الَّذِينَ لَعَنَهُمُ اللَّهُ وَمَنْ يَلْعَنِ اللَّهُ فَلَنْ تَجِدَ لَهُ نَصِيرًا"
+ },
+ "9:56": {
+  "sn": "التوبة",
+  "sr": "At-Tawbah",
+  "t": "وَيَحْلِفُونَ بِاللَّهِ إِنَّهُمْ لَمِنْكُمْ وَمَا هُمْ مِنْكُمْ وَلَكِنَّهُمْ قَوْمٌ يَفْرَقُونَ"
+ },
+ "28:18": {
+  "sn": "القصص",
+  "sr": "Al-Qasas",
+  "t": "فَأَصْبَحَ فِي الْمَدِينَةِ خَائِفًا يَتَرَقَّبُ فَإِذَا الَّذِي اسْتَنْصَرَهُ بِالْأَمْسِ يَسْتَصْرِخُهُ قَالَ لَهُ مُوسَى إِنَّكَ لَغَوِيٌّ مُبِينٌ"
+ },
+ "58:12": {
+  "sn": "المجادلة",
+  "sr": "Al-Mujadila",
+  "t": "يَاأَيُّهَا الَّذِينَ آمَنُوا إِذَا نَاجَيْتُمُ الرَّسُولَ فَقَدِّمُوا بَيْنَ يَدَيْ نَجْوَاكُمْ صَدَقَةً ذَلِكَ خَيْرٌ لَكُمْ وَأَطْهَرُ فَإِنْ لَمْ تَجِدُوا فَإِنَّ اللَّهَ غَفُورٌ رَحِيمٌ"
+ },
+ "6:79": {
+  "sn": "الأنعام",
+  "sr": "Al-An'am",
+  "t": "إِنِّي وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ"
+ },
+ "29:19": {
+  "sn": "العنكبوت",
+  "sr": "Al-Ankabut",
+  "t": "أَوَلَمْ يَرَوْا كَيْفَ يُبْدِئُ اللَّهُ الْخَلْقَ ثُمَّ يُعِيدُهُ إِنَّ ذَلِكَ عَلَى اللَّهِ يَسِيرٌ"
+ },
+ "23:79": {
+  "sn": "المؤمنون",
+  "sr": "Al-Mu'minun",
+  "t": "وَهُوَ الَّذِي ذَرَأَكُمْ فِي الْأَرْضِ وَإِلَيْهِ تُحْشَرُونَ"
+ },
+ "42:29": {
+  "sn": "الشورى",
+  "sr": "Ash-Shura",
+  "t": "وَمِنْ آيَاتِهِ خَلْقُ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَثَّ فِيهِمَا مِنْ دَابَّةٍ وَهُوَ عَلَى جَمْعِهِمْ إِذَا يَشَاءُ قَدِيرٌ"
+ },
+ "80:27": {
+  "sn": "عبس",
+  "sr": "Abasa",
+  "t": "فَأَنْبَتْنَا فِيهَا حَبًّا"
+ },
+ "12:58": {
+  "sn": "يوسف",
+  "sr": "Yusuf",
+  "t": "وَجَاءَ إِخْوَةُ يُوسُفَ فَدَخَلُوا عَلَيْهِ فَعَرَفَهُمْ وَهُمْ لَهُ مُنْكِرُونَ"
+ },
+ "47:24": {
+  "sn": "محمد",
+  "sr": "Muhammad",
+  "t": "أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ أَمْ عَلَى قُلُوبٍ أَقْفَالُهَا"
+ },
+ "69:3": {
+  "sn": "الحاقة",
+  "sr": "Al-Haqqah",
+  "t": "وَمَا أَدْرَاكَ مَا الْحَاقَّةُ"
+ },
+ "64:7": {
+  "sn": "التغابن",
+  "sr": "At-Taghabun",
+  "t": "زَعَمَ الَّذِينَ كَفَرُوا أَنْ لَنْ يُبْعَثُوا قُلْ بَلَى وَرَبِّي لَتُبْعَثُنَّ ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ وَذَلِكَ عَلَى اللَّهِ يَسِيرٌ"
+ },
+ "12:2": {
+  "sn": "يوسف",
+  "sr": "Yusuf",
+  "t": "إِنَّا أَنْزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَعَلَّكُمْ تَعْقِلُونَ"
+ },
+ "2:9": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "يُخَادِعُونَ اللَّهَ وَالَّذِينَ آمَنُوا وَمَا يَخْدَعُونَ إِلَّا أَنْفُسَهُمْ وَمَا يَشْعُرُونَ"
+ },
+ "3:52": {
+  "sn": "آل عمران",
+  "sr": "Ali 'Imran",
+  "t": "فَلَمَّا أَحَسَّ عِيسَى مِنْهُمُ الْكُفْرَ قَالَ مَنْ أَنْصَارِي إِلَى اللَّهِ قَالَ الْحَوَارِيُّونَ نَحْنُ أَنْصَارُ اللَّهِ آمَنَّا بِاللَّهِ وَاشْهَدْ بِأَنَّا مُسْلِمُونَ"
+ },
+ "107:7": {
+  "sn": "الماعون",
+  "sr": "Al-Ma'un",
+  "t": "وَيَمْنَعُونَ الْمَاعُونَ"
+ },
+ "92:8": {
+  "sn": "الليل",
+  "sr": "Al-Layl",
+  "t": "وَأَمَّا مَنْ بَخِلَ وَاسْتَغْنَى"
+ },
+ "2:245": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "مَنْ ذَا الَّذِي يُقْرِضُ اللَّهَ قَرْضًا حَسَنًا فَيُضَاعِفَهُ لَهُ أَضْعَافًا كَثِيرَةً وَاللَّهُ يَقْبِضُ وَيَبْسُطُ وَإِلَيْهِ تُرْجَعُونَ"
+ },
+ "14:39": {
+  "sn": "إبراهيم",
+  "sr": "Ibrahim",
+  "t": "الْحَمْدُ لِلَّهِ الَّذِي وَهَبَ لِي عَلَى الْكِبَرِ إِسْمَاعِيلَ وَإِسْحَاقَ إِنَّ رَبِّي لَسَمِيعُ الدُّعَاءِ"
+ },
+ "8:69": {
+  "sn": "الأنفال",
+  "sr": "Al-Anfal",
+  "t": "فَكُلُوا مِمَّا غَنِمْتُمْ حَلَالًا طَيِّبًا وَاتَّقُوا اللَّهَ إِنَّ اللَّهَ غَفُورٌ رَحِيمٌ"
+ },
+ "2:16": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "أُولَئِكَ الَّذِينَ اشْتَرَوُا الضَّلَالَةَ بِالْهُدَى فَمَا رَبِحَتْ تِجَارَتُهُمْ وَمَا كَانُوا مُهْتَدِينَ"
+ },
+ "2:116": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "وَقَالُوا اتَّخَذَ اللَّهُ وَلَدًا سُبْحَانَهُ بَلْ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ كُلٌّ لَهُ قَانِتُونَ"
+ },
+ "18:82": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "وَأَمَّا الْجِدَارُ فَكَانَ لِغُلَامَيْنِ يَتِيمَيْنِ فِي الْمَدِينَةِ وَكَانَ تَحْتَهُ كَنْزٌ لَهُمَا وَكَانَ أَبُوهُمَا صَالِحًا فَأَرَادَ رَبُّكَ أَنْ يَبْلُغَا أَشُدَّهُمَا وَيَسْتَخْرِجَا كَنْزَهُمَا رَحْمَةً مِنْ رَبِّكَ وَمَا فَعَلْتُهُ عَنْ أَمْرِي ذَلِكَ تَأْوِيلُ مَا لَمْ تَسْطِعْ عَلَيْهِ صَبْرًا"
+ },
+ "28:79": {
+  "sn": "القصص",
+  "sr": "Al-Qasas",
+  "t": "فَخَرَجَ عَلَى قَوْمِهِ فِي زِينَتِهِ قَالَ الَّذِينَ يُرِيدُونَ الْحَيَاةَ الدُّنْيَا يَالَيْتَ لَنَا مِثْلَ مَا أُوتِيَ قَارُونُ إِنَّهُ لَذُو حَظٍّ عَظِيمٍ"
+ },
+ "18:46": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "الْمَالُ وَالْبَنُونَ زِينَةُ الْحَيَاةِ الدُّنْيَا وَالْبَاقِيَاتُ الصَّالِحَاتُ خَيْرٌ عِنْدَ رَبِّكَ ثَوَابًا وَخَيْرٌ أَمَلًا"
+ },
+ "11:73": {
+  "sn": "هود",
+  "sr": "Hud",
+  "t": "قَالُوا أَتَعْجَبِينَ مِنْ أَمْرِ اللَّهِ رَحْمَتُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ الْبَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ"
+ },
+ "65:7": {
+  "sn": "الطلاق",
+  "sr": "At-Talaq",
+  "t": "لِيُنْفِقْ ذُو سَعَةٍ مِنْ سَعَتِهِ وَمَنْ قُدِرَ عَلَيْهِ رِزْقُهُ فَلْيُنْفِقْ مِمَّا آتَاهُ اللَّهُ لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا مَا آتَاهَا سَيَجْعَلُ اللَّهُ بَعْدَ عُسْرٍ يُسْرًا"
+ },
+ "24:37": {
+  "sn": "النور",
+  "sr": "An-Nur",
+  "t": "رِجَالٌ لَا تُلْهِيهِمْ تِجَارَةٌ وَلَا بَيْعٌ عَنْ ذِكْرِ اللَّهِ وَإِقَامِ الصَّلَاةِ وَإِيتَاءِ الزَّكَاةِ يَخَافُونَ يَوْمًا تَتَقَلَّبُ فِيهِ الْقُلُوبُ وَالْأَبْصَارُ"
+ },
+ "5:90": {
+  "sn": "المائدة",
+  "sr": "Al-Maidah",
+  "t": "يَاأَيُّهَا الَّذِينَ آمَنُوا إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ وَالْأَنْصَابُ وَالْأَزْلَامُ رِجْسٌ مِنْ عَمَلِ الشَّيْطَانِ فَاجْتَنِبُوهُ لَعَلَّكُمْ تُفْلِحُونَ"
+ },
+ "3:75": {
+  "sn": "آل عمران",
+  "sr": "Aal-e-Imran",
+  "t": "وَمِنْ أَهْلِ الْكِتَابِ مَنْ إِنْ تَأْمَنْهُ بِقِنْطَارٍ يُؤَدِّهِ إِلَيْكَ وَمِنْهُمْ مَنْ إِنْ تَأْمَنْهُ بِدِينَارٍ لَا يُؤَدِّهِ إِلَيْكَ إِلَّا مَا دُمْتَ عَلَيْهِ قَائِمًا ذَلِكَ بِأَنَّهُمْ قَالُوا لَيْسَ عَلَيْنَا فِي الْأُمِّيِّينَ سَبِيلٌ وَيَقُولُونَ عَلَى اللَّهِ الْكَذِبَ وَهُمْ يَعْلَمُونَ"
+ },
+ "12:20": {
+  "sn": "يوسف",
+  "sr": "Yusuf",
+  "t": "وَشَرَوْهُ بِثَمَنٍ بَخْسٍ دَرَاهِمَ مَعْدُودَةٍ وَكَانُوا فِيهِ مِنَ الزَّاهِدِينَ"
+ },
+ "55:9": {
+  "sn": "الرحمن",
+  "sr": "Ar-Rahman",
+  "t": "وَأَقِيمُوا الْوَزْنَ بِالْقِسْطِ وَلَا تُخْسِرُوا الْمِيزَانَ"
+ },
+ "6:152": {
+  "sn": "الأنعام",
+  "sr": "Al-Anam",
+  "t": "وَلَا تَقْرَبُوا مَالَ الْيَتِيمِ إِلَّا بِالَّتِي هِيَ أَحْسَنُ حَتَّى يَبْلُغَ أَشُدَّهُ وَأَوْفُوا الْكَيْلَ وَالْمِيزَانَ بِالْقِسْطِ لَا نُكَلِّفُ نَفْسًا إِلَّا وُسْعَهَا وَإِذَا قُلْتُمْ فَاعْدِلُوا وَلَوْ كَانَ ذَا قُرْبَى وَبِعَهْدِ اللَّهِ أَوْفُوا ذَلِكُمْ وَصَّاكُمْ بِهِ لَعَلَّكُمْ تَذَكَّرُونَ"
+ },
+ "11:84": {
+  "sn": "هود",
+  "sr": "Hud",
+  "t": "وَإِلَى مَدْيَنَ أَخَاهُمْ شُعَيْبًا قَالَ يَاقَوْمِ اعْبُدُوا اللَّهَ مَا لَكُمْ مِنْ إِلَهٍ غَيْرُهُ وَلَا تَنْقُصُوا الْمِكْيَالَ وَالْمِيزَانَ إِنِّي أَرَاكُمْ بِخَيْرٍ وَإِنِّي أَخَافُ عَلَيْكُمْ عَذَابَ يَوْمٍ مُحِيطٍ"
+ },
+ "5:42": {
+  "sn": "المائدة",
+  "sr": "Al-Maidah",
+  "t": "سَمَّاعُونَ لِلْكَذِبِ أَكَّالُونَ لِلسُّحْتِ فَإِنْ جَاءُوكَ فَاحْكُمْ بَيْنَهُمْ أَوْ أَعْرِضْ عَنْهُمْ وَإِنْ تُعْرِضْ عَنْهُمْ فَلَنْ يَضُرُّوكَ شَيْئًا وَإِنْ حَكَمْتَ فَاحْكُمْ بَيْنَهُمْ بِالْقِسْطِ إِنَّ اللَّهَ يُحِبُّ الْمُقْسِطِينَ"
+ },
+ "29:14": {
+  "sn": "العنكبوت",
+  "sr": "Al-Ankabut",
+  "t": "وَلَقَدْ أَرْسَلْنَا نُوحًا إِلَى قَوْمِهِ فَلَبِثَ فِيهِمْ أَلْفَ سَنَةٍ إِلَّا خَمْسِينَ عَامًا فَأَخَذَهُمُ الطُّوفَانُ وَهُمْ ظَالِمُونَ"
+ },
+ "106:2": {
+  "sn": "قريش",
+  "sr": "Quraysh",
+  "t": "إِيلَافِهِمْ رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ"
+ },
+ "54:34": {
+  "sn": "القمر",
+  "sr": "Al-Qamar",
+  "t": "إِنَّا أَرْسَلْنَا عَلَيْهِمْ حَاصِبًا إِلَّا آلَ لُوطٍ نَجَّيْنَاهُمْ بِسَحَرٍ"
+ },
+ "81:23": {
+  "sn": "التكوير",
+  "sr": "At-Takwir",
+  "t": "وَلَقَدْ رَآهُ بِالْأُفُقِ الْمُبِينِ"
+ },
+ "11:81": {
+  "sn": "هود",
+  "sr": "Hud",
+  "t": "قَالُوا يَالُوطُ إِنَّا رُسُلُ رَبِّكَ لَنْ يَصِلُوا إِلَيْكَ فَأَسْرِ بِأَهْلِكَ بِقِطْعٍ مِنَ اللَّيْلِ وَلَا يَلْتَفِتْ مِنْكُمْ أَحَدٌ إِلَّا امْرَأَتَكَ إِنَّهُ مُصِيبُهَا مَا أَصَابَهُمْ إِنَّ مَوْعِدَهُمُ الصُّبْحُ أَلَيْسَ الصُّبْحُ بِقَرِيبٍ"
+ },
+ "93:1": {
+  "sn": "الضحى",
+  "sr": "Ad-Duha",
+  "t": "وَالضُّحَى"
+ },
+ "33:42": {
+  "sn": "الأحزاب",
+  "sr": "Al-Ahzab",
+  "t": "وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا"
+ },
+ "12:42": {
+  "sn": "يوسف",
+  "sr": "Yusuf",
+  "t": "وَقَالَ لِلَّذِي ظَنَّ أَنَّهُ نَاجٍ مِنْهُمَا اذْكُرْنِي عِنْدَ رَبِّكَ فَأَنْسَاهُ الشَّيْطَانُ ذِكْرَ رَبِّهِ فَلَبِثَ فِي السِّجْنِ بِضْعَ سِنِينَ"
+ },
+ "4:12": {
+  "sn": "النساء",
+  "sr": "An-Nisa",
+  "t": "وَلَكُمْ نِصْفُ مَا تَرَكَ أَزْوَاجُكُمْ إِنْ لَمْ يَكُنْ لَهُنَّ وَلَدٌ فَإِنْ كَانَ لَهُنَّ وَلَدٌ فَلَكُمُ الرُّبُعُ مِمَّا تَرَكْنَ مِنْ بَعْدِ وَصِيَّةٍ يُوصِينَ بِهَا أَوْ دَيْنٍ وَلَهُنَّ الرُّبُعُ مِمَّا تَرَكْتُمْ إِنْ لَمْ يَكُنْ لَكُمْ وَلَدٌ فَإِنْ كَانَ لَكُمْ وَلَدٌ فَلَهُنَّ الثُّمُنُ مِمَّا تَرَكْتُمْ مِنْ بَعْدِ وَصِيَّةٍ تُوصُونَ بِهَا أَوْ دَيْنٍ وَإِنْ كَانَ رَجُلٌ يُورَثُ كَلَالَةً أَوِ امْرَأَةٌ وَلَهُ أَخٌ أَوْ أُخْتٌ فَلِكُلِّ وَاحِدٍ مِنْهُمَا السُّدُسُ فَإِنْ كَانُوا أَكْثَرَ مِنْ ذَلِكَ فَهُمْ شُرَكَاءُ فِي الثُّلُثِ مِنْ بَعْدِ وَصِيَّةٍ يُوصَى بِهَا أَوْ دَيْنٍ غَيْرَ مُضَارٍّ وَصِيَّةً مِنَ اللَّهِ وَاللَّهُ عَلِيمٌ حَلِيمٌ"
+ },
+ "8:65": {
+  "sn": "الأنفال",
+  "sr": "Al-Anfal",
+  "t": "يَاأَيُّهَا النَّبِيُّ حَرِّضِ الْمُؤْمِنِينَ عَلَى الْقِتَالِ إِنْ يَكُنْ مِنْكُمْ عِشْرُونَ صَابِرُونَ يَغْلِبُوا مِائَتَيْنِ وَإِنْ يَكُنْ مِنْكُمْ مِائَةٌ يَغْلِبُوا أَلْفًا مِنَ الَّذِينَ كَفَرُوا بِأَنَّهُمْ قَوْمٌ لَا يَفْقَهُونَ"
+ },
+ "46:15": {
+  "sn": "الأحقاف",
+  "sr": "Al-Ahqaf",
+  "t": "وَوَصَّيْنَا الْإِنْسَانَ بِوَالِدَيْهِ إِحْسَانًا حَمَلَتْهُ أُمُّهُ كُرْهًا وَوَضَعَتْهُ كُرْهًا وَحَمْلُهُ وَفِصَالُهُ ثَلَاثُونَ شَهْرًا حَتَّى إِذَا بَلَغَ أَشُدَّهُ وَبَلَغَ أَرْبَعِينَ سَنَةً قَالَ رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَصْلِحْ لِي فِي ذُرِّيَّتِي إِنِّي تُبْتُ إِلَيْكَ وَإِنِّي مِنَ الْمُسْلِمِينَ"
+ },
+ "18:17": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "وَتَرَى الشَّمْسَ إِذَا طَلَعَتْ تَزَاوَرُ عَنْ كَهْفِهِمْ ذَاتَ الْيَمِينِ وَإِذَا غَرَبَتْ تَقْرِضُهُمْ ذَاتَ الشِّمَالِ وَهُمْ فِي فَجْوَةٍ مِنْهُ ذَلِكَ مِنْ آيَاتِ اللَّهِ مَنْ يَهْدِ اللَّهُ فَهُوَ الْمُهْتَدِ وَمَنْ يُضْلِلْ فَلَنْ تَجِدَ لَهُ وَلِيًّا مُرْشِدًا"
+ },
+ "2:115": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "وَلِلَّهِ الْمَشْرِقُ وَالْمَغْرِبُ فَأَيْنَمَا تُوَلُّوا فَثَمَّ وَجْهُ اللَّهِ إِنَّ اللَّهَ وَاسِعٌ عَلِيمٌ"
+ },
+ "75:5": {
+  "sn": "القيامة",
+  "sr": "Al-Qiyamah",
+  "t": "بَلْ يُرِيدُ الْإِنْسَانُ لِيَفْجُرَ أَمَامَهُ"
+ },
+ "18:79": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "أَمَّا السَّفِينَةُ فَكَانَتْ لِمَسَاكِينَ يَعْمَلُونَ فِي الْبَحْرِ فَأَرَدْتُ أَنْ أَعِيبَهَا وَكَانَ وَرَاءَهُمْ مَلِكٌ يَأْخُذُ كُلَّ سَفِينَةٍ غَصْبًا"
+ },
+ "2:143": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "وَكَذَلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا وَمَا جَعَلْنَا الْقِبْلَةَ الَّتِي كُنْتَ عَلَيْهَا إِلَّا لِنَعْلَمَ مَنْ يَتَّبِعُ الرَّسُولَ مِمَّنْ يَنْقَلِبُ عَلَى عَقِبَيْهِ وَإِنْ كَانَتْ لَكَبِيرَةً إِلَّا عَلَى الَّذِينَ هَدَى اللَّهُ وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَحِيمٌ"
+ },
+ "69:17": {
+  "sn": "الحاقة",
+  "sr": "Al-Haqqah",
+  "t": "وَالْمَلَكُ عَلَى أَرْجَائِهَا وَيَحْمِلُ عَرْشَ رَبِّكَ فَوْقَهُمْ يَوْمَئِذٍ ثَمَانِيَةٌ"
+ },
+ "21:47": {
+  "sn": "الأنبياء",
+  "sr": "Al-Anbiya",
+  "t": "وَنَضَعُ الْمَوَازِينَ الْقِسْطَ لِيَوْمِ الْقِيَامَةِ فَلَا تُظْلَمُ نَفْسٌ شَيْئًا وَإِنْ كَانَ مِثْقَالَ حَبَّةٍ مِنْ خَرْدَلٍ أَتَيْنَا بِهَا وَكَفَى بِنَا حَاسِبِينَ"
+ },
+ "2:261": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "مَثَلُ الَّذِينَ يُنْفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنْبَتَتْ سَبْعَ سَنَابِلَ فِي كُلِّ سُنْبُلَةٍ مِائَةُ حَبَّةٍ وَاللَّهُ يُضَاعِفُ لِمَنْ يَشَاءُ وَاللَّهُ وَاسِعٌ عَلِيمٌ"
+ },
+ "20:131": {
+  "sn": "طه",
+  "sr": "Taha",
+  "t": "وَلَا تَمُدَّنَّ عَيْنَيْكَ إِلَى مَا مَتَّعْنَا بِهِ أَزْوَاجًا مِنْهُمْ زَهْرَةَ الْحَيَاةِ الدُّنْيَا لِنَفْتِنَهُمْ فِيهِ وَرِزْقُ رَبِّكَ خَيْرٌ وَأَبْقَى"
+ },
+ "6:95": {
+  "sn": "الأنعام",
+  "sr": "Al-Anam",
+  "t": "إِنَّ اللَّهَ فَالِقُ الْحَبِّ وَالنَّوَى يُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ وَمُخْرِجُ الْمَيِّتِ مِنَ الْحَيِّ ذَلِكُمُ اللَّهُ فَأَنَّى تُؤْفَكُونَ"
+ },
+ "3:190": {
+  "sn": "آل عمران",
+  "sr": "Aal-e-Imran",
+  "t": "إِنَّ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ لَآيَاتٍ لِأُولِي الْأَلْبَابِ"
+ },
+ "17:24": {
+  "sn": "الإسراء",
+  "sr": "Al-Isra",
+  "t": "وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ وَقُلْ رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا"
+ },
+ "39:3": {
+  "sn": "الزمر",
+  "sr": "Az-Zumar",
+  "t": "أَلَا لِلَّهِ الدِّينُ الْخَالِصُ وَالَّذِينَ اتَّخَذُوا مِنْ دُونِهِ أَوْلِيَاءَ مَا نَعْبُدُهُمْ إِلَّا لِيُقَرِّبُونَا إِلَى اللَّهِ زُلْفَى إِنَّ اللَّهَ يَحْكُمُ بَيْنَهُمْ فِي مَا هُمْ فِيهِ يَخْتَلِفُونَ إِنَّ اللَّهَ لَا يَهْدِي مَنْ هُوَ كَاذِبٌ كَفَّارٌ"
+ },
+ "17:90": {
+  "sn": "الإسراء",
+  "sr": "Al-Isra",
+  "t": "وَقَالُوا لَنْ نُؤْمِنَ لَكَ حَتَّى تَفْجُرَ لَنَا مِنَ الْأَرْضِ يَنْبُوعًا"
+ },
+ "2:30": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "وَإِذْ قَالَ رَبُّكَ لِلْمَلَائِكَةِ إِنِّي جَاعِلٌ فِي الْأَرْضِ خَلِيفَةً قَالُوا أَتَجْعَلُ فِيهَا مَنْ يُفْسِدُ فِيهَا وَيَسْفِكُ الدِّمَاءَ وَنَحْنُ نُسَبِّحُ بِحَمْدِكَ وَنُقَدِّسُ لَكَ قَالَ إِنِّي أَعْلَمُ مَا لَا تَعْلَمُونَ"
+ },
+ "18:10": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "إِذْ أَوَى الْفِتْيَةُ إِلَى الْكَهْفِ فَقَالُوا رَبَّنَا آتِنَا مِنْ لَدُنْكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا"
+ },
+ "76:12": {
+  "sn": "الإنسان",
+  "sr": "Al-Insan",
+  "t": "وَجَزَاهُمْ بِمَا صَبَرُوا جَنَّةً وَحَرِيرًا"
+ },
+ "65:9": {
+  "sn": "الطلاق",
+  "sr": "At-Talaq",
+  "t": "فَذَاقَتْ وَبَالَ أَمْرِهَا وَكَانَ عَاقِبَةُ أَمْرِهَا خُسْرًا"
+ },
+ "80:34": {
+  "sn": "عبس",
+  "sr": "Abasa",
+  "t": "يَوْمَ يَفِرُّ الْمَرْءُ مِنْ أَخِيهِ"
+ },
+ "47:19": {
+  "sn": "محمد",
+  "sr": "Muhammad",
+  "t": "فَاعْلَمْ أَنَّهُ لَا إِلَهَ إِلَّا اللَّهُ وَاسْتَغْفِرْ لِذَنْبِكَ وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَاللَّهُ يَعْلَمُ مُتَقَلَّبَكُمْ وَمَثْوَاكُمْ"
+ },
+ "33:56": {
+  "sn": "الأحزاب",
+  "sr": "Al-Ahzab",
+  "t": "إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَاأَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا"
+ },
+ "41:10": {
+  "sn": "فصلت",
+  "sr": "Fussilat",
+  "t": "وَجَعَلَ فِيهَا رَوَاسِيَ مِنْ فَوْقِهَا وَبَارَكَ فِيهَا وَقَدَّرَ فِيهَا أَقْوَاتَهَا فِي أَرْبَعَةِ أَيَّامٍ سَوَاءً لِلسَّائِلِينَ"
+ },
+ "87:1": {
+  "sn": "الأعلى",
+  "sr": "Al-Ala",
+  "t": "سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى"
+ },
+ "7:151": {
+  "sn": "الأعراف",
+  "sr": "Al-Araf",
+  "t": "قَالَ رَبِّ اغْفِرْ لِي وَلِأَخِي وَأَدْخِلْنَا فِي رَحْمَتِكَ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ"
+ },
+ "71:28": {
+  "sn": "نوح",
+  "sr": "Nuh",
+  "t": "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا"
+ },
+ "20:114": {
+  "sn": "طه",
+  "sr": "Taha",
+  "t": "فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ وَلَا تَعْجَلْ بِالْقُرْآنِ مِنْ قَبْلِ أَنْ يُقْضَى إِلَيْكَ وَحْيُهُ وَقُلْ رَبِّ زِدْنِي عِلْمًا"
+ },
+ "59:23": {
+  "sn": "الحشر",
+  "sr": "Al-Hashr",
+  "t": "هُوَ اللَّهُ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ"
+ },
+ "18:39": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "وَلَوْلَا إِذْ دَخَلْتَ جَنَّتَكَ قُلْتَ مَا شَاءَ اللَّهُ لَا قُوَّةَ إِلَّا بِاللَّهِ إِنْ تَرَنِ أَنَا أَقَلَّ مِنْكَ مَالًا وَوَلَدًا"
+ },
+ "3:18": {
+  "sn": "آل عمران",
+  "sr": "Aal-e-Imran",
+  "t": "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ لَا إِلَهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ"
+ },
+ "4:106": {
+  "sn": "النساء",
+  "sr": "An-Nisa",
+  "t": "وَاسْتَغْفِرِ اللَّهَ إِنَّ اللَّهَ كَانَ غَفُورًا رَحِيمًا"
+ },
+ "2:286": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ"
+ },
+ "3:102": {
+  "sn": "آل عمران",
+  "sr": "Aal-e-Imran",
+  "t": "يَاأَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ حَقَّ تُقَاتِهِ وَلَا تَمُوتُنَّ إِلَّا وَأَنْتُمْ مُسْلِمُونَ"
+ },
+ "4:59": {
+  "sn": "النساء",
+  "sr": "An-Nisa",
+  "t": "يَاأَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنْكُمْ فَإِنْ تَنَازَعْتُمْ فِي شَيْءٍ فَرُدُّوهُ إِلَى اللَّهِ وَالرَّسُولِ إِنْ كُنْتُمْ تُؤْمِنُونَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ ذَلِكَ خَيْرٌ وَأَحْسَنُ تَأْوِيلًا"
+ },
+ "5:7": {
+  "sn": "المائدة",
+  "sr": "Al-Maidah",
+  "t": "وَاذْكُرُوا نِعْمَةَ اللَّهِ عَلَيْكُمْ وَمِيثَاقَهُ الَّذِي وَاثَقَكُمْ بِهِ إِذْ قُلْتُمْ سَمِعْنَا وَأَطَعْنَا وَاتَّقُوا اللَّهَ إِنَّ اللَّهَ عَلِيمٌ بِذَاتِ الصُّدُورِ"
+ },
+ "2:152": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ"
+ },
+ "2:153": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "يَاأَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ"
+ },
+ "2:20": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "يَكَادُ الْبَرْقُ يَخْطَفُ أَبْصَارَهُمْ كُلَّمَا أَضَاءَ لَهُمْ مَشَوْا فِيهِ وَإِذَا أَظْلَمَ عَلَيْهِمْ قَامُوا وَلَوْ شَاءَ اللَّهُ لَذَهَبَ بِسَمْعِهِمْ وَأَبْصَارِهِمْ إِنَّ اللَّهَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ"
+ },
+ "31:28": {
+  "sn": "لقمان",
+  "sr": "Luqman",
+  "t": "مَا خَلْقُكُمْ وَلَا بَعْثُكُمْ إِلَّا كَنَفْسٍ وَاحِدَةٍ إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ"
+ },
+ "3:57": {
+  "sn": "آل عمران",
+  "sr": "Aal-e-Imran",
+  "t": "وَأَمَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَيُوَفِّيهِمْ أُجُورَهُمْ وَاللَّهُ لَا يُحِبُّ الظَّالِمِينَ"
+ },
+ "25:48": {
+  "sn": "الفرقان",
+  "sr": "Al-Furqan",
+  "t": "وَهُوَ الَّذِي أَرْسَلَ الرِّيَاحَ بُشْرًا بَيْنَ يَدَيْ رَحْمَتِهِ وَأَنْزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا"
+ },
+ "2:195": {
+  "sn": "البقرة",
+  "sr": "Al-Baqarah",
+  "t": "وَأَنْفِقُوا فِي سَبِيلِ اللَّهِ وَلَا تُلْقُوا بِأَيْدِيكُمْ إِلَى التَّهْلُكَةِ وَأَحْسِنُوا إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ"
+ },
+ "22:62": {
+  "sn": "الحج",
+  "sr": "Al-Hajj",
+  "t": "ذَلِكَ بِأَنَّ اللَّهَ هُوَ الْحَقُّ وَأَنَّ مَا يَدْعُونَ مِنْ دُونِهِ هُوَ الْبَاطِلُ وَأَنَّ اللَّهَ هُوَ الْعَلِيُّ الْكَبِيرُ"
+ },
+ "23:29": {
+  "sn": "المؤمنون",
+  "sr": "Al-Muminun",
+  "t": "وَقُلْ رَبِّ أَنْزِلْنِي مُنْزَلًا مُبَارَكًا وَأَنْتَ خَيْرُ الْمُنْزِلِينَ"
+ },
+ "18:18": {
+  "sn": "الكهف",
+  "sr": "Al-Kahf",
+  "t": "وَتَحْسَبُهُمْ أَيْقَاظًا وَهُمْ رُقُودٌ وَنُقَلِّبُهُمْ ذَاتَ الْيَمِينِ وَذَاتَ الشِّمَالِ وَكَلْبُهُمْ بَاسِطٌ ذِرَاعَيْهِ بِالْوَصِيدِ لَوِ اطَّلَعْتَ عَلَيْهِمْ لَوَلَّيْتَ مِنْهُمْ فِرَارًا وَلَمُلِئْتَ مِنْهُمْ رُعْبًا"
+ },
+ "9:114": {
+  "sn": "التوبة",
+  "sr": "At-Tawbah",
+  "t": "وَمَا كَانَ اسْتِغْفَارُ إِبْرَاهِيمَ لِأَبِيهِ إِلَّا عَنْ مَوْعِدَةٍ وَعَدَهَا إِيَّاهُ فَلَمَّا تَبَيَّنَ لَهُ أَنَّهُ عَدُوٌّ لِلَّهِ تَبَرَّأَ مِنْهُ إِنَّ إِبْرَاهِيمَ لَأَوَّاهٌ حَلِيمٌ"
+ },
+ "25:64": {
+  "sn": "الفرقان",
+  "sr": "Al-Furqan",
+  "t": "وَالَّذِينَ يَبِيتُونَ لِرَبِّهِمْ سُجَّدًا وَقِيَامًا"
  }
 };
 ;
