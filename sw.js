@@ -60,7 +60,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v76';
+const CACHE_NAME = 'quran-ustad-auto-v77';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -146,7 +146,7 @@ self.addEventListener('fetch', (e) => {
     const url = new URL(request.url);
 
     // 🔤 Google Fonts (CSS + font files): pehli baar net se, phir offline bhi (stale-while-revalidate)
-    if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
+    if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com' || url.hostname === 'static-cdn.tarteel.ai') {
         e.respondWith(
             caches.open(FONT_CACHE).then(cache =>
                 cache.match(request).then(hit => {

@@ -97,7 +97,7 @@ Azan app band hone par bhi bajne ke liye. **Phone/screen par koi lock nahi lagta
 - Is mein koi saaz ya gaana nahi. Agar apni awaaz mein nasheed record karwa kar ispar mila dein to wahi file `nature-ambience.mp3` ke naam se rakh dein.
 
 ### 📖 Quran (`quran.html`) — v76
-- **3 style (jo chahe chunein, yaad rehta hai)**: 🕌 **Madani Mushaf** (604 page, 15 line) · 📖 **Indo-Pak Mushaf** (610 page, 15 line) · 📋 **Ayat-wise** (pehle jaisa: surah mein har ayat alag card). Mushaf styles mein asli line-layout, ◀ ▶ aur page number se jump; ayat par tap karke 🔊 / 3× / 5× / 🔖 aur tarjuma. Style padhte hue bhi badal sakte hain — usi ayat par khulta hai.
+- **3 style (jo chahe chunein, yaad rehta hai)**: 🕌 **Madani Mushaf** (604 page, 15 line) · 📖 **Indo-Pak Mushaf** (610 page, 15 line) · 📋 **Ayat-wise** (pehle jaisa: surah mein har ayat alag card). Mushaf styles mein **chhape hue Taj-style mushaf jaisa safha** (naqshi hashiya, page number, har line ke neeche lakeer, gol ayat-nishan, kinare par ruku ع, neeche manzil) aur asli 15-line layout, ◀ ▶ aur page number se jump; ayat par tap karke 🔊 / 3× / 5× / 🔖 aur tarjuma. Style padhte hue bhi badal sakte hain — usi ayat par khulta hai.
 - **Talash**: Surah naam, `2:255`, `page 50` / `p50`, `juz 5` / `para 5`, ya **ayat ka koi bhi hissa** (Arabic ya Urdu/English alfaz) likh kar 🔎 — nateeje par tap karke seedha ayat khulti hai. Tabs: 📖 Surah · 📚 Juz (30) · 📄 Page (grid) · 🔖 Bookmark. Link: `quran.html#2:255`, `#p50`, `#j5`.
 - **Qari (4)**: Mishary Alafasy (pehle jaisa default), Sudais, Husary, Abdul Basit — chunav yaad rehta hai; chalti ayat naye qari se badal jaati hai.
 - **Repeat**: har ayat par **3×** / **5×** button; saath hi ▶ Page ke liye 🔁 1/3/5 baar (player mein bhi). Page khatam hone par agla page khud khulta hai.
@@ -254,3 +254,6 @@ Login ke passwords `index.html` ke script mein (`ADMIN_PASSWORD`, `GUEST_PASSWOR
 - dua/games/tajweed mein viewport-fit=cover, Arkan/Nahw-Sarf mein theme-color/iOS meta; Roman Urdu pages ka lang `ur-Latn`.
 - manifest ke screenshots naye design se dobara bane. SW cache v72.
 - ⚠️ Admin/Guest password `index.html` mein plain text hai (client-side) — ye asli security nahi; sirf soft-gate samjhein.
+
+
+**Indo-Pak font (v77):** `fonts/indopak.woff2` na ho to app QUL/Tarteel ka Indo-Pak Nastaleeq font online se laati hai (static-cdn.tarteel.ai) aur ek baar ke baad offline cache kar leti hai. Apna font rakhna ho (jaise Al Qalam / PDMS Saleem) to `fonts/indopak.woff2` mein rakh dein — wahi pehle lagega.

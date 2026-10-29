@@ -13,7 +13,7 @@
     <style>
         /* Indo-Pak (Pak/Hind ke Qurani nuskhon wala) rasm-ul-khat. Behtareen shakal ke liye apna font
            "fonts/indopak.woff2" (jaise Al Qalam Quran Majeed / PDMS Saleem) is folder mein rakh dein — neeche apne aap lag jayega. */
-        @font-face { font-family: 'FQIndoPak'; src: url('fonts/indopak.woff2') format('woff2'), url('fonts/indopak.ttf') format('truetype'); font-display: swap; }
+        @font-face { font-family: 'FQIndoPak'; src: url('fonts/indopak.woff2') format('woff2'), url('fonts/indopak.ttf') format('truetype'), url('https://static-cdn.tarteel.ai/qul/fonts/nastaleeq/Hanafi/normal-v4.2.2/with-waqf-lazmi/font.ttf') format('truetype'); font-display: swap; }
         :root { --primary: #0F4C3A; --secondary: #D4AF37; --bg: #F4F7F6; --card-bg: #fff; --text: #333; --text-light: #666; --border: #ddd; --ay: 1; }
         [data-theme="dark"] { --primary: #1a1a2e; --secondary: #6ee7b7; --bg: #0f0f23; --card-bg: #1e1e36; --text: #eee; --text-light: #aaa; --border: #333; }
         * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
@@ -97,13 +97,25 @@
         .sres { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; width: 100%; text-align: right; color: var(--text); font-family: inherit; display: block; }
         .sres .k { display: block; direction: ltr; text-align: left; font: 700 12px Poppins, sans-serif; color: var(--text-light); margin-bottom: 4px; }
         .sres .t { direction: rtl; font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: calc(24px * var(--ay)); line-height: 2.1; }
-        .mpage { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 10px 8px; margin: 8px 0; overflow-x: auto; direction: rtl; }
-        .mline { display: flex; justify-content: space-between; align-items: baseline; width: 100%; min-width: max-content; direction: rtl; white-space: nowrap; font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: calc(min(5.4vw, 29px) * var(--ay)); line-height: 2.15; color: var(--text); }
-        .mline .mw { padding: 0 .12em; border-radius: 8px; cursor: pointer; }
-        .mline .mw.end { color: var(--secondary); font-size: .8em; }
-        .mline .mw.sel, .mline .mw.playing { background: rgba(212,175,55,.28); }
+        /* ---- Chhape hue 15-line Mushaf jaisa safha: naqshi hashiya, har line ke neeche lakeer, gol ayat-nishan, kinare par ruku ع ---- */
+        .mframe { margin: 8px 0; padding: 9px; border: 2px solid #2b2b2b; border-radius: 3px; background: repeating-linear-gradient(45deg, #6f8a55 0 4px, #efe6b8 4px 8px, #c9a94b 8px 10px, #efe6b8 10px 14px); box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+        .mframe.madani { background: repeating-linear-gradient(45deg, #1d6b6b 0 4px, #f3e7b0 4px 8px, #c9a94b 8px 10px, #f3e7b0 10px 14px); }
+        .mpage { position: relative; container-type: inline-size; background: #fffef9; color: #111; border: 2px solid #111; padding: 4px 26px 8px 8px; overflow-x: auto; direction: rtl; --cw: #0B7A55; --cw-bg: rgba(11,122,85,.12); }
+        .mhead { display: flex; justify-content: space-between; align-items: center; direction: rtl; width: 100%; min-width: max-content; font: 700 12px 'Noto Naskh Arabic', serif; color: #444; border-bottom: 1.5px solid #111; padding: 2px 0 5px; margin-bottom: 2px; }
+        .mhead .pg { border: 1.5px solid #111; border-radius: 12px; padding: 0 14px; background: #f3ecc9; font-size: 15px; color: #111; }
+        .mfoot { text-align: center; font: 700 12px 'Noto Naskh Arabic', serif; color: #444; border-top: 1.5px solid #111; padding-top: 4px; margin-top: 2px; min-width: max-content; }
+        .mline { position: relative; display: flex; justify-content: space-between; align-items: center; width: 100%; min-width: max-content; direction: rtl; white-space: nowrap; border-bottom: 1.5px solid #111; font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: calc(min(5.4vw, 29px) * var(--ay)); line-height: 2.3; color: #111; }
+        @supports (font-size: 1cqw) { .mline { font-size: calc(5.3cqw * var(--ay)); } }
+        .mline:last-child { border-bottom: 0; }
+        .mline .mw { padding: 0 .1em; border-radius: 8px; cursor: pointer; }
+        .mline .mw.end { display: inline-grid; place-items: center; min-width: 1.35em; height: 1.35em; padding: 0 .2em; margin: 0 .2em; border: 1.5px solid #111; border-radius: 999px; font: 700 .5em 'Noto Naskh Arabic', serif; line-height: 1; color: #111; }
+        .mline .mw.sel, .mline .mw.playing { background: rgba(212,175,55,.38); }
         .mline .mw.cw { color: var(--cw); background: var(--cw-bg); }
-        .mline .mw.cw.sel, .mline .mw.cw.playing { background: rgba(212,175,55,.38); }
+        .mruku { position: absolute; right: -23px; top: 50%; transform: translateY(-50%); font: 700 .5em 'Noto Naskh Arabic', serif; border: 1.5px solid #111; border-radius: 50%; width: 1.7em; height: 1.7em; display: grid; place-items: center; background: #f3ecc9; color: #111; }
+        .mpage .sbanner { background: #f1ead0; color: #111; border: 2px solid #6e8452; border-radius: 6px; margin: 6px 0; }
+        .mpage .sbanner .ar { font-size: calc(24px * var(--ay)); color: #111; }
+        .mpage .bism { color: #111; border-bottom: 1.5px solid #111; margin: 2px 0; padding-bottom: 2px; font-size: calc(26px * var(--ay)); min-width: max-content; }
+        .mpage .jbanner { color: #7a5b00; }
         .aybar { position: fixed; left: 10px; right: 10px; bottom: calc(12px + env(safe-area-inset-bottom)); max-width: 560px; margin: 0 auto; z-index: 65; background: var(--card-bg); color: var(--text); border: 2px solid var(--secondary); border-radius: 16px; padding: 10px 12px; box-shadow: 0 10px 28px rgba(0,0,0,.35); }
         body.pl .aybar { bottom: calc(112px + env(safe-area-inset-bottom)); }
         .aybar .k { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
@@ -511,7 +523,7 @@
     function setTrBtn() { $('rTr').classList.toggle('on', showTr); }
 
     function fetchPage(p) {
-        return getJSON(API + 'verses/by_page/' + p + '?mushaf=' + MUSHAF + '&language=ur&words=true&word_fields=text_indopak,text_uthmani,line_number&fields=text_indopak,juz_number,page_number&translations=' + TR_ID + '&per_page=50').then(function (j) { return j.verses || []; });
+        return getJSON(API + 'verses/by_page/' + p + '?mushaf=' + MUSHAF + '&language=ur&words=true&word_fields=text_indopak,text_uthmani,line_number&fields=text_indopak,juz_number,page_number,ruku_number,manzil_number&translations=' + TR_ID + '&per_page=50').then(function (j) { return j.verses || []; });
     }
     var bismText = null;
     function getBism() {
@@ -615,7 +627,15 @@
             });
         });
         order.sort(function (a, b) { return a - b; });
-        var page = el('div', 'mpage'); var done = {};
+        var frame = el('div', 'mframe ' + STYLE), page = el('div', 'mpage'); var done = {};
+        var lastV = cur.verses[cur.verses.length - 1], f0 = first ? +first.verse_key.split(':')[0] : 0;
+        var hd = el('div', 'mhead');
+        hd.appendChild(el('span', null, j ? 'پارہ ' + arNum(j) : ''));
+        hd.appendChild(el('span', 'pg', arNum(cur.page)));
+        hd.appendChild(el('span', null, chapters[f0 - 1] ? chapters[f0 - 1].name_arabic : ''));
+        page.appendChild(hd);
+        var rukuEnd = {};
+        cur.verses.forEach(function (v, i) { var nx = cur.verses[i + 1]; if (nx && v.ruku_number && nx.ruku_number && nx.ruku_number !== v.ruku_number) rukuEnd[v.verse_key] = 1; });
         order.forEach(function (ln) {
             var items = lines[ln];
             // surah/juz ki shuruaat — line se pehle banner
@@ -630,7 +650,7 @@
             var row = el('div', 'mline');
             items.forEach(function (it) {
                 var w = it.w, isEnd = w.char_type_name === 'end', sp;
-                if (isEnd) { sp = el('span', 'mw end', '\uFD3F' + arNum(it.v.verse_number) + '\uFD3E'); }
+                if (isEnd) { sp = el('span', 'mw end', arNum(it.v.verse_number)); if (rukuEnd[it.key]) row._ruku = 1; }
                 else {
                     var txt = cleanAr(w.text_indopak || w.text_uthmani || w.text || '', it.key); if (!txt) return;
                     sp = el('span', 'mw', txt);
@@ -641,9 +661,11 @@
                 if (mk.indexOf(it.key) >= 0 && isEnd) sp.style.textDecoration = 'underline';
                 row.appendChild(sp);
             });
+            if (row._ruku) row.appendChild(el('span', 'mruku', 'ع'));
             page.appendChild(row);
         });
-        box.appendChild(page);
+        if (lastV && lastV.manzil_number) page.appendChild(el('div', 'mfoot', 'منزل ' + arNum(lastV.manzil_number)));
+        frame.appendChild(page); box.appendChild(frame);
         page.onclick = function (e) { var t = e.target.closest ? e.target.closest('.mw') : null; if (t) selectAyah(t.getAttribute('data-key')); };
         var n = box.querySelectorAll('.cw').length;
         $('cwInfo').textContent = showCw ? ('Course ke alfaz rang mein hain (is page par ' + n + ') — tap karke matlab dekhein') : 'Course ke alfaz ka rang band hai';
