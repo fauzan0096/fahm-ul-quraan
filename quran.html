@@ -98,24 +98,37 @@
         .sres .k { display: block; direction: ltr; text-align: left; font: 700 12px Poppins, sans-serif; color: var(--text-light); margin-bottom: 4px; }
         .sres .t { direction: rtl; font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: calc(24px * var(--ay)); line-height: 2.1; }
         /* ---- Chhape hue 15-line Mushaf jaisa safha: naqshi hashiya, har line ke neeche lakeer, gol ayat-nishan, kinare par ruku ع ---- */
-        .mframe { margin: 8px 0; padding: 9px; border: 2px solid #2b2b2b; border-radius: 3px; background: repeating-linear-gradient(45deg, #6f8a55 0 4px, #efe6b8 4px 8px, #c9a94b 8px 10px, #efe6b8 10px 14px); box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+        .mframe { margin: 0 auto; max-width: 640px; padding: 6px; border: 2px solid #2b2b2b; background: repeating-linear-gradient(45deg, #6f8a55 0 4px, #efe6b8 4px 8px, #c9a94b 8px 10px, #efe6b8 10px 14px); }
         .mframe.madani { background: repeating-linear-gradient(45deg, #1d6b6b 0 4px, #f3e7b0 4px 8px, #c9a94b 8px 10px, #f3e7b0 10px 14px); }
-        .mpage { position: relative; container-type: inline-size; background: #fffef9; color: #111; border: 2px solid #111; padding: 4px 26px 8px 8px; overflow-x: auto; direction: rtl; --cw: #0B7A55; --cw-bg: rgba(11,122,85,.12); }
-        .mhead { display: flex; justify-content: space-between; align-items: center; direction: rtl; width: 100%; min-width: max-content; font: 700 12px 'Noto Naskh Arabic', serif; color: #444; border-bottom: 1.5px solid #111; padding: 2px 0 5px; margin-bottom: 2px; }
-        .mhead .pg { border: 1.5px solid #111; border-radius: 12px; padding: 0 14px; background: #f3ecc9; font-size: 15px; color: #111; }
-        .mfoot { text-align: center; font: 700 12px 'Noto Naskh Arabic', serif; color: #444; border-top: 1.5px solid #111; padding-top: 4px; margin-top: 2px; min-width: max-content; }
-        .mline { position: relative; display: flex; justify-content: space-between; align-items: center; width: 100%; min-width: max-content; direction: rtl; white-space: nowrap; border-bottom: 1.5px solid #111; font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: calc(min(5.4vw, 29px) * var(--ay)); line-height: 2.3; color: #111; }
-        @supports (font-size: 1cqw) { .mline { font-size: calc(5.3cqw * var(--ay)); } }
-        .mline:last-child { border-bottom: 0; }
-        .mline .mw { padding: 0 .1em; border-radius: 8px; cursor: pointer; }
+        .mpage { position: relative; background: #fffef9; color: #111; border: 2px solid #111; padding: 0 20px 0 6px; direction: rtl; display: flex; flex-direction: column; height: 100%; --cw: #0B7A55; --cw-bg: rgba(11,122,85,.12); }
+        .mhead { flex: 0 0 auto; display: flex; justify-content: space-between; align-items: center; direction: rtl; font: 700 12px 'Noto Naskh Arabic', serif; color: #444; border-bottom: 1.5px solid #111; padding: 2px 0 3px; }
+        .mhead .pg { border: 1.5px solid #111; border-radius: 12px; padding: 0 14px; background: #f3ecc9; font-size: 14px; color: #111; }
+        .mfoot { flex: 0 0 auto; text-align: center; font: 700 12px 'Noto Naskh Arabic', serif; color: #444; border-top: 1.5px solid #111; padding: 2px 0; }
+        .mbody { flex: 1 1 0; min-height: 0; container-type: size; display: flex; flex-direction: column; justify-content: center; overflow: hidden; --mfs: 4cqh; }
+        .mbody > * { flex: 1 1 0; max-height: calc(100% / 15); min-height: 0; }
+        .mline { position: relative; display: flex; justify-content: space-between; align-items: center; direction: rtl; white-space: nowrap; border-bottom: 1.5px solid #111; font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: var(--mfs); line-height: 1; color: #111; }
+        .mbody > .mline:last-child { border-bottom: 0; }
+        .mline .mw { margin: 0 .12em; padding: 0 .06em; border-radius: 8px; cursor: pointer; }
         .mline .mw.end { display: inline-grid; place-items: center; min-width: 1.35em; height: 1.35em; padding: 0 .2em; margin: 0 .2em; border: 1.5px solid #111; border-radius: 999px; font: 700 .5em 'Noto Naskh Arabic', serif; line-height: 1; color: #111; }
         .mline .mw.sel, .mline .mw.playing { background: rgba(212,175,55,.38); }
         .mline .mw.cw { color: var(--cw); background: var(--cw-bg); }
-        .mruku { position: absolute; right: -23px; top: 50%; transform: translateY(-50%); font: 700 .5em 'Noto Naskh Arabic', serif; border: 1.5px solid #111; border-radius: 50%; width: 1.7em; height: 1.7em; display: grid; place-items: center; background: #f3ecc9; color: #111; }
-        .mpage .sbanner { background: #f1ead0; color: #111; border: 2px solid #6e8452; border-radius: 6px; margin: 6px 0; }
-        .mpage .sbanner .ar { font-size: calc(24px * var(--ay)); color: #111; }
-        .mpage .bism { color: #111; border-bottom: 1.5px solid #111; margin: 2px 0; padding-bottom: 2px; font-size: calc(26px * var(--ay)); min-width: max-content; }
-        .mpage .jbanner { color: #7a5b00; }
+        .mruku { position: absolute; right: -19px; top: 50%; transform: translateY(-50%); font: 700 .5em 'Noto Naskh Arabic', serif; border: 1.5px solid #111; border-radius: 50%; width: 1.7em; height: 1.7em; display: grid; place-items: center; background: #f3ecc9; color: #111; }
+        .mbody > .sbanner { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 2px 0; padding: 0 8px; background: #f1ead0; color: #111; border: 2px solid #6e8452; border-radius: 6px; direction: ltr; }
+        .mbody > .sbanner .ar { font-size: min(3.6cqh, 8cqw); line-height: 1; color: #111; }
+        .mbody > .sbanner small { display: inline; font-size: 11px; opacity: .8; }
+        .mbody > .bism { display: flex; align-items: center; justify-content: center; margin: 0; padding: 0; color: #111; border-bottom: 1.5px solid #111; font-size: var(--mfs); line-height: 1; }
+        /* ---- Poori screen par sirf Quran ---- */
+        body.fs { overflow: hidden; padding-bottom: 0; }
+        body.fs header, body.fs #deeniNotice, body.fs #vList { display: none !important; }
+        #vRead.full { position: fixed; inset: 0; z-index: 100; background: #fffef9; padding: 0; margin: 0; }
+        #vRead.full #rBox { height: 100%; padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom); }
+        #vRead.full #rBox > .mframe { height: 100%; }
+        #vRead.full #rBox > .msg { padding-top: 40vh; }
+        #vRead.full #pgBot { display: none; }
+        #vRead.full #mtools { display: none; }
+        #vRead.full.ui #mtools { display: block; position: fixed; top: 0; left: 0; right: 0; z-index: 310; background: var(--bg); padding: calc(env(safe-area-inset-top) + 8px) 12px 10px; box-shadow: 0 8px 24px rgba(0,0,0,.35); max-height: 75vh; overflow-y: auto; }
+        body.fs .aybar, body.fs .player, body.fs .cwtip, body.fs .qtoast { z-index: 320; }
+        .wrap:has(#vRead.full) { padding: 0; max-width: none; }
         .aybar { position: fixed; left: 10px; right: 10px; bottom: calc(12px + env(safe-area-inset-bottom)); max-width: 560px; margin: 0 auto; z-index: 65; background: var(--card-bg); color: var(--text); border: 2px solid var(--secondary); border-radius: 16px; padding: 10px 12px; box-shadow: 0 10px 28px rgba(0,0,0,.35); }
         body.pl .aybar { bottom: calc(112px + env(safe-area-inset-bottom)); }
         .aybar .k { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
@@ -178,6 +191,7 @@
 
         <!-- ===== Padhna (page-wise) ===== -->
         <section id="vRead" class="hidden">
+            <div id="mtools">
             <div class="rbar">
                 <button class="rbtn" id="rBack">⬅ Fehrist</button>
                 <div class="t" id="rTitle"></div>
@@ -187,6 +201,7 @@
             <div class="opts"><select id="styleSel2" style="flex:0 0 100%"></select><select id="qariSel2"></select><select id="repSel" title="Har ayat kitni baar"><option value="1">🔁 1 baar</option><option value="3">🔁 3 baar</option><option value="5">🔁 5 baar</option></select></div>
             <div class="legend"><span class="sw"></span><span class="t" id="cwInfo">Course ke alfaz rang mein hain — tap karke matlab dekhein</span><button class="rbtn on" id="rCw">🎨</button></div>
             <div class="pager" id="pgTop"></div>
+            </div>
             <div id="rBox"></div>
             <div class="pager" id="pgBot"></div>
         </section>
@@ -530,7 +545,7 @@
         if (bismText) return Promise.resolve(bismText);
         return getJSON(API + 'verses/by_key/1:1?fields=text_indopak').then(function (j) { bismText = (j.verse && j.verse.text_indopak) || ''; return bismText; }).catch(function () { return ''; });
     }
-    function showRead() { $('vList').classList.add('hidden'); $('vRead').classList.remove('hidden'); }
+    function showRead() { $('vList').classList.add('hidden'); $('vRead').classList.remove('hidden'); setFull(STYLE !== 'ayat'); }
 
     function fetchSurah(n) {
         var all = [];
@@ -614,6 +629,36 @@
         [b1, b3, b5, bb].forEach(function (b) { bt.appendChild(b); }); bt.appendChild(el('span', 'sp')); bt.appendChild(cl); bar.appendChild(bt);
         bar.classList.remove('hidden');
     }
+    // ----- Poori screen mode + line fitting + swipe -----
+    var swiped = false;
+    function setFull(on) {
+        $('vRead').classList.toggle('full', on); document.body.classList.toggle('fs', on);
+        if (!on) $('vRead').classList.remove('ui');
+        else $('vRead').classList.remove('ui');
+    }
+    function fitPage() {
+        var body = document.querySelector('.mbody'); if (!body) return;
+        var h = body.clientHeight, w = body.clientWidth - 0; if (!h || !w) return;
+        var base = Math.min(h / 15 * 0.62, w * 0.075);
+        body.style.setProperty('--mfs', base + 'px');
+        var rows = body.querySelectorAll('.mline'), m = 1;
+        Array.prototype.forEach.call(rows, function (r) { var cw = r.clientWidth, sw = r.scrollWidth; if (cw && sw > cw + 1) m = Math.min(m, cw / sw); });
+        if (m < 1) body.style.setProperty('--mfs', (base * m * 0.97) + 'px');
+    }
+    window.addEventListener('resize', function () { fitPage(); });
+    window.addEventListener('orientationchange', function () { setTimeout(fitPage, 200); });
+    function attachSwipe(el2) {
+        var x0 = 0, y0 = 0, t0 = 0;
+        el2.addEventListener('touchstart', function (e) { var t = e.touches[0]; x0 = t.clientX; y0 = t.clientY; t0 = Date.now(); }, { passive: true });
+        el2.addEventListener('touchend', function (e) {
+            var t = e.changedTouches[0], dx = t.clientX - x0, dy = t.clientY - y0;
+            if (Math.abs(dx) > 55 && Math.abs(dy) < 45 && Date.now() - t0 < 700 && cur && cur.page) {
+                swiped = true; setTimeout(function () { swiped = false; }, 400);
+                if (dx > 0 && cur.page < TOTAL_PAGES) openPage(cur.page + 1);        // daayen se baayen: agla page
+                else if (dx < 0 && cur.page > 1) openPage(cur.page - 1);              // baayen se daayen: pichla page
+            }
+        }, { passive: true });
+    }
     function drawMushaf(bism, jump) {
         var box = $('rBox'); box.innerHTML = '';
         var mk = marks(), first = cur.verses[0], j = first ? first.juz_number : '';
@@ -627,13 +672,13 @@
             });
         });
         order.sort(function (a, b) { return a - b; });
-        var frame = el('div', 'mframe ' + STYLE), page = el('div', 'mpage'); var done = {};
+        var frame = el('div', 'mframe ' + STYLE), page = el('div', 'mpage'), mbody = el('div', 'mbody'); var done = {};
         var lastV = cur.verses[cur.verses.length - 1], f0 = first ? +first.verse_key.split(':')[0] : 0;
         var hd = el('div', 'mhead');
         hd.appendChild(el('span', null, j ? 'پارہ ' + arNum(j) : ''));
         hd.appendChild(el('span', 'pg', arNum(cur.page)));
         hd.appendChild(el('span', null, chapters[f0 - 1] ? chapters[f0 - 1].name_arabic : ''));
-        page.appendChild(hd);
+        page.appendChild(hd); page.appendChild(mbody);
         var rukuEnd = {};
         cur.verses.forEach(function (v, i) { var nx = cur.verses[i + 1]; if (nx && v.ruku_number && nx.ruku_number && nx.ruku_number !== v.ruku_number) rukuEnd[v.verse_key] = 1; });
         order.forEach(function (ln) {
@@ -642,10 +687,9 @@
             items.forEach(function (it) {
                 if (it.v.verse_number === 1 && !done['s' + it.s] && it.w.position === 1) {
                     done['s' + it.s] = 1; var sb = el('div', 'sbanner'); sb.style.direction = 'ltr';
-                    sb.appendChild(el('div', 'ar', chapters[it.s - 1] ? chapters[it.s - 1].name_arabic : '')); sb.appendChild(el('small', null, it.s + '. ' + chName(it.s) + ' · ' + chCount(it.s) + ' ayat')); page.appendChild(sb);
-                    if (it.s !== 1 && it.s !== 9 && bism) { var bm = el('div', 'bism', cleanAr(bism, '1:1')); page.appendChild(bm); }
+                    sb.appendChild(el('div', 'ar', chapters[it.s - 1] ? chapters[it.s - 1].name_arabic : '')); sb.appendChild(el('small', null, chName(it.s) + ' · ' + chCount(it.s))); mbody.appendChild(sb);
+                    if (it.s !== 1 && it.s !== 9 && bism) { var bm = el('div', 'bism', cleanAr(bism, '1:1')); mbody.appendChild(bm); }
                 }
-                var ji = JUZ_KEY.indexOf(it.key); if (ji >= 0 && it.w.position === 1 && !done['j' + ji]) { done['j' + ji] = 1; var jb = el('div', 'jbanner', '— Juz ' + (ji + 1) + ' shuru —'); jb.style.direction = 'ltr'; page.appendChild(jb); }
             });
             var row = el('div', 'mline');
             items.forEach(function (it) {
@@ -662,15 +706,22 @@
                 row.appendChild(sp);
             });
             if (row._ruku) row.appendChild(el('span', 'mruku', 'ع'));
-            page.appendChild(row);
+            mbody.appendChild(row);
         });
         if (lastV && lastV.manzil_number) page.appendChild(el('div', 'mfoot', 'منزل ' + arNum(lastV.manzil_number)));
         frame.appendChild(page); box.appendChild(frame);
-        page.onclick = function (e) { var t = e.target.closest ? e.target.closest('.mw') : null; if (t) selectAyah(t.getAttribute('data-key')); };
+        setFull(true);
+        page.onclick = function (e) {
+            if (swiped) { swiped = false; return; }
+            var t = e.target.closest ? e.target.closest('.mw') : null;
+            if (t) { selectAyah(t.getAttribute('data-key')); } else { hideAyBar(); $('vRead').classList.toggle('ui'); }
+        };
+        attachSwipe(page);
+        fitPage(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitPage);
         var n = box.querySelectorAll('.cw').length;
         $('cwInfo').textContent = showCw ? ('Course ke alfaz rang mein hain (is page par ' + n + ') — tap karke matlab dekhein') : 'Course ke alfaz ka rang band hai';
         $('rCw').classList.toggle('on', showCw);
-        if (jump) { var f = box.querySelector('.mw[data-key="' + jump + '"]'); if (f) { setTimeout(function () { f.scrollIntoView({ block: 'center' }); }, 60); selectAyah(jump); } }
+        if (jump) { Array.prototype.forEach.call(box.querySelectorAll('.mw[data-key="' + jump + '"]'), function (e) { e.classList.add('sel'); }); }
         saveLastSoon();
     }
     function drawPage(bism, jump) {
@@ -680,6 +731,7 @@
         drawCards(bism, jump);
     }
     function drawCards(bism, jump) {
+        setFull(false);
         var box = $('rBox'); box.innerHTML = '';
         pagerHTML($('pgTop'), cur.page); pagerHTML($('pgBot'), cur.page);
         var mk = marks(), first = cur.verses[0], j = first ? first.juz_number : '';
@@ -709,7 +761,7 @@
         saveLastSoon();
     }
 
-    $('rBack').onclick = function () { hideAyBar(); $('cwTip').classList.add('hidden'); stopAudio(); $('vRead').classList.add('hidden'); $('vList').classList.remove('hidden'); drawResume(); drawList(); window.scrollTo(0, 0); };
+    $('rBack').onclick = function () { setFull(false); hideAyBar(); $('cwTip').classList.add('hidden'); stopAudio(); $('vRead').classList.add('hidden'); $('vList').classList.remove('hidden'); drawResume(); drawList(); window.scrollTo(0, 0); };
     $('rTr').onclick = function () {
         showTr = !showTr; lsSet('quranShowTr', showTr ? '1' : '0'); setTrBtn();
         Array.prototype.forEach.call(document.querySelectorAll('.atr'), function (e) { e.classList.toggle('hidden', !showTr); });
@@ -752,7 +804,7 @@
         if (!s) return;
         var cs = document.querySelectorAll('[data-key="' + s + ':' + a + '"]');
         Array.prototype.forEach.call(cs, function (e) { e.classList.add('playing'); });
-        if (cs[0]) cs[0].scrollIntoView({ block: 'center', behavior: 'smooth' });
+        if (cs[0] && !document.body.classList.contains('fs')) cs[0].scrollIntoView({ block: 'center', behavior: 'smooth' });
     }
     function label() {
         if (!playing) return '';
