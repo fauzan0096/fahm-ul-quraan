@@ -75,10 +75,47 @@
         .player { position: fixed; left: 10px; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom)); max-width: 520px; margin: 0 auto; z-index: 60; background: var(--primary); color: #fff; border-radius: 16px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
         .player span { flex: 1; font-size: 13px; font-weight: 600; } .player button { background: rgba(255,255,255,.2); border: none; color: #fff; border-radius: 50%; width: 38px; height: 38px; font-size: 16px; cursor: pointer; }
         .qtoast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); background: #222; color: #fff; padding: 10px 16px; border-radius: 20px; font-size: 13px; z-index: 99; max-width: 90%; text-align: center; }
-    </style>
+    
+        /* ---- v76: page / juz / qari / repeat ---- */
+        .tabs { flex-wrap: wrap; } .tab { flex: 1 1 22%; padding: 9px 4px; font-size: 12.5px; }
+        .opts { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 8px 0; font-size: 12.5px; color: var(--text-light); }
+        .opts select, .pgo input { padding: 8px 10px; border-radius: 12px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text); font: 600 12.5px Poppins, sans-serif; }
+        .opts select { flex: 1; min-width: 0; }
+        .pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(52px, 1fr)); gap: 6px; }
+        .pgrid button { padding: 9px 0; border-radius: 10px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text); font: 600 12.5px Poppins, sans-serif; cursor: pointer; }
+        .pgrid button.cur { background: var(--primary); color: #fff; }
+        .pager { display: flex; gap: 8px; align-items: center; margin: 10px 0; }
+        .pager .mid { flex: 1; text-align: center; font-weight: 700; font-size: 13px; }
+        .pager input { width: 70px; text-align: center; padding: 8px; border-radius: 12px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text); font: 600 13px Poppins, sans-serif; }
+        .sbanner { text-align: center; margin: 14px 0 4px; padding: 10px; border-radius: 14px; background: var(--primary); color: #fff; }
+        .sbanner .ar { font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: calc(26px * var(--ay)); direction: rtl; line-height: 1.8; }
+        .sbanner small { display: block; opacity: .85; font-size: 12px; }
+        .jbanner { text-align: center; margin: 10px 0 2px; font-size: 12px; font-weight: 700; color: var(--secondary); }
+        [data-theme="light"] .jbanner { color: #8a6d12; }
+        .abtn.rp { width: auto; min-width: 38px; padding: 0 8px; font: 700 12px Poppins, sans-serif; }
+        .abtn.rp.on { background: var(--secondary); color: #2A2008; }
+        .sres { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; width: 100%; text-align: right; color: var(--text); font-family: inherit; display: block; }
+        .sres .k { display: block; direction: ltr; text-align: left; font: 700 12px Poppins, sans-serif; color: var(--text-light); margin-bottom: 4px; }
+        .sres .t { direction: rtl; font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: calc(24px * var(--ay)); line-height: 2.1; }
+        .mpage { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 10px 8px; margin: 8px 0; overflow-x: auto; direction: rtl; }
+        .mline { display: flex; justify-content: space-between; align-items: baseline; width: 100%; min-width: max-content; direction: rtl; white-space: nowrap; font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: calc(min(5.4vw, 29px) * var(--ay)); line-height: 2.15; color: var(--text); }
+        .mline .mw { padding: 0 .12em; border-radius: 8px; cursor: pointer; }
+        .mline .mw.end { color: var(--secondary); font-size: .8em; }
+        .mline .mw.sel, .mline .mw.playing { background: rgba(212,175,55,.28); }
+        .mline .mw.cw { color: var(--cw); background: var(--cw-bg); }
+        .mline .mw.cw.sel, .mline .mw.cw.playing { background: rgba(212,175,55,.38); }
+        .aybar { position: fixed; left: 10px; right: 10px; bottom: calc(12px + env(safe-area-inset-bottom)); max-width: 560px; margin: 0 auto; z-index: 65; background: var(--card-bg); color: var(--text); border: 2px solid var(--secondary); border-radius: 16px; padding: 10px 12px; box-shadow: 0 10px 28px rgba(0,0,0,.35); }
+        body.pl .aybar { bottom: calc(112px + env(safe-area-inset-bottom)); }
+        .aybar .k { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
+        .aybar .tr { font-family: 'Noto Nastaliq Urdu', serif; direction: rtl; text-align: right; font-size: 15px; line-height: 2.1; max-height: 86px; overflow-y: auto; color: var(--text-light); }
+        .aybar .bt { display: flex; gap: 6px; margin-top: 6px; align-items: center; }
+        .aybar .bt .abtn { flex: 0 0 auto; }
+        .aybar .bt .sp { flex: 1; }
+        .player { flex-wrap: wrap; } .player span { min-width: 100%; flex: 1 0 100%; }
+        .player .rpt { width: auto; border-radius: 19px; padding: 0 12px; font-weight: 700; font-size: 13px; }
+</style>
     <link rel="stylesheet" href="theme.css">
     <style>
-        /* theme.css ke card/header rules yahan ke apne simple design se na ulajhein */
         header { padding-top: calc(14px + env(safe-area-inset-top)); }
     </style>
 <style>.qi.qi-h{font-size:1.15em;color:#fff;--qi-a:#E3C36E;margin-inline-end:.3em;vertical-align:-.2em}.qi.qi-hb{font-size:26px;color:#fff;--qi-a:#E3C36E}</style>
@@ -112,36 +149,46 @@
     <div class="wrap">
         <!-- ===== Fehrist ===== -->
         <section id="vList">
-            <input type="search" class="q-search" id="qSearch" placeholder="🔍 Surah naam / number  (ya seedha 2:255)" autocomplete="off">
+            <input type="search" class="q-search" id="qSearch" placeholder="🔍 Surah / 2:255 / page 50 / juz 5 / ayat ka hissa (Arabic)" autocomplete="off">
+            <div class="opts"><span>📚 Style:</span><select id="styleSel1"></select></div>
+            <div class="opts"><span>🎙️ Qari:</span><select id="qariSel1"></select></div>
             <button class="resume hidden" id="resume"></button>
             <div class="tabs">
-                <button class="tab on" id="tabSurah">📖 Surahein</button>
-                <button class="tab" id="tabMarks">🔖 Bookmark (<span id="markCnt">0</span>)</button>
+                <button class="tab on" id="tabSurah">📖 Surah</button>
+                <button class="tab" id="tabJuz">📚 Juz</button>
+                <button class="tab" id="tabPage">📄 Page</button>
+                <button class="tab" id="tabMarks">🔖 (<span id="markCnt">0</span>)</button>
             </div>
+            <button class="rbtn hidden" id="doSearch" style="width:100%;margin-bottom:10px"></button>
             <div id="listBox"></div>
-            <p class="note">Arabic: Indo-Pak rasm-ul-khat · Tarjuma: Maulana Muhammad Junagarhi (wahi tarjuma jo <b>Ahsan-ul-Bayan</b> mein hai) · Data Quran.com se, ek baar dekhne ke baad offline bhi chalta hai.</p>
+            <p class="note">Arabic: Indo-Pak rasm-ul-khat · 3 style: <b>Madani (604 page)</b> · <b>Indo-Pak 15 line (610 page)</b> · <b>Ayat-wise</b> · 30 Juz · Tarjuma: Maulana Muhammad Junagarhi (<b>Ahsan-ul-Bayan</b>) · Data Quran.com se, ek baar dekhne ke baad offline bhi chalta hai.</p>
         </section>
 
-        <!-- ===== Padhna ===== -->
+        <!-- ===== Padhna (page-wise) ===== -->
         <section id="vRead" class="hidden">
             <div class="rbar">
                 <button class="rbtn" id="rBack">⬅ Fehrist</button>
                 <div class="t" id="rTitle"></div>
                 <button class="rbtn on" id="rTr">اردو</button>
-                <button class="rbtn" id="rAll">▶ Surah</button>
+                <button class="rbtn" id="rAll">▶ Page</button>
             </div>
+            <div class="opts"><select id="styleSel2" style="flex:0 0 100%"></select><select id="qariSel2"></select><select id="repSel" title="Har ayat kitni baar"><option value="1">🔁 1 baar</option><option value="3">🔁 3 baar</option><option value="5">🔁 5 baar</option></select></div>
             <div class="legend"><span class="sw"></span><span class="t" id="cwInfo">Course ke alfaz rang mein hain — tap karke matlab dekhein</span><button class="rbtn on" id="rCw">🎨</button></div>
+            <div class="pager" id="pgTop"></div>
             <div id="rBox"></div>
+            <div class="pager" id="pgBot"></div>
         </section>
     </div>
 
     <div class="cwtip hidden" id="cwTip"></div>
+    <div class="aybar hidden" id="ayBar"></div>
 
     <div class="player hidden" id="player">
         <span id="plTxt"></span>
         <button id="plPrev" aria-label="Pichli ayat">⏮</button>
         <button id="plToggle" aria-label="Chalayein / roken">⏸</button>
         <button id="plNext" aria-label="Agli ayat">⏭</button>
+        <button class="rpt" id="plRep" aria-label="Repeat">🔁 1×</button>
         <button id="plStop" aria-label="Band">✕</button>
     </div>
 
@@ -150,12 +197,28 @@
 (function () {
     'use strict';
     var API = 'https://api.quran.com/api/v4/';
-    var TR_ID = 54;                         // Maulana Muhammad Junagarhi (Urdu) — Ahsan-ul-Bayan ka tarjuma
-    var CACHE = 'fq-quran-v1';              // Cache API (sw.js ise version badalne par bhi nahi mitata)
-    var AUDIO = [
-        function (k) { return 'https://everyayah.com/data/Alafasy_128kbps/' + k + '.mp3'; },
-        function (k) { return 'https://verses.quran.com/Alafasy/mp3/' + k + '.mp3'; }
+    var TR_ID = 54;                         // Maulana Muhammad Junagarhi (Urdu)
+    var CACHE = 'fq-quran-v1';
+    var STYLES = {
+        madani:  { mushaf: 1, total: 604, name: '🕌 Madani Mushaf (604 page · 15 line)' },
+        indopak: { mushaf: 6, total: 610, name: '📖 Indo-Pak Mushaf (610 page · 15 line)' },
+        ayat:    { mushaf: 0, total: 0,   name: '📋 Ayat-wise (surah, har ayat alag)' }
+    };
+    var STYLE = ls('quranStyle'); if (!STYLES[STYLE]) STYLE = 'indopak';
+    var MUSHAF = STYLES[STYLE].mushaf, TOTAL_PAGES = STYLES[STYLE].total || 610;
+    function applyStyle(id) { STYLE = id; MUSHAF = STYLES[id].mushaf; TOTAL_PAGES = STYLES[id].total || 610; lsSet('quranStyle', id); }
+    // Qari (everyayah.com). Alafasy pehle jaisa default; uska doosra source Quran.com.
+    var QARIS = [
+        { id: 'alafasy', name: 'Mishary Rashid Alafasy', dir: 'Alafasy_128kbps', alt: 'https://verses.quran.com/Alafasy/mp3/' },
+        { id: 'sudais',  name: 'Abdur-Rahman As-Sudais', dir: 'Abdurrahmaan_As-Sudais_192kbps' },
+        { id: 'husary',  name: 'Mahmoud Khalil Al-Husary', dir: 'Husary_128kbps' },
+        { id: 'basit',   name: 'Abdul Basit (Murattal)', dir: 'Abdul_Basit_Murattal_192kbps' }
     ];
+    // Juz ki shuruaat (Madani Mushaf): page aur surah:ayat
+    var JUZ_PAGE = [1,22,42,62,82,102,122,142,162,182,202,222,242,262,282,302,322,342,362,382,402,422,442,462,482,502,522,542,562,582];
+    var JUZ_KEY = ['1:1','2:142','2:253','3:93','4:24','4:148','5:82','6:111','7:88','8:41','9:93','11:6','12:53','15:1','17:1','18:75','21:1','23:1','25:21','27:56','29:46','33:31','36:28','39:32','41:47','46:1','51:31','58:1','67:1','78:1'];
+    // Huroof-e-muqatta'at wali ayaat — inme akele harf asli hain, filter nahi hone chahiye
+    var MUQ = {}; '2:1 3:1 7:1 10:1 11:1 12:1 13:1 14:1 15:1 19:1 20:1 26:1 27:1 28:1 29:1 30:1 31:1 32:1 36:1 38:1 40:1 41:1 42:1 42:2 43:1 44:1 45:1 46:1 50:1 68:1'.split(' ').forEach(function (k) { MUQ[k] = 1; });
 
     function $(id) { return document.getElementById(id); }
     function ls(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -164,12 +227,11 @@
     function toast(m) { var t = document.createElement('div'); t.className = 'qtoast'; t.textContent = m; document.body.appendChild(t); setTimeout(function () { t.remove(); }, 2600); }
     function el(tag, cls, txt) { var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
 
-    // Profile ke hisaab se save (Backup mein khud shamil: p_<profile>_...)
     function K(k) { var p = ls('activeProfile'); return p ? 'p_' + p + '_quran' + k : 'quran_' + k; }
     function jget(k, d) { try { var v = JSON.parse(ls(K(k))); return v == null ? d : v; } catch (e) { return d; } }
     function jset(k, v) { lsSet(K(k), JSON.stringify(v)); }
 
-    // ---------- Font size ----------
+    // ---------- Font size / theme ----------
     var scale = parseFloat(ls('quranScale') || '1');
     function applyScale() { document.documentElement.style.setProperty('--ay', scale); }
     window.changeScale = function (d) { scale = Math.min(1.8, Math.max(0.8, Math.round((scale + d) * 10) / 10)); lsSet('quranScale', scale); applyScale(); };
@@ -188,6 +250,21 @@
     }
     function plain(h) { var d = document.createElement('div'); d.innerHTML = String(h || '').replace(/<sup[^>]*>.*?<\/sup>/gi, ''); return (d.textContent || '').trim(); }
 
+    // ---------- Arabic text saaf karna ----------
+    // Quran.com ke Indo-Pak text mein kabhi akela 'ش' (aur waise hi waqf-nishan wale akele harf) alag token ban kar beech mein aa jaate hain — unhe hata do.
+    var STRIP = /[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED\u0640\u08D3-\u08FF\u200B-\u200F\u2060\uFEFF]/g;
+    var STRAY = /^[\u0634\u0635\u0642\u0637\u0645\u062C\u0632\u0633\u0639]$/;   // ش ص ق ط م ج ز س ع
+    function cleanAr(t, key) {
+        var muq = key && MUQ[key];
+        return String(t || '').replace(/[\u200B\u200C\u200D\u2060\uFEFF]/g, '').split(/\s+/).filter(function (w) {
+            if (!w) return false;
+            var b = w.replace(STRIP, '');
+            if (b === '') return /[\u06D6-\u06DC\u06DE\u06E9]/.test(w) || /\u06DD/.test(w);   // sirf nishan: waqf/sajda/ayat-end rehne do
+            if (b === '\u0634') return false;                                                  // akela ش hamesha hatao
+            if (!muq && STRAY.test(b) && !/\u0653|\u06E4/.test(w)) return false;              // baaqi akele nishan-harf (muqatta'at ke alawa)
+            return true;
+        }).join(' ');
+    }
 
     // ---------- Course ke alfaz pehchanna ----------
     var MARKS = /[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED\u0640\u08D3-\u08FF\u200C-\u200F]/g;
@@ -233,13 +310,9 @@
         return null;
     }
     var showCw = ls('quranShowCw') !== '0';
-    // Quran.com ke text mein kabhi akela 'ش' (pause/sign) alag token ban kar beech mein aa jata hai — usay hata do
-    function cleanAr(t) {
-        return String(t || '').split(/\s+/).filter(function (w) { return w && String(w).replace(/[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED\u0640\u08D3-\u08FF\u200C-\u200F]/g, '') !== '\u0634'; }).join(' ');
-    }
-    function paintAr(div, text) {      // ayat ko lafz-ba-lafz banao; course ke lafz par class "cw"
-        text = cleanAr(text);
-        div.textContent = ''; div._t = text; var n = 0;
+    function paintAr(div, text, key) {
+        text = cleanAr(text, key);
+        div.textContent = ''; div._t = text; div._k = key; var n = 0;
         var toks = String(text).split(/\s+/);
         toks.forEach(function (t, i) {
             if (!t) return;
@@ -272,22 +345,48 @@
     });
     $('rCw').onclick = function () {
         showCw = !showCw; lsSet('quranShowCw', showCw ? '1' : '0');
-        Array.prototype.forEach.call(document.querySelectorAll('#rBox .aar'), function (d) { paintAr(d, d._t); });
-        updateCwInfo();
+        if (cur) { var kp = playing ? playing.s + ':' + playing.a : null; drawPage(bismText || '', null); if (kp) mark(playing.s, playing.a); }
     };
     buildCW();
 
+    // ---------- Qari / repeat settings ----------
+    var qariId = ls('quranQari') || 'alafasy';
+    if (!QARIS.some(function (q) { return q.id === qariId; })) qariId = 'alafasy';
+    var repN = parseInt(ls('quranRep') || '1', 10); if ([1, 3, 5].indexOf(repN) < 0) repN = 1;
+    function qari() { return QARIS.filter(function (q) { return q.id === qariId; })[0]; }
+    function fillQari(sel) { sel.innerHTML = ''; QARIS.forEach(function (q) { var o = el('option', null, '🎙️ ' + q.name); o.value = q.id; sel.appendChild(o); }); sel.value = qariId; }
+    function setQari(v) {
+        qariId = v; lsSet('quranQari', v); $('qariSel1').value = v; $('qariSel2').value = v;
+        if (playing) { var wasAll = playAll; playAyah(playing.s, playing.a, { all: wasAll, total: repTotal }); }   // chalti ayat naye qari se
+    }
+    fillQari($('qariSel1')); fillQari($('qariSel2'));
+    $('qariSel1').onchange = function () { setQari(this.value); };
+    $('qariSel2').onchange = function () { setQari(this.value); };
+    $('repSel').value = String(repN);
+    $('repSel').onchange = function () { repN = +this.value; lsSet('quranRep', repN); setRepBtn(); };
+    function setRepBtn() { $('plRep').textContent = '\uD83D\uDD01 ' + repN + '\u00D7'; $('repSel').value = String(repN); }
+    $('plRep').onclick = function () { repN = repN === 1 ? 3 : repN === 3 ? 5 : 1; lsSet('quranRep', repN); setRepBtn(); if (playing) { repTotal = repN; } };
+    setRepBtn();
+
     // ---------- Surah fehrist ----------
     var chapters = [], view = 'surah';
-    function loadChapters() {
-        return getJSON(API + 'chapters?language=ur').then(function (j) { chapters = j.chapters || []; });
-    }
+    function loadChapters() { return getJSON(API + 'chapters?language=ur').then(function (j) { chapters = j.chapters || []; }); }
     function chName(n) { var c = chapters[n - 1]; return c ? c.name_simple : 'Surah ' + n; }
-
+    function chCount(n) { var c = chapters[n - 1]; return c ? c.verses_count : 0; }
     function marks() { return jget('Marks', []); }
+    function setTab(v) {
+        view = v;
+        [['surah', 'tabSurah'], ['juz', 'tabJuz'], ['page', 'tabPage'], ['marks', 'tabMarks']].forEach(function (p) { $(p[1]).classList.toggle('on', p[0] === v); });
+        searchMode = null; drawList();
+    }
+    var searchMode = null;
+
     function drawList() {
+        $('tabPage').classList.toggle('hidden', STYLE === 'ayat');
+        if (STYLE === 'ayat' && view === 'page') { view = 'surah'; setTabClasses(); }
         var box = $('listBox'); box.innerHTML = '';
         $('markCnt').textContent = marks().length;
+        if (searchMode) return;
         if (view === 'marks') {
             var m = marks();
             if (!m.length) { box.appendChild(el('div', 'msg', 'Abhi koi bookmark nahi. Kisi ayat ke saath 🔖 dabayein.')); return; }
@@ -295,9 +394,24 @@
                 var p = key.split(':'), r = el('button', 'row');
                 r.appendChild(el('span', 'no', p[1]));
                 var nm = el('span', 'nm'); nm.appendChild(el('b', null, chName(+p[0]))); nm.appendChild(el('small', null, 'Surah ' + p[0] + ' · Ayat ' + p[1]));
-                r.appendChild(nm); r.onclick = function () { openSurah(+p[0], +p[1]); }; box.appendChild(r);
+                r.appendChild(nm); r.onclick = function () { openAyah(+p[0], +p[1]); }; box.appendChild(r);
             });
             return;
+        }
+        if (view === 'juz') {
+            for (var j = 1; j <= 30; j++) (function (j) {
+                var kk = JUZ_KEY[j - 1].split(':'), r = el('button', 'row');
+                r.appendChild(el('span', 'no', j));
+                var nm = el('span', 'nm'); nm.appendChild(el('b', null, 'Juz ' + j + ' (Para ' + j + ')'));
+                nm.appendChild(el('small', null, chName(+kk[0]) + ' ' + JUZ_KEY[j - 1] + ''));
+                r.appendChild(nm); r.onclick = function () { var q = JUZ_KEY[j - 1].split(':'); openAyah(+q[0], +q[1]); }; box.appendChild(r);
+            })(j);
+            return;
+        }
+        if (view === 'page') {
+            var g = el('div', 'pgrid');
+            for (var p = 1; p <= TOTAL_PAGES; p++) (function (p) { var b = el('button', null, p); b.onclick = function () { openPage(p); }; g.appendChild(b); })(p);
+            box.appendChild(g); return;
         }
         var q = $('qSearch').value.trim().toLowerCase();
         var list = chapters.filter(function (c) {
@@ -305,7 +419,7 @@
             return String(c.id) === q || c.name_simple.toLowerCase().indexOf(q) >= 0 || (c.name_arabic || '').indexOf(q) >= 0 ||
                 ((c.translated_name && c.translated_name.name) || '').toLowerCase().indexOf(q) >= 0;
         });
-        if (!list.length) { box.appendChild(el('div', 'msg', chapters.length ? 'Koi surah nahi mili.' : '')); return; }
+        if (!list.length) { box.appendChild(el('div', 'msg', chapters.length ? 'Koi surah nahi mili. Upar "🔎 Ayat mein dhoondein" dabayein.' : '')); return; }
         list.forEach(function (c) {
             var r = el('button', 'row');
             r.appendChild(el('span', 'no', c.id));
@@ -321,8 +435,8 @@
         if (!l || !chapters.length) { b.classList.add('hidden'); return; }
         b.classList.remove('hidden'); b.innerHTML = '';
         b.appendChild(el('span', null, '▶'));
-        var d = el('span'); d.appendChild(el('b', null, 'Jaari rakhein: ' + chName(l.s))); d.appendChild(el('small', null, 'Surah ' + l.s + ' · Ayat ' + l.a)); b.appendChild(d);
-        b.onclick = function () { openSurah(l.s, l.a); };
+        var d = el('span'); d.appendChild(el('b', null, 'Jaari rakhein: ' + chName(l.s))); d.appendChild(el('small', null, 'Surah ' + l.s + ' · Ayat ' + l.a + (l.p && l.m === MUSHAF ? ' · Page ' + l.p : ''))); b.appendChild(d);
+        b.onclick = function () { if (l.p && l.m === MUSHAF) openPage(l.p, l.s + ':' + l.a); else openAyah(l.s, l.a); };
     }
     function loadFail(box, retry) {
         box.innerHTML = '';
@@ -333,80 +447,252 @@
         $('listBox').innerHTML = '<div class="msg">⏳ Surah ki fehrist aa rahi hai…</div>';
         loadChapters().then(function () { drawList(); drawResume(); }).catch(function () { loadFail($('listBox'), initList); });
     }
+
+    // ---------- Search: surah / 2:255 / page / juz / ayat ka hissa ----------
+    function parseJump(v) {
+        v = v.trim().toLowerCase(); var m;
+        if ((m = /^(\d{1,3})\s*[:\/]\s*(\d{1,3})$/.exec(v)) && +m[1] >= 1 && +m[1] <= 114) return { t: 'ayah', s: +m[1], a: +m[2] };
+        if ((m = /^(?:p|pg|page|safha|safah|safa|\u0635\u0641\u062D\u06C1|\u0635\u0641\u062D\u0647)\s*\.?\s*(\d{1,3})$/.exec(v)) && +m[1] >= 1 && +m[1] <= TOTAL_PAGES) return { t: 'page', p: +m[1] };
+        if ((m = /^(?:j|juz|juzz|para|paara|\u062C\u0632|\u067E\u0627\u0631\u06C1)\s*\.?\s*(\d{1,2})$/.exec(v)) && +m[1] >= 1 && +m[1] <= 30) return { t: 'juz', j: +m[1] };
+        return null;
+    }
+    var lastQ = '', lastQP = 1;
+    function updateSearchBtn() {
+        var v = $('qSearch').value.trim(), b = $('doSearch');
+        if (v.length >= 2 && !parseJump(v)) { b.classList.remove('hidden'); b.textContent = '🔎 Ayat mein dhoondein: ' + v; } else b.classList.add('hidden');
+    }
+    function runSearch(q, page) {
+        searchMode = true; lastQ = q; lastQP = page;
+        var box = $('listBox'); if (page === 1) box.innerHTML = '';
+        var old = box.querySelector('.morebtn'); if (old) old.remove();
+        var wait = el('div', 'msg', '⏳ Dhoond rahe hain…'); box.appendChild(wait);
+        getJSON(API + 'search?q=' + encodeURIComponent(q) + '&size=15&page=' + page + '&language=ur').then(function (j) {
+            wait.remove();
+            var s = j.search || {}, res = s.results || [];
+            if (page === 1) box.appendChild(el('div', 'note', (s.total_results != null ? s.total_results : res.length) + ' nateeje · tap karke ayat khol lein'));
+            if (!res.length && page === 1) { box.appendChild(el('div', 'msg', 'Kuch nahi mila. Arabic mein ya doosre alfaaz se koshish karein.')); return; }
+            res.forEach(function (r) {
+                var p = String(r.verse_key).split(':'), b = el('button', 'sres');
+                b.appendChild(el('span', 'k', chName(+p[0]) + ' · ' + r.verse_key));
+                b.appendChild(el('div', 't', cleanAr(plain(r.text), r.verse_key)));
+                b.onclick = function () { openAyah(+p[0], +p[1]); }; box.appendChild(b);
+            });
+            var tp = s.total_pages || 1;
+            if (page < tp) { var mb = el('button', 'rbtn morebtn', '⬇ Aur nateeje'); mb.style.cssText = 'width:100%;margin:6px 0'; mb.onclick = function () { runSearch(q, page + 1); }; box.appendChild(mb); }
+        }).catch(function () { wait.remove(); loadFail(box, function () { runSearch(q, page); }); });
+    }
     $('qSearch').oninput = function () {
-        var v = this.value.trim(), m = /^(\d{1,3})\s*[:\/]\s*(\d{1,3})$/.exec(v);
-        if (m && +m[1] >= 1 && +m[1] <= 114) { view = 'surah'; $('tabSurah').classList.add('on'); $('tabMarks').classList.remove('on'); }
-        drawList();
+        var j = parseJump(this.value);
+        searchMode = null;
+        if (j && j.t === 'ayah') { view = 'surah'; setTabClasses(); }
+        drawList(); updateSearchBtn();
     };
+    function setTabClasses() { [['surah', 'tabSurah'], ['juz', 'tabJuz'], ['page', 'tabPage'], ['marks', 'tabMarks']].forEach(function (p) { $(p[1]).classList.toggle('on', p[0] === view); }); }
     $('qSearch').onkeydown = function (e) {
         if (e.key !== 'Enter') return;
-        var m = /^(\d{1,3})\s*[:\/]\s*(\d{1,3})$/.exec(this.value.trim());
-        if (m && +m[1] >= 1 && +m[1] <= 114) openSurah(+m[1], +m[2]);
+        var v = this.value.trim(), j = parseJump(v);
+        if (j) { goJump(j); return; }
+        if (v.length >= 2 && !/^\d+$/.test(v)) runSearch(v, 1);
     };
-    $('tabSurah').onclick = function () { view = 'surah'; this.classList.add('on'); $('tabMarks').classList.remove('on'); drawList(); };
-    $('tabMarks').onclick = function () { view = 'marks'; this.classList.add('on'); $('tabSurah').classList.remove('on'); drawList(); };
+    $('doSearch').onclick = function () { var v = $('qSearch').value.trim(); if (v) runSearch(v, 1); };
+    function goJump(j) {
+        if (j.t === 'ayah') openAyah(j.s, j.a);
+        else if (j.t === 'page') openPage(j.p);
+        else { var q = JUZ_KEY[j.j - 1].split(':'); openAyah(+q[0], +q[1]); }
+    }
+    $('tabSurah').onclick = function () { setTab('surah'); };
+    $('tabJuz').onclick = function () { setTab('juz'); };
+    $('tabPage').onclick = function () { setTab('page'); };
+    $('tabMarks').onclick = function () { setTab('marks'); };
 
-    // ---------- Padhna ----------
-    var cur = null;           // { n, verses:[...] }
+    // ---------- Padhna (page-wise) ----------
+    var cur = null;           // { page, verses:[...] }
     var showTr = ls('quranShowTr') !== '0';
     function setTrBtn() { $('rTr').classList.toggle('on', showTr); }
 
-    function fetchSurah(n) {
-        var all = [];
-        function page(p) {
-            return getJSON(API + 'verses/by_chapter/' + n + '?language=ur&words=false&fields=text_indopak&translations=' + TR_ID + '&per_page=50&page=' + p).then(function (j) {
-                all = all.concat(j.verses || []);
-                var nx = j.pagination && j.pagination.next_page;
-                return nx ? page(nx) : all;
-            });
-        }
-        return page(1);
+    function fetchPage(p) {
+        return getJSON(API + 'verses/by_page/' + p + '?mushaf=' + MUSHAF + '&language=ur&words=true&word_fields=text_indopak,text_uthmani,line_number&fields=text_indopak,juz_number,page_number&translations=' + TR_ID + '&per_page=50').then(function (j) { return j.verses || []; });
     }
     var bismText = null;
     function getBism() {
         if (bismText) return Promise.resolve(bismText);
         return getJSON(API + 'verses/by_key/1:1?fields=text_indopak').then(function (j) { bismText = (j.verse && j.verse.text_indopak) || ''; return bismText; }).catch(function () { return ''; });
     }
+    function showRead() { $('vList').classList.add('hidden'); $('vRead').classList.remove('hidden'); }
 
-    function openSurah(n, ayah) {
-        stopAudio();
-        $('vList').classList.add('hidden'); $('vRead').classList.remove('hidden');
-        $('rTitle').textContent = n + '. ' + chName(n);
+    function fetchSurah(n) {
+        var all = [];
+        function pg(p) {
+            return getJSON(API + 'verses/by_chapter/' + n + '?language=ur&words=false&fields=text_indopak,juz_number,page_number&translations=' + TR_ID + '&per_page=50&page=' + p).then(function (j) {
+                all = all.concat(j.verses || []); var nx = j.pagination && j.pagination.next_page; return nx ? pg(nx) : all;
+            });
+        }
+        return pg(1);
+    }
+    function loadSurah(n, jumpKey) {
+        hideAyBar();
         var box = $('rBox'); box.innerHTML = '<div class="msg">⏳ Surah aa rahi hai…</div>';
-        window.scrollTo(0, 0);
-        Promise.all([fetchSurah(n), n === 1 || n === 9 ? Promise.resolve('') : getBism()]).then(function (r) {
-            cur = { n: n, verses: r[0] };
-            drawSurah(r[1], ayah);
-        }).catch(function () { loadFail(box, function () { openSurah(n, ayah); }); });
+        $('rTitle').textContent = n + '. ' + chName(n); window.scrollTo(0, 0);
+        Promise.all([fetchSurah(n), getBism().catch(function () { return ''; })]).then(function (r) {
+            cur = { surah: n, page: null, verses: r[0] };
+            drawCards(r[1], jumpKey);
+            if (pendingPlay) { var pp = pendingPlay; pendingPlay = null; playAyah(pp.s, pp.a, pp.opt); }
+        }).catch(function () { loadFail(box, function () { loadSurah(n, jumpKey); }); });
+    }
+    function openAyah(s, a) {      // surah:ayat ka page dhoondh kar kholo
+        if (STYLE === 'ayat') { stopAudio(); showRead(); return loadSurah(s, a > 1 ? s + ':' + a : null); }
+        stopAudio(); showRead(); $('rBox').innerHTML = '<div class="msg">⏳ Page aa raha hai…</div>'; window.scrollTo(0, 0);
+        getJSON(API + 'verses/by_key/' + s + ':' + a + '?mushaf=' + MUSHAF + '&fields=page_number').then(function (j) {
+            var p = j.verse && j.verse.page_number; if (!p) throw 0; loadPage(p, s + ':' + a);
+        }).catch(function () { loadFail($('rBox'), function () { openAyah(s, a); }); });
+    }
+    function openSurah(n, ayah) {
+        if (ayah) return openAyah(n, ayah);
+        openAyah(n, 1);
+    }
+    function openPage(p, jumpKey) {
+        if (STYLE === 'ayat') { if (jumpKey) { var q = jumpKey.split(':'); return openAyah(+q[0], +q[1]); } toast('Page ke liye Madani ya Indo-Pak style chunein'); return; }
+        stopAudio(); showRead(); loadPage(p, jumpKey);
     }
 
-    function drawSurah(bism, jump) {
+    function loadPage(p, jumpKey) {
+        hideAyBar();
+        p = Math.min(TOTAL_PAGES, Math.max(1, p | 0));
+        var box = $('rBox'); box.innerHTML = '<div class="msg">⏳ Page ' + p + ' aa raha hai…</div>';
+        $('rTitle').textContent = 'Page ' + p; window.scrollTo(0, 0);
+        Promise.all([fetchPage(p), getBism().catch(function () { return ''; })]).then(function (r) {
+            cur = { page: p, verses: r[0] };
+            drawPage(r[1], jumpKey);
+            if (pendingPlay) { var pp = pendingPlay; pendingPlay = null; playAyah(pp.s, pp.a, pp.opt); }
+        }).catch(function () { loadFail(box, function () { loadPage(p, jumpKey); }); });
+    }
+    function pagerHTML(box, p) {
+        box.innerHTML = '';
+        var ay = STYLE === 'ayat', tot = ay ? 114 : TOTAL_PAGES; if (ay) p = cur && cur.surah ? cur.surah : p;
+        var go = function (x) { if (ay) openSurah(x); else openPage(x); };
+        var prev = el('button', 'rbtn', ay ? '◀ Pichli surah' : '◀ Pichla'), next = el('button', 'rbtn', ay ? 'Agli surah ▶' : 'Agla ▶');
+        prev.disabled = p <= 1; next.disabled = p >= tot;
+        if (p <= 1) prev.style.opacity = .4; if (p >= tot) next.style.opacity = .4;
+        prev.onclick = function () { go(p - 1); }; next.onclick = function () { go(p + 1); };
+        var mid = el('div', 'mid'), inp = el('input'); inp.type = 'number'; inp.min = 1; inp.max = tot; inp.value = p; inp.setAttribute('aria-label', ay ? 'Surah number' : 'Page number');
+        inp.onkeydown = function (e) { if (e.key === 'Enter') { var v = +inp.value; if (v >= 1 && v <= tot) go(v); } };
+        mid.appendChild(inp); mid.appendChild(document.createTextNode(' / ' + tot));
+        box.appendChild(prev); box.appendChild(mid); box.appendChild(next);
+    }
+    function vid(s, n) { return 'a' + s + '_' + n; }
+    var AD = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+    function arNum(n) { return String(n).split('').map(function (d) { return AD[+d]; }).join(''); }
+    function hasLines(vs) { return vs.length && vs.every(function (v) { return v.words && v.words.length && v.words.some(function (w) { return w.line_number; }); }); }
+    function hideAyBar() { var b = $('ayBar'); if (b) b.classList.add('hidden'); Array.prototype.forEach.call(document.querySelectorAll('.mw.sel'), function (e) { e.classList.remove('sel'); }); }
+    function selectAyah(key) {
+        Array.prototype.forEach.call(document.querySelectorAll('.mw.sel'), function (e) { e.classList.remove('sel'); });
+        Array.prototype.forEach.call(document.querySelectorAll('.mw[data-key="' + key + '"]'), function (e) { e.classList.add('sel'); });
+        var p = key.split(':'), s = +p[0], n = +p[1], bar = $('ayBar'); bar.innerHTML = '';
+        bar.appendChild(el('div', 'k', chName(s) + ' · Ayat ' + n + '  (' + key + ')'));
+        var v = cur.verses.filter(function (x) { return x.verse_key === key; })[0];
+        var t = v && v.translations && v.translations[0] ? plain(v.translations[0].text) : '';
+        if (t && showTr) bar.appendChild(el('div', 'tr', t));
+        var bt = el('div', 'bt');
+        var b1 = el('button', 'abtn', '🔊'); b1.onclick = function () { togglePlay(s, n, repN); };
+        var b3 = el('button', 'abtn rp', '3×'); b3.onclick = function () { playAyah(s, n, { all: false, total: 3 }); };
+        var b5 = el('button', 'abtn rp', '5×'); b5.onclick = function () { playAyah(s, n, { all: false, total: 5 }); };
+        var on = marks().indexOf(key) >= 0, bb = el('button', 'abtn' + (on ? ' on' : ''), '🔖');
+        bb.onclick = function () { var m = marks(), i = m.indexOf(key); if (i >= 0) m.splice(i, 1); else m.push(key); jset('Marks', m); bb.classList.toggle('on', i < 0); toast(i < 0 ? '🔖 Bookmark lag gaya' : 'Bookmark hata diya'); };
+        var cl = el('button', 'abtn', '✕'); cl.onclick = hideAyBar;
+        [b1, b3, b5, bb].forEach(function (b) { bt.appendChild(b); }); bt.appendChild(el('span', 'sp')); bt.appendChild(cl); bar.appendChild(bt);
+        bar.classList.remove('hidden');
+    }
+    function drawMushaf(bism, jump) {
         var box = $('rBox'); box.innerHTML = '';
-        if (bism) box.appendChild(el('div', 'bism', cleanAr(bism)));
-        var mk = marks();
+        var mk = marks(), first = cur.verses[0], j = first ? first.juz_number : '';
+        $('rTitle').textContent = 'Page ' + cur.page + (j ? ' · Juz ' + j : '');
+        var lines = {}, order = [];
         cur.verses.forEach(function (v) {
-            var key = v.verse_key, num = v.verse_number;
-            var a = el('div', 'ayah' + (mk.indexOf(key) >= 0 ? ' mark' : '')); a.id = 'a' + num; a.setAttribute('data-key', key); a.setAttribute('data-n', num);
-            var top = el('div', 'atop'); top.appendChild(el('span', 'anum', 'Ayat ' + num + '  (' + key + ')'));
-            var bp = el('button', 'abtn', '🔊'); bp.title = 'Suniye'; bp.onclick = function () { playAyah(num, false); };
+            var key = v.verse_key, s = +key.split(':')[0];
+            (v.words || []).forEach(function (w) {
+                var ln = w.line_number || 0; if (!lines[ln]) { lines[ln] = []; order.push(ln); }
+                lines[ln].push({ w: w, v: v, key: key, s: s });
+            });
+        });
+        order.sort(function (a, b) { return a - b; });
+        var page = el('div', 'mpage'); var done = {};
+        order.forEach(function (ln) {
+            var items = lines[ln];
+            // surah/juz ki shuruaat — line se pehle banner
+            items.forEach(function (it) {
+                if (it.v.verse_number === 1 && !done['s' + it.s] && it.w.position === 1) {
+                    done['s' + it.s] = 1; var sb = el('div', 'sbanner'); sb.style.direction = 'ltr';
+                    sb.appendChild(el('div', 'ar', chapters[it.s - 1] ? chapters[it.s - 1].name_arabic : '')); sb.appendChild(el('small', null, it.s + '. ' + chName(it.s) + ' · ' + chCount(it.s) + ' ayat')); page.appendChild(sb);
+                    if (it.s !== 1 && it.s !== 9 && bism) { var bm = el('div', 'bism', cleanAr(bism, '1:1')); page.appendChild(bm); }
+                }
+                var ji = JUZ_KEY.indexOf(it.key); if (ji >= 0 && it.w.position === 1 && !done['j' + ji]) { done['j' + ji] = 1; var jb = el('div', 'jbanner', '— Juz ' + (ji + 1) + ' shuru —'); jb.style.direction = 'ltr'; page.appendChild(jb); }
+            });
+            var row = el('div', 'mline');
+            items.forEach(function (it) {
+                var w = it.w, isEnd = w.char_type_name === 'end', sp;
+                if (isEnd) { sp = el('span', 'mw end', '\uFD3F' + arNum(it.v.verse_number) + '\uFD3E'); }
+                else {
+                    var txt = cleanAr(w.text_indopak || w.text_uthmani || w.text || '', it.key); if (!txt) return;
+                    sp = el('span', 'mw', txt);
+                    var m = showCw ? lookup(txt) : null;
+                    if (m) { sp.classList.add('cw'); sp._m = m; sp._x = norm(txt) === m.key; sp._t = txt; }
+                }
+                sp.setAttribute('data-key', it.key); sp.setAttribute('data-s', it.s); sp.setAttribute('data-n', it.v.verse_number);
+                if (mk.indexOf(it.key) >= 0 && isEnd) sp.style.textDecoration = 'underline';
+                row.appendChild(sp);
+            });
+            page.appendChild(row);
+        });
+        box.appendChild(page);
+        page.onclick = function (e) { var t = e.target.closest ? e.target.closest('.mw') : null; if (t) selectAyah(t.getAttribute('data-key')); };
+        var n = box.querySelectorAll('.cw').length;
+        $('cwInfo').textContent = showCw ? ('Course ke alfaz rang mein hain (is page par ' + n + ') — tap karke matlab dekhein') : 'Course ke alfaz ka rang band hai';
+        $('rCw').classList.toggle('on', showCw);
+        if (jump) { var f = box.querySelector('.mw[data-key="' + jump + '"]'); if (f) { setTimeout(function () { f.scrollIntoView({ block: 'center' }); }, 60); selectAyah(jump); } }
+        saveLastSoon();
+    }
+    function drawPage(bism, jump) {
+        pagerHTML($('pgTop'), cur.page); pagerHTML($('pgBot'), cur.page);
+        if (hasLines(cur.verses)) return drawMushaf(bism, jump);
+        toast('Is page ka line-layout nahi mila — ayat-wise dikha rahe hain');
+        drawCards(bism, jump);
+    }
+    function drawCards(bism, jump) {
+        var box = $('rBox'); box.innerHTML = '';
+        pagerHTML($('pgTop'), cur.page); pagerHTML($('pgBot'), cur.page);
+        var mk = marks(), first = cur.verses[0], j = first ? first.juz_number : '';
+        $('rTitle').textContent = STYLE === 'ayat' ? (cur.surah + '. ' + chName(cur.surah)) : ('Page ' + cur.page + (j ? ' · Juz ' + j : ''));
+        cur.verses.forEach(function (v) {
+            var key = v.verse_key, p = key.split(':'), s = +p[0], num = v.verse_number;
+            var ji = JUZ_KEY.indexOf(key);
+            if (ji >= 0) box.appendChild(el('div', 'jbanner', '— Juz ' + (ji + 1) + ' shuru —'));
+            if (num === 1) {
+                var sb = el('div', 'sbanner'); sb.appendChild(el('div', 'ar', chapters[s - 1] ? chapters[s - 1].name_arabic : '')); sb.appendChild(el('small', null, s + '. ' + chName(s) + ' · ' + chCount(s) + ' ayat')); box.appendChild(sb);
+                if (s !== 1 && s !== 9 && bism) box.appendChild(el('div', 'bism', cleanAr(bism, '1:1')));
+            }
+            var a = el('div', 'ayah' + (mk.indexOf(key) >= 0 ? ' mark' : '')); a.id = vid(s, num); a.setAttribute('data-key', key); a.setAttribute('data-s', s); a.setAttribute('data-n', num);
+            var top = el('div', 'atop'); top.appendChild(el('span', 'anum', chName(s) + ' · Ayat ' + num + '  (' + key + ')'));
+            var bp = el('button', 'abtn', '🔊'); bp.title = 'Suniye'; bp.onclick = function () { togglePlay(s, num, repN); };
+            var b3 = el('button', 'abtn rp', '3×'); b3.title = '3 baar dohrayein'; b3.onclick = function () { playAyah(s, num, { all: false, total: 3 }); };
+            var b5 = el('button', 'abtn rp', '5×'); b5.title = '5 baar dohrayein'; b5.onclick = function () { playAyah(s, num, { all: false, total: 5 }); };
             var bb = el('button', 'abtn' + (mk.indexOf(key) >= 0 ? ' on' : ''), '🔖'); bb.title = 'Bookmark'; bb.onclick = function () { toggleMark(key, a, bb); };
-            top.appendChild(bp); top.appendChild(bb); a.appendChild(top);
-            var ar = el('div', 'aar'); ar.setAttribute('lang', 'ar'); paintAr(ar, v.text_indopak || ''); a.appendChild(ar);
+            top.appendChild(bp); top.appendChild(b3); top.appendChild(b5); top.appendChild(bb); a.appendChild(top);
+            var ar = el('div', 'aar'); ar.setAttribute('lang', 'ar'); paintAr(ar, v.text_indopak || '', key); a.appendChild(ar);
             var t = v.translations && v.translations[0] ? plain(v.translations[0].text) : '';
             if (t) { var tr = el('div', 'atr' + (showTr ? '' : ' hidden'), t); a.appendChild(tr); }
             box.appendChild(a);
         });
         updateCwInfo();
-        if (jump) { var t2 = $('a' + jump); if (t2) setTimeout(function () { t2.scrollIntoView(); }, 50); }
+        if (jump) { var q = jump.split(':'), t2 = $(vid(q[0], q[1])); if (t2) setTimeout(function () { t2.scrollIntoView(); }, 50); }
         saveLastSoon();
     }
 
-    $('rBack').onclick = function () { $('cwTip').classList.add('hidden'); stopAudio(); $('vRead').classList.add('hidden'); $('vList').classList.remove('hidden'); drawResume(); drawList(); window.scrollTo(0, 0); };
+    $('rBack').onclick = function () { hideAyBar(); $('cwTip').classList.add('hidden'); stopAudio(); $('vRead').classList.add('hidden'); $('vList').classList.remove('hidden'); drawResume(); drawList(); window.scrollTo(0, 0); };
     $('rTr').onclick = function () {
         showTr = !showTr; lsSet('quranShowTr', showTr ? '1' : '0'); setTrBtn();
         Array.prototype.forEach.call(document.querySelectorAll('.atr'), function (e) { e.classList.toggle('hidden', !showTr); });
     };
-    $('rAll').onclick = function () { if (cur) playAyah(1, true); };
+    $('rAll').onclick = function () { if (cur && cur.verses.length) { var v = cur.verses[0].verse_key.split(':'); playAyah(+v[0], +v[1], { all: true, total: repN }); } };
     setTrBtn();
 
     // ---------- Bookmark ----------
@@ -422,42 +708,99 @@
     var lastT = null;
     function saveLast() {
         if (!cur || $('vRead').classList.contains('hidden')) return;
-        var cards = document.querySelectorAll('.ayah'), top = 120, pick = null;
+        var cards = document.querySelectorAll('.ayah, .mw'), top = 120, pick = null;
         for (var i = 0; i < cards.length; i++) { var r = cards[i].getBoundingClientRect(); if (r.bottom > top) { pick = cards[i]; break; } }
-        if (pick) jset('Last', { s: cur.n, a: +pick.getAttribute('data-n') });
+        if (pick) { var kk = (pick.getAttribute('data-key') || '').split(':'); if (kk.length === 2) jset('Last', { s: +kk[0], a: +kk[1], p: cur.page || 0, m: MUSHAF }); }
     }
     function saveLastSoon() { clearTimeout(lastT); lastT = setTimeout(saveLast, 500); }
     window.addEventListener('scroll', saveLastSoon, { passive: true });
 
-    // ---------- Audio ----------
-    var au = new Audio(), playing = null, playAll = false, tryN = 0;
+    // ---------- Audio (qari + repeat) ----------
+    var au = new Audio(), playing = null, playAll = false, tryN = 0, repDone = 0, repTotal = 1, pendingPlay = null;
     au.preload = 'auto';
-    function keyFile(key) { var p = key.split(':'); return pad(p[0], 3) + pad(p[1], 3); }
-    function mark(num) {
-        Array.prototype.forEach.call(document.querySelectorAll('.ayah.playing'), function (e) { e.classList.remove('playing'); });
-        var c = num ? $('a' + num) : null; if (c) { c.classList.add('playing'); c.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+    function fileOf(s, a) { return pad(s, 3) + pad(a, 3); }
+    function srcFor(s, a, n) {
+        var q = qari(), f = fileOf(s, a);
+        if (n === 0) return 'https://everyayah.com/data/' + q.dir + '/' + f + '.mp3';
+        if (n === 1 && q.alt) return q.alt + f + '.mp3';
+        return null;
     }
-    function playAyah(num, all) {
-        if (!cur) return;
-        if (playing === num && !au.paused && !all) { au.pause(); $('plToggle').textContent = '▶'; return; }
-        playAll = !!all; playing = num; tryN = 0;
-        var key = cur.n + ':' + num, f = keyFile(key);
-        function go() { au.src = AUDIO[tryN](f); au.play().catch(function () {}); }
-        au.onerror = function () { tryN++; if (tryN < AUDIO.length) go(); else { toast('📡 Audio nahi chali — internet check karein'); stopAudio(); } };
-        au.onended = function () { if (playAll && cur && playing < cur.verses.length) playAyah(playing + 1, true); else stopAudio(); };
-        go(); mark(num);
-        $('player').classList.remove('hidden'); $('plTxt').textContent = chName(cur.n) + ' · Ayat ' + num; $('plToggle').textContent = '⏸';
+    function mark(s, a) {
+        Array.prototype.forEach.call(document.querySelectorAll('.playing'), function (e) { e.classList.remove('playing'); });
+        if (!s) return;
+        var cs = document.querySelectorAll('[data-key="' + s + ':' + a + '"]');
+        Array.prototype.forEach.call(cs, function (e) { e.classList.add('playing'); });
+        if (cs[0]) cs[0].scrollIntoView({ block: 'center', behavior: 'smooth' });
     }
-    function stopAudio() { try { au.pause(); } catch (e) {} au.onended = au.onerror = null; playing = null; playAll = false; mark(0); $('player').classList.add('hidden'); }
+    function label() {
+        if (!playing) return '';
+        return chName(playing.s) + ' · Ayat ' + playing.a + ' · ' + qari().name + (repTotal > 1 ? ' · ' + Math.min(repDone + 1, repTotal) + '/' + repTotal : '');
+    }
+    function nextOf(s, a) { if (a < chCount(s)) return { s: s, a: a + 1 }; if (s < 114) return { s: s + 1, a: 1 }; return null; }
+    function prevOf(s, a) { if (a > 1) return { s: s, a: a - 1 }; if (s > 1) return { s: s - 1, a: chCount(s - 1) }; return null; }
+    function onPage(s, a) { return !!document.querySelector('[data-key="' + s + ':' + a + '"]'); }
+    function togglePlay(s, a, total) {
+        if (playing && playing.s === s && playing.a === a && !playAll) { if (au.paused) { au.play().catch(function () {}); $('plToggle').textContent = '⏸'; } else { au.pause(); $('plToggle').textContent = '▶'; } return; }
+        playAyah(s, a, { all: false, total: total });
+    }
+    function playAyah(s, a, opt) {
+        opt = opt || {};
+        if (!onPage(s, a)) {      // agli ayat doosre page par — pehle wo page kholo
+            if (STYLE === 'ayat') { if (s >= 1 && s <= 114 && (!cur || s !== cur.surah)) { pendingPlay = { s: s, a: a, opt: opt }; loadSurah(s); } return; }
+            var c = cur, target = null;
+            if (c) { var f = c.verses[0] && c.verses[0].verse_key.split(':'), l = c.verses[c.verses.length - 1].verse_key.split(':');
+                // agli ayat page ke baad aati hai ya pehle?
+                var after = (s > +l[0]) || (s === +l[0] && a > +l[1]); target = after ? c.page + 1 : c.page - 1; }
+            if (target >= 1 && target <= TOTAL_PAGES) { pendingPlay = { s: s, a: a, opt: opt }; loadPage(target); return; }
+            return;
+        }
+        playAll = !!opt.all; repTotal = opt.total || 1; repDone = 0; playing = { s: s, a: a }; tryN = 0;
+        function go() {
+            var u = srcFor(s, a, tryN);
+            if (!u) { toast('📡 Audio nahi chali — internet check karein ya doosra qari chunein'); stopAudio(); return; }
+            au.src = u; au.play().catch(function () {});
+        }
+        au.onerror = function () { tryN++; go(); };
+        au.onended = function () {
+            repDone++;
+            if (repDone < repTotal) { $('plTxt').textContent = label(); au.currentTime = 0; au.play().catch(function () {}); return; }
+            if (playAll) { var n = nextOf(s, a); if (n) { playAyah(n.s, n.a, { all: true, total: repTotal }); return; } }
+            stopAudio();
+        };
+        go(); mark(s, a);
+        $('player').classList.remove('hidden'); document.body.classList.add('pl'); $('plTxt').textContent = label(); $('plToggle').textContent = '⏸';
+    }
+    function stopAudio() { try { au.pause(); } catch (e) {} au.onended = au.onerror = null; playing = null; playAll = false; pendingPlay = null; mark(0, 0); $('player').classList.add('hidden'); document.body.classList.remove('pl'); }
     $('plToggle').onclick = function () { if (au.paused) { au.play().catch(function () {}); this.textContent = '⏸'; } else { au.pause(); this.textContent = '▶'; } };
     $('plStop').onclick = stopAudio;
-    $('plNext').onclick = function () { if (cur && playing && playing < cur.verses.length) playAyah(playing + 1, playAll); };
-    $('plPrev').onclick = function () { if (cur && playing && playing > 1) playAyah(playing - 1, playAll); };
+    $('plNext').onclick = function () { if (playing) { var n = nextOf(playing.s, playing.a); if (n) playAyah(n.s, n.a, { all: playAll, total: repTotal }); } };
+    $('plPrev').onclick = function () { if (playing) { var n = prevOf(playing.s, playing.a); if (n) playAyah(n.s, n.a, { all: playAll, total: repTotal }); } };
+
+    // ---------- Style chunav (Madani / Indo-Pak / Ayat-wise) ----------
+    function fillStyle(sel) { sel.innerHTML = ''; Object.keys(STYLES).forEach(function (k) { var o = el('option', null, STYLES[k].name); o.value = k; sel.appendChild(o); }); sel.value = STYLE; }
+    fillStyle($('styleSel1')); fillStyle($('styleSel2'));
+    function setStyle(id) {
+        if (!STYLES[id] || id === STYLE) return;
+        var key = null;
+        if (cur && !$('vRead').classList.contains('hidden')) {
+            var l = jget('Last', null); key = playing ? playing.s + ':' + playing.a : (l ? l.s + ':' + l.a : (cur.verses[0] && cur.verses[0].verse_key));
+        }
+        stopAudio(); hideAyBar(); applyStyle(id); cur = null;
+        $('styleSel1').value = id; $('styleSel2').value = id;
+        if (key) { var q = key.split(':'); openAyah(+q[0], +q[1]); } else { drawList(); drawResume(); }
+        toast(STYLES[id].name);
+    }
+    $('styleSel1').onchange = function () { setStyle(this.value); };
+    $('styleSel2').onchange = function () { setStyle(this.value); };
 
     // ---------- Shuru ----------
     initList();
-    var h = /^#(\d{1,3})(?::(\d{1,3}))?$/.exec(location.hash);     // quran.html#2:255
-    if (h && +h[1] >= 1 && +h[1] <= 114) loadChapters().then(function () { openSurah(+h[1], h[2] ? +h[2] : 0); }).catch(function () {});
+    var h = /^#(?:(\d{1,3})(?::(\d{1,3}))?|p(\d{1,3})|j(\d{1,2}))$/.exec(location.hash);     // #2:255  #p50  #j5
+    if (h) loadChapters().then(function () {
+        if (h[1] && +h[1] >= 1 && +h[1] <= 114) openSurah(+h[1], h[2] ? +h[2] : 0);
+        else if (h[3] && +h[3] >= 1 && +h[3] <= TOTAL_PAGES) openPage(+h[3]);
+        else if (h[4] && +h[4] >= 1 && +h[4] <= 30) { var q = JUZ_KEY[+h[4] - 1].split(':'); openAyah(+q[0], +q[1]); }
+    }).catch(function () {});
 })();
 </script>
 <script src="icons.js"></script>

@@ -96,13 +96,13 @@ Azan app band hone par bhi bajne ke liye. **Phone/screen par koi lock nahi lagta
 - Games mein 🎵 button hawa + behta paani + parindon (chehchahate, trill, siti, kabootar) ki **original** awaaz chalata hai. Ye awaaz code se bani hai (koi recording / sample istemal nahi hui), isliye uska copyright ka masla nahi.
 - Is mein koi saaz ya gaana nahi. Agar apni awaaz mein nasheed record karwa kar ispar mila dein to wahi file `nature-ambience.mp3` ke naam se rakh dein.
 
-### 📖 Quran (`quran.html`)
-- 114 surahein, **Indo-Pak rasm-ul-khat** (Quran.com `text_indopak`), ayat-ba-ayat **Urdu tarjuma: Maulana Muhammad Junagarhi** (Quran.com ID 54 — wahi tarjuma jo Ahsan-ul-Bayan mein hai).
-- 🔊 Mishary ki ayat-ba-ayat awaaz, ▶ poori surah, 🔖 bookmark, "Jaari rakhein" (aakhri padhi ayat), A-/A+, surah naam ya `2:255` likh kar seedha jaana, ya link `quran.html#2:255`.
-- Jo surah / tafseer ek baar khul gayi wo `fq-quran-v1` cache mein save hoti hai aur offline chalti hai. Bookmark aur last-read Backup mein shamil hain.
-- 🎨 **Course ke saare lafz (900) Quran ki ayat mein alag rang mein** dikhte hain (theme ke hisaab se rang). Rang wale lafz par tap karein to Arabic, Roman, Urdu matlab aur course ka din aata hai. Header ke 🎨 button se rang on/off. Matching harakat aur alif/yaa ke farq ko nazar-andaaz karti hai aur aam prefix (و ف ب ل ك ال) aur zameer (ك ه ها هم كم نا) hata kar bhi dhoondti hai; kuch badle hue rupp (jaise fe'l ki doosri shaklein) nahi pakde jaate, aur kabhi kabhi milta-julta lafz bhi rang pakad leta hai (tooltip mein likha hota hai).
-- Behtareen Indo-Pak shakal ke liye `fonts/indopak.woff2` (ya `.ttf`) rakh dein, warna Scheherazade New / Noto Naskh chalta hai.
-- Ahsan-ul-Bayan ke **hawashi (tafseer)** Quran.com par nahi milte; wo chahiye to licence wali source alag se judni hogi.
+### 📖 Quran (`quran.html`) — v76
+- **3 style (jo chahe chunein, yaad rehta hai)**: 🕌 **Madani Mushaf** (604 page, 15 line) · 📖 **Indo-Pak Mushaf** (610 page, 15 line) · 📋 **Ayat-wise** (pehle jaisa: surah mein har ayat alag card). Mushaf styles mein asli line-layout, ◀ ▶ aur page number se jump; ayat par tap karke 🔊 / 3× / 5× / 🔖 aur tarjuma. Style padhte hue bhi badal sakte hain — usi ayat par khulta hai.
+- **Talash**: Surah naam, `2:255`, `page 50` / `p50`, `juz 5` / `para 5`, ya **ayat ka koi bhi hissa** (Arabic ya Urdu/English alfaz) likh kar 🔎 — nateeje par tap karke seedha ayat khulti hai. Tabs: 📖 Surah · 📚 Juz (30) · 📄 Page (grid) · 🔖 Bookmark. Link: `quran.html#2:255`, `#p50`, `#j5`.
+- **Qari (4)**: Mishary Alafasy (pehle jaisa default), Sudais, Husary, Abdul Basit — chunav yaad rehta hai; chalti ayat naye qari se badal jaati hai.
+- **Repeat**: har ayat par **3×** / **5×** button; saath hi ▶ Page ke liye 🔁 1/3/5 baar (player mein bhi). Page khatam hone par agla page khud khulta hai.
+- Arabic text se akela **ش** (aur doosre akele waqf-nishan harf; huroof-e-muqatta'at chhod kar) hata diya jaata hai.
+- Course ke alfaz ka rang, bookmark, jaari rakhein, A-/A+, theme, offline cache — pehle jaisa.
 
 ### 🎨 Themes (`themes.js`)
 - Shop se kharidi hui theme ab **har page** (Sabaq, Duaein, Tajweed, Asma, Games + Bazm) par lagti hai. Sub-pages ka 🌙/☀️ button kharidi hui themes ek ke baad ek badalta hai (sirf wohi jo is profile ne kharidi hon; admin ke liye sab).
