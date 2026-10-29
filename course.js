@@ -877,7 +877,7 @@ const courseData = [
         { a: "اسْتَقَامَ", r: "Istaqaama", u: "سیدھا رہا، قائم رہا", u_ro: "Seedha raha, qaaim raha", u_hi: "सीधा रहा, क़ायम रहा", u_en: "He remained steadfast", m: "ثُمَّ اسْتَقَامُوا", t: "قائم رہنا", t_ro: "Qaaim rehna", t_hi: "क़ायम रहना", t_en: "Steadfastness" }
     ] },
     { day: 73, words: [
-        { a: "أَشْرَكَ", r: "Ashraka", u: "شرک کیا", u_ro: "Shirk kiya", u_hi: "शिर्क किया", u_en: "He associated partners", m: "لَا يُشْرِكُ بِعِبَادَتِهِ أَحَدًا", t: "شرک", t_ro: "Shirk", t_hi: "शिर्क", t_en: "Polytheism" },
+        { a: "أَشْرَكَ", r: "Ashraka", u: "شرک کیا", u_ro: "Shirk kiya", u_hi: "शिर्क किया", u_en: "He associated partners", m: "وَلَا يُشْرِكْ بِعِبَادَةِ رَبِّهِ أَحَدًا", t: "شرک", t_ro: "Shirk", t_hi: "शिर्क", t_en: "Polytheism" },
         { a: "أَلْحَدَ", r: "Alhada", u: "الحاد کیا، کج روی کی", u_ro: "Ilhaad kiya, kajravi ki", u_hi: "इलहाद किया, कजरवी की", u_en: "He deviated", m: "يُلْحِدُونَ فِي آيَاتِهِ", t: "الحاد", t_ro: "Ilhaad", t_hi: "इलहाद", t_en: "Deviation" },
         { a: "غَلّ", r: "Ghalla", u: "خیانت کی (مالِ غنیمت میں)", u_ro: "Khiyaanat ki", u_hi: "ख़ियानत की", u_en: "He embezzled", m: "وَمَا كَانَ لِنَبِيٍّ أَن يَغُلَّ", t: "خیانت", t_ro: "Khiyaanat", t_hi: "ख़ियानत", t_en: "Embezzlement" },
         { a: "سَرَقَ", r: "Saraqa", u: "چوری کی", u_ro: "Chori ki", u_hi: "चोरी की", u_en: "He stole", m: "وَالسَّارِقُ وَالسَّارِقَةُ", t: "چوری", t_ro: "Chori", t_hi: "चोरी", t_en: "Theft" },
@@ -925,7 +925,7 @@ const courseData = [
         { a: "حَطَب", r: "Hatab", u: "ایندھن کی لکڑی", u_ro: "Eendhan ki lakdi", u_hi: "ईंधन की लकड़ी", u_en: "Firewood", m: "حَمَّالَةَ الْحَطَبِ", t: "لکڑی", t_ro: "Lakdi", t_hi: "लकड़ी", t_en: "Firewood" }
     ] },
     { day: 77, words: [
-        { a: "صَرَخَ", r: "Sarakha", u: "چیخا، پکارا", u_ro: "Cheekha, pukaara", u_hi: "चीख़ा, पुकारा", u_en: "He cried out", m: "فَإِذَا هُم يَصْطَرِخُونَ", t: "چیخنا", t_ro: "Cheekhna", t_hi: "चीख़ना", t_en: "To cry" },
+        { a: "صَرَخَ", r: "Sarakha", u: "چیخا، پکارا", u_ro: "Cheekha, pukaara", u_hi: "चीख़ा, पुकारा", u_en: "He cried out", m: "وَهُمْ يَصْطَرِخُونَ فِيهَا", t: "چیخنا", t_ro: "Cheekhna", t_hi: "चीख़ना", t_en: "To cry" },
         { a: "أَذَّنَ", r: "Adhdhana", u: "اعلان کیا، اذان دی", u_ro: "Elaan kiya, azaan di", u_hi: "एलान किया, अज़ान दी", u_en: "He announced", m: "فَأَذَّنَ مُؤَذِّنٌ", t: "اعلان", t_ro: "Elaan", t_hi: "एलान", t_en: "Announcement" },
         { a: "جَادَلَ", r: "Jaadala", u: "جھگڑا کیا، بحث کی", u_ro: "Jhagda kiya, behas ki", u_hi: "झगड़ा किया, बहस की", u_en: "He argued", m: "وَجَادِلْهُم بِالَّتِي هِيَ أَحْسَنُ", t: "بحث", t_ro: "Behas", t_hi: "बहस", t_en: "Argument" },
         { a: "حَاجَّ", r: "Haajja", u: "دلیل سے بحث کی", u_ro: "Daleel se behas ki", u_hi: "दलील से बहस की", u_en: "He disputed", m: "أَتُحَاجُّونَنَا فِي اللَّهِ", t: "بحث", t_ro: "Behas", t_hi: "बहस", t_en: "Disputation" },
@@ -982,7 +982,7 @@ const courseData = [
         { a: "عَطَاء", r: "'Ataa'", u: "عطیہ، بخشش", u_ro: "Atiya, bakhshish", u_hi: "अतिया, बख़्शिश", u_en: "Gift", m: "عَطَاءً حِسَابًا", t: "عطیہ", t_ro: "Atiya", t_hi: "अतिया", t_en: "Gift" },
         { a: "بَرَكَات", r: "Barakaat", u: "برکتیں", u_ro: "Barkatein", u_hi: "बरकतें", u_en: "Blessings", m: "بَرَكَات", t: "برکت", t_ro: "Barkat", t_hi: "बरकत", t_en: "Blessing" },
         { a: "رَغَد", r: "Raghad", u: "کشادگی، فراخی", u_ro: "Kushaadgi, faraakhi", u_hi: "कुशादगी, फ़राख़ी", u_en: "Abundance", m: "رَغَدًا حَيْثُ شِئْتُمَا", t: "فراخی", t_ro: "Faraakhi", t_hi: "फ़राख़ी", t_en: "Abundance" },
-        { a: "سِعَة", r: "Si'ah", u: "کشادگی، وسعت", u_ro: "Kushaadgi, wusat", u_hi: "कुशादगी, वुसत", u_en: "Ampleness", m: "وَبَسَطَكُمْ بَسْطَةً", t: "کشادگی", t_ro: "Kushaadgi", t_hi: "कुशादगी", t_en: "Ampleness" }
+        { a: "سِعَة", r: "Si'ah", u: "کشادگی، وسعت", u_ro: "Kushaadgi, wusat", u_hi: "कुशादगी, वुसत", u_en: "Ampleness", m: "وَلَمْ يُؤْتَ سَعَةً مِّنَ الْمَالِ", t: "کشادگی", t_ro: "Kushaadgi", t_hi: "कुशादगी", t_en: "Ampleness" }
     ] },
     { day: 82, words: [
         { a: "تِجَارَة", r: "Tijaarah", u: "تجارت", u_ro: "Tijaarat", u_hi: "तिजारत", u_en: "Trade", m: "تِجَارَةً لَّن تَبُورَ", t: "تجارت", t_ro: "Tijaarat", t_hi: "तिजारत", t_en: "Trade" },
@@ -991,13 +991,13 @@ const courseData = [
         { a: "مِثْقَال", r: "Mithqaal", u: "وزن، تول", u_ro: "Wazan, tol", u_hi: "वज़न, तोल", u_en: "Weight", m: "مِثْقَالَ حَبَّةٍ", t: "وزن", t_ro: "Wazan", t_hi: "वज़न", t_en: "Weight" },
         { a: "دِينَار", r: "Deenaar", u: "دینار (سونا)", u_ro: "Deenaar (sona)", u_hi: "दीनार (सोना)", u_en: "Dinar (gold)", m: "دِينَارًا", t: "دینار", t_ro: "Deenaar", t_hi: "दीनार", t_en: "Dinar" },
         { a: "دَرَاهِم", r: "Daraahim", u: "درہم (جمع)", u_ro: "Dirham (jama)", u_hi: "दिरहम (जमा)", u_en: "Dirhams", m: "دَرَاهِم", t: "درہم", t_ro: "Dirham", t_hi: "दिरहम", t_en: "Dirham" },
-        { a: "وَزْن", r: "Wazn", u: "تولنا، وزن", u_ro: "Tolna, wazan", u_hi: "तोलना, वज़न", u_en: "Weight", m: "وَلَا تُخْسِرُوا الْمِيزَانَ", t: "وزن", t_ro: "Wazan", t_hi: "वज़न", t_en: "Weight" },
-        { a: "كَيْل", r: "Kayl", u: "ناپنا", u_ro: "Naapna", u_hi: "नापना", u_en: "Measuring", m: "وَيْلٌ لِّلْمُطَفِّفِينَ", t: "ناپنا", t_ro: "Naapna", t_hi: "नापना", t_en: "Measuring" },
-        { a: "مِكْيَال", r: "Mikyaal", u: "ناپنے کا پیمانہ", u_ro: "Naapne ka paimaana", u_hi: "नापने का पैमाना", u_en: "Measure", m: "أَوْفُوا الْكَيْلَ وَلَا تَكُونُوا", t: "پیمانہ", t_ro: "Paimana", t_hi: "पैमाना", t_en: "Measure" },
+        { a: "وَزْن", r: "Wazn", u: "تولنا، وزن", u_ro: "Tolna, wazan", u_hi: "तोलना, वज़न", u_en: "Weight", m: "وَأَقِيمُوا الْوَزْنَ بِالْقِسْطِ", t: "وزن", t_ro: "Wazan", t_hi: "वज़न", t_en: "Weight" },
+        { a: "كَيْل", r: "Kayl", u: "ناپنا", u_ro: "Naapna", u_hi: "नापना", u_en: "Measuring", m: "أَوْفُوا الْكَيْلَ", t: "ناپنا", t_ro: "Naapna", t_hi: "नापना", t_en: "Measuring" },
+        { a: "مِكْيَال", r: "Mikyaal", u: "ناپنے کا پیمانہ", u_ro: "Naapne ka paimaana", u_hi: "नापने का पैमाना", u_en: "Measure", m: "وَلَا تَنقُصُوا الْمِكْيَالَ وَالْمِيزَانَ", t: "پیمانہ", t_ro: "Paimana", t_hi: "पैमाना", t_en: "Measure" },
         { a: "قِسْط", r: "Qist", u: "انصاف، عدل", u_ro: "Insaaf, adl", u_hi: "इंसाफ़, अद्ल", u_en: "Equity", m: "بِالْقِسْطِ", t: "انصاف", t_ro: "Insaaf", t_hi: "इंसाफ़", t_en: "Equity" }
     ] },
     { day: 83, words: [
-        { a: "سَنَة", r: "Sanah", u: "سال", u_ro: "Saal", u_hi: "साल", u_en: "Year", m: "خَمْسِينَ عَامًا", t: "سال", t_ro: "Saal", t_hi: "साल", t_en: "Year" },
+        { a: "سَنَة", r: "Sanah", u: "سال", u_ro: "Saal", u_hi: "साल", u_en: "Year", m: "أَلْفَ سَنَةٍ إِلَّا خَمْسِينَ عَامًا", t: "سال", t_ro: "Saal", t_hi: "साल", t_en: "Year" },
         { a: "عَام", r: "Aam", u: "سال", u_ro: "Saal", u_hi: "साल", u_en: "Year", m: "عَامِهِمْ هَٰذَا", t: "سال", t_ro: "Saal", t_hi: "साल", t_en: "Year" },
         { a: "صَيْف", r: "Sayf", u: "گرمی کا موسم", u_ro: "Garmi ka mausam", u_hi: "गर्मी का मौसम", u_en: "Summer", m: "رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ", t: "گرمی", t_ro: "Garmi", t_hi: "गर्मी", t_en: "Summer" },
         { a: "شِتَاء", r: "Shitaa'", u: "سردی کا موسم", u_ro: "Sardi ka mausam", u_hi: "सर्दी का मौसम", u_en: "Winter", m: "رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ", t: "سردی", t_ro: "Sardi", t_hi: "सर्दी", t_en: "Winter" },

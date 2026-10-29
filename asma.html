@@ -115,6 +115,7 @@
         a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--gold-bright); outline-offset: 2px; }
         @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
     </style>
+<style>.qi.qi-h{font-size:1.15em;color:#fff;--qi-a:#E3C36E;margin-inline-end:.3em;vertical-align:-.2em}</style>
 </head>
 <body>
 <!-- ⚠️ Deeni disclaimer: tajweed / dua / asma / games / bazm -->
@@ -123,7 +124,7 @@
     <button type="button" aria-label="Band karein" onclick="this.parentElement.style.display='none';try{sessionStorage.setItem('deeniNoticeHide','1')}catch(e){}">✕</button>
 </div>
 <style>
-#deeniNotice{display:flex;align-items:flex-start;gap:8px;justify-content:center;background:#FFF3CD;border-bottom:2px solid #FFC107;color:#5a4400;padding:9px 12px;font:12.5px/1.6 system-ui,-apple-system,sans-serif;text-align:center}
+#deeniNotice{display:flex;align-items:flex-start;gap:8px;justify-content:center;background:#FFF3CD;border-bottom:2px solid #FFC107;color:#5a4400;padding:6px 10px;font:12px/1.45 system-ui,-apple-system,sans-serif;text-align:center}
 #deeniNotice a{color:inherit;font-weight:700}
 #deeniNotice button{flex:0 0 auto;background:transparent;border:none;color:inherit;font-weight:700;font-size:16px;line-height:1;cursor:pointer;padding:2px 6px;min-width:32px;min-height:32px}
 [data-theme="dark"] #deeniNotice{background:#3a2f0b;border-bottom-color:#B8923A;color:#f3e6b5}
@@ -132,7 +133,7 @@
     <header>
         <div class="header-top">
             <a class="icon-btn" href="index.html" aria-label="Wapas">←</a>
-            <h1>أسماء الله الحسنى</h1>
+            <h1><i class="qi qi-h" data-qi="asma"></i>أسماء الله الحسنى</h1>
             <button class="icon-btn" id="langBtn" data-qs-lang onclick="QSLang.cycle()" style="font-size:13px;font-weight:700;min-width:40px" title="Matlab ki zubaan">اردو</button>
             <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Theme">🌙</button>
         </div>
@@ -239,5 +240,6 @@
         renderToday();
         render();
     </script>
+<script src="icons.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="ur-Latn">
 <head>
     <meta charset="UTF-8">
 <script>
@@ -370,11 +370,11 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                     <button class="icon-btn user-chip" onclick="toggleUserMenu(event)"><i class="qi" data-qi="user" style="font-size:19px;margin-inline-end:6px"></i><span id="userChipName">ID</span><span id="userChipStk" class="stk-row"></span> ▾</button>
                     <div class="user-drop hidden" id="userDrop">
                         <div class="user-drop-info">Profile: <b id="userDropProfile">-</b><br><small>Role: <span id="userDropRole">-</span></small><div id="userDropStk" class="stk-big-row"></div></div>
-                        <button class="ud-shop" onclick="window.NS&&NS.open()">🕌 Namaz ka Hisaab</button>
+                        <button class="ud-shop" onclick="window.NS&&NS.open()"><i class="qi" data-qi="arkan" style="font-size:1.25em;vertical-align:-.25em;margin-inline-end:.3em"></i>Namaz ka Hisaab</button>
                         <button class="ud-shop" onclick="FQBackup.open()">💾 Backup / Restore</button>
                         <button class="ud-cert" onclick="handleCertificateClick()">🏆 Completion Certificate</button>
                         <button class="ud-shop" id="udExamPanel" onclick="openAdminExam()" style="display:none">🛠 Exam Panel (Admin)</button>
-                        <button class="ud-shop" onclick="openShop()">🛒 Inaam Ghar (Shop)</button>
+                        <button class="ud-shop" onclick="openShop()"><i class="qi" data-qi="shop" style="font-size:1.25em;vertical-align:-.25em;margin-inline-end:.3em"></i>Inaam Ghar (Shop)</button>
                         <button class="ud-default" onclick="resetTheme()">🔄 Default Theme (kharidi hui safe)</button>
                         <button onclick="logout()" style="margin-top:8px;">🚪 Logout</button>
                         <button id="udDelProfile" onclick="deleteMyProfile()" style="margin-top:8px; color:#c0392b; border-color:#c0392b;">🗑 Meri Profile Delete Karein</button>
@@ -436,6 +436,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             </div>
 
             <div id="weakCard" class="tool-card hidden"></div>
+            <div id="blockCard" class="tool-card hidden"></div>
 
             <div id="courseTab" class="view-section active">
                 <div id="todayCard"></div>
@@ -482,7 +483,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
     <div id="shopModal" class="modal hidden">
         <div class="modal-content">
             <span class="close-btn" onclick="closeShop()">&times;</span>
-            <h2 style="text-align:center;">🛒 Inaam Ghar</h2>
+            <h2 style="text-align:center;"><i class="qi" data-qi="shop" style="font-size:1.25em;vertical-align:-.25em;margin-inline-end:.3em"></i>Inaam Ghar</h2>
             <div style="text-align:center; margin-bottom:15px; font-weight:bold; font-size:20px;">Aapka XP: <span id="shopXP">0</span></div>
             <div id="shopGrid" class="shop-grid"></div>
             <button class="exam-btn" style="margin-top:15px; background:var(--soft-bg); color:var(--text); border:1px solid var(--border);" onclick="resetTheme(); closeShop();">🔄 Default Theme lagayein (kharidi hui cheezein safe rehti hain)</button>
@@ -896,7 +897,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                     grid.appendChild(card);
                 });
                 grid.insertAdjacentHTML('afterbegin', ayatBulkBarHTML(todayData.words));
-                ayatRefreshButtons(grid); renderWeakCard();
+                ayatRefreshButtons(grid); renderWeakCard(); renderBlockCard();
                 document.getElementById('startExamBtn').innerText = `📝 Day ${currentDay} Exam`;
                 document.getElementById('startExamBtn').classList.remove('hidden');
             }
@@ -1075,6 +1076,56 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             document.getElementById('examTitle').innerText = isFinal ? '🥇 Final Exam (900 Lafz)' : '🥈 Silver Exam (500 Lafz)';
             document.getElementById('examProgress').innerHTML = `${count} mushkil sawal • Pass: <b style="color:red">${need}/${count} (${Math.round((window.examPassRatio || PASS_RATIO) * 100)}%)</b>`;
             displayExam(buildHardQuestions(isFinal ? FINAL_DAYS : SILVER_DAYS, count));
+        }
+
+        // ==========================================
+        // 📝 HAR 50 LAFZ KA EXAM — har 5 din (10 lafz x 5 = 50 lafz) poore hone par, unhi pichhle 50 lafz se 20 sawal.
+        // Pass = 80% (16/20). Ye exam din/Silver/Gold ko lock nahi karta; dobara de sakte hain (har baar naye sawal).
+        // ==========================================
+        const BLOCK_DAYS = 5, BLOCK_QS = 20, BLOCK_PASS = 0.8;
+        let examBlock = 0;
+        function blockCount() { return Math.floor(courseData.length / BLOCK_DAYS); }
+        function blockReady(b) { return userRole === 'admin' || currentDay > b * BLOCK_DAYS; }
+        function blockPassed(b) { return localStorage.getItem(pk('block' + b + 'Passed')) === '1'; }
+        function blockBest(b) { const v = parseInt(localStorage.getItem(pk('block' + b + 'Best')), 10); return isFinite(v) ? v : null; }
+        function blockRange(b) { return `Day ${(b - 1) * BLOCK_DAYS + 1}–${b * BLOCK_DAYS}`; }
+        function buildBlockQuestions(b) {
+            const first = (b - 1) * BLOCK_DAYS + 1, last = b * BLOCK_DAYS;
+            const pool = [], learned = [];
+            courseData.forEach(d => {
+                if (d.day <= last) d.words.forEach(w => { learned.push(w); if (d.day >= first) pool.push(w); });
+            });
+            const seen = new Set(), picked = [];
+            pool.sort(() => 0.5 - Math.random()).forEach(w => {
+                if (picked.length < BLOCK_QS && !seen.has(um(w))) { seen.add(um(w)); picked.push(w); }
+            });
+            return picked.map(w => {
+                const used = new Set([um(w)]), wrong = [];
+                learned.map(x => ({ u: um(x), d: Math.abs(um(x).length - um(w).length) + Math.random() * 4 }))
+                       .sort((p, q) => p.d - q.d)
+                       .forEach(x => { if (wrong.length < 3 && !used.has(x.u)) { used.add(x.u); wrong.push(x.u); } });
+                return { a: w.a, opts: [um(w), ...wrong].sort(() => 0.5 - Math.random()), c: um(w) };
+            });
+        }
+        function startBlockExam(b) {
+            if (!blockReady(b)) { showToast('🔒 Pehle ' + blockRange(b) + ' poore karein!'); return; }
+            examMode = 'block'; examBlock = b;
+            window.examPassRatio = null;
+            const qs = buildBlockQuestions(b), need = Math.ceil(qs.length * BLOCK_PASS);
+            document.getElementById('examTitle').innerText = `📝 50 Lafz Exam (${blockRange(b)})`;
+            document.getElementById('examProgress').innerHTML = `${qs.length} sawal • Pass: <b style="color:red">${need}/${qs.length} (${Math.round(BLOCK_PASS * 100)}%)</b>`;
+            displayExam(qs);
+        }
+        function renderBlockCard() {
+            const el = document.getElementById('blockCard'); if (!el) return;
+            let b = 0;
+            for (let i = 1; i <= blockCount(); i++) { if (blockReady(i) && !blockPassed(i)) { b = i; break; } }   // sabse purana baaki exam
+            if (!b || userRole === 'admin') { el.classList.add('hidden'); return; }
+            const best = blockBest(b);
+            el.classList.remove('hidden');
+            el.innerHTML = `<div class="tc-title">📝 50 Lafz ka Exam tayyar hai</div>
+                <div class="tc-sub">${blockRange(b)} ke 50 lafz mukammal. In hi mein se ${BLOCK_QS} sawal — pass ke liye ${Math.ceil(BLOCK_QS * BLOCK_PASS)}/${BLOCK_QS}.${best !== null ? ' Pichla behtareen: ' + best + '/' + BLOCK_QS + '.' : ''}</div>
+                <button class="exam-btn" onclick="startBlockExam(${b})">📝 Exam shuru karein</button>`;
         }
 
 
@@ -1382,10 +1433,33 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
         function selectOpt(b, sel, cor) {
             b.parentElement.querySelectorAll('button').forEach(x => x.classList.remove('selected'));
             b.classList.add('selected'); b.dataset.ok = (sel === cor);
-            if (sel === cor) { if(window.QSSFX) QSSFX.correct(); } else { if(window.QSSFX) QSSFX.wrong(); }
+            // Exam ke dauran koi awaaz nahi: sahi/galat ka pata sirf Submit ke baad natije mein chale
         }
 
+        // Submit dabate hi exam band, seedha dashboard par; natija wahin dikhta hai (exam ke andar sahi/galat ka andaza nahi)
+        let examBusy = false;
         function submitExam() {
+            if (examBusy) return;                       // double tap se din do baar nahi badhega
+            examBusy = true; setTimeout(() => { examBusy = false; }, 1500);
+            window._examShowsCert = false;
+            _submitExamCore();
+            const html = document.getElementById('examResult').innerHTML;
+            document.getElementById('examModal').classList.add('hidden');
+            jumpTop();
+            if (!window._examShowsCert) showExamOutcome(html);
+        }
+        function showExamOutcome(html) {
+            let m = document.getElementById('examOutcome');
+            if (!m) {
+                m = document.createElement('div'); m.id = 'examOutcome'; m.className = 'modal';
+                m.innerHTML = '<div class="modal-content" style="max-width:420px;text-align:center"><h2 style="margin-top:4px">📝 Exam ka natija</h2><div id="examOutcomeBody" style="font-weight:700;line-height:1.7;margin:12px 0"></div><button class="exam-btn" id="examOutcomeOk" type="button">Theek hai</button></div>';
+                document.body.appendChild(m);
+                m.addEventListener('click', e => { if (e.target === m || e.target.closest('button')) m.classList.add('hidden'); });
+            }
+            document.getElementById('examOutcomeBody').innerHTML = html;
+            m.classList.remove('hidden');
+        }
+        function _submitExamCore() {
             let score = 0;
             const totalQs = document.querySelectorAll('.exam-q').length;
             document.querySelectorAll('.exam-q').forEach(q => { if (q.querySelector('[data-ok="true"]')) score++; });
@@ -1406,15 +1480,36 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                     if (!isFinal && currentDay <= SILVER_DAYS) { currentDay = SILVER_DAYS + 1; localStorage.setItem(pk('currentDay'), currentDay); }
                     res.innerHTML = `<span style="color:green;">🎉 Mubarak! ${score}/${totalQs} (${pct}%). ${isFinal ? 'Gold Certificate tayyar hai!' : 'Silver Certificate tayyar hai, aage ke din khul gaye!'}</span>`;
                     document.getElementById('submitExamBtn').classList.add('hidden');
+                    window._examShowsCert = true;     // certificate hi natija hai
                     setTimeout(() => {
                         document.getElementById('examModal').classList.add('hidden');
                         renderCourse(); jumpTop();
                         showStudentCert(isFinal, score, totalQs);
-                    }, 2000);
+                    }, 0);
                 } else {
                     if (window.QSSFX) QSSFX.wrong();
                     res.innerHTML = `<span style="color:red;">😢 Aap fail ho gaye: ${score}/${totalQs} (${pct}%). ${isFinal ? 'Gold' : 'Silver'} certificate ke liye ${need}/${totalQs} (80%) chahiye. Mushkil lafz dobara yaad karein.</span><br><button class="exam-btn ${isFinal ? 'gold' : ''}" style="margin-top:10px;" onclick="startMilestoneExam('${examMode}')">🔁 Certificate ke liye dobara exam dein</button>`;
                 }
+                return;
+            }
+
+            if (examMode === 'block') {
+                const need = Math.ceil(totalQs * BLOCK_PASS), pct = Math.round(score / totalQs * 100), b = examBlock;
+                if (userRole === 'admin') {
+                    res.innerHTML = `<span style="color:${score >= need ? 'green' : '#b26a00'};">🛠 Admin: ${score}/${totalQs} (${pct}%) — ${score >= need ? 'pass' : 'fail'} (pass ke liye ${need}). Koi progress save nahi hui.</span>`;
+                    return;
+                }
+                const best = blockBest(b);
+                if (best === null || score > best) localStorage.setItem(pk('block' + b + 'Best'), score);
+                if (score >= need) {
+                    if (window.QSSFX) QSSFX.win();
+                    if (!blockPassed(b)) { localStorage.setItem(pk('block' + b + 'Passed'), '1'); addXP(100); }
+                    res.innerHTML = `<span style="color:green;">🎉 Mashaa-Allah! ${blockRange(b)} ka 50 Lafz Exam pass: ${score}/${totalQs} (${pct}%).</span>`;
+                } else {
+                    if (window.QSSFX) QSSFX.wrong();
+                    res.innerHTML = `<span style="color:red;">😢 ${score}/${totalQs} (${pct}%). Pass ke liye ${need}/${totalQs} chahiye. ${blockRange(b)} ke lafz dobara dekh lein.</span><br><button class="exam-btn" style="margin-top:10px;" onclick="startBlockExam(${b})">🔁 Dobara exam dein (naye sawal)</button>`;
+                }
+                setTimeout(renderBlockCard, 300);
                 return;
             }
 
@@ -1432,7 +1527,10 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             if (score >= 8) {
                 if (window.QSSFX) QSSFX.win(); addXP(50);
                 res.innerHTML = `<span style="color:green;">🎉 Mubarak! ${score}/${totalQs}. Day Unlocked!</span>`;
-                setTimeout(() => { currentDay++; localStorage.setItem(pk('currentDay'), currentDay); document.getElementById('examModal').classList.add('hidden'); renderCourse(); jumpTop(); }, 2000);
+                currentDay++; localStorage.setItem(pk('currentDay'), currentDay); renderCourse();
+                const doneBlock = (currentDay - 1) / BLOCK_DAYS;   // 5, 10, 15 ... din poore hue?
+                if (Number.isInteger(doneBlock) && doneBlock <= blockCount() && !blockPassed(doneBlock))
+                    res.innerHTML += `<br><span style="font-size:13px">📝 50 lafz poore hue! Ab inka 20 sawal ka exam dein:</span><br><button class="exam-btn" style="margin-top:8px;" onclick="startBlockExam(${doneBlock})">📝 50 Lafz Exam (${blockRange(doneBlock)})</button>`;
             } else {
                 if (window.QSSFX) QSSFX.wrong();
                 res.innerHTML = `<span style="color:red;">😢 ${score}/${totalQs}. Aapko 8 chahiye.</span>`;
@@ -1772,7 +1870,29 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
         function showToast(m) { const t = document.getElementById('toast'); t.innerText = m; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 3000); }
         function toggleUserMenu(e) { e.stopPropagation(); document.getElementById('userDrop').classList.toggle('hidden'); }
         document.addEventListener('click', function() { document.getElementById('userDrop').classList.add('hidden'); });
-        function updateStreak() { document.getElementById('streakBadge').innerText = `🔥 ${parseInt(localStorage.getItem(pk('streak'))) || 1}`; document.getElementById('streakBadge').classList.remove('hidden'); }
+        // 🔥 Streak: roz app kholne par +1, din chhoota to dobara 1 (pehle ye kabhi likhi hi nahi jaati thi, hamesha 1 dikhti thi)
+        function localDayKey(d) { d = d || new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+        function bumpStreak() {
+            try {
+                const today = localDayKey();
+                const last = localStorage.getItem(pk('streakDate'));
+                if (last === today) return;
+                const y = new Date(); y.setDate(y.getDate() - 1);
+                let st = parseInt(localStorage.getItem(pk('streak'))) || 0;
+                st = (last === localDayKey(y)) ? st + 1 : 1;
+                localStorage.setItem(pk('streak'), String(st));
+                localStorage.setItem(pk('streakDate'), today);
+                const best = parseInt(localStorage.getItem(pk('bestStreak'))) || 0;
+                if (st > best) localStorage.setItem(pk('bestStreak'), String(st));
+            } catch (e) {}
+        }
+        function updateStreak() {
+            bumpStreak();
+            const b = document.getElementById('streakBadge'); if (!b) return;
+            b.innerText = `🔥 ${parseInt(localStorage.getItem(pk('streak'))) || 1}`; b.classList.remove('hidden');
+        }
+        // App raat ko khuli rahe aur din badal jaye to bhi streak chalti rahe
+        document.addEventListener('visibilitychange', () => { if (!document.hidden && localStorage.getItem('isLoggedIn') === 'true' && activeProfile) { updateStreak(); if (typeof updateBadgesUI === 'function') try { updateBadgesUI(); } catch (e) {} } });
         
         if (localStorage.getItem('isLoggedIn') === 'true') {
             if (currentUserName()) { enterApp(); }

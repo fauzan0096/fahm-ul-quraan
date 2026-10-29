@@ -169,12 +169,18 @@
     @media (prefers-reduced-motion: reduce) { * { transition: none !important; } .xp-toast.show { animation: none; transform: translate(-50%,-50%) scale(1); } }
     @media (max-width: 380px) { .header-top h1 { font-size: 17px; } .icon-btn.lang-btn { min-width: 54px; padding: 0 9px; } }
   </style>
+<meta name="theme-color" content="#0F4C3A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Fahm-ul-Quran">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>.qi.qi-h{font-size:1.15em;color:#fff;--qi-a:#E3C36E;margin-inline-end:.3em;vertical-align:-.2em}</style>
 </head>
 <body>
   <header>
     <div class="header-top">
       <a href="index.html" class="icon-btn" id="homeBtn" aria-label="Home">←</a>
-      <h1 id="pageH1">📖 نحو و صرف</h1>
+      <h1 id="pageH1"><i class="qi qi-h" data-qi="grammar"></i>نحو و صرف</h1>
       <button class="icon-btn lang-btn" data-qs-lang onclick="QSLang.cycle()" title="Zubaan / Language">اردو</button>
       <button class="icon-btn" onclick="FQTheme.cycle()" aria-label="Theme">🌙</button>
     </div>
@@ -285,7 +291,10 @@
       const t = T();
       document.documentElement.lang = langAttr();
       document.title = t.title;
-      document.getElementById('pageH1').textContent = t.h1;
+      const h1El = document.getElementById('pageH1');
+      h1El.textContent = t.h1.replace(/^\uD83D\uDCD6\s*/, '');
+      const gi = document.createElement('i'); gi.className = 'qi qi-h'; gi.setAttribute('data-qi', 'grammar');
+      h1El.insertBefore(gi, h1El.firstChild); if (window.QI) QI.fill(h1El);
       document.getElementById('progLabel').textContent = t.journey;
       document.getElementById('backBtn').textContent = t.back;
       const app = document.getElementById('app'); app.setAttribute('dir', dirAttr()); app.setAttribute('lang', langAttr());
@@ -459,5 +468,6 @@
     // seedha #dayN link se khulne par
     (function () { const m = /^#day(\d+)$/.exec(location.hash); if (m) openDay(+m[1], true); })();
   </script>
+<script src="icons.js"></script>
 </body>
 </html>

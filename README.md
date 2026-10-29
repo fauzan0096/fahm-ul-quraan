@@ -33,9 +33,12 @@ Ek simple, mobile-friendly web app (PWA) jisse Quran ke alfaz, namaz ki duaen au
 - `seerat.js` sirf tab load hoti hai jab Seerat button dabaya jaye, isliye jo na kholey uske liye koi bojh nahi.
 - Text badalna ho to `seerat.js` ke `SEERAT_COURSE` mein badlein. (Seerat 4 zubaan: app ki zubaan follow karta hai.)
 
+### 📝 50 Lafz ka Exam (v75)
+- Har 5 din (50 lafz) poore hone par unhi 50 lafz se **20 sawal**; pass **80% (16/20)**; dobara de sakte hain (naye sawal). Din/Silver/Gold ko lock nahi karta. Constants: `BLOCK_DAYS, BLOCK_QS, BLOCK_PASS` (`index.html`).
+
 ### 🕌 Arkan-e-Islam (`arkan.html` + `arkan-kalima.html`, `arkan-namaz.html`, `arkan-zakat.html`, `arkan-roza.html`, `arkan-hajj.html` — sab root par, koi folder nahi) — ab sab ke liye khula
 - Home ke quick links mein **Nahw-Sarf / Seerat** ke baazu mein **🕌 Arkan-e-Islam** (sab ko). Andar 5 pages: **Kalima, Namaz, Zakat, Roza, Hajj-Umrah** (`arkan.html` hub).
-- Har page: hawale (Quran/Hadith), Hanafi vs Jumhur ka farq, har hisse par ✅ "padh liya" nishan (device par save), chips se seedha hisse par jump, theme (dark/skin) saath.
+- Har page: hawale (Quran/Hadith), sirf muttafiq ya jumhur ulama ka qaul (ikhtilafi masail nahi), har hisse par ✅ "padh liya" nishan (device par save), chips se seedha hisse par jump, theme (dark/skin) saath.
 - Zakat page par calculator (rate khud likhna hota hai — koi purana rate nahi).
 - Har page ke `<head>` mein sirf login-check hai (`isLoggedIn`), warna `index.html` (login screen).
 - **4 zubaanen (v70):** Arkan ke saare pages ek hi language button se **اردو / Roman / हिंदी / English** mein (matn, hawale, tables, calculator, buttons — sab). Arabi (ayat/hadees/dua) hamesha wahi rehti hai. Translations `arkan-lang.js` mein (har matn `data-i` se juda); naya matn jodte waqt uska tarjuma wahin jodein.
@@ -241,3 +244,13 @@ Login ke passwords `index.html` ke script mein (`ADMIN_PASSWORD`, `GUEST_PASSWOR
 - `sw.js`: Background Sync (`fq-sync`), Periodic Sync (`fq-periodic`), Push Notifications (`push` + `notificationclick`) handlers — PWABuilder ke Service Worker ke saare ticks. Push asal mein bhejne ke liye server chahiye; handler tayyar hai.
 - Quran page se tafseer hata di; Arabic text se akela 'ش' filter hota hai.
 - Cache bump: `v54` → `v55`.
+
+
+## 🛠 v72 — audit fixes
+- Chhote phone (360px) par header ka title kat'ta tha aur Home button bahar nikal jata tha (Duaein/Tajweed/Quran) — ab title 2 line mein aata hai; Games header ke buttons seedhe.
+- Arkan pages ka header iPhone notch/status bar ke neeche chipakta tha — safe-area padding.
+- Install popup RTL (Arkan) pages par ulta dikhta tha — ab hamesha seedha.
+- SVG icons: 99 Naam, Nahw-Sarf headers; Shop aur Namaz ka Hisaab (menu + panel); Azan tile ab "Roz ki yaad" jaisa. icons.js ab baad mein jude icons bhi apne aap bana deta hai.
+- dua/games/tajweed mein viewport-fit=cover, Arkan/Nahw-Sarf mein theme-color/iOS meta; Roman Urdu pages ka lang `ur-Latn`.
+- manifest ke screenshots naye design se dobara bane. SW cache v72.
+- ⚠️ Admin/Guest password `index.html` mein plain text hai (client-side) — ye asli security nahi; sirf soft-gate samjhein.

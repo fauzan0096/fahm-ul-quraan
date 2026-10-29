@@ -210,11 +210,13 @@
         '.rp-t th{font-size:9px;font-weight:600;color:var(--text-light,#55645C);min-width:22px}.rp-t th.rn{font-size:15px;position:sticky;left:0;background:var(--card-bg,#fff);min-width:28px}' +
         '.rp-c{display:block;width:22px;height:22px;border-radius:6px;border:none;padding:0}.rp-c.y{background:#2e9d62}.rp-c.n{background:#d64545}.rp-c.x{background:var(--soft-bg,#ddd);opacity:.7}' +
         '#namazCard{display:flex;min-width:0}' +
-        '#namazCard .ns-card{flex:1;min-width:0;min-height:68px;margin:0;display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--card-bg,#fffdf6);border:1px solid var(--border,#D9D6C3);border-radius:16px;box-shadow:var(--shadow);cursor:pointer;text-align:left;color:var(--text,#1F2A25);font-family:inherit}' +
-        '#namazCard .ns-card .ic{font-size:24px;line-height:1;flex:0 0 auto}' +
+        '#namazCard .ns-card{flex:1;min-width:0;min-height:68px;margin:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:6px;padding:10px 12px;background:var(--card-bg,#fffdf6);border:1px solid var(--border,#D9D6C3);border-radius:16px;box-shadow:var(--shadow);cursor:pointer;text-align:left;color:var(--text,#1F2A25);font-family:inherit}' +
+        '#namazCard .ns-card .mt-top{display:flex;align-items:center;gap:8px;min-width:0;max-width:100%}' +
+        '#namazCard .ns-card .ic{font-size:22px;line-height:1;flex:0 0 auto;color:#8A6A1E;--qi-a:#C79E3F}' +
+        '[data-theme="dark"] #namazCard .ns-card .ic{color:#E3C36E;--qi-a:#F0DCA0}' +
         '#namazCard .ns-card .mid{flex:1;min-width:0}' +
         '#namazCard .ns-card b{display:block;font-size:13px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}' +
-        '#namazCard .ns-card small{display:block;font-size:11.5px;color:var(--text-light,#55645C);margin-top:2px;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}';
+        '#namazCard .ns-card small{display:block;max-width:100%;font-size:11.5px;color:var(--text-light,#55645C);margin-top:0;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}';
     var styled = false;
     function injectCSS() { if (styled) return; styled = true; var s = document.createElement('style'); s.textContent = CSS; document.head.appendChild(s); }
 
@@ -516,7 +518,7 @@
             '<div class="ns-note">Alarm mein wahi waqt jayega jo upar boxes mein hai' + (T && T.manual ? ' (aapka khud ka waqt, har din wahi)' : ' (location ke hisaab se har din ka asli waqt)') + '. Event ke naam mein waqt likha hota hai. Calendar app ki Settings mein notification <b>"event ke waqt par"</b> rakhein — kuch apps 10 min pehle bata deti hain. Calendar sirf notification deta hai, azan ki awaaz nahi.</div>';
 
         panelEl.innerHTML = '<div class="ns-box full">' +
-            '<div class="ns-head"><button class="ns-x" data-a="close" aria-label="Band">&times;</button><h2>🕌 Namaz ka Hisaab</h2></div>' +
+            '<div class="ns-head"><button class="ns-x" data-a="close" aria-label="Band">&times;</button><h2>'+(window.QI?QI.html("arkan"):"")+' Namaz ka Hisaab</h2></div>' +
             '<div class="ns-body">' +
             '<div class="ns-next">' + (nx ? 'Agli namaz: <b>' + nx.p.i + ' ' + nx.p.n + '</b> • ' + fmt12(nx.time) + '<br>' + untilText(nx.at - Date.now()) + ' baaki' : 'Azan ke waqt set karein 👇') + '</div>' +
             '<div class="ns-stat"><span>✅ Aaj ' + count(arr) + '/5</span><span>🔥 Poori namaz ' + streak() + ' din</span></div>' +
@@ -585,9 +587,10 @@
         injectCSS();
         var T = getTimes(), nx = nextPrayer(), arr = dayArr(dayOff(0));
         function short(ms) { var m = Math.max(0, Math.round(ms / 60000)), h = Math.floor(m / 60); return h ? h + 'h ' + (m % 60) + 'm' : m + ' min'; }
-        var main = T && nx ? ('<b>' + nx.p.n + ' • ' + fmt12(nx.time) + '</b><small>' + short(nx.at - Date.now()) + ' • aaj ' + count(arr) + '/5 ✓</small>')
-                           : '<b>Azan ke waqt</b><small>Tap karke set karein</small>';
-        var html = '<button type="button" class="ns-card" id="nsCardBtn"><span class="ic">🕌</span><span class="mid">' + main + '</span></button>';
+        var ttl = T && nx ? (nx.p.n + ' • ' + fmt12(nx.time)) : 'Azan ke waqt';
+        var sub = T && nx ? (short(nx.at - Date.now()) + ' • aaj ' + count(arr) + '/5 ✓') : 'Tap karke set karein';
+        // "Roz ki yaad" tile jaisa: upar icon + naam, neeche chhoti line
+        var html = '<button type="button" class="ns-card" id="nsCardBtn"><span class="mt-top"><span class="ic">' + (window.QI ? QI.html('arkan') : '🕌') + '</span><b>' + ttl + '</b></span><small>' + sub + '</small></button>';
         if (box.dataset.h !== html) { box.innerHTML = html; box.dataset.h = html; document.getElementById('nsCardBtn').onclick = openPanel; }
     }
 

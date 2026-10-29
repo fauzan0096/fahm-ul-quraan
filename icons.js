@@ -83,4 +83,13 @@
 
   window.QI = { icons: ICONS, fill: fill, html: function (n, cls) { return '<i class="qi' + (cls ? ' ' + cls : '') + '" data-qi="' + n + '"></i>'; } };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+
+  // Baad mein (JS se) jude icons bhi apne aap ban jayein — jaise Namaz ka Hisaab panel
+  if (window.MutationObserver) {
+    var pending = false;
+    new MutationObserver(function () {
+      if (pending) return; pending = true;
+      (window.requestAnimationFrame || setTimeout)(function () { pending = false; fill(document); });
+    }).observe(document.documentElement, { childList: true, subtree: true });
+  }
 })();

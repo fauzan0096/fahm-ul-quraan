@@ -5,6 +5,10 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v75: Arkan pages — ikhtilafi masail hata kar muttafiq/jumhur ka qaul; har 50 lafz ke baad 20 sawal ka exam; course ki 7 misalon ki islah
+// v74: exam — jawab chunte waqt awaaz band (sahi/galat ka pata na chale), Submit par seedha dashboard + natija wahin, double-submit se din do baar nahi badhta
+// v73: streak fix — roz app kholne par badhti hai (pehle kabhi likhi hi nahi jaati thi)
+// v72: audit-fix — chhote phone par header (title kat'na/Home button), games header, Arkan header safe-area, install popup RTL, SVG icons (Asma, Nahw-Sarf, Shop, Namaz), azan tile, naye manifest screenshots
 // v71: teeno course (Seerat, Nahw-Sarf, Arkan) ab sab ke liye khule; naya icon set (icons.js) — Home tiles, neeche ki bar, header; sab zip merge (course.js ayat Day 1-80, Seerat 4 zubaan, Nahw-Sarf 4 zubaan, Arkan 4 zubaan + design-fix)
 // v70: Arkan-e-Islam 4 zubaanon mein (Urdu / Roman / Hindi / English) — arkan-lang.js, har jagah (matn, refs, calculator, buttons)
 // v69: Arkan pages mein tabs (dua ki tarah, ek waqt mein ek hissa — scroll atakna band), pichla/agla button, naya design
@@ -56,7 +60,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v71';
+const CACHE_NAME = 'quran-ustad-auto-v75';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

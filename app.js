@@ -418,6 +418,7 @@ if (!window.QS_LITE) {
         css();
         root = document.createElement('div');
         root.id = 'qsInst';
+        root.setAttribute('dir', 'ltr'); // RTL pages (Arkan) par bhi popup seedha rahe
         root.setAttribute('role', 'dialog');
         root.setAttribute('aria-modal', 'true');
         root.setAttribute('aria-labelledby', 'qsInstTitle');
