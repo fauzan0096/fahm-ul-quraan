@@ -515,7 +515,7 @@
             '<div class="ns-chips sm">' + ICS_PRESETS.map(function (q) { return '<button type="button" class="ns-chip ' + (icsDays() === q[0] ? 'on' : '') + '" data-d="' + q[0] + '">' + q[1] + '</button>'; }).join('') + '</div>' +
             '<label class="ns-num">Ya apne din likhein: <input type="number" id="nsIcsN" min="1" max="366" inputmode="numeric" value="' + icsDays() + '"> din</label>' +
             '<button type="button" class="ns-btn ghost" data-a="ics">📥 <span id="nsIcsLbl">' + icsDays() + ' din</span> ka alarm banayein</button>' +
-            '<div class="ns-note">Alarm mein wahi waqt jayega jo upar boxes mein hai' + (T && T.manual ? ' (aapka khud ka waqt, har din wahi)' : ' (location ke hisaab se har din ka asli waqt)') + '. Event ke naam mein waqt likha hota hai. Calendar app ki Settings mein notification <b>"event ke waqt par"</b> rakhein — kuch apps 10 min pehle bata deti hain. Calendar sirf notification deta hai, azan ki awaaz nahi.</div>';
+            '<div class="ns-note" data-lbh="' + (T && T.manual ? 'nsn1' : 'nsn2') + '">Alarm mein wahi waqt jayega jo upar boxes mein hai' + (T && T.manual ? ' (aapka khud ka waqt, har din wahi)' : ' (location ke hisaab se har din ka asli waqt)') + '. Event ke naam mein waqt likha hota hai. Calendar app ki Settings mein notification <b>"event ke waqt par"</b> rakhein — kuch apps 10 min pehle bata deti hain. Calendar sirf notification deta hai, azan ki awaaz nahi.</div>';
 
         panelEl.innerHTML = '<div class="ns-box full">' +
             '<div class="ns-head"><button class="ns-x" data-a="close" aria-label="Band">&times;</button><h2>'+(window.QI?QI.html("arkan"):"")+' Namaz ka Hisaab</h2></div>' +
@@ -538,7 +538,7 @@
             (NATIVE ? '<div class="ns-sec">📱 ANDROID APP</div>' +
                 '<div class="ns-note" style="margin-top:0">✅ Azan app band ho tab bhi waqt par bajegi.</div>' +
                 '<button class="ns-btn ghost" data-a="ntest">🧪 Azan ka test</button>' : '') +
-            (NATIVE ? '<div class="ns-note">🔋 Agar azan waqt par na bajti ho to phone ki Settings → Battery mein "Fahm-ul-Quran" ko <b>Unrestricted / Autostart</b> dein (Xiaomi, Oppo, Vivo, Realme mein zaroori).</div>' : '<div class="ns-note">ℹ️ App band ho tab bhi yaad dilane ke liye upar wala <b>Calendar alarm</b> lagayein. App band hone par azan ki awaaz ke liye Android app install karein.</div>') +
+            (NATIVE ? '<div class="ns-note" data-lbh="nsn3">🔋 Agar azan waqt par na bajti ho to phone ki Settings → Battery mein "Fahm-ul-Quran" ko <b>Unrestricted / Autostart</b> dein (Xiaomi, Oppo, Vivo, Realme mein zaroori).</div>' : '<div class="ns-note" data-lbh="nsn4">ℹ️ App band ho tab bhi yaad dilane ke liye upar wala <b>Calendar alarm</b> lagayein. App band hone par azan ki awaaz ke liye Android app install karein.</div>') +
             '</div></div>';
         var sc1 = panelEl.querySelector('.ns-body'); if (sc1) sc1.scrollTop = keep;
     }
@@ -638,6 +638,35 @@
     'use strict';
     var MON = ['محرم', 'صفر', 'ربيع الأول', 'ربيع الآخر', 'جمادى الأولى', 'جمادى الآخرة', 'رجب', 'شعبان', 'رمضان', 'شوال', 'ذو القعدة', 'ذو الحجة'];
     var MON_RO = ['Muharram', 'Safar', 'Rabi-ul-Awwal', 'Rabi-ul-Aakhir', 'Jumada-ul-Ula', 'Jumada-ul-Aakhira', 'Rajab', 'Shaban', 'Ramzan', 'Shawwal', 'Zil-Qada', 'Zil-Hijja'];
+    /* 4 zubaan: u = اردو, ro = Roman, hi = हिंदी, en = English (QSLang se, baaki app jaisi) */
+    var MON_L = {
+        u: ['محرم', 'صفر', 'ربیع الاول', 'ربیع الثانی', 'جمادی الاول', 'جمادی الثانی', 'رجب', 'شعبان', 'رمضان', 'شوال', 'ذیقعد', 'ذوالحجہ'],
+        ro: MON_RO,
+        hi: ['मुहर्रम', 'सफ़र', 'रबी-उल-अव्वल', 'रबी-उल-आख़िर', 'जुमादल-उला', 'जुमादल-आख़िरा', 'रजब', 'शाबान', 'रमज़ान', 'शव्वाल', 'ज़ील-क़ादा', 'ज़ील-हिज्जा'],
+        en: ['Muharram', 'Safar', 'Rabi al-Awwal', 'Rabi al-Thani', 'Jumada al-Awwal', 'Jumada al-Thani', 'Rajab', 'Sha\u2019ban', 'Ramadan', 'Shawwal', 'Dhu al-Qa\u2019dah', 'Dhu al-Hijjah']
+    };
+    var SUF = { u: '\u06BE', ro: ' H', hi: ' हि.', en: ' AH' };
+    var GM = {
+        u: ['جنوری', 'فروری', 'مارچ', 'اپریل', 'مئی', 'جون', 'جولائی', 'اگست', 'ستمبر', 'اکتوبر', 'نومبر', 'دسمبر'],
+        ro: ['Janwari', 'Farwari', 'March', 'April', 'May', 'June', 'July', 'August', 'Sitambar', 'Aktoobar', 'Navambar', 'Disambar'],
+        hi: ['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल', 'मई', 'जून', 'जुलाई', 'अगस्त', 'सितंबर', 'अक्तूबर', 'नवंबर', 'दिसंबर'],
+        en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    };
+    var GD = {
+        u: ['اتوار', 'پیر', 'منگل', 'بدھ', 'جمعرات', 'جمعہ', 'ہفتہ'],
+        ro: ['Itwaar', 'Peer', 'Mangal', 'Budh', 'Jumerat', 'Jumma', 'Hafta'],
+        hi: ['रविवार', 'सोमवार', 'मंगलवार', 'बुधवार', 'गुरुवार', 'शुक्रवार', 'शनिवार'],
+        en: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    };
+    /* Popup ke jumle: r = ilaqa (li/la = location, ti/ta = timezone; i = Bharat-Pak-BD, a = Umm al-Qura) */
+    var TX = {
+        u: { aria: 'عربی تاریخ', r: { li: 'آپ کے علاقے (بھارت/پاکستان/بنگلہ دیش) کے حساب سے — عموماً سعودی عرب سے ایک دن پیچھے', la: 'آپ کی لوکیشن کے حساب سے (ام القریٰ)', ti: 'ٹائم زون کے حساب سے (بھارت/پاکستان/بنگلہ دیش) — عموماً سعودی عرب سے ایک دن پیچھے', ta: 'ام القریٰ (سعودی عرب) کے حساب سے' }, mag: '🌇 مغرب ہو چکی — اسلامی دن بدل گیا', loc: '📍 درست حساب کے لیے \u201cنماز کا حساب\u201d میں لوکیشن سیٹ کریں', moon: 'چاند دیکھنے سے ایک دن کا فرق ہو سکتا ہے۔', m1: '◀ \u22121 دن', p1: '+1 دن ▶', auto: 'خودکار', ok: 'ٹھیک ہے' },
+        ro: { aria: 'Arabi tareekh', r: { li: 'Aapke ilaqe (Bharat/Pakistan/Bangladesh) ke hisaab se — aam taur par Saudi se 1 din peechhe', la: 'Aapki location ke hisaab se (Umm al-Qura)', ti: 'Timezone ke hisaab se (Bharat/Pakistan/Bangladesh) — aam taur par Saudi se 1 din peechhe', ta: 'Umm al-Qura (Saudi) ke hisaab se' }, mag: '🌇 Maghrib ho chuka — Islami din badal gaya', loc: '📍 Sahi hisaab ke liye \u201cNamaz ka Hisaab\u201d mein location set karein', moon: 'Chaand dekhne se 1 din ka farq ho sakta hai.', m1: '◀ \u22121 din', p1: '+1 din ▶', auto: 'Auto', ok: 'Theek hai' },
+        hi: { aria: 'अरबी तारीख़', r: { li: 'आपके इलाक़े (भारत/पाकिस्तान/बांग्लादेश) के हिसाब से — आम तौर पर सऊदी से 1 दिन पीछे', la: 'आपकी लोकेशन के हिसाब से (उम्मुल-क़ुरा)', ti: 'टाइमज़ोन के हिसाब से (भारत/पाकिस्तान/बांग्लादेश) — आम तौर पर सऊदी से 1 दिन पीछे', ta: 'उम्मुल-क़ुरा (सऊदी) के हिसाब से' }, mag: '🌇 मग़रिब हो चुकी — इस्लामी दिन बदल गया', loc: '📍 सही हिसाब के लिए \u201cनमाज़ का हिसाब\u201d में लोकेशन सेट करें', moon: 'चाँद देखने से 1 दिन का फ़र्क़ हो सकता है।', m1: '◀ \u22121 दिन', p1: '+1 दिन ▶', auto: 'ऑटो', ok: 'ठीक है' },
+        en: { aria: 'Hijri date', r: { li: 'Based on your region (India/Pakistan/Bangladesh) — usually 1 day behind Saudi Arabia', la: 'Based on your location (Umm al-Qura)', ti: 'Based on your timezone (India/Pakistan/Bangladesh) — usually 1 day behind Saudi Arabia', ta: 'Based on Umm al-Qura (Saudi Arabia)' }, mag: '🌇 Maghrib has passed — the Islamic day has changed', loc: '📍 For accuracy, set your location in \u201cPrayer Tracker\u201d', moon: 'Moon sighting can make a one-day difference.', m1: '◀ \u22121 day', p1: '+1 day ▶', auto: 'Auto', ok: 'OK' }
+    };
+    function L() { return (window.QSLang && QSLang.get()) || 'u'; }
+    function num(n, l) { return l === 'u' ? String(n).replace(/\d/g, function (d) { return '\u06F0\u06F1\u06F2\u06F3\u06F4\u06F5\u06F6\u06F7\u06F8\u06F9'.charAt(+d); }) : String(n); }
     var styled = false, pop = null;
 
     function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -671,12 +700,12 @@
     function region() {
         var loc = jget('ns_loc'), lat = loc && +loc.lat, lng = loc && +loc.lng;
         if (loc && isFinite(lat) && isFinite(lng)) {
-            if (lat > 5 && lat < 38 && lng > 60 && lng < 93.5) return { off: -1, ro: 'Aapke ilaqe (Bharat/Pakistan/Bangladesh) ke hisaab se — aam taur par Saudi se 1 din peechhe', loc: true };
-            return { off: 0, ro: 'Aapki location ke hisaab se (Umm al-Qura)', loc: true };
+            if (lat > 5 && lat < 38 && lng > 60 && lng < 93.5) return { off: -1, k: 'li', loc: true };
+            return { off: 0, k: 'la', loc: true };
         }
         var tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
-        if (/^Asia\/(Kolkata|Calcutta|Karachi|Dhaka|Kathmandu|Colombo|Thimphu)/.test(tz)) return { off: -1, ro: 'Timezone ke hisaab se (Bharat/Pakistan/Bangladesh) — aam taur par Saudi se 1 din peechhe', loc: false };
-        return { off: 0, ro: 'Umm al-Qura (Saudi) ke hisaab se', loc: false };
+        if (/^Asia\/(Kolkata|Calcutta|Karachi|Dhaka|Kathmandu|Colombo|Thimphu)/.test(tz)) return { off: -1, k: 'ti', loc: false };
+        return { off: 0, k: 'ta', loc: false };
     }
     function maghribPassed() {
         var T = jget('ns_times'), now = new Date(), today = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate());
@@ -694,13 +723,16 @@
         var h = umalqura(base);
         return { h: h, r: r, shift: shift, aft: maghribPassed() };
     }
-    function fmt(h) { return ar(h.d) + ' ' + MON[h.m - 1] + ' ' + ar(h.y) + ' هـ'; }
+    function fmt(h) { return ar(h.d) + ' ' + MON[h.m - 1] + ' ' + ar(h.y) + ' هـ'; }      // asli arabi shakl
+    function fmtL(h, l) { l = l || L(); return num(h.d, l) + ' ' + MON_L[l][h.m - 1] + ' ' + num(h.y, l) + SUF[l]; }   // chuni hui zubaan mein
+    function gfmt(g, l) { return GD[l][g.getDay()] + (l === 'u' ? '، ' : ', ') + num(g.getDate(), l) + ' ' + GM[l][g.getMonth()] + ' ' + num(g.getFullYear(), l); }
 
     function injectCSS() {
         if (styled) return; styled = true;
         var s = document.createElement('style');
         s.textContent =
             '.hj-line{max-width:1200px;margin:10px auto 0;text-align:center}' +
+            '.hj-line button[data-l="ro"],.hj-line button[data-l="hi"],.hj-line button[data-l="en"]{font-family:inherit;font-size:14px;line-height:1.9}' +
             '.hj-line button{background:rgba(255,255,255,.12);border:1px solid rgba(217,182,90,.45);color:#F3E3A6;border-radius:16px;padding:3px 16px 5px;font-family:"Amiri","Noto Naskh Arabic",serif;font-size:16px;line-height:1.6;cursor:pointer}' +
             '.hj-pop{position:fixed;inset:0;z-index:2500;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;padding:20px}' +
             '.hj-box{width:100%;max-width:340px;background:var(--card-bg,#FFFDF6);color:var(--text,#1F2A25);border:1px solid var(--border,#D9D6C3);border-radius:20px;padding:20px 18px;text-align:center;box-shadow:0 16px 40px rgba(0,0,0,.35)}' +
@@ -717,30 +749,31 @@
         var ht = document.querySelector('.header-tools'); if (!ht || !ht.parentNode) return null;
         injectCSS();
         line = document.createElement('div'); line.id = 'hijriLine'; line.className = 'hj-line';
-        line.innerHTML = '<button type="button" id="hijriBtn" aria-label="Arabi tareekh"></button>';
+        line.innerHTML = '<button type="button" id="hijriBtn" aria-label=""></button>';
         ht.parentNode.insertBefore(line, ht);
         line.firstChild.onclick = openPop;
         return line;
     }
     function render() {
         var line = ensureLine(); if (!line) return;
-        var c = compute(), b = document.getElementById('hijriBtn'), t = fmt(c.h);
+        var l = L(), c = compute(), b = document.getElementById('hijriBtn'), t = fmtL(c.h, l);
         if (b.textContent !== t) b.textContent = t;
+        b.setAttribute('data-l', l); b.setAttribute('aria-label', TX[l].aria + ': ' + t);
         if (pop) drawPop();
     }
 
     function drawPop() {
-        var c = compute(), g = new Date(), a = adj();
-        var gs = ''; try { gs = g.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }); } catch (e) { gs = g.toDateString(); }
-        pop.innerHTML = '<div class="hj-box">' +
+        var l = L(), x = TX[l], c = compute(), g = new Date(), a = adj();
+        var np = (window.QSLang ? QSLang.t('namazhisab', l) : 'Namaz ka Hisaab');
+        pop.innerHTML = '<div class="hj-box" dir="' + (l === 'u' ? 'rtl' : 'ltr') + '">' +
             '<div class="hj-big">' + fmt(c.h) + '</div>' +
-            '<div class="hj-sub">' + c.h.d + ' ' + MON_RO[c.h.m - 1] + ' ' + c.h.y + ' H</div>' +
-            '<div class="hj-sub" style="margin-top:8px;color:var(--text-light,#55645C)">' + gs + '</div>' +
-            '<div class="hj-sm">' + c.r.ro + (c.aft ? '<br>🌇 Maghrib ho chuka — Islami din badal gaya' : '') +
-            (c.r.loc ? '' : '<br>📍 Sahi hisaab ke liye "Namaz ka Hisaab" mein location set karein') +
-            '<br>Chaand dekhne se 1 din ka farq ho sakta hai.</div>' +
-            '<div class="hj-row"><button data-d="-1">◀ −1 din</button><button data-d="0">Auto' + (a ? ' (' + (a > 0 ? '+' : '') + a + ')' : '') + '</button><button data-d="1">+1 din ▶</button></div>' +
-            '<button class="hj-x" data-d="x">Theek hai</button></div>';
+            '<div class="hj-sub">' + fmtL(c.h, l) + '</div>' +
+            '<div class="hj-sub" style="margin-top:8px;color:var(--text-light,#55645C)">' + gfmt(g, l) + '</div>' +
+            '<div class="hj-sm">' + x.r[c.r.k] + (c.aft ? '<br>' + x.mag : '') +
+            (c.r.loc ? '' : '<br>' + x.loc.replace(/\u201c[^\u201d]*\u201d/, '\u201c' + np + '\u201d')) +
+            '<br>' + x.moon + '</div>' +
+            '<div class="hj-row" dir="ltr"><button data-d="-1">' + x.m1 + '</button><button data-d="0">' + x.auto + (a ? ' (' + (a > 0 ? '+' : '') + a + ')' : '') + '</button><button data-d="1">' + x.p1 + '</button></div>' +
+            '<button class="hj-x" data-d="x">' + x.ok + '</button></div>';
     }
     function openPop() {
         if (pop) return;
@@ -757,8 +790,8 @@
     }
     function closePop() { if (pop) { pop.remove(); pop = null; } }
 
-    function init() { render(); setInterval(render, 60000); document.addEventListener('visibilitychange', function () { if (!document.hidden) render(); }); }
-    window.FQHijri = { today: function () { return compute(); }, format: fmt };
+    function init() { render(); if (window.QSLang) QSLang.onChange(render); setInterval(render, 60000); document.addEventListener('visibilitychange', function () { if (!document.hidden) render(); }); }
+    window.FQHijri = { today: function () { return compute(); }, format: fmt, formatL: fmtL };
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
 ;

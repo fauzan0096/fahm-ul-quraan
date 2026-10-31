@@ -5,6 +5,18 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v82: MERGE — v81 (v72–v78 ke saare features + har page ke title/icon/date 4 zubaan mein) + v79 ka Seerat (Din 1–34: islahat, hawale, 4-zubaan tarjuma)
+// Seerat ki alag line (pehle v72–v79 ke naam se) — seerat.js:
+// Seerat-line v79: Seerat Din 20-34 ki islahat + 4-zubaan (Urdu/Roman/Hindi/English) mukammal tarjuma, hawale aur ikhtilaf ke saath
+// Seerat-line v78: Seerat Din 19-20 ka 4-zubaan tarjuma + Urdu islahat
+// Seerat-line v77: Seerat Din 16-18 ka 4-zubaan tarjuma + Urdu islahat
+// Seerat-line v76: Seerat Din 13-15 ka 4-zubaan tarjuma + Urdu islahat
+// Seerat-line v75: Seerat Din 10-12 ka 4-zubaan tarjuma + Urdu islahat
+// Seerat-line v74: Seerat Din 7-9 ka 4-zubaan tarjuma + Urdu islahat
+// Seerat-line v73: Seerat Din 4-6 ka 4-zubaan tarjuma + Urdu islahat
+// Seerat-line v72: Seerat Din 1-3 ka mukammal 4-zubaan tarjuma + Urdu islahat (naqid ki nazar se); baaqi din ek ek karke
+// v80: har page ke title/icon/tab/button/label/placeholder 4 zubaan mein (app.js: auto-translate engine, ek dictionary D) + Quran aur Games page par language button
+// v79: icon ke labels (home tiles, neeche ki bar, menu, shop, page titles) aur Arabi/English tareekh ab 4 zubaanon mein (اردو / Roman / हिंदी / English) — app.js (QSLang.t, data-lb) + tools.js (hijri)
 // v75: Arkan pages — ikhtilafi masail hata kar muttafiq/jumhur ka qaul; har 50 lafz ke baad 20 sawal ka exam; course ki 7 misalon ki islah
 // v74: exam — jawab chunte waqt awaaz band (sahi/galat ka pata na chale), Submit par seedha dashboard + natija wahin, double-submit se din do baar nahi badhta
 // v73: streak fix — roz app kholne par badhti hai (pehle kabhi likhi hi nahi jaati thi)
@@ -60,7 +72,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v78';
+const CACHE_NAME = 'quran-ustad-auto-v82';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

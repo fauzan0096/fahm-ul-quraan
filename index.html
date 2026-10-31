@@ -370,14 +370,14 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                     <button class="icon-btn user-chip" onclick="toggleUserMenu(event)"><i class="qi" data-qi="user" style="font-size:19px;margin-inline-end:6px"></i><span id="userChipName">ID</span><span id="userChipStk" class="stk-row"></span> ▾</button>
                     <div class="user-drop hidden" id="userDrop">
                         <div class="user-drop-info">Profile: <b id="userDropProfile">-</b><br><small>Role: <span id="userDropRole">-</span></small><div id="userDropStk" class="stk-big-row"></div></div>
-                        <button class="ud-shop" onclick="window.NS&&NS.open()"><i class="qi" data-qi="arkan" style="font-size:1.25em;vertical-align:-.25em;margin-inline-end:.3em"></i>Namaz ka Hisaab</button>
-                        <button class="ud-shop" onclick="FQBackup.open()">💾 Backup / Restore</button>
-                        <button class="ud-cert" onclick="handleCertificateClick()">🏆 Completion Certificate</button>
+                        <button class="ud-shop" onclick="window.NS&&NS.open()"><i class="qi" data-qi="arkan" style="font-size:1.25em;vertical-align:-.25em;margin-inline-end:.3em"></i><span data-lb="namazhisab">Namaz ka Hisaab</span></button>
+                        <button class="ud-shop" onclick="FQBackup.open()">💾 <span data-lb="backup">Backup / Restore</span></button>
+                        <button class="ud-cert" onclick="handleCertificateClick()">🏆 <span data-lb="cert">Completion Certificate</span></button>
                         <button class="ud-shop" id="udExamPanel" onclick="openAdminExam()" style="display:none">🛠 Exam Panel (Admin)</button>
-                        <button class="ud-shop" onclick="openShop()"><i class="qi" data-qi="shop" style="font-size:1.25em;vertical-align:-.25em;margin-inline-end:.3em"></i>Inaam Ghar (Shop)</button>
-                        <button class="ud-default" onclick="resetTheme()">🔄 Default Theme (kharidi hui safe)</button>
-                        <button onclick="logout()" style="margin-top:8px;">🚪 Logout</button>
-                        <button id="udDelProfile" onclick="deleteMyProfile()" style="margin-top:8px; color:#c0392b; border-color:#c0392b;">🗑 Meri Profile Delete Karein</button>
+                        <button class="ud-shop" onclick="openShop()"><i class="qi" data-qi="shop" style="font-size:1.25em;vertical-align:-.25em;margin-inline-end:.3em"></i><span data-lb="inaamshop">Inaam Ghar (Shop)</span></button>
+                        <button class="ud-default" onclick="resetTheme()">🔄 <span data-lb="deftheme">Default Theme (kharidi hui safe)</span></button>
+                        <button onclick="logout()" style="margin-top:8px;">🚪 <span data-lb="logout">Logout</span></button>
+                        <button id="udDelProfile" onclick="deleteMyProfile()" style="margin-top:8px; color:#c0392b; border-color:#c0392b;">🗑 <span data-lb="delprof">Meri Profile Delete Karein</span></button>
                     </div>
                 </div>
             </div>
@@ -395,7 +395,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                 <div class="hero-row">
                     <div class="hero-ic"><i class="qi" data-qi="goal"></i></div>
                     <div class="hero-main">
-                        <div class="hero-title">Aaj ka Maqsad <span id="dailyGoalPercent">0%</span></div>
+                        <div class="hero-title"><span data-lb="goal" style="font-size:inherit;color:inherit">Aaj ka Maqsad</span> <span id="dailyGoalPercent">0%</span></div>
                         <div class="hero-sub" id="dailyGoalText">Aaj 10 lafz padhein</div>
                     </div>
                 </div>
@@ -403,15 +403,15 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             </section>
 
             <nav class="quick" aria-label="Seekhein aur khelein">
-                <a href="quran.html" class="top-link-btn"><span class="ti" data-tone="emerald"><i class="qi" data-qi="quran"></i></span>Quran</a>
-                <a href="#courseGrid" class="top-link-btn" onclick="event.preventDefault();var g=document.getElementById('courseGrid');if(g)g.scrollIntoView({behavior:'smooth',block:'start'});"><span class="ti" data-tone="gold"><i class="qi" data-qi="sabaq"></i></span>Sabaq</a>
-                <a href="games.html" class="top-link-btn"><span class="ti" data-tone="blue"><i class="qi" data-qi="games"></i></span>Games</a>
-                <a href="tajweed.html" class="top-link-btn"><span class="ti" data-tone="teal"><i class="qi" data-qi="tajweed"></i></span>Tajweed</a>
-                <a href="dua.html" class="top-link-btn"><span class="ti" data-tone="rose"><i class="qi" data-qi="dua"></i></span>Duaein</a>
-                <a href="asma.html" class="top-link-btn"><span class="ti" data-tone="plum"><i class="qi" data-qi="asma"></i></span>99 Naam</a>
-                <a href="arabic-grammar.html" id="grammarLink" class="top-link-btn"><span class="ti" data-tone="blue"><i class="qi" data-qi="grammar"></i></span>Nahw-Sarf</a>
-                <a href="#" id="seeratLink" class="top-link-btn" onclick="openSeerat();return false;"><span class="ti" data-tone="gold"><i class="qi" data-qi="seerat"></i></span>Seerat</a>
-                <a href="arkan.html" id="arkanLink" class="top-link-btn"><span class="ti" data-tone="emerald"><i class="qi" data-qi="arkan"></i></span>Arkan‑e‑<wbr>Islam</a>
+                <a href="quran.html" class="top-link-btn"><span class="ti" data-tone="emerald"><i class="qi" data-qi="quran"></i></span><span data-lb="quran">Quran</span></a>
+                <a href="#courseGrid" class="top-link-btn" onclick="event.preventDefault();var g=document.getElementById('courseGrid');if(g)g.scrollIntoView({behavior:'smooth',block:'start'});"><span class="ti" data-tone="gold"><i class="qi" data-qi="sabaq"></i></span><span data-lb="sabaq">Sabaq</span></a>
+                <a href="games.html" class="top-link-btn"><span class="ti" data-tone="blue"><i class="qi" data-qi="games"></i></span><span data-lb="games">Games</span></a>
+                <a href="tajweed.html" class="top-link-btn"><span class="ti" data-tone="teal"><i class="qi" data-qi="tajweed"></i></span><span data-lb="tajweed">Tajweed</span></a>
+                <a href="dua.html" class="top-link-btn"><span class="ti" data-tone="rose"><i class="qi" data-qi="dua"></i></span><span data-lb="dua">Duaein</span></a>
+                <a href="asma.html" class="top-link-btn"><span class="ti" data-tone="plum"><i class="qi" data-qi="asma"></i></span><span data-lb="asma">99 Naam</span></a>
+                <a href="arabic-grammar.html" id="grammarLink" class="top-link-btn"><span class="ti" data-tone="blue"><i class="qi" data-qi="grammar"></i></span><span data-lb="grammar">Nahw-Sarf</span></a>
+                <a href="#" id="seeratLink" class="top-link-btn" onclick="openSeerat();return false;"><span class="ti" data-tone="gold"><i class="qi" data-qi="seerat"></i></span><span data-lb="seerat">Seerat</span></a>
+                <a href="arkan.html" id="arkanLink" class="top-link-btn"><span class="ti" data-tone="emerald"><i class="qi" data-qi="arkan"></i></span><span data-lb="arkan">Arkan‑e‑<wbr>Islam</span></a>
             </nav>
 
             <div class="ayat-card" onclick="showDailyAyat()" role="button" tabindex="0">
@@ -426,7 +426,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             <div class="mini-row">
                 <div id="namazCard"></div>
                 <div class="mini-tile" id="remindCard" title="Phone ke Calendar mein roz ka alarm lag jayega">
-                    <div class="mt-top"><span class="mt-ic"><i class="qi" data-qi="bell"></i></span><b>Roz ki yaad</b></div>
+                    <div class="mt-top"><span class="mt-ic"><i class="qi" data-qi="bell"></i></span><b data-lb="yaad">Roz ki yaad</b></div>
                     <div class="mt-row">
                         <input type="time" id="remindTime" value="20:00" aria-label="Roz ki yaad ka waqt" onchange="localStorage.setItem('remindTime', this.value)">
                         <button type="button" class="mt-go" onclick="setReminder()">Lagayein</button>
@@ -450,12 +450,12 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
         </main>
 
         <nav class="bottom-nav" aria-label="Main menu">
-            <a href="quran.html"><span class="bn-ic"><i class="qi" data-qi="quran"></i></span><span class="bn-lb">Quran</span></a>
-            <button type="button" onclick="scrollToTop()" class="on" aria-current="page"><span class="bn-ic"><i class="qi" data-qi="sabaq"></i></span><span class="bn-lb">Sabaq</span></button>
-            <a href="games.html"><span class="bn-ic"><i class="qi" data-qi="games"></i></span><span class="bn-lb">Games</span></a>
-            <a href="tajweed.html"><span class="bn-ic"><i class="qi" data-qi="tajweed"></i></span><span class="bn-lb">Tajweed</span></a>
-            <a href="dua.html"><span class="bn-ic"><i class="qi" data-qi="dua"></i></span><span class="bn-lb">Duaein</span></a>
-            <button type="button" onclick="openShop()"><span class="bn-ic"><i class="qi" data-qi="shop"></i></span><span class="bn-lb">Shop</span></button>
+            <a href="quran.html"><span class="bn-ic"><i class="qi" data-qi="quran"></i></span><span class="bn-lb" data-lb="quran">Quran</span></a>
+            <button type="button" onclick="scrollToTop()" class="on" aria-current="page"><span class="bn-ic"><i class="qi" data-qi="sabaq"></i></span><span class="bn-lb" data-lb="sabaq">Sabaq</span></button>
+            <a href="games.html"><span class="bn-ic"><i class="qi" data-qi="games"></i></span><span class="bn-lb" data-lb="games">Games</span></a>
+            <a href="tajweed.html"><span class="bn-ic"><i class="qi" data-qi="tajweed"></i></span><span class="bn-lb" data-lb="tajweed">Tajweed</span></a>
+            <a href="dua.html"><span class="bn-ic"><i class="qi" data-qi="dua"></i></span><span class="bn-lb" data-lb="dua">Duaein</span></a>
+            <button type="button" onclick="openShop()"><span class="bn-ic"><i class="qi" data-qi="shop"></i></span><span class="bn-lb" data-lb="shop">Shop</span></button>
         </nav>
         <script src="icons.js"></script>
     </div>
@@ -483,7 +483,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
     <div id="shopModal" class="modal hidden">
         <div class="modal-content">
             <span class="close-btn" onclick="closeShop()">&times;</span>
-            <h2 style="text-align:center;"><i class="qi" data-qi="shop" style="font-size:1.25em;vertical-align:-.25em;margin-inline-end:.3em"></i>Inaam Ghar</h2>
+            <h2 style="text-align:center;"><i class="qi" data-qi="shop" style="font-size:1.25em;vertical-align:-.25em;margin-inline-end:.3em"></i><span data-lb="inaam">Inaam Ghar</span></h2>
             <div style="text-align:center; margin-bottom:15px; font-weight:bold; font-size:20px;">Aapka XP: <span id="shopXP">0</span></div>
             <div id="shopGrid" class="shop-grid"></div>
             <button class="exam-btn" style="margin-top:15px; background:var(--soft-bg); color:var(--text); border:1px solid var(--border);" onclick="resetTheme(); closeShop();">🔄 Default Theme lagayein (kharidi hui cheezein safe rehti hain)</button>
