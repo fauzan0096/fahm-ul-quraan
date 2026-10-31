@@ -1,5 +1,11 @@
 # 📖 Fahm-ul-Quran
 
+## 🔀 v82 — merge (do lines ek hui)
+- **Base:** v78 ki line (v72–v78: SVG icons, 50-lafz exam, streak fix, Mushaf styles, Arkan muttafiq wording, course ki 7 misalon ki islah, audit fixes) + **4-zubaan kaam** (har page ke title/icon/tab/button/date; Quran/Games par language button).
+- **Seerat:** v79 ka `seerat.js` (Din 1–34: islahat, hawale, mukammal 4-zubaan tarjuma). Code dono mein ek jaisa tha, sirf data naya hai.
+- v79 ki baaqi files purani line ki thi (v72–v78 se pehle ki), is liye un par v78-wali nayi files rakhi gayin — kuch nahi khoya.
+
+
 Ek simple, mobile-friendly web app (PWA) jisse Quran ke alfaz, namaz ki duaen aur azkar aasaani se seekhe ja sakte hain. Koi build ya install ki zaroorat nahi.
 
 <p align="center"><img src="icon.png" width="140" alt="App icon"></p>
@@ -54,6 +60,9 @@ Ek simple, mobile-friendly web app (PWA) jisse Quran ke alfaz, namaz ki duaen au
 - Emoji ki jagah apne SVG icons (hara line + sunehri accent): Quran, Sabaq, Games, Tajweed, Duaein, 99 Naam, Nahw-Sarf, Seerat, Arkan, Shop, Maqsad, Ayat, Yaad, Profile, Home.
 - Istemaal: `<i class="qi" data-qi="quran"></i>` (size `font-size` se, rang `color` se, accent `--qi-a` se). Naya icon: `icons.js` ke `ICONS` mein ek entry.
 - Home ke 9 tiles (3x3, alag-alag rang ke tile, dark mode ke saath) aur neeche ki bar (bade icons, chuna hua tab pill mein) isi se.
+
+- **Auto-translate (v80):** baaki sab titles/buttons/tabs/labels/placeholders ek hi dictionary `D` (app.js, `/*@AUTO_START*/` se `/*@AUTO_END*/`) se 4 zubaan mein badalte hain — naya title = `D` mein ek entry (`'Roman matn': [اردو, हिंदी, English]`); numbers wale ke liye `PAT`, poore HTML hisse ke liye `HT` + `data-lbh`. Arkan/Nahw-Sarf apna alag engine rakhte hain.
+- **4 zubaanen (v79):** icon ke saath likhe naam (home tiles, neeche ki bar, user menu, Shop, page titles) aur Hijri + English tareekh (header line aur popup) ab language button ke saath **اردو / Roman / हिंदी / English** mein badalte hain. Labels `app.js` ke `LB` mein (ek jagah), page par `<span data-lb="kunji">`; JS mein `QSLang.t('kunji')`. Tareekh ke mahine/din/jumle `tools.js` (hijri) ke `MON_L, GM, GD, TX` mein.
 
 ### 🌙 Arabi (Hijri) tareekh (`tools.js` ke andar)
 - Header mein ek chhoti line; tap karne par poori tafseel. Location (Namaz ke liye di hui) ya timezone se ilaqa pehchanta hai: Saudi/Arab = Umm al-Qura, Bharat/Pakistan/Bangladesh = aam taur par 1 din peechhe.

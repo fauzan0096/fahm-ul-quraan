@@ -120,7 +120,7 @@
 <body>
 <!-- ⚠️ Deeni disclaimer: tajweed / dua / asma / games / bazm -->
 <div id="deeniNotice" role="note">
-    <span>⚠️ <b>Zaroori:</b> ye app <b>aalim ya qaari ki jagah nahi</b>. Tajweed, namaz aur deeni ahkam kisi mustanad ustad se seekhein. App sirf seekhne mein madad ke liye hai. <a href="privacy.html">Tafseel</a></span>
+    <span data-lbh="disc">⚠️ <b>Zaroori:</b> ye app <b>aalim ya qaari ki jagah nahi</b>. Tajweed, namaz aur deeni ahkam kisi mustanad ustad se seekhein. App sirf seekhne mein madad ke liye hai. <a href="privacy.html">Tafseel</a></span>
     <button type="button" aria-label="Band karein" onclick="this.parentElement.style.display='none';try{sessionStorage.setItem('deeniNoticeHide','1')}catch(e){}">✕</button>
 </div>
 <style>
@@ -133,7 +133,7 @@
     <header>
         <div class="header-top">
             <a class="icon-btn" href="index.html" aria-label="Wapas">←</a>
-            <h1><i class="qi qi-h" data-qi="asma"></i>أسماء الله الحسنى</h1>
+            <h1><i class="qi qi-h" data-qi="asma"></i><span data-lb="asmah">أسماء الله الحسنى</span></h1>
             <button class="icon-btn" id="langBtn" data-qs-lang onclick="QSLang.cycle()" style="font-size:13px;font-weight:700;min-width:40px" title="Matlab ki zubaan">اردو</button>
             <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" aria-label="Theme">🌙</button>
         </div>
@@ -148,7 +148,7 @@
 
         <details class="note">
             <summary style="cursor:pointer;font-weight:700;color:var(--text);min-height:24px;">📌 Zaroori wazahat (parhein)</summary>
-            <p style="margin-top:8px;">99 naamon ki tafseeli fehrist Tirmidhi aur Ibn Majah ki riwayaton mein aati hai (Walid bin Muslim ke tareeq se). Ulama ka is par ikhtilaf hai ke ye tafseeli fehrist Nabi ﷺ ke alfaaz hain ya kisi raawi ka izafa, is liye yahan <b>mashhoor fehrist</b> di gayi hai. Allah ke naam 99 tak mehdood nahi. "Ihsa" (yaad karna) ke maani ulama ne gin lena, yaad karna, samajhna aur taqaze par amal karna bhi bayan kiye hain. Kuch naam jode ki shakl mein liye jate hain (jaise Al-Mu'izz / Al-Mudhill, An-Nafi' / Ad-Darr), akele nahi.</p>
+            <p style="margin-top:8px;" data-lbh="asnote">99 naamon ki tafseeli fehrist Tirmidhi aur Ibn Majah ki riwayaton mein aati hai (Walid bin Muslim ke tareeq se). Ulama ka is par ikhtilaf hai ke ye tafseeli fehrist Nabi ﷺ ke alfaaz hain ya kisi raawi ka izafa, is liye yahan <b>mashhoor fehrist</b> di gayi hai. Allah ke naam 99 tak mehdood nahi. "Ihsa" (yaad karna) ke maani ulama ne gin lena, yaad karna, samajhna aur taqaze par amal karna bhi bayan kiye hain. Kuch naam jode ki shakl mein liye jate hain (jaise Al-Mu'izz / Al-Mudhill, An-Nafi' / Ad-Darr), akele nahi.</p>
         </details>
 
         <section class="today" id="today"></section>
