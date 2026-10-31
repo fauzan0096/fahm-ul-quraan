@@ -241,7 +241,7 @@ Login ke passwords `index.html` ke script mein (`ADMIN_PASSWORD`, `GUEST_PASSWOR
 
 
 ## Language system
-- `lang.js`: ek shared button Urdu → Roman → Hindi → English (`localStorage 'mlang'`). Games page shamil nahi.
+- `lang.js`: ek shared button Urdu → Roman → Hindi → English (`localStorage 'mlang'`). Games page bhi shamil (v83): sawal/options/kahaniyan/messages `games-lang.js` mein (GT/GU/GM); Bazm ke lafz `course.js` se.
 - `duaTr.js`: 119 duaon ka Roman/Hindi/English tarjuma + tafseel.
 - Tajweed: har card mein hawala + 5 corrections (Madd Lazim misaal, Waqf ط/ج, Waqf misaal 2:2, Rasm misaal, English typo).
 - Tarjume kisi mustanad aalim/kitab se verify karwa lein.

@@ -8,10 +8,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
     <script src="app.js"></script>
+    <script src="games-lang.js"></script>
     <meta name="theme-color" content="#0F4C3A">
     <script src="sounds.js" defer></script>
     <script src="tools.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root { --primary: #0F4C3A; --secondary: #D4AF37; --bg: #F4F7F6; --card-bg: #fff; --text: #333; --text-light: #666; --border: #ddd; --kbc-bg: #0b3a2c; --kbc-gold: #D9B65A; --kbc-blue: #0F4C3A; }
         [data-theme="dark"] { --primary: #1a1a2e; --secondary: #6ee7b7; --bg: #0f0f23; --card-bg: #1e1e36; --text: #eee; --text-light: #aaa; --border: #333; }
@@ -113,6 +114,14 @@
         .emoji-opt.wrong { background: #f8d7da; border-color: #dc3545; color: #721c24; }
     </style>
     <link rel="stylesheet" href="theme.css">
+    <style id="langCss">
+html[data-mlang="u"] body{font-family:'Noto Nastaliq Urdu','Poppins',sans-serif;line-height:1.9}
+html[data-mlang="u"] button,html[data-mlang="u"] select{font-family:'Noto Nastaliq Urdu','Poppins',sans-serif;line-height:2}
+html[data-mlang="hi"] body,html[data-mlang="hi"] button,html[data-mlang="hi"] select{font-family:'Noto Sans Devanagari','Poppins',sans-serif}
+.mem-card .tr{font-size:12px;line-height:1.4;direction:ltr}
+html[data-mlang="u"] .main-nav{direction:rtl}
+#deeniNotice{font-family:inherit}
+    </style>
     <style id="bazmCss">
 /* ===== Bazm-e-Fahm (sab #bazm ke andar, taake baaki games par asar na pade) ===== */
 #bazm{--card:var(--card-bg);--light:var(--text-light);--ok:#2e9d62;--bad:#d64545;padding-bottom:20px}
@@ -190,11 +199,11 @@
         </div>
     </header>
     <div class="main-nav">
-        <button class="nav-btn active" onclick="switchGame('kbc', this)">🪜 Maratib-e-Ilm</button>
-        <button class="nav-btn" onclick="switchGame('sahaba', this)">⭐ Sahaba</button>
-        <button class="nav-btn" onclick="switchGame('memory', this)">🧠 Memory</button>
-        <button class="nav-btn" onclick="switchGame('emoji', this)">😀 Emoji</button>
-        <button class="nav-btn" onclick="switchGame('bazm', this)">🎓 Bazm-e-Fahm</button>
+        <button class="nav-btn active" onclick="switchGame('kbc', this)" data-g="n_kbc">🪜 Maratib-e-Ilm</button>
+        <button class="nav-btn" onclick="switchGame('sahaba', this)" data-g="n_sahaba">⭐ Sahaba</button>
+        <button class="nav-btn" onclick="switchGame('memory', this)" data-g="n_memory">🧠 Memory</button>
+        <button class="nav-btn" onclick="switchGame('emoji', this)" data-g="n_emoji">😀 Emoji</button>
+        <button class="nav-btn" onclick="switchGame('bazm', this)" data-g="n_bazm">🎓 Bazm-e-Fahm</button>
     </div>
     <div class="container">
         <div id="kbc" class="game-section active"></div>
@@ -206,14 +215,14 @@
         <div style="display:flex;justify-content:flex-end;margin:0 0 8px"><span class="bz-xp" id="bz_xpBadge">⭐ 0 XP</span></div>
         <section id="bz_vStart">
             <div class="bz-card">
-                <h2>Bazm-e-Fahm</h2>
+                <h2 data-g="bz_h">Bazm-e-Fahm</h2>
                 <p class="note" style="margin:0" data-lbh="gintro">Quran ke lafzon ke 15 sawal. Har 3 sawal ke baad ek <b>darja</b> pakka ho jaata hai. Galat jawab par aap pichla pakka darja ka XP rakhte hain. Koi paisa nahi, sirf <b>Ilm Points (XP)</b>.</p>
                 <div id="bz_tierList" style="margin-top:10px"></div>
                 <div class="note" id="bz_poolNote" style="margin-top:8px"></div>
-                <button class="btn" id="bz_btnStart">▶️ Shuru karein</button>
+                <button class="btn" id="bz_btnStart" data-g="bz_start">▶️ Shuru karein</button>
             </div>
             <div class="bz-card">
-                <h2>Madad ke 4 tareeqe (har ek sirf ek baar)</h2>
+                <h2 data-g="bz_madad_h">Madad ke 4 tareeqe (har ek sirf ek baar)</h2>
                 <div class="note" data-lbh="gmadad">
                     ✂️ <b>Do Ghalat Hatayein</b>: 2 ghalat jawab hat jaate hain<br>
                     👥 <b>Hazireen ki Raay</b>: andaza (asli log nahi, sirf mashwara)<br>
@@ -227,18 +236,18 @@
         <!-- ===== Sawal ===== -->
         <section id="bz_vPlay" class="hidden">
             <div class="steps" id="bz_steps"></div>
-            <div class="meta"><span>Sawal <b id="bz_qNo">1</b>/15</span><span><b id="bz_qTier"></b></span><span>🏆 <b id="bz_qPts">0</b> XP</span></div>
+            <div class="meta"><span><span data-g="bz_sawal">Sawal</span> <b id="bz_qNo">1</b>/15</span><span><b id="bz_qTier"></b></span><span>🏆 <b id="bz_qPts">0</b> XP</span></div>
             <div class="bz-card" style="margin-top:10px">
                 <div class="q-prompt" id="bz_qPrompt"></div>
                 <div class="q-main" id="bz_qMain"></div>
                 <div class="q-hint hidden" id="bz_qHint"></div>
                 <div class="opts" id="bz_opts"></div>
                 <div class="confirm hidden" id="bz_confirm">
-                    <button class="btn gold" id="bz_btnYes">Haan, jawab pakka hai</button>
-                    <button class="btn ghost" id="bz_btnNo">Dobara sochun</button>
+                    <button class="btn gold" id="bz_btnYes" data-g="yes">Haan, jawab pakka hai</button>
+                    <button class="btn ghost" id="bz_btnNo" data-g="no">Dobara sochun</button>
                 </div>
                 <div class="lifes" id="bz_lifes"></div>
-                <button class="btn ghost" id="bz_btnQuit" style="margin-top:10px">🛑 Yahin Ruk Jayein (abhi tak ka XP le lein)</button>
+                <button class="btn ghost" id="bz_btnQuit" style="margin-top:10px" data-g="bz_quit">🛑 Yahin Ruk Jayein (abhi tak ka XP le lein)</button>
             </div>
         </section>
     
@@ -250,8 +259,8 @@
                 <div class="note" id="bz_endMsg"></div>
                 <div class="pts" id="bz_endPts"></div>
                 <div class="note" id="bz_endCap"></div>
-                <button class="btn" id="bz_btnAgain">🔁 Dobara khelein</button>
-                <a class="btn ghost" href="index.html" style="text-decoration:none;text-align:center">📚 Sabaq par wapas</a>
+                <button class="btn" id="bz_btnAgain" data-g="bz_again">🔁 Dobara khelein</button>
+                <a class="btn ghost" href="index.html" style="text-decoration:none;text-align:center" data-g="bz_back">📚 Sabaq par wapas</a>
             </div>
         </section>
         </div>
@@ -268,6 +277,20 @@
         // ==========================================
         function toggleTheme() { FQTheme.cycle(); }   // themes.js: kharidi hui themes ek ke baad ek
         FQTheme.bindButton();
+
+        // ==========================================
+        // LANGUAGE (QSLang: Urdu / Roman / Hindi / English) — texts games-lang.js mein
+        // ==========================================
+        function paintStatic() {
+            const l = GL(), de = document.documentElement;
+            de.setAttribute('lang', l === 'u' ? 'ur' : l === 'hi' ? 'hi' : 'en');
+            de.setAttribute('dir', l === 'u' ? 'rtl' : 'ltr');
+            document.querySelectorAll('[data-g]').forEach(e => { e.innerHTML = GU(e.getAttribute('data-g')); });
+            document.querySelectorAll('[data-g-aria]').forEach(e => e.setAttribute('aria-label', GU(e.getAttribute('data-g-aria'))));
+            document.title = (window.QSLang && QSLang.t ? QSLang.t('games') : 'Games') + ' - Fahm-ul-Quran';
+        }
+        paintStatic();
+        if (window.QSLang) QSLang.paint();
 
         // ==========================================
         // CELEBRATION
@@ -321,7 +344,7 @@
             document.body.appendChild(layer);
             const pop = document.createElement('div');
             pop.className = 'cele-pop';
-            pop.innerHTML = `<div class="cele-card"><div class="big">🏆</div><h2>${title || 'Mubarak Ho!'}</h2><p>${msg || 'Aap jeet gaye! Allah aap ko aur ilm de.'}</p><button>Shukriya 🤲</button></div>`;
+            pop.innerHTML = `<div class="cele-card"><div class="big">🏆</div><h2>${title || GU('congrats')}</h2><p>${msg || GU('cele_def_m')}</p><button>${GU('shukriya')}</button></div>`;
             const close = () => { pop.remove(); };
             pop.querySelector('button').onclick = close;
             pop.onclick = e => { if (e.target === pop) close(); };
@@ -766,7 +789,8 @@
         // MARATIB-E-ILM: inaam = Stars (koi paisa nahi)
         // ==========================================
         const PRIZES = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512];
-        const DARJA = ['🌱 Mubtadi', '📖 Talib', '💡 Faahim', '🏅 Mutqin', '🌟 Mahir'];   // har 2 sawal par ek darja
+        const DARJA_IC = ['🌱', '📖', '💡', '🏅', '🌟'];   // har 2 sawal par ek darja
+        const DARJA_L = i => DARJA_IC[i] + ' ' + GU('tier' + i);
         const PRIZE_LABELS = PRIZES.map((p, i) => `⭐ ${p}${i === 4 ? ' 🎯' : i === 9 ? ' 🏆' : ''}`);
 
         // ===== MARATIB-E-ILM STATE (purane naam kbc* andar rakhe hain taaki saved progress na tute) =====
@@ -774,6 +798,7 @@
         let kbcData = null;
         const KBC_KEY = 'p_' + (localStorage.getItem('activeProfile') || 'p1') + '_kbcUnlockedDay';
         let kbcDayIdx = null;
+        let kbcResultPaint = null;
         function kbcUnlocked() {
             if (localStorage.getItem('userRole') === 'admin') return KBC.length;   // admin ke liye saare din khule
             const n = parseInt(localStorage.getItem(KBC_KEY), 10) || 1;
@@ -789,36 +814,48 @@
             // Sort by difficulty ascending — Q1 easy ... Q10 hard
             kbcData = KBC[dayIndex].slice().sort((a, b) => (a[6] || 1) - (b[6] || 1));
 
+            kbcResultPaint = null;
             kbcState = { qIndex: 0, used5050: false, usedAudience: false, usedPhone: false, usedSwap: false, currentPrize: 0, sel: -1 };
 
-            let dayOpts = '';
-            for (let d = 1; d <= unlocked; d++) dayOpts += `<option value="${d}" ${d === dayIndex + 1 ? 'selected' : ''}>📅 Day ${d}</option>`;
-            const daySelect = `<select class="kbc-day" style="border:none;color:var(--kbc-gold);font-weight:bold;font-size:13px;background:transparent;" onchange="initKBC(parseInt(this.value,10))">${dayOpts}</select>`;
+            kbcShell();
+            renderLadder();
+            kbcLoadQuestion();
+        }
 
+        // Maratib-e-Ilm ka dhancha (zubaan badalne par state bacha kar dobara banta hai)
+        function kbcShell() {
+            const unlocked = kbcUnlocked(), dayIndex = kbcDayIdx;
+            let dayOpts = '';
+            for (let d = 1; d <= unlocked; d++) dayOpts += `<option value="${d}" ${d === dayIndex + 1 ? 'selected' : ''}>${GU('day', { n: d })}</option>`;
+            const daySelect = `<select class="kbc-day" style="border:none;color:var(--kbc-gold);font-weight:bold;font-size:13px;background:transparent;" onchange="initKBC(parseInt(this.value,10))">${dayOpts}</select>`;
             document.getElementById('kbc').innerHTML = `
                 <div class="kbc-top">
                     ${daySelect}
                     <span class="kbc-prize" id="kbcPrizeDisplay">⭐ 0</span>
                 </div>
-                <div class="kbc-qnum" id="kbcQNum">Sawal 1 / 10</div>
+                <div class="kbc-qnum" id="kbcQNum"></div>
                 <div class="kbc-question" id="kbcQuestion"></div>
                 <div class="kbc-options" id="kbcOptions"></div>
                 <div class="kbc-confirm" id="kbcConfirm" style="display:none">
-                    <button class="yes" onclick="kbcConfirmYes()">Haan, jawab pakka hai</button>
-                    <button onclick="kbcConfirmNo()">Dobara sochun</button>
+                    <button class="yes" onclick="kbcConfirmYes()">${GU('yes')}</button>
+                    <button onclick="kbcConfirmNo()">${GU('no')}</button>
                 </div>
                 <div class="kbc-lifelines">
-                    <button class="kbc-life" id="life5050" onclick="kbc5050()">✂️ Do Ghalat Hatayein</button>
-                    <button class="kbc-life" id="lifeAud" onclick="kbcAudience()">👥 Hazireen ki Raay</button>
-                    <button class="kbc-life" id="lifePhone" onclick="kbcPhone()">📞 Saathi se Mashwara</button>
-                    <button class="kbc-life" id="lifeSwap" onclick="kbcSwap()">🔄 Sawal Tabdeel</button>
+                    <button class="kbc-life" id="life5050" onclick="kbc5050()">${GU('l5050')}</button>
+                    <button class="kbc-life" id="lifeAud" onclick="kbcAudience()">${GU('laud')}</button>
+                    <button class="kbc-life" id="lifePhone" onclick="kbcPhone()">${GU('lphone')}</button>
+                    <button class="kbc-life" id="lifeSwap" onclick="kbcSwap()">${GU('lswap')}</button>
                 </div>
                 <div class="kbc-ladder" id="kbcLadder"></div>
-                <div class="kbc-note">🎯 = pakka darja (yahan tak ke stars mehfooz) • Stars sirf inaam ke nishan hain, koi paisa nahi</div>
-                <button class="kbc-quit" onclick="kbcQuit()">🛑 Yahin Ruk Jayein (abhi ke stars le lein)</button>
+                <div class="kbc-note">${GU('kbc_note')}</div>
+                <button class="kbc-quit" onclick="kbcQuit()">${GU('kbc_quit')}</button>
             `;
-            renderLadder();
-            kbcLoadQuestion();
+            if (kbcState) {
+                if (kbcState.used5050) document.getElementById('life5050').disabled = true;
+                if (kbcState.usedAudience) document.getElementById('lifeAud').disabled = true;
+                if (kbcState.usedPhone) document.getElementById('lifePhone').disabled = true;
+                if (kbcState.usedSwap) document.getElementById('lifeSwap').disabled = true;
+            }
         }
 
         function renderLadder() {
@@ -836,9 +873,9 @@
             if (kbcState.qIndex >= kbcData.length) { kbcFinish(true); return; }
             const q = kbcData[kbcState.qIndex];
 
-            document.getElementById('kbcQNum').innerHTML = `Sawal <b>${kbcState.qIndex + 1}</b> / 10 &nbsp;•&nbsp; Darja: <b>${DARJA[Math.min(4, Math.floor(kbcState.qIndex / 2))]}</b>`;
+            document.getElementById('kbcQNum').innerHTML = GU('qnum', { n: kbcState.qIndex + 1, d: DARJA_L(Math.min(4, Math.floor(kbcState.qIndex / 2))) });
             kbcState.sel = -1; const cf = document.getElementById('kbcConfirm'); if (cf) cf.style.display = 'none';
-            document.getElementById('kbcQuestion').innerText = q[0];
+            document.getElementById('kbcQuestion').innerText = GT(q[0]);
 
             const opts = document.getElementById('kbcOptions');
             const letters = ['A','B','C','D'];
@@ -846,10 +883,11 @@
             for (let i = 0; i < 4; i++) {
                 const btn = document.createElement('button');
                 btn.className = 'kbc-opt';
-                btn.innerHTML = `<b>${letters[i]}.</b> ${q[i+1]}`;
+                btn.innerHTML = `<b>${letters[i]}.</b> ${GT(q[i+1])}`;
                 btn.onclick = () => kbcSelect(i);
                 opts.appendChild(btn);
             }
+            if (kbcState.removedQ === kbcState.qIndex && kbcState.removed) kbcState.removed.forEach(i => { const b = opts.children[i]; if (b) { b.disabled = true; b.classList.add('disabled'); } });
             document.getElementById('kbcPrizeDisplay').innerText = kbcState.currentPrize > 0 ? `⭐ ${kbcState.currentPrize}` : '⭐ 0';
 
             document.querySelectorAll('.kbc-ladder span').forEach((s, i) => {
@@ -890,6 +928,7 @@
             KBC.forEach(day => day.forEach(q => { if ((q[6] || 1) === (cur[6] || 1) && !asked.has(q[0])) pool.push(q); }));
             if (!pool.length) return;
             kbcState.usedSwap = true;
+            kbcState.removedQ = -1;
             document.getElementById('lifeSwap').disabled = true;
             kbcData[kbcState.qIndex] = pool[Math.floor(Math.random() * pool.length)];
             kbcLoadQuestion();
@@ -897,7 +936,7 @@
 
         function kbcQuit() {
             if (!kbcState) return;
-            if (confirm('Yahin ruk jayein? Abhi tak ke stars mil jayenge.')) kbcFinish(false, true);
+            if (confirm(GU('kbc_confirm_quit'))) kbcFinish(false, true);
         }
 
         function kbcAnswer(sel) {
@@ -930,6 +969,7 @@
             const correct = q[5];
             const wrongs = [0,1,2,3].filter(i => i !== correct).sort(() => Math.random() - 0.5).slice(0, 2);
             const btns = document.querySelectorAll('.kbc-opt');
+            kbcState.removed = wrongs; kbcState.removedQ = kbcState.qIndex;
             wrongs.forEach(i => { btns[i].disabled = true; btns[i].classList.add('disabled'); if (kbcState.sel === i) kbcConfirmNo(); });
         }
 
@@ -950,7 +990,7 @@
             });
             percentages[correct] += remaining;
             const letters = ['A','B','C','D'];
-            alert('👥 Hazireen ki Raay (sirf andaza, asli log nahi):\n' + percentages.map((p, i) => `${letters[i]}: ${p}%`).join('\n'));
+            alert(GU('aud_alert') + '\n' + percentages.map((p, i) => `${letters[i]}: ${p}%`).join('\n'));
         }
 
         function kbcPhone() {
@@ -962,27 +1002,28 @@
             const correct = q[5];
             let guess = correct;
             if (Math.random() > 0.7) guess = [0,1,2,3].filter(i => i !== correct)[Math.floor(Math.random()*3)];
-            alert(`📞 Saathi ka mashwara (andaza, pakka nahi):\n"Mujhe lagta hai ${letters[guess]} — ${q[guess+1]} sahi hai"`);
+            alert(GU('phone_alert', { l: letters[guess], a: GT(q[guess + 1]) }));
         }
 
         function kbcFinish(win, quit) {
             const earned = win ? PRIZES[PRIZES.length-1] : (quit ? kbcState.currentPrize : (kbcState.qIndex >= 5 ? PRIZES[4] : 0));
-            const cur = kbcDayIdx + 1;
-            let nextBtn = '';
-            if (win && cur < KBC.length) {
-                if (kbcUnlocked() < cur + 1) localStorage.setItem(KBC_KEY, String(cur + 1));
-                nextBtn = `<button class="kbc-btn" onclick="initKBC(${cur + 1})">➡️ Agla Din (Day ${cur + 1})</button><br>`;
-            }
-            if (win) celebrate('MashaAllah! 🎉', `Day ${cur} mukammal! ⭐ ${earned} stars jeete.`);
-            document.getElementById('kbc').innerHTML = `
+            const cur = kbcDayIdx + 1, qi = kbcState.qIndex;
+            if (win && cur < KBC.length && kbcUnlocked() < cur + 1) localStorage.setItem(KBC_KEY, String(cur + 1));
+            if (win) celebrate(GU('cele_win_t'), GU('cele_win_m', { n: cur, s: earned }));
+            kbcResultPaint = () => {
+                let nextBtn = '';
+                if (win && cur < KBC.length) nextBtn = `<button class="kbc-btn" onclick="initKBC(${cur + 1})">${GU('next_day', { n: cur + 1 })}</button><br>`;
+                document.getElementById('kbc').innerHTML = `
                 <div class="kbc-result">
-                    <h2>${win ? '🏆 Mubarak Ho!' : (quit ? '🛑 Aap yahin ruk gaye' : '😢 Afsos, jawab durust nahi tha')}</h2>
+                    <h2>${win ? GU('res_win') : (quit ? GU('res_quit') : GU('res_lose'))}</h2>
                     <div class="prize">⭐ ${earned}</div>
-                    <p style="color:#aaa; margin-bottom:15px;">${win ? (cur < KBC.length ? `Day ${cur} mukammal! Day ${cur + 1} khul gaya.` : 'Aapne saare 30 din mukammal kar liye!') : (quit ? `Aapne ${kbcState.qIndex} sawal durust kiye.` : `Aap sawal ${kbcState.qIndex+1} par ruk gaye. Dobara koshish karein 🤍`)}</p>
+                    <p style="color:#aaa; margin-bottom:15px;">${win ? (cur < KBC.length ? GU('res_win_msg', { n: cur, m: cur + 1 }) : GU('res_all')) : (quit ? GU('res_quit_msg', { n: qi }) : GU('res_lose_msg', { n: qi + 1 }))}</p>
                     ${nextBtn}
-                    <button class="kbc-btn" onclick="initKBC(${cur})">🔄 Dobara Khelein</button>
+                    <button class="kbc-btn" onclick="initKBC(${cur})">${GU('again')}</button>
                 </div>
             `;
+            };
+            kbcResultPaint();
         }
 
         // ==========================================
@@ -1053,43 +1094,43 @@
             if (!sahabaState) return;
             const box = document.getElementById('sahaba');
             if (sahabaState.index >= sahabaState.questions.length) {
-                celebrate('Mubarak Ho!', 'Aapne is round ke saare Sahaba sawal mukammal kiye.');
-                box.innerHTML = `<div class="sahaba-box" style="text-align:center;"><h2 style="color:var(--primary);">🎉 Mubarak Ho!</h2><p style="margin:15px 0;">Aapne round complete kiya.</p><div class="sahaba-score" style="font-size:18px; padding:10px 20px;">Score: ${sahabaState.score} / ${sahabaState.questions.length}</div><button class="btn-primary" onclick="initSahaba()" style="margin-top:20px;">🔄 Naya Round</button></div>`;
+                if (!sahabaState.celeDone) { sahabaState.celeDone = true; celebrate(GU('congrats'), GU('sh_cele_m')); }
+                box.innerHTML = `<div class="sahaba-box" style="text-align:center;"><h2 style="color:var(--primary);">${GU('congrats_i')}</h2><p style="margin:15px 0;">${GU('sh_round')}</p><div class="sahaba-score" style="font-size:18px; padding:10px 20px;">${GU('score_line', { s: sahabaState.score, t: sahabaState.questions.length })}</div><button class="btn-primary" onclick="initSahaba()" style="margin-top:20px;">${GU('new_round')}</button></div>`;
                 return;
             }
             const q = sahabaState.questions[sahabaState.index];
             box.innerHTML = `
                 <div class="sahaba-box">
                     <div class="sahaba-head">
-                        <span style="color:var(--primary); font-weight:bold;">⭐ Sahaba Ki Kahani</span>
-                        <span class="sahaba-score">${sahabaState.index + 1} / ${sahabaState.questions.length} • Score: ${sahabaState.score}</span>
+                        <span style="color:var(--primary); font-weight:bold;">${GU('sh_title')}</span>
+                        <span class="sahaba-score">${GU('sh_score', { i: sahabaState.index + 1, t: sahabaState.questions.length, s: sahabaState.score })}</span>
                     </div>
-                    <div class="sahaba-q">${q.q}</div>
-                    <div id="sahabaOpts">${q.o.map((o, i) => `<button class="sahaba-opt" onclick="sahabaAnswer(${i})">${o}</button>`).join('')}</div>
+                    <div class="sahaba-q">${GT(q.q)}</div>
+                    <div id="sahabaOpts">${q.o.map((o, i) => `<button class="sahaba-opt" onclick="sahabaAnswer(${i})">${GT(o)}</button>`).join('')}</div>
                     <div id="sahabaStoryBox" class="hidden"></div>
                 </div>
             `;
             sahabaState.answered = false;
         }
-        function sahabaAnswer(sel) {
+        function sahabaAnswer(sel, replay) {
             if (sahabaState.answered) return;
-            sahabaState.answered = true;
+            sahabaState.answered = true; sahabaState.sel = sel;
             const q = sahabaState.questions[sahabaState.index];
             const opts = document.querySelectorAll('#sahabaOpts .sahaba-opt');
             opts.forEach(o => o.disabled = true);
-            if (sel === q.c) { opts[sel].classList.add('correct'); sahabaState.score++; }
+            if (sel === q.c) { opts[sel].classList.add('correct'); if (!replay) sahabaState.score++; }
             else { opts[sel].classList.add('wrong'); opts[q.c].classList.add('correct'); }
             const box = document.getElementById('sahabaStoryBox');
             box.classList.remove('hidden');
             box.innerHTML = `
                 <div class="sahaba-story">
-                    <h3>📖 ${q.name}</h3>
-                    <p>${q.story}</p>
-                    <button class="btn-primary" onclick="sahabaNext()">➡️ Next Sawal</button>
+                    <h3>📖 ${GT(q.name)}</h3>
+                    <p>${GT(q.story)}</p>
+                    <button class="btn-primary" onclick="sahabaNext()">${GU('sh_next')}</button>
                 </div>
             `;
         }
-        function sahabaNext() { sahabaState.index++; sahabaRender(); }
+        function sahabaNext() { sahabaState.index++; sahabaState.sel = null; sahabaRender(); }
 
         // ==========================================
         // MEMORY — pool, har game mein 8 random pairs
@@ -1162,16 +1203,16 @@
             const box = document.getElementById('memory');
             if (memoryState.matched === memoryState.totalPairs) {
                 setTimeout(() => {
-                    celebrate('Shabash!', 'Saare cards match ho gaye.');
-                    box.innerHTML = `<div class="memory-box" style="text-align:center;"><h2 style="color:var(--primary);">🎉 Sab Match Ho Gaye!</h2><p style="margin:15px 0;">Total Moves: ${memoryState.moves}</p><button class="btn-primary" onclick="initMemory()">🔄 Naya Round</button></div>`;
+                    if (!memoryState.celeDone) { memoryState.celeDone = true; celebrate(GU('mem_cele_t'), GU('mem_cele_m')); }
+                    box.innerHTML = `<div class="memory-box" style="text-align:center;"><h2 style="color:var(--primary);">${GU('mem_done')}</h2><p style="margin:15px 0;">${GU('mem_total', { n: memoryState.moves })}</p><button class="btn-primary" onclick="initMemory()">${GU('new_round')}</button></div>`;
                 }, 500);
                 return;
             }
             box.innerHTML = `
                 <div class="memory-box">
                     <div class="memory-info">
-                        <span>✅ Matched: ${memoryState.matched} / ${memoryState.totalPairs}</span>
-                        <span>🎯 Moves: ${memoryState.moves}</span>
+                        <span>${GU('mem_matched', { a: memoryState.matched, b: memoryState.totalPairs })}</span>
+                        <span>${GU('mem_moves', { n: memoryState.moves })}</span>
                     </div>
                     <div class="memory-grid" id="memGrid"></div>
                 </div>
@@ -1183,7 +1224,7 @@
                 if (card.matched) div.classList.add('matched');
                 else if (memoryState.flipped.includes(idx)) div.classList.add('flipped');
                 if (memoryState.flipped.includes(idx) || card.matched) {
-                    div.innerHTML = `<span class="${card.type === 'ar' ? 'ar' : 'ur'}">${card.text}</span>`;
+                    div.innerHTML = card.type === 'ar' ? `<span class="ar">${card.text}</span>` : `<span class="${GL() === 'u' ? 'ur' : 'tr'}">${GM(card.text)}</span>`;
                 }
                 div.onclick = () => memoryFlip(idx);
                 grid.appendChild(div);
@@ -1334,37 +1375,49 @@
             const box = document.getElementById('emoji');
             if (emojiState.index >= emojiState.questions.length) {
                 const sc = emojiState.score, tot = emojiState.questions.length, good = sc >= Math.ceil(tot * 0.6);
-                if (good) celebrate(sc === tot ? 'Mashaallah! Full Marks!' : 'Mubarak Ho!', `Aap ne ${tot} mein se ${sc} sahi bataye.`);
+                if (good && !emojiState.celeDone) { emojiState.celeDone = true; celebrate(sc === tot ? GU('em_full') : GU('congrats'), GU('em_cele_m', { t: tot, s: sc })); }
                 const stars = sc === tot ? '🌟🌟🌟' : (good ? '🌟🌟' : '🌟');
-                box.innerHTML = `<div class="emoji-box"><h2 style="color:var(--primary);">${good ? '🎉 Mubarak Ho!' : '💪 Achi Koshish!'}</h2><div class="emoji-display">${good ? '🏆' : '📚'}</div><div style="font-size:30px;">${stars}</div><p style="margin:15px 0;">${good ? 'Bahut khoob!' : 'Thodi aur mashq karein, agli baar behtar hoga.'}</p><div class="emoji-score" style="font-size:18px; padding:10px 20px;">Score: ${sc} / ${tot}</div><button class="btn-primary" onclick="initEmoji()" style="margin-top:20px;">🔄 Naya Round</button></div>`;
+                box.innerHTML = `<div class="emoji-box"><h2 style="color:var(--primary);">${good ? GU('congrats_i') : GU('em_try')}</h2><div class="emoji-display">${good ? '🏆' : '📚'}</div><div style="font-size:30px;">${stars}</div><p style="margin:15px 0;">${good ? GU('em_good_p') : GU('em_try_p')}</p><div class="emoji-score" style="font-size:18px; padding:10px 20px;">${GU('score_line', { s: sc, t: tot })}</div><button class="btn-primary" onclick="initEmoji()" style="margin-top:20px;">${GU('new_round')}</button></div>`;
                 return;
             }
             const q = emojiState.questions[emojiState.index];
             box.innerHTML = `
                 <div class="emoji-box">
-                    <div class="emoji-score">${emojiState.index + 1} / ${emojiState.questions.length} • Score: ${emojiState.score}</div>
+                    <div class="emoji-score">${GU('sh_score', { i: emojiState.index + 1, t: emojiState.questions.length, s: emojiState.score })}</div>
                     <div class="emoji-display">${q.emoji}</div>
-                    <div class="emoji-question">${q.q}</div>
-                    <div id="emojiOpts">${q.o.map((o, i) => `<button class="emoji-opt" onclick="emojiAnswer(${i})">${o}</button>`).join('')}</div>
+                    <div class="emoji-question">${GT(q.q)}</div>
+                    <div id="emojiOpts">${q.o.map((o, i) => `<button class="emoji-opt" onclick="emojiAnswer(${i})">${GT(o)}</button>`).join('')}</div>
                 </div>
             `;
             emojiState.answered = false;
         }
-        function emojiAnswer(sel) {
+        function emojiAnswer(sel, replay) {
             if (emojiState.answered) return;
-            emojiState.answered = true;
+            emojiState.answered = true; emojiState.sel = sel;
             const q = emojiState.questions[emojiState.index];
             const opts = document.querySelectorAll('#emojiOpts .emoji-opt');
             opts.forEach(o => o.disabled = true);
-            if (sel === q.c) { opts[sel].classList.add('correct'); emojiState.score++; }
+            if (sel === q.c) { opts[sel].classList.add('correct'); if (!replay) emojiState.score++; }
             else { opts[sel].classList.add('wrong'); opts[q.c].classList.add('correct'); }
-            setTimeout(() => { emojiState.index++; emojiRender(); }, 1200);
+            if (!replay) setTimeout(() => { emojiState.index++; emojiState.sel = null; emojiRender(); }, 1200);
         }
+
+        // Zubaan badalne par chalta hua khel wahin ka wahin rehta hai, bas zubaan badalti hai
+        function gRefresh() {
+            paintStatic();
+            if (kbcState && document.getElementById('kbcQuestion')) { kbcShell(); renderLadder(); kbcLoadQuestion(); }
+            else if (kbcResultPaint) kbcResultPaint();
+            if (sahabaState) { const w = sahabaState.answered, sel = sahabaState.sel; sahabaRender(); if (w && sel != null && sahabaState.index < sahabaState.questions.length) sahabaAnswer(sel, true); }
+            if (memoryState) memoryRender();
+            if (emojiState) { const w = emojiState.answered, sel = emojiState.sel; emojiRender(); if (w && sel != null && emojiState.index < emojiState.questions.length) emojiAnswer(sel, true); }
+            if (window.bazmRelang) window.bazmRelang();
+        }
+        if (window.QSLang) QSLang.onChange(gRefresh);
 
         // Start with Maratib-e-Ilm (ya purana link games.html#bazm)
         initKBC();
         if (location.hash === '#bazm') {
-            const bb = Array.from(document.querySelectorAll('.nav-btn')).find(x => /Bazm/.test(x.textContent));
+            const bb = Array.from(document.querySelectorAll('.nav-btn')).find(x => (x.getAttribute('onclick') || '').indexOf("'bazm'") > -1);
             switchGame('bazm', bb);
             setTimeout(() => window.scrollTo(0, 0), 60);   // browser #bazm par scroll na kare
         }
@@ -1425,6 +1478,10 @@
     function usable(x) { return x.w.a && x.w.r && x.w.u_ro && x.w.u; }
     pool = pool.filter(usable);
 
+    // ---------- Zubaan: lafz ka matlab chuni hui zubaan mein ----------
+    function mean(w) { var l = GL(); return l === 'u' ? { t: w.u, u: '' } : l === 'hi' ? { t: w.u_hi || w.u_ro, u: '' } : l === 'en' ? { t: w.u_en || w.u_ro, u: '' } : { t: w.u_ro, u: w.u }; }
+    function mean2(w) { var l = GL(); return l === 'u' ? w.t : l === 'hi' ? w.t_hi : l === 'en' ? w.t_en : w.t_ro; }
+    function tn(i) { return GU('tier' + i); }
     // ---------- Question builder ----------
     // Darja 1-2: lafz -> matlab | 3: ayat ka hissa -> matlab | 4: matlab -> lafz | 5: Roman -> matlab (Urdu script mein)
     function qType(level) { return [0, 0, 1, 2, 3][Math.min(4, level)]; }   // level 0..4
@@ -1441,8 +1498,8 @@
         var q = { type: type, x: x, level: level }, d, opts;
         if (type === 0 || type === 1 || type === 3) {
             d = distractors(x, 3, 'mean');
-            opts = d.map(function (p) { return { t: p.w.u_ro, u: p.w.u, ok: false }; });
-            opts.push({ t: x.w.u_ro, u: x.w.u, ok: true });
+            opts = d.map(function (p) { return { w: p.w, ok: false }; });
+            opts.push({ w: x.w, ok: true });
         } else {
             d = distractors(x, 3, 'ar');
             opts = d.map(function (p) { return { ar: p.w.a, t: p.w.r, ok: false }; });
@@ -1454,7 +1511,7 @@
 
     // ---------- State ----------
     var S = null;
-    function reset() { used = {}; S = { i: 0, q: null, pick: -1, lifes: { fifty: 1, poll: 1, ustad: 1, swap: 1 }, hint: '', earned: 0, over: false }; }
+    function reset() { used = {}; S = { i: 0, q: null, pick: -1, lifes: { fifty: 1, poll: 1, ustad: 1, swap: 1 }, hintOn: false, earned: 0, over: false }; }
     function safeXP(i) { var done = Math.floor(i / 3) * 3; var s = 0; for (var k = 0; k < done; k++) s += PTS[k]; return s; }
     function totalXP(i) { var s = 0; for (var k = 0; k < i; k++) s += PTS[k]; return s; }
 
@@ -1462,53 +1519,59 @@
     function drawStart() {
         showXP();
         $('bz_tierList').innerHTML = TIERS.map(function (t, i) {
-            return '<div style="display:flex;justify-content:space-between;font-size:13.5px;padding:4px 0;border-bottom:1px solid var(--border)"><span>' + t.ic + ' ' + t.n + ' <small style="color:var(--light)">(sawal ' + (i * 3 + 1) + '–' + (i * 3 + 3) + ')</small></span><b>' + (PTS[i * 3] + PTS[i * 3 + 1] + PTS[i * 3 + 2]) + ' XP</b></div>';
+            return '<div style="display:flex;justify-content:space-between;font-size:13.5px;padding:4px 0;border-bottom:1px solid var(--border)"><span>' + t.ic + ' ' + tn(i) + ' <small style="color:var(--light)">' + GU('tier_q', { a: i * 3 + 1, b: i * 3 + 3 }) + '</small></span><b>' + (PTS[i * 3] + PTS[i * 3 + 1] + PTS[i * 3 + 2]) + ' XP</b></div>';
         }).join('');
         var n = pool.length;
-        $('bz_poolNote').innerHTML = (profile ? '' : '⚠️ XP ke liye pehle app mein login karein (bina login ke sirf khel sakte hain).<br>') +
-            'Sawal aapke ' + maxDay + ' din tak ke ' + n + ' lafzon se aayenge.' +
-            (profile && !isAdmin ? ' Aaj ka XP baaki: <b>' + capLeft() + '</b> / ' + DAILY_CAP + '.' : '');
+        $('bz_poolNote').innerHTML = (profile ? '' : GU('login_warn')) + GU('pool', { d: maxDay, n: n }) +
+            (profile && !isAdmin ? GU('capleft', { n: capLeft(), c: DAILY_CAP }) : '');
         $('bz_btnStart').disabled = n < 8;
-        if (n < 8) $('bz_poolNote').innerHTML += '<br>⚠️ Pehle kuch sabaq (din) mukammal karein.';
+        if (n < 8) $('bz_poolNote').innerHTML += GU('pool_low');
     }
 
     // ---------- UI: sawal ----------
-    function show(id) { ['bz_vStart', 'bz_vPlay', 'bz_vEnd'].forEach(function (v) { $(v).classList.toggle('hidden', v !== id); }); window.scrollTo(0, 0); }
+    var curView = 'bz_vStart', endPaint = null;
+    function show(id) { curView = id; ['bz_vStart', 'bz_vPlay', 'bz_vEnd'].forEach(function (v) { $(v).classList.toggle('hidden', v !== id); }); window.scrollTo(0, 0); }
     function next() {
         var level = Math.floor(S.i / 3);
-        S.q = build(level); S.pick = -1; S.hint = ''; draw();
+        S.q = build(level); S.pick = -1; S.hintOn = false; draw();
     }
     function draw() {
         var q = S.q, w = q.x.w, level = Math.floor(S.i / 3);
         $('bz_steps').innerHTML = Array.apply(null, Array(TOTAL)).map(function (_, k) { return '<i class="' + (k < S.i ? 'done' : (k === S.i ? 'cur' : '')) + '"></i>'; }).join('');
-        $('bz_qNo').textContent = S.i + 1; $('bz_qTier').textContent = TIERS[level].ic + ' ' + TIERS[level].n;
+        $('bz_qNo').textContent = S.i + 1; $('bz_qTier').textContent = TIERS[level].ic + ' ' + tn(level);
         $('bz_qPts').textContent = PTS[S.i];
         var prompt, main;
-        if (q.type === 0) { prompt = 'Is lafz ka matlab kya hai?'; main = '<div class="ar">' + esc(w.a) + '</div><div class="note">' + esc(w.r) + '</div>'; }
-        else if (q.type === 1) { prompt = 'Ayat ke is hisse mein "' + w.r + '" ka matlab?'; main = '<div class="ar sm">' + esc(w.m) + '</div><div class="note">Lafz: <b>' + esc(w.a) + '</b> (' + esc(w.r) + ')</div>'; }
-        else if (q.type === 2) { prompt = 'Is matlab ka sahi Arabi lafz kaunsa hai?'; main = '<div class="big">' + esc(w.u_ro) + '</div><div class="ur">' + esc(w.u) + '</div>'; }
-        else { prompt = 'Is Roman lafz ka sahi matlab?'; main = '<div class="big">' + esc(w.r) + '</div>'; }
+        var m = mean(w);
+        if (q.type === 0) { prompt = GU('p0'); main = '<div class="ar">' + esc(w.a) + '</div><div class="note">' + esc(w.r) + '</div>'; }
+        else if (q.type === 1) { prompt = GU('p1', { w: w.r }); main = '<div class="ar sm">' + esc(w.m) + '</div><div class="note">' + GU('lafz_lbl', { a: esc(w.a), r: esc(w.r) }) + '</div>'; }
+        else if (q.type === 2) { prompt = GU('p2'); main = '<div class="big">' + esc(m.t) + '</div>' + (m.u ? '<div class="ur">' + esc(m.u) + '</div>' : ''); }
+        else { prompt = GU('p3'); main = '<div class="big">' + esc(w.r) + '</div>'; }
         $('bz_qPrompt').textContent = prompt; $('bz_qMain').innerHTML = main;
-        var h = $('bz_qHint'); if (S.hint) { h.innerHTML = S.hint; h.classList.remove('hidden'); } else h.classList.add('hidden');
+        var h = $('bz_qHint'); if (S.hintOn) { h.innerHTML = buildHint(q); h.classList.remove('hidden'); } else h.classList.add('hidden');
         drawOpts(); drawLifes();
         $('bz_confirm').classList.toggle('hidden', S.pick < 0);
     }
     function drawOpts() {
         $('bz_opts').innerHTML = S.q.opts.map(function (o, k) {
             var body = o.ar ? '<span class="ar2">' + esc(o.ar) + '</span><small>' + esc(o.t) + '</small>'
-                            : esc(o.t) + (o.u ? '<span class="ur2">' + esc(o.u) + '</span>' : '');
+                            : (function () { var mm = mean(o.w); return esc(mm.t) + (mm.u ? '<span class="ur2">' + esc(mm.u) + '</span>' : ''); })();
             return '<button class="opt' + (S.pick === k ? ' sel' : '') + (o.gone ? ' gone' : '') + '" data-k="' + k + '"><span class="l">' + LETTERS[k] + '</span><span class="t">' + body + '</span>' + (o.poll != null ? '<span class="p">' + o.poll + '%</span>' : '') + '</button>';
         }).join('');
     }
     function drawLifes() {
         var L = S.lifes, d = S.over;
         $('bz_lifes').innerHTML =
-            '<button class="life" data-l="fifty" ' + (L.fifty && !d ? '' : 'disabled') + '>✂️ Do Ghalat Hatayein</button>' +
-            '<button class="life" data-l="poll" ' + (L.poll && !d ? '' : 'disabled') + '>👥 Hazireen ki Raay</button>' +
-            '<button class="life" data-l="ustad" ' + (L.ustad && !d ? '' : 'disabled') + '>📞 Ustad se Rujoo</button>' +
-            '<button class="life" data-l="swap" ' + (L.swap && !d ? '' : 'disabled') + '>🔄 Sawal Tabdeel</button>';
+            '<button class="life" data-l="fifty" ' + (L.fifty && !d ? '' : 'disabled') + '>' + GU('l5050') + '</button>' +
+            '<button class="life" data-l="poll" ' + (L.poll && !d ? '' : 'disabled') + '>' + GU('laud') + '</button>' +
+            '<button class="life" data-l="ustad" ' + (L.ustad && !d ? '' : 'disabled') + '>' + GU('lustad') + '</button>' +
+            '<button class="life" data-l="swap" ' + (L.swap && !d ? '' : 'disabled') + '>' + GU('lswap') + '</button>';
     }
 
+    function buildHint(q) {
+        var w = q.x.w, t2 = mean2(w), end = GL() === 'u' ? '۔' : '.';
+        return GU('hint', { a: esc(w.a), r: esc(w.r) }) + (w.m && q.type !== 1 ? end + '<br>' + GU('ayat_part') + '<span style="font-family:Amiri,serif;font-size:20px">' + esc(w.m) + '</span>' : end) +
+            (q.type !== 2 && t2 && t2 !== mean(w).t ? '<br>' + GU('other_mean') + esc(t2) : '');
+    }
     // ---------- Madad ----------
     function life(kind) {
         if (S.over || !S.lifes[kind]) return;
@@ -1525,10 +1588,9 @@
             q.opts.forEach(function (o) { if (o.ok) o.poll = accuracy; });
             wrongs.forEach(function (o, k) { var v = k === wrongs.length - 1 ? left : Math.min(left, rnd(left + 1)); o.poll = v; left -= v; });
         } else if (kind === 'ustad') {
-            S.hint = '📞 <b>Ustad ka ishara:</b> lafz ' + esc(w.a) + ' ko "<b>' + esc(w.r) + '</b>" padhte hain' + (w.m && q.type !== 1 ? '.<br>Ayat ka hissa: <span style="font-family:Amiri,serif;font-size:20px">' + esc(w.m) + '</span>' : '.') +
-                (q.type !== 2 && w.t_ro && w.t_ro !== w.u_ro ? '<br>Dusra matlab: ' + esc(w.t_ro) : '');
+            S.hintOn = true;
         } else if (kind === 'swap') {
-            S.lifes.swap = 0; used[q.x.w.a] = 1; next(); toast('🔄 Naya sawal'); return;
+            S.lifes.swap = 0; used[q.x.w.a] = 1; next(); toast(GU('toast_new')); return;
         }
         S.lifes[kind] = 0; draw();
     }
@@ -1546,7 +1608,7 @@
             setTimeout(function () {
                 S.over = false;
                 if (S.i >= TOTAL) return finish('win');
-                if (S.i % 3 === 0) toast('🎉 Darja mukammal: ' + TIERS[S.i / 3 - 1].n + ' — XP pakka!');
+                if (S.i % 3 === 0) toast(GU('toast_tier', { t: tn(S.i / 3 - 1) }));
                 next();
             }, 1100);
         } else {
@@ -1557,25 +1619,28 @@
 
     // ---------- Natija ----------
     function finish(how) {
-        var base, title, em, msg;
-        if (how === 'win') { base = totalXP(TOTAL) + WIN_BONUS; em = '🌟'; title = 'MashaAllah! Aap Mahir ban gaye'; msg = 'Aapne saare 15 sawal durust kiye.'; }
-        else if (how === 'quit') { base = totalXP(S.i); em = '🛑'; title = 'Aap yahin ruk gaye'; msg = S.i + ' sawal durust kiye.'; }
+        var base, em, titleK, msgFn;
+        if (how === 'win') { base = totalXP(TOTAL) + WIN_BONUS; em = '🌟'; titleK = 'fin_win_t'; msgFn = function () { return GU('fin_win_m'); }; }
+        else if (how === 'quit') { base = totalXP(S.i); em = '🛑'; titleK = 'fin_quit_t'; var nq = S.i; msgFn = function () { return GU('fin_quit_m', { n: nq }); }; }
         else {
-            base = safeXP(S.i); em = '💭'; title = 'Afsos, durust jawab ye tha:';
+            base = safeXP(S.i); em = '💭'; titleK = 'fin_lose_t';
             var c = S.q.opts.filter(function (o) { return o.ok; })[0], w = S.q.x.w;
-            msg = '<b>' + esc(c.ar ? c.ar + ' (' + c.t + ')' : c.t) + '</b><br>Lafz: ' + esc(w.a) + ' — ' + esc(w.r) + ' — ' + esc(w.u_ro) + '<br>Pehle ye lafz dobara padh lein, phir khelein 🤍';
+            msgFn = function () { return '<b>' + esc(c.ar ? c.ar + ' (' + c.t + ')' : mean(c.w).t) + '</b><br>' + GU('fin_lose_m', { a: esc(w.a), r: esc(w.r), m: esc(mean(w).t) }); };
         }
         var given = award(base);
-        $('bz_endEm').textContent = em; $('bz_endTitle').textContent = title; $('bz_endMsg').innerHTML = msg;
-        $('bz_endPts').textContent = '+' + given + ' XP';
-        $('bz_endCap').textContent = !profile ? 'XP ke liye login zaroori hai.' : (isAdmin ? 'Admin account ko XP nahi milta.' : (given < base ? 'Aaj ki XP hadd (' + DAILY_CAP + ') poori ho gayi.' : 'Kul XP: ' + getXP()));
+        endPaint = function () {
+            $('bz_endEm').textContent = em; $('bz_endTitle').textContent = GU(titleK); $('bz_endMsg').innerHTML = msgFn();
+            $('bz_endPts').textContent = '+' + given + ' XP';
+            $('bz_endCap').textContent = !profile ? GU('cap_login') : (isAdmin ? GU('cap_admin') : (given < base ? GU('cap_hit', { c: DAILY_CAP }) : GU('cap_total', { n: getXP() })));
+        };
+        endPaint();
         show('bz_vEnd');
     }
 
     // ---------- Events ----------
     $('bz_btnStart').onclick = function () { reset(); show('bz_vPlay'); next(); };
     $('bz_btnAgain').onclick = function () { drawStart(); show('bz_vStart'); };
-    $('bz_btnQuit').onclick = function () { if (!S.over && confirm('Yahin ruk jayein? Abhi tak ka XP mil jayega.')) finish('quit'); };
+    $('bz_btnQuit').onclick = function () { if (!S.over && confirm(GU('bz_confirm_quit'))) finish('quit'); };
     $('bz_btnYes').onclick = function () { if (S.pick >= 0 && !S.over) answer(); };
     $('bz_btnNo').onclick = function () { S.pick = -1; draw(); };
     $('bz_opts').onclick = function (e) {
@@ -1585,6 +1650,11 @@
     $('bz_lifes').onclick = function (e) { var b = e.target.closest('.life'); if (b && !b.disabled) life(b.dataset.l); };
 
     // games.html ke tab se khulne par (khel chal raha ho to wahin rehta hai)
+    window.bazmRelang = function () {
+        if (curView === 'bz_vStart') drawStart();
+        else if (curView === 'bz_vPlay' && S && S.q && !S.over) draw();
+        else if (curView === 'bz_vEnd' && endPaint) endPaint();
+    };
     window.initBazm = function () { showXP(); if (!S) { drawStart(); show('bz_vStart'); } };
     if (document.getElementById('bazm').classList.contains('active')) window.initBazm();   // games.html#bazm se seedha khula ho
 })();

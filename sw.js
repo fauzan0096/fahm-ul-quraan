@@ -5,6 +5,7 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v83: v82 + Games page 4 zubaanon mein (games-lang.js: KBC, Sahaba, Memory, Emoji, Bazm)
 // v82: MERGE — v81 (v72–v78 ke saare features + har page ke title/icon/date 4 zubaan mein) + v79 ka Seerat (Din 1–34: islahat, hawale, 4-zubaan tarjuma)
 // Seerat ki alag line (pehle v72–v79 ke naam se) — seerat.js:
 // Seerat-line v79: Seerat Din 20-34 ki islahat + 4-zubaan (Urdu/Roman/Hindi/English) mukammal tarjuma, hawale aur ikhtilaf ke saath
@@ -72,7 +73,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v82';
+const CACHE_NAME = 'quran-ustad-auto-v83';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -87,6 +88,7 @@ const ASSETS = [
     './dua.html',
     './tajweed.html',
     './games.html',
+    './games-lang.js',
     './asma.html',
     './arabic-grammar.html',
     './quran.html',
