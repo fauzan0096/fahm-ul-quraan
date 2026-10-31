@@ -275,3 +275,5 @@ Login ke passwords `index.html` ke script mein (`ADMIN_PASSWORD`, `GUEST_PASSWOR
 - ✂️ **v85:** Jumle/ayat wali entries ab ek lafz hain, wesa hi jaisa ayat mein aaya hai (diacritics ke saath). Wo 2 entries jinke lafz pehle se maujood the (Ittaqullah, Atee'ullah) hata di gayi.
 
 - ➕ **v86:** 2 naye lafz jode (مُسْلِمُونَ, الرَّسُولَ) — ab dobara poore 900 alfaz.
+
+- 🛠 **v87:** Kamzor lafz fix — jin meaning mein apostrophe (') tha (jaise Mu'aamla) wahan option dabane par jawab darj nahi hota tha aur lafz hamesha galat ginta tha; ab sahi. Revision mein ek sahi jawab se lafz kamzor list se hat jata hai.

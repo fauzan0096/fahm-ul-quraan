@@ -1031,7 +1031,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             try { weak = JSON.parse(localStorage.getItem(pk('weakWords'))) || {}; } catch (e) {}
             document.querySelectorAll('.exam-q').forEach(q => {
                 const a = q.dataset.a; if (!a) return;
-                if (q.querySelector('[data-ok="true"]')) { if (weak[a]) { weak[a]--; if (!weak[a]) delete weak[a]; } }
+                if (q.querySelector('[data-ok="true"]')) { if (weak[a]) { if (examMode === 'weak') delete weak[a]; else { weak[a]--; if (!weak[a]) delete weak[a]; } } }   // revision mein ek sahi jawab se lafz list se hat jata hai
                 else weak[a] = Math.min((weak[a] || 0) + 1, 5);
             });
             try { localStorage.setItem(pk('weakWords'), JSON.stringify(weak)); } catch (e) {}
@@ -1422,7 +1422,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                 <div class="exam-q" data-a="${escHTML(q.a)}">
                     <div style="font-size:11px; color:var(--text-light);">Sawal ${idx+1}</div>
                     <div class="exam-ar">${q.a}</div>
-                    ${q.opts.map(o => `<button class="option-btn${(userRole === 'admin' && adminExam.showAns && o === q.c) ? ' admin-ans' : ''}" onclick="selectOpt(this, '${o}', '${q.c}')">${o}${(userRole === 'admin' && adminExam.showAns && o === q.c) ? ' ✅' : ''}</button>`).join('')}
+                    ${q.opts.map(o => `<button class="option-btn${(userRole === 'admin' && adminExam.showAns && o === q.c) ? ' admin-ans' : ''}" data-o="${escHTML(o)}" data-c="${escHTML(q.c)}" onclick="selectOpt(this)">${o}${(userRole === 'admin' && adminExam.showAns && o === q.c) ? ' ✅' : ''}</button>`).join('')}
                 </div>`).join('');
             document.getElementById('examModal').classList.remove('hidden');
             document.getElementById('examResult').innerHTML = '';
@@ -1430,8 +1430,9 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             document.querySelector('#examModal .modal-content').scrollTop = 0;
         }
 
-        function selectOpt(b, sel, cor) {
-            b.parentElement.querySelectorAll('button').forEach(x => x.classList.remove('selected'));
+        function selectOpt(b) {
+            const sel = b.dataset.o, cor = b.dataset.c;   // data-attribute se (apostrophe wale meaning ab bhi sahi chalte hain)
+            b.parentElement.querySelectorAll('button').forEach(x => { x.classList.remove('selected'); delete x.dataset.ok; });
             b.classList.add('selected'); b.dataset.ok = (sel === cor);
             // Exam ke dauran koi awaaz nahi: sahi/galat ka pata sirf Submit ke baad natije mein chale
         }
