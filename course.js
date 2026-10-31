@@ -26,19 +26,19 @@ const courseData = [
     ] },
     { day: 2, words: [
         {a: "بِ",r: "Bi",u: "ساتھ",u_ro: "Saath",u_hi: "साथ",u_en: "With, by",m: "بِ",t: "کے ذریعے",t_ro: "Ke zariye",t_hi: "के ज़रिए",t_en: "By means of"},
-        {a: "بِسْمِ اللَّهِ",r: "Bismillah",u: "اللہ کے نام سے",u_ro: "Allah ke naam se",u_hi: "अल्लाह के नाम से",u_en: "In the name of Allah",m: "بِسْمِ اللَّهِ",t: "شروعات",t_ro: "Shuruaat",t_hi: "शुरुआत",t_en: "Beginning"},
+        {a: "بِسْمِ",r: "Bismi",u: "نام سے",u_ro: "Naam se",u_hi: "नाम से",u_en: "In the name of",m: "بِسْمِ اللَّهِ",t: "شروعات",t_ro: "Shuruaat",t_hi: "शुरुआत",t_en: "Beginning"},
         {a: "حَمْد",r: "Hamd",u: "حمد",u_ro: "Hamd",u_hi: "हम्द",u_en: "Praise",m: "الْحَمْدُ",t: "تعریف",t_ro: "Taareef",t_hi: "तारीफ़",t_en: "Praise"},
-        {a: "الْحَمْدُ لِلَّهِ",r: "Alhamdulillah",u: "تمام تعریف اللہ کے لیے ہے",u_ro: "Sab taareef Allah ke liye hai",u_hi: "सब तारीफ़ अल्लाह के लिए है",u_en: "All praise is for Allah",m: "الْحَمْدُ لِلَّهِ",t: "سورہ فاتحہ",t_ro: "Surah Fatiha",t_hi: "सूरह फ़ातिहा",t_en: "From Surah Al-Fatiha"},
-        {a: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",r: "Alhamdu lillahi Rabbil Aalameen",u: "سب تعریف اللہ کے لیے جو سارے جہانوں کا رب ہے",u_ro: "Sab taareef Allah ke liye jo saare jahaanon ka Rabb hai",u_hi: "सब तारीफ़ अल्लाह के लिए जो सारे जहानों का रब है",u_en: "All praise is for Allah, Lord of the worlds",m: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",t: "سب تعریف اللہ کے لیے جو سارے جہانوں کا رب ہے",t_ro: "Sab taareef Allah ke liye jo saare jahaanon ka Rabb hai",t_hi: "सब तारीफ़ अल्लाह के लिए जो सारे जहानों का रब है",t_en: "All praise is for Allah, Lord of the worlds"},
+        {a: "الْحَمْدُ",r: "Alhamdu",u: "تمام تعریفیں",u_ro: "Tamaam taareefein",u_hi: "तमाम तारीफ़ें",u_en: "All praise",m: "الْحَمْدُ لِلَّهِ",t: "سورہ فاتحہ",t_ro: "Surah Fatiha",t_hi: "सूरह फ़ातिहा",t_en: "From Surah Al-Fatiha"},
+        {a: "لِلَّهِ",r: "Lillahi",u: "اللہ کے لیے",u_ro: "Allah ke liye",u_hi: "अल्लाह के लिए",u_en: "For Allah",m: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",t: "سب تعریف اللہ کے لیے جو سارے جہانوں کا رب ہے",t_ro: "Sab taareef Allah ke liye jo saare jahaanon ka Rabb hai",t_hi: "सब तारीफ़ अल्लाह के लिए जो सारे जहानों का रब है",t_en: "All praise is for Allah, Lord of the worlds"},
         {a: "لِ",r: "Li",u: "کے لیے",u_ro: "Ke liye",u_hi: "के लिए",u_en: "For, to",m: "لِ",t: "کے لیے",t_ro: "Ke liye",t_hi: "के लिए",t_en: "For"},
         {a: "يَوْم",r: "Yawm",u: "دن",u_ro: "Din",u_hi: "दिन",u_en: "Day",m: "الْيَوْمَ",t: "دن",t_ro: "Din",t_hi: "दिन",t_en: "Day"},
-        {a: "يَوْمَ الدِّين",r: "Yawm ad-Deen",u: "بدلے کا دن",u_ro: "Badle ka din",u_hi: "बदले का दिन",u_en: "Day of Recompense",m: "يَوْمِ الدِّينِ",t: "قیامت",t_ro: "Qayaamat",t_hi: "क़यामत",t_en: "Judgment Day"},
+        {a: "يَوْمِ",r: "Yawmi",u: "دن",u_ro: "Din",u_hi: "दिन",u_en: "Day (of)",m: "يَوْمِ الدِّينِ",t: "قیامت",t_ro: "Qayaamat",t_hi: "क़यामत",t_en: "Judgment Day"},
         {a: "وَ",r: "Wa",u: "اور",u_ro: "Aur",u_hi: "और",u_en: "And",m: "وَ",t: "اور",t_ro: "Aur",t_hi: "और",t_en: "And"},
         {a: "اسْتَعَانَ",r: "Ista'aana",u: "مدد مانگی",u_ro: "Madad maangi",u_hi: "मदद माँगी",u_en: "He sought help",m: "إِيَّاكَ نَسْتَعِينُ",t: "مدد مانگنا",t_ro: "Madad maangna",t_hi: "मदद माँगना",t_en: "To seek help"}
     ] },
     { day: 3, words: [
         {a: "اهْدِنَا",r: "Ihdinaa",u: "ہمیں ہدایت دے",u_ro: "Hamein hidaayat de",u_hi: "हमें हिदायत दे",u_en: "Guide us!",m: "اهْدِنَا",t: "ہدایت",t_ro: "Hidaayat",t_hi: "हिदायत",t_en: "Guide us"},
-        {a: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",r: "Ihdinas-Siratal Mustaqeem",u: "ہمیں سیدھا راستہ دکھا",u_ro: "Hamein seedha raasta dikha",u_hi: "हमें सीधा रास्ता दिखा",u_en: "Guide us to the straight path",m: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",t: "ہمیں سیدھا راستہ دکھا",t_ro: "Hamein seedha raasta dikha",t_hi: "हमें सीधा रास्ता दिखा",t_en: "Guide us to the straight path"},
+        {a: "الصِّرَاطَ",r: "As-Siraata",u: "راستہ",u_ro: "Raasta",u_hi: "रास्ता",u_en: "The path",m: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",t: "ہمیں سیدھا راستہ دکھا",t_ro: "Hamein seedha raasta dikha",t_hi: "हमें सीधा रास्ता दिखा",t_en: "Guide us to the straight path"},
         {a: "صِرَاط",r: "Siraat",u: "سیدھا راستہ",u_ro: "Seedha raasta",u_hi: "सीधा रास्ता",u_en: "Straight path",m: "الصِّرَاطَ",t: "راستہ",t_ro: "Raasta",t_hi: "रास्ता",t_en: "Path"},
         {a: "الَّذِينَ",r: "Alladheena",u: "جو لوگ",u_ro: "Jo log",u_hi: "जो लोग",u_en: "Those who",m: "الَّذِينَ",t: "جو لوگ",t_ro: "Jo log",t_hi: "जो लोग",t_en: "Those who"},
         {a: "أَنْعَمَ",r: "An'ama",u: "نعمت دی",u_ro: "Nemat di",u_hi: "नेमत दी",u_en: "He bestowed",m: "أَنْعَمْتَ عَلَيْهِمْ",t: "نعمت دینا",t_ro: "Nemat dena",t_hi: "नेमत देना",t_en: "To bestow"},
@@ -57,8 +57,8 @@ const courseData = [
         {a: "أَبْكَم",r: "Abkam",u: "گونگا",u_ro: "Goonga",u_hi: "गूँगा",u_en: "Mute",m: "صُمٌّ بُكْمٌ عُمْيٌ",t: "گونگا",t_ro: "Goonga",t_hi: "गूँगा",t_en: "Mute"},
         {a: "أَصَابِع",r: "Asaabi'",u: "انگلیاں",u_ro: "Ungliyaan",u_hi: "उँगलियाँ",u_en: "Fingers",m: "الْأَصَابِعُ",t: "انگلی",t_ro: "Ungli",t_hi: "उँगली",t_en: "Finger"},
         {a: "الْمُحِيط",r: "Al-Muheet",u: "سب کو گھیرنے والا",u_ro: "Sab ko gherne wala",u_hi: "सब को घेरने वाला",u_en: "All-Encompassing",m: "وَاللَّهُ مِن وَرَائِهِم مُّحِيطٌ",t: "احاطہ کرنے والا",t_ro: "Ihaata karne wala",t_hi: "इहाता करने वाला",t_en: "Encompassing all"},
-        {a: "إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",r: "Innallaha 'ala kulli shay'in qadeer",u: "اللہ ہر چیز پر قادر ہے",u_ro: "Allah har cheez par qaadir hai",u_hi: "अल्लाह हर चीज़ पर क़ादिर है",u_en: "Indeed Allah has power over all things",m: "عَلَىٰ كُلِّ شَيْءٍ",t: "قدرت",t_ro: "Qudrat",t_hi: "क़ुदरत",t_en: "Power"},
-        {a: "يَا أَيُّهَا النَّاسُ",r: "Ya ayyuhan-naas",u: "اے لوگو!",u_ro: "Ae logo!",u_hi: "ऐ लोगो!",u_en: "O people!",m: "يَا أَيُّهَا النَّاسُ",t: "پکار",t_ro: "Pukaar",t_hi: "पुकार",t_en: "Address"}
+        {a: "اللَّهَ",r: "Allaha",u: "اللہ",u_ro: "Allah",u_hi: "अल्लाह",u_en: "Allah",m: "عَلَىٰ كُلِّ شَيْءٍ",t: "قدرت",t_ro: "Qudrat",t_hi: "क़ुदरत",t_en: "Power"},
+        {a: "النَّاسُ",r: "An-Naasu",u: "لوگ",u_ro: "Log",u_hi: "लोग",u_en: "The people",m: "يَا أَيُّهَا النَّاسُ",t: "پکار",t_ro: "Pukaar",t_hi: "पुकार",t_en: "Address"}
     ] },
     { day: 5, words: [
         {a: "اعْبُدُوا",r: "U'budoo",u: "عبادت کرو",u_ro: "Ibaadat karo",u_hi: "इबादत करो",u_en: "Worship!",m: "اعْبُدُوا",t: "عبادت",t_ro: "Ibaadat",t_hi: "इबादत",t_en: "Worship"},
@@ -115,20 +115,20 @@ const courseData = [
         {a: "رُكُوع",r: "Ruku'",u: "رکوع",u_ro: "Rukoo",u_hi: "रुकू",u_en: "Bowing, ruku",m: "الرُّكُوعُ",t: "رکوع",t_ro: "Rukoo",t_hi: "रुकू",t_en: "Ruku"},
         {a: "وَسَط",r: "Wasat",u: "بیچ، درمیان",u_ro: "Beech, darmiyaan",u_hi: "बीच, दरमियान",u_en: "Middle",m: "أُمَّةً وَسَطًا",t: "درمیان",t_ro: "Darmiyaan",t_hi: "दरमियान",t_en: "Middle"},
         {a: "قِبْلَة",r: "Qiblah",u: "قبلہ",u_ro: "Qibla",u_hi: "क़िबला",u_en: "Direction of prayer",m: "الْقِبْلَةُ",t: "قبلہ",t_ro: "Qibla",t_hi: "क़िबला",t_en: "Qibla"},
-        {a: "وَلَا تَكْفُرُونِ",r: "Wa laa takfuroon",u: "اور ناشکری نہ کرو",u_ro: "Aur naashukri na karo",u_hi: "और नाशुक्री न करो",u_en: "And do not be ungrateful",m: "وَلَا تَكْفُرُونِ",t: "اور ناشکری نہ کرو",t_ro: "Aur naashukri na karo",t_hi: "और नाशुक्री न करो",t_en: "And do not be ungrateful"},
-        {a: "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",r: "Innallaha ma'as-sabireen",u: "اللہ صبر کرنے والوں کے ساتھ ہے",u_ro: "Allah sabr karne walon ke saath hai",u_hi: "अल्लाह सब्र करने वालों के साथ है",u_en: "Indeed Allah is with the patient",m: "مَعَ الصَّابِرِينَ",t: "صبر",t_ro: "Sabr",t_hi: "सब्र",t_en: "Patience"},
+        {a: "وَلَا",r: "Wa laa",u: "اور نہ",u_ro: "Aur nahin",u_hi: "और नहीं",u_en: "And do not",m: "وَلَا تَكْفُرُونِ",t: "اور ناشکری نہ کرو",t_ro: "Aur naashukri na karo",t_hi: "और नाशुक्री न करो",t_en: "And do not be ungrateful"},
+        {a: "الصَّابِرِينَ",r: "As-Saabireen",u: "صبر کرنے والے",u_ro: "Sabr karne wale",u_hi: "सब्र करने वाले",u_en: "The patient ones",m: "مَعَ الصَّابِرِينَ",t: "صبر",t_ro: "Sabr",t_hi: "सब्र",t_en: "Patience"},
         {a: "نَقْص",r: "Naqs",u: "کمی، نقصان",u_ro: "Kami, nuqsaan",u_hi: "कमी, नुक़सान",u_en: "Deficiency, loss",m: "بِنَقْصٍ مِنَ الْأَمْوَالِ",t: "کمی",t_ro: "Kami",t_hi: "कमी",t_en: "Loss"},
         {a: "وَاحِد",r: "Waahid",u: "ایک",u_ro: "Ek",u_hi: "एक",u_en: "One",m: "وَاحِدٌ",t: "ایک",t_ro: "Ek",t_hi: "एक",t_en: "One"}
     ] },
     { day: 10, words: [
         {a: "حَلَال",r: "Halaal",u: "حلال",u_ro: "Halaal",u_hi: "हलाल",u_en: "Lawful, permitted",m: "الْحَلَالُ",t: "حلال",t_ro: "Halaal",t_hi: "हलाल",t_en: "Permitted"},
         {a: "طَيِّب",r: "Tayyib",u: "پاکیزہ، اچھا",u_ro: "Paakeeza, achchha",u_hi: "पाकीज़ा, अच्छा",u_en: "Good, pure",m: "طَيِّبَاتِ مَا رَزَقْنَاكُمْ",t: "پاکیزہ",t_ro: "Paakeeza",t_hi: "पाकीज़ा",t_en: "Pure"},
-        {a: "وَاشْكُرُوا لِلَّهِ",r: "Washkuru lillah",u: "اللہ کا شکر کرو",u_ro: "Allah ka shukr karo",u_hi: "अल्लाह का शुक्र करो",u_en: "And be grateful to Allah",m: "وَاشْكُرُوا",t: "شکر",t_ro: "Shukr",t_hi: "शुक्र",t_en: "Gratitude"},
+        {a: "وَاشْكُرُوا",r: "Washkuroo",u: "اور شکر کرو",u_ro: "Aur shukr karo",u_hi: "और शुक्र करो",u_en: "And give thanks",m: "وَاشْكُرُوا",t: "شکر",t_ro: "Shukr",t_hi: "शुक्र",t_en: "Gratitude"},
         {a: "دَم",r: "Dam",u: "خون",u_ro: "Khoon",u_hi: "ख़ून",u_en: "Blood",m: "الدَّمُ",t: "خون",t_ro: "Khoon",t_hi: "ख़ून",t_en: "Blood"},
         {a: "لَحْم",r: "Lahm",u: "گوشت",u_ro: "Gosht",u_hi: "गोश्त",u_en: "Meat",m: "اللَّحْمَ",t: "گوشت",t_ro: "Gosht",t_hi: "गोश्त",t_en: "Meat"},
         {a: "خِنْزِير",r: "Khinzeer",u: "سور",u_ro: "Suar",u_hi: "सूअर",u_en: "Pig",m: "الْخِنْزِيرَ",t: "سور",t_ro: "Soor",t_hi: "सूअर",t_en: "Pig"},
         {a: "إِثْم",r: "Ithm",u: "گناہ",u_ro: "Gunah",u_hi: "गुनाह",u_en: "Sin",m: "وَالْإِثْمَ وَالْبَغْيَ",t: "گناہ",t_ro: "Gunah",t_hi: "गुनाह",t_en: "Sin"},
-        {a: "إِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ",r: "Innallaha ghafoorur-raheem",u: "اللہ بخشنے والا رحم کرنے والا ہے",u_ro: "Allah bakhshne wala rahm karne wala hai",u_hi: "अल्लाह बख़्शने वाला रहम करने वाला है",u_en: "Indeed Allah is Forgiving, Merciful",m: "غَفُورٌ رَّحِيمٌ",t: "رحمت",t_ro: "Rahmat",t_hi: "रहमत",t_en: "Mercy"},
+        {a: "غَفُورٌ",r: "Ghafoorun",u: "بہت بخشنے والا",u_ro: "Bahut bakhshne wala",u_hi: "बहुत बख़्शने वाला",u_en: "Most Forgiving",m: "غَفُورٌ رَّحِيمٌ",t: "رحمت",t_ro: "Rahmat",t_hi: "रहमत",t_en: "Mercy"},
         {a: "وَصِيَّة",r: "Wasiyyah",u: "وصیت",u_ro: "Wasiyyat",u_hi: "वसीयत",u_en: "Will, bequest",m: "الْوَصِيَّةُ",t: "وصیت",t_ro: "Wasiyyat",t_hi: "वसीयत",t_en: "Bequest"},
         {a: "بَدَّلَ",r: "Baddala",u: "بدل دیا",u_ro: "Badal diya",u_hi: "बदल दिया",u_en: "He changed",m: "بَدَّلَ",t: "بدلنا",t_ro: "Badalna",t_hi: "बदलना",t_en: "Changed"}
     ] },
@@ -139,8 +139,8 @@ const courseData = [
         {a: "عُمْرَة",r: "Umrah",u: "عمرہ",u_ro: "Umrah",u_hi: "उमरा",u_en: "Umrah",m: "الْعُمْرَةُ",t: "عمرہ",t_ro: "Umrah",t_hi: "उमरा",t_en: "Umrah"},
         {a: "ثَلَاثَة",r: "Thalaathah",u: "تین",u_ro: "Teen",u_hi: "तीन",u_en: "Three",m: "ثَلَاثَةَ أَيَّامٍ",t: "تین",t_ro: "Teen",t_hi: "तीन",t_en: "Three"},
         {a: "عَشَرَة",r: "'Asharah",u: "دس",u_ro: "Das",u_hi: "दस",u_en: "Ten",m: "عَشَرَةٌ كَامِلَةٌ",t: "دس",t_ro: "Das",t_hi: "दस",t_en: "Ten"},
-        {a: "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً",r: "Rabbana atina fid-dunya hasanah",u: "اے ہمارے رب! ہمیں دنیا میں بھلائی دے",u_ro: "Ae hamare Rabb! Hamein duniya mein bhalaai de",u_hi: "ऐ हमारे रब! हमें दुनिया में भलाई दे",u_en: "Our Lord, grant us good in this world",m: "رَبَّنَا آتِنَا",t: "جامع دعا",t_ro: "Jaame dua",t_hi: "जामे दुआ",t_en: "Comprehensive supplication"},
-        {a: "رَبَّنَا آتِنَا",r: "Rabbana atina",u: "اے ہمارے رب! ہمیں دے",u_ro: "Ae hamare Rabb! Hamein de",u_hi: "ऐ हमारे रब! हमें दे",u_en: "Our Lord, grant us",m: "رَبَّنَا آتِنَا",t: "دعا",t_ro: "Dua",t_hi: "दुआ",t_en: "Supplication"},
+        {a: "رَبَّنَا",r: "Rabbanaa",u: "ہمارے رب",u_ro: "Hamare Rabb",u_hi: "हमारे रब",u_en: "Our Lord",m: "رَبَّنَا آتِنَا",t: "جامع دعا",t_ro: "Jaame dua",t_hi: "जामे दुआ",t_en: "Comprehensive supplication"},
+        {a: "آتِنَا",r: "Aatinaa",u: "ہمیں دے",u_ro: "Hamein de",u_hi: "हमें दे",u_en: "Grant us",m: "رَبَّنَا آتِنَا",t: "دعا",t_ro: "Dua",t_hi: "दुआ",t_en: "Supplication"},
         {a: "عَذَاب",r: "Azaab",u: "عذاب",u_ro: "Azaab",u_hi: "अज़ाब",u_en: "Punishment",m: "الْعَذَابُ",t: "سزا",t_ro: "Saza",t_hi: "सज़ा",t_en: "Punishment"},
         {a: "نَصِيب",r: "Naseeb",u: "حصہ",u_ro: "Hissa",u_hi: "हिस्सा",u_en: "Share",m: "لِّكُلٍّ نَصِيبٌ",t: "حصہ",t_ro: "Hissa",t_hi: "हिस्सा",t_en: "Share"}
     ] },
@@ -160,7 +160,7 @@ const courseData = [
         {a: "غَلَبَ",r: "Ghalaba",u: "غالب آیا",u_ro: "Ghaalib aaya",u_hi: "ग़ालिब आया",u_en: "He prevailed",m: "غَلَبَ",t: "غالب",t_ro: "Ghaalib",t_hi: "ग़ालिब",t_en: "Prevailed"},
         {a: "جَالُوت",r: "Jaaloot",u: "جالوت (بادشاہ)",u_ro: "Jaaloot (baadshaah)",u_hi: "जालूत (बादशाह)",u_en: "Jalut (Goliath)",m: "وَقَتَلَ دَاوُودُ جَالُوتَ",t: "جالوت",t_ro: "Jaaloot",t_hi: "जालूत",t_en: "Jalut"},
         {a: "تِلْكَ",r: "Tilka",u: "وہ (عورت)",u_ro: "Woh (aurat)",u_hi: "वह (औरत)",u_en: "That (f.)",m: "تِلْكَ",t: "وہ",t_ro: "Woh",t_hi: "वह",t_en: "That"},
-        {a: "الْحَيُّ الْقَيُّومُ",r: "Al-Hayyul Qayyoom",u: "زندہ، قائم رکھنے والا",u_ro: "Zinda, Qaaim rakhne wala",u_hi: "ज़िंदा, क़ायम रखने वाला",u_en: "The Ever-Living, the Sustainer",m: "الْحَيُّ الْقَيُّومُ",t: "زندہ، قائم رکھنے والا",t_ro: "Zinda, Qaaim rakhne wala",t_hi: "ज़िंदा, क़ायम रखने वाला",t_en: "The Ever-Living, the Sustainer"},
+        {a: "الْحَيُّ",r: "Al-Hayyu",u: "زندہ",u_ro: "Zinda",u_hi: "ज़िंदा",u_en: "The Ever-Living",m: "الْحَيُّ الْقَيُّومُ",t: "زندہ، قائم رکھنے والا",t_ro: "Zinda, Qaaim rakhne wala",t_hi: "ज़िंदा, क़ायम रखने वाला",t_en: "The Ever-Living, the Sustainer"},
         {a: "كُرْسِيّ",r: "Kursiyy",u: "کرسی",u_ro: "Kursi",u_hi: "कुर्सी",u_en: "The Footstool (Kursi)",m: "الْكُرْسِيُّ",t: "کرسی",t_ro: "Kursi",t_hi: "कुर्सी",t_en: "The Kursi"},
         {a: "الْعَلِيّ",r: "Al-'Alee",u: "بہت بلند",u_ro: "Bahut buland",u_hi: "बहुत बुलंद",u_en: "The Most High",m: "وَهُوَ الْعَلِيُّ الْعَظِيمُ",t: "بلند",t_ro: "Buland",t_hi: "बुलंद",t_en: "Exalted"},
         {a: "تَبَيَّنَ",r: "Tabayyana",u: "واضح ہوا",u_ro: "Waazeh hua",u_hi: "वाज़ेह हुआ",u_en: "It became clear",m: "تَبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ",t: "واضح ہونا",t_ro: "Waazeh hona",t_hi: "वाज़ेह होना",t_en: "To become clear"},
@@ -175,8 +175,8 @@ const courseData = [
         {a: "أَحَلَّ",r: "Ahalla",u: "حلال کیا",u_ro: "Halaal kiya",u_hi: "हलाल किया",u_en: "He made lawful",m: "أَحَلَّ",t: "حلال",t_ro: "Halaal",t_hi: "हलाल",t_en: "Made lawful"},
         {a: "بَيْع",r: "Bay'",u: "خرید و فروخت",u_ro: "Khareed-o-farokht",u_hi: "ख़रीद-ओ-फ़रोख़्त",u_en: "Sale",m: "وَأَحَلَّ اللَّهُ الْبَيْعَ",t: "بیع",t_ro: "Bay",t_hi: "बै",t_en: "Sale"},
         {a: "حَرَّمَ",r: "Harrama",u: "حرام کیا",u_ro: "Haraam kiya",u_hi: "हराम किया",u_en: "He forbade",m: "حَرَّمَ",t: "حرام",t_ro: "Haraam",t_hi: "हराम",t_en: "Made forbidden"},
-        {a: "وَاعْفُ عَنَّا",r: "Wa'fu anna",u: "اور ہمیں معاف کر دے",u_ro: "Aur hamein maaf kar de",u_hi: "और हमें माफ़ कर दे",u_en: "And pardon us",m: "وَاعْفُ عَنَّا",t: "اور ہمیں معاف کر دے",t_ro: "Aur hamein maaf kar de",t_hi: "और हमें माफ़ कर दे",t_en: "And pardon us"},
-        {a: "وَاغْفِرْ لَنَا",r: "Waghfir lana",u: "اور ہمیں بخش دے",u_ro: "Aur hamein bakhsh de",u_hi: "और हमें बख़्श दे",u_en: "And forgive us",m: "وَاغْفِرْ لَنَا",t: "اور ہمیں بخش دے",t_ro: "Aur hamein bakhsh de",t_hi: "और हमें बख़्श दे",t_en: "And forgive us"},
+        {a: "وَاعْفُ",r: "Wa'fu",u: "اور معاف کر",u_ro: "Aur maaf kar",u_hi: "और माफ़ कर",u_en: "And pardon",m: "وَاعْفُ عَنَّا",t: "اور ہمیں معاف کر دے",t_ro: "Aur hamein maaf kar de",t_hi: "और हमें माफ़ कर दे",t_en: "And pardon us"},
+        {a: "وَاغْفِرْ",r: "Waghfir",u: "اور بخش دے",u_ro: "Aur bakhsh de",u_hi: "और बख़्श दे",u_en: "And forgive",m: "وَاغْفِرْ لَنَا",t: "اور ہمیں بخش دے",t_ro: "Aur hamein bakhsh de",t_hi: "और हमें बख़्श दे",t_en: "And forgive us"},
         {a: "قَيُّوم",r: "Qayyoom",u: "قائم رکھنے والا",u_ro: "Qaaim rakhne wala",u_hi: "क़ायम रखने वाला",u_en: "Self-Subsisting",m: "الْقَيُّومُ",t: "سنبھالنے والا",t_ro: "Sambhaalne wala",t_hi: "संभालने वाला",t_en: "Sustains all"},
         {a: "نَزَّلَ",r: "Nazzala",u: "اتارا، نازل کیا",u_ro: "Utaara, naazil kiya",u_hi: "उतारा, नाज़िल किया",u_en: "He sent down",m: "نَزَّلَ عَلَيْكَ الْكِتَابَ",t: "نازل کرنا",t_ro: "Naazil karna",t_hi: "नाज़िल करना",t_en: "To send down"}
     ] },
@@ -185,7 +185,7 @@ const courseData = [
         {a: "صَوَّرَ",r: "Sawwara",u: "شکل بنائی",u_ro: "Shakl banaai",u_hi: "शक्ल बनाई",u_en: "He fashioned",m: "هُوَ الَّذِي يُصَوِّرُكُمْ",t: "شکل بنانا",t_ro: "Shakl banaana",t_hi: "शक्ल बनाना",t_en: "To shape"},
         {a: "مِيعَاد",r: "Mee'aad",u: "مقررہ وقت",u_ro: "Muqarrara waqt",u_hi: "मुक़र्ररा वक़्त",u_en: "Appointed time",m: "إِنَّ اللَّهَ لَا يُخْلِفُ الْمِيعَادَ",t: "وعدہ کا وقت",t_ro: "Waada ka waqt",t_hi: "वादे का वक़्त",t_en: "Appointed term"},
         {a: "رِضْوَان",r: "Ridwaan",u: "رضا",u_ro: "Raza",u_hi: "रज़ा",u_en: "Pleasure, approval",m: "رِضْوَانٌ",t: "خوشی",t_ro: "Khushi",t_hi: "ख़ुशी",t_en: "Divine pleasure"},
-        {a: "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ",r: "Shahidallahu annahu laa ilaaha illa Huwa",u: "اللہ نے گواہی دی کہ اس کے سوا کوئی معبود نہیں",u_ro: "Allah ne gawaahi di ke uske siwa koi maabood nahin",u_hi: "अल्लाह ने गवाही दी कि उसके सिवा कोई माबूद नहीं",u_en: "Allah bears witness that there is no god but Him",m: "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ",t: "اللہ نے گواہی دی کہ اس کے سوا کوئی معبود نہیں",t_ro: "Allah ne gawaahi di ke uske siwa koi maabood nahin",t_hi: "अल्लाह ने गवाही दी कि उसके सिवा कोई माबूद नहीं",t_en: "Allah bears witness that there is no god but Him"},
+        {a: "شَهِدَ",r: "Shahida",u: "گواہی دی",u_ro: "Gawahi di",u_hi: "गवाही दी",u_en: "Bore witness",m: "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ",t: "اللہ نے گواہی دی کہ اس کے سوا کوئی معبود نہیں",t_ro: "Allah ne gawaahi di ke uske siwa koi maabood nahin",t_hi: "अल्लाह ने गवाही दी कि उसके सिवा कोई माबूद नहीं",t_en: "Allah bears witness that there is no god but Him"},
         {a: "إِسْلَام",r: "Islaam",u: "اسلام",u_ro: "Islaam",u_hi: "इस्लाम",u_en: "Islam, submission",m: "الْإِسْلَامُ",t: "اسلام",t_ro: "Islaam",t_hi: "इस्लाम",t_en: "Islam"},
         {a: "ذُرِّيَّة",r: "Dhurriyyah",u: "اولاد",u_ro: "Aulaad",u_hi: "औलाद",u_en: "Offspring, descendants",m: "الذُّرِّيَّةَ",t: "نسل",t_ro: "Nasl",t_hi: "नस्ल",t_en: "Progeny"},
         {a: "وَضَعَ",r: "Wada'a",u: "رکھا، جنم دیا",u_ro: "Rakha, janam diya",u_hi: "रखा, जन्म दिया",u_en: "He placed / gave birth",m: "فَلَمَّا وَضَعَتْهَا",t: "رکھنا",t_ro: "Rakhna",t_hi: "रखना",t_en: "To place"},
@@ -196,7 +196,7 @@ const courseData = [
         {a: "يَكُونُ",r: "Yakoonu",u: "ہوتا ہے",u_ro: "Hota hai",u_hi: "होता है",u_en: "He is, will be",m: "يَكُونُ",t: "ہونا",t_ro: "Hona",t_hi: "होना",t_en: "Being"},
         {a: "إِنْجِيل",r: "Injeel",u: "انجیل",u_ro: "Injeel",u_hi: "इंजील",u_en: "Gospel (Injil)",m: "الْإِنجِيلَ",t: "کتاب",t_ro: "Kitaab",t_hi: "किताब",t_en: "Scripture"},
         {a: "أَحَسّ",r: "Ahassa",u: "محسوس کیا، بھانپ لیا",u_ro: "Mehsoos kiya, bhaanp liya",u_hi: "महसूस किया, भाँप लिया",u_en: "He sensed",m: "هَلْ تُحِسُّ مِنْهُم مِّنْ أَحَدٍ",t: "بھانپنا",t_ro: "Bhaanpna",t_hi: "भाँपना",t_en: "To sense"},
-        {a: "وَاللَّهُ لَا يُحِبُّ الظَّالِمِينَ",r: "Wallahu laa yuhibbuz-zaalimeen",u: "اور اللہ ظالموں کو پسند نہیں کرتا",u_ro: "Aur Allah zaalimon ko pasand nahin karta",u_hi: "और अल्लाह ज़ालिमों को पसंद नहीं करता",u_en: "And Allah does not like the wrongdoers",m: "وَاللَّهُ لَا يُحِبُّ الظَّالِمِينَ",t: "اور اللہ ظالموں کو پسند نہیں کرتا",t_ro: "Aur Allah zaalimon ko pasand nahin karta",t_hi: "और अल्लाह ज़ालिमों को पसंद नहीं करता",t_en: "And Allah does not like the wrongdoers"},
+        {a: "وَاللَّهُ",r: "Wallahu",u: "اور اللہ",u_ro: "Aur Allah",u_hi: "और अल्लाह",u_en: "And Allah",m: "وَاللَّهُ لَا يُحِبُّ الظَّالِمِينَ",t: "اور اللہ ظالموں کو پسند نہیں کرتا",t_ro: "Aur Allah zaalimon ko pasand nahin karta",t_hi: "और अल्लाह ज़ालिमों को पसंद नहीं करता",t_en: "And Allah does not like the wrongdoers"},
         {a: "مِثْل",r: "Mithl",u: "جیسا",u_ro: "Jaisa",u_hi: "जैसा",u_en: "Like, similar to",m: "مِثْل",t: "مثال",t_ro: "Misaal",t_hi: "मिसाल",t_en: "Example"},
         {a: "عِيسَى",r: "Eesaa",u: "عیسیٰ علیہ السلام",u_ro: "Eesa alaihis-salaam",u_hi: "ईसा अलैहिस्सलाम",u_en: "Isa (Jesus)",m: "عِيسَى",t: "روح اللہ",t_ro: "Roohullah",t_hi: "रूहुल्लाह",t_en: "Spirit from Allah"},
         {a: "تُرَاب",r: "Turaab",u: "خاک، مٹی",u_ro: "Khaak, mitti",u_hi: "ख़ाक, मिट्टी",u_en: "Dust, earth",m: "خَلَقَهُ مِنْ تُرَابٍ",t: "مٹی",t_ro: "Mitti",t_hi: "मिट्टी",t_en: "Dust"},
@@ -210,7 +210,7 @@ const courseData = [
         {a: "لَنْ",r: "Lan",u: "ہرگز نہیں",u_ro: "Hargiz nahin",u_hi: "हरगिज़ नहीं",u_en: "Will never",m: "لَنْ",t: "ہرگز نہیں",t_ro: "Hargiz nahin",t_hi: "हरगिज़ नहीं",t_en: "Never"},
         {a: "بِرّ",r: "Birr",u: "نیکی، بھلائی",u_ro: "Neki, bhalaai",u_hi: "नेकी, भलाई",u_en: "Righteousness",m: "لَنْ تَنَالُوا الْبِرَّ",t: "نیکی",t_ro: "Neki",t_hi: "नेकी",t_en: "Righteousness"},
         {a: "صَدَقَ",r: "Sadaqa",u: "سچ کہا",u_ro: "Sach kaha",u_hi: "सच कहा",u_en: "He spoke truth",m: "صَدَقَ",t: "سچ",t_ro: "Sach",t_hi: "सच",t_en: "Told truth"},
-        {a: "اتَّقُوا اللَّهَ",r: "Ittaqullah",u: "اللہ سے ڈرو",u_ro: "Allah se daro",u_hi: "अल्लाह से डरो",u_en: "Fear Allah",m: "اتَّقُوا اللَّهَ",t: "تقویٰ",t_ro: "Taqwa",t_hi: "तक़वा",t_en: "Piety"},
+        {a: "مُسْلِمُونَ",r: "Muslimoon",u: "فرمانبردار، مسلمان",u_ro: "Farmanbardaar, Muslim",u_hi: "फ़रमाँबरदार, मुस्लिम",u_en: "Muslims, those who submit",m: "إِلَّا وَأَنْتُمْ مُسْلِمُونَ",t: "مگر اس حال میں کہ تم مسلمان ہو",t_ro: "Magar is haal mein ke tum Muslim ho",t_hi: "मगर इस हाल में कि तुम मुस्लिम हो",t_en: "Except as Muslims"},
         {a: "مَعْرُوف",r: "Ma'roof",u: "اچھی بات",u_ro: "Achchhi baat",u_hi: "अच्छी बात",u_en: "Good, righteous deed",m: "الْمَعْرُوفُ",t: "بھلائی",t_ro: "Bhalaai",t_hi: "भलाई",t_en: "Goodness"},
         {a: "بَدْر",r: "Badr",u: "بدر (پہلی جنگ کا مقام)",u_ro: "Badr (pehli jang ka maqaam)",u_hi: "बद्र (पहली जंग का मक़ाम)",u_en: "Badr (battle site)",m: "وَلَقَدْ نَصَرَكُمُ اللَّهُ بِبَدْرٍ",t: "بدر",t_ro: "Badr",t_hi: "बद्र",t_en: "Badr"},
         {a: "أَطِيعُوا",r: "Atee'oo",u: "اطاعت کرو",u_ro: "Itaat karo",u_hi: "इताअत करो",u_en: "Obey!",m: "أَطِيعُوا",t: "اطاعت",t_ro: "Itaat",t_hi: "इताअत",t_en: "Obey"},
@@ -241,8 +241,8 @@ const courseData = [
         {a: "أَن",r: "An",u: "کہ",u_ro: "Ke",u_hi: "कि",u_en: "That",m: "أَن",t: "کہ",t_ro: "Ke",t_hi: "कि",t_en: "That"}
     ] },
     { day: 20, words: [
-        {a: "أَطِيعُوا اللَّهَ",r: "Atee'ullah",u: "اللہ کی اطاعت کرو",u_ro: "Allah ki itaat karo",u_hi: "अल्लाह की इताअत करो",u_en: "Obey Allah",m: "أَطِيعُوا اللَّهَ",t: "اطاعت",t_ro: "Itaat",t_hi: "इताअत",t_en: "Obedience"},
-        {a: "وَأَطِيعُوا الرَّسُولَ",r: "Wa atee'ur-rasool",u: "رسول کی اطاعت کرو",u_ro: "Rasool ki itaat karo",u_hi: "रसूल की इताअत करो",u_en: "And obey the Messenger",m: "وَأَطِيعُوا الرَّسُولَ",t: "اطاعت",t_ro: "Itaat",t_hi: "इताअत",t_en: "Obedience"},
+        {a: "وَأَطِيعُوا",r: "Wa atee'oo",u: "اور اطاعت کرو",u_ro: "Aur itaat karo",u_hi: "और इताअत करो",u_en: "And obey",m: "وَأَطِيعُوا الرَّسُولَ",t: "اطاعت",t_ro: "Itaat",t_hi: "इताअत",t_en: "Obedience"},
+        {a: "الرَّسُولَ",r: "Ar-Rasool",u: "رسول، پیغمبر",u_ro: "Rasool, Paigambar",u_hi: "रसूल, पैग़म्बर",u_en: "The Messenger",m: "وَأَطِيعُوا الرَّسُولَ",t: "اور رسول کی اطاعت کرو",t_ro: "Aur Rasool ki itaat karo",t_hi: "और रसूल की इताअत करो",t_en: "And obey the Messenger"},
         {a: "رَفِيق",r: "Rafeeq",u: "ساتھی",u_ro: "Saathi",u_hi: "साथी",u_en: "Companion",m: "حَسُنَ أُولَٰئِكَ رَفِيقًا",t: "ساتھی",t_ro: "Saathi",t_hi: "साथी",t_en: "Companion"},
         {a: "أَصَابَ",r: "Asaaba",u: "پہنچا، مارا",u_ro: "Pahuncha, maara",u_hi: "पहुँचा, मारा",u_en: "It struck",m: "مَا أَصَابَكَ مِنْ حَسَنَةٍ",t: "پہنچنا",t_ro: "Pahunchna",t_hi: "पहुँचना",t_en: "Struck"},
         {a: "حَسَنَة",r: "Hasanah",u: "نیکی",u_ro: "Neki",u_hi: "नेकी",u_en: "Good deed",m: "مَنْ جَاءَ بِالْحَسَنَةِ فَلَهُ عَشْرُ أَمْثَالِهَا",t: "نیکی",t_ro: "Neki",t_hi: "नेकी",t_en: "Good deed"},
@@ -254,11 +254,11 @@ const courseData = [
     ] },
     { day: 21, words: [
         {a: "عَفُوّ",r: "Afuw",u: "معاف کرنے والا",u_ro: "Maaf karne wala",u_hi: "माफ़ करने वाला",u_en: "Pardoner",m: "عَفُوٌّ",t: "معافی",t_ro: "Maafi",t_hi: "माफ़ी",t_en: "Forgiveness"},
-        {a: "وَاسْتَغْفِرِ اللَّهَ",r: "Wastaghfirillah",u: "اور اللہ سے بخشش مانگو",u_ro: "Aur Allah se bakhshish maango",u_hi: "और अल्लाह से बख़्शिश माँगो",u_en: "And seek forgiveness from Allah",m: "وَاسْتَغْفِرِ اللَّهَ",t: "اور اللہ سے بخشش مانگو",t_ro: "Aur Allah se bakhshish maango",t_hi: "और अल्लाह से बख़्शिश माँगो",t_en: "And seek forgiveness from Allah"},
+        {a: "وَاسْتَغْفِرِ",r: "Wastaghfir",u: "اور بخشش مانگ",u_ro: "Aur bakhshish maang",u_hi: "और बख़्शिश माँग",u_en: "And seek forgiveness",m: "وَاسْتَغْفِرِ اللَّهَ",t: "اور اللہ سے بخشش مانگو",t_ro: "Aur Allah se bakhshish maango",t_hi: "और अल्लाह से बख़्शिश माँगो",t_en: "And seek forgiveness from Allah"},
         {a: "مُنَافِق",r: "Munaafiq",u: "منافق",u_ro: "Munaafiq",u_hi: "मुनाफ़िक़",u_en: "Hypocrite",m: "الْمُنَافِقُ",t: "منافق",t_ro: "Munaafiq",t_hi: "मुनाफ़िक़",t_en: "Hypocrite"},
         {a: "لَكِنْ",r: "Laakin",u: "لیکن",u_ro: "Lekin",u_hi: "लेकिन",u_en: "But",m: "لَكِنْ",t: "لیکن",t_ro: "Lekin",t_hi: "लेकिन",t_en: "But"},
         {a: "تَعَاوَنَ",r: "Ta'aawana",u: "تعاون کیا",u_ro: "Ta'aawun kiya",u_hi: "तआवुन किया",u_en: "They cooperated",m: "وَتَعَاوَنُوا عَلَى الْبِرِّ",t: "تعاون",t_ro: "Ta'aawun",t_hi: "तआवुन",t_en: "Cooperation"},
-        {a: "وَاذْكُرُوا نِعْمَةَ اللَّهِ",r: "Wazkuru ni'matallah",u: "اللہ کی نعمت یاد کرو",u_ro: "Allah ki nemat yaad karo",u_hi: "अल्लाह की नेमत याद करो",u_en: "Remember Allah's favour",m: "وَاذْكُرُوا نِعْمَةَ اللَّهِ",t: "اللہ کی نعمت یاد کرو",t_ro: "Allah ki nemat yaad karo",t_hi: "अल्लाह की नेमत याद करो",t_en: "Remember Allah's favour"},
+        {a: "وَاذْكُرُوا",r: "Wazkuroo",u: "اور یاد کرو",u_ro: "Aur yaad karo",u_hi: "और याद करो",u_en: "And remember",m: "وَاذْكُرُوا نِعْمَةَ اللَّهِ",t: "اللہ کی نعمت یاد کرو",t_ro: "Allah ki nemat yaad karo",t_hi: "अल्लाह की नेमत याद करो",t_en: "Remember Allah's favour"},
         {a: "غُرَاب",r: "Ghuraab",u: "کوا",u_ro: "Kauwa",u_hi: "कौआ",u_en: "Crow",m: "الْغُرَابَ",t: "کوا",t_ro: "Kauwa",t_hi: "कौआ",t_en: "Crow"},
         {a: "قَتَلَ",r: "Qatala",u: "قتل کیا",u_ro: "Qatl kiya",u_hi: "क़त्ल किया",u_en: "He killed",m: "قَتَلَ",t: "قتل",t_ro: "Qatl",t_hi: "क़त्ल",t_en: "Killed"},
         {a: "سَرَقَ",r: "Saraqa",u: "چوری کی",u_ro: "Chori ki",u_hi: "चोरी की",u_en: "He stole",m: "وَالسَّارِقُ وَالسَّارِقَةُ",t: "چوری",t_ro: "Chori",t_hi: "चोरी",t_en: "Theft"},
@@ -309,7 +309,7 @@ const courseData = [
         {a: "ضَفَادِع",r: "Dafaaidi'",u: "مینڈک",u_ro: "Mendak",u_hi: "मेंढक",u_en: "Frogs",m: "الضَّفَادِعَ",t: "مینڈک",t_ro: "Mendak",t_hi: "मेंढक",t_en: "Frog"},
         {a: "رَجَعَ",r: "Raja'a",u: "لوٹا",u_ro: "Lauta",u_hi: "लौटा",u_en: "He returned",m: "رَجَعَ",t: "واپس",t_ro: "Waapas",t_hi: "वापस",t_en: "Returned"},
         {a: "أَلْوَاح",r: "Alwaah",u: "تختیاں",u_ro: "Takhtiyan",u_hi: "तख़्तियाँ",u_en: "Tablets",m: "وَكَتَبْنَا لَهُ فِي الْأَلْوَاحِ",t: "تختیاں",t_ro: "Takhtiyan",t_hi: "तख़्तियाँ",t_en: "Tablets"},
-        {a: "رَبِّ اغْفِرْ لِي",r: "Rabbighfir li",u: "اے میرے رب! مجھے بخش دے",u_ro: "Ae mere Rabb! Mujhe bakhsh de",u_hi: "ऐ मेरे रब! मुझे बख़्श दे",u_en: "My Lord, forgive me",m: "رَبِّ اغْفِرْ لِي",t: "دو سجدوں کے بیچ",t_ro: "Do sajdon ke beech",t_hi: "दो सज्दों के बीच",t_en: "Between two prostrations"},
+        {a: "لِي",r: "Lee",u: "میرے لیے",u_ro: "Mere liye",u_hi: "मेरे लिए",u_en: "For me",m: "رَبِّ اغْفِرْ لِي",t: "دو سجدوں کے بیچ",t_ro: "Do sajdon ke beech",t_hi: "दो सज्दों के बीच",t_en: "Between two prostrations"},
         {a: "كَلْب",r: "Kalb",u: "کتا",u_ro: "Kutta",u_hi: "कुत्ता",u_en: "Dog",m: "الْكَلْبَ",t: "کتا",t_ro: "Kutta",t_hi: "कुत्ता",t_en: "Dog"}
     ] },
     { day: 26, words: [
@@ -376,7 +376,7 @@ const courseData = [
         {a: "قَرْيَة",r: "Qaryah",u: "بستی",u_ro: "Basti",u_hi: "बस्ती",u_en: "Town, village",m: "الْقَرْيَةَ",t: "بستی",t_ro: "Basti",t_hi: "बस्ती",t_en: "Settlement"},
         {a: "مِصْر",r: "Misr",u: "مصر",u_ro: "Misr",u_hi: "मिस्र",u_en: "Egypt",m: "مِصْرَ",t: "ملک",t_ro: "Mulk",t_hi: "मुल्क",t_en: "Country"},
         {a: "سَبِيل",r: "Sabeel",u: "راستہ",u_ro: "Raasta",u_hi: "रास्ता",u_en: "Way, path",m: "السَّبِيلَ",t: "راستہ",t_ro: "Raasta",t_hi: "रास्ता",t_en: "Path"},
-        {a: "سُبْحَانَ اللَّهِ",r: "SubhanAllah",u: "اللہ پاک ہے",u_ro: "Allah paak hai",u_hi: "अल्लाह पाक है",u_en: "Glory be to Allah",m: "سُبْحَانَ اللَّهِ",t: "تسبیح",t_ro: "Tasbeeh",t_hi: "तस्बीह",t_en: "Glorification"},
+        {a: "وَسُبْحَانَ",r: "Wa Subhaana",u: "اور پاکی ہے",u_ro: "Aur paaki hai",u_hi: "और पाकी है",u_en: "And glory be to",m: "سُبْحَانَ اللَّهِ",t: "تسبیح",t_ro: "Tasbeeh",t_hi: "तस्बीह",t_en: "Glorification"},
         {a: "كَبِير",r: "Kabeer",u: "بڑا",u_ro: "Bada",u_hi: "बड़ा",u_en: "Great",m: "الْكَبِيرُ الْمُتَعَالِ",t: "بزرگ",t_ro: "Buzurg",t_hi: "बुज़ुर्ग",t_en: "Elder, mighty"},
         {a: "الْوَالِي",r: "Al-Waalee",u: "حکمرانی کرنے والا",u_ro: "Hukmraani karne wala",u_hi: "हुक्मरानी करने वाला",u_en: "The Governor",m: "وَمَا لَهُمْ مِنْ دُونِهِ مِنْ وَالٍ",t: "حاکم",t_ro: "Haakim",t_hi: "हाकिम",t_en: "Governor"},
         {a: "بَرْق",r: "Barq",u: "بجلی",u_ro: "Bijli",u_hi: "बिजली",u_en: "Lightning",m: "الْبَرْقُ",t: "بجلی",t_ro: "Bijli",t_hi: "बिजली",t_en: "Lightning"},
@@ -458,7 +458,7 @@ const courseData = [
     ] },
     { day: 38, words: [
         {a: "دَخَلَ",r: "Dakhala",u: "داخل ہوا",u_ro: "Daakhil hua",u_hi: "दाख़िल हुआ",u_en: "He entered",m: "دَخَلَ",t: "داخل ہونا",t_ro: "Daakhil hona",t_hi: "दाख़िल होना",t_en: "Entered"},
-        {a: "لَا قُوَّةَ إِلَّا بِاللَّهِ",r: "Laa quwwata illa billah",u: "طاقت نہیں مگر اللہ سے",u_ro: "Taaqat nahin magar Allah se",u_hi: "ताक़त नहीं मगर अल्लाह से",u_en: "There is no power except with Allah",m: "لَا قُوَّةَ إِلَّا بِاللَّهِ",t: "طاقت نہیں مگر اللہ سے",t_ro: "Taaqat nahin magar Allah se",t_hi: "ताक़त नहीं मगर अल्लाह से",t_en: "There is no power except with Allah"},
+        {a: "قُوَّةَ",r: "Quwwata",u: "طاقت",u_ro: "Taaqat",u_hi: "ताक़त",u_en: "Power, strength",m: "لَا قُوَّةَ إِلَّا بِاللَّهِ",t: "طاقت نہیں مگر اللہ سے",t_ro: "Taaqat nahin magar Allah se",t_hi: "ताक़त नहीं मगर अल्लाह से",t_en: "There is no power except with Allah"},
         {a: "طَلَبًا",r: "Talaban",u: "تلاش، طلب",u_ro: "Talaash, talab",u_hi: "तलाश, तलब",u_en: "Search, seeking",m: "طَلَبًا",t: "مانگنا",t_ro: "Maangna",t_hi: "माँगना",t_en: "Sought"},
         {a: "زِينَة",r: "Zeenah",u: "سجاوٹ، آرائش",u_ro: "Sajaawat, aaraaish",u_hi: "सजावट, आराइश",u_en: "Adornment",m: "زِينَةَ اللَّهِ",t: "سجاوٹ",t_ro: "Sajaawat",t_hi: "सजावट",t_en: "Adornment"},
         {a: "فَسَقَ",r: "Fasaqa",u: "نافرمانی کی",u_ro: "Nafarmaani ki",u_hi: "नाफ़रमानी की",u_en: "He deviated",m: "فَفَسَقَ عَنْ أَمْرِ رَبِّهِ",t: "نافرمانی",t_ro: "Nafarmaani",t_hi: "नाफ़रमानी",t_en: "Deviation"},
@@ -494,7 +494,7 @@ const courseData = [
     ] },
     { day: 41, words: [
         {a: "قَالَ",r: "Qaala",u: "اس نے کہا",u_ro: "Us ne kaha",u_hi: "उसने कहा",u_en: "He said",m: "قَالَ",t: "کہنا",t_ro: "Kehna",t_hi: "कहना",t_en: "Said"},
-        {a: "رَبِّ اشْرَحْ لِي صَدْرِي",r: "Rabbish rah li sadri",u: "اے میرے رب! میرا سینہ کھول دے",u_ro: "Ae mere Rabb! Mera seena khol de",u_hi: "ऐ मेरे रब! मेरा सीना खोल दे",u_en: "My Lord, expand my chest for me",m: "رَبِّ اشْرَحْ لِي صَدْرِي",t: "موسیٰ علیہ السلام کی دعا",t_ro: "Moosa AS ki dua",t_hi: "मूसा अ.स. की दुआ",t_en: "Prayer of Musa"},
+        {a: "اشْرَحْ",r: "Ishrah",u: "کھول دے",u_ro: "Khol de",u_hi: "खोल दे",u_en: "Expand, open up",m: "رَبِّ اشْرَحْ لِي صَدْرِي",t: "موسیٰ علیہ السلام کی دعا",t_ro: "Moosa AS ki dua",t_hi: "मूसा अ.स. की दुआ",t_en: "Prayer of Musa"},
         {a: "أَهْل",r: "Ahl",u: "گھر والے",u_ro: "Ghar wale",u_hi: "घर वाले",u_en: "Family, people",m: "الْأَهْلُ",t: "اہل",t_ro: "Ahl",t_hi: "अहल",t_en: "Household"},
         {a: "هَارُون",r: "Haaroon",u: "ہارون علیہ السلام",u_ro: "Haroon alaihis-salaam",u_hi: "हारून अलैहिस्सलाम",u_en: "Harun (Aaron)",m: "هَارُونُ",t: "نبی",t_ro: "Nabi",t_hi: "नबी",t_en: "Prophet"},
         {a: "أَخ",r: "Akh",u: "بھائی",u_ro: "Bhai",u_hi: "भाई",u_en: "Brother",m: "الْأَخُ",t: "بھائی",t_ro: "Bhai",t_hi: "भाई",t_en: "Brother"},
@@ -502,7 +502,7 @@ const courseData = [
         {a: "خَشَعَ",r: "Khasha'a",u: "جھکا، عاجز ہوا",u_ro: "Jhuka, aajiz hua",u_hi: "झुका, आजिज़ हुआ",u_en: "It humbled",m: "أَلَمْ يَأْنِ لِلَّذِينَ آمَنُوا أَن تَخْشَعَ",t: "جھکنا",t_ro: "Jhukna",t_hi: "झुकना",t_en: "To humble"},
         {a: "هَمْس",r: "Hams",u: "دھیمی آواز، سرگوشی",u_ro: "Dheemi aawaaz, sargoshi",u_hi: "धीमी आवाज़, सरगोशी",u_en: "Whisper",m: "لَا تَسْمَعُ إِلَّا هَمْسًا",t: "دھیمی آواز",t_ro: "Dheemi aawaaz",t_hi: "धीमी आवाज़",t_en: "Whisper"},
         {a: "شَفَاعَة",r: "Shafaa'ah",u: "سفارش",u_ro: "Sifaarish",u_hi: "सिफ़ारिश",u_en: "Intercession",m: "الشَّفَاعَةُ",t: "سفارش",t_ro: "Sifaarish",t_hi: "सिफ़ारिश",t_en: "Intercession"},
-        {a: "رَبِّ زِدْنِي عِلْمًا",r: "Rabbi zidni ilma",u: "اے میرے رب! میرے علم میں اضافہ فرما",u_ro: "Ae mere Rabb! Mere ilm mein izaafa farma",u_hi: "ऐ मेरे रब! मेरे इल्म में इज़ाफ़ा फ़रमा",u_en: "My Lord, increase me in knowledge",m: "رَبِّ زِدْنِي عِلْمًا",t: "علم کی دعا",t_ro: "Ilm ki dua",t_hi: "इल्म की दुआ",t_en: "Supplication for knowledge"}
+        {a: "زِدْنِي",r: "Zidnee",u: "مجھے بڑھا دے",u_ro: "Mujhe badha de",u_hi: "मुझे बढ़ा दे",u_en: "Increase me",m: "رَبِّ زِدْنِي عِلْمًا",t: "علم کی دعا",t_ro: "Ilm ki dua",t_hi: "इल्म की दुआ",t_en: "Supplication for knowledge"}
     ] },
     { day: 42, words: [
         {a: "شَجَرَة",r: "Shajarah",u: "درخت",u_ro: "Darakht",u_hi: "दरख़्त",u_en: "Tree",m: "الشَّجَرَةُ",t: "درخت",t_ro: "Darakht",t_hi: "दरख़्त",t_en: "Tree"},
@@ -534,7 +534,7 @@ const courseData = [
         {a: "أَذَّنَ",r: "Adhdhana",u: "اعلان کیا، اذان دی",u_ro: "Elaan kiya, azaan di",u_hi: "एलान किया, अज़ान दी",u_en: "He announced",m: "فَأَذَّنَ مُؤَذِّنٌ",t: "اعلان",t_ro: "Elaan",t_hi: "एलान",t_en: "Announcement"},
         {a: "حَجّ",r: "Hajj",u: "حج",u_ro: "Hajj",u_hi: "हज",u_en: "Hajj, pilgrimage",m: "الْحَجُّ",t: "حج",t_ro: "Hajj",t_hi: "हज",t_en: "Hajj"},
         {a: "فَجّ",r: "Fajj",u: "کھلا چوڑا راستہ",u_ro: "Khula chaura raasta",u_hi: "खुला चौड़ा रास्ता",u_en: "Wide mountain pass",m: "مِن كُلِّ فَجٍّ عَمِيقٍ",t: "راستہ",t_ro: "Raasta",t_hi: "रास्ता",t_en: "Pass"},
-        {a: "هُوَ الْعَلِيُّ الْكَبِيرُ",r: "Huwal Aliyyul Kabeer",u: "وہی بلند، بڑا ہے",u_ro: "Wohi buland, bada hai",u_hi: "वही बुलंद, बड़ा है",u_en: "He is the Most High, the Most Great",m: "هُوَ الْعَلِيُّ الْكَبِيرُ",t: "وہی بلند، بڑا ہے",t_ro: "Wohi buland, bada hai",t_hi: "वही बुलंद, बड़ा है",t_en: "He is the Most High, the Most Great"},
+        {a: "الْعَلِيُّ",r: "Al-'Aliyyu",u: "بلند",u_ro: "Buland",u_hi: "बुलंद",u_en: "The Most High",m: "هُوَ الْعَلِيُّ الْكَبِيرُ",t: "وہی بلند، بڑا ہے",t_ro: "Wohi buland, bada hai",t_hi: "वही बुलंद, बड़ा है",t_en: "He is the Most High, the Most Great"},
         {a: "الرَّءُوف",r: "Ar-Ra'oof",u: "نہایت شفقت والا",u_ro: "Nihayat shafqat wala",u_hi: "निहायत शफ़क़त वाला",u_en: "Most Compassionate",m: "إِنَّ اللَّهَ بِالنَّاسِ لَرَءُوفٌ رَحِيمٌ",t: "شفقت کرنے والا",t_ro: "Shafqat karne wala",t_hi: "शफ़क़त करने वाला",t_en: "Full of tenderness"},
         {a: "ذُبَاب",r: "Dhubaab",u: "مکھی",u_ro: "Makkhi",u_hi: "मक्खी",u_en: "Fly",m: "الذُّبَابَ",t: "مکھی",t_ro: "Makkhi",t_hi: "मक्खी",t_en: "Fly"},
         {a: "قَوِيّ",r: "Qawiyy",u: "طاقتور",u_ro: "Taaqatwar",u_hi: "ताक़तवर",u_en: "Strong",m: "قَوِيٌّ",t: "طاقت والا",t_ro: "Taaqat wala",t_hi: "ताक़त वाला",t_en: "Powerful"},
@@ -544,7 +544,7 @@ const courseData = [
         {a: "فِرْدَوْس",r: "Firdaws",u: "فردوس",u_ro: "Firdaus",u_hi: "फ़िरदौस",u_en: "Firdaus (highest Paradise)",m: "الْفِرْدَوْسُ",t: "جنت",t_ro: "Jannat",t_hi: "जन्नत",t_en: "Paradise"},
         {a: "مُضْغَة",r: "Mudghah",u: "گوشت کا ٹکڑا",u_ro: "Gosht ka tukda",u_hi: "गोश्त का टुकड़ा",u_en: "Lump of flesh",m: "مُضْغَةً مُّخَلَّقَةً",t: "گوشت کا ٹکڑا",t_ro: "Gosht ka tukda",t_hi: "गोश्त का टुकड़ा",t_en: "Lump"},
         {a: "سِينَا",r: "Seenaa",u: "سینا (پہاڑ)",u_ro: "Seena (pahaad)",u_hi: "सीना (पहाड़)",u_en: "Sinai",m: "وَشَجَرَةً تَخْرُجُ مِن طُورِ سَيْنَاءَ",t: "سینا",t_ro: "Seena",t_hi: "सीना",t_en: "Sinai"},
-        {a: "رَبِّ أَنْزِلْنِي مُنْزَلًا مُبَارَكًا",r: "Rabbi anzilni munzalan mubarakan",u: "اے میرے رب! مجھے برکت والی جگہ اتار",u_ro: "Ae mere Rabb! Mujhe barkat wali jagah utaar",u_hi: "ऐ मेरे रब! मुझे बरकत वाली जगह उतार",u_en: "My Lord, let me land at a blessed landing place",m: "رَبِّ أَنْزِلْنِي مُنْزَلًا مُبَارَكًا",t: "اے میرے رب! مجھے برکت والی جگہ اتار",t_ro: "Ae mere Rabb! Mujhe barkat wali jagah utaar",t_hi: "ऐ मेरे रब! मुझे बरकत वाली जगह उतार",t_en: "My Lord, let me land at a blessed landing place"},
+        {a: "أَنْزِلْنِي",r: "Anzilnee",u: "مجھے اتار",u_ro: "Mujhe utaar",u_hi: "मुझे उतार",u_en: "Let me land / settle me",m: "رَبِّ أَنْزِلْنِي مُنْزَلًا مُبَارَكًا",t: "اے میرے رب! مجھے برکت والی جگہ اتار",t_ro: "Ae mere Rabb! Mujhe barkat wali jagah utaar",t_hi: "ऐ मेरे रब! मुझे बरकत वाली जगह उतार",t_en: "My Lord, let me land at a blessed landing place"},
         {a: "ذَرَأَ",r: "Dhara'a",u: "پیدا کیا، پھیلایا",u_ro: "Paida kiya, phailaaya",u_hi: "पैदा किया, फैलाया",u_en: "He multiplied",m: "وَهُوَ الَّذِي ذَرَأَكُمْ فِي الْأَرْضِ",t: "پیدا کرنا",t_ro: "Paida karna",t_hi: "पैदा करना",t_en: "To create"},
         {a: "بَرْزَخ",r: "Barzakh",u: "درمیانی پردہ (قبر کی دنیا)",u_ro: "Darmiyaani parda (qabr ki duniya)",u_hi: "दरमियानी पर्दा (क़ब्र की दुनिया)",u_en: "Barzakh, barrier",m: "وَمِن وَرَائِهِم بَرْزَخٌ",t: "پردہ",t_ro: "Parda",t_hi: "पर्दा",t_en: "Barrier"},
         {a: "اغْفِرْ",r: "Ighfir",u: "بخش دے",u_ro: "Bakhsh de",u_hi: "बख़्श दे",u_en: "Forgive!",m: "اغْفِرْ",t: "بخشنا",t_ro: "Bakhshna",t_hi: "बख़्शना",t_en: "Forgive"},
@@ -641,7 +641,7 @@ const courseData = [
         {a: "عَمِلَ",r: "Amila",u: "کام کیا",u_ro: "Kaam kiya",u_hi: "काम किया",u_en: "He did, worked",m: "عَمِلَ",t: "عمل کرنا",t_ro: "Amal karna",t_hi: "अमल करना",t_en: "Did deeds"},
         {a: "لُقْمَان",r: "Luqmaan",u: "لقمان",u_ro: "Luqmaan",u_hi: "लुक़मान",u_en: "Luqman",m: "لُقْمَانُ",t: "حکیم",t_ro: "Hakeem",t_hi: "हकीम",t_en: "Wise man"},
         {a: "ظُلْم",r: "Zulm",u: "ظلم، بے انصافی",u_ro: "Zulm, be-insaafi",u_hi: "ज़ुल्म, बेइंसाफ़ी",u_en: "Wrongdoing, oppression",m: "إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ",t: "ظلم",t_ro: "Zulm",t_hi: "ज़ुल्म",t_en: "Injustice"},
-        {a: "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ",r: "Innallaha samee'un baseer",u: "اللہ سننے والا دیکھنے والا ہے",u_ro: "Allah sunne wala dekhne wala hai",u_hi: "अल्लाह सुनने वाला देखने वाला है",u_en: "Indeed Allah is All-Hearing, All-Seeing",m: "سَمِيعٌ بَصِيرٌ",t: "سننا دیکھنا",t_ro: "Sunna dekhna",t_hi: "सुनना देखना",t_en: "Hearing and seeing"},
+        {a: "سَمِيعٌ",r: "Samee'un",u: "خوب سننے والا",u_ro: "Khoob sunne wala",u_hi: "ख़ूब सुनने वाला",u_en: "All-Hearing",m: "سَمِيعٌ بَصِيرٌ",t: "سننا دیکھنا",t_ro: "Sunna dekhna",t_hi: "सुनना देखना",t_en: "Hearing and seeing"},
         {a: "عَالِم",r: "Aalim",u: "عالم",u_ro: "Aalim",u_hi: "आलिम",u_en: "Knowledgeable, scholar",m: "الْعَالِمُ",t: "جاننے والا",t_ro: "Jaanne wala",t_hi: "जानने वाला",t_en: "Knower"},
         {a: "مُؤْمِن",r: "Mu'min",u: "ایمان والا",u_ro: "Imaan wala",u_hi: "ईमान वाला",u_en: "Believer",m: "الْمُؤْمِنُ",t: "مومن",t_ro: "Momin",t_hi: "मोमिन",t_en: "Believer"},
         {a: "فَاسِق",r: "Faasiq",u: "نافرمان",u_ro: "Nafarmaan",u_hi: "नाफ़रमान",u_en: "Disobedient",m: "الْفَاسِقُ",t: "نافرمان",t_ro: "Nafarmaan",t_hi: "नाफ़रमान",t_en: "Disobedient"},
@@ -655,7 +655,7 @@ const courseData = [
         {a: "مَرَض",r: "Marad",u: "بیماری",u_ro: "Beemari",u_hi: "बीमारी",u_en: "Illness",m: "فِي قُلُوبِهِم مَّرَضٌ",t: "بیماری",t_ro: "Beemari",t_hi: "बीमारी",t_en: "Disease"},
         {a: "اذْكُرُوا",r: "Udhkuroo",u: "یاد کرو",u_ro: "Yaad karo",u_hi: "याद करो",u_en: "Remember!",m: "اذْكُرُوا",t: "یاد کرنا",t_ro: "Yaad karna",t_hi: "याद करना",t_en: "Remember"},
         {a: "أَصِيل",r: "Aseel",u: "شام کا وقت",u_ro: "Shaam ka waqt",u_hi: "शाम का वक़्त",u_en: "Late afternoon",m: "وَبُكْرَةً وَأَصِيلًا",t: "شام",t_ro: "Shaam",t_hi: "शाम",t_en: "Late afternoon"},
-        {a: "صَلُّوا عَلَيْهِ",r: "Sallu alayhi",u: "ان پر درود بھیجو",u_ro: "Un par durood bhejo",u_hi: "उन पर दरूद भेजो",u_en: "Send blessings upon him",m: "صَلُّوا عَلَيْهِ",t: "ان پر درود بھیجو",t_ro: "Un par durood bhejo",t_hi: "उन पर दरूद भेजो",t_en: "Send blessings upon him"},
+        {a: "صَلُّوا",r: "Sallu",u: "درود بھیجو",u_ro: "Durood bhejo",u_hi: "दुरूद भेजो",u_en: "Send blessings",m: "صَلُّوا عَلَيْهِ",t: "ان پر درود بھیجو",t_ro: "Un par durood bhejo",t_hi: "उन पर दरूद भेजो",t_en: "Send blessings upon him"},
         {a: "أَمَانَة",r: "Amaanah",u: "امانت",u_ro: "Amaanat",u_hi: "अमानत",u_en: "Trust",m: "عَرَضْنَا الْأَمَانَةَ",t: "امانت",t_ro: "Amaanat",t_hi: "अमानत",t_en: "Trust"},
         {a: "الْحَفِيظ",r: "Al-Hafeez",u: "حفاظت کرنے والا",u_ro: "Hifaazat karne wala",u_hi: "हिफ़ाज़त करने वाला",u_en: "The Preserver",m: "وَرَبُّكَ عَلَىٰ كُلِّ شَيْءٍ حَفِيظٌ",t: "محافظ",t_ro: "Muhaafiz",t_hi: "मुहाफ़िज़",t_en: "Guardian"},
         {a: "قَذَفَ",r: "Qadhafa",u: "تہمت لگائی",u_ro: "Tohmat lagaai",u_hi: "तोहमत लगाई",u_en: "He slandered",m: "وَالَّذِينَ يَرْمُونَ الْمُحْصَنَاتِ",t: "تہمت",t_ro: "Tohmat",t_hi: "तोहमत",t_en: "Slander"}
@@ -697,7 +697,7 @@ const courseData = [
         {a: "إِسْحَاق",r: "Is-haaq",u: "اسحاق علیہ السلام",u_ro: "Ishaaq alaihis-salaam",u_hi: "इसहाक़ अलैहिस्सलाम",u_en: "Ishaq (Isaac)",m: "إِسْحَاقُ",t: "نبی",t_ro: "Nabi",t_hi: "नबी",t_en: "Prophet"}
     ] },
     { day: 58, words: [
-        {a: "مِنَ الصَّالِحِينَ",r: "Minas-saliheen",u: "نیک لوگوں میں سے",u_ro: "Nek logon mein se",u_hi: "नेक लोगों में से",u_en: "Among the righteous",m: "مِنَ الصَّالِحِينَ",t: "نیکی",t_ro: "Neki",t_hi: "नेकी",t_en: "Goodness"},
+        {a: "مِنَ",r: "Mina",u: "میں سے",u_ro: "Mein se",u_hi: "में से",u_en: "From, among",m: "مِنَ الصَّالِحِينَ",t: "نیکی",t_ro: "Neki",t_hi: "नेकी",t_en: "Goodness"},
         {a: "إِلْيَاس",r: "Ilyaas",u: "الیاس علیہ السلام",u_ro: "Ilyaas alaihis-salaam",u_hi: "इल्यास अलैहिस्सलाम",u_en: "Ilyas (Elias)",m: "وَإِنَّ إِلْيَاسَ لَمِنَ الْمُرْسَلِينَ",t: "نبی",t_ro: "Nabi",t_hi: "नबी",t_en: "Prophet"},
         {a: "لُوط",r: "Loot",u: "لوط علیہ السلام",u_ro: "Loot alaihis-salaam",u_hi: "लूत अलैहिस्सलाम",u_en: "Lut (Lot)",m: "لُوطٌ",t: "نبی",t_ro: "Nabi",t_hi: "नबी",t_en: "Prophet"},
         {a: "يُونُس",r: "Yoonus",u: "یونس علیہ السلام",u_ro: "Yoonus alaihis-salaam",u_hi: "यूनुस अलैहिस्सलाम",u_en: "Yunus (Jonah)",m: "يُونُسُ",t: "نبی",t_ro: "Nabi",t_hi: "नबी",t_en: "Prophet"},
@@ -706,7 +706,7 @@ const courseData = [
         {a: "أَوْ",r: "Aw",u: "یا",u_ro: "Ya",u_hi: "या",u_en: "Or",m: "أَوْ",t: "یا",t_ro: "Ya",t_hi: "या",t_en: "Or"},
         {a: "دَاوُود",r: "Daawood",u: "داؤد علیہ السلام",u_ro: "Dawood alaihis-salaam",u_hi: "दाऊद अलैहिस्सलाम",u_en: "Dawud (David)",m: "دَاوُودُ",t: "نبی",t_ro: "Nabi",t_hi: "नबी",t_en: "Prophet"},
         {a: "الْيَسَع",r: "Al-Yasa'",u: "الیسع علیہ السلام",u_ro: "Al-Yasa alaihis-salaam",u_hi: "अल-यसअ अलैहिस्सलाम",u_en: "Alyasa (Elisha)",m: "وَاذْكُرْ إِسْمَاعِيلَ وَالْيَسَعَ",t: "نبی",t_ro: "Nabi",t_hi: "नबी",t_en: "Prophet"},
-        {a: "ذُو الْكِفْل",r: "Dhul-Kifl",u: "ذوالکفل علیہ السلام",u_ro: "Dhul-Kifl alaihis-salaam",u_hi: "ज़ुल-किफ़्ल अलैहिस्सलाम",u_en: "Dhul-Kifl",m: "وَإِسْمَاعِيلَ وَإِدْرِيسَ وَذَا الْكِفْلِ",t: "نبی",t_ro: "Nabi",t_hi: "नबी",t_en: "Prophet"}
+        {a: "وَذَا",r: "Wa dhaa",u: "اور والا",u_ro: "Aur wala",u_hi: "और वाला",u_en: "And owner of",m: "وَإِسْمَاعِيلَ وَإِدْرِيسَ وَذَا الْكِفْلِ",t: "نبی",t_ro: "Nabi",t_hi: "नबी",t_en: "Prophet"}
     ] },
     { day: 59, words: [
         {a: "طِين",r: "Teen",u: "مٹی",u_ro: "Mitti",u_hi: "मिट्टी",u_en: "Clay",m: "الطِّينُ",t: "مٹی",t_ro: "Mitti",t_hi: "मिट्टी",t_en: "Clay"},
@@ -748,7 +748,7 @@ const courseData = [
         {a: "خَمْر",r: "Khamr",u: "شراب (نشہ آور)",u_ro: "Sharaab (nasha-aawar)",u_hi: "शराब (नशा)",u_en: "Intoxicant, wine",m: "إِنَّمَا الْخَمْرُ وَالْمَيْسِرُ",t: "نشہ آور",t_ro: "Nasha-aawar",t_hi: "नशा देने वाला",t_en: "Intoxicant"},
         {a: "عَسَل",r: "Asal",u: "شہد",u_ro: "Shahad",u_hi: "शहद",u_en: "Honey",m: "الْعَسَلَ",t: "شہد",t_ro: "Shahad",t_hi: "शहद",t_en: "Honey"},
         {a: "ثَمَرَة",r: "Thamarah",u: "پھل",u_ro: "Phal",u_hi: "फल",u_en: "Fruit",m: "الثَّمَرَةُ",t: "پھل",t_ro: "Phal",t_hi: "फल",t_en: "Fruit"},
-        {a: "لَا إِلَهَ إِلَّا اللَّهُ",r: "La ilaha illallah",u: "اللہ کے سوا کوئی معبود نہیں",u_ro: "Allah ke siwa koi maabood nahin",u_hi: "अल्लाह के सिवा कोई माबूद नहीं",u_en: "There is no god but Allah",m: "لَا إِلَهَ إِلَّا اللَّهُ",t: "کلمہ",t_ro: "Kalma",t_hi: "कलमा",t_en: "The Shahadah"},
+        {a: "إِلَهَ",r: "Ilaaha",u: "معبود",u_ro: "Maabood",u_hi: "माबूद",u_en: "God, deity",m: "لَا إِلَهَ إِلَّا اللَّهُ",t: "کلمہ",t_ro: "Kalma",t_hi: "कलमा",t_en: "The Shahadah"},
         {a: "أَصَمّ",r: "Asamm",u: "بہرا",u_ro: "Behra",u_hi: "बहरा",u_en: "Deaf",m: "صُمٌّ بُكْمٌ عُمْيٌ",t: "بہرا",t_ro: "Behra",t_hi: "बहरा",t_en: "Deaf"},
         {a: "تَدَبَّرَ",r: "Tadabbara",u: "غور کیا، تدبر کیا",u_ro: "Ghaur kiya, tadabbur kiya",u_hi: "ग़ौर किया, तदब्बुर किया",u_en: "He pondered",m: "أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ",t: "غور کرنا",t_ro: "Ghaur karna",t_hi: "ग़ौर करना",t_en: "To ponder"},
         {a: "يَد",r: "Yad",u: "ہاتھ",u_ro: "Haath",u_hi: "हाथ",u_en: "Hand",m: "الْيَدُ",t: "ہاتھ",t_ro: "Haath",t_hi: "हाथ",t_en: "Hand"},
@@ -834,7 +834,7 @@ const courseData = [
         {a: "حَمِيم",r: "Hameem",u: "کھولتا پانی",u_ro: "Kholta paani",u_hi: "खौलता पानी",u_en: "Boiling water",m: "الْحَمِيمِ",t: "پانی",t_ro: "Paani",t_hi: "पानी",t_en: "Scalding water"},
         {a: "كَانُوا",r: "Kaanoo",u: "وہ تھے",u_ro: "Woh the",u_hi: "वे थे",u_en: "They were",m: "كَانُوا",t: "تھے",t_ro: "The",t_hi: "थे",t_en: "Were"},
         {a: "قَبْلَ",r: "Qabla",u: "پہلے",u_ro: "Pehle",u_hi: "पहले",u_en: "Before",m: "قَبْلَ",t: "سے پہلے",t_ro: "Se pehle",t_hi: "से पहले",t_en: "Before"},
-        {a: "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ",r: "Fasabbih bismi Rabbikal Azeem",u: "اپنے عظمت والے رب کے نام کی تسبیح کرو",u_ro: "Apne azmat wale Rabb ke naam ki tasbeeh karo",u_hi: "अपने अज़मत वाले रब के नाम की तस्बीह करो",u_en: "So glorify the name of your Magnificent Lord",m: "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ",t: "اپنے عظمت والے رب کے نام کی تسبیح کرو",t_ro: "Apne azmat wale Rabb ke naam ki tasbeeh karo",t_hi: "अपने अज़मत वाले रब के नाम की तस्बीह करो",t_en: "So glorify the name of your Magnificent Lord"},
+        {a: "فَسَبِّحْ",r: "Fasabbih",u: "پس پاکی بیان کر",u_ro: "Pas paaki bayan kar",u_hi: "तो पाकी बयान कर",u_en: "So glorify",m: "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ",t: "اپنے عظمت والے رب کے نام کی تسبیح کرو",t_ro: "Apne azmat wale Rabb ke naam ki tasbeeh karo",t_hi: "अपने अज़मत वाले रब के नाम की तस्बीह करो",t_en: "So glorify the name of your Magnificent Lord"},
         {a: "عَظِيم",r: "Azeem",u: "عظمت والا",u_ro: "Azmat wala",u_hi: "अज़मत वाला",u_en: "Magnificent, Mighty",m: "عَظِيمٌ",t: "بڑا",t_ro: "Bada",t_hi: "बड़ा",t_en: "Great"},
         {a: "سَبَّحَ",r: "Sabbaha",u: "تسبیح کی",u_ro: "Tasbeeh ki",u_hi: "तस्बीह की",u_en: "He glorified",m: "سَبَّحَ لِلَّهِ مَا فِي السَّمَاوَاتِ",t: "تسبیح کرنا",t_ro: "Tasbeeh karna",t_hi: "तस्बीह करना",t_en: "To glorify"},
         {a: "الْمُحْيِي",r: "Al-Muhyee",u: "زندہ کرنے والا",u_ro: "Zinda karne wala",u_hi: "ज़िंदा करने वाला",u_en: "The Giver of Life",m: "يُحْيِي وَيُمِيتُ",t: "زندہ کرنے والا",t_ro: "Zinda karne wala",t_hi: "ज़िंदा करने वाला",t_en: "Giver of life"},
@@ -973,7 +973,7 @@ const courseData = [
         {a: "حَافِظ",r: "Haafiz",u: "حفاظت کرنے والا",u_ro: "Hifaazat karne wala",u_hi: "हिफ़ाज़त करने वाला",u_en: "Guardian",m: "إِن كُلُّ نَفْسٍ لَّمَّا عَلَيْهَا حَافِظٌ",t: "نگہبان",t_ro: "Nigahbaan",t_hi: "निगहबान",t_en: "Guardian"}
     ] },
     { day: 81, words: [
-        {a: "سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى",r: "Sabbihisma Rabbikal A'la",u: "اپنے سب سے بلند رب کے نام کی تسبیح کرو",u_ro: "Apne sab se buland Rabb ke naam ki tasbeeh karo",u_hi: "अपने सबसे बुलंद रब के नाम की तस्बीह करो",u_en: "Glorify the name of your Lord, the Most High",m: "سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى",t: "اپنے سب سے بلند رب کے نام کی تسبیح کرو",t_ro: "Apne sab se buland Rabb ke naam ki tasbeeh karo",t_hi: "अपने सबसे बुलंद रब के नाम की तस्बीह करो",t_en: "Glorify the name of your Lord, the Most High"},
+        {a: "سَبِّحِ",r: "Sabbihi",u: "پاکی بیان کر",u_ro: "Paaki bayan kar",u_hi: "पाकी बयान कर",u_en: "Glorify",m: "سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى",t: "اپنے سب سے بلند رب کے نام کی تسبیح کرو",t_ro: "Apne sab se buland Rabb ke naam ki tasbeeh karo",t_hi: "अपने सबसे बुलंद रब के नाम की तस्बीह करो",t_en: "Glorify the name of your Lord, the Most High"},
         {a: "أَخْرَجَ",r: "Akhraja",u: "نکالا",u_ro: "Nikaala",u_hi: "निकाला",u_en: "He brought out",m: "أَخْرَجَ",t: "نکالنا",t_ro: "Nikaalna",t_hi: "निकालना",t_en: "Brought out"},
         {a: "ذَكَرَ",r: "Dhakara",u: "یاد کیا",u_ro: "Yaad kiya",u_hi: "याद किया",u_en: "He remembered",m: "وَذَكَرَ اسْمَ رَبِّهِ",t: "یاد کرنا",t_ro: "Yaad karna",t_hi: "याद करना",t_en: "To remember"},
         {a: "بَلْ",r: "Bal",u: "بلکہ",u_ro: "Balki",u_hi: "बल्कि",u_en: "Rather, but",m: "بَلْ",t: "بلکہ",t_ro: "Balki",t_hi: "बल्कि",t_en: "Rather"},
@@ -2885,11 +2885,6 @@ const wordAyat = {
   "k": "50:44",
   "i": 6
  },
- "يَوْمَ الدِّين": {
-  "k": "1:4",
-  "i": 1,
-  "l": 2
- },
  "غَيْب": {
   "k": "2:3",
   "i": 2
@@ -3382,34 +3377,6 @@ const wordAyat = {
  "حَبَّة": {
   "k": "6:59",
   "i": 19
- },
- "الْحَمْدُ لِلَّهِ": {
-  "k": "1:2",
-  "i": 0
- },
- "بِسْمِ اللَّهِ": {
-  "k": "1:1",
-  "i": 0
- },
- "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً": {
-  "k": "2:201",
-  "i": 3
- },
- "رَبِّ اشْرَحْ لِي صَدْرِي": {
-  "k": "20:25",
-  "i": 1
- },
- "رَبَّنَا آتِنَا": {
-  "k": "2:201",
-  "i": 3
- },
- "مِنَ الصَّالِحِينَ": {
-  "k": "37:112",
-  "i": 3
- },
- "إِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ": {
-  "k": "2:173",
-  "i": 21
  },
  "الرَّءُوف": {
   "k": "22:65",
@@ -4067,11 +4034,6 @@ const wordAyat = {
   "k": "38:48",
   "i": 2
  },
- "ذُو الْكِفْل": {
-  "k": "38:48",
-  "i": 4,
-  "n": "Quran mein 'وَذَا الْكِفْلِ' (zul-kifl, nasb ki haalat mein) aata hai."
- },
  "عُزَيْر": {
   "k": "9:30",
   "i": 2
@@ -4644,54 +4606,6 @@ const wordAyat = {
   "k": "80:34",
   "i": 1
  },
- "سُبْحَانَ اللَّهِ": {
-  "k": "12:108",
-  "i": 11
- },
- "لَا إِلَهَ إِلَّا اللَّهُ": {
-  "k": "47:19",
-  "i": 2
- },
- "رَبِّ اغْفِرْ لِي": {
-  "k": "7:151",
-  "i": 1
- },
- "رَبِّ زِدْنِي عِلْمًا": {
-  "k": "20:114",
-  "i": 14
- },
- "يَا أَيُّهَا النَّاسُ": {
-  "k": "2:21",
-  "i": 0
- },
- "اتَّقُوا اللَّهَ": {
-  "k": "3:102",
-  "i": 3
- },
- "أَطِيعُوا اللَّهَ": {
-  "k": "4:59",
-  "i": 3
- },
- "وَأَطِيعُوا الرَّسُولَ": {
-  "k": "4:59",
-  "i": 5
- },
- "وَاشْكُرُوا لِلَّهِ": {
-  "k": "2:172",
-  "i": 8
- },
- "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ": {
-  "k": "2:153",
-  "i": 6
- },
- "إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ": {
-  "k": "2:20",
-  "i": 19
- },
- "إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ": {
-  "k": "31:28",
-  "i": 7
- },
  "لِمَ": {
   "k": "3:70",
   "i": 2
@@ -4716,73 +4630,9 @@ const wordAyat = {
   "k": "69:17",
   "i": 2
  },
- "هُوَ الْعَلِيُّ الْكَبِيرُ": {
-  "k": "22:62",
-  "i": 14
- },
- "صَلُّوا عَلَيْهِ": {
-  "k": "33:56",
-  "i": 9
- },
- "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ": {
-  "k": "1:2",
-  "i": 0
- },
- "رَبِّ أَنْزِلْنِي مُنْزَلًا مُبَارَكًا": {
-  "k": "23:29",
-  "i": 1
- },
- "فَسَبِّحْ بِاسْمِ رَبِّكَ الْعَظِيمِ": {
-  "k": "56:74",
-  "i": 0
- },
- "سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى": {
-  "k": "87:1",
-  "i": 0
- },
- "وَاغْفِرْ لَنَا": {
-  "k": "2:286",
-  "i": 40
- },
- "الْحَيُّ الْقَيُّومُ": {
-  "k": "2:255",
-  "i": 5
- },
  "السَّلَامُ": {
   "k": "59:23",
   "i": 9
- },
- "لَا قُوَّةَ إِلَّا بِاللَّهِ": {
-  "k": "18:39",
-  "i": 8
- },
- "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ": {
-  "k": "3:18",
-  "i": 0
- },
- "وَاسْتَغْفِرِ اللَّهَ": {
-  "k": "4:106",
-  "i": 0
- },
- "وَاعْفُ عَنَّا": {
-  "k": "2:286",
-  "i": 38
- },
- "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ": {
-  "k": "1:6",
-  "i": 0
- },
- "وَاذْكُرُوا نِعْمَةَ اللَّهِ": {
-  "k": "5:7",
-  "i": 0
- },
- "وَلَا تَكْفُرُونِ": {
-  "k": "2:152",
-  "i": 4
- },
- "وَاللَّهُ لَا يُحِبُّ الظَّالِمِينَ": {
-  "k": "3:57",
-  "i": 7
  },
  "بَرَكَات": {
   "k": "11:73",
@@ -4815,6 +4665,154 @@ const wordAyat = {
  "قِيَام": {
   "k": "25:64",
   "i": 4
+ },
+ "بِسْمِ": {
+  "k": "1:1",
+  "i": 0
+ },
+ "الْحَمْدُ": {
+  "k": "1:2",
+  "i": 0
+ },
+ "لِلَّهِ": {
+  "k": "1:2",
+  "i": 1
+ },
+ "يَوْمِ": {
+  "k": "1:4",
+  "i": 1
+ },
+ "الصِّرَاطَ": {
+  "k": "1:6",
+  "i": 1
+ },
+ "اللَّهَ": {
+  "k": "2:20",
+  "i": 20
+ },
+ "النَّاسُ": {
+  "k": "2:21",
+  "i": 1
+ },
+ "وَلَا": {
+  "k": "2:152",
+  "i": 4
+ },
+ "الصَّابِرِينَ": {
+  "k": "2:153",
+  "i": 9
+ },
+ "وَاشْكُرُوا": {
+  "k": "2:172",
+  "i": 8
+ },
+ "غَفُورٌ": {
+  "k": "2:173",
+  "i": 23
+ },
+ "رَبَّنَا": {
+  "k": "2:201",
+  "i": 3
+ },
+ "آتِنَا": {
+  "k": "2:201",
+  "i": 4
+ },
+ "الْحَيُّ": {
+  "k": "2:255",
+  "i": 5
+ },
+ "وَاعْفُ": {
+  "k": "2:286",
+  "i": 38
+ },
+ "وَاغْفِرْ": {
+  "k": "2:286",
+  "i": 40
+ },
+ "شَهِدَ": {
+  "k": "3:18",
+  "i": 0
+ },
+ "وَاللَّهُ": {
+  "k": "3:57",
+  "i": 7
+ },
+ "وَأَطِيعُوا": {
+  "k": "4:59",
+  "i": 5
+ },
+ "وَاسْتَغْفِرِ": {
+  "k": "4:106",
+  "i": 0
+ },
+ "وَاذْكُرُوا": {
+  "k": "5:7",
+  "i": 0
+ },
+ "لِي": {
+  "k": "7:151",
+  "i": 3
+ },
+ "قُوَّةَ": {
+  "k": "18:39",
+  "i": 9
+ },
+ "اشْرَحْ": {
+  "k": "20:25",
+  "i": 2
+ },
+ "زِدْنِي": {
+  "k": "20:114",
+  "i": 15
+ },
+ "الْعَلِيُّ": {
+  "k": "22:62",
+  "i": 15
+ },
+ "أَنْزِلْنِي": {
+  "k": "23:29",
+  "i": 2
+ },
+ "سَمِيعٌ": {
+  "k": "31:28",
+  "i": 9
+ },
+ "صَلُّوا": {
+  "k": "33:56",
+  "i": 9
+ },
+ "مِنَ": {
+  "k": "37:112",
+  "i": 3
+ },
+ "وَذَا": {
+  "k": "38:48",
+  "i": 3
+ },
+ "إِلَهَ": {
+  "k": "47:19",
+  "i": 3
+ },
+ "فَسَبِّحْ": {
+  "k": "56:74",
+  "i": 0
+ },
+ "سَبِّحِ": {
+  "k": "87:1",
+  "i": 0
+ },
+ "وَسُبْحَانَ": {
+  "k": "12:108",
+  "i": 11
+ },
+ "مُسْلِمُونَ": {
+  "k": "3:102",
+  "i": 11
+ },
+ "الرَّسُولَ": {
+  "k": "4:59",
+  "i": 6
  }
 };
 

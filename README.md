@@ -271,3 +271,7 @@ Login ke passwords `index.html` ke script mein (`ADMIN_PASSWORD`, `GUEST_PASSWOR
 
 
 - 🔀 **v84:** 900 alfaz ab **Surah ke tarteeb se** hain — Day 1 mein pehle Allah ke naam (Allah, Rabb, Ilaah, Rahmaan...), phir Surah 1 (Fatiha) se Surah 114 (Naas) tak.
+
+- ✂️ **v85:** Jumle/ayat wali entries ab ek lafz hain, wesa hi jaisa ayat mein aaya hai (diacritics ke saath). Wo 2 entries jinke lafz pehle se maujood the (Ittaqullah, Atee'ullah) hata di gayi.
+
+- ➕ **v86:** 2 naye lafz jode (مُسْلِمُونَ, الرَّسُولَ) — ab dobara poore 900 alfaz.
