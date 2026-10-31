@@ -268,3 +268,6 @@ Login ke passwords `index.html` ke script mein (`ADMIN_PASSWORD`, `GUEST_PASSWOR
 **Indo-Pak font (v77):** `fonts/indopak.woff2` na ho to app QUL/Tarteel ka Indo-Pak Nastaleeq font online se laati hai (static-cdn.tarteel.ai) aur ek baar ke baad offline cache kar leti hai. Apna font rakhna ho (jaise Al Qalam / PDMS Saleem) to `fonts/indopak.woff2` mein rakh dein — wahi pehle lagega.
 
 **Poori screen mushaf (v78):** Madani / Indo-Pak style mein page poori screen par khulta hai — upar ka header, buttons, sab chhup jaate hain; 15 line screen mein barabar fit hoti hain. **Swipe** karke page badlein (daayen swipe = agla page). Kisi lafz par tap = ayat chunna (🔊 / 3× / 5× / 🔖 / tarjuma); lafzon ke beech ya upar-neeche ki patti par tap = upar controls (Fehrist, page jump, qari, repeat, style) khulte/band hote hain. A-/A+ mushaf page par asar nahi karte (page screen ke hisaab se khud fit hota hai); ayat-wise style mein pehle jaisa.
+
+
+- 🔀 **v84:** 900 alfaz ab **Surah ke tarteeb se** hain — Day 1 mein pehle Allah ke naam (Allah, Rabb, Ilaah, Rahmaan...), phir Surah 1 (Fatiha) se Surah 114 (Naas) tak.
