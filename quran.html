@@ -98,13 +98,13 @@
         .sres .k { display: block; direction: ltr; text-align: left; font: 700 12px Poppins, sans-serif; color: var(--text-light); margin-bottom: 4px; }
         .sres .t { direction: rtl; font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: calc(24px * var(--ay)); line-height: 2.1; }
         /* ---- Chhape hue 15-line Mushaf jaisa safha: naqshi hashiya, har line ke neeche lakeer, gol ayat-nishan, kinare par ruku ع ---- */
-        .mframe { margin: 0 auto; max-width: 640px; padding: 6px; border: 2px solid #2b2b2b; background: repeating-linear-gradient(45deg, #6f8a55 0 4px, #efe6b8 4px 8px, #c9a94b 8px 10px, #efe6b8 10px 14px); }
-        .mframe.madani { background: repeating-linear-gradient(45deg, #1d6b6b 0 4px, #f3e7b0 4px 8px, #c9a94b 8px 10px, #f3e7b0 10px 14px); }
-        .mpage { position: relative; background: #fffef9; color: #111; border: 2px solid #111; padding: 0 20px 0 6px; direction: rtl; display: flex; flex-direction: column; height: 100%; --cw: #0B7A55; --cw-bg: rgba(11,122,85,.12); }
+        .mframe { margin: 0 auto; max-width: 640px; padding: 4px; border: 3px double #7a6a2f; background: #f6efd0; }
+        .mframe.madani { border-color: #1d6b6b; background: #f3ecc9; }
+        .mpage { position: relative; background: #fffef9; color: #111; border: 2px solid #111; padding: 0 30px 0 6px; direction: rtl; display: flex; flex-direction: column; height: 100%; --cw: #0B7A55; --cw-bg: rgba(11,122,85,.12); }
         .mhead { flex: 0 0 auto; display: flex; justify-content: space-between; align-items: center; direction: rtl; font: 700 12px 'Noto Naskh Arabic', serif; color: #444; border-bottom: 1.5px solid #111; padding: 2px 0 3px; }
         .mhead .pg { border: 1.5px solid #111; border-radius: 12px; padding: 0 14px; background: #f3ecc9; font-size: 14px; color: #111; }
         .mfoot { flex: 0 0 auto; text-align: center; font: 700 12px 'Noto Naskh Arabic', serif; color: #444; border-top: 1.5px solid #111; padding: 2px 0; }
-        .mbody { flex: 1 1 0; min-height: 0; container-type: size; display: flex; flex-direction: column; justify-content: center; overflow: hidden; --mfs: 4cqh; }
+        .mbody { flex: 1 1 0; min-height: 0; container-type: size; display: flex; flex-direction: column; justify-content: center; overflow: visible; clip-path: inset(0 -28px 0 0); --mfs: 4cqh; }
         .mbody > * { flex: 1 1 0; max-height: calc(100% / 15); min-height: 0; }
         .mline { position: relative; display: flex; justify-content: space-between; align-items: center; direction: rtl; white-space: nowrap; border-bottom: 1.5px solid #111; font-family: 'FQIndoPak', 'Scheherazade New', 'Noto Naskh Arabic', serif; font-size: var(--mfs); line-height: 1; color: #111; }
         .mbody > .mline:last-child { border-bottom: 0; }
@@ -112,7 +112,7 @@
         .mline .mw.end { display: inline-grid; place-items: center; min-width: 1.35em; height: 1.35em; padding: 0 .2em; margin: 0 .2em; border: 1.5px solid #111; border-radius: 999px; font: 700 .5em 'Noto Naskh Arabic', serif; line-height: 1; color: #111; }
         .mline .mw.sel, .mline .mw.playing { background: rgba(212,175,55,.38); }
         .mline .mw.cw { color: var(--cw); background: var(--cw-bg); }
-        .mruku { position: absolute; right: -19px; top: 50%; transform: translateY(-50%); font: 700 .5em 'Noto Naskh Arabic', serif; border: 1.5px solid #111; border-radius: 50%; width: 1.7em; height: 1.7em; display: grid; place-items: center; background: #f3ecc9; color: #111; }
+        .mruku { position: absolute; right: -27px; top: 50%; transform: translateY(-50%); font: 700 .5em 'Noto Naskh Arabic', serif; border: 1.5px solid #111; border-radius: 50%; width: 1.7em; height: 1.7em; display: grid; place-items: center; background: #f3ecc9; color: #111; }
         .mbody > .sbanner { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 2px 0; padding: 0 8px; background: #f1ead0; color: #111; border: 2px solid #6e8452; border-radius: 6px; direction: ltr; }
         .mbody > .sbanner .ar { font-size: min(3.6cqh, 8cqw); line-height: 1; color: #111; }
         .mbody > .sbanner small { display: inline; font-size: 11px; opacity: .8; }
@@ -167,6 +167,7 @@
                 <button class="size-btn" onclick="changeScale(0.1)" title="Bada">A+</button>
                 <button class="icon-btn" data-qs-lang onclick="QSLang.cycle()" title="Matlab ki zubaan" style="font-size:13px;font-weight:700;min-width:40px">اردو</button>
                 <button class="icon-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
+                <a href="index.html#qibla" style="color:white; text-decoration:none; font-size:20px;" title="Qibla Finder" aria-label="Qibla Finder">🧭</a>
                 <a href="index.html" style="color:white; text-decoration:none; font-size:20px;" title="Back to App"><i class="qi qi-hb" data-qi="home" style="display:flex"></i></a>
             </div>
         </div>

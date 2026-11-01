@@ -915,6 +915,7 @@ if (!window.QS_LITE) {
         tajweed: ['تجوید', 'Tajweed', 'तजवीद', 'Tajweed'],
         dua: ['دعائیں', 'Duaein', 'दुआएँ', 'Duas'],
         asma: ['۹۹ نام', '99 Naam', '99 नाम', '99 Names'],
+        qibla: ['قبلہ', 'Qibla', 'क़िब्ला', 'Qibla'],
         grammar: ['نحو صرف', 'Nahw-Sarf', 'नह्व-सर्फ़', 'Nahw-Sarf'],
         seerat: ['سیرت', 'Seerat', 'सीरत', 'Seerah'],
         arkan: ['ارکانِ اسلام', 'Arkan\u2011e\u2011\u200bIslam', 'अरकान-ए-इस्लाम', 'Pillars of Islam'],

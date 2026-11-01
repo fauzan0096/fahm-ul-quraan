@@ -5,6 +5,7 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v90: Namaz ke baad tasbih 33·33·34 (Arkan fazail, 4 zubaan); Quran page se naqshi side-patti hata kar saaf Indo-Pak jaisa frame + ruku ع kinare par; Qibla Finder home ke quick-nav aur Quran header se; Home par Ramadan counter (ramadan.js tools.js ke andar)
 // v89 (kalima): Arkan — Chautha Kalima ab wahi jo Fajr ke baad ki hadees (Tirmidhi 3474) mein hai (lamba badhaya hua nahi); aakhir mein namaz ke baad 33·33·34 (Muslim 596) aur 100 poora karne ki riwayat (Muslim 597); Arkan pages ka install popup bhi 4 zubaan mein
 // v89: MERGE — v88 (aap ki line: Games 4-zubaan, Ramadan counter, Arkan/course fixes) + Qibla Finder (meri line)
 // v83: v82 + Games page 4 zubaanon mein (games-lang.js: KBC, Sahaba, Memory, Emoji, Bazm)

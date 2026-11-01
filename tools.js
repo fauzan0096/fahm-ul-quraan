@@ -1189,3 +1189,301 @@
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
 ;
+
+/* ───────────── qibla.js (tools.js ke andar) — Qibla Finder ─────────────
+   • Qibla = Kaaba (21.4225°N, 39.8262°E) ki taraf great-circle ka shuruaati zaavia (Uttar se clockwise). Poora offline hisaab, koi server nahi.
+   • Compass: Android = deviceorientationabsolute, iPhone = webkitCompassHeading (ijazat button se). Location: GPS ya haath se coordinates.
+   • Home par #qiblaCard (index.html). Naya label/jumla: sirf app.js ke D mein entry. Window API: FQQibla.open() / FQQibla.calc(lat, lng). */
+(function () {
+    'use strict';
+    var KAABA = { lat: 21.422487, lng: 39.826206 };
+    var el = null, loc = null, res = null, heading = null, shown = null, sensor = 0, raf = 0, aligned = false, histOn = false, ignorePop = 0, styled = false, timer = 0, handlers = [];
+    function rad(d) { return d * Math.PI / 180; }
+    function deg(r) { return r * 180 / Math.PI; }
+    function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+    function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+    function jget(k) { try { return JSON.parse(lsGet(k)); } catch (e) { return null; } }
+    function $(id) { return document.getElementById(id); }
+
+    // ---------- hisaab ----------
+    function calc(lat, lng) {
+        var p1 = rad(lat), p2 = rad(KAABA.lat), dl = rad(KAABA.lng - lng);
+        var y = Math.sin(dl) * Math.cos(p2), x = Math.cos(p1) * Math.sin(p2) - Math.sin(p1) * Math.cos(p2) * Math.cos(dl);
+        var b = (deg(Math.atan2(y, x)) + 360) % 360;
+        var a = Math.pow(Math.sin((p2 - p1) / 2), 2) + Math.cos(p1) * Math.cos(p2) * Math.pow(Math.sin(dl / 2), 2);
+        return { b: b, d: 6371 * 2 * Math.asin(Math.min(1, Math.sqrt(a))) };
+    }
+    function validLoc(l) { return l && isFinite(+l.lat) && isFinite(+l.lng) && Math.abs(l.lat) <= 90 && Math.abs(l.lng) <= 180; }
+    function savedLoc() { var q = jget('qbl_loc'); if (validLoc(q)) return q; var n = jget('ns_loc'); return validLoc(n) ? n : null; }
+
+    // ---------- CSS ----------
+    function injectCSS() {
+        if (styled) return; styled = true;
+        var s = document.createElement('style'); s.id = 'qblCss';
+        s.textContent =
+            '#qiblaCard{grid-column:1/-1}' +
+            '.qbl-tile{flex:1;min-width:0;display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--border);border-radius:16px;background:var(--card-bg);box-shadow:var(--shadow);color:inherit;font:inherit;text-align:start;cursor:pointer}' +
+            '.qbl-tile .ic{font-size:30px;line-height:1;flex:0 0 auto;color:#8A6A1E;--qi-a:#C79E3F}' +
+            '[data-theme="dark"] .qbl-tile .ic{color:#E3C36E;--qi-a:#F0DCA0}' +
+            '.qbl-tile .mid{flex:1;min-width:0}.qbl-tile b{display:block;font-size:14px;line-height:1.3}' +
+            '.qbl-tile small{display:block;font-size:12px;color:var(--text-light);line-height:1.5}' +
+            '.qbl-tile .go{flex:0 0 auto;padding:7px 14px;border-radius:10px;font:700 12px Figtree,sans-serif;color:#2A2008;background:linear-gradient(180deg,#E3C36E,#C79E3F)}' +
+            '.qbl-modal{position:fixed;inset:0;z-index:2600;display:flex;justify-content:center;background:#051a14;color:#F4EFD8}' +
+            '.qbl-modal,.qbl-modal *{box-sizing:border-box}' +
+            '.qbl-sheet{width:100%;max-width:520px;height:100%;display:flex;flex-direction:column;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:calc(10px + env(safe-area-inset-top)) 16px calc(18px + env(safe-area-inset-bottom));background:radial-gradient(120% 70% at 50% 0%,#0F4C3A 0%,#06241C 62%)}' +
+            '.qbl-top{display:flex;align-items:center;gap:10px}.qbl-top h2{flex:1;margin:0;font-size:19px;color:#E3C36E}' +
+            '.qbl-x{width:40px;height:40px;border-radius:50%;border:1px solid rgba(217,182,90,.45);background:rgba(255,255,255,.06);color:#F4EFD8;font-size:24px;line-height:1;cursor:pointer}' +
+            '.qbl-dialwrap{position:relative;width:min(82vw,320px);aspect-ratio:1;margin:14px auto 6px}' +
+            '.qbl-dialwrap svg{width:100%;height:100%;display:block;overflow:visible}' +
+            '.qbl-ring{fill:rgba(255,255,255,.04);stroke:#B8923A;stroke-width:2;transition:stroke .25s,filter .25s}' +
+            '.qbl-ok .qbl-ring{stroke:#3DDC84;filter:drop-shadow(0 0 10px rgba(61,220,132,.65))}' +
+            '.qbl-msg{text-align:center;font-size:19px;font-weight:700;min-height:30px;margin-top:6px}.qbl-ok .qbl-msg{color:#3DDC84}' +
+            '.qbl-sub{text-align:center;font-size:13px;color:#9FB6AA;min-height:20px;margin-top:2px}' +
+            '.qbl-info{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0 4px}' +
+            '.qbl-info div{padding:9px 6px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(217,182,90,.22);text-align:center;min-width:0}' +
+            '.qbl-info small{display:block;font-size:11px;color:#9FB6AA;line-height:1.4}.qbl-info b{display:block;font-size:14px;margin-top:3px;direction:ltr;overflow:hidden;text-overflow:ellipsis}' +
+            '.qbl-btns{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}' +
+            '.qbl-btns button,.qbl-man button{flex:1 1 140px;padding:11px 12px;border-radius:12px;border:1px solid rgba(217,182,90,.5);background:rgba(255,255,255,.07);color:#F4EFD8;font:700 13px Figtree,sans-serif;cursor:pointer}' +
+            '.qbl-btns button.pri{background:linear-gradient(180deg,#E3C36E,#C79E3F);color:#2A2008;border-color:transparent}' +
+            '.qbl-man{margin-top:12px;font-size:13px}.qbl-man summary{cursor:pointer;color:#E3C36E;padding:6px 0}' +
+            '.qbl-man .row{display:flex;gap:8px;margin-top:6px}.qbl-man input{flex:2 1 160px;min-width:0;padding:10px;border-radius:10px;border:1px solid rgba(217,182,90,.4);background:rgba(0,0,0,.25);color:#F4EFD8;font:600 14px Figtree,sans-serif;direction:ltr}' +
+            '.qbl-man button{flex:1 1 90px}' +
+            '.qbl-note{margin-top:14px;font-size:12px;line-height:1.8;color:#9FB6AA}' +
+            '.qbl-err{color:#FFB4A8;font-size:13px;margin-top:8px;min-height:18px}' +
+            '@media (prefers-reduced-motion:reduce){.qbl-ring{transition:none}}' +
+            '@media (min-width:600px){.qbl-modal{align-items:center;padding:16px;background:rgba(4,16,12,.82)}.qbl-sheet{height:min(94vh,860px);border-radius:24px;border:1px solid rgba(217,182,90,.35)}}';
+        document.head.appendChild(s);
+    }
+
+    // ---------- home card ----------
+    function renderTile() {
+        var box = $('qiblaCard'); if (!box || box.firstChild) return;
+        injectCSS();
+        box.innerHTML = '<button type="button" class="qbl-tile" id="qblOpen" aria-label="Qibla Finder"><i class="qi ic" data-qi="qibla"></i>' +
+            '<span class="mid"><b>Qibla Finder</b><small>Kaaba ki disha — compass se</small></span><span class="go">Kholein</span></button>';
+        $('qblOpen').onclick = openSheet;
+    }
+
+    // ---------- dial ----------
+    function dialSVG() {
+        var t = '', i, a, big;
+        for (i = 0; i < 360; i += 10) {
+            big = i % 30 === 0;
+            t += '<line x1="150" y1="' + (big ? 24 : 27) + '" x2="150" y2="' + (big ? 38 : 33) + '" stroke="#B8923A" stroke-width="' + (big ? 2.2 : 1.2) + '" transform="rotate(' + i + ' 150 150)"/>';
+        }
+        var card = [['N', 0, '#FF8A7A'], ['E', 90, '#F4EFD8'], ['S', 180, '#F4EFD8'], ['W', 270, '#F4EFD8']].map(function (c) {
+            return '<text x="150" y="96" text-anchor="middle" font-size="19" font-weight="700" fill="' + c[2] + '" transform="rotate(' + c[1] + ' 150 150)">' + c[0] + '</text>';
+        }).join('');
+        return '<svg viewBox="0 0 300 300" aria-hidden="true">' +
+            '<g id="qblDial"><circle class="qbl-ring" cx="150" cy="150" r="132"/>' + t + card +
+            '<g id="qblMark"><line x1="150" y1="150" x2="150" y2="62" stroke="#D9B65A" stroke-width="2" stroke-dasharray="4 5" opacity=".75"/>' +
+            '<g transform="translate(150,48)"><rect x="-13" y="-13" width="26" height="26" rx="4" fill="#0b0b0b" stroke="#D9B65A" stroke-width="1.6"/><rect x="-13" y="-6" width="26" height="4.5" fill="#D9B65A"/><rect x="2" y="-1" width="5" height="9" rx="1" fill="#D9B65A" opacity=".8"/></g></g></g>' +
+            '<path d="M150 6 l11 20 h-22z" fill="#E3C36E"/><circle cx="150" cy="150" r="5" fill="#E3C36E"/>' +
+            '</svg>';
+    }
+
+    // ---------- UI ----------
+    function setText(id, v) { var n = $(id); if (n && n.textContent !== v) n.textContent = v; }
+    function show() {
+        if (!el) return;
+        var has = !!res;
+        setText('qblAng', has ? Math.round(res.b) + '°' : '—');
+        setText('qblDist', has ? Math.round(res.d).toLocaleString('en-US') + ' km' : '—');
+        setText('qblLoc', loc ? (+loc.lat).toFixed(2) + ', ' + (+loc.lng).toFixed(2) : '—');
+        var mk = $('qblMark'); if (mk) mk.setAttribute('transform', 'rotate(' + (has ? res.b : 0) + ' 150 150)');
+    }
+    function setMsg(m, sub) { setText('qblMsg', m); setText('qblSub', sub || ''); }
+    function frame() {
+        raf = 0; if (!el) return;
+        var dial = $('qblDial');
+        if (heading != null && dial) {
+            // chhota rasta lekar dial ko naram tareeqe se ghumana
+            var d = ((heading - (shown == null ? heading : shown) + 540) % 360) - 180;
+            shown = shown == null ? heading : (shown + d * 0.35 + 360) % 360;
+            dial.setAttribute('transform', 'rotate(' + (-shown).toFixed(1) + ' 150 150)');
+            if (res) {
+                var delta = ((res.b - shown + 540) % 360) - 180, ok = Math.abs(delta) <= 4;
+                if (ok !== aligned) { aligned = ok; el.classList.toggle('qbl-ok', ok); if (ok && navigator.vibrate) { try { navigator.vibrate(35); } catch (e) {} } }
+                if (ok) setMsg('Qibla ki taraf ✓', '');
+                else setMsg(delta > 0 ? 'Daayein ghumein' : 'Baayein ghumein', Math.abs(Math.round(delta)) + '°');
+            }
+        }
+        raf = requestAnimationFrame(frame);
+    }
+    function onHeading(h) {
+        if (!isFinite(h)) return;
+        heading = (h % 360 + 360) % 360; sensor = 2;
+        if (timer) { clearTimeout(timer); timer = 0; }
+        var e = $('qblErr'); if (e) e.textContent = '';
+    }
+    function tilt(alpha, beta, gamma) {   // phone ke upar wale kinare ka rukh (flat), ya seedha khada ho to peeche (camera) ka rukh
+        var a = rad(alpha), b = rad(beta), g = rad(gamma), sa = Math.sin(a), ca = Math.cos(a), sb = Math.sin(b), cb = Math.cos(b), sg = Math.sin(g), cg = Math.cos(g), h;
+        if (Math.abs(cb) > 0.6) h = Math.atan2(-cb * sa, cb * ca);
+        else h = Math.atan2(-(sg * ca + cg * sb * sa), -(sg * sa - cg * sb * ca));
+        return (deg(h) + 360) % 360;
+    }
+    function onOrient(e) {
+        var h = null;
+        if (typeof e.webkitCompassHeading === 'number' && isFinite(e.webkitCompassHeading)) h = e.webkitCompassHeading;
+        else if ((e.absolute === true || e.type === 'deviceorientationabsolute') && e.alpha != null) h = tilt(e.alpha, e.beta || 0, e.gamma || 0);
+        if (h != null) onHeading(h);
+    }
+    function attach() {
+        if (sensor) return; sensor = 1;
+        ['deviceorientationabsolute', 'deviceorientation'].forEach(function (n) { window.addEventListener(n, onOrient, true); handlers.push(n); });
+        setMsg('Compass ka intezaar…', '');
+        timer = setTimeout(function () {
+            timer = 0; if (heading != null) return;
+            sensor = 0; setMsg('', '');
+            var e = $('qblErr'); if (e) e.textContent = 'Compass nahi mila ya ijazat band hai. Dial mein Uttar (N) upar hai aur Kaaba ka nishan Qibla ki disha batata hai.';
+        }, 3000);
+    }
+    function detach() { handlers.forEach(function (n) { window.removeEventListener(n, onOrient, true); }); handlers = []; if (timer) { clearTimeout(timer); timer = 0; } sensor = 0; }
+    function startCompass() {
+        var DOE = window.DeviceOrientationEvent;
+        if (DOE && typeof DOE.requestPermission === 'function') {
+            DOE.requestPermission().then(function (r) {
+                if (r === 'granted') attach();
+                else { var e = $('qblErr'); if (e) e.textContent = 'Compass ki ijazat nahi mili'; }
+            }).catch(function () { var e = $('qblErr'); if (e) e.textContent = 'Compass ki ijazat nahi mili'; });
+        } else attach();
+    }
+    function setLoc(l) {
+        loc = { lat: +(+l.lat).toFixed(4), lng: +(+l.lng).toFixed(4) };
+        lsSet('qbl_loc', JSON.stringify(loc)); res = calc(loc.lat, loc.lng); show();
+        var e = $('qblErr'); if (e) e.textContent = '';
+        if (sensor !== 2) setMsg('', '');
+    }
+    function getLoc() {
+        var e = $('qblErr'); if (e) e.textContent = '';
+        if (!navigator.geolocation) { if (e) e.textContent = 'Location ki ijazat nahi mili. Neeche apne shehar ke coordinates likhein.'; var d = $('qblMan'); if (d) d.open = true; return; }
+        setText('qblLoc', 'Location mil rahi hai…');
+        navigator.geolocation.getCurrentPosition(function (p) { setLoc({ lat: p.coords.latitude, lng: p.coords.longitude }); },
+            function () { show(); var e2 = $('qblErr'); if (e2) e2.textContent = 'Location ki ijazat nahi mili. Neeche apne shehar ke coordinates likhein.'; var d2 = $('qblMan'); if (d2) d2.open = true; },
+            { timeout: 12000, maximumAge: 600000 });
+    }
+    function manual() {
+        var v = ($('qblIn').value || '').replace(/[,;]/g, ' ').trim().split(/\s+/), lat = parseFloat(v[0]), lng = parseFloat(v[1]);
+        if (v.length < 2 || !validLoc({ lat: lat, lng: lng })) { $('qblErr').textContent = 'Coordinates sahi nahi (jaise 28.61, 77.20)'; return; }
+        setLoc({ lat: lat, lng: lng });
+    }
+
+    // ---------- sheet ----------
+    function openSheet() {
+        if (el) return;
+        injectCSS();
+        heading = null; shown = null; aligned = false; sensor = 0;
+        loc = savedLoc(); res = loc ? calc(+loc.lat, +loc.lng) : null;
+        el = document.createElement('div'); el.className = 'qbl-modal'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-modal', 'true'); el.setAttribute('aria-label', 'Qibla Finder');
+        el.innerHTML = '<div class="qbl-sheet">' +
+            '<div class="qbl-top"><button type="button" class="qbl-x" id="qblClose" aria-label="Band karein">×</button><h2>Qibla Finder</h2></div>' +
+            '<div class="qbl-dialwrap">' + dialSVG() + '</div>' +
+            '<div class="qbl-msg" id="qblMsg" aria-live="polite"></div><div class="qbl-sub" id="qblSub"></div>' +
+            '<div class="qbl-info"><div><small>Qibla ka zaavia (Uttar se)</small><b id="qblAng">—</b></div><div><small>Kaaba se doori</small><b id="qblDist">—</b></div><div><small>Aapki location</small><b id="qblLoc">—</b></div></div>' +
+            '<div class="qbl-err" id="qblErr" role="status"></div>' +
+            '<div class="qbl-btns"><button type="button" class="pri" id="qblComp">Compass shuru karein</button><button type="button" id="qblGeo">Location dobara lein</button></div>' +
+            '<details class="qbl-man" id="qblMan"><summary>Location haath se likhein</summary><div class="row"><input id="qblIn" inputmode="decimal" placeholder="jaise 28.61, 77.20" aria-label="Latitude, Longitude"><button type="button" id="qblSet">Set karein</button></div></details>' +
+            '<div class="qbl-note">Phone ko sidha (flat) rakhein, magnet ya dhatu se door. Compass theek na ho to phone ko 8 ki shakl mein ghumakar calibrate karein. Compass mein kuch degree ka farq ho sakta hai — agar aapke ilaqe ki masjid ya mehrab ka rukh maloom ho to usi ko tarjeeh dein.</div>' +
+            '</div>';
+        document.body.appendChild(el);
+        $('qblClose').onclick = function () { closeSheet(); };
+        $('qblComp').onclick = startCompass; $('qblGeo').onclick = getLoc; $('qblSet').onclick = manual;
+        $('qblIn').addEventListener('keydown', function (e) { if (e.key === 'Enter') manual(); });
+        try { history.pushState({ qbl: 1 }, ''); histOn = true; } catch (e) {}
+        show();
+        if (!loc) getLoc();
+        var DOE = window.DeviceOrientationEvent;
+        if (!(DOE && typeof DOE.requestPermission === 'function')) attach();   // Android: ijazat nahi chahiye; iPhone: button dabana zaroori
+        raf = requestAnimationFrame(frame);
+        if (window.QSLang && QSLang.paint) QSLang.paint();
+    }
+    function closeSheet(fromBack) {
+        if (!el) return;
+        detach(); if (raf) { cancelAnimationFrame(raf); raf = 0; }
+        el.remove(); el = null;
+        if (histOn && !fromBack) { ignorePop++; histOn = false; try { history.back(); } catch (e) { ignorePop--; } }
+        histOn = false;
+    }
+    window.addEventListener('popstate', function () { if (ignorePop > 0) { ignorePop--; return; } if (el) closeSheet(true); });
+    document.addEventListener('keydown', function (e) { if (el && e.key === 'Escape') closeSheet(); });
+    function init() { renderTile(); if (location.hash === '#qibla') setTimeout(function () { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} openSheet(); }, 500); }
+    window.FQQibla = { open: openSheet, calc: calc };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+
+;
+/* ───────────── ramadan.js (tools.js ke andar) — Ramadan Counter ─────────────
+   • Home par #ramadanCard: agle Ramadan mein kitne din baaki (Umm al-Qura hisaab, Intl se offline).
+   • Hijri.js ka ilaqa/±1 din wala shift istemaal hota hai (Bharat/Pakistan mein aam taur par 1 din baad).
+   • Ramadan chal raha ho to: kaun sa din + Eid mein kitne din. 4 zubaan: u / ro / hi / en. */
+(function () {
+    'use strict';
+    var TX = {
+        u:  { t: 'رمضان تک', left: function (n) { return n + ' دن باقی'; }, tom: 'کل سے رمضان شروع', today: 'آج رمضان کا پہلا دن!', inr: function (d, l) { return 'رمضان — دن ' + d + ' / ' + l; }, eid: function (n) { return 'عید میں تقریباً ' + n + ' دن'; }, note: function (x) { return 'تقریباً ' + x + ' • چاند کے مطابق ±۱ دن'; } },
+        ro: { t: 'Ramzan tak', left: function (n) { return n + ' din baaki'; }, tom: 'Kal se Ramzan shuru', today: 'Aaj Ramzan ka pehla din!', inr: function (d, l) { return 'Ramzan — din ' + d + ' / ' + l; }, eid: function (n) { return 'Eid mein ~' + n + ' din'; }, note: function (x) { return 'Taqreeban ' + x + ' • chaand ke hisaab se ±1 din'; } },
+        hi: { t: 'रमज़ान तक', left: function (n) { return n + ' दिन बाक़ी'; }, tom: 'कल से रमज़ान शुरू', today: 'आज रमज़ान का पहला दिन!', inr: function (d, l) { return 'रमज़ान — दिन ' + d + ' / ' + l; }, eid: function (n) { return 'ईद में ~' + n + ' दिन'; }, note: function (x) { return 'लगभग ' + x + ' • चाँद के हिसाब से ±1 दिन'; } },
+        en: { t: 'Until Ramadan', left: function (n) { return n + (n === 1 ? ' day left' : ' days left'); }, tom: 'Ramadan starts tomorrow', today: 'Ramadan begins today!', inr: function (d, l) { return 'Ramadan — day ' + d + ' of ' + l; }, eid: function (n) { return 'Eid in ~' + n + ' days'; }, note: function (x) { return 'About ' + x + ' • may shift ±1 day with moon sighting'; } }
+    };
+    var LOC = { u: 'ur-PK', ro: 'en-GB', hi: 'hi-IN', en: 'en-GB' };
+    var FALL = ['2027-02-08', '2028-01-28', '2029-01-16', '2030-01-06', '2030-12-26', '2031-12-15'];   // Umm al-Qura ke qareeb (Intl na ho to)
+    var styled = false;
+    function L() { return (window.QSLang && QSLang.get()) || 'u'; }
+    function umq(dt) {
+        try {
+            var p = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn', { day: 'numeric', month: 'numeric', year: 'numeric' }).formatToParts(dt), o = {};
+            p.forEach(function (x) { if (x.type === 'day' || x.type === 'month' || x.type === 'year') o[x.type] = parseInt(x.value, 10); });
+            if (o.day >= 1 && o.day <= 30 && o.month >= 1 && o.month <= 12 && o.year > 1300) return o;
+        } catch (e) {}
+        return null;
+    }
+    function shiftDays() { try { var t = window.FQHijri && FQHijri.today(); if (t && isFinite(t.shift)) return t.shift; } catch (e) {} return 0; }
+    function calc() {
+        var now = new Date(), base = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0), sh = shiftDays();
+        base.setDate(base.getDate() + sh);
+        var h0 = umq(base), j, d;
+        if (h0) {
+            if (h0.month === 9) {
+                for (j = 1; j <= 31; j++) { d = new Date(base); d.setDate(d.getDate() + j); var x = umq(d); if (x && x.month === 10 && x.day === 1) break; }
+                return { inRamadan: true, day: h0.day, len: h0.day + j - 1, eid: j };
+            }
+            for (j = 0; j <= 400; j++) {
+                d = new Date(base); d.setDate(d.getDate() + j); var y = umq(d);
+                if (y && y.month === 9 && y.day === 1) { var g = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0); g.setDate(g.getDate() + j); return { inRamadan: false, days: j, date: g }; }
+            }
+        }
+        // fallback: seedhi tareekh table
+        var t0 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0);
+        for (var i = 0; i < FALL.length; i++) {
+            var p = FALL[i].split('-'), td = new Date(+p[0], +p[1] - 1, +p[2], 12, 0, 0), diff = Math.round((td - t0) / 864e5);
+            if (diff >= 0) return { inRamadan: false, days: diff, date: td };
+            if (diff > -30) return { inRamadan: true, day: -diff + 1, len: 30, eid: 30 + diff };
+        }
+        return null;
+    }
+    function injectCSS() {
+        if (styled) return; styled = true;
+        var s = document.createElement('style'); s.id = 'rmzCss';
+        s.textContent = '#ramadanCard{grid-column:1/-1}' +
+            '.rmz-tile{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--border);border-radius:16px;background:var(--card-bg);box-shadow:var(--shadow);color:inherit}' +
+            '.rmz-tile .ic{font-size:30px;line-height:1;flex:0 0 auto}' +
+            '.rmz-tile .mid{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}' +
+            '.rmz-tile .mid b{font-size:15px}.rmz-tile .mid small{font-size:12px;color:var(--text-light);line-height:1.6}' +
+            '.rmz-tile .num{flex:0 0 auto;min-width:64px;text-align:center;padding:6px 10px;border-radius:12px;background:linear-gradient(180deg,#E3C36E,#C79E3F);color:#2A2008;font-weight:800;font-size:22px;line-height:1.1}' +
+            '.rmz-tile .num small{display:block;font-size:10px;font-weight:700;opacity:.8}';
+        document.head.appendChild(s);
+    }
+    function render() {
+        var box = document.getElementById('ramadanCard'); if (!box) return;
+        var l = L(), x = TX[l] || TX.u, c = calc(); if (!c) { box.innerHTML = ''; return; }
+        injectCSS();
+        var main, sub, num = '', unit = '';
+        if (c.inRamadan) { main = x.inr(c.day, c.len); sub = x.eid(c.eid); num = String(c.day); }
+        else if (c.days === 0) { main = x.today; sub = ''; num = '0'; }
+        else if (c.days === 1) { main = x.tom; sub = x.note(c.date.toLocaleDateString(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' })); num = '1'; }
+        else { main = x.left(c.days); sub = x.note(c.date.toLocaleDateString(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' })); num = String(c.days); }
+        box.innerHTML = '<div class="rmz-tile" dir="' + (l === 'u' ? 'rtl' : 'ltr') + '"><span class="ic">🌙</span><span class="mid"><b>' + (c.inRamadan ? (x.t === 'Until Ramadan' ? 'Ramadan' : x.t.replace(/ तक| تک| tak$/, '')) : x.t) + '</b><small>' + main + (sub ? '<br>' + sub : '') + '</small></span><span class="num">' + num + '</span></div>';
+    }
+    function init() { render(); if (window.QSLang && QSLang.onChange) QSLang.onChange(render); setInterval(render, 600000); document.addEventListener('visibilitychange', function () { if (!document.hidden) render(); }); }
+    window.FQRamadan = { calc: calc, render: render };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
