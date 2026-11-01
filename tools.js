@@ -1419,10 +1419,10 @@
 (function () {
     'use strict';
     var TX = {
-        u:  { t: 'رمضان تک', left: function (n) { return n + ' دن باقی'; }, tom: 'کل سے رمضان شروع', today: 'آج رمضان کا پہلا دن!', inr: function (d, l) { return 'رمضان — دن ' + d + ' / ' + l; }, eid: function (n) { return 'عید میں تقریباً ' + n + ' دن'; }, note: function (x) { return 'تقریباً ' + x + ' • چاند کے مطابق ±۱ دن'; } },
-        ro: { t: 'Ramzan tak', left: function (n) { return n + ' din baaki'; }, tom: 'Kal se Ramzan shuru', today: 'Aaj Ramzan ka pehla din!', inr: function (d, l) { return 'Ramzan — din ' + d + ' / ' + l; }, eid: function (n) { return 'Eid mein ~' + n + ' din'; }, note: function (x) { return 'Taqreeban ' + x + ' • chaand ke hisaab se ±1 din'; } },
-        hi: { t: 'रमज़ान तक', left: function (n) { return n + ' दिन बाक़ी'; }, tom: 'कल से रमज़ान शुरू', today: 'आज रमज़ान का पहला दिन!', inr: function (d, l) { return 'रमज़ान — दिन ' + d + ' / ' + l; }, eid: function (n) { return 'ईद में ~' + n + ' दिन'; }, note: function (x) { return 'लगभग ' + x + ' • चाँद के हिसाब से ±1 दिन'; } },
-        en: { t: 'Until Ramadan', left: function (n) { return n + (n === 1 ? ' day left' : ' days left'); }, tom: 'Ramadan starts tomorrow', today: 'Ramadan begins today!', inr: function (d, l) { return 'Ramadan — day ' + d + ' of ' + l; }, eid: function (n) { return 'Eid in ~' + n + ' days'; }, note: function (x) { return 'About ' + x + ' • may shift ±1 day with moon sighting'; } }
+        u:  { t: 'رمضان تک', left: function (n) { return n + ' دن باقی'; }, tom: 'کل سے رمضان شروع', today: 'آج رمضان کا پہلا دن!', inr: function (d, l) { return 'رمضان — دن ' + d + ' / ' + l; }, eid: function (n) { return 'عید میں تقریباً ' + n + ' دن'; }, note: function (x) { return 'تقریباً ' + x + ''; } },
+        ro: { t: 'Ramzan tak', left: function (n) { return n + ' din baaki'; }, tom: 'Kal se Ramzan shuru', today: 'Aaj Ramzan ka pehla din!', inr: function (d, l) { return 'Ramzan — din ' + d + ' / ' + l; }, eid: function (n) { return 'Eid mein ~' + n + ' din'; }, note: function (x) { return 'Taqreeban ' + x + ''; } },
+        hi: { t: 'रमज़ान तक', left: function (n) { return n + ' दिन बाक़ी'; }, tom: 'कल से रमज़ान शुरू', today: 'आज रमज़ान का पहला दिन!', inr: function (d, l) { return 'रमज़ान — दिन ' + d + ' / ' + l; }, eid: function (n) { return 'ईद में ~' + n + ' दिन'; }, note: function (x) { return 'लगभग ' + x + ''; } },
+        en: { t: 'Until Ramadan', left: function (n) { return n + (n === 1 ? ' day left' : ' days left'); }, tom: 'Ramadan starts tomorrow', today: 'Ramadan begins today!', inr: function (d, l) { return 'Ramadan — day ' + d + ' of ' + l; }, eid: function (n) { return 'Eid in ~' + n + ' days'; }, note: function (x) { return 'About ' + x + ''; } }
     };
     var LOC = { u: 'ur-PK', ro: 'en-GB', hi: 'hi-IN', en: 'en-GB' };
     var FALL = ['2027-02-08', '2028-01-28', '2029-01-16', '2030-01-06', '2030-12-26', '2031-12-15'];   // Umm al-Qura ke qareeb (Intl na ho to)
@@ -1463,7 +1463,9 @@
     function injectCSS() {
         if (styled) return; styled = true;
         var s = document.createElement('style'); s.id = 'rmzCss';
-        s.textContent = '#ramadanCard{grid-column:1/-1}' +
+        s.textContent = '.qr-row{grid-column:1/-1;display:flex;gap:10px;align-items:stretch}.qr-row>div{flex:1 1 0;min-width:0;display:flex}.qr-row .qbl-tile,.qr-row .rmz-tile{flex:1;flex-direction:column;align-items:flex-start;justify-content:center;gap:6px;padding:10px 12px;width:100%;min-height:104px}' +
+            '.qr-row .qbl-tile .go{display:none}.qr-row .qbl-tile .mid,.qr-row .rmz-tile .mid{width:100%}.qr-row .qbl-tile .mid small{font-size:11px;line-height:1.5}' +
+            '.qr-row .rmz-tile .top{display:flex;align-items:center;gap:6px;width:100%}.qr-row .rmz-tile .top b{font-size:14px;white-space:nowrap}.qr-row .rmz-tile .ic{font-size:24px}.qr-row .rmz-tile .num{margin-inline-start:auto;min-width:0;padding:4px 10px;font-size:20px}' +
             '.rmz-tile{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--border);border-radius:16px;background:var(--card-bg);box-shadow:var(--shadow);color:inherit}' +
             '.rmz-tile .ic{font-size:30px;line-height:1;flex:0 0 auto}' +
             '.rmz-tile .mid{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}' +
@@ -1481,7 +1483,7 @@
         else if (c.days === 0) { main = x.today; sub = ''; num = '0'; }
         else if (c.days === 1) { main = x.tom; sub = x.note(c.date.toLocaleDateString(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' })); num = '1'; }
         else { main = x.left(c.days); sub = x.note(c.date.toLocaleDateString(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' })); num = String(c.days); }
-        box.innerHTML = '<div class="rmz-tile" dir="' + (l === 'u' ? 'rtl' : 'ltr') + '"><span class="ic">🌙</span><span class="mid"><b>' + (c.inRamadan ? (x.t === 'Until Ramadan' ? 'Ramadan' : x.t.replace(/ तक| تک| tak$/, '')) : x.t) + '</b><small>' + main + (sub ? '<br>' + sub : '') + '</small></span><span class="num">' + num + '</span></div>';
+        box.innerHTML = '<div class="rmz-tile" dir="' + (l === 'u' ? 'rtl' : 'ltr') + '"><span class="top"><span class="ic">🌙</span><b>' + (c.inRamadan ? (x.t === 'Until Ramadan' ? 'Ramadan' : x.t.replace(/ तक| تک| tak$/, '')) : x.t) + '</b><span class="num">' + num + '</span></span><span class="mid"><small>' + main + (sub ? '<br>' + sub : '') + '</small></span></div>';
     }
     function init() { render(); if (window.QSLang && QSLang.onChange) QSLang.onChange(render); setInterval(render, 600000); document.addEventListener('visibilitychange', function () { if (!document.hidden) render(); }); }
     window.FQRamadan = { calc: calc, render: render };
