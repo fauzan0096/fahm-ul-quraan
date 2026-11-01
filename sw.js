@@ -5,7 +5,10 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v89 (kalima): Arkan — Chautha Kalima ab wahi jo Fajr ke baad ki hadees (Tirmidhi 3474) mein hai (lamba badhaya hua nahi); aakhir mein namaz ke baad 33·33·34 (Muslim 596) aur 100 poora karne ki riwayat (Muslim 597); Arkan pages ka install popup bhi 4 zubaan mein
+// v89: MERGE — v88 (aap ki line: Games 4-zubaan, Ramadan counter, Arkan/course fixes) + Qibla Finder (meri line)
 // v83: v82 + Games page 4 zubaanon mein (games-lang.js: KBC, Sahaba, Memory, Emoji, Bazm)
+// Qibla (pehle v83): Qibla Finder (home par card + sheet): Kaaba ka zaavia, compass (Android/iPhone), GPS ya haath se coordinates — poora offline, 4 zubaan mein (tools.js, icons.js, index.html)
 // v82: MERGE — v81 (v72–v78 ke saare features + har page ke title/icon/date 4 zubaan mein) + v79 ka Seerat (Din 1–34: islahat, hawale, 4-zubaan tarjuma)
 // Seerat ki alag line (pehle v72–v79 ke naam se) — seerat.js:
 // Seerat-line v79: Seerat Din 20-34 ki islahat + 4-zubaan (Urdu/Roman/Hindi/English) mukammal tarjuma, hawale aur ikhtilaf ke saath
@@ -73,7 +76,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v88';
+const CACHE_NAME = 'quran-ustad-auto-v89';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

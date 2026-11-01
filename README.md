@@ -1,5 +1,15 @@
 # 📖 Fahm-ul-Quran
 
+## 🔀 v89 — merge (v88 + Qibla Finder) + Chautha Kalima
+- **v88** (Games 4-zubaan `games-lang.js`, exam fix, Arkan/course fixes) aur **v83** (Qibla Finder) ko base v82 ke saath three-way merge kiya; sirf `sw.js` mein takrao tha.
+- **Chautha Kalima** (`arkan-kalima.html` + `arkan-lang.js`): ab sirf wahi alfaaz jo **Fajr ke baad** ki hadees mein hain (Tirmidhi 3474) — lambe mashhoor alfaaz nahi. Aakhir mein: namaz ke baad **سبحان اللہ ٣٣ — الحمد للہ ٣٣ — اللہ اکبر ٣٤** (Muslim 596) aur doosri riwayat: 33·33·33 ke baad **100 poora karne ke liye chautha kalima** (Muslim 597). Naye matn ke 4-zubaan tarjume `TR` mein (9301–9304, 203, 206).
+- Arkan / Nahw-Sarf pages par ab bhi engine band hai, sirf install popup 4 zubaan mein.
+
+## 🧭 v83 — Qibla Finder
+- Home par Tasbeeh ke neeche **Qibla Finder** card. Sheet mein dial, Kaaba ka nishan, Qibla ka zaavia (Uttar se), Kaaba se doori.
+- Hisaab (tools.js ke andar): Kaaba (21.4225°N, 39.8262°E) ki taraf great-circle ka shuruaati zaavia — offline. Compass: Android `deviceorientationabsolute`, iPhone `webkitCompassHeading` (button se ijazat). Location: GPS, ya haath se coordinates (`qbl_loc`; Namaz ki `ns_loc` ko chheda nahi jata).
+- Qibla ke 4 zubaan ke labels app.js ke `D` mein. API: `FQQibla.open()`, `FQQibla.calc(lat, lng)`.
+
 ## 🔀 v82 — merge (do lines ek hui)
 - **Base:** v78 ki line (v72–v78: SVG icons, 50-lafz exam, streak fix, Mushaf styles, Arkan muttafiq wording, course ki 7 misalon ki islah, audit fixes) + **4-zubaan kaam** (har page ke title/icon/tab/button/date; Quran/Games par language button).
 - **Seerat:** v79 ka `seerat.js` (Din 1–34: islahat, hawale, mukammal 4-zubaan tarjuma). Code dono mein ek jaisa tha, sirf data naya hai.

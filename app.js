@@ -1226,7 +1226,28 @@ if (!window.QS_LITE) {
         'se login karein, aapka progress mil jayega.': ['سے لاگ اِن کریں، آپ کی پروگریس مل جائے گی۔', 'से लॉग इन करें, आपकी प्रोग्रेस मिल जाएगी।', 'to get your progress back.'],
         'File khol kar Calendar mein "Add" dabayein — roz 20:00 par alarm bajega': ['فائل کھول کر کیلنڈر میں "Add" دبائیں — روز 20:00 بجے الارم بجے گا', 'फ़ाइल खोलकर कैलेंडर में "Add" दबाएँ — रोज़ 20:00 बजे अलार्म बजेगा', 'Open the file and tap "Add" in Calendar \u2014 the alarm will ring daily at 20:00'],
         'Apna': ['اپنا', 'अपना', 'Custom'],
-        'tap karein': ['ٹیپ کریں', 'टैप करें', 'tap']
+        'tap karein': ['ٹیپ کریں', 'टैप करें', 'tap'],
+        /* ---- Qibla Finder ---- */
+        'Qibla Finder': ['قبلہ نما', 'क़िब्ला फ़ाइंडर', 'Qibla Finder'],
+        'Kaaba ki disha — compass se': ['کعبہ کی سمت — کمپاس سے', 'काबा की दिशा — कंपास से', 'Direction of the Kaaba \u2014 by compass'],
+        'Kholein': ['کھولیں', 'खोलें', 'Open'],
+        'Compass shuru karein': ['کمپاس شروع کریں', 'कंपास शुरू करें', 'Start compass'],
+        'Location dobara lein': ['لوکیشن دوبارہ لیں', 'लोकेशन दोबारा लें', 'Refresh location'],
+        'Location mil rahi hai…': ['لوکیشن مل رہی ہے…', 'लोकेशन मिल रही है…', 'Getting location\u2026'],
+        'Compass ka intezaar…': ['کمپاس کا انتظار…', 'कंपास का इंतज़ार…', 'Waiting for compass\u2026'],
+        'Qibla ki taraf ✓': ['قبلہ کی طرف ✓', 'क़िब्ले की तरफ़ ✓', 'Facing the Qibla ✓'],
+        'Baayein ghumein': ['بائیں گھومیں', 'बाएँ घूमें', 'Turn left'],
+        'Daayein ghumein': ['دائیں گھومیں', 'दाएँ घूमें', 'Turn right'],
+        'Qibla ka zaavia (Uttar se)': ['قبلہ کا زاویہ (شمال سے)', 'क़िब्ले का कोण (उत्तर से)', 'Qibla angle (from North)'],
+        'Kaaba se doori': ['کعبہ سے فاصلہ', 'काबा से दूरी', 'Distance to the Kaaba'],
+        'Aapki location': ['آپ کی لوکیشن', 'आपकी लोकेशन', 'Your location'],
+        'Phone ko sidha (flat) rakhein, magnet ya dhatu se door. Compass theek na ho to phone ko 8 ki shakl mein ghumakar calibrate karein. Compass mein kuch degree ka farq ho sakta hai — agar aapke ilaqe ki masjid ya mehrab ka rukh maloom ho to usi ko tarjeeh dein.': ['فون کو سیدھا (فلیٹ) رکھیں، مقناطیس یا دھات سے دور۔ کمپاس ٹھیک نہ ہو تو فون کو 8 کی شکل میں گھما کر کیلیبریٹ کریں۔ کمپاس میں کچھ ڈگری کا فرق ہو سکتا ہے — اگر آپ کے علاقے کی مسجد یا محراب کا رخ معلوم ہو تو اسی کو ترجیح دیں۔', 'फ़ोन को सीधा (फ़्लैट) रखें, मैग्नेट या धातु से दूर। कंपास ठीक न हो तो फ़ोन को 8 की शक्ल में घुमाकर कैलिब्रेट करें। कंपास में कुछ डिग्री का फ़र्क़ हो सकता है — अगर आपके इलाक़े की मस्जिद या मेहराब का रुख़ मालूम हो तो उसी को तरजीह दें।', 'Hold the phone flat, away from magnets and metal. If the compass seems off, calibrate it by moving the phone in a figure 8. The compass can be off by a few degrees \u2014 if you know the direction of your local mosque\u2019s mihrab, prefer that.'],
+        'Compass nahi mila ya ijazat band hai. Dial mein Uttar (N) upar hai aur Kaaba ka nishan Qibla ki disha batata hai.': ['کمپاس نہیں ملا یا اجازت بند ہے۔ ڈائل میں شمال (N) اوپر ہے اور کعبہ کا نشان قبلہ کی سمت بتاتا ہے۔', 'कंपास नहीं मिला या इजाज़त बंद है। डायल में उत्तर (N) ऊपर है और काबा का निशान क़िब्ले की दिशा बताता है।', 'Compass not found or permission is off. On the dial, North (N) is at the top and the Kaaba mark shows the Qibla direction.'],
+        'Location ki ijazat nahi mili. Neeche apne shehar ke coordinates likhein.': ['لوکیشن کی اجازت نہیں ملی۔ نیچے اپنے شہر کے کوآرڈینیٹس لکھیں۔', 'लोकेशन की इजाज़त नहीं मिली। नीचे अपने शहर के कोऑर्डिनेट्स लिखें।', 'Location permission was not granted. Enter your city\u2019s coordinates below.'],
+        'Location haath se likhein': ['لوکیشن ہاتھ سے لکھیں', 'लोकेशन हाथ से लिखें', 'Enter location manually'],
+        'jaise 28.61, 77.20': ['مثلاً 28.61, 77.20', 'जैसे 28.61, 77.20', 'e.g. 28.61, 77.20'],
+        'Coordinates sahi nahi (jaise 28.61, 77.20)': ['کوآرڈینیٹس درست نہیں (مثلاً 28.61, 77.20)', 'कोऑर्डिनेट्स सही नहीं (जैसे 28.61, 77.20)', 'Invalid coordinates (e.g. 28.61, 77.20)'],
+        'Compass ki ijazat nahi mili': ['کمپاس کی اجازت نہیں ملی', 'कंपास की इजाज़त नहीं मिली', 'Compass permission was not granted']
     };
     var PAT = [
         [/^Day (\d+)$/, ['دن $1', 'दिन $1', 'Day $1']],
@@ -1295,7 +1316,7 @@ if (!window.QS_LITE) {
                '99 नामों की तफ़सीली फ़ेहरिस्त तिरमिज़ी और इब्ने माजा की रिवायतों में आती है (वलीद बिन मुस्लिम के तरीक़ से)। उलमा का इस पर इख़्तिलाफ़ है कि यह तफ़सीली फ़ेहरिस्त नबी ﷺ के अल्फ़ाज़ हैं या किसी रावी का इज़ाफ़ा, इसलिए यहाँ <b>मशहूर फ़ेहरिस्त</b> दी गई है। अल्लाह के नाम 99 तक महदूद नहीं। "इह्सा" (याद करना) के मानी उलमा ने गिन लेना, याद करना, समझना और तक़ाज़े पर अमल करना भी बयान किए हैं। कुछ नाम जोड़े की शक्ल में लिए जाते हैं (जैसे अल-मुइज़्ज़ / अल-मुज़िल्ल, अन-नाफ़ि / अद-दार्र), अकेले नहीं।',
                'The detailed list of the 99 names appears in the narrations of Tirmidhi and Ibn Majah (via Walid ibn Muslim). Scholars differ on whether this detailed list is the words of the Prophet ﷺ or an addition by a narrator, so the <b>well-known list</b> is given here. Allah’s names are not limited to 99. Scholars have also explained “ihsa” (memorising) as counting, memorising, understanding and acting upon what the names require. Some names are taken as pairs (such as Al-Mu’izz / Al-Mudhill, An-Nafi’ / Ad-Darr), not alone.']
     };
-    var NOAUTO = /arkan|arabic-grammar|privacy|terms|kill/.test(location.pathname);
+    var NOAUTO = /arkan|arabic-grammar/.test(location.pathname), NOALL = /privacy|terms|kill/.test(location.pathname);
     var REC = new WeakMap(), AREC = new WeakMap(), obs = null;
     var PRE = /^[^A-Za-z0-9(\u0600-\u06FF\u0900-\u097F]+/, CNT = /(\s*\(\d+(?:\/\d+)?\):?|\s*\u25BE)\s*$/;
     var ATTRS = ['title', 'placeholder', 'aria-label'];
@@ -1322,7 +1343,9 @@ if (!window.QS_LITE) {
         rec.s = nv;
     }
     function skipEl(p) {
-        return !p || /^(SCRIPT|STYLE|NOSCRIPT|TEXTAREA|CODE|TITLE)$/.test(p.tagName) || !!(p.closest && p.closest('[data-lb],[data-lbh],[data-noi18n],.ar,[contenteditable]'));
+        if (!p || /^(SCRIPT|STYLE|NOSCRIPT|TEXTAREA|CODE|TITLE)$/.test(p.tagName)) return true;
+        if (NOAUTO && !(p.closest && p.closest('#qsInst'))) return true;   // Arkan/Nahw-Sarf: sirf install popup mein engine chale
+        return !!(p.closest && p.closest('[data-lb],[data-lbh],[data-noi18n],.ar,[contenteditable]'));
     }
     function doAttrs(el, i) {
         if (skipEl(el)) return;
@@ -1358,7 +1381,7 @@ if (!window.QS_LITE) {
         for (var j = 0; j < els.length; j++) doAttrs(els[j], i);
     }
     function auto() {
-        if (NOAUTO || !document.body) return;
+        if (NOALL || !document.body) return;
         var i = idx3(get());
         walk(document.body, i);
         if (!obs && i >= 0 && window.MutationObserver) {
