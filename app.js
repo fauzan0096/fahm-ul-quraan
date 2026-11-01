@@ -32,6 +32,15 @@
     var DIAMONDS = svg('<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><g fill="none" stroke="#D4AF37" stroke-opacity=".16" stroke-width="1">' +
         '<path d="M32 4l28 28-28 28L4 32z"/><path d="M32 18l14 14-14 14-14-14z"/></g></svg>');
 
+
+    var WAVES = svg('<svg xmlns="http://www.w3.org/2000/svg" width="160" height="56"><g fill="none" stroke="#22D3EE" stroke-width="1.2"><path d="M0 22Q20 6 40 22T80 22T120 22T160 22" stroke-opacity=".34"/><path d="M0 40Q20 24 40 40T80 40T120 40T160 40" stroke-opacity=".20"/></g><g fill="#67E8F9"><circle cx="30" cy="8" r="1.6" fill-opacity=".51"/><circle cx="104" cy="50" r="1.3" fill-opacity=".42"/><circle cx="140" cy="10" r="1" fill-opacity=".51"/></g></svg>');
+    var ROSETTE = svg('<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88"><g transform="translate(44 44)" fill="none" stroke="#EC4899" stroke-opacity=".34" stroke-width="1"><ellipse rx="5" ry="17"/><ellipse rx="5" ry="17" transform="rotate(45)"/><ellipse rx="5" ry="17" transform="rotate(90)"/><ellipse rx="5" ry="17" transform="rotate(135)"/><circle r="3" fill="#E8B84A" fill-opacity=".77" stroke="none"/></g><g fill="#E8B84A" fill-opacity=".59"><circle cx="0" cy="0" r="2"/><circle cx="88" cy="0" r="2"/><circle cx="0" cy="88" r="2"/><circle cx="88" cy="88" r="2"/></g></svg>');
+    var DUNES = svg('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="72"><g fill="none" stroke="#B45309" stroke-width="1.2"><path d="M0 48C40 28 80 28 120 48S180 66 200 46" stroke-opacity=".31"/><path d="M0 64C40 46 90 46 130 62S185 70 200 62" stroke-opacity=".19"/></g><path d="M150 14l2.2 5.2 5.6.4-4.3 3.6 1.4 5.5-4.9-3-4.9 3 1.4-5.5-4.3-3.6 5.6-.4z" fill="#0F766E" fill-opacity=".37"/><circle cx="40" cy="12" r="1.6" fill="#D97706" fill-opacity=".59"/></svg>');
+    var MOONSTARS = svg('<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150"><path d="M34 22a15 15 0 1 0 13 23a12 12 0 1 1 -13 -23z" fill="#FACC15" fill-opacity=".51"/><g fill="#C4B5FD"><path d="M104 40l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill-opacity=".77"/><path d="M70 110l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6z" fill-opacity=".68"/><circle cx="125" cy="108" r="1.3" fill-opacity=".80"/><circle cx="18" cy="96" r="1.1" fill-opacity=".80"/><circle cx="82" cy="18" r="1" fill-opacity=".80"/></g></svg>');
+    var KHATAM = svg('<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"><g fill="none" stroke="#E5B94A" stroke-opacity=".34" stroke-width="1"><rect x="18" y="18" width="36" height="36"/><rect x="18" y="18" width="36" height="36" transform="rotate(45 36 36)"/><circle cx="36" cy="36" r="7"/></g><g fill="#E5B94A" fill-opacity=".42"><path d="M0 0l5 5-5 5-5-5z" transform="translate(0 0)"/><path d="M0 0l5 5-5 5-5-5z" transform="translate(72 0)"/><path d="M0 0l5 5-5 5-5-5z" transform="translate(0 72)"/><path d="M0 0l5 5-5 5-5-5z" transform="translate(72 72)"/></g></svg>');
+    var LATTICE = svg('<svg xmlns="http://www.w3.org/2000/svg" width="60" height="52"><g fill="none" stroke="#7C6CE0" stroke-opacity=".29" stroke-width="1"><circle cx="30" cy="26" r="30"/><circle cx="0" cy="0" r="30"/><circle cx="60" cy="0" r="30"/><circle cx="0" cy="52" r="30"/><circle cx="60" cy="52" r="30"/></g><circle cx="30" cy="26" r="1.6" fill="#E8B84A" fill-opacity=".80"/></svg>');
+    var CLOUDS = svg('<svg xmlns="http://www.w3.org/2000/svg" width="240" height="130"><g fill="#BAE6FD" fill-opacity=".77"><circle cx="50" cy="40" r="13"/><circle cx="66" cy="34" r="17"/><circle cx="86" cy="42" r="12"/><rect x="40" y="40" width="56" height="13" rx="6"/><circle cx="170" cy="96" r="10"/><circle cx="184" cy="91" r="14"/><circle cx="202" cy="98" r="9"/><rect x="162" y="96" width="48" height="11" rx="5"/></g><g fill="#FBBF24" fill-opacity=".77"><circle cx="212" cy="22" r="2"/><circle cx="20" cy="104" r="1.6"/></g></svg>');
+
     // ---------- Themes ----------
     // tone: 'light' | 'dark'   hdr: [header ka upar, neeche]   btn: [a, b, text] (sub-pages ke buttons)
     var THEMES = [
@@ -41,30 +50,31 @@
         { id: 'midnight', item: 'theme_midnight', tone: 'dark', icon: '🌊', name: 'Samundar (Deep Teal)', cost: 300,
           c: { p: '#0E7490', pd: '#042029', sec: '#F2C14E', gb: '#FCD34D', ink: '#ECFEFF', bg: '#05222B', card: '#0A3340', soft: '#0F4352', text: '#ECFEFF', tl: '#8FC6D3', border: '#165A6B', ar: '#CFFAFE' },
           hdr: ['#0E7490', '#0A3340'], btn: ['#F2C14E', '#D9A421', '#1F1600'],
-          deco: 'radial-gradient(ellipse at 50% -10%, rgba(34,211,238,.20), transparent 60%), radial-gradient(ellipse at 100% 100%, rgba(242,193,78,.10), transparent 55%)' },
+          pat: WAVES, deco: 'radial-gradient(ellipse at 50% -10%, rgba(34,211,238,.30), transparent 62%), radial-gradient(ellipse at 100% 105%, rgba(242,193,78,.14), transparent 55%), ' + WAVES },
         { id: 'royal', item: 'theme_royal', tone: 'light', icon: '🌸', name: 'Gulaab (Rose)', cost: 300,
           c: { p: '#BE185D', pd: '#831843', sec: '#C28A1B', gb: '#E8B84A', ink: '#4A0D2A', bg: '#FFF1F5', card: '#FFFFFF', soft: '#FCE7F0', text: '#3B0D22', tl: '#8A5470', border: '#F9C5D9', ar: '#831843' },
           hdr: ['#E11D75', '#BE185D'], btn: ['#EC4899', '#BE185D', '#FFFFFF'],
-          deco: 'radial-gradient(ellipse at 0% 0%, rgba(244,114,182,.18), transparent 55%), radial-gradient(ellipse at 100% 100%, rgba(232,184,74,.14), transparent 55%)' },
+          pat: ROSETTE, deco: 'radial-gradient(ellipse at 0% 0%, rgba(244,114,182,.26), transparent 55%), radial-gradient(ellipse at 100% 100%, rgba(232,184,74,.20), transparent 55%), ' + ROSETTE },
         { id: 'lightblue', item: 'theme_lightblue', tone: 'light', icon: '💧', name: 'Sky Blue Theme', cost: 250,
           c: { p: '#0284C7', pd: '#0369A1', sec: '#D98A0B', gb: '#FBBF24', ink: '#0F172A', bg: '#F0F9FF', card: '#FFFFFF', soft: '#E0F2FE', text: '#0F172A', tl: '#475569', border: '#BAE6FD', ar: '#0C4A6E' },
-          hdr: ['#0EA5E9', '#0284C7'], btn: ['#0EA5E9', '#0284C7', '#FFFFFF'] },
+          hdr: ['#0EA5E9', '#0284C7'], btn: ['#0EA5E9', '#0284C7', '#FFFFFF'],
+          pat: CLOUDS, deco: 'radial-gradient(ellipse at 50% -10%, rgba(56,189,248,.30), transparent 60%), radial-gradient(ellipse at 100% 100%, rgba(251,191,36,.14), transparent 55%), ' + CLOUDS },
         { id: 'amethyst', item: 'theme_amethyst', tone: 'dark', icon: '💜', name: 'Amethyst (Binafsha Raat)', cost: 350,
           c: { p: '#7C3AED', pd: '#150B2E', sec: '#F0B429', gb: '#FACC15', ink: '#F5F0FF', bg: '#150B2E', card: '#21134A', soft: '#2E1B66', text: '#F5F0FF', tl: '#B9A5E8', border: '#4C2F99', ar: '#F3E8FF' },
           hdr: ['#6D28D9', '#3B1A8A'], btn: ['#F0B429', '#D49A12', '#1F1300'],
-          deco: 'radial-gradient(ellipse at 50% -10%, rgba(167,139,250,.30), transparent 60%), radial-gradient(ellipse at 90% 100%, rgba(240,180,41,.10), transparent 55%)' },
+          pat: MOONSTARS, deco: 'radial-gradient(ellipse at 50% -8%, rgba(167,139,250,.42), transparent 62%), radial-gradient(ellipse at 90% 105%, rgba(240,180,41,.14), transparent 55%), ' + MOONSTARS },
         { id: 'emeraldgold', item: 'theme_emeraldgold', tone: 'dark', icon: '💚', name: 'Zamurrud-Sunehra (Emerald Gold)', cost: 400,
           c: { p: '#047857', pd: '#04170F', sec: '#E5B94A', gb: '#F3D77E', ink: '#ECFDF5', bg: '#04170F', card: '#0A2A1D', soft: '#12402D', text: '#ECFDF5', tl: '#86B9A2', border: '#1F5A40', ar: '#D1FAE5' },
           hdr: ['#059669', '#065F46'], btn: ['#E5B94A', '#C79E3F', '#1A1304'],
-          deco: 'radial-gradient(ellipse at 50% -10%, rgba(52,211,153,.20), transparent 60%), ' + DIAMONDS },
+          pat: KHATAM, deco: 'radial-gradient(ellipse at 50% -10%, rgba(52,211,153,.28), transparent 62%), radial-gradient(ellipse at 100% 105%, rgba(229,185,74,.14), transparent 55%), ' + KHATAM },
         { id: 'lavender', item: 'theme_lavender', tone: 'light', icon: '🪻', name: 'Lavender Subah', cost: 300,
           c: { p: '#6D5BD0', pd: '#4338A0', sec: '#C28A1B', gb: '#E8B84A', ink: '#1E1B4B', bg: '#F5F3FF', card: '#FFFFFF', soft: '#EDE9FE', text: '#1E1B4B', tl: '#5B5A8A', border: '#DDD6FE', ar: '#312E81' },
           hdr: ['#7C6CE0', '#6D5BD0'], btn: ['#7C6CE0', '#5B49BF', '#FFFFFF'],
-          deco: 'radial-gradient(ellipse at 100% 0%, rgba(167,139,250,.20), transparent 55%), radial-gradient(ellipse at 0% 100%, rgba(232,184,74,.12), transparent 55%)' },
+          pat: LATTICE, deco: 'radial-gradient(ellipse at 100% 0%, rgba(167,139,250,.30), transparent 55%), radial-gradient(ellipse at 0% 100%, rgba(232,184,74,.18), transparent 55%), ' + LATTICE },
         { id: 'jannah', item: 'theme_jannah', tone: 'light', rarity: 'rare', icon: '🏜️', name: 'Registan (Retila Sunehra)', cost: 350,
           c: { p: '#B45309', pd: '#78350F', sec: '#0F766E', gb: '#14B8A6', ink: '#3A2410', bg: '#FEF7E8', card: '#FFFFFF', soft: '#FDEBC8', text: '#3A2410', tl: '#7A5A3A', border: '#EBD2A0', ar: '#5A2E0A' },
           hdr: ['#D97706', '#B45309'], btn: ['#D97706', '#B45309', '#FFFFFF'],
-          deco: 'radial-gradient(ellipse at 0% 0%, rgba(251,191,36,.22), transparent 55%), radial-gradient(ellipse at 100% 100%, rgba(15,118,110,.10), transparent 55%)' },
+          pat: DUNES, deco: 'radial-gradient(ellipse at 0% 0%, rgba(251,191,36,.34), transparent 55%), radial-gradient(ellipse at 100% 100%, rgba(15,118,110,.14), transparent 55%), ' + DUNES },
 
         // ----- ✨ Special themes -----
         { id: 'qadr', item: 'theme_qadr', tone: 'dark', rarity: 'epic', icon: '🌌', name: 'Shab-e-Qadr ✨ (sitaron wali raat)', cost: 500,
@@ -94,6 +104,7 @@
                 '--shadow:' + (dark ? '0 1px 2px rgba(0,0,0,.45),0 8px 24px rgba(0,0,0,.4)' : '0 1px 2px rgba(10,46,36,.08),0 8px 24px rgba(10,46,36,.10)') + ';' +
                 '--hdr-a:' + t.hdr[0] + ';--hdr-b:' + t.hdr[1] + ';--btn-a:' + t.btn[0] + ';--btn-b:' + t.btn[1] + ';--btn-text:' + t.btn[2] + ';' +
                 '--kbc-bg:' + c.pd + ';--kbc-gold:' + c.gb + ';' +
+                (t.pat ? '--star:' + t.pat + ';' : '') +
                 (t.deco ? 'background-image:' + t.deco + ';background-attachment:fixed;' : '') +
                 '}\n';
         });

@@ -5,6 +5,7 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v93: Shop themes designer backgrounds: Samundar (lehrein), Gulaab (rosette), Amethyst (chaand-taare), Zamurrud (khatam geometry), Lavender (lattice), Registan (dunes), Sky Blue (badal); Kaaba + Shab-e-Qadr waise hi
 // v92: Quran page (padhna) mein alfaz ka Patla/Mota option (6 darje, yaad rehta hai)
 // v91: Shop themes naye (9): Sky Blue, Kaaba (Kaala-Sunehra), Shab-e-Qadr waise hi; baaki naye rang; Home par Qibla + Ramadan ek hi line mein, upar ke 9 buttons pehle jaise
 // v90: Namaz ke baad tasbih 33·33·34 (Arkan fazail, 4 zubaan); Quran page se naqshi side-patti hata kar saaf Indo-Pak jaisa frame + ruku ع kinare par; Qibla Finder home ke quick-nav aur Quran header se; Home par Ramadan counter (ramadan.js tools.js ke andar)
