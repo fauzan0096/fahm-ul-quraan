@@ -5,6 +5,8 @@
 // Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
 // ==========================================
 
+// v95: MERGE — v94 + Dua/Arkan/Games ki ilmi aur imla ki islaah (ek hi mauqif, tootay alfaz theek, Arabic quotes sahi)
+// v94: Theme naam 4 zubaan; Qibla+Ramadan tile ek jaisa; Quran Patla/Mota 4 zubaan; ruku page ki taraf (taaq page = right, juft = left)
 // v93: Shop themes designer backgrounds: Samundar (lehrein), Gulaab (rosette), Amethyst (chaand-taare), Zamurrud (khatam geometry), Lavender (lattice), Registan (dunes), Sky Blue (badal); Kaaba + Shab-e-Qadr waise hi
 // v92: Quran page (padhna) mein alfaz ka Patla/Mota option (6 darje, yaad rehta hai)
 // v91: Shop themes naye (9): Sky Blue, Kaaba (Kaala-Sunehra), Shab-e-Qadr waise hi; baaki naye rang; Home par Qibla + Ramadan ek hi line mein, upar ke 9 buttons pehle jaise
@@ -80,7 +82,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v89';
+const CACHE_NAME = 'quran-ustad-auto-v95';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
