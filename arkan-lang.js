@@ -42,6 +42,6 @@ function apply(){
     e2.innerHTML=refs2.map(function(r){return '<span class="ref">'+ref(r,k)+'</span>';}).join(''); }
   document.documentElement.setAttribute('lang',{u:'ur',ro:'ur-Latn',hi:'hi',en:'en',mr:'mr',ar:'ar',fr:'fr',es:'es'}[xc||['u','ro','hi','en'][l]]||'en');
 }
-function z(key,a,b){var s=Z[key][LI()];s=s.replace('%s',a);if(b!==undefined)s=s.replace('%g',b);return s;}
+function z(key,a,b){var X=window.ARKAN_Z,xc=XCUR();var s=(X&&X[key]&&xc&&X[key][xc])||Z[key][LI()];s=s.replace('%s',a);if(b!==undefined)s=s.replace('%g',b);return s;}
 window.ArkanI18n={apply:apply,z:z,ref:ref};
 })();
