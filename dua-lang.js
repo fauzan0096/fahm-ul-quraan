@@ -592,3 +592,192 @@ Object.assign(window.FQ_DUA_LANG, {
 });
 
 if (window.FQDuaLangApply) window.FQDuaLangApply();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Namaz ki duaein (46 – 59)
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_DUA_LANG, {
+
+  "Tahajjud / Qiyam-ul-Layl": {
+    t: { mr: "तहज्जुद / कयाम-उल-लैल", ar: "التهجد / قيام الليل", fr: "Tahajjud / Qiyâm al-layl", es: "Tahayyud / Qiyam al-layl" },
+    m: { mr: "फर्जानंतर सर्वोत्तम नमाज रात्रीची नमाज आहे.",
+         ar: "أفضل الصلاة بعد الفريضة صلاة الليل.",
+         fr: "La meilleure prière après les obligatoires est celle de la nuit.",
+         es: "La mejor oración después de las obligatorias es la de la noche." },
+    f: { mr: "रात्रीच्या शेवटच्या तिसऱ्या भागात अल्लाहच्या विशेष दयेची वेळ असते.",
+         ar: "في الثلث الأخير من الليل وقت رحمة الله الخاصة.",
+         fr: "Dans le dernier tiers de la nuit se trouve un temps de miséricorde particulière d'Allah.",
+         es: "En el último tercio de la noche hay un tiempo de misericordia especial de Alá." }
+  },
+
+  "Tarawih (Qiyam-e-Ramadan)": {
+    t: { mr: "तरावीह (कयाम-ए-रमजान)", ar: "التراويح (قيام رمضان)", fr: "Tarâwîh (qiyâm de Ramadan)", es: "Tarawih (qiyam de Ramadán)" },
+    m: { mr: "जो रमजानमध्ये ईमान आणि मोबदल्याच्या नियतीने रात्रीची नमाज वाचेल, त्याची पूर्वीची पापे माफ केली जातात.",
+         ar: "من قام رمضان إيمانًا واحتسابًا غُفر له ما تقدم من ذنبه.",
+         fr: "Celui qui prie la nuit en Ramadan par foi et en espérant la récompense, ses péchés passés sont pardonnés.",
+         es: "Quien ore de noche en Ramadán con fe y buscando recompensa, se le perdonan sus pecados anteriores." },
+    f: { mr: "रमजानमधील रात्रीची नमाज.",
+         ar: "صلاة الليل في رمضان.",
+         fr: "La prière de nuit pendant le Ramadan.",
+         es: "La oración nocturna durante el Ramadán." }
+  },
+
+  "Salat-ud-Duha (Chasht)": {
+    t: { mr: "सलात-उद-दुहा (चाश्त)", ar: "صلاة الضحى", fr: "Salât ad-Duhâ (châsht)", es: "Salat ad-Duha (chasht)" },
+    m: { mr: "प्रत्येक सांध्याच्या दानाऐवजी दोन रकअत पुरेशा आहेत.",
+         ar: "ويجزئ من ذلك ركعتان يركعهما من الضحى.",
+         fr: "Deux rak'ahs de Duha suffisent pour cela.",
+         es: "Dos rakas de Duha bastan para ello." },
+    f: { mr: "सूर्य उंच आल्यानंतर, झिजवण्यापूर्वी वाचली जाते.",
+         ar: "تُصلى بعد ارتفاع الشمس وقبل الزوال.",
+         fr: "On la prie après que le soleil s'est élevé, avant la déclinaison.",
+         es: "Se reza tras elevarse el sol, antes del mediodía." }
+  },
+
+  "Tahiyyat-ul-Masjid": {
+    t: { mr: "तहिय्यत-उल-मस्जिद", ar: "تحية المسجد", fr: "Tahiyyat al-masjid", es: "Tahiyyat al-masjid" },
+    m: { mr: "तुमच्यापैकी जो मशिदीत प्रवेश करेल, त्याने बसण्यापूर्वी दोन रकअत वाचाव्यात.",
+         ar: "إذا دخل أحدكم المسجد فلا يجلس حتى يصلي ركعتين.",
+         fr: "Quand l'un de vous entre à la mosquée, qu'il ne s'asseye pas avant d'avoir prié deux rak'ahs.",
+         es: "Cuando uno de vosotros entre en la mezquita, que no se siente hasta haber rezado dos rakas." },
+    f: { mr: "मशिदीचा हक्क.",
+         ar: "حق المسجد.",
+         fr: "C'est le droit de la mosquée.",
+         es: "Es el derecho de la mezquita." }
+  },
+
+  "Tahiyyat-ul-Wudu": {
+    t: { mr: "तहिय्यत-उल-वुजू", ar: "تحية الوضوء", fr: "Tahiyyat al-wudû", es: "Tahiyyat al-wudu" },
+    m: { mr: "वुजूनंतर दोन रकअत वाचणे हा हजरत बिलाल र.अ. यांचा नित्यक्रम होता.",
+         ar: "كان من عادة بلال رضي الله عنه أن يصلي ركعتين بعد الوضوء.",
+         fr: "Prier deux rak'ahs après les ablutions était l'habitude de Bilal.",
+         es: "Rezar dos rakas tras el wudu era la costumbre de Bilal." },
+    f: { mr: "ज्यावर नबी ﷺ यांनी त्यांना जन्नतची खुशखबर दिली.",
+         ar: "وبشره النبي ﷺ بسببها بالجنة.",
+         fr: "C'est pour cela que le Prophète ﷺ lui annonça le Paradis.",
+         es: "Por ello el Profeta ﷺ le anunció el Paraíso." }
+  },
+
+  "Maghrib se pehle 2 rak'at": {
+    t: { mr: "मगरिबपूर्वी २ रकअत", ar: "ركعتان قبل المغرب", fr: "Deux rak'ahs avant Maghrib", es: "Dos rakas antes de Maghrib" },
+    m: { mr: "मगरिबपूर्वी नमाज वाचा (जो वाचू इच्छितो).",
+         ar: "صلوا قبل المغرب (لمن شاء).",
+         fr: "Priez avant Maghrib (pour qui le veut).",
+         es: "Rezad antes de Maghrib (quien quiera)." },
+    f: { mr: "ही सुन्नत-ए-गैर-मुअक्कदा आहे.",
+         ar: "هي سنة غير مؤكدة.",
+         fr: "C'est une sunna non confirmée.",
+         es: "Es una sunna no confirmada." }
+  },
+
+  "Salat-ut-Taubah": {
+    t: { mr: "सलात-उत-तौबा", ar: "صلاة التوبة", fr: "Salât at-tawbah", es: "Salat at-tawba" },
+    m: { mr: "जो पाप करेल, नंतर वुजू करून दोन रकअत वाचेल आणि क्षमा मागेल, अल्लाह त्याला माफ करतो.",
+         ar: "ما من عبد يذنب ذنبًا ثم يتوضأ ويصلي ركعتين ويستغفر الله إلا غفر الله له.",
+         fr: "Quiconque commet un péché, puis fait ses ablutions, prie deux rak'ahs et demande pardon à Allah, Allah lui pardonne.",
+         es: "Quien cometa un pecado, luego haga el wudu, rece dos rakas y pida perdón a Alá, Alá le perdona." },
+    f: { mr: "तौब्याची नमाज.",
+         ar: "صلاة التوبة.",
+         fr: "La prière du repentir.",
+         es: "La oración del arrepentimiento." }
+  },
+
+  "Jumu'ah ki namaz": {
+    t: { mr: "जुम्माची नमाज", ar: "صلاة الجمعة", fr: "La prière du vendredi", es: "La oración del viernes" },
+    m: { mr: "जुम्माच्या दिवशी नमाजसाठी हाक दिली जाईल तेव्हा अल्लाहच्या स्मरणाकडे धावा.",
+         ar: "إذا نودي للصلاة من يوم الجمعة فاسعوا إلى ذكر الله.",
+         fr: "Quand l'appel à la prière est fait le vendredi, accourez au rappel d'Allah.",
+         es: "Cuando se llame a la oración del viernes, acudid al recuerdo de Alá." },
+    f: { mr: "पुरुषांवर फर्ज आहे.",
+         ar: "فرض على الرجال.",
+         fr: "Elle est obligatoire pour les hommes.",
+         es: "Es obligatoria para los hombres." }
+  },
+
+  "Eidain ki namaz": {
+    t: { mr: "ईदैनची नमाज", ar: "صلاة العيدين", fr: "La prière des deux Aïd", es: "La oración de las dos Fiestas" },
+    m: { mr: "नबी ﷺ ईदच्या दिवशी ईदगाहीत जात असत, प्रथम नमाज वाचत आणि नंतर खुतबा देत.",
+         ar: "كان النبي ﷺ يخرج يوم العيد فيصلي ثم يخطب.",
+         fr: "Le Prophète ﷺ sortait le jour de l'Aïd, priait puis prononçait le sermon.",
+         es: "El Profeta ﷺ salía el día de la fiesta, oraba y luego pronunciaba el sermón." },
+    f: { mr: "ईदची नमाज.",
+         ar: "صلاة العيد.",
+         fr: "La prière de l'Aïd.",
+         es: "La oración de la fiesta." }
+  },
+
+  "Namaz-e-Janazah": {
+    t: { mr: "नमाज-ए-जनाजा", ar: "صلاة الجنازة", fr: "La prière funéraire", es: "La oración funeraria" },
+    m: { mr: "जो जनाज्यासोबत जाईल त्याला एक किराताचा मोबदला आहे.",
+         ar: "من تبع جنازة فله قيراط من الأجر.",
+         fr: "Celui qui suit un convoi funèbre obtient un qîrât de récompense.",
+         es: "Quien acompaña un funeral obtiene un quirat de recompensa." },
+    f: { mr: "फर्ज-ए-किफाया.",
+         ar: "فرض كفاية.",
+         fr: "Obligation collective (fard kifâya).",
+         es: "Obligación colectiva (fard kifaya)." }
+  },
+
+  "Namaz-e-Kusuf": {
+    t: { mr: "नमाज-ए-कुसूफ (ग्रहणाची नमाज)", ar: "صلاة الكسوف", fr: "La prière de l'éclipse", es: "La oración del eclipse" },
+    m: { mr: "सूर्य आणि चंद्र अल्लाहची चिन्हे आहेत; ग्रहण लागल्यास नमाज वाचा, दुआ करा आणि दान द्या.",
+         ar: "إن الشمس والقمر آيتان من آيات الله، فإذا رأيتم ذلك فصلوا وادعوا وتصدقوا.",
+         fr: "Le soleil et la lune sont deux signes d'Allah ; quand vous les voyez ainsi, priez, invoquez et faites l'aumône.",
+         es: "El sol y la luna son dos signos de Alá; cuando veáis eso, orad, suplicad y dad caridad." },
+    f: { mr: "ग्रहणाची नमाज.",
+         ar: "صلاة الكسوف.",
+         fr: "La prière de l'éclipse.",
+         es: "La oración del eclipse." }
+  },
+
+  "Namaz-e-Istisqa": {
+    t: { mr: "नमाज-ए-इस्तिस्का (पावसाची नमाज)", ar: "صلاة الاستسقاء", fr: "La prière de la pluie", es: "La oración de la lluvia" },
+    m: { mr: "नबी ﷺ पावसाच्या दुआसाठी मैदानात गेले, किबल्याकडे तोंड केले, चादर उलटली आणि दोन रकअत वाचल्या.",
+         ar: "خرج النبي ﷺ يستسقي فاستقبل القبلة وقلب رداءه وصلى ركعتين.",
+         fr: "Le Prophète ﷺ sortit pour implorer la pluie, se tourna vers la qibla, retourna son manteau et pria deux rak'ahs.",
+         es: "El Profeta ﷺ salió a pedir lluvia, se orientó a la qibla, volvió su manto y rezó dos rakas." },
+    f: { mr: "पावसाची नमाज.",
+         ar: "صلاة الاستسقاء.",
+         fr: "La prière de la pluie.",
+         es: "La oración de la lluvia." }
+  },
+
+  "Safar mein namaz ka qasr": {
+    t: { mr: "प्रवासात नमाजचा कसर (कमी करणे)", ar: "قصر الصلاة في السفر", fr: "Le raccourcissement de la prière en voyage", es: "Acortar la oración en viaje" },
+    m: { mr: "हे असे दान आहे जे अल्लाहने तुमच्यावर केले आहे, ते स्वीकारा.",
+         ar: "صدقة تصدق الله بها عليكم فاقبلوا صدقته.",
+         fr: "C'est une aumône qu'Allah vous a faite : acceptez-la.",
+         es: "Es una caridad que Alá os ha concedido: aceptadla." },
+    f: { mr: "प्रवासात चार रकअतींऐवजी दोन रकअत.",
+         ar: "في السفر تُصلى الرباعية ركعتين.",
+         fr: "En voyage, les prières de quatre rak'ahs se font en deux.",
+         es: "En viaje, las oraciones de cuatro rakas se hacen en dos." }
+  },
+
+  "Nafl namaz ghar mein": {
+    t: { mr: "घरी नफल नमाज", ar: "صلاة النافلة في البيت", fr: "La prière surérogatoire à la maison", es: "La oración voluntaria en casa" },
+    m: { mr: "आपल्या घरांमध्ये नमाज वाचा, कारण माणसाची सर्वोत्तम नमाज ती आहे जी तो आपल्या घरी वाचतो (फर्ज सोडून).",
+         ar: "صلوا في بيوتكم، فإن أفضل صلاة المرء في بيته إلا المكتوبة.",
+         fr: "Priez dans vos maisons, car la meilleure prière de l'homme est celle qu'il fait chez lui, sauf les obligatoires.",
+         es: "Orad en vuestras casas, pues la mejor oración del hombre es la que hace en su casa, salvo las obligatorias." },
+    f: { mr: "घरी नफल वाचण्याचे फजीलत.",
+         ar: "فضل صلاة النافلة في البيت.",
+         fr: "Le mérite de la prière surérogatoire à la maison.",
+         es: "El mérito de la oración voluntaria en casa." }
+  },
+
+  "Salat-ul-Istikhara ka tareeqa": {
+    t: { mr: "सलात-उल-इस्तिखाराची पद्धत", ar: "صفة صلاة الاستخارة", fr: "La manière de la prière d'istikhâra", es: "La forma de la oración de istijara" },
+    m: { mr: "हे अल्लाह! मी तुझ्या ज्ञानाच्या आधारे तुझ्याकडून भले मागतो, तुझ्या सामर्थ्याने शक्ती मागतो आणि तुझ्या महान कृपेची मागणी करतो; तू सामर्थ्यवान आहेस आणि मी नाही, तू जाणतोस आणि मी जाणत नाही, आणि तू गुप्त गोष्टी जाणणारा आहेस. हे अल्लाह! जर हे काम माझ्या दीन, माझ्या जगण्यात आणि माझ्या कामाच्या परिणामात माझ्यासाठी चांगले असेल, तर ते माझ्यासाठी ठरव, माझ्यासाठी सोपे कर आणि त्यात बरकत दे. आणि जर हे काम वाईट असेल, तर ते माझ्यापासून दूर कर आणि मला त्यापासून दूर ठेव; आणि जिथे असेल तिथे माझ्यासाठी भले ठरव, नंतर मला त्यावर राजी कर.",
+         ar: "اللهم إني أستخيرك بعلمك، وأستقدرك بقدرتك، وأسألك من فضلك العظيم، فإنك تقدر ولا أقدر، وتعلم ولا أعلم، وأنت علام الغيوب. اللهم إن كنت تعلم أن هذا الأمر خير لي في ديني ومعاشي وعاقبة أمري فاقدره لي ويسره لي ثم بارك لي فيه، وإن كنت تعلم أن هذا الأمر شر لي في ديني ومعاشي وعاقبة أمري فاصرفه عني واصرفني عنه، واقدر لي الخير حيث كان ثم أرضني به.",
+         fr: "Ô Allah, je Te demande de choisir pour moi par Ton savoir, je Te demande la capacité par Ta puissance, et je Te demande de Ton immense faveur. Tu peux et je ne peux pas, Tu sais et je ne sais pas, et Tu connais l'invisible. Ô Allah, si cette affaire m'est bonne dans ma religion, ma vie et son issue, destine-la-moi, facilite-la-moi et bénis-la pour moi. Si elle m'est mauvaise, écarte-la de moi et écarte-moi d'elle, et destine-moi le bien où qu'il soit, puis rends-moi satisfait de lui.",
+         es: "Oh Alá, Te pido que elijas por mí con Tu conocimiento, Te pido capacidad con Tu poder y Te pido de Tu inmenso favor. Tú puedes y yo no puedo, Tú sabes y yo no sé, y Tú conoces lo oculto. Oh Alá, si este asunto me es bueno en mi religión, mi vida y su resultado, decrétalo para mí, facilítamelo y bendícelo. Si me es malo, apártalo de mí y apártame de él, y decrétame el bien donde esté, y luego hazme complacido con él." },
+    f: { mr: "ज्या कामाचा निर्णय करायचा असेल त्यासाठी दोन रकअत वाचून ही दुआ वाचली जाते.",
+         ar: "تُصلى ركعتان ثم تُقال هذه الدعاء في الأمر الذي يُستخار فيه.",
+         fr: "On prie deux rak'ahs puis on récite cette doua pour l'affaire concernée.",
+         es: "Se rezan dos rakas y luego se recita esta dua por el asunto en cuestión." }
+  }
+});
+
+if (window.FQDuaLangApply) window.FQDuaLangApply();
