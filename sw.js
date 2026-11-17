@@ -92,10 +92,10 @@
 // v99: Aaj ki Ayat + Sunnat ka 4-zubaan tarjuma (daily-lang.js) — app ka ek hi language button
 //      (اردو / Roman / हिंदी / English) ab in dono ka tarjuma bhi badalta hai (pehle sirf heading badalti thi).
 //      daily-lang.js core shell mein hai, is liye offline bhi chalta hai.
-// v105: DUAEIN MUKAMMAL — dua-lang.js mein saari 138 duaein (namaz 59, subah-sham 19, mushkil 7, bimari 3,
-//       sone 5, roz marra 26, ruqya 19) ka naam, matlab aur tafseel मराठी / العربية / Français / Español mein.
-//       Arabi dua ka matn waisa hi rehta hai — sirf tarjuma badalta hai.
-const CACHE_NAME = 'quran-ustad-auto-v105';
+// v106: ARKAN-E-ISLAM — naya arkan-extra.js: Kalima ka poora page (kalmay, iman-e-mufassal, sharaa'it,
+//       fazail) मराठी / العربية / Français / Español mein. arkan-lang.js pehle wahan dekhta hai, warna
+//       English. Nayi zubaan par arkan-i18n.js ka hash-engine band rehta hai (warna Urdu par gir jata).
+const CACHE_NAME = 'quran-ustad-auto-v106';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -166,6 +166,7 @@ const ASSETS = [
     './arkan.css',
     './arkan.js',
     './arkan-lang.js',
+    './arkan-extra.js',
     './arkan-i18n.js',
     './grammar-course.js',
     './icons.js',

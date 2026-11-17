@@ -42,7 +42,9 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 **Duaein (mukammal):** `dua-lang.js` — saari **138 duaein** (namaz 59, subah-sham azkar 19, mushkil 7, bimari 3, sone 5, roz marra 26, ruqya 19) ka **naam, matlab aur tafseel** मराठी / العربية / Français / Español mein. Entry dua ke **naam** se judi hai (tarteeb badalne se bhi sahi dua milti hai), aur `duaTr` mein `title_xx / urdu_xx / tafseel_xx` bhar deti hai. Arabi dua ka matn waisa hi rehta hai — sirf tarjuma badalta hai.
 
-**Abhi baaki (content-level tarjuma):** tajweed ke 38 qawaid, Arkan (`arkan-lang.js`) aur Seerat (`seerat.js`) — inka matn sirf 4 zubaanoN mein hai; nayi 4 zubaanoN par yeh **English** dikhate hain.
+**Arkan-e-Islam (chal raha hai):** `arkan-extra.js` — Arkan pages ka tarjuma मराठी / العربية / Français / Español mein, `data-i` id se juda hua. `arkan-lang.js` ka `apply()` pehle yahan dekhta hai; jo id yahan na ho wahan English. Ab tak **Kalima ka poora page** (chaar kalmay, iman-e-mufassal, sharaa'it, fazail). Nayi zubaan par `arkan-i18n.js` ka hash-engine band rehta hai.
+
+**Abhi baaki (content-level tarjuma):** tajweed ke 38 qawaid aur Seerat (`seerat.js`) — inka matn sirf 4 zubaanoN mein hai; nayi 4 zubaanoN par yeh **English** dikhate hain.
 
 **Course ke lafz (mukammal):** `course-lang.js` — **Day 1–90, saare 900 lafz** ka matlab + mashq ki tafseel chaar zubaanoN mein (मराठी · العربية · Français · Español). Har entry `"عربی لفظ"` se judi hai; yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Kisi lafz ka tarjuma theek karna ho to sirf usi entry ko badlein — baaki par asar nahi. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
 

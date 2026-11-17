@@ -93,12 +93,14 @@
     var b = document.querySelectorAll('header .icon-btn[href]');
     for (var i = 0; i < b.length; i++) b[i].textContent = lang === 'u' ? '→' : '←';
   }
+  var XLANG = { mr: 1, ar: 1, fr: 1, es: 1 };
   function setDir(lang) {
     var de = document.documentElement;
     de.setAttribute('data-mlang', lang);
-    de.setAttribute('lang', lang === 'u' ? 'ur' : lang === 'hi' ? 'hi' : 'en');
-    de.setAttribute('dir', lang === 'u' ? 'rtl' : 'ltr');
-    document.body.setAttribute('dir', lang === 'u' ? 'rtl' : 'ltr');
+    de.setAttribute('lang', lang === 'u' ? 'ur' : lang === 'hi' ? 'hi' : lang === 'mr' ? 'mr' : lang === 'ar' ? 'ar' : lang === 'fr' ? 'fr' : lang === 'es' ? 'es' : 'en');
+    var rtl = (lang === 'u' || lang === 'ar');
+    de.setAttribute('dir', rtl ? 'rtl' : 'ltr');
+    document.body.setAttribute('dir', rtl ? 'rtl' : 'ltr');
   }
   var applied = 'u';
   function apply(lang) {
@@ -120,7 +122,9 @@
   }
   function refresh() {
     var lang = getLang();
-    // Arkan ka tarjuma sirf 4 zubaanon mein hai — nayi zubaan (mr/ar/fr/es) par English
+    // Nayi zubaan (mr/ar/fr/es): tarjuma arkan-extra.js se — arkan-lang.js lagata hai.
+    // Yahan sirf disha/font set karke ruk jate hain, warna hash-engine Urdu/English par gir jata.
+    if (XLANG[lang]) { setDir(lang); arrowFix(lang); return; }
     if (LANGS.indexOf(lang) < 0) lang = 'en';
     if (lang === 'u') { if (applied !== 'u' || document.documentElement.getAttribute('dir') !== 'rtl') apply('u'); return; }
     setDir(lang);                                   // foran disha/font, tarjuma file aate hi
