@@ -1901,6 +1901,530 @@ window.SEERAT_LANG = {
           ["616", "Oración pública en la Kaaba"]
         ]
       ]
+    },
+
+    /* ═══════════════ DAY 11 — Boycott of Shib-e-Abi Talib ═══════════════ */
+    11: {
+      mr: [
+        "शिबे-अबी तालिबची नाकेबंदी — ३ वर्षांची बहिष्कार",
+        "शिबे-अबी तालिब",
+        "इ.स. ६१७-६१९ (नबवी ७-१०)",
+        "३ वर्षांची कठोर नाकेबंदी, मुस्लिम व बनू हाशिमच्या कुर्बान्या समजून घेणे.",
+        "३ वर्षांचा शिब, ३ वर्षांचा संयम, ३ वर्षांची कुर्बानी. हे अल्लाह! आम्हालाही संयम धरणारे बनव आणि या कुर्बान्यांचे कृतज्ञता व्यक्त करणारे बनव. आमीन.",
+        [
+          "३ वर्षांची नाकेबंदी",
+          "शिबे-अबी तालिबमध्ये वेढा",
+          "मुले भुकेने रडत",
+          "पाने व सुकलेले चाम खाण्याची वेळ आली",
+          "दीमकने करार खाल्ला",
+          "खदीजा (र.अ.) यांचा माल सत्याच्या मार्गात खर्च"
+        ],
+        [
+          ["📜 करार",
+           "मुस्लिमांची वाढती शक्ती आणि हबशातील त्यांचा आश्रय पाहून कुरैशचे सरदार घाबरले. त्यांनी एक करार लिहिला: «बनू हाशिम व बनू मुत्तलिबशी कोणताही व्यवहार नाही, कोणतेही लग्न नाही, कोणतेही खाणे-पिणे नाही, कोणतीही खरेदी-विक्री नाही, जोपर्यंत हे मुहम्मद ﷺ यांना आमच्या स्वाधीन करत नाहीत.» हा करार काबाच्या पडद्यात लटकवला गेला.",
+           "सहीह बुखारी: १५९०; सहीह मुस्लिम: १३१४ (कुरैशचा बनू हाशिमविरुद्धचा करार); तपशील: सीरतच्या रिवायती"],
+          ["😢 ३ वर्षांची कैद",
+           "अबू तालिब यांनी बनू हाशिम व बनू मुत्तलिब यांना शिबे-अबी तालिब (डोंगरातील एक दरी) मध्ये एकत्र केले. सुमारे ३ वर्षे ते वेढलेले राहिले. खायला फार कमी मिळत असे; भुकेच्या तीव्रतेने मुलांच्या रडण्याचा आवाज दरीबाहेरही ऐकू येत असे. रिवायतींमध्ये येते की पाने व सुकलेले चाम खाण्याची वेळ आली. कधी एखादा दयाळू नातेवाईक (जसे हकीम बिन हिझाम) चोरून काही धान्य पोहोचवत असे. हजच्या पवित्र महिन्यांशिवाय ते दरीतून बाहेरही पडू शकत नव्हते.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🪵 करार खाणे",
+           "रिवायतींनुसार नबी ﷺ यांनी अबू तालिबला सांगितले: «अल्लाहने दीमक पाठवला, त्याने करारातील अत्याचार व नातेछेदाचे लिखाण खाल्ले, फक्त अल्लाहचे नाव राहिले.» अबू तालिब कुरैशला म्हणाले: «जर माझा भाचा सत्यवादी असेल तर हा जुलमी बहिष्कार थांबवा, आणि जर खोटा असेल तर मी त्याला तुमच्या स्वाधीन करीन.» करार काढला असता बाब तशीच निघाली. नंतर कुरैशमधील काही सद्सद्विवेकबुद्धीच्या लोकांनी (हिशाम बिन अम्र, झुहैर बिन अबी उमय्या, मुतइम बिन अदी इ.) हा बहिष्कार मिटवला. (ही घटना सीरत इब्न इशाकची रिवायत आहे.)",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["💔 मुस्लिमांचा संयम",
+           "३ वर्षांच्या या परीक्षेत मुस्लिमांनी अद्वितीय संयम केला. मुलांची भूक व त्रास असूनही ते ईमानावर ठाम राहिले. हजरत खदीजा (र.अ.) यांनी आपला बराच माल या मार्गात खर्च केला आणि कधीही तक्रार केली नाही. अबू तालिब यांनी इस्लाम स्वीकारला नाही, पण भाच्याच्या संरक्षणावर ठाम राहिले.",
+           ""],
+          ["🎯 बोध",
+           "३ वर्षांची कैद, खायला पाने, मुलांचे रडणे — या कुर्बान्या पाहून डोळे भरून येतात. आपण या कुर्बान्या लक्षात ठेवल्या पाहिजेत आणि आपल्या सोप्या दिवसांतही कृतज्ञता व्यक्त केली पाहिजे.",
+           ""]
+        ],
+        [
+          ["बहिष्कार किती वर्षे राहिला?", ["२", "३", "५"]],
+          ["करार कोणी खाल्ला?", ["दीमक", "उंदीर", "कीटक"]],
+          ["मुस्लिम कुठे कैद होते?", ["शिबे-अबी तालिब", "हिरा गुहा", "दारुल-अरकम"]]
+        ],
+        [
+          ["इ.स. ६१७", "करार व बहिष्कार"],
+          ["इ.स. ६१९", "दीमकने करार खाल्ला"],
+          ["इ.स. ६१९", "बहिष्काराची समाप्ती"]
+        ]
+      ],
+      ar: [
+        "مقاطعة شعب أبي طالب — ثلاث سنين من الحصار",
+        "شعب أبي طالب",
+        "617-619 م (7-10 من النبوة)",
+        "فهم الحصار الشديد ثلاث سنين، وتضحيات المسلمين وبني هاشم.",
+        "ثلاث سنين في الشعب، وثلاث سنين من الصبر، وثلاث سنين من التضحية. اللهم اجعلنا من الصابرين الشاكرين لهذه التضحيات. آمين.",
+        [
+          "حصار ثلاث سنين",
+          "محصورون في شعب أبي طالب",
+          "الأطفال يبكون من الجوع",
+          "بلغ بهم الأمر أكل الورق والجلد",
+          "الأرضة أكلت الصحيفة",
+          "خديجة رضي الله عنها بذلت مالها في سبيل الحق"
+        ],
+        [
+          ["📜 الصحيفة",
+           "لما رأى سادة قريش قوة المسلمين وتأمينهم في الحبشة جزعوا، فكتبوا صحيفة: «لا نكاح ولا معاملة ولا طعام ولا شراء ولا بيع مع بني هاشم وبني المطلب حتى يسلموا إلينا محمدًا ﷺ». وعُلّقت الصحيفة في ستر الكعبة.",
+           "صحيح البخاري: 1590؛ صحيح مسلم: 1314 (عهد قريش على بني هاشم)؛ والتفصيل: روايات السيرة"],
+          ["😢 حصار ثلاث سنين",
+           "جمع أبو طالب بني هاشم وبني المطلب في شعب أبي طالب (شِعْب بين الجبال). فبقوا محصورين نحو ثلاث سنين. وكان الطعام قليلًا جدًّا، حتى كان يُسمع بكاء الأطفال من شدة الجوع خارج الشعب. وجاء في الروايات أنهم بلغوا أكل الورق والجلد اليابس. وكان بعض ذوي الرحم كحكيم بن حزام يُدخل قليلًا من الطعام خفية. ولم يكن لهم أن يخرجوا من الشعب إلا في الأشهر الحرم.",
+           "رواية سيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🪵 أكل الصحيفة",
+           "جاء في الروايات أن النبي ﷺ أخبر أبا طالب: «إن الله سلّط الأرضة على الصحيفة فأكلت ما فيها من ظلم وقطيعة رحم، ولم يبقَ إلا اسم الله». فقال أبو طالب لقريش: «إن كان ابن أخي صادقًا فارفعوا هذا الحصار الظالم، وإن كان كاذبًا أسلمته إليكم». فأخرجوا الصحيفة فوجدوا الأمر كما قال. ثم سعى رجال من قريش ذوو ضمير (هشام بن عمرو، وزهير بن أبي أمية، ومطعم بن عدي...) في رفع الحصار. (وهذه القصة من رواية ابن إسحاق.)",
+           "رواية سيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["💔 صبر المسلمين",
+           "في هذه المحنة ثلاث سنين صبر المسلمون صبرًا عجيبًا. ومع جوع الأطفال وألمهم ثبتوا على الإيمان. وأنفقت خديجة رضي الله عنها كثيرًا من مالها في هذا السبيل ولم تشكُ قط. ولم يُسلم أبو طالب، لكنه ثبت على حماية ابن أخيه.",
+           ""],
+          ["🎯 العبرة",
+           "ثلاث سنين في الشعب، وثلاث سنين من الصبر، وثلاث سنين من التضحية — تُدمع العين. فعلينا أن نتذكر هذه التضحيات ونشكر في أيامنا الهيّنة.",
+           ""]
+        ],
+        [
+          ["كم سنة استمرت المقاطعة؟", ["2", "3", "5"]],
+          ["من أكل الصحيفة؟", ["الأرضة", "الفأر", "الحشرات"]],
+          ["أين كان المسلمون محصورين؟", ["شعب أبي طالب", "غار حراء", "دار الأرقم"]]
+        ],
+        [
+          ["617", "الصحيفة والمقاطعة"],
+          ["619", "الأرضة أكلت الصحيفة"],
+          ["619", "انتهاء المقاطعة"]
+        ]
+      ],
+      fr: [
+        "Le boycott du défilé d'Abou Tâlib — trois ans de blocus",
+        "Le défilé (shi'b) d'Abou Tâlib",
+        "617-619 (7e-10e année de la prophétie)",
+        "Comprendre le dur blocus de trois ans et les sacrifices des musulmans et des Banou Hâchim.",
+        "Trois ans dans le défilé, trois ans de patience, trois ans de sacrifice. Ô Allah ! Fais de nous des endurants et des reconnaissants de ces sacrifices. Âmîn.",
+        [
+          "Un blocus de trois ans",
+          "Assiégés dans le défilé d'Abou Tâlib",
+          "Les enfants pleuraient de faim",
+          "On en vint à manger des feuilles et du cuir",
+          "Les termites mangèrent l'acte",
+          "Khadîja (qu'Allah l'agrée) dépensa ses biens pour la vérité"
+        ],
+        [
+          ["📜 L'acte",
+           "Voyant la force croissante des musulmans et leur refuge en Abyssinie, les chefs quraysh s'inquiétèrent. Ils écrivirent un acte : « Ni mariage, ni commerce, ni nourriture, ni achat, ni vente avec les Banou Hâchim et les Banou al-Muttalib, jusqu'à ce qu'ils nous livrent Mouhammad ﷺ. » Cet acte fut suspendu au voile de la Kaaba.",
+           "Sahih al-Bukhari : 1590 ; Sahih Muslim : 1314 (le pacte des Quraysh contre les Banou Hâchim) ; détails : récits de Sîra"],
+          ["😢 Trois ans de siège",
+           "Abou Tâlib rassembla les Banou Hâchim et les Banou al-Muttalib dans le défilé d'Abou Tâlib (une gorge de montagne). Ils y restèrent assiégés environ trois ans. La nourriture était très rare, au point qu'on entendait les pleurs des enfants de faim hors du défilé. Les récits rapportent qu'on en vint à manger des feuilles et du cuir sec. Parfois un proche compatissant (comme Hakîm ibn Hizâm) faisait parvenir un peu de grain en secret. Ils ne pouvaient sortir du défilé qu'aux mois sacrés du pèlerinage.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🪵 L'acte mangé",
+           "Les récits rapportent que le Prophète ﷺ informa Abou Tâlib : « Allah a envoyé les termites : elles ont mangé tout ce que l'acte contenait d'injustice et de rupture des liens, et seul le nom d'Allah est resté. » Abou Tâlib dit aux Quraysh : « Si mon neveu est véridique, levez ce blocus injuste ; s'il est menteur, je vous le livrerai. » On sortit l'acte et il en fut ainsi. Puis des hommes de conscience parmi les Quraysh (Hichâm ibn 'Amr, Zouhayr ibn Abî Umayya, Mout'im ibn 'Adî…) firent lever le blocus. (Cet épisode vient du récit d'Ibn Ishâq.)",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["💔 La patience des musulmans",
+           "Durant ces trois années d'épreuve, les musulmans firent preuve d'une patience sans exemple. Malgré la faim et la souffrance des enfants, ils tinrent ferme dans la foi. Khadîja (qu'Allah l'agrée) dépensa beaucoup de ses biens dans cette voie et ne se plaignit jamais. Abou Tâlib n'embrassa pas l'islam, mais resta ferme dans la protection de son neveu.",
+           ""],
+          ["🎯 La leçon",
+           "Trois ans dans le défilé, trois ans de patience, trois ans de sacrifice — cela fait monter les larmes. Nous devons garder le souvenir de ces sacrifices et être reconnaissants même dans nos jours faciles.",
+           ""]
+        ],
+        [
+          ["Combien d'années dura le blocus ?", ["2", "3", "5"]],
+          ["Qui mangea l'acte ?", ["Les termites", "Un rat", "Des insectes"]],
+          ["Où les musulmans étaient-ils assiégés ?", ["Le défilé d'Abou Tâlib", "La grotte de Hirâ'", "La maison d'al-Arqam"]]
+        ],
+        [
+          ["617", "L'acte et le blocus"],
+          ["619", "Les termites mangèrent l'acte"],
+          ["619", "Fin du blocus"]
+        ]
+      ],
+      es: [
+        "El boicot al desfiladero de Abu Talib: tres años de bloqueo",
+        "El desfiladero (shi'b) de Abu Talib",
+        "617-619 (años 7 a 10 de la profecía)",
+        "Comprender el duro bloqueo de tres años y los sacrificios de los musulmanes y los Banu Hashim.",
+        "Tres años en el desfiladero, tres años de paciencia, tres años de sacrificio. ¡Oh Alá! Haznos pacientes y agradecidos de estos sacrificios. Amín.",
+        [
+          "Un bloqueo de tres años",
+          "Sitiados en el desfiladero de Abu Talib",
+          "Los niños lloraban de hambre",
+          "Se llegó a comer hojas y cuero",
+          "Las termitas comieron el documento",
+          "Jadiya (que Alá esté complacido con ella) gastó sus bienes por la verdad"
+        ],
+        [
+          ["📜 El documento",
+           "Al ver la fuerza creciente de los musulmanes y su refugio en Abisinia, los jefes de Quraysh se alarmaron. Escribieron un documento: «Ni matrimonio, ni trato, ni comida, ni compra, ni venta con los Banu Hashim y los Banu al-Muttalib, hasta que nos entreguen a Muhámmad ﷺ.» El documento fue colgado en el velo de la Kaaba.",
+           "Sahih al-Bujari: 1590; Sahih Muslim: 1314 (el pacto de Quraysh contra los Banu Hashim); detalles: relatos de Sira"],
+          ["😢 Tres años de asedio",
+           "Abu Talib reunió a los Banu Hashim y a los Banu al-Muttalib en el desfiladero de Abu Talib (una garganta de montaña). Permanecíeron sitiados unos tres años. La comida era muy escasa, hasta el punto de que se oían los llantos de los niños de hambre fuera del desfiladero. Los relatos dicen que llegaron a comer hojas y cuero seco. A veces un pariente compasivo (como Hakim ibn Hizam) hacía llegar un poco de grano en secreto. Solo podían salir del desfiladero en los meses sagrados de la peregrinación.",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🪵 El documento comido",
+           "Los relatos cuentan que el Profeta ﷺ informó a Abu Talib: «Alá ha enviado a las termitas: comieron todo lo que el documento tenía de injusticia y ruptura de lazos, y solo quedó el nombre de Alá.» Abu Talib dijo a los Quraysh: «Si mi sobrino es veraz, levantad este bloqueo injusto; y si es mentiroso, os lo entregaré.» Se sacó el documento y así fue. Luego algunos hombres de conciencia de Quraysh (Hisham ibn Amr, Zuhayr ibn Abi Umayya, Mutim ibn Adi…) hicieron levantar el bloqueo. (Este episodio viene del relato de Ibn Ishaq.)",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["💔 La paciencia de los musulmanes",
+           "En esos tres años de prueba los musulmanes mostraron una paciencia sin igual. Pese al hambre y al sufrimiento de los niños, se mantuvieron firmes en la fe. Jadiya (que Alá esté complacido con ella) gastó mucho de sus bienes en este camino y nunca se quejó. Abu Talib no abrazó el islam, pero permaneció firme en proteger a su sobrino.",
+           ""],
+          ["🎯 La lección",
+           "Tres años en el desfiladero, tres años de paciencia, tres años de sacrificio: hace brotar lágrimas. Debemos recordar estos sacrificios y ser agradecidos incluso en nuestros días fáciles.",
+           ""]
+        ],
+        [
+          ["¿Cuántos años duró el boicot?", ["2", "3", "5"]],
+          ["¿Quién comió el documento?", ["Las termitas", "Una rata", "Insectos"]],
+          ["¿Dónde estaban sitiados los musulmanes?", ["El desfiladero de Abu Talib", "La cueva de Hira", "La casa de al-Arqam"]]
+        ],
+        [
+          ["617", "El documento y el boicot"],
+          ["619", "Las termitas comieron el documento"],
+          ["619", "Fin del boicot"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 12 — Aamul-huzn ═══════════════ */
+    12: {
+      mr: [
+        "आमुल-हुझ्न — दुःखाचे वर्ष",
+        "मक्का",
+        "इ.स. ६१९ (नबवी १०)",
+        "अबू तालिब व हजरत खदीजा (र.अ.) यांचे निधन, नबी ﷺ यांचे दुःख आणि मुश्रिकांची निर्दयता समजून घेणे.",
+        "नबी ﷺ म्हणाले: «खदीजा (र.अ.) तेव्हा ईमान आणल्या जेव्हा लोक कुफ्र करत होते» — हे प्रेम व निष्ठेचे उदाहरण आहे. हे अल्लाह! आम्हालाही अशी निष्ठा दे. आमीन.",
+        [
+          "आमुल-हुझ्न: नबवी १०",
+          "अबू तालिब यांचे निधन",
+          "खदीजा (र.अ.) यांचे निधन",
+          "खदीजा (र.अ.) यांचे वय: ६५ वर्षे (प्रसिद्ध मत)",
+          "नबी ﷺ फार एकटे"
+        ],
+        [
+          ["🖤 आमुल-हुझ्न",
+           "नबवी १० मध्ये, एकाच वर्षात दोन मोठे आधार गेले — आधी अबू तालिब (नबी ﷺ यांचे काका, संरक्षक), नंतर हजरत खदीजा (र.अ.) (नबी ﷺ यांच्या पत्नी, शांती व साथीदार). या वर्षाला «आमुल-हुझ्न» म्हणजे दुःखाचे वर्ष म्हणतात. अबू तालिब यांच्या निधनानंतर मुश्रिकांनी नबी ﷺ यांना उघडपणे छळायला सुरुवात केली.",
+           ""],
+          ["💔 अबू तालिब यांचे निधन",
+           "अबू तालिब आजारी पडले. नबी ﷺ त्यांच्याकडे गेले आणि म्हणाले: «काका! «ला इलाहा इल्लल्लाह» म्हणा, हे असे कलिमा आहे ज्याच्याद्वारे मी अल्लाहकडे तुमच्यासाठी साक्ष देऊ शकेन.» तिथे अबू जहल व अब्दुल्लाह बिन अबी उमय्याही होते; ते म्हणाले: «तुम्ही अब्दुलमुत्तलिबचा दीन सोडणार का?» ते पुन्हा पुन्हा हेच म्हणत राहिले, शेवटी अबू तालिब यांनी असे सांगितले की ते अब्दुलमुत्तलिबच्या दीनावर आहेत आणि कलिमा म्हणण्यास नकार दिला (सहीह बुखारी: १३६०, सहीह मुस्लिम: २४). नबी ﷺ म्हणाले: «मला रोखले जाईपर्यंत मी तुमच्यासाठी माफी मागत राहीन.» नंतर ही आयत उतरली: «مَا كَانَ لِلنَّبِيِّ وَالَّذِينَ آمَنُوا أَن يَسْتَغْفِرُوا لِلْمُشْرِكِينَ» (नबी व ईमानवाल्यांना मुश्रिकांसाठी माफी मागणे योग्य नाही) — सूरह अत-तौबा ९:११३. हिदायत अल्लाहच्या हातात आहे: «إِنَّكَ لَا تَهْدِي مَنْ أَحْبَبْتَ» (सूरह अल-कसस २८:५६).",
+           "सहीह बुखारी: १३६०; सहीह मुस्लिम: २४; कुरआन: ९:११३, २८:५६"],
+          ["💔 खदीजा (र.अ.) यांचे निधन",
+           "अबू तालिब यांच्या निधनानंतर काहीच काळात (रिवायतींमध्ये तीन दिवसांपासून एक महिन्यापर्यंत फरक येतो) हजरत खदीजा (र.अ.) यांचे निधन झाले — प्रसिद्ध मतानुसार वय वर्षे ६५, आणि त्या नबी ﷺ यांच्यासोबत सुमारे २५ वर्षे राहिल्या. आप ﷺ यांना हा फार मोठा धक्का होता. आप ﷺ यांनी त्यांना जन्नतमध्ये मोत्याच्या पोकळ महालाची (بَيْتٍ مِنْ قَصَبٍ) बुशरत दिली होती (सहीह बुखारी व मुस्लिम). पुढच्या वर्षांतही आप ﷺ त्यांचा वारंवार उल्लेख करत आणि त्यांच्या मैत्रिणींना भेटवस्तू पाठवत. हजरत आयशा (र.अ.) म्हणतात: मी एकदा म्हटले: «जणू जगात खदीजाशिवाय कोणतीही स्त्री नव्हती!» आप ﷺ म्हणाले: «त्या अशा होत्या, अशा होत्या, आणि मला संतती त्यांच्याचपासून मिळाली.» (सहीह बुखारी: ३८१८). दुसऱ्या रिवायतीत आहे: «अल्लाहने मला त्यांच्यापेक्षा चांगली पत्नी दिली नाही: जेव्हा लोकांनी नाकारले तेव्हा त्या माझ्यावर ईमान आणल्या, जेव्हा लोकांनी खोटे ठरवले तेव्हा त्यांनी माझी पुष्टी केली, आणि जेव्हा लोकांनी मला वंचित ठेवले तेव्हा त्यांनी आपल्या मालाने माझी काळजी घेतली.» (मुस्नद अहमद).",
+           "सहीह बुखारी: ३८१८, ३८१९; सहीह मुस्लिम: २४३२; मुस्नद अहमद"],
+          ["🖤 नबी ﷺ यांचे दुःख",
+           "दोन आधार गेले — एक काका जो संरक्षण करत होते आणि एक पत्नी जी मनाला शांती देत होती. नबी ﷺ फार एकटे जाणवत होते. सीरतच्या रिवायतीत आप ﷺ यांचे वचन आहे: «अबू तालिब यांच्या निधनापर्यंत कुरैश मला त्रास देऊ शकले नाहीत जो मला असह्य वाटेल.» एकदा कोण्या अजाण माणसाने आप ﷺ यांच्या डोक्यावर माती टाकली, आप ﷺ यांनी संयम केला. हाच तो काळ होता जेव्हा आप ﷺ यांनी तायफला जाण्याचे ठरवले.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🎯 बोध",
+           "अल्लाहने नबी ﷺ यांची परीक्षा घेतली, पण आप ﷺ यांनी तक्रार केली नाही. आपण आपल्या दुःखांत संयम ठेवला पाहिजे आणि अल्लाहवर भरवसा ठेवला पाहिजे. अबू तालिब व खदीजा (र.अ.) यांच्यासारखे आधारही निघून जातात, पण अल्लाहचा आधार कायम राहतो.",
+           ""]
+        ],
+        [
+          ["आमुल-हुझ्नचा अर्थ?", ["आनंदाचे वर्ष", "दुःखाचे वर्ष", "युद्धाचे वर्ष"]],
+          ["त्याच वर्षी कोण गेले?", ["अबू बक्र व उमर", "अबू तालिब व खदीजा", "हमझा व जाफर"]],
+          ["प्रसिद्ध मतानुसार खदीजा (र.अ.) यांचे वय?", ["५०", "६०", "६५"]]
+        ],
+        [
+          ["इ.स. ६१९", "अबू तालिब यांचे निधन"],
+          ["इ.स. ६१९", "खदीजा (र.अ.) यांचे निधन"],
+          ["इ.स. ६१९", "आमुल-हुझ्न"]
+        ]
+      ],
+      ar: [
+        "عام الحزن — سنة الحزن",
+        "مكة",
+        "619 م (السنة العاشرة من النبوة)",
+        "فهم وفاة أبي طالب وخديجة رضي الله عنها، وحزن النبي ﷺ، وقسوة المشركين.",
+        "قال النبي ﷺ: «آمنت بي خديجة حين كفر الناس» — وهذا مثال المحبة والوفاء. اللهم ارزقنا مثل هذا الوفاء. آمين.",
+        [
+          "عام الحزن: السنة العاشرة",
+          "وفاة أبي طالب",
+          "وفاة خديجة رضي الله عنها",
+          "عمر خديجة رضي الله عنها: 65 سنة (المشهور)",
+          "النبي ﷺ في وحدة شديدة"
+        ],
+        [
+          ["🖤 عام الحزن",
+           "في السنة العاشرة من النبوة ذهب في سنة واحدة سندان كبيران — أولًا أبو طالب (عم النبي ﷺ وحاميه)، ثم خديجة رضي الله عنها (زوج النبي ﷺ وسكنه ورفيقته). وتسمى هذه السنة «عام الحزن». وبعد وفاة أبي طالب بدأ المشركون يؤذون النبي ﷺ علنًا.",
+           ""],
+          ["💔 وفاة أبي طالب",
+           "مرض أبو طالب، فجاءه النبي ﷺ وقال: «يا عمّ، قل: لا إله إلا الله، كلمةً أشهد لك بها عند الله». وكان عنده أبو جهل وعبد الله بن أبي أمية فقالا: «أترغب عن دين عبد المطلب؟» فما زالا يقولان ذلك حتى قال أبو طالب آخر ما قال إنه على دين عبد المطلب، وأبى أن يقول الكلمة (صحيح البخاري: 1360، صحيح مسلم: 24). فقال النبي ﷺ: «لأستغفرنّ لك ما لم أُنهَ عنه». فنزلت: «مَا كَانَ لِلنَّبِيِّ وَالَّذِينَ آمَنُوا أَن يَسْتَغْفِرُوا لِلْمُشْرِكِينَ» — سورة التوبة 9:113. والهداية بيد الله: «إِنَّكَ لَا تَهْدِي مَنْ أَحْبَبْتَ» — سورة القصص 28:56.",
+           "صحيح البخاري: 1360؛ صحيح مسلم: 24؛ القرآن: 9:113، 28:56"],
+          ["💔 وفاة خديجة رضي الله عنها",
+           "بعد وفاة أبي طالب بفترة قصيرة (تختلف الروايات بين ثلاثة أيام وشهر) توفيت خديجة رضي الله عنها — في الخامسة والستين على المشهور، وقد عاشت مع النبي ﷺ نحو خمس وعشرين سنة. وكان ذلك مصابًا عظيمًا له ﷺ. وقد بشّرها ﷺ ببيت من قصب في الجنة (صحيح البخاري ومسلم). وظل ﷺ يذكرها في السنين بعدها ويبعث الهدايا إلى صواحباتها. قالت عائشة رضي الله عنها: قلت مرة: «كأن لم تكن في الدنيا امرأة إلا خديجة!» فقال ﷺ: «إنها كانت وكانت، وقد رُزقت منها الولد» (صحيح البخاري: 3818). وفي رواية: «ما أبدلني الله خيرًا منها: آمنت بي حين كفر الناس، وصدّقتني حين كذّبني الناس، وأشركتني في مالها حين حرمني الناس» (مسند أحمد).",
+           "صحيح البخاري: 3818، 3819؛ صحيح مسلم: 2432؛ مسند أحمد"],
+          ["🖤 حزن النبي ﷺ",
+           "ذهب سندان: عم يحميه، وزوجة تسكن قلبه. فشعر ﷺ بوحدة شديدة. وجاء في روايات السيرة قوله ﷺ: «ما زالت قريش تمنعني حتى مات أبو طالب من أذىً أكرهه». ووضع رجل جاهل يومًا ترابًا على رأسه ﷺ فصبر. وفي ذلك الوقت قرر ﷺ الخروج إلى الطائف.",
+           "رواية سيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🎯 العبرة",
+           "ابتلى الله نبيه ﷺ فلم يشكُ. فعلينا أن نصبر في أحزاننا ونتوكل على الله. فأمثال أبي طالب وخديجة رضي الله عنها من الأسناد تذهب، أما سند الله فيبقى.",
+           ""]
+        ],
+        [
+          ["ما معنى عام الحزن؟", ["سنة الفرح", "سنة الحزن", "سنة الحرب"]],
+          ["من توفي في تلك السنة؟", ["أبو بكر وعمر", "أبو طالب وخديجة", "حمزة وجعفر"]],
+          ["كم كان عمر خديجة رضي الله عنها على المشهور؟", ["50", "60", "65"]]
+        ],
+        [
+          ["619", "وفاة أبي طالب"],
+          ["619", "وفاة خديجة رضي الله عنها"],
+          ["619", "عام الحزن"]
+        ]
+      ],
+      fr: [
+        "L'année de la tristesse (Âm al-Houzn)",
+        "La Mecque",
+        "619 (10e année de la prophétie)",
+        "Comprendre la mort d'Abou Tâlib et de Khadîja (qu'Allah l'agrée), la tristesse du Prophète ﷺ et la dureté des polythéistes.",
+        "Le Prophète ﷺ dit : « Khadîja crut en moi quand les gens mécroyaient » — c'est l'exemple de l'amour et de la fidélité. Ô Allah ! Accorde-nous une telle fidélité. Âmîn.",
+        [
+          "Âm al-Houzn : 10e année",
+          "Mort d'Abou Tâlib",
+          "Mort de Khadîja (qu'Allah l'agrée)",
+          "Âge de Khadîja (qu'Allah l'agrée) : 65 ans (avis célèbre)",
+          "Le Prophète ﷺ très seul"
+        ],
+        [
+          ["🖤 L'année de la tristesse",
+           "En la 10e année de la prophétie, deux grands appuis disparurent en une seule année — d'abord Abou Tâlib (l'oncle et protecteur du Prophète ﷺ), puis Khadîja (qu'Allah l'agrée), son épouse, sa quiétude et sa compagne. Cette année est appelée « Âm al-Houzn », l'année de la tristesse. Après la mort d'Abou Tâlib, les polythéistes commencèrent à persécuter ouvertement le Prophète ﷺ.",
+           ""],
+          ["💔 La mort d'Abou Tâlib",
+           "Abou Tâlib tomba malade. Le Prophète ﷺ vint à lui et dit : « Mon oncle ! Dis : "Lâ ilâha illallâh", une parole par laquelle je témoignerai pour toi auprès d'Allah. » Abou Jahl et 'Abdoullah ibn Abî Umayya étaient là et dirent : « Renierais-tu la religion d''Abd al-Muttalib ? » Ils répétèrent cela, jusqu'à ce qu'Abou Tâlib dise enfin qu'il était sur la religion d''Abd al-Muttalib, et il refusa de prononcer la parole (Sahih al-Bukhari : 1360, Sahih Muslim : 24). Le Prophète ﷺ dit : « Je demanderai pardon pour toi tant qu'on ne me l'interdira pas. » Puis descendit : « مَا كَانَ لِلنَّبِيِّ وَالَّذِينَ آمَنُوا أَن يَسْتَغْفِرُوا لِلْمُشْرِكِينَ » — sourate at-Tawba 9:113. La guidée est entre les mains d'Allah : « إِنَّكَ لَا تَهْدِي مَنْ أَحْبَبْتَ » — sourate al-Qasas 28:56.",
+           "Sahih al-Bukhari : 1360 ; Sahih Muslim : 24 ; Coran : 9:113, 28:56"],
+          ["💔 La mort de Khadîja (qu'Allah l'agrée)",
+           "Peu après la mort d'Abou Tâlib (les récits varient de trois jours à un mois), Khadîja (qu'Allah l'agrée) mourut — à soixante-cinq ans selon l'avis célèbre — après avoir vécu environ vingt-cinq ans avec le Prophète ﷺ. Ce fut pour lui ﷺ un choc immense. Il ﷺ lui avait annoncé un palais de perles creuses au Paradis (Sahih al-Bukhari et Muslim). Dans les années suivantes, il ﷺ la mentionnait souvent et envoyait des cadeaux à ses amies. 'Â'icha (qu'Allah l'agrée) dit : « Je dis un jour : on dirait qu'il n'y avait au monde d'autre femme que Khadîja ! » Il ﷺ dit : « Elle était telle et telle, et c'est d'elle que j'ai eu des enfants. » (Sahih al-Bukhari : 3818). Dans un autre récit : « Allah ne m'a pas donné de meilleure épouse qu'elle : elle crut en moi quand les gens mécroyaient, elle me crut quand les gens me traitaient de menteur, et elle m'associa à ses biens quand les gens me privaient. » (Mousnad Ahmad).",
+           "Sahih al-Bukhari : 3818, 3819 ; Sahih Muslim : 2432 ; Mousnad Ahmad"],
+          ["🖤 La tristesse du Prophète ﷺ",
+           "Deux appuis disparurent : un oncle qui protégeait et une épouse qui apaisait le cœur. Le Prophète ﷺ se sentit très seul. Un récit de Sîra rapporte sa parole : « Les Quraysh ne purent me nuire d'une manière qui me déplût qu'après la mort d'Abou Tâlib. » Un jour, un ignorant jeta de la terre sur sa tête ﷺ ; il patienta. C'est alors qu'il ﷺ décida d'aller à Tâ'if.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🎯 La leçon",
+           "Allah éprouva Son Prophète ﷺ, mais il ne se plaignit pas. Nous devons être patients dans nos tristesses et faire confiance à Allah. Des appuis comme Abou Tâlib et Khadîja (qu'Allah l'agrée) passent, mais l'appui d'Allah demeure.",
+           ""]
+        ],
+        [
+          ["Que signifie Âm al-Houzn ?", ["L'année de la joie", "L'année de la tristesse", "L'année de la guerre"]],
+          ["Qui mourut cette même année ?", ["Abou Bakr et 'Umar", "Abou Tâlib et Khadîja", "Hamza et Ja'far"]],
+          ["Quel âge avait Khadîja (qu'Allah l'agrée) selon l'avis célèbre ?", ["50", "60", "65"]]
+        ],
+        [
+          ["619", "Mort d'Abou Tâlib"],
+          ["619", "Mort de Khadîja (qu'Allah l'agrée)"],
+          ["619", "L'année de la tristesse"]
+        ]
+      ],
+      es: [
+        "El año de la tristeza (Am al-Huzn)",
+        "La Meca",
+        "619 (año 10 de la profecía)",
+        "Comprender la muerte de Abu Talib y de Jadiya (que Alá esté complacido con ella), la tristeza del Profeta ﷺ y la dureza de los idólatras.",
+        "El Profeta ﷺ dijo: «Jadiya creyó en mí cuando la gente negaba»; es el ejemplo del amor y la fidelidad. ¡Oh Alá! Concédenos tal fidelidad. Amín.",
+        [
+          "Am al-Huzn: año 10",
+          "Muerte de Abu Talib",
+          "Muerte de Jadiya (que Alá esté complacido con ella)",
+          "Edad de Jadiya (que Alá esté complacido con ella): 65 años (opinión famosa)",
+          "El Profeta ﷺ muy solo"
+        ],
+        [
+          ["🖤 El año de la tristeza",
+           "En el año 10 de la profecía desaparecieron en un solo año dos grandes apoyos: primero Abu Talib (tío y protector del Profeta ﷺ) y luego Jadiya (que Alá esté complacido con ella), su esposa, su quietud y su compañera. A ese año se le llama «Am al-Huzn», el año de la tristeza. Tras la muerte de Abu Talib, los idólatras comenzaron a perseguir abiertamente al Profeta ﷺ.",
+           ""],
+          ["💔 La muerte de Abu Talib",
+           "Abu Talib enfermó. El Profeta ﷺ vino a él y dijo: «¡Tío! Di: "La ilaha illa Alá", una palabra con la que testificaré por ti ante Alá.» Estaban allí Abu Yahal y Abdalah ibn Abi Umayya, que dijeron: «¿Renunciarías a la religión de Abd al-Muttalib?» Repitieron esto hasta que Abu Talib dijo por último que estaba en la religión de Abd al-Muttalib, y se negó a pronunciar la palabra (Sahih al-Bujari: 1360; Sahih Muslim: 24). El Profeta ﷺ dijo: «Pediré perdón por ti mientras no se me prohíba.» Luego descendió: «مَا كَانَ لِلنَّبِيِّ وَالَّذِينَ آمَنُوا أَن يَسْتَغْفِرُوا لِلْمُشْرِكِينَ» — sura at-Tawba 9:113. La guía está en manos de Alá: «إِنَّكَ لَا تَهْدِي مَنْ أَحْبَبْتَ» — sura al-Qasas 28:56.",
+           "Sahih al-Bujari: 1360; Sahih Muslim: 24; Corán: 9:113, 28:56"],
+          ["💔 La muerte de Jadiya (que Alá esté complacido con ella)",
+           "Poco después de la muerte de Abu Talib (los relatos varían entre tres días y un mes) falleció Jadiya (que Alá esté complacido con ella), a los sesenta y cinco años según la opinión famosa, tras vivir unos veinticinco años con el Profeta ﷺ. Fue para él ﷺ un golpe inmenso. Él ﷺ le había anunciado un palacio de perlas huecas en el Paraíso (Sahih al-Bujari y Muslim). En los años siguientes él ﷺ la recordaba a menudo y enviaba regalos a sus amigas. Aisha (que Alá esté complacido con ella) dijo: «Dije un día: ¡como si en el mundo no hubiera otra mujer que Jadiya!» Él ﷺ dijo: «Ella era así y así, y de ella tuve hijos.» (Sahih al-Bujari: 3818). En otro relato: «Alá no me dio mejor esposa que ella: creyó en mí cuando la gente negaba, me creyó cuando me llamaban mentiroso y me asoció a sus bienes cuando la gente me privaba.» (Musnad Ahmad).",
+           "Sahih al-Bujari: 3818, 3819; Sahih Muslim: 2432; Musnad Ahmad"],
+          ["🖤 La tristeza del Profeta ﷺ",
+           "Se fueron dos apoyos: un tío que protegía y una esposa que daba sosiego al corazón. El Profeta ﷺ se sintió muy solo. Un relato de Sira recoge su dicho: «Los Quraysh no pudieron hacerme daño que me desagradara hasta la muerte de Abu Talib.» Un día un ignorante echó tierra sobre su cabeza ﷺ y él tuvo paciencia. Entonces decidió ﷺ ir a Taif.",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🎯 La lección",
+           "Alá probó a Su Profeta ﷺ y él no se quejó. Debemos ser pacientes en nuestras tristezas y confiar en Alá. Apoyos como Abu Talib y Jadiya (que Alá esté complacido con ella) se van, pero el apoyo de Alá permanece.",
+           ""]
+        ],
+        [
+          ["¿Qué significa Am al-Huzn?", ["El año de la alegría", "El año de la tristeza", "El año de la guerra"]],
+          ["¿Quiénes murieron ese mismo año?", ["Abu Bakr y Umar", "Abu Talib y Jadiya", "Hamza y Yafar"]],
+          ["¿Qué edad tenía Jadiya (que Alá esté complacido con ella) según la opinión famosa?", ["50", "60", "65"]]
+        ],
+        [
+          ["619", "Muerte de Abu Talib"],
+          ["619", "Muerte de Jadiya (que Alá esté complacido con ella)"],
+          ["619", "El año de la tristeza"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 13 — Taif ka safar ═══════════════ */
+    13: {
+      mr: [
+        "तायफचा प्रवास — रक्ताने माखलेले पाय, शत्रूंसाठी दुआ",
+        "तायफ",
+        "इ.स. ६१९ (नबवी १०)",
+        "नबी ﷺ यांचा तायफचा प्रवास, छळ आणि शत्रूंसाठी दुआ केल्याची घटना समजून घेणे.",
+        "दगड पडत होते, पाय रक्ताने भरले, पण आप ﷺ यांनी त्यांच्या नाशाची मागणी केली नाही, तर त्यांच्या संततीतून हिदायतीची आशा ठेवली — ही दया आहे, हे नबी ﷺ यांचे चारित्र्य आहे. हे अल्लाह! आम्हालाही ही दया दे. आमीन.",
+        [
+          "तायफचा प्रवास पायी",
+          "तायफकरांनी दगड मारले",
+          "झैद बिन हारिसा (र.अ.) पुढे झाले",
+          "मलकुल-जिबालचा देवदूत आला",
+          "नबी ﷺ यांनी चिरडण्यास नकार दिला",
+          "हिदायतीची आशा ठेवली"
+        ],
+        [
+          ["🥾 तायफचा प्रवास",
+           "आमुल-हुझ्ननंतर नबी ﷺ यांनी विचार केला: «तायफचे लोक कदाचित मानतील.» अबू तालिब व खदीजा (र.अ.) यांच्यानंतर मदतीची आशा कमी होती. आप ﷺ झैद बिन हारिसा (र.अ.) यांना सोबत घेऊन पायी तायफला गेले. मक्केपासून तायफ सुमारे १०० किमी (अर-रहीकुल-मख्तूमनुसार सुमारे ६० मैल)चा डोंगराळ मार्ग होता — पायी.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🗣️ तायफकरांचा नकार",
+           "नबी ﷺ तायफच्या तीन सरदारांना (अब्द यालैल, मसऊद व हबीब, जे भाऊ होते) भेटले, त्यांना इस्लामची दावत दिली आणि मदतीची विनंती केली. एकाने उपहास केला: «जर अल्लाहने तुम्हाला रसूल बनवले असेल तर तो काबाचा पडदा फाडून टाको!» दुसरा म्हणाला: «अल्लाहला तुमच्याशिवाय कोणीच मिळाला नाही का?» तिसरा म्हणाला: «मी तुमच्याशी बोलणार नाही; जर तुम्ही खरे रसूल असाल तर तुमच्याशी बोलणे धोकादायक आहे, आणि जर खोटे असाल तर बोलणे निरर्थक.» नंतर त्यांनी शहरातील अजाण मुलांना व गुलामांना मागे लावले, जे शिव्या देऊ लागले आणि दगड मारू लागले. (इब्न इशाक)",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🩸 रक्ताने माखलेले पाय",
+           "दगड इतके पडले की नबी ﷺ यांच्या पायांतून रक्त वाहू लागले. झैद बिन हारिसा (र.अ.) आप ﷺ यांचे रक्षण करण्यासाठी ढाल बनले आणि स्वतः जखमी झाले. शेवटी आप ﷺ यांना एका बागेत आश्रय घ्यावा लागला, जी मक्केच्या दोन सरदारांची — उत्बा व शैबा (रबीआचे पुत्र) यांची होती. त्यांनी आप ﷺ यांची अवस्था पाहून दया दाखवली आणि आपल्या ख्रिश्चन गुलाम अद्दासकडून द्राक्षे पाठवली. आप ﷺ यांनी «बिस्मिल्लाह» म्हणून खाल्ली. (हा तपशील सीरत इब्न इशाकचा आहे.) याच प्रसंगी «अल्लाहुम्मा इलैक अश्कू ज़ुफ़्फ़ क़ुव्वती...» ही दुआ सांगितली जाते, पण तिची सनद जईफ आहे.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🤲 मलकुल-जिबालची घटना",
+           "परतीच्या वेळी कर्नुस-सआलिब येथे आप ﷺ यांनी डोके उचलले, तेव्हा ढगाचा एक तुकडा सावली देत होता, त्यात जिब्राईल (अ.स.) होते. ते म्हणाले: «अल्लाहने तुमच्या कौमचे बोलणे व त्यांचे उत्तर ऐकले. हा डोंगरांचा देवदूत आहे, तुम्हाला जे पाहिजे ते त्याला हुकूम करा.» देवदूताने सलाम केला आणि म्हणाला: «जर तुम्ही इच्छा असाल तर मी दोन्ही डोंगर त्यांच्यावर कोसळून टाकतो.» नबी ﷺ म्हणाले: «नाही, मला आशा आहे की अल्लाह त्यांच्या संततीतून असे लोक निर्माण करेल जे फक्त एका अल्लाहची उपासना करतील आणि त्याच्यासोबत कोणालाही सहभागी करणार नाहीत.» (सहीह बुखारी: ३२३१, सहीह मुस्लिम: १७९५). हजरत आयशा (र.अ.) यांनी विचारले होते: «तुमच्यावर उहुदपेक्षाही कठीण दिवस आला का?» ते म्हणाले: «होय, सर्वात कठीण दिवस तो होता जो मला अकबाच्या दिवशी आला» (विद्वानांच्या मते यातून तायफच्या प्रवासाचा दिवस अभिप्रेत आहे).",
+           "सहीह बुखारी: ३२३१; सहीह मुस्लिम: १७९५"],
+          ["🌟 दया आणि आशा",
+           "तायफकरांच्या एवढ्या मोठ्या अत्याचारानंतरही आप ﷺ यांनी त्यांना नष्ट करण्याची परवानगी दिली नाही, तर त्यांच्या पिढ्यांच्या ईमानाची आशा ठेवली. आणि खरोखर तसेच झाले: सकीफचा शिष्टमंडळ ९ हिजरीत स्वतः येऊन मुस्लिम झाले. सीरतच्या पुस्तकांनुसार परतीच्या वेळी नखल येथे जिन्नांच्या एका समूहाने आप ﷺ यांच्याकडून कुरआन ऐकले आणि ईमान आणले (सूरह अल-अहकाफ ४६:२९; सहीह बुखारीत ही घटना नखल येथे सूक-ए-उकाजच्या मार्गावर नमूद आहे), नंतर मुतइम बिन अदी यांनी आप ﷺ यांना आपल्या आश्रयात मक्केत प्रवेश करवला.",
+           "कुरआन: ४६:२९; जिन्नांची घटना: सहीह बुखारी (तफसीर सूरह अल-जिन्न); बाकी: सीरतच्या रिवायती"],
+          ["🎯 बोध",
+           "ही घटना वाचून डोळे भरून येतात. दगडांचा वर्षाव, रक्ताने माखलेले पाय, पण शत्रूंसाठी दुआ. आपण आपल्या शत्रूंसाठीही दुआ केली पाहिजे; हा नबी ﷺ यांचा मार्ग आहे.",
+           ""]
+        ],
+        [
+          ["नबी ﷺ तायफला कोणासोबत गेले?", ["अबू बक्र (र.अ.)", "झैद (र.अ.)", "उमर (र.अ.)"]],
+          ["मलकुल-जिबालने काय सुचवले?", ["माल", "डोंगरांनी चिरडणे", "राज्य"]],
+          ["नबी ﷺ यांनी काय उत्तर दिले?", ["होय, चिरडा", "नाही, हिदायतीची दुआ", "नंतर"]]
+        ],
+        [
+          ["इ.स. ६१९", "तायफचा प्रवास"],
+          ["इ.स. ६१९", "दगडांचा वर्षाव"],
+          ["इ.स. ६१९", "मलकुल-जिबालची घटना"]
+        ]
+      ],
+      ar: [
+        "رحلة الطائف — قدمان داميتان، ودعاء للأعداء",
+        "الطائف",
+        "619 م (السنة العاشرة من النبوة)",
+        "فهم رحلة النبي ﷺ إلى الطائف، والأذى الذي لقيَه، وقصّة دعائه لأعدائه.",
+        "كانت الحجارة تُمطر، وامتلأت القدمان دمًا، ومع ذلك لم يسأل ﷺ هلاكهم بل رجا الهداية في ذريتهم — هذه رحمة، وهذا خلق النبي ﷺ. اللهم ارزقنا هذه الرحمة. آمين.",
+        [
+          "رحلة الطائف على القدمين",
+          "أهل الطائف رموه بالحجارة",
+          "زيد بن حارثة رضي الله عنه وقف دونه",
+          "جاء ملك الجبال",
+          "رفض ﷺ أن يطبق عليهم الجبلان",
+          "رجّا الهداية"
+        ],
+        [
+          ["🥾 الرحلة إلى الطائف",
+           "بعد عام الحزن فكّر النبي ﷺ: «لعل أهل الطائف يقبلون». فقد ضعفت آمال النصرة بعد أبي طالب وخديجة رضي الله عنها. فأخذ زيد بن حارثة رضي الله عنه ومشى إلى الطائف على قدميه. وكان بين مكة والطائف نحو مئة كيلومتر (نحو ستين ميلًا كما في الرحيق المختوم) من طريق الجبال — على القدمين.",
+           "رواية سيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🗣️ ردّ أهل الطائف",
+           "لقي النبي ﷺ سادة الطائف الثلاثة (عبد ياليل ومسعود وحبيب، وهم إخوة)، فدعاهم إلى الإسلام وطلب نصرتهم. فسخر أحدهم: «إن كان الله أرسلك فمزّق أستار الكعبة!» وقال الثاني: «أما وجد الله غيرك؟» وقال الثالث: «لن أكلمك؛ إن كنت رسولًا فمكالمتك خطر، وإن كنت كاذبًا فمكالمتك عبث». ثم أغرَوا بسفهاء البلد وعبيدهم، فجعلوا يشتمونه ويرمونه بالحجارة. (ابن إسحاق)",
+           "رواية سيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🩸 قدمان داميتان",
+           "تتابعت الحجارة حتى سال الدم من قدميه الشريفتين. وجعل زيد بن حارثة رضي الله عنه نفسه دِرعًا يقيه، فجُرح هو نفسه. ثم اضطر ﷺ إلى الاستجارة بحديقة كانت لعتبة وشيبة ابني ربيعة من سادة مكة. فرأَيا حاله فرحما، وأرسلا إليه عنبًا مع غلامهما النصراني عدّاس. فأكل ﷺ باسم الله. (وهذا التفصيل من سيرة ابن إسحاق.) وفي هذا المقام يُذكر دعاء «اللهم إليك أشكو ضعف قوتي...»، لكن إسناده ضعيف.",
+           "رواية سيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🤲 حديث ملك الجبال",
+           "في رجوعه، عند قرن الثعالب، رفع ﷺ رأسه فإذا سحابة أظلّته فيها جبريل عليه السلام. فقال: «قد سمع الله ما قالت قومك وما ردّوا به عليك. وهذا ملك الجبال، فمره بما شئت». فسلّم الملك وقال: «إن شئت أطبق عليهم الأخشبين». فقال النبي ﷺ: «لا، إني أرجو أن يُخرج الله من أصلابهم من يعبد الله وحده ولا يشرك به شيئًا». (صحيح البخاري: 3231، صحيح مسلم: 1795). وقد سألت عائشة رضي الله عنها: «هل أتاك يوم أشد من يوم أُحد؟» فقال: «نعم، أشدّ يوم مرّ عليّ يوم العقبة» (والمراد عند أهل العلم يوم الطائف).",
+           "صحيح البخاري: 3231؛ صحيح مسلم: 1795"],
+          ["🌟 الرحمة والرجاء",
+           "مع هذا الأذى العظيم لم يأذن ﷺ بإهلاكهم، بل رجا الإيمان في ذرياتهم. وقد كان كذلك: فقد جاء وفد ثقيف فأسلموا سنة تسع من الهجرة. وجاء في كتب السيرة أن جماعة من الجن استمعوا إلى القرآن منه ﷺ في نخل في رجوعه فآمنوا (سورة الأحقاف 46:29؛ وفي صحيح البخاري ذكر هذه القصة في نخل على طريق سوق عكاظ)، ثم أدخله مطعم بن عدي مكة في جواره.",
+           "القرآن: 46:29؛ قصة الجن: صحيح البخاري (تفسير سورة الجن)؛ والباقي: روايات السيرة"],
+          ["🎯 العبرة",
+           "تُدمع العين هذه القصة: وابل من الحجارة، وقدمان داميتان، ودعاء للأعداء. فعلينا أن ندعو لأعدائنا أيضًا؛ فهذا طريق النبي ﷺ.",
+           ""]
+        ],
+        [
+          ["مع من خرج النبي ﷺ إلى الطائف؟", ["أبو بكر رضي الله عنه", "زيد رضي الله عنه", "عمر رضي الله عنه"]],
+          ["ماذا عرض ملك الجبال؟", ["مالًا", "أن يطبق عليهم الجبلين", "ملكًا"]],
+          ["بماذا أجاب النبي ﷺ؟", ["نعم، أطبق عليهم", "لا، ودعا بالهداية", "لاحقًا"]]
+        ],
+        [
+          ["619", "الرحلة إلى الطائف"],
+          ["619", "وابل الحجارة"],
+          ["619", "حديث ملك الجبال"]
+        ]
+      ],
+      fr: [
+        "Le voyage à Tâ'if — les pieds ensanglantés, l'invocation pour les ennemis",
+        "Tâ'if",
+        "619 (10e année de la prophétie)",
+        "Comprendre le voyage du Prophète ﷺ à Tâ'if, les persécutions subies et l'épisode de son invocation pour ses ennemis.",
+        "Les pierres pleuvaient et ses pieds se couvrirent de sang ; pourtant il ﷺ ne demanda pas leur destruction, mais espéra la guidée dans leur descendance — voilà la miséricorde, voilà le caractère du Prophète ﷺ. Ô Allah ! Accorde-nous cette miséricorde. Âmîn.",
+        [
+          "Le voyage à Tâ'if à pied",
+          "Les gens de Tâ'if lancèrent des pierres",
+          "Zayd ibn Hâritha (qu'Allah l'agrée) s'interposa",
+          "L'ange des montagnes vint",
+          "Le Prophète ﷺ refusa de les écraser",
+          "Il espéra la guidée"
+        ],
+        [
+          ["🥾 Le voyage à Tâ'if",
+           "Après l'année de la tristesse, le Prophète ﷺ pensa : « Peut-être les gens de Tâ'if accepteront-ils. » Après Abou Tâlib et Khadîja (qu'Allah l'agrée), l'espoir de secours était mince. Il prit Zayd ibn Hâritha (qu'Allah l'agrée) et se rendit à pied à Tâ'if. Entre La Mecque et Tâ'if, il y a environ 100 km (près de 60 miles selon Ar-Rahîq al-Makhtûm) de route de montagne — à pied.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🗣️ Le refus des gens de Tâ'if",
+           "Le Prophète ﷺ rencontra les trois chefs de Tâ'if ('Abd Yâlîl, Mas'oûd et Habîb, trois frères), les appela à l'islam et demanda leur secours. L'un railla : « Si Allah t'a envoyé, qu'Il déchire les voiles de la Kaaba ! » Le deuxième dit : « Allah n'a-t-Il trouvé que toi ? » Le troisième dit : « Je ne te parlerai pas : si tu es véridique, te parler est dangereux ; si tu es menteur, te parler est inutile. » Puis ils lâchèrent sur lui les jeunes insensés et les esclaves de la ville, qui l'insultèrent et lui lancèrent des pierres. (Ibn Ishâq)",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🩸 Les pieds ensanglantés",
+           "Les pierres tombèrent si dru que le sang coula de ses pieds bénis. Zayd ibn Hâritha (qu'Allah l'agrée) se fit un bouclier pour le protéger et fut lui-même blessé. Finalement il ﷺ dut se réfugier dans un jardin appartenant à deux chefs de La Mecque, 'Outba et Chayba (fils de Rabî'a). Voyant son état, ils eurent pitié et envoyèrent des raisins par leur esclave chrétien 'Addâs. Il ﷺ mangea en disant « Bismillâh ». (Ce détail vient de la Sîra d'Ibn Ishâq.) À cette occasion est rapportée l'invocation « Allâhumma ilayka achkoû dou'fa qouwwatî... », mais sa chaîne est faible.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🤲 L'épisode de l'ange des montagnes",
+           "Au retour, à Qarn ath-Tha'âlib, il ﷺ leva la tête : un morceau de nuage l'ombrageait, avec Jibrîl (paix sur lui). Il dit : « Allah a entendu ce que ton peuple a dit et ce qu'il t'a répondu. Voici l'ange des montagnes : ordonne-lui ce que tu veux. » L'ange salua et dit : « Si tu veux, je fais tomber sur eux les deux montagnes. » Le Prophète ﷺ dit : « Non, j'espère qu'Allah fera sortir de leur descendance des gens qui adoreront Allah seul et ne Lui associeront rien. » (Sahih al-Bukhari : 3231, Sahih Muslim : 1795). 'Â'icha (qu'Allah l'agrée) demanda : « As-tu connu un jour plus dur que le jour d'Ouhoud ? » Il dit : « Oui, le jour le plus dur fut celui de 'Aqaba » (selon les savants : le jour de Tâ'if).",
+           "Sahih al-Bukhari : 3231 ; Sahih Muslim : 1795"],
+          ["🌟 Miséricorde et espérance",
+           "Malgré une telle injustice, il ﷺ ne permit pas de les anéantir, mais espéra la foi pour leurs générations. Et ce fut le cas : la délégation de Thaqîf vint d'elle-même embrasser l'islam en l'an 9. Selon les livres de Sîra, au retour, à Nakhl, un groupe de djinns écouta le Coran de lui ﷺ et crut (sourate al-Ahqâf 46:29 ; dans Sahih al-Bukhari cet épisode est mentionné à Nakhl, sur la route du marché de 'Oukâz) ; puis Mout'im ibn 'Adî le fit entrer à La Mecque sous sa protection.",
+           "Coran : 46:29 ; l'épisode des djinns : Sahih al-Bukhari (tafsîr de sourate al-Jinn) ; le reste : récits de Sîra"],
+          ["🎯 La leçon",
+           "Cet épisode fait monter les larmes : une pluie de pierres, des pieds ensanglantés, et une invocation pour les ennemis. Nous devons invoquer pour nos ennemis aussi : c'est la voie du Prophète ﷺ.",
+           ""]
+        ],
+        [
+          ["Avec qui le Prophète ﷺ partit-il à Tâ'if ?", ["Abou Bakr (qu'Allah l'agrée)", "Zayd (qu'Allah l'agrée)", "'Umar (qu'Allah l'agrée)"]],
+          ["Que proposa l'ange des montagnes ?", ["Des biens", "D'écraser la ville sous les deux montagnes", "Un royaume"]],
+          ["Que répondit le Prophète ﷺ ?", ["Oui, écrase-les", "Non, il invoqua pour leur guidée", "Plus tard"]]
+        ],
+        [
+          ["619", "Le voyage à Tâ'if"],
+          ["619", "La pluie de pierres"],
+          ["619", "L'épisode de l'ange des montagnes"]
+        ]
+      ],
+      es: [
+        "El viaje a Taif: los pies ensangrentados y la súplica por los enemigos",
+        "Taif",
+        "619 (año 10 de la profecía)",
+        "Comprender el viaje del Profeta ﷺ a Taif, el daño sufrido y el episodio de su súplica por sus enemigos.",
+        "Caían piedras y los pies se llenaron de sangre; y aun así ﷺ no pidió su destrucción, sino que esperó la guía en su descendencia. Eso es misericordia, ese es el carácter del Profeta ﷺ. ¡Oh Alá! Concédenos esa misericordia. Amín.",
+        [
+          "El viaje a Taif a pie",
+          "La gente de Taif le lanzó piedras",
+          "Zayd ibn Hariza (que Alá esté complacido con él) se interpuso",
+          "Vino el ángel de las montañas",
+          "El Profeta ﷺ se negó a aplastarlos",
+          "Esperó la guía"
+        ],
+        [
+          ["🥾 El viaje a Taif",
+           "Tras el año de la tristeza, el Profeta ﷺ pensó: «Quizá la gente de Taif acepte.» Después de Abu Talib y Jadiya (que Alá esté complacido con ella), la esperanza de auxilio era escasa. Tomó a Zayd ibn Hariza (que Alá esté complacido con él) y fue a pie a Taif. Entre La Meca y Taif hay unos 100 km (cerca de 60 millas según Ar-Rahiq al-Majtum) de camino de montaña, a pie.",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🗣️ El rechazo de la gente de Taif",
+           "El Profeta ﷺ se reunió con los tres jefes de Taif (Abd Yalil, Masud y Habib, tres hermanos), los llamó al islam y pidió su auxilio. Uno se burló: «Si Alá te ha enviado, ¡que rompa los velos de la Kaaba!» El segundo dijo: «¿Acaso Alá no encontró a nadie más que a ti?» El tercero dijo: «No te hablaré: si eres veraz, hablar contigo es peligroso; y si eres mentiroso, es inútil.» Luego soltaron contra él a los jóvenes necios y a los esclavos de la ciudad, que lo insultaron y le lanzaron piedras. (Ibn Ishaq)",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🩸 Los pies ensangrentados",
+           "Las piedras cayeron tan densas que la sangre brotó de sus pies benditos. Zayd ibn Hariza (que Alá esté complacido con él) se hizo escudo para protegerlo y resultó herido. Finalmente ﷺ tuvo que refugiarse en un jardín de dos jefes de La Meca, Utba y Shayba (hijos de Rabia). Al ver su estado, se compadecieron y le enviaron uvas con su esclavo cristiano Addas. Él ﷺ comió diciendo «Bismil-lah». (Este detalle viene de la Sira de Ibn Ishaq.) En esa ocasión se transmite la súplica «Aláhumma ilayka ashku du'fa quwwati...», pero su cadena es débil.",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🤲 El episodio del ángel de las montañas",
+           "A la vuelta, en Qarn az-Za'alib, ﷺ levantó la cabeza: una nube le daba sombra y en ella estaba Yibril (la paz sea con él). Dijo: «Alá ha oído lo que dijo tu pueblo y lo que te respondió. Este es el ángel de las montañas: ordénale lo que quieras.» El ángel saludó y dijo: «Si quieres, hago caer sobre ellos las dos montañas.» El Profeta ﷺ dijo: «No; espero que Alá saque de su descendencia a gente que adore a Alá solo y no Le asocie nada.» (Sahih al-Bujari: 3231; Sahih Muslim: 1795). Aisha (que Alá esté complacido con ella) preguntó: «¿Tuviste un día más duro que el de Uhud?» Dijo: «Sí, el día más duro fue el de Aqaba» (según los sabios, el día de Taif).",
+           "Sahih al-Bujari: 3231; Sahih Muslim: 1795"],
+          ["🌟 Misericordia y esperanza",
+           "Pese a tan gran injusticia, ﷺ no permitió aniquilarlos, sino que esperó la fe para sus generaciones. Y así fue: la delegación de Zaqif vino ella misma a abrazar el islam en el año 9. Según los libros de Sira, a la vuelta, en Najl, un grupo de yinn escuchó el Corán de él ﷺ y creyó (sura al-Ahqaf 46:29; en Sahih al-Bujari este episodio se menciona en Najl, en el camino del mercado de Ukaz); luego Mutim ibn Adi lo hizo entrar en La Meca bajo su protección.",
+           "Corán: 46:29; el episodio de los yinn: Sahih al-Bujari (tafsir de la sura al-Yinn); el resto: relatos de Sira"],
+          ["🎯 La lección",
+           "Este episodio hace brotar lágrimas: una lluvia de piedras, pies ensangrentados y una súplica por los enemigos. Debemos suplicar también por nuestros enemigos: ese es el camino del Profeta ﷺ.",
+           ""]
+        ],
+        [
+          ["¿Con quién fue el Profeta ﷺ a Taif?", ["Abu Bakr (que Alá esté complacido con él)", "Zayd (que Alá esté complacido con él)", "Umar (que Alá esté complacido con él)"]],
+          ["¿Qué ofreció el ángel de las montañas?", ["Bienes", "Aplastar la ciudad con las dos montañas", "Un reino"]],
+          ["¿Qué respondió el Profeta ﷺ?", ["Sí, aplástalos", "No; suplicó por su guía", "Más tarde"]]
+        ],
+        [
+          ["619", "El viaje a Taif"],
+          ["619", "La lluvia de piedras"],
+          ["619", "El episodio del ángel de las montañas"]
+        ]
+      ]
     }
 
   }
