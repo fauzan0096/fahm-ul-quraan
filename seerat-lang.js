@@ -829,6 +829,382 @@ window.SEERAT_LANG = {
           ["~605", "Nacimiento de su hija Fatima"]
         ]
       ]
+    },
+
+    /* ═══════════════ DAY 5 — Pehli wahi (Ghar-e-Hira) ═══════════════ */
+    5: {
+      mr: [
+        "पहिली वही — हिरा गुहा",
+        "हिरा गुहा, नूर पर्वत",
+        "वय वर्षे ४०, इ.स. ६१०",
+        "नबी ﷺ यांचा एकांत, पहिल्या वहीची घटना आणि वहीची सुरुवात समजून घेणे.",
+        "पहिल्या वहीच्या वेळी नबी ﷺ थरथरत होते आणि खदीजा (र.अ.) यांनी सांत्वना दिली — हे प्रेम आणि विश्वासाचे नाते होते. हे अल्लाह! आम्हालाही कुरआनवर तसेच प्रेम दे जसे नबी ﷺ यांना होते. आमीन.",
+        [
+          "वय: ४० वर्षे",
+          "ठिकाण: हिरा गुहा",
+          "पहिली आयत: اقْرَأْ",
+          "पहिली ईमान आणणारी: खदीजा (र.अ.)",
+          "वरका बिन नौफल यांनी पुष्टी केली",
+          "वहीचा खंड, नंतर पुन्हा सुरुवात"
+        ],
+        [
+          ["🌙 एकांताची सवय",
+           "वय वर्षे ३५-४० दरम्यान नबी ﷺ यांना एकांत आवडू लागला. मक्केपासून दूर नूर पर्वतावरील हिरा गुहेत जात, अनेक दिवस राहत, अल्लाहची उपासना करत आणि विचार करत. आप ﷺ यांना खरे स्वप्न पडत, जे पहाटेच्या प्रकाशासारखे खरे ठरत. ही नबुव्वतच्या पहाटेची सुरुवात होती.",
+           "सहीह बुखारी: ३; सहीह मुस्लिम: १६०"],
+          ["📖 पहिली वही",
+           "वय वर्षे ४०, रमजानचा महिना, एके दिवशी गुहेत जिब्राईल (अ.स.) आले. ते म्हणाले: «اِقْرَأْ» (वाच). नबी ﷺ म्हणाले: «मी वाचणारा नाही.» देवदूताने जोरात कवटाळले, नंतर सोडले आणि म्हणाले: «اقْرَأْ». असे तीन वेळा झाले. नंतर देवदूताने वाचले: «اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ۝ الَّذِي عَلَّمَ بِالْقَلَمِ ۝ عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ» — (तुझ्या रबच्या नावाने वाच ज्याने निर्माण केले, माणसाला रक्ताच्या गुठळीतून निर्माण केले. वाच, आणि तुझा रब मोठा करमाळू आहे, ज्याने लेखणीने शिकवले, माणसाला ते शिकवले जे त्याला माहीत नव्हते).",
+           "सहीह बुखारी: ३; सहीह मुस्लिम: १६०; कुरआन: ९६:१-५"],
+          ["😰 भीती आणि अस्वस्थता",
+           "नबी ﷺ थरथरत घरी आले आणि हजरत खदीजा (र.अ.) यांना म्हणाले: «मला पांघरून घ्या, मला पांघरून घ्या» (زَمِّلُوْنِي زَمِّلُوْنِي). हजरत खदीजा (र.अ.) यांनी घोंगडी पांघरली. नंतर सर्व घटना सांगितली. हजरत खदीजा (र.अ.) म्हणाल्या: «अल्लाहची शपथ, अल्लाह तुम्हाला कधीही अपमानित करणार नाही. तुम्ही तर नाती जोडणारे, दुसऱ्यांचे ओझे उचलणारे, आधार नसलेल्यांचा आधार, पाहुण्यांचा मान करणारे आणि सत्याची मदत करणारे आहात.» ही सांत्वना एका पर्वताइतकी होती.",
+           "सहीह बुखारी: ३; सहीह मुस्लिम: १६०"],
+          ["👨‍🏫 वरका बिन नौफल",
+           "हजरत खदीजा (र.अ.) नबी ﷺ यांना वरका बिन नौफल यांच्याकडे घेऊन गेल्या, जे ख्रिश्चन विद्वान होते आणि इंजील वाचत. त्यांनी ऐकले आणि म्हणाले: «हाच तो नामूस (जिब्राईल अ.स.) आहे जो हजरत मूसा (अ.स.) यांच्याकडे येत असे. मी तरुण असतो तर! तुमचे लोक तुम्हाला काढून टाकतील त्या वेळी मी जिवंत असतो तर!» थोड्या दिवसांनी वरकांचे निधन झाले.",
+           "सहीह बुखारी: ३; सहीह मुस्लिम: १६०"],
+          ["💔 वहीचा खंड",
+           "पहिल्या वह्यीनंतर काही काळ वही थांबली (फतरतुल-वही); तिच्या कालावधीबद्दल सीरतकारांत मतभेद आहे. नबी ﷺ अस्वस्थ राहिले आणि वहीची वाट पाहत राहिले. नंतर एके दिवशी आप ﷺ यांनी आकाश व धरतीच्या दरम्यान तोच देवदूत आसनावर बसलेला पाहिला; आप ﷺ घाबरून घरी आले आणि म्हणाले: «मला चादर पांघरून घ्या» (सहीह बुखारी). तेव्हा या आयती उतरल्या: «يَا أَيُّهَا الْمُدَّثِّرُ ۝ قُمْ فَأَنذِرْ ۝ وَرَبَّكَ فَكَبِّرْ» — (हे चादर ओढणाऱ्या! उठ आणि भय दाखव, आणि आपल्या रबची मोठी स्तुती कर) — सूरह अल-मुद्दस्सिर ७४:१-३. अशा प्रकारे वहीची मालिका पुन्हा सुरू झाली.",
+           "सहीह बुखारी: ४, ४९२२; सहीह मुस्लिम: १६१; कुरआन: ७४:१-३"],
+          ["🎯 बोध",
+           "अल्लाहने आपल्या हबीबाला एकांतात बोलावले, कारण जगाच्या गोंगाटापासून दूर मन स्वच्छ होते. वहीची सुरुवात «اقْرَأْ» ने झाली — वाच. हे दाखवते की ज्ञानाचे महत्त्व किती आहे. आपण अभ्यासाला उपासना मानले पाहिजे आणि एकांतात अल्लाहशी मनमोकळे बोलले पाहिजे.",
+           ""]
+        ],
+        [
+          ["पहिली वही कुठे आली?", ["सौर गुहा", "हिरा गुहा", "उहुद पर्वत"]],
+          ["पहिली आयत कोणती?", ["اقْرَأْ", "قُلْ", "سَبِّحْ"]],
+          ["पहिली ईमान आणणारी कोण?", ["आयशा", "खदीजा", "फातिमा"]]
+        ],
+        [
+          ["इ.स. ६१०", "पहिली वही — اقْرَأْ"],
+          ["इ.स. ६१०", "वरका बिन नौफल यांची पुष्टी"],
+          ["इ.स. ६१०", "वहीचा खंड"],
+          ["इ.स. ६१०", "सूरह अल-मुद्दस्सिरपासून वही पुन्हा"]
+        ]
+      ],
+      ar: [
+        "أول الوحي — غار حراء",
+        "غار حراء، جبل النور",
+        "في الأربعين، سنة 610 م",
+        "فهم خلوة النبي ﷺ، وقصة أول الوحي، وبداية نزول الوحي.",
+        "كان النبي ﷺ يرتجف عند أول الوحي، فثبّتته خديجة رضي الله عنها — وكان ذلك رابط محبة وثقة. اللهم ارزقنا حب القرآن كما كان حب النبي ﷺ له. آمين.",
+        [
+          "العمر: 40 سنة",
+          "المكان: غار حراء",
+          "أول آية: اقْرَأْ",
+          "أول من آمن: خديجة رضي الله عنها",
+          "ورقة بن نوفل صدّقه",
+          "توقف الوحي ثم عاد"
+        ],
+        [
+          ["🌙 عادة الخلوة",
+           "بين الخامسة والثلاثين والأربعين حُبّبت إليه ﷺ الخلوة، فكان يذهب إلى غار حراء بجبل النور بعيدًا عن مكة، ويقيم فيه أيامًا يعبد الله ويتفكر. وكان يرى الرؤيا الصادقة فتجيء مثل فلق الصبح. وكان ذلك بداية صباح النبوة.",
+           "صحيح البخاري: 3؛ صحيح مسلم: 160"],
+          ["📖 أول الوحي",
+           "في الأربعين من عمره، في شهر رمضان، جاءه جبريل عليه السلام في الغار يومًا فقال: «اِقْرَأْ». قال ﷺ: «ما أنا بقارئ». فغتّه الملك، ثم أرسله، فقال: «اقْرَأْ». ثلاث مرات. ثم قرأ: «اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ۝ الَّذِي عَلَّمَ بِالْقَلَمِ ۝ عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ».",
+           "صحيح البخاري: 3؛ صحيح مسلم: 160؛ القرآن: 96:1-5"],
+          ["😰 الخوف والاضطراب",
+           "رجع ﷺ إلى البيت يرتجف فقال لخديجة رضي الله عنها: «زمّلوني، زمّلوني». فزمّلته، ثم أخبرها بالخبر. فقالت: «والله لا يخزيك الله أبدًا؛ إنك لتصل الرحم، وتحمل الكَلّ، وتكسب المعدوم، وتقري الضيف، وتعين على نوائب الحق». وكانت هذه التسلية كالجبل.",
+           "صحيح البخاري: 3؛ صحيح مسلم: 160"],
+          ["👨‍🏫 ورقة بن نوفل",
+           "ذهبت به خديجة رضي الله عنها إلى ورقة بن نوفل، وكان نصرانيًّا يقرأ الإنجيل. فلما سمع قال: «هذا الناموس الذي نزل على موسى عليه السلام. يا ليتني كنت جذعًا، ليتني أكون حيًّا حين يخرجك قومك». ثم توفي ورقة بعد أيام.",
+           "صحيح البخاري: 3؛ صحيح مسلم: 160"],
+          ["💔 فترة الوحي",
+           "بعد الوحي الأول توقف الوحي مدة (فترة الوحي)، وفي مدتها خلاف بين أهل السير. فبقي ﷺ قلقًا ينتظر الوحي. ثم رأى يومًا ذلك الملك جالسًا على كرسي بين السماء والأرض، فرجع إلى بيته يرتجف فقال: «دثّروني» (صحيح البخاري). فنزلت: «يَا أَيُّهَا الْمُدَّثِّرُ ۝ قُمْ فَأَنذِرْ ۝ وَرَبَّكَ فَكَبِّرْ» — سورة المدثر 74:1-3. وهكذا عاد الوحي.",
+           "صحيح البخاري: 4، 4922؛ صحيح مسلم: 161؛ القرآن: 74:1-3"],
+          ["🎯 العبرة",
+           "دعا الله حبيبه إلى الخلوة، لأن القلب يصفو بعيدًا عن ضجيج الدنيا. وقد بدأ الوحي بـ«اقْرَأْ» — اقرأ — وهذا يدل على عظيم شأن العلم. فعلينا أن نعدّ طلب العلم عبادة، وأن نناجي الله في الخلوة.",
+           ""]
+        ],
+        [
+          ["أين نزل أول الوحي؟", ["غار ثور", "غار حراء", "جبل أحد"]],
+          ["ما أول آية نزلت؟", ["اقْرَأْ", "قُلْ", "سَبِّحْ"]],
+          ["من أول من آمن؟", ["عائشة", "خديجة", "فاطمة"]]
+        ],
+        [
+          ["610", "أول الوحي — اقْرَأْ"],
+          ["610", "تصديق ورقة بن نوفل"],
+          ["610", "فترة الوحي"],
+          ["610", "عود الوحي بسورة المدثر"]
+        ]
+      ],
+      fr: [
+        "La première révélation — la grotte de Hirâ'",
+        "La grotte de Hirâ', mont Nour",
+        "À quarante ans, en 610",
+        "Comprendre la retraite du Prophète ﷺ, l'épisode de la première révélation et le début de la révélation.",
+        "Au moment de la première révélation, le Prophète ﷺ tremblait et Khadîja (qu'Allah l'agrée) le rassura : c'était un lien d'amour et de confiance. Ô Allah ! Accorde-nous pour le Coran un amour semblable à celui du Prophète ﷺ. Âmîn.",
+        [
+          "Âge : 40 ans",
+          "Lieu : la grotte de Hirâ'",
+          "Premier verset : اقْرَأْ",
+          "La première à croire : Khadîja (qu'Allah l'agrée)",
+          "Waraqa ibn Nawfal le confirma",
+          "Interruption de la révélation, puis reprise"
+        ],
+        [
+          ["🌙 L'habitude de la retraite",
+           "Entre trente-cinq et quarante ans, la solitude devint chère au Prophète ﷺ. Il se rendait à la grotte de Hirâ', sur le mont Nour, loin de La Mecque, y demeurait plusieurs jours, adorait Allah et méditait. Il avait des rêves véridiques qui se réalisaient comme la lumière de l'aube. Ce fut le début de l'aube de la prophétie.",
+           "Sahih al-Bukhari : 3 ; Sahih Muslim : 160"],
+          ["📖 La première révélation",
+           "À quarante ans, au mois de Ramadan, Jibrîl (paix sur lui) vint un jour dans la grotte. Il dit : « اِقْرَأْ » (Lis). Le Prophète ﷺ répondit : « Je ne sais pas lire. » L'ange le serra fort, puis le relâcha et dit : « Lis. » Cela se produisit trois fois. Puis l'ange récita : « اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ۝ الَّذِي عَلَّمَ بِالْقَلَمِ ۝ عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ » — Lis au nom de ton Seigneur qui a créé, qui a créé l'homme d'un caillot de sang. Lis ! Ton Seigneur est le Très Noble, qui a enseigné par la plume, a enseigné à l'homme ce qu'il ne savait pas.",
+           "Sahih al-Bukhari : 3 ; Sahih Muslim : 160 ; Coran : 96:1-5"],
+          ["😰 La peur et le trouble",
+           "Le Prophète ﷺ rentra chez lui en tremblant et dit à Khadîja (qu'Allah l'agrée) : « Enveloppez-moi, enveloppez-moi » (زَمِّلُوْنِي زَمِّلُوْنِي). Elle le couvrit d'un manteau, puis il raconta tout. Elle dit : « Par Allah, Allah ne t'avilira jamais. Tu maintiens les liens de parenté, tu portes le fardeau des autres, tu secours les démunis, tu honores l'hôte et tu aides la vérité. » Cette consolation valait une montagne.",
+           "Sahih al-Bukhari : 3 ; Sahih Muslim : 160"],
+          ["👨‍🏫 Waraqa ibn Nawfal",
+           "Khadîja (qu'Allah l'agrée) le mena chez Waraqa ibn Nawfal, un savant chrétien qui lisait l'Évangile. Ayant entendu, il dit : « C'est le Nâmous (Jibrîl) qui descendait sur Mûsâ (paix sur lui). Que ne suis-je jeune ! Que ne serais-je vivant quand ton peuple te fera sortir ! » Peu de jours après, Waraqa mourut.",
+           "Sahih al-Bukhari : 3 ; Sahih Muslim : 160"],
+          ["💔 L'interruption de la révélation",
+           "Après la première révélation, celle-ci s'interrompit un temps (fatrat al-wahy) ; les historiens de la Sîra divergent sur sa durée. Le Prophète ﷺ resta inquiet, attendant la révélation. Puis un jour il ﷺ vit ce même ange assis sur un trône entre le ciel et la terre ; il rentra chez lui effrayé et dit : « Couvrez-moi d'un manteau » (Sahih al-Bukhari). Alors descendirent ces versets : « يَا أَيُّهَا الْمُدَّثِّرُ ۝ قُمْ فَأَنذِرْ ۝ وَرَبَّكَ فَكَبِّرْ » — sourate al-Mouddaththir 74:1-3 : Ô toi qui es enveloppé ! Lève-toi et avertis, et proclame la grandeur de ton Seigneur. Ainsi la révélation reprit.",
+           "Sahih al-Bukhari : 4, 4922 ; Sahih Muslim : 161 ; Coran : 74:1-3"],
+          ["🎯 La leçon",
+           "Allah appela Son bien-aimé dans la solitude, car loin du bruit du monde le cœur s'épure. La révélation commença par « اقْرَأْ » — Lis. Cela montre l'importance du savoir. Nous devons considérer l'étude comme une adoration et converser avec Allah dans la solitude.",
+           ""]
+        ],
+        [
+          ["Où vint la première révélation ?", ["La grotte de Thawr", "La grotte de Hirâ'", "Le mont Ouhoud"]],
+          ["Quel est le premier verset ?", ["اقْرَأْ", "قُلْ", "سَبِّحْ"]],
+          ["Qui fut la première à croire ?", ["'Â'icha", "Khadîja", "Fâtima"]]
+        ],
+        [
+          ["610", "La première révélation — اقْرَأْ"],
+          ["610", "La confirmation de Waraqa ibn Nawfal"],
+          ["610", "L'interruption de la révélation"],
+          ["610", "Reprise de la révélation par sourate al-Mouddaththir"]
+        ]
+      ],
+      es: [
+        "La primera revelación: la cueva de Hira",
+        "La cueva de Hira, monte Nur",
+        "A los cuarenta años, en 610",
+        "Comprender el retiro del Profeta ﷺ, el episodio de la primera revelación y el comienzo de la revelación.",
+        "En el momento de la primera revelación el Profeta ﷺ temblaba y Jadiya (que Alá esté complacido con ella) lo tranquilizó: era un lazo de amor y confianza. ¡Oh Alá! Concédenos por el Corán un amor como el que tenía el Profeta ﷺ. Amín.",
+        [
+          "Edad: 40 años",
+          "Lugar: la cueva de Hira",
+          "Primera aleya: اقْرَأْ",
+          "La primera en creer: Jadiya (que Alá esté complacido con ella)",
+          "Waraqa ibn Nawfal lo confirmó",
+          "Interrupción de la revelación y luego reanudación"
+        ],
+        [
+          ["🌙 La costumbre del retiro",
+           "Entre los treinta y cinco y los cuarenta años, la soledad se volvió querida para el Profeta ﷺ. Iba a la cueva de Hira, en el monte Nur, lejos de La Meca, permanecía allí varios días, adoraba a Alá y meditaba. Tenía sueños veraces que se cumplían como la luz del alba. Fue el comienzo del alba de la profecía.",
+           "Sahih al-Bujari: 3; Sahih Muslim: 160"],
+          ["📖 La primera revelación",
+           "A los cuarenta años, en el mes de Ramadán, Yibril (la paz sea con él) vino un día a la cueva. Dijo: «اِقْرَأْ» (Lee). El Profeta ﷺ respondió: «No sé leer.» El ángel lo apretó con fuerza, luego lo soltó y dijo: «Lee.» Esto ocurrió tres veces. Después el ángel recitó: «اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ۝ الَّذِي عَلَّمَ بِالْقَلَمِ ۝ عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ» — Lee en el nombre de tu Señor que creó, que creó al hombre de un coágulo. ¡Lee! Tu Señor es el Más Generoso, que enseñó con la pluma, enseñó al hombre lo que no sabía.",
+           "Sahih al-Bujari: 3; Sahih Muslim: 160; Corán: 96:1-5"],
+          ["😰 El miedo y la inquietud",
+           "El Profeta ﷺ llegó a casa temblando y dijo a Jadiya (que Alá esté complacido con ella): «Cubridme, cubridme» (زَمِّلُوْنِي زَمِّلُوْنِي). Ella lo cubrió con un manto y luego él contó todo. Ella dijo: «Por Alá, Alá nunca te humillará. Tú mantienes los lazos familiares, cargas con el peso de otros, socorres a los desamparados, honras al huésped y ayudas a la verdad.» Ese consuelo valía una montaña.",
+           "Sahih al-Bujari: 3; Sahih Muslim: 160"],
+          ["👨‍🏫 Waraqa ibn Nawfal",
+           "Jadiya (que Alá esté complacido con ella) lo llevó a Waraqa ibn Nawfal, un sabio cristiano que leía el Evangelio. Al oírlo dijo: «Este es el Namus (Yibril) que descendía sobre Musa (la paz sea con él). ¡Ojalá fuera joven! ¡Ojalá estuviera vivo cuando tu pueblo te expulse!» Pocos días después, Waraqa falleció.",
+           "Sahih al-Bujari: 3; Sahih Muslim: 160"],
+          ["💔 La interrupción de la revelación",
+           "Tras la primera revelación, esta se interrumpió un tiempo (fatrat al-wahy); los historiadores de la Sira discrepan sobre su duración. El Profeta ﷺ quedó inquieto esperando la revelación. Luego, un día, vio ﷺ a ese mismo ángel sentado en un trono entre el cielo y la tierra; volvió a casa asustado y dijo: «Cubridme con un manto» (Sahih al-Bujari). Entonces descendieron estas aleyas: «يَا أَيُّهَا الْمُدَّثِّرُ ۝ قُمْ فَأَنذِرْ ۝ وَرَبَّكَ فَكَبِّرْ» — sura al-Muddazzir 74:1-3: ¡Oh tú, envuelto! Levántate y advierte, y proclama la grandeza de tu Señor. Así se reanudó la revelación.",
+           "Sahih al-Bujari: 4, 4922; Sahih Muslim: 161; Corán: 74:1-3"],
+          ["🎯 La lección",
+           "Alá llamó a Su amado a la soledad, porque lejos del ruido del mundo el corazón se purifica. La revelación comenzó con «اقْرَأْ»: Lee. Esto muestra la importancia del conocimiento. Debemos considerar el estudio como adoración y conversar con Alá en la soledad.",
+           ""]
+        ],
+        [
+          ["¿Dónde vino la primera revelación?", ["La cueva de Zawr", "La cueva de Hira", "El monte Uhud"]],
+          ["¿Cuál es la primera aleya?", ["اقْرَأْ", "قُلْ", "سَبِّحْ"]],
+          ["¿Quién fue la primera en creer?", ["Aisha", "Jadiya", "Fatima"]]
+        ],
+        [
+          ["610", "La primera revelación: اقْرَأْ"],
+          ["610", "La confirmación de Waraqa ibn Nawfal"],
+          ["610", "La interrupción de la revelación"],
+          ["610", "Reanudación de la revelación con la sura al-Muddazzir"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 6 — Da'wat-e-khufiya ═══════════════ */
+    6: {
+      mr: [
+        "गुप्त दावत — लपून प्रचार",
+        "मक्का, दारुल-अरकम",
+        "इ.स. ६१०-६१३",
+        "नबुव्वतच्या सुरुवातीच्या ३ वर्षांची गुप्त दावत आणि पहिल्या मुस्लिमांचे चारित्र्य समजून घेणे.",
+        "हजरत अबू बक्र (र.अ.) यांच्या दावतीमुळे अनेक मोठे सहाबा ईमान आणले. हेच प्रशिक्षण होते, हाच परिणाम होता. हे अल्लाह! आम्हालाही दावतीची तौफीक दे. आमीन.",
+        [
+          "३ वर्षांची गुप्त दावत",
+          "पहिला पुरुष: अबू बक्र (र.अ.)",
+          "पहिले बालक: अली (र.अ.)",
+          "पहिला गुलाम: झैद (र.अ.)",
+          "पहिली स्त्री: खदीजा (र.अ.)",
+          "सुमारे ४० मुस्लिम"
+        ],
+        [
+          ["🎯 शहाणपणाने सुरुवात",
+           "सुरुवातीची सुमारे तीन वर्षे दावत गुप्त राहिली. का? कारण विरोधाचा धोका होता आणि नव्या ईमानवाल्यांना प्रशिक्षणाची गरज होती. नबी ﷺ यांनी एक एकाला बोलावले आणि संयमाने समजावले.",
+           ""],
+          ["👥 पहिले मुस्लिम",
+           "पहिला पुरुष: हजरत अबू बक्र (र.अ.). पहिले बालक: हजरत अली (र.अ.) (वय १०). पहिला गुलाम: हजरत झैद बिन हारिसा (र.अ.). पहिली स्त्री: हजरत खदीजा (र.अ.). हजरत अबू बक्र (र.अ.) यांनी आपल्या मित्रांना बोलावले: उस्मान (र.अ.), झुबैर (र.अ.), अब्दुर्रहमान बिन औफ (र.अ.), साद बिन अबी वक्कास (र.अ.) आणि तल्हा (र.अ.) — हे पाचही पुढे «अशरा-ए-मुबश्शरा» मध्ये सामील झाले. तीन वर्षांत सुमारे ४० लोक ईमान आणले.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🏠 दारुल-अरकम",
+           "हजरत अरकम बिन अबिल-अरकम (र.अ.) यांचे घर, सफा टेकडीजवळ, नबी ﷺ यांचे गुप्त केंद्र बनले. इथे लोक येत, कुरआन ऐकत आणि नबी ﷺ यांची शिकवण शिकत. ही पहिली इस्लामी मदरसा होती.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🕌 नमाज़ची सुरुवात",
+           "सुरुवातीला सकाळी व संध्याकाळी दोन दोन रकअत नमाज़ पढली जात असे (पाच नमाजा नंतर मेराजच्या रात्री फर्ज झाल्या). हजरत खदीजा (र.अ.), हजरत अली (र.अ.) आणि हजरत अबू बक्र (र.अ.) सर्व पढत. सीरतच्या पुस्तकांत येते की एके दिवशी अबू तालिब यांनी पाहिले की नबी ﷺ आणि अली (र.अ.) नमाज़ पढत आहेत, तेव्हा ते म्हणाले: «बाळा, हे काय आहे?» नबी ﷺ म्हणाले: «हे अल्लाहचे दीन आहे, जे मी घेऊन आलो आहे.» अबू तालिब म्हणाले: «मी तुम्हाला मदत करीन, पण मी माझ्या वडिलांचा-आजोबांचा दीन सोडू शकत नाही.»",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (या घटनेच्या सनदेवर चर्चा आहे)"],
+          ["🌱 प्रशिक्षणाचे महत्त्व",
+           "ही तीन वर्षे ईमानाच्या प्रशिक्षणाची होती. सहाबांनी कुरआनच्या आयती शिकल्या, नबी ﷺ यांचे चारित्र्य पाहिले आणि मने मजबूत केली. जेव्हा खुली दावत सुरू झाली, तेव्हा हा मजबूत पाया कामी आला.",
+           ""],
+          ["🎯 बोध",
+           "शहाणपणाने काम करणे. प्रत्येक काम आपल्या वेळी, आपल्या क्रमाने. दावत देताना घाई करू नये; आधी मन तयार करावे, नंतर बोलावे.",
+           ""]
+        ],
+        [
+          ["गुप्त दावत किती वर्षे राहिली?", ["२", "३", "५"]],
+          ["पहिला पुरुष मुस्लिम कोण?", ["उमर", "अबू बक्र", "उस्मान"]],
+          ["गुप्त केंद्राचे नाव काय?", ["दारुल-अरकम", "मस्जिदे-नबवी", "गुहा"]]
+        ],
+        [
+          ["इ.स. ६१०", "हजरत खदीजा (र.अ.) व अली (र.अ.) यांचा इस्लाम"],
+          ["इ.स. ६१०", "हजरत अबू बक्र (र.अ.) यांचा इस्लाम"],
+          ["इ.स. सु. ६११", "दारुल-अरकमची स्थापना"],
+          ["इ.स. ६१३", "गुप्त दावतीची समाप्ती"]
+        ]
+      ],
+      ar: [
+        "الدعوة السرية — التبليغ خفية",
+        "مكة، دار الأرقم",
+        "610-613 م",
+        "فهم الدعوة السرية في السنوات الثلاث الأولى من النبوة، وخلق المسلمين الأوائل.",
+        "بدعوة أبي بكر رضي الله عنه أسلم كبار الصحابة رضي الله عنهم. تلك كانت التربية، وذلك كان الأثر. اللهم وفقنا للدعوة إليك. آمين.",
+        [
+          "ثلاث سنين من الدعوة السرية",
+          "أول الرجال: أبو بكر رضي الله عنه",
+          "أول الصبيان: علي رضي الله عنه",
+          "أول الموالي: زيد رضي الله عنه",
+          "أول النساء: خديجة رضي الله عنها",
+          "نحو أربعين مسلمًا"
+        ],
+        [
+          ["🎯 بداية بحكمة",
+           "بقيت الدعوة سرًّا نحو ثلاث سنين. لماذا؟ لخطر المعارضة، ولحاجة المؤمنين الجدد إلى التربية. فكان ﷺ يدعو واحدًا واحدًا ويشرح لهم بصبر.",
+           ""],
+          ["👥 أوائل المسلمين",
+           "أول الرجال: أبو بكر رضي الله عنه. وأول الصبيان: علي رضي الله عنه (ابن عشر). وأول الموالي: زيد بن حارثة رضي الله عنه. وأول النساء: خديجة رضي الله عنها. ودعا أبو بكر رضي الله عنه أصحابه: عثمان والزبير وعبد الرحمن بن عوف وسعد بن أبي وقاص وطلحة رضي الله عنهم — وهؤلاء الخمسة من «العشرة المبشرين بالجنة». وأسلم في ثلاث سنين نحو أربعين رجلًا.",
+           "من روايات السيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🏠 دار الأرقم",
+           "صار بيت الأرقم بن أبي الأرقم رضي الله عنه، قريبًا من جبل الصفا، مركز النبي ﷺ السري. يأتيه الناس فيسمعون القرآن ويتعلمون تعاليم النبي ﷺ. وكان أول مدرسة إسلامية.",
+           "من روايات السيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🕌 بداية الصلاة",
+           "كانوا يصلّون في البداية ركعتين صباحًا وركعتين مساءً (والصلوات الخمس فُرضت بعد ذلك ليلة المعراج). وكانت خديجة وعلي وأبو بكر رضي الله عنهم يصلّون. وجاء في كتب السيرة أن أبا طالب رأى يومًا النبي ﷺ وعليًّا يصليان فقال: «يا ابن أخي، ما هذا؟» فقال ﷺ: «هذا دين الله الذي جئت به». فقال أبو طالب: «إني سأنصرك، ولكن لا أستطيع أن أترك دين آبائي».",
+           "من روايات السيرة — سيرة ابن هشام / الرحيق المختوم (وفي إسناد هذه القصة كلام)"],
+          ["🌱 أهمية التربية",
+           "كانت هذه الثلاث سنين تربيةً للإيمان. تعلّم الصحابة آيات القرآن، ورأوا خلق النبي ﷺ، وقوّوا قلوبهم. فلما بدأت الدعوة العلنية كان هذا الأساس المتين هو العماد.",
+           ""],
+          ["🎯 العبرة",
+           "العمل بالحكمة. فكل عمل في وقته وترتيبه. فلا نستعجل في الدعوة، بل نُهيّئ القلوب أولًا ثم نتكلم.",
+           ""]
+        ],
+        [
+          ["كم سنة استمرت الدعوة السرية؟", ["2", "3", "5"]],
+          ["من أول الرجال إسلامًا؟", ["عمر", "أبو بكر", "عثمان"]],
+          ["ما اسم المركز السري؟", ["دار الأرقم", "المسجد النبوي", "الغار"]]
+        ],
+        [
+          ["610", "إسلام خديجة وعلي رضي الله عنهما"],
+          ["610", "إسلام أبي بكر رضي الله عنه"],
+          ["نحو 611", "قيام دار الأرقم"],
+          ["613", "انتهاء الدعوة السرية"]
+        ]
+      ],
+      fr: [
+        "La prédication secrète — appeler en secret",
+        "La Mecque, la maison d'al-Arqam",
+        "610-613",
+        "Comprendre la prédication secrète des trois premières années de la prophétie et le caractère des premiers musulmans.",
+        "Par la prédication d'Abou Bakr (qu'Allah l'agrée), de grands Compagnons embrassèrent l'islam. Telle était la formation, tel fut l'effet. Ô Allah ! Accorde-nous d'appeler vers Toi. Âmîn.",
+        [
+          "Trois ans de prédication secrète",
+          "Premier homme : Abou Bakr (qu'Allah l'agrée)",
+          "Premier enfant : 'Alî (qu'Allah l'agrée)",
+          "Premier affranchi : Zayd (qu'Allah l'agrée)",
+          "Première femme : Khadîja (qu'Allah l'agrée)",
+          "Environ quarante musulmans"
+        ],
+        [
+          ["🎯 Un début plein de sagesse",
+           "La prédication resta secrète environ trois ans. Pourquoi ? En raison du danger de l'opposition et du besoin de formation des nouveaux croyants. Le Prophète ﷺ appelait chacun individuellement et expliquait avec patience.",
+           ""],
+          ["👥 Les premiers musulmans",
+           "Premier homme : Abou Bakr (qu'Allah l'agrée). Premier enfant : 'Alî (qu'Allah l'agrée), âgé de dix ans. Premier affranchi : Zayd ibn Hâritha (qu'Allah l'agrée). Première femme : Khadîja (qu'Allah l'agrée). Abou Bakr (qu'Allah l'agrée) appela ses amis : 'Uthmân, az-Zubayr, 'Abd ar-Rahmân ibn 'Awf, Sa'd ibn Abî Waqqâs et Talha (qu'Allah les agrée) — ces cinq font partie des « dix annoncés au Paradis ». En trois ans, environ quarante personnes embrassèrent l'islam.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🏠 La maison d'al-Arqam",
+           "La maison d'al-Arqam ibn Abî al-Arqam (qu'Allah l'agrée), près de la colline de Safâ, devint le centre secret du Prophète ﷺ. On y venait écouter le Coran et apprendre l'enseignement du Prophète ﷺ. Ce fut la première école islamique.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🕌 Le début de la prière",
+           "Au début, on priait deux rak'ahs le matin et deux le soir (les cinq prières furent rendues obligatoires plus tard, la nuit du Mi'râj). Khadîja, 'Alî et Abou Bakr (qu'Allah les agrée) priaient. Les livres de Sîra rapportent qu'un jour Abou Tâlib vit le Prophète ﷺ et 'Alî prier et dit : « Mon neveu, qu'est-ce que c'est ? » Il ﷺ dit : « C'est la religion d'Allah que j'ai apportée. » Abou Tâlib dit : « Je t'aiderai, mais je ne peux pas abandonner la religion de mes pères. »",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (la chaîne de cet épisode est discutée)"],
+          ["🌱 L'importance de la formation",
+           "Ces trois années furent une formation à la foi. Les Compagnons apprirent les versets du Coran, observèrent le caractère du Prophète ﷺ et fortifièrent leurs cœurs. Quand la prédication publique commença, cette base solide fut d'un grand secours.",
+           ""],
+          ["🎯 La leçon",
+           "Agir avec sagesse. Chaque chose en son temps et dans son ordre. Nous ne devons pas nous précipiter dans la prédication : préparons d'abord les cœurs, puis parlons.",
+           ""]
+        ],
+        [
+          ["Combien d'années dura la prédication secrète ?", ["2", "3", "5"]],
+          ["Qui fut le premier homme à embrasser l'islam ?", ["'Umar", "Abou Bakr", "'Uthmân"]],
+          ["Quel est le nom du centre secret ?", ["La maison d'al-Arqam", "La mosquée du Prophète", "La grotte"]]
+        ],
+        [
+          ["610", "Islam de Khadîja et de 'Alî (qu'Allah les agrée)"],
+          ["610", "Islam d'Abou Bakr (qu'Allah l'agrée)"],
+          ["~611", "Ouverture de la maison d'al-Arqam"],
+          ["613", "Fin de la prédication secrète"]
+        ]
+      ],
+      es: [
+        "La predicación secreta: llamar en secreto",
+        "La Meca, la casa de al-Arqam",
+        "610-613",
+        "Comprender la predicación secreta de los tres primeros años de la profecía y el carácter de los primeros musulmanes.",
+        "Por la predicación de Abu Bakr (que Alá esté complacido con él), grandes Compañeros abrazaron el islam. Esa fue la formación, ese fue el efecto. ¡Oh Alá! Concédenos llamar hacia Ti. Amín.",
+        [
+          "Tres años de predicación secreta",
+          "Primer hombre: Abu Bakr (que Alá esté complacido con él)",
+          "Primer niño: Ali (que Alá esté complacido con él)",
+          "Primer liberto: Zayd (que Alá esté complacido con él)",
+          "Primera mujer: Jadiya (que Alá esté complacido con ella)",
+          "Unos cuarenta musulmanes"
+        ],
+        [
+          ["🎯 Un comienzo con sabiduría",
+           "La predicación permaneció secreta unos tres años. ¿Por qué? Por el peligro de la oposición y la necesidad de formación de los nuevos creyentes. El Profeta ﷺ llamaba a cada uno individualmente y explicaba con paciencia.",
+           ""],
+          ["👥 Los primeros musulmanes",
+           "Primer hombre: Abu Bakr (que Alá esté complacido con él). Primer niño: Ali (que Alá esté complacido con él), de diez años. Primer liberto: Zayd ibn Hariza (que Alá esté complacido con él). Primera mujer: Jadiya (que Alá esté complacido con ella). Abu Bakr (que Alá esté complacido con él) llamó a sus amigos: Uzman, az-Zubayr, Abd ar-Rahman ibn Awf, Sad ibn Abi Waqqas y Talha (que Alá esté complacido con ellos); esos cinco forman parte de «los diez anunciados con el Paraíso». En tres años abrazaron el islam unas cuarenta personas.",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🏠 La casa de al-Arqam",
+           "La casa de al-Arqam ibn Abi al-Arqam (que Alá esté complacido con él), cerca de la colina de Safa, se convirtió en el centro secreto del Profeta ﷺ. La gente iba a escuchar el Corán y a aprender las enseñanzas del Profeta ﷺ. Fue la primera escuela islámica.",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🕌 El comienzo de la oración",
+           "Al principio se rezaban dos rakas por la mañana y dos por la tarde (las cinco oraciones se hicieron obligatorias después, la noche del Miray). Jadiya, Ali y Abu Bakr (que Alá esté complacido con ellos) rezaban. Los libros de Sira cuentan que un día Abu Talib vio al Profeta ﷺ y a Ali rezando y dijo: «Sobrino, ¿qué es esto?» Él ﷺ dijo: «Es la religión de Alá que he traído.» Abu Talib dijo: «Te ayudaré, pero no puedo abandonar la religión de mis padres.»",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (la cadena de este episodio es discutida)"],
+          ["🌱 La importancia de la formación",
+           "Esos tres años fueron una formación en la fe. Los Compañeros aprendieron las aleyas del Corán, observaron el carácter del Profeta ﷺ y fortalecieron sus corazones. Cuando comenzó la predicación pública, esa base firme fue de gran ayuda.",
+           ""],
+          ["🎯 La lección",
+           "Actuar con sabiduría. Cada cosa en su tiempo y en su orden. No debemos apresurarnos en la predicación: preparemos primero los corazones y luego hablemos.",
+           ""]
+        ],
+        [
+          ["¿Cuántos años duró la predicación secreta?", ["2", "3", "5"]],
+          ["¿Quién fue el primer hombre en abrazar el islam?", ["Umar", "Abu Bakr", "Uzman"]],
+          ["¿Cómo se llama el centro secreto?", ["La casa de al-Arqam", "La mezquita del Profeta", "La cueva"]]
+        ],
+        [
+          ["610", "Islam de Jadiya y de Ali (que Alá esté complacido con ellos)"],
+          ["610", "Islam de Abu Bakr (que Alá esté complacido con él)"],
+          ["~611", "Apertura de la casa de al-Arqam"],
+          ["613", "Fin de la predicación secreta"]
+        ]
+      ]
     }
 
   }
