@@ -202,6 +202,9 @@ Locally chalane ke liye `python3 -m http.server` chalayein aur `http://localhost
 ## 📴 Offline
 
 - Pages, JS, CSS, icons, **Google Fonts** aur **azan/nasheed mp3** pehli baar net se aane ke baad offline chalte hain (`sw.js`: `fq-audio-v1`, `fq-fonts-v1` caches, version badalne par delete nahi hote).
+- **v96 (offline fix):** install par sirf bunyaadi shell (index, app, tools, sounds, icons, theme, manifest) save hota hai — service worker foran active ho jata hai. Baaki files (pages, `course.js`, `seerat.js`, duaein, azan/nasheed) **pichhe se** bharti hain: activate ke baad, aur har page khulne par `app.js` jo message bhejta hai (`fq-precache`) us par. Pehle poora ~9 MB install mein utarta tha, is liye kai phones par SW kabhi `installing` se aage nahi badhta tha aur offline app khulti hi nahi thi.
+- Purane cache ki files naye `CACHE_NAME` mein copy ho jaati hain, is liye version badalne par 9 MB dobara download nahi hota — sirf nayi/badli hui files aati hain.
+- Koi page cache mein na ho aur net bhi na ho to app ek saaf message dikhati hai ("Internet ek baar chahiye"), browser ki "no internet" screen nahi.
 - Qari ki ayat ki recording ke liye **⬇️ Download** (neeche) ya internet chahiye. Namaz ke waqt ki location lookup (Aladhan) ke liye bhi net chahiye; ek baar le lene ke baad waqt save rehte hain.
 
 ## ⬇️ Ayat Download (Offline)

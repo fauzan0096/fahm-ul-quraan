@@ -1,10 +1,11 @@
 // ==========================================
 // SERVICE WORKER — Auto Update Version
-// Network-First for HTML/CSS/JS
-// Cache-First for Images
-// Audio (azan + nasheed) = alag audio cache se (Range support), baaki audio browser seedha network se
-// ==========================================
-
+// v96: OFFLINE PAKKA — install ab poora ~9MB nahi utaarta (pehle SW 'installing' mein atka rehta tha, kabhi
+//      active nahi hota tha, is liye offline kuch bhi nahi chalta tha). Ab install sirf bunyaadi shell
+//      (index/app/tools/sounds/icons/theme/manifest) cache karta hai, baaki files PICHHE SE bharti hain
+//      (activate + page ka message + sync). Purane cache ki files naye version mein copy hoti hain, is liye
+//      version badalne par 9MB dobara download nahi hota. Fetch mein kabhi respondWith(undefined) nahi —
+//      offline navigation par index.html (kisi bhi cache se) ya saaf "internet chahiye" page milta hai.
 // v95: MERGE — v94 + Dua/Arkan/Games ki ilmi aur imla ki islaah (ek hi mauqif, tootay alfaz theek, Arabic quotes sahi)
 // v94: Theme naam 4 zubaan; Qibla+Ramadan tile ek jaisa; Quran Patla/Mota 4 zubaan; ruku page ki taraf (taaq page = right, juft = left)
 // v93: Shop themes designer backgrounds: Samundar (lehrein), Gulaab (rosette), Amethyst (chaand-taare), Zamurrud (khatam geometry), Lavender (lattice), Registan (dunes), Sky Blue (badal); Kaaba + Shab-e-Qadr waise hi
@@ -58,7 +59,7 @@
 // v46: themes.js (kharidi theme har page par + 3 naye special themes), Bazm-e-Fahm games.html ke andar
 // v45: backup.js (Backup/Restore), offline audio (azan + nasheed, range support), offline Google Fonts, privacy.html cache
 // v44: Bazm-e-Fahm game games page mein jora (bazm.html)
-// v43: app ka naam badal kar Fahm-ul-Quran (ÙÙÙ Ø§ÙÙØ±Ø¢Ù)
+// v43: app ka naam badal kar Fahm-ul-Quran (فهم القرآن)
 // v42: certificate — jhoota 'Sanad ki jaanch' hata, 'Completion Certificate' naam, disclaimer
 // v41: onboarding.js (welcome slides, sirf pehli baar); games se Shab-e-Barat/Miraj ke sawal hataye
 // v40: ui.js + install.js + progress.js ek file (app.js) mein; QSSFX sounds.js mein
@@ -82,7 +83,7 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v95';
+const CACHE_NAME = 'quran-ustad-auto-v96';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -91,8 +92,26 @@ const QURAN_CACHE = 'fq-quran-v1';   // quran.html ka text/tarjuma/tafseer (offl
 const KEEP_CACHES = [CACHE_NAME, 'qs-mishary-v1', AUDIO_CACHE, FONT_CACHE, QURAN_CACHE];
 const AUDIO_ASSETS = ['./azan-aksa.mp3', './azan-sweet.mp3', './azan-3.mp3', './nature-ambience.mp3'];
 
-const ASSETS = [
+// Google Fonts ka CSS — install par hi cache ho jaye, warna pehli hi visit offline mein likhawat badal jaati hai
+const FONT_URL = 'https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Figtree:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,800;1,600&family=Aref+Ruqaa:wght@400;700&display=swap';
+const FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com', 'static-cdn.tarteel.ai'];
+
+// Bunyaadi shell — install mein sirf yahi files, taake SW foran active ho jaye aur app (sabaq + roz ki ayat samet) offline khule
+const CORE = [
     './',
+    './index.html',
+    './manifest.json',
+    './theme.css',
+    './app.js',
+    './tools.js',
+    './sounds.js',
+    './icons.js',
+    './course.js',
+    './sunnat.js'
+];
+
+// Baaki sab — pichhe se bharti hain (activate / page ka message / sync). Offline ke liye poora app
+const ASSETS = [
     './index.html',
     './dua.html',
     './tajweed.html',
@@ -129,121 +148,260 @@ const ASSETS = [
     './arkan-lang.js',
     './arkan-i18n.js',
     './grammar-course.js',
-    './icons.js'
+    './icons.js',
+    // purane chhote Arkan pages (root par) — ab inke paths bhi theek hain
+    './kalima.html',
+    './namaz.html',
+    './zakat.html',
+    './roza.html',
+    './hajj.html'
 ];
 
-// ===== INSTALL: Naya SW foran ready ho =====
+// ===== INSTALL: sirf shell + fonts (~1 MB) — bhaari files activate ke baad, pichhe se =====
 self.addEventListener('install', (e) => {
     self.skipWaiting(); // Purane SW ko wait mat karo, foran replace karo
-    e.waitUntil(
-        caches.open(CACHE_NAME).then(cache =>
-            // Ek file na mile to bhi baaki cache ho jayein (addAll sab fail kar deta hai)
-            Promise.all(ASSETS.map(url =>
-                cache.add(new Request(url, { cache: 'reload' })).catch(err => console.warn('Cache skip:', url))
-            ))
-        ).then(() =>
-            // Azan + nasheed offline ke liye (ek baar save, version badalne par dobara nahi)
-            caches.open(AUDIO_CACHE).then(cache =>
-                Promise.all(AUDIO_ASSETS.map(url =>
-                    (url.indexOf('nature-ambience') > -1 ? cache.add(new Request(url, { cache: 'reload' })) : cache.match(url).then(hit => hit || cache.add(url))).catch(err => console.warn('Audio skip:', url))
-                ))
-            )
-        )
-    );
+    e.waitUntil((async () => {
+        const cache = await caches.open(CACHE_NAME);
+        // Ek file na mile to bhi baaki cache ho jayein (addAll sab fail kar deta hai)
+        await Promise.all(CORE.map(url =>
+            cache.add(new Request(url, { cache: 'reload' })).catch(err => console.warn('Cache skip:', url))
+        ));
+        // Google Fonts CSS (CORS khula hai) — offline mein bhi wohi fonts
+        try {
+            const fonts = await caches.open(FONT_CACHE);
+            const hit = await fonts.match(FONT_URL);
+            if (!hit) await fonts.add(new Request(FONT_URL, { mode: 'cors' }));
+        } catch (err) {
+            console.warn('Font skip:', String(err));
+        }
+    })());
 });
 
-// ===== ACTIVATE: Purana cache delete karo (purana audio cache bhi) =====
+// ===== ACTIVATE: purani files naye cache mein le aao, phir purana cache delete =====
 self.addEventListener('activate', (e) => {
-    e.waitUntil(
-        caches.keys().then(keys =>
-            Promise.all(
-                keys.filter(k => !KEEP_CACHES.includes(k)).map(k => caches.delete(k))
-            )
-        ).then(() => self.clients.claim())
-    );
+    e.waitUntil((async () => {
+        const keys = await caches.keys();
+        const cache = await caches.open(CACHE_NAME);
+
+        // Purane app cache ki files copy karo — version badalne par 9MB dobara download na ho
+        for (const k of keys) {
+            if (k === CACHE_NAME || k.indexOf('quran-ustad-auto') !== 0) continue;
+            try {
+                const old = await caches.open(k);
+                const reqs = await old.keys();
+                for (const r of reqs) {
+                    const have = await cache.match(r.url);
+                    if (have) continue;
+                    const res = await old.match(r);
+                    if (res) await cache.put(r.url, res.clone());
+                }
+            } catch (err) { /* purana cache kharab ho to chhod do */ }
+        }
+
+        await Promise.all(keys.filter(k => !KEEP_CACHES.includes(k)).map(k => caches.delete(k)));
+        await self.clients.claim();
+
+        // Baaki files pichhe se bharo (app khuli rehni chahiye; na ho to agli visit par message se)
+        fillRest().catch(() => {});
+    })());
+});
+
+// ===== Baaki files (pages, course, duaein, azan) dheere dheere cache karo =====
+// Sirf woh files jo cache mein nahi hain — do baar download nahi hota
+let filling = null;
+function fillRest() {
+    if (filling) return filling;
+    filling = (async () => {
+        const cache = await caches.open(CACHE_NAME);
+        const missing = [];
+        for (const url of ASSETS) {
+            let hit = null;
+            try { hit = await cache.match(url); } catch (err) { hit = null; }
+            if (!hit) missing.push(url);
+        }
+        // ek waqt mein 4 files (net par bojh na pade)
+        let n = 0;
+        async function worker() {
+            while (n < missing.length) {
+                const url = missing[n++];
+                try { await cache.add(new Request(url, { cache: 'reload' })); }
+                catch (err) { console.warn('Cache skip:', url); }
+            }
+        }
+        await Promise.all([worker(), worker(), worker(), worker()]);
+
+        // Azan + nasheed — sabse bhaari, sabse aakhir mein (ek baar save, phir dobara nahi)
+        try {
+            const audio = await caches.open(AUDIO_CACHE);
+            for (const url of AUDIO_ASSETS) {
+                try {
+                    const hit = await audio.match(url);
+                    if (!hit) await audio.add(new Request(url, { cache: 'reload' }));
+                } catch (err) { console.warn('Audio skip:', url); }
+            }
+        } catch (err) { /* audio cache na bane to app phir bhi chale */ }
+    })().catch(() => {}).then(() => { filling = null; });
+    return filling;
+}
+
+// Page (app.js) khulne par kehta hai: baaki files bhi save karo
+self.addEventListener('message', (e) => {
+    const d = e.data || {};
+    if (d && (d.type === 'fq-precache' || d === 'fq-precache')) e.waitUntil(fillRest());
 });
 
 // ===== FETCH: Smart Strategy =====
 self.addEventListener('fetch', (e) => {
     const request = e.request;
-    const url = new URL(request.url);
+    if (!request || request.method !== 'GET') return;
 
-    // 🔤 Google Fonts (CSS + font files): pehli baar net se, phir offline bhi (stale-while-revalidate)
-    if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com' || url.hostname === 'static-cdn.tarteel.ai') {
-        e.respondWith(
-            caches.open(FONT_CACHE).then(cache =>
-                cache.match(request).then(hit => {
-                    const net = fetch(request).then(res => {
-                        if (res && (res.status === 200 || res.type === 'opaque')) cache.put(request, res.clone());
-                        return res;
-                    }).catch(() => hit);
-                    return hit || net;
-                })
-            )
-        );
+    let url;
+    try { url = new URL(request.url); } catch (err) { return; }
+
+    // 🔤 Google Fonts (CSS + font files) + Indo-Pak font CDN: pehle cache, phir net (offline bhi)
+    if (FONT_HOSTS.indexOf(url.hostname) > -1) {
+        e.respondWith(staleWhileRevalidate(e, request, FONT_CACHE));
         return;
     }
 
-    // Baaki sirf same-origin handle karo
+    // Baaki cross-origin (Quran.com API, everyayah.com ki recordings) — browser seedha net se
     if (url.origin !== location.origin) return;
 
-    // 🎵 Audio: saved azan/nasheed cache se (Range support ke saath), warna browser seedha network se
+    // 🎵 Audio: saved azan/nasheed cache se (Range support ke saath), warna net se
     if (/\.(mp3|ogg|m4a|wav)$/i.test(url.pathname)) {
         e.respondWith(serveAudio(request));
         return;
     }
-    if (request.headers.has('range')) return;
+    if (request.headers.has('range')) return;   // range wali baaki cheezein browser ke hawaale
 
-    const isHTML = request.headers.get('accept')?.includes('text/html');
-    const isJS = url.pathname.endsWith('.js');
-    const isCSS = url.pathname.endsWith('.css');
-    const isJSON = url.pathname.endsWith('.json');
+    const isHTML = (request.headers.get('accept') || '').indexOf('text/html') > -1;
+    const isCode = isHTML || /\.(js|css|json)$/i.test(url.pathname);
 
     // ⚡ HTML / JS / CSS / JSON = CACHE FIRST + background refresh (stale-while-revalidate)
-    // Click par foran cache se khulta hai; peeche network se taaza copy aa kar cache update hoti hai.
-    // Naya upload: sw.js ka CACHE_NAME badlein — install par sab file taaza (reload) cache hoti hai.
-    if (isHTML || isJS || isCSS || isJSON) {
-        e.respondWith(
-            caches.open(CACHE_NAME).then(cache =>
-                cache.match(request, { ignoreSearch: true }).then(hit => {
-                    const net = fetch(request, { cache: 'no-cache' }).then(response => {
-                        if (response && response.status === 200) cache.put(request, response.clone());
-                        return response;
-                    });
-                    if (hit) {
-                        e.waitUntil(net.catch(() => {}));   // peeche taaza karo, jawab foran do
-                        return hit;
-                    }
-                    return net.catch(() =>
-                        (request.mode === 'navigate' ? cache.match('./index.html') : undefined) || Response.error()
-                    );
-                })
-            )
-        );
+    if (isCode) {
+        e.respondWith(codeResponse(e, request, isHTML || request.mode === 'navigate'));
         return;
     }
 
-    // 🖼️ Images / Fonts / Icons = CACHE FIRST
-    // Matlab: Pehle cache se do (fast), agar nahi mila toh internet se lao
-    e.respondWith(
-        caches.match(request).then(cached => {
-            if (cached) return cached;
-            return fetch(request).then(response => {
-                if (response && response.status === 200) {
-                    const clone = response.clone();
-                    caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
-                }
-                return response;
-            }).catch(() => cached);
-        })
-    );
+    // 🖼️ Images / Fonts / Icons = CACHE FIRST, phir net
+    e.respondWith(assetResponse(request));
 });
 
+// Cache mein rakhna — navigate mode wali request par cache.put nahi chalta, is liye URL se naya Request
+function putSafe(cache, request, res) {
+    let store = request;
+    try {
+        if (!request || request.mode === 'navigate') store = new Request(request.url, { credentials: 'same-origin' });
+    } catch (err) {
+        store = request;
+    }
+    try {
+        return cache.put(store, res.clone()).then(() => res, () => res);
+    } catch (err) {
+        return Promise.resolve(res);
+    }
+}
+
+// Pehle cache, peeche se taaza (Google Fonts, font files)
+async function staleWhileRevalidate(event, request, cacheName) {
+    const cache = await caches.open(cacheName);
+    const hit = await cache.match(request);
+    const net = fetch(request).then(res => {
+        if (res && (res.status === 200 || res.type === 'opaque')) putSafe(cache, request, res);
+        return res;
+    }).catch(() => null);
+    if (hit) {
+        // Peeche taaza karo, jawab foran do (event ka waqt badha do warna worker band ho jaye)
+        try { event.waitUntil(net.then(() => {}, () => {})); } catch (err) {}
+        return hit;
+    }
+    const fresh = await net;
+    return fresh || Response.error();
+}
+
+// Pages / scripts / styles: cache se foran, peeche taaza. Net na ho to app shell ya saaf message
+async function codeResponse(event, request, isNavigation) {
+    const cache = await caches.open(CACHE_NAME);
+    let hit = await cache.match(request, { ignoreSearch: true });
+    if (!hit) {
+        try { hit = await caches.match(request, { ignoreSearch: true }); } catch (err) { hit = null; }
+    }
+
+    const refresh = fetch(request, { cache: 'no-cache' }).then(res => {
+        if (res && res.status === 200 && res.type === 'basic') return putSafe(cache, request, res);
+        return res;
+    }).catch(() => null);
+
+    if (hit) {
+        // Peeche taaza karo (event ka waqt badha do warna worker band ho jaye)
+        try { event.waitUntil(refresh.then(() => {}, () => {})); } catch (err) {}
+        return hit;
+    }
+
+    const fresh = await refresh;
+    if (fresh) return fresh;
+
+    // Internet nahi mila
+    if (isNavigation) {
+        let path = '';
+        try { path = new URL(request.url).pathname; } catch (err) { path = ''; }
+        const isRoot = path === '' || path.slice(-1) === '/' || path.slice(-10) === 'index.html';
+        if (isRoot) {
+            const shell = (await cache.match('./index.html', { ignoreSearch: true })) ||
+                          (await caches.match('./index.html', { ignoreSearch: true })) ||
+                          (await caches.match('./', { ignoreSearch: true }));
+            if (shell) return shell;
+        }
+        return offlinePage();
+    }
+    return Response.error();
+}
+
+// Tasveerein / icons / font files: cache se, warna net se aur cache mein rakh lo
+async function assetResponse(request) {
+    let hit = null;
+    try { hit = await caches.match(request); } catch (err) { hit = null; }
+    if (hit) return hit;
+    try {
+        const res = await fetch(request);
+        if (res && res.status === 200 && res.type === 'basic') {
+            const cache = await caches.open(CACHE_NAME);
+            putSafe(cache, request, res);
+        }
+        return res;
+    } catch (err) {
+        return Response.error();
+    }
+}
+
+// Offline par app shell bhi na mile to saaf wajah (browser ki "no internet" screen nahi)
+function offlinePage() {
+    const html = '<!DOCTYPE html><html lang="ur"><head><meta charset="utf-8">' +
+        '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+        '<title>Fahm-ul-Quran</title><style>' +
+        'body{font-family:system-ui,sans-serif;background:#0A2E24;color:#F0E9D0;margin:0;' +
+        'display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;text-align:center}' +
+        'h1{font-size:20px;color:#D9B65A;margin:0 0 10px}p{font-size:15px;line-height:1.7;margin:0 0 18px;max-width:340px}' +
+        'button{background:#D9B65A;color:#2A2008;border:0;border-radius:14px;padding:14px 22px;font-size:16px;font-weight:700}' +
+        '</style></head><body><div><h1>Internet ek baar chahiye</h1>' +
+        '<p>App ne pehli baar poora hissa save nahi kar paya. Internet chalu karke app ek baar kholein — uske baad yeh hissa offline bhi chalega.</p>' +
+        '<button onclick="location.reload()">Dobara koshish karein</button></div></body></html>';
+    return new Response(html, { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+}
 
 // ===== Audio ko cache se do (Range request bhi chalti hai, warna seek/play nahi chalta) =====
 async function serveAudio(request) {
-    const cache = await caches.open(AUDIO_CACHE);
-    const hit = await cache.match(request.url, { ignoreSearch: true });
+    let hit = null;
+    try {
+        const cache = await caches.open(AUDIO_CACHE);
+        hit = await cache.match(request.url, { ignoreSearch: true });
+    } catch (err) { hit = null; }
+
+    // Azan/nasheed ke ilawa bhi koi saved recording ho to wahi chale
+    if (!hit) {
+        try { hit = await caches.match(request.url, { ignoreSearch: true }); } catch (err) { hit = null; }
+    }
+
     if (!hit) {
         try { return await fetch(request); }
         catch (err) { return new Response('', { status: 503, statusText: 'Offline' }); }
@@ -276,10 +434,10 @@ async function serveAudio(request) {
 // Core files ko chupke se taaza karna (net ho to cache update, na ho to purana chalta rahe)
 function refreshCore() {
     return caches.open(CACHE_NAME).then(cache =>
-        Promise.all(ASSETS.map(url =>
+        Promise.all(CORE.map(url =>
             fetch(url, { cache: 'no-cache' }).then(res => { if (res && res.ok) return cache.put(url, res); }).catch(() => {})
         ))
-    );
+    ).then(() => fillRest());
 }
 
 // 🔁 Background Sync: net nahi tha, wapas aate hi core files taaza

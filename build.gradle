@@ -14,7 +14,7 @@ android {
         versionCode (System.getenv("GITHUB_RUN_NUMBER") ? System.getenv("GITHUB_RUN_NUMBER").toInteger() : 1)
         versionName "1.0"
         // 👇 Apni website ka link (index.html ke APP_LINK wala). GitHub Pages ka link yahan likhein.
-        buildConfigField "String", "APP_URL", "\"https://quraan-ustad.github.io/\""
+        buildConfigField "String", "APP_URL", "\"https://fauzan0096.github.io/fahm-ul-quraan/\""
     }
     buildFeatures { buildConfig true }
     compileOptions {

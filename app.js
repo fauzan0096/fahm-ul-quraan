@@ -378,6 +378,11 @@ if (!window.QS_LITE) {
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
             navigator.serviceWorker.register('sw.js').then(function () { return navigator.serviceWorker.ready; }).then(function (reg) {
+                // Offline ke liye baaki files (pages, course, duaein, azan) pichhe se save karo — app foran chalti rahe
+                try {
+                    var w = reg.active || reg.waiting || reg.installing;
+                    if (w) w.postMessage({ type: 'fq-precache' });
+                } catch (e) {}
                 // Background Sync + Periodic Sync register (jahan browser support kare)
                 try { if (reg.sync) reg.sync.register('fq-sync').catch(function () {}); } catch (e) {}
                 try {
