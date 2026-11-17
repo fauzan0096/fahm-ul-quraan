@@ -1546,3 +1546,240 @@ Object.assign(window.FQ_DUA_LANG, {
 });
 
 if (window.FQDuaLangApply) window.FQDuaLangApply();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Ruqya Shariah (1 – 19)
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_DUA_LANG, {
+
+  "Ruqya Shariah kya hai? (Zaroori usool)": {
+    t: { mr: "रुक्या शरईया काय आहे? (महत्त्वाचे नियम)", ar: "ما هي الرقية الشرعية؟ (أصول مهمة)", fr: "Qu'est-ce que la ruqya légale ? (principes essentiels)", es: "¿Qué es la ruqya legal? (principios esenciales)" },
+    m: { mr: "तुमचे दम मला ऐकवा; दमात काही हरकत नाही जोपर्यंत त्यात शिर्क नाही.",
+         ar: "اعرضوا عليّ رقاكم، لا بأس بالرقى ما لم يكن فيها شرك.",
+         fr: "Montrez-moi vos formules : la ruqya n'a rien de répréhensible tant qu'elle ne contient pas de polythéisme.",
+         es: "Mostradme vuestras fórmulas: la ruqya no tiene nada reprobable mientras no contenga politeísmo." },
+    f: { mr: "रुक्या शरईया ती आहे जी कुरआन व मसनून दुआंनी केली जाते. बरे करणारा फक्त अल्लाह आहे, आणि औषध/डॉक्टरांकडून उपचार हेही सुन्नत आहे. ताईत-दोरे, जादू व शिर्काचे माध्यम हराम आहे.",
+         ar: "الرقية الشرعية هي بالقرآن والأدعية المأثورة، والشافي هو الله، والتداوي بالدواء سُنّة. أما التمائم والسحر والشرك فمحرمة.",
+         fr: "La ruqya légale se fait par le Coran et les douas prophétiques ; c'est Allah qui guérit, et se soigner par le remède est une sunna. Les amulettes, la magie et le polythéisme sont interdits.",
+         es: "La ruqya legal se hace con el Corán y las duas proféticas; quien cura es Alá, y tratarse con medicina es sunna. Los amuletos, la magia y el politeísmo están prohibidos." }
+  },
+
+  "Surah Al-Fatiha se ruqya": {
+    t: { mr: "सूरा अल-फातिहाने रुक्या", ar: "الرقية بسورة الفاتحة", fr: "Ruqya avec la sourate Al-Fâtiha", es: "Ruqya con la sura Al-Fátiha" },
+    m: { mr: "अल्लाहच्या नावाने जो अत्यंत दयाळू, परम दयाळू आहे. सर्व स्तुती अल्लाहसाठी... आम्हाला सरळ मार्ग दाखव... (संपूर्ण सूरा).",
+         ar: "بسم الله الرحمن الرحيم، الحمد لله رب العالمين… اهدنا الصراط المستقيم… (السورة كاملة).",
+         fr: "Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux. Louange à Allah… Guide-nous vers le droit chemin… (la sourate entière).",
+         es: "En el nombre de Alá, el Compasivo, el Misericordioso. Alabanza a Alá… Guíanos al camino recto… (la sura completa)." },
+    f: { mr: "फातिहा ही सर्वोत्तम रुक्या आहे; ती वाचून हातांवर फुंकून रुग्णावर फिरवा.",
+         ar: "الفاتحة من أعظم الرقى؛ تُقرأ ويُنفث في اليدين ويُمسح بها على المريض.",
+         fr: "Al-Fâtiha est l'une des meilleures ruqyas : on la récite, on souffle dans les mains et on les passe sur le malade.",
+         es: "Al-Fátiha es una de las mejores ruqyas: se recita, se sopla en las manos y se pasan sobre el enfermo." }
+  },
+
+  "Ayatul Kursi se hifazat": {
+    t: { mr: "आयतुल कुर्सीने सुरक्षा", ar: "الحفظ بآية الكرسي", fr: "Protection par Ayat al-Kursi", es: "Protección con Ayat al-Kursi" },
+    m: { mr: "अल्लाह, त्याच्याशिवाय कोणी उपास्य नाही; तो सदैव जिवंत, सर्वांना टिकवणारा... त्याची कुर्सी आकाश व धरती व्यापते.",
+         ar: "الله لا إله إلا هو الحي القيوم… وسع كرسيه السماوات والأرض وهو العلي العظيم.",
+         fr: "Allah, il n'y a de divinité que Lui, le Vivant, le Subsistant… Son Trône englobe les cieux et la terre ; Il est le Très-Haut, le Très Grand.",
+         es: "Alá, no hay divinidad sino Él, el Viviente, el Subsistente… Su Trono abarca los cielos y la tierra; Él es el Altísimo, el Inmenso." },
+    f: { mr: "आयतुल कुर्सी ही सर्वात मोठी संरक्षणाची दुआ आहे; सकाळ-संध्याकाळ व सुतण्यापूर्वी वाचा.",
+         ar: "آية الكرسي من أعظم أسباب الحفظ؛ تُقرأ صباحًا ومساءً وعند النوم.",
+         fr: "Ayat al-Kursi est l'un des plus grands moyens de protection : à réciter matin, soir et avant de dormir.",
+         es: "Ayat al-Kursi es uno de los mayores medios de protección: recitarla mañana, tarde y antes de dormir." }
+  },
+
+  "Surah Baqarah ki aakhri 2 ayaat": {
+    t: { mr: "सूरा बकराच्या शेवटच्या २ आयती (रुक्या)", ar: "آخر سورتي البقرة (رقية)", fr: "Les deux derniers versets d'Al-Baqarah (ruqya)", es: "Los dos últimos aleyas de Al-Báqara (ruqya)" },
+    m: { mr: "रसूल आपल्या रबाकडून जे अवतरित झाले त्यावर ईमान राखतात... अल्लाह कोणा जिवाला ताकदीपेक्षा जास्त त्रास देत नाही... हे आमच्या रबा! आम्हाला माफ कर, दया कर.",
+         ar: "آمن الرسول بما أنزل إليه من ربه… لا يكلف الله نفسًا إلا وسعها… واعف عنا واغفر لنا وارحمنا.",
+         fr: "Le Messager a cru en ce qui lui a été révélé… Allah n'impose à aucune âme plus que sa capacité… Pardonne-nous, fais-nous miséricorde.",
+         es: "El Mensajero creyó en lo que se le reveló… Alá no impone a nadie más de lo que puede… Perdónanos, ten misericordia." },
+    f: { mr: "रात्री वाचल्यास संरक्षणासाठी पुरेशा आहेत.",
+         ar: "من قرأهما في ليلة كفتاه.",
+         fr: "Récitées la nuit, elles suffisent comme protection.",
+         es: "Recitados de noche, bastan como protección." }
+  },
+
+  "Teeno Qul se dam (sone se pehle aur bimari mein)": {
+    t: { mr: "तीनही कुलने दम (सुतण्यापूर्वी व आजारात)", ar: "الرقية بالمعوذات (قبل النوم وعند المرض)", fr: "Ruqya avec les trois Qoul (avant de dormir et en maladie)", es: "Ruqya con las tres Qul (antes de dormir y en enfermedad)" },
+    m: { mr: "सांग: तो अल्लाह एक आहे... सांग: मी पहाटेच्या रबाची पनाह मागतो... सांग: मी लोकांच्या रबाची पनाह मागतो...",
+         ar: "قل هو الله أحد… قل أعوذ برب الفلق… قل أعوذ برب الناس…",
+         fr: "Dis : Il est Allah, Unique… Dis : je cherche protection auprès du Seigneur de l'aube… Dis : je cherche protection auprès du Seigneur des hommes…",
+         es: "Di: Él es Alá, Uno… Di: busco protección en el Señor del alba… Di: busco protección en el Señor de los hombres…" },
+    f: { mr: "आजारात व सुतण्यापूर्वी हातांवर फुंकून तीनही कुल वाचून अंगावरून हात फिरवा.",
+         ar: "في المرض وعند النوم: تُقرأ ويُنفث في اليدين ويُمسح بهما الجسد.",
+         fr: "En maladie et avant de dormir : on les récite, on souffle dans les mains et on les passe sur le corps.",
+         es: "En enfermedad y antes de dormir: se recitan, se sopla en las manos y se pasan por el cuerpo." }
+  },
+
+  "Jism mein dard ho to": {
+    t: { mr: "अंगात वेदना असल्यास", ar: "عند الألم في الجسد", fr: "En cas de douleur corporelle", es: "En caso de dolor corporal" },
+    m: { mr: "अल्लाहच्या नावाने (३ वेळा). मी अल्लाह व त्याच्या सामर्थ्याची पनाह मागतो त्या वाईटापासून जी मला जाणवते व ज्याची भीती वाटते (७ वेळा).",
+         ar: "بسم الله (ثلاثًا)، أعوذ بالله وقدرته من شر ما أجد وأحاذر (سبعًا).",
+         fr: "Au nom d'Allah (3 fois). Je cherche refuge en Allah et en Sa puissance contre le mal que je ressens et que je redoute (7 fois).",
+         es: "En el nombre de Alá (3 veces). Busco refugio en Alá y en Su poder del mal que siento y temo (7 veces)." },
+    f: { mr: "ज्या अंगात वेदना असेल तिथे हात ठेवून वाचा. उस्मान बिन अबील आस र.अ. यांनी इस्लाम आणल्यापासून हे केले.",
+         ar: "يضع يده على موضع الألم ويقولها؛ وكان عثمان بن أبي العاص يفعل ذلك.",
+         fr: "On pose la main sur l'endroit douloureux en la récitant ; c'est ce que faisait Uthman ibn Abi al-As.",
+         es: "Se pone la mano en el lugar del dolor al recitarla; así lo hacía Uzman ibn Abi al-As." }
+  },
+
+  "Bimar par dam ki shifa wali dua": {
+    t: { mr: "आजारी व्यक्तीवर दमाची दुआ", ar: "دعاء الشفاء عند الرقية على المريض", fr: "Doua de guérison en ruqya sur le malade", es: "Dua de curación en ruqya sobre el enfermo" },
+    m: { mr: "त्रास दूर कर, हे लोकांच्या रबा! बरे कर, तूच बरे करणारा आहेस; तुझ्या बरे करण्याशिवाय कोणतेही बरे होणे नाही — असे बरे होणे जे कोणताही आजार शेष ठेवत नाही.",
+         ar: "أذهب البأس رب الناس، اشف وأنت الشافي، لا شفاء إلا شفاؤك، شفاءً لا يغادر سقمًا.",
+         fr: "Ôte le mal, Seigneur des gens ; guéris, Tu es le Guérisseur ; il n'y a de guérison que la Tienne, une guérison qui ne laisse aucune maladie.",
+         es: "Quita el mal, Señor de la gente; cura, Tú eres el Curador; no hay curación sino la Tuya, una curación que no deja enfermedad." },
+    f: { mr: "नबी ﷺ आजारी व्यक्तीसाठी ही दुआ वाचत व उजव्या हाताने त्याच्यावर हात फिरवत असत.",
+         ar: "كان النبي ﷺ يدعو بها للمريض ويمسح بيمينه.",
+         fr: "Le Prophète ﷺ l'invoquait pour le malade en passant sa main droite sur lui.",
+         es: "El Profeta ﷺ la invocaba por el enfermo pasando su mano derecha sobre él." }
+  },
+
+  "Jibreel AS ka dam": {
+    t: { mr: "जिब्राईल (अ.स.) यांचा दम", ar: "رقية جبريل عليه السلام", fr: "La ruqya de Jibril", es: "La ruqya de Yibril" },
+    m: { mr: "अल्लाहच्या नावाने मी तुला दम करतो — प्रत्येक त्या गोष्टीपासून जी तुला त्रास देते, प्रत्येक जीवाच्या वाईटापासून व हेवा करणाऱ्या नजरेपासून; अल्लाह तुला बरे करो; अल्लाहच्या नावाने मी तुला दम करतो.",
+         ar: "باسم الله أرقيك، من كل شيء يؤذيك، من شر كل نفس أو عين حاسد، الله يشفيك، باسم الله أرقيك.",
+         fr: "Au nom d'Allah je te fais la ruqya, contre tout ce qui te nuit, contre le mal de toute âme et de tout œil envieux ; qu'Allah te guérisse, au nom d'Allah je te fais la ruqya.",
+         es: "En el nombre de Alá te hago ruqya, contra todo lo que te daña, del mal de toda alma y de todo ojo envidioso; que Alá te cure, en el nombre de Alá te hago ruqya." },
+    f: { mr: "जिब्राईल (अ.स.) यांनी नबी ﷺ यांच्यावर हा दम केला होता.",
+         ar: "رقى بها جبريل النبي ﷺ.",
+         fr: "C'est par elle que Jibril fit la ruqya au Prophète ﷺ.",
+         es: "Con ella Yibril hizo ruqya al Profeta ﷺ." }
+  },
+
+  "Nazar aur hasad se shifa ka dam": {
+    t: { mr: "नजर व हेव्यापासून बरे होण्याचा दम", ar: "رقية العين والحسد", fr: "Ruqya contre le mauvais œil et l'envie", es: "Ruqya contra el mal de ojo y la envidia" },
+    m: { mr: "अल्लाहच्या नावाने तो तुला निरोगी करो, प्रत्येक आजारातून तुला बरे करो, हेवा करणाऱ्याच्या वाईटापासून जेव्हा तो हेवा करे, आणि प्रत्येक नजर लावणाऱ्या नजरेच्या वाईटापासून.",
+         ar: "باسم الله يبريك، ومن كل داء يشفيك، ومن شر حاسد إذا حسد، ومن شر كل ذي عين.",
+         fr: "Au nom d'Allah qu'Il te rétablisse, qu'Il te guérisse de toute maladie, du mal de l'envieux quand il envie, et du mal de tout porteur de mauvais œil.",
+         es: "En el nombre de Alá que Él te restablezca, te cure de toda enfermedad, del mal del envidioso cuando envidia, y del mal de todo portador de mal de ojo." },
+    f: { mr: "हा दमही नबी ﷺ यांच्याकडून सिद्ध आहे; आजार, हेवा व नजर बद पासून बरे होणे व सुरक्षेसाठी.",
+         ar: "هذه الرقية ثابتة عن النبي ﷺ للشفاء والحفظ من المرض والحسد والعين.",
+         fr: "Cette ruqya est établie du Prophète ﷺ pour la guérison et la protection contre la maladie, l'envie et le mauvais œil.",
+         es: "Esta ruqya está establecida del Profeta ﷺ para la curación y la protección contra la enfermedad, la envidia y el mal de ojo." }
+  },
+
+  "Nazar se hifazat (Allah ke mukammal kalimaat)": {
+    t: { mr: "नजरेपासून सुरक्षा (अल्लाहचे पूर्ण शब्द)", ar: "الحفظ من العين بكلمات الله التامة", fr: "Protection contre le mauvais œil par les paroles parfaites d'Allah", es: "Protección contra el mal de ojo con las palabras perfectas de Alá" },
+    m: { mr: "मी अल्लाहच्या पूर्ण शब्दांची पनाह मागतो — प्रत्येक शैतान, विषारी प्राणी आणि हानी पोहोचवणाऱ्या नजरेपासून.",
+         ar: "أعوذ بكلمات الله التامة من كل شيطان وهامة، ومن كل عين لامة.",
+         fr: "Je cherche refuge dans les paroles parfaites d'Allah contre tout démon, toute bête venimeuse et tout mauvais œil.",
+         es: "Busco refugio en las palabras perfectas de Alá contra todo demonio, todo animal venenoso y todo mal de ojo." },
+    f: { mr: "नबी ﷺ हसन व हुसैन र.अ. यांना या शब्दांनी आश्रय देत असत (दोघांसाठी «उईज़ुकुमा», एकासाठी «उईज़ुका»).",
+         ar: "كان النبي ﷺ يعوذ الحسن والحسين بهذه الكلمات (للاثنين: أعيذكما، ولواحد: أعيذك).",
+         fr: "Le Prophète ﷺ mettait Hasan et Husayn sous cette protection (pour deux : « u'îdhukumâ », pour un : « u'îdhuka »).",
+         es: "El Profeta ﷺ protegía a Hasán y Husáyn con estas palabras (para dos: «u'idhukuma»; para uno: «u'idhuka»)." }
+  },
+
+  "Kisi jagah utarte waqt har nuqsan se hifazat": {
+    t: { mr: "कोणत्याही जागी उतरताना प्रत्येक हानीपासून सुरक्षा", ar: "الحفظ عند النزول بمنزل", fr: "Protection en descendant dans un lieu", es: "Protección al detenerse en un lugar" },
+    m: { mr: "मी अल्लाहच्या पूर्ण शब्दांची पनाह मागतो त्याच्या मखलूकीच्या वाईटापासून.",
+         ar: "أعوذ بكلمات الله التامات من شر ما خلق.",
+         fr: "Je cherche refuge dans les paroles parfaites d'Allah contre le mal de ce qu'Il a créé.",
+         es: "Busco refugio en las palabras perfectas de Alá contra el mal de lo que ha creado." },
+    f: { mr: "नबी ﷺ म्हणाले: जो कोणत्याही जागी उतरेल आणि हे वाचेल, तिथून निघेपर्यंत त्याला कोणतीही गोष्ट हानी पोहोचवणार नाही.",
+         ar: "قال النبي ﷺ: «من نزل منزلًا فقالها لم يضره شيء حتى يرتحل».",
+         fr: "Le Prophète ﷺ a dit : celui qui descend dans un lieu et la récite, rien ne lui nuira jusqu'à son départ.",
+         es: "El Profeta ﷺ dijo: quien se detenga en un lugar y la recite, nada le dañará hasta que se marche." }
+  },
+
+  "Ghar mein Surah Al-Baqarah ki tilawat": {
+    t: { mr: "घरी सूरा अल-बकराचे वाचन", ar: "قراءة سورة البقرة في البيت", fr: "Réciter la sourate Al-Baqarah à la maison", es: "Recitar la sura Al-Báqara en casa" },
+    m: { mr: "आपली घरे कबरस्तान करू नका; निःसंशय ज्या घरात सूरा बकरा वाचली जाते त्या घरातून शैतान पळून जातो.",
+         ar: "لا تجعلوا بيوتكم مقابر، إن الشيطان ينفر من البيت الذي تُقرأ فيه سورة البقرة.",
+         fr: "Ne faites pas de vos maisons des tombes ; Satan fuit la maison où l'on récite la sourate Al-Baqarah.",
+         es: "No hagáis de vuestras casas tumbas; Satán huye de la casa donde se recita la sura Al-Báqara." },
+    f: { mr: "घरी वाचन व नफल नमाजची सवय ठेवा; वेळोवेळी सूरा बकरा वाचणे किंवा ऐकणे घरातून शैतान दूर करते.",
+         ar: "أقيموا التلاوة والنافلة في البيت؛ وقراءة البقرة أو سماعها تطرد الشيطان.",
+         fr: "Entretenez la récitation et les prières surérogatoires à la maison ; réciter ou écouter Al-Baqarah en chasse Satan.",
+         es: "Mantén la recitación y las oraciones voluntarias en casa; recitar o escuchar Al-Báqara expulsa a Satán." }
+  },
+
+  "Zakhm ya dard par masnoon dam (mitti aur thook ke saath)": {
+    t: { mr: "जखम वा वेदनेवर मसनून दम (माती व थुंकीसह)", ar: "الرقية المأثورة على الجرح (بالتراب والريق)", fr: "Ruqya prophétique sur une blessure (avec terre et salive)", es: "Ruqya profética sobre una herida (con tierra y saliva)" },
+    m: { mr: "अल्लाहच्या नावाने — आमच्या भूमीची माती, आमच्यातील काहींच्या थुंकीसह, आमचा आजारी आमच्या रबाच्या आज्ञेने बरा होवो.",
+         ar: "بسم الله، تربة أرضنا، بريقة بعضنا، يُشفى سقيمنا بإذن ربنا.",
+         fr: "Au nom d'Allah : la terre de notre sol, avec la salive de certains d'entre nous, que notre malade guérisse par la permission de notre Seigneur.",
+         es: "En el nombre de Alá: la tierra de nuestro suelo, con la saliva de algunos de nosotros, que nuestro enfermo sane con el permiso de nuestro Señor." },
+    f: { mr: "नबी ﷺ जखम वा गळू असल्यास आपल्या तर्जनीवर थुंकी लावून जमिनीला लावत, नंतर ती जखमेवर फिरवत असत.",
+         ar: "كان النبي ﷺ يضع ريقه على إصبعه ثم يمس الأرض ويمسح به الجرح.",
+         fr: "Le Prophète ﷺ mettait sa salive sur son doigt, touchait la terre et l'appliquait sur la blessure.",
+         es: "El Profeta ﷺ ponía su saliva en el dedo, tocaba la tierra y lo aplicaba sobre la herida." }
+  },
+
+  "Shaitan ke waswase (iman aur sawalat) se bachne ka tareeqa": {
+    t: { mr: "शैतानाच्या शंकांपासून (ईमान व प्रश्न) बचावाची पद्धत", ar: "طريقة الوقاية من وسواس الشيطان", fr: "Comment se protéger des insinuations de Satan", es: "Cómo protegerse de las sugestiones de Satán" },
+    m: { mr: "मी धिक्कारलेल्या शैतानापासून अल्लाहची पनाह मागतो; मी अल्लाह व त्याच्या रसूलांवर ईमान राखले.",
+         ar: "أعوذ بالله من الشيطان الرجيم، آمنت بالله ورسله.",
+         fr: "Je cherche refuge auprès d'Allah contre Satan le maudit ; j'ai cru en Allah et en Ses messagers.",
+         es: "Busco refugio en Alá contra Satán el maldito; he creído en Alá y en Sus mensajeros." },
+    f: { mr: "नबी ﷺ म्हणाले: शैतान माणसाजवळ प्रश्न टाकत राहतो — अगदी ‘अल्लाहला कोणी निर्माण केले?’ असेही. असे झाल्यास हे वाचा आणि विचार थांबवा.",
+         ar: "قال النبي ﷺ: «يأتيه الشيطان فيقول: من خلق الله؟ فإذا وجد ذلك فليقل هذا وليستعذ بالله».",
+         fr: "Le Prophète ﷺ a dit : Satan vient poser des questions jusqu'à « qui a créé Allah ? » ; alors qu'il dise cela et cesse d'y penser.",
+         es: "El Profeta ﷺ dijo: Satán pregunta hasta «¿quién creó a Alá?»; que diga esto y deje de pensar en ello." }
+  },
+
+  "Bure khwab ya dar wale khwab se hifazat": {
+    t: { mr: "वाईट वा भयावह स्वप्नापासून सुरक्षा", ar: "الحفظ من الحلم المزعج", fr: "Protection contre un mauvais rêve", es: "Protección contra un mal sueño" },
+    m: { mr: "मी या (स्वप्नाच्या) वाईटापासून आणि शैतानाच्या वाईटापासून अल्लाहची पनाह मागतो.",
+         ar: "أعوذ بالله من شرها ومن شر الشيطان.",
+         fr: "Je cherche refuge auprès d'Allah contre son mal et contre le mal de Satan.",
+         es: "Busco refugio en Alá de su mal y del mal de Satán." },
+    f: { mr: "नबी ﷺ म्हणाले: चांगले स्वप्न अल्लाहकडून आहे आणि वाईट स्वप्न शैतानाकडून. जो वाईट स्वप्न पाहील त्याने डावीकडे तीन वेळा हलके थुंकावे, त्याच्या वाईटापासून अल्लाहची पनाह मागावी आणि कोणाला सांगू नये.",
+         ar: "قال النبي ﷺ: «الرؤيا الصالحة من الله، والحلم من الشيطان، فإذا رأى أحدكم ما يكره فلينفث عن يساره ثلاثًا وليستعذ بالله ولا يخبر به أحدًا».",
+         fr: "Le Prophète ﷺ a dit : le bon rêve vient d'Allah, le mauvais de Satan ; que celui qui voit ce qu'il déteste souffle trois fois à sa gauche, cherche refuge auprès d'Allah et ne le raconte à personne.",
+         es: "El Profeta ﷺ dijo: el buen sueño es de Alá y el malo de Satán; quien vea algo que odia que sople tres veces a su izquierda, busque refugio en Alá y no lo cuente a nadie." }
+  },
+
+  "Koi cheez pasand aaye to (nazar se bachne ke liye)": {
+    t: { mr: "कोणतीही गोष्ट आवडली तर (नजरेपासून बचावासाठी)", ar: "إذا أعجبتك شيء (للوقاية من العين)", fr: "Quand une chose plaît (pour éviter le mauvais œil)", es: "Cuando algo te gusta (para evitar el mal de ojo)" },
+    m: { mr: "जे अल्लाहला इच्छा असेल (तेच होते); अल्लाहशिवाय कोणतीही ताकद नाही.",
+         ar: "ما شاء الله، لا قوة إلا بالله.",
+         fr: "Ce qu'Allah veut (arrive) ; il n'y a de force qu'en Allah.",
+         es: "Lo que Alá quiera; no hay fuerza sino en Alá." },
+    f: { mr: "नजर लागणे हे सत्य आहे. कोणाची चांगली गोष्ट आवडल्यास हे म्हणा आणि त्याच्यासाठी बरकतीची दुआ करा, जसे «बारकल्लाहु लक».",
+         ar: "العين حق؛ فإذا أعجبتك شيء فقل هذا وادعُ بالبركة، مثل: «بارك الله لك».",
+         fr: "Le mauvais œil est une vérité ; si une chose te plaît, dis ceci et invoque la bénédiction, comme « bârakallâhu laka ».",
+         es: "El mal de ojo es real; si algo te gusta, di esto y pide bendición, como «barakal-lahu laka»." }
+  },
+
+  "Azan se shaitan ka bhaagna": {
+    t: { mr: "अजानने शैतानाचा पळ", ar: "هروب الشيطان عند الأذان", fr: "La fuite de Satan à l'adhan", es: "La huida de Satán con el adhan" },
+    m: { mr: "जेव्हा नमाजसाठी अजान दिली जाते तेव्हा शैतान पाठ फिरवून पळतो आणि हवा सोडतो, यासाठी की अजान ऐकू नये.",
+         ar: "إذا نودي للصلاة أدبر الشيطان وله ضراط حتى لا يسمع التأذين.",
+         fr: "Quand on appelle à la prière, Satan s'enfuit en émettant un bruit pour ne pas entendre l'adhan.",
+         es: "Cuando se llama a la oración, Satán huye emitiendo un ruido para no oír el adhan." },
+    f: { mr: "अजान शैतानाला दूर करते. अजान लक्षपूर्वक ऐका, त्याला उत्तर द्या आणि नमाजची पाबंदी ठेवा.",
+         ar: "الأذان يطرد الشيطان؛ فاستمع له وأجب وواظب على الصلاة.",
+         fr: "L'adhan éloigne Satan : écoutez-le, répondez-y et soyez assidu à la prière.",
+         es: "El adhan aleja a Satán: escúchalo, respóndele y sé constante en la oración." }
+  },
+
+  "Ghar mein dakhil hote aur khana khate waqt Allah ka naam": {
+    t: { mr: "घरात प्रवेश करताना व जेवताना अल्लाहचे नाव", ar: "ذكر الله عند دخول البيت وعند الطعام", fr: "Mentionner Allah en entrant chez soi et en mangeant", es: "Mencionar a Alá al entrar en casa y al comer" },
+    m: { mr: "जेव्हा माणूस आपल्या घरात प्रवेश करताना व जेवताना अल्लाहचे स्मरण करतो, तेव्हा शैतान (आपल्या साथीदारांना) म्हणतो: तुमच्यासाठी रात्र राहण्याची जागा नाही व जेवण नाही.",
+         ar: "إذا دخل الرجل بيته فذكر الله عند دخوله وعند طعامه قال الشيطان: لا مبيت لكم ولا عشاء.",
+         fr: "Quand un homme entre chez lui et mentionne Allah en entrant et en mangeant, Satan dit : pas de gîte ni de repas pour vous.",
+         es: "Cuando un hombre entra en su casa y menciona a Alá al entrar y al comer, Satán dice: no hay alojamiento ni cena para vosotros." },
+    f: { mr: "घरात प्रवेश करताना व जेवण सुरू करताना «बिस्मिल्लाह» म्हणा; यामुळे शैतान दूर राहतो.",
+         ar: "قل «بسم الله» عند الدخول وعند الطعام؛ بذلك يُطرد الشيطان.",
+         fr: "Dites « Bismillah » en entrant et en commençant à manger : Satan s'en éloigne.",
+         es: "Di «Bismil-lah» al entrar y al empezar a comer: Satán se aleja." }
+  },
+
+  "Shifa ke masnoon asbab: Kalonji aur Shahad": {
+    t: { mr: "बरे होण्याची मसनून साधने: काळा दाणा (कलोन्जी) व मध", ar: "أسباب الشفاء المأثورة: الحبة السوداء والعسل", fr: "Moyens prophétiques de guérison : la nigelle et le miel", es: "Medios proféticos de curación: el comino negro y la miel" },
+    m: { mr: "हा काळा दाणा (कलोन्जी) धरून ठेवा, कारण त्यात मृत्यूशिवाय प्रत्येक आजाराचे बरे होणे आहे.",
+         ar: "عليكم بهذه الحبة السوداء، فإن فيها شفاء من كل داء إلا السام.",
+         fr: "Prenez cette graine noire : en elle se trouve une guérison de toute maladie sauf la mort.",
+         es: "Tomad esta semilla negra: en ella hay curación de toda enfermedad salvo la muerte." },
+    f: { mr: "«अस्साम» म्हणजे मृत्यू. मधाबद्दल कुरआनात आहे: «त्यात लोकांसाठी बरे होणे आहे», आणि नबी ﷺ यांनी पोटाच्या त्रासाच्या व्यक्तीला मध पाजण्याचा सल्ला दिला. ही औषधे कारण आहेत; बरे करणारा अल्लाह आहे.",
+         ar: "«السام» هو الموت. وفي العسل: «فيه شفاء للناس»، وأمر النبي ﷺ من به داء البطن بالعسل. وهي أسباب، والشافي الله.",
+         fr: "« As-sâm » c'est la mort. Du miel le Coran dit : « il y a une guérison pour les gens », et le Prophète ﷺ prescrivit le miel à celui qui avait mal au ventre. Ce sont des moyens ; c'est Allah qui guérit.",
+         es: "«As-sam» es la muerte. Del miel el Corán dice: «en él hay curación para la gente», y el Profeta ﷺ mandó miel a quien tenía mal de vientre. Son medios; quien cura es Alá." }
+  }
+});
+
+if (window.FQDuaLangApply) window.FQDuaLangApply();

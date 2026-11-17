@@ -92,10 +92,10 @@
 // v99: Aaj ki Ayat + Sunnat ka 4-zubaan tarjuma (daily-lang.js) — app ka ek hi language button
 //      (اردو / Roman / हिंदी / English) ab in dono ka tarjuma bhi badalta hai (pehle sirf heading badalti thi).
 //      daily-lang.js core shell mein hai, is liye offline bhi chalta hai.
-// v104: DUAEIN — naya dua-lang.js: har dua ka naam, matlab aur tafseel मराठी / العربية / Français /
-//       Español mein (dua ke naam se juda hua, is liye tarteeb badalne se bhi sahi dua). Ab tak
-//       namaz ki pehli 15 duaein. Arabi matn waisa hi rehta hai — sirf tarjuma badalta hai.
-const CACHE_NAME = 'quran-ustad-auto-v104';
+// v105: DUAEIN MUKAMMAL — dua-lang.js mein saari 138 duaein (namaz 59, subah-sham 19, mushkil 7, bimari 3,
+//       sone 5, roz marra 26, ruqya 19) ka naam, matlab aur tafseel मराठी / العربية / Français / Español mein.
+//       Arabi dua ka matn waisa hi rehta hai — sirf tarjuma badalta hai.
+const CACHE_NAME = 'quran-ustad-auto-v105';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
