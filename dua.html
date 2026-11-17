@@ -15,6 +15,7 @@
     <meta name="apple-mobile-web-app-title" content="Fahm-ul-Quran">
     <script src="tools.js" defer></script>
     <script src="dua.js"></script>
+    <script src="dua-lang.js"></script>
     <script src="sounds.js"></script>
 
     
@@ -399,6 +400,8 @@
         applyScale();
 
         allDuas.forEach((d, i) => { d._i = i; });
+        window.allDuas = allDuas;                       // dua-lang.js isi se index nikalta hai
+        if (window.FQDuaLangApply) window.FQDuaLangApply();
         const LBL = {
             u:  { ur: 'اردو ترجمہ', taf: '📖 تفصیل / فائدہ', haw: '📍 حوالہ', arb: 'عربی متن', pa: '🔊 عربی سنیں', pu: '🔊 اردو سنیں', none: 'کوئی دعا نہیں ملی۔' },
             ro: { ur: 'Tarjuma', taf: '📖 Tafseel / Faida', haw: '📍 Hawala', arb: 'Arabic Matn', pa: '🔊 Arabic Suno', pu: '🔊 Tarjuma Suno', none: 'Koi Dua nahi mili.' },
@@ -412,10 +415,13 @@
         function duaText(d) {
             const l = QSLang.get(), t = (window.duaTr || {})[d._i] || {};
             if (l === 'u') return { title: d.title.replace(/^\d+\.\s*/, ''), mean: d.urdu, taf: d.tafseel };
-            const alt = (l === 'ro' || l === 'hi' || l === 'en') ? l : 'en';   // nayi zubaan: English tarjuma
+            // ro = Roman matn hi, baaki zubaanon ke liye uska tarjuma; jo na mile to English
+            const pick = (base) => t[base + '_' + l] || t[base + '_en'] || t[base + '_ro'];
+            const ttl = l === 'ro' ? d.title.replace(/^\d+\.\s*/, '') : (pick('title') || d.title.replace(/^\d+\.\s*/, ''));
             return {
-                title: alt === 'ro' ? d.title.replace(/^\d+\.\s*/, '') : (t['title_' + alt] || d.title.replace(/^\d+\.\s*/, '')),
-                mean: t['urdu_' + alt] || d.urdu, taf: t['tafseel_' + alt] || d.tafseel
+                title: ttl,
+                mean: pick('urdu') || d.urdu,
+                taf: pick('tafseel') || d.tafseel
             };
         }
         function renderDuas(filterText = "", category = "all") {

@@ -92,9 +92,10 @@
 // v99: Aaj ki Ayat + Sunnat ka 4-zubaan tarjuma (daily-lang.js) — app ka ek hi language button
 //      (اردو / Roman / हिंदी / English) ab in dono ka tarjuma bhi badalta hai (pehle sirf heading badalti thi).
 //      daily-lang.js core shell mein hai, is liye offline bhi chalta hai.
-// v103: COURSE ke saare 900 lafz (Day 1-90) ka tarjuma — मराठी / العربية / Français / Español
-//       (course-lang.js). Har lafz ka matlab + mashq ki tafseel; Arbi lafz aur ayat jaisi hai waisi hi.
-const CACHE_NAME = 'quran-ustad-auto-v103';
+// v104: DUAEIN — naya dua-lang.js: har dua ka naam, matlab aur tafseel मराठी / العربية / Français /
+//       Español mein (dua ke naam se juda hua, is liye tarteeb badalne se bhi sahi dua). Ab tak
+//       namaz ki pehli 15 duaein. Arabi matn waisa hi rehta hai — sirf tarjuma badalta hai.
+const CACHE_NAME = 'quran-ustad-auto-v104';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -121,7 +122,8 @@ const CORE = [
     './course-lang.js',
     './sunnat.js',
     './daily-lang.js',
-    './lang-extra.js'
+    './lang-extra.js',
+    './dua-lang.js'
 ];
 
 // Baaki sab — pichhe se bharti hain (activate / page ka message / sync). Offline ke liye poora app
@@ -147,6 +149,7 @@ const ASSETS = [
     './sunnat.js',
     './daily-lang.js',
     './lang-extra.js',
+    './dua-lang.js',
     './dua.js',
     './icon.png',
     './icon-192.png',
