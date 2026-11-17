@@ -2425,6 +2425,754 @@ window.SEERAT_LANG = {
           ["619", "El episodio del ángel de las montañas"]
         ]
       ]
+    },
+
+    /* ═══════════════ DAY 14 — Isra o Mi'raj ═══════════════ */
+    14: {
+      mr: [
+        "इसरा व मेराज — आकाशांचा प्रवास",
+        "मस्जिदे-हराम → मस्जिदे-अक्सा → आकाश",
+        "हिजरतीच्या थोडे आधी (तारखेत मतभेद)",
+        "मेराजची घटना, पाच नमाजांची फर्जियत आणि नबी ﷺ यांचा आकाशांतील प्रवास समजून घेणे.",
+        "मूसा (अ.स.) यांच्या सल्ल्याने नमाजा पन्नासांवरून पाच झाल्या, फळ तरीही पन्नासांचेच — तरीही आपल्याला पाच नमाजाही कठीण वाटतात. हे अल्लाह! आम्हाला नमाजची किंमत दे. आमीन.",
+        [
+          "हिजरतीपूर्वी मेराज (वर्षात मतभेद)",
+          "मस्जिदे-हरामपासून मस्जिदे-अक्सापर्यंत",
+          "नबींचे इमामत्व",
+          "सात आकाशे",
+          "पाच नमाजा फर्ज",
+          "अबू बक्र (र.अ.) यांना सिद्दीक हे विशेषण"
+        ],
+        [
+          ["🌌 इसरा — रात्रीचा प्रवास",
+           "एके रात्री (तारखेत मतभेद आहे; सत्तावीस रजब प्रसिद्ध आहे पण त्याला कोणताही सहीह पुरावा सिद्ध नाही) नबी ﷺ मस्जिदे-हराममध्ये हतीमजवळ झोप व जागरणाच्या अवस्थेत होते. जिब्राईल (अ.स.) आले, आप ﷺ यांची छाती उघडली, हृदय झमझमच्या पाण्याने धुतले आणि ते हिकमत व ईमानाने भरून टाकले. नंतर बुराक सादर केला — पांढरे वाहन, गाढवापेक्षा मोठे व खेचरापेक्षा लहान, जे आपले पाऊल दृष्टीच्या हद्दीपर्यंत ठेवत होते (सहीह बुखारी व मुस्लिम). कुरआनात आहे: «سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِّنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى» (पवित्र आहे तो, ज्याने आपल्या दासाला रात्रीच्या एका भागात मस्जिदे-हरामपासून मस्जिदे-अक्सापर्यंत नेले) — सूरह अल-इसरा १७:१.",
+           "सहीह बुखारी: ३२०७; सहीह मुस्लिम (किताबुल-ईमान, बाबुल-इसरा); कुरआन: १७:१"],
+          ["🕌 मस्जिदे-अक्सामध्ये",
+           "आप ﷺ बैतुल-मुकद्दस पोहोचले, बुराक बांधला आणि मस्जिदीत दोन रकअत नमाज़ पढली. सहीह मुस्लिमच्या रिवायतीनुसार तिथे नबी जमले होते आणि आप ﷺ यांनी त्यांचे इमामत्व केले. नंतर जिब्राईल (अ.स.) यांनी दोन वाट्या सादर केल्या — एकात दूध, दुसऱ्यात दारू. आप ﷺ यांनी दूध निवडले. जिब्राईल (अ.स.) म्हणाले: «तुम्ही फितरत निवडली; जर दारू घेतली असती तर तुमची उम्मत मार्गभ्रष्ट झाली असती.» (सहीह मुस्लिम)",
+           "सहीह मुस्लिम: १७२"],
+          ["🪜 आकाशांचा प्रवास",
+           "नंतर आप ﷺ यांना जिब्राईल (अ.स.) सोबत आकाशांवर नेले गेले. सहीह बुखारी व मुस्लिमनुसार: पहिल्या आकाशात आदम (अ.स.), दुसऱ्यात यह्या (अ.स.) व ईसा (अ.स.), तिसऱ्यात यूसुफ (अ.स.), चौथ्यात इद्रीस (अ.स.), पाचव्यात हारून (अ.स.), सहाव्यात मूसा (अ.स.) आणि सातव्यात इब्राहीम (अ.स.) यांची भेट झाली. प्रत्येकाने मरहबा म्हटले आणि नबुव्वतची पुष्टी केली. सातव्या आकाशात इब्राहीम (अ.स.) बैतुल-मअमूरला टेकून होते. नंतर आप ﷺ यांना सिदरतुल-मुंतहापर्यंत नेले गेले — सातव्या आकाशातील बेरिचे एक महान वृक्ष, जे प्रकाशाने व रंगांनी झाकलेले होते.",
+           "सहीह बुखारी: ३२०७; सहीह मुस्लिम (किताबुल-ईमान, बाबुल-इसरा)"],
+          ["🤲 पाच नमाजा",
+           "अल्लाहने आप ﷺ यांच्या उम्मतीवर पन्नास नमाजा फर्ज केल्या. परतीच्या वेळी मूसा (अ.स.) म्हणाले: «तुमची उम्मत एवढ्या नमाजा सांभाळू शकणार नाही; मी बनी इस्राईलची परीक्षा घेतली आहे; आपल्या रबकडे कमी करण्याची विनंती करा.» नबी ﷺ वारंवार गेले आणि प्रत्येक वेळी काही कमी होत राहिले, शेवटी पाच राहिल्या. मूसा (अ.स.) यांनी पुन्हा सल्ला दिला तेव्हा आप ﷺ म्हणाले: «आता मला माझ्या रबकडून लाज वाटते, मी राजी आहे.» नंतर निदा आली: «मी माझे फर्ज जारी केले आणि माझ्या दासांवर सवलत केली. या पाच आहेत पण फळात पन्नास आहेत; माझ्याकडे बोल बदलत नाही.» (सहीह बुखारी व मुस्लिम). ही या उम्मतीसाठी फार मोठी दया आहे.",
+           "सहीह बुखारी: ३४९; सहीह मुस्लिम (किताबुल-ईमान, बाबुल-इसरा)"],
+          ["🌟 महत्त्वाच्या भेटी",
+           "मेराजमध्ये नबी ﷺ यांना काही भेटी मिळाल्या: पाच नमाजा, सूरह अल-बकराच्या शेवटच्या दोन आयती, आणि ही बुशरत की उम्मतीतील जो शिर्क करणार नाही, अल्लाह इच्छा असेल तर त्याचे नाश करणारे मोठे पापही माफ करेल (सहीह मुस्लिम: १७३). ही या उम्मतीसाठी फार मोठी बुशरत होती.",
+           "सहीह मुस्लिम: १७३"],
+          ["😢 कुरैशचा इन्कार",
+           "सकाळी नबी ﷺ यांनी कुरैशला घटना सांगितली. त्यांनी थट्टा केली आणि खोटे ठरवले; काही लोक अबू बक्र (र.अ.) यांच्याकडे धावले. अबू बक्र (र.अ.) म्हणाले: «जर आप ﷺ यांनी हे सांगितले असेल तर खरे सांगितले. मी तर याहूनही मोठ्या गोष्टीवर (आकाशाची बातमी सकाळ-संध्याकाळ) आपली पुष्टी करतो.» याच पुष्टीमुळे त्यांचे «सिद्दीक» हे विशेषण प्रसिद्ध झाले (मुस्तद्रक हाकिम).",
+           "मुस्तद्रक हाकिम (अबू बक्र (र.अ.) यांच्या विशेषणाची रिवायत)"],
+          ["🎯 बोध",
+           "मेराजची घटना दाखवते की अल्लाह आपल्या हबीबाला किती प्रिय मानतो. पाच नमाजा ही भेट आहे; आपण ती सांभाळली पाहिजे आणि पूर्ण लक्षाने पढली पाहिजे.",
+           ""]
+        ],
+        [
+          ["मेराज कुठून सुरू झाला?", ["हिरा गुहा", "मस्जिदे-हराम", "तायफ"]],
+          ["किती नमाजा फर्ज झाल्या?", ["३", "५", "५०"]],
+          ["अबू बक्र (र.अ.) यांचे विशेषण?", ["फारूक", "सिद्दीक", "झुन्नूरैन"]]
+        ],
+        [
+          ["नबवी १०-१२", "इसरा व मेराज"],
+          ["नबवी १०-१२", "पाच नमाजा फर्ज"],
+          ["नबवी १०-१२", "अबू बक्र (र.अ.) यांची पुष्टी"]
+        ]
+      ],
+      ar: [
+        "الإسراء والمعراج — الرحلة إلى السماوات",
+        "المسجد الحرام ← المسجد الأقصى ← السماء",
+        "قبل الهجرة بقليل (وفي التاريخ خلاف)",
+        "فهم حادثة المعراج، وفرض الصلوات الخمس، ورحلة النبي ﷺ في السماوات.",
+        "بمشورة موسى عليه السلام صارت الصلوات خمسًا من خمسين، والأجر أجر خمسين — ومع ذلك نجد الخمس ثقيلة. اللهم ارزقنا تعظيم الصلاة. آمين.",
+        [
+          "المعراج قبل الهجرة (وفي السنة خلاف)",
+          "من المسجد الحرام إلى المسجد الأقصى",
+          "إمامته ﷺ بالأنبياء",
+          "السماوات السبع",
+          "فرض الصلوات الخمس",
+          "لقب الصديق لأبي بكر رضي الله عنه"
+        ],
+        [
+          ["🌌 الإسراء — الرحلة الليلية",
+           "في ليلة (وفي تاريخها خلاف؛ والمشهور السابع والعشرون من رجب ولا يثبت عليه دليل صحيح) كان النبي ﷺ في المسجد الحرام عند الحطيم بين النوم واليقظة. فجاء جبريل عليه السلام فشق صدره، وغسل قلبه بماء زمزم، وملأه حكمةً وإيمانًا. ثم أُتي بالبراق — دابة بيضاء أكبر من الحمار وأصغر من البغل، تضع خطوها عند منتهى بصرها (صحيح البخاري ومسلم). وفي القرآن: «سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِّنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى» — سورة الإسراء 17:1.",
+           "صحيح البخاري: 3207؛ صحيح مسلم (كتاب الإيمان، باب الإسراء)؛ القرآن: 17:1"],
+          ["🕌 في المسجد الأقصى",
+           "وصل ﷺ بيت المقدس، فربط البراق، وصلى في المسجد ركعتين. وفي رواية صحيح مسلم أن الأنبياء جُمعوا هناك وصلى بهم ﷺ إمامًا. ثم أُتي جبريل عليه السلام بإناءين — في أحدهما لبن وفي الآخر خمر، فاختار ﷺ اللبن. فقال جبريل: «أصبت الفطرة؛ لو أخذت الخمر لغوَت أمتك» (صحيح مسلم).",
+           "صحيح مسلم: 172"],
+          ["🪜 الرحلة في السماوات",
+           "ثم عُرج به ﷺ مع جبريل عليه السلام إلى السماوات. وفي صحيح البخاري ومسلم: في السماء الأولى آدم عليه السلام، وفي الثانية يحيى وعيسى عليهما السلام، وفي الثالثة يوسف عليه السلام، وفي الرابعة إدريس عليه السلام، وفي الخامسة هارون عليه السلام، وفي السادسة موسى عليه السلام، وفي السابعة إبراهيم عليه السلام. فسلّم كلٌّ منهم عليه ورحّب وصدّق بنبوته. وكان إبراهيم عليه السلام في السابعة مستندًا إلى البيت المعمور. ثم أُعرج به ﷺ إلى سدرة المنتهى — شجرة عظيمة في السماء السابعة يغشاها نور وألوان.",
+           "صحيح البخاري: 3207؛ صحيح مسلم (كتاب الإيمان، باب الإسراء)"],
+          ["🤲 الصلوات الخمس",
+           "فرض الله على أمة النبي ﷺ خمسين صلاة. وفي الرجوع قال موسى عليه السلام: «إن أمتك لا تطيق ذلك، وقد جربت بني إسرائيل؛ فارجع إلى ربك فاسأله التخفيف». فرجع ﷺ مرارًا وكل مرة تُخفَّف، حتى بقيت خمس. ثم قال موسى عليه السلام مرة أخرى، فقال ﷺ: «قد استحييت من ربي، أنا راضٍ». فنودي: «قد أمضيت فريضتي وخففت عن عبادي: هي خمس وهي خمسون، لا يُبدَّل القول لديّ». (صحيح البخاري ومسلم). وهذه رحمة عظيمة لهذه الأمة.",
+           "صحيح البخاري: 349؛ صحيح مسلم (كتاب الإيمان، باب الإسراء)"],
+          ["🌟 عطايا عظيمة",
+           "أُعطي النبي ﷺ في المعراج: الصلوات الخمس، وخواتيم سورة البقرة، والبشرى بأن من لم يشرك بالله من أمته ولم يُشرك، غفر الله له ما دون ذلك من الموبقات إن شاء (صحيح مسلم: 173). وكانت هذه بشرى عظيمة لهذه الأمة.",
+           "صحيح مسلم: 173"],
+          ["😢 تكذيب قريش",
+           "في الصباح أخبر ﷺ قريشًا بالخبر، فسخروا وكذّبوا، وأسرع بعضهم إلى أبي بكر رضي الله عنه. فقال أبو بكر: «إن كان قال فقد صدق؛ أنا أصدقه بأكبر من ذلك (بخبر السماء صباحًا ومساءً)». وبهذا التصديق اشتهر لقبه «الصديق» (المستدرك للحاكم).",
+           "المستدرك للحاكم (رواية لقب أبي بكر رضي الله عنه)"],
+          ["🎯 العبرة",
+           "تدل حادثة المعراج على عظيم مكانة الحبيب ﷺ عند ربه. والصلوات الخمس عطية، فعلينا أن نحفظها ونصليها بكامل الحضور.",
+           ""]
+        ],
+        [
+          ["من أين بدأ المعراج؟", ["غار حراء", "المسجد الحرام", "الطائف"]],
+          ["كم صلاة فُرضت؟", ["3", "5", "50"]],
+          ["ما لقب أبي بكر رضي الله عنه؟", ["الفاروق", "الصديق", "ذو النورين"]]
+        ],
+        [
+          ["10-12 من النبوة", "الإسراء والمعراج"],
+          ["10-12 من النبوة", "فرض الصلوات الخمس"],
+          ["10-12 من النبوة", "تصديق أبي بكر رضي الله عنه"]
+        ]
+      ],
+      fr: [
+        "Al-Isrâ' et al-Mi'râj — le voyage dans les cieux",
+        "Mosquée sacrée → Mosquée al-Aqsâ → les cieux",
+        "Peu avant l'émigration (dates divergentes)",
+        "Comprendre l'épisode du Mi'râj, l'obligation des cinq prières et le voyage du Prophète ﷺ dans les cieux.",
+        "Sur le conseil de Mûsâ (paix sur lui), les prières passèrent de cinquante à cinq, mais la récompense reste celle de cinquante — et nous trouvons encore les cinq lourdes. Ô Allah ! Accorde-nous d'estimer la prière. Âmîn.",
+        [
+          "Le Mi'râj avant l'émigration (année discutée)",
+          "De la Mosquée sacrée à la Mosquée al-Aqsâ",
+          "Le Prophète ﷺ imam des prophètes",
+          "Les sept cieux",
+          "Les cinq prières obligatoires",
+          "Le surnom d'as-Siddîq pour Abou Bakr (qu'Allah l'agrée)"
+        ],
+        [
+          ["🌌 Al-Isrâ' — le voyage nocturne",
+           "Une nuit (sa date est discutée ; le 27 rajab est célèbre mais sans preuve authentique), le Prophète ﷺ se trouvait à la Mosquée sacrée, près du Hijr, entre sommeil et veille. Jibrîl (paix sur lui) vint, ouvrit sa poitrine, lava son cœur avec l'eau de Zamzam et le remplit de sagesse et de foi. Puis on lui présenta le Bourâq — une monture blanche, plus grande qu'un âne et plus petite qu'un mulet, posant son pas à l'extrémité de sa vue (Sahih al-Bukhari et Muslim). Le Coran dit : « سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِّنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى » — sourate al-Isrâ' 17:1.",
+           "Sahih al-Bukhari : 3207 ; Sahih Muslim (Livre de la foi, chapitre al-Isrâ') ; Coran : 17:1"],
+          ["🕌 À la Mosquée al-Aqsâ",
+           "Il ﷺ arriva à Bayt al-Maqdis, attacha le Bourâq et pria deux rak'ahs dans la mosquée. Selon le récit de Sahih Muslim, les prophètes y étaient rassemblés et il ﷺ les dirigea en prière. Puis Jibrîl (paix sur lui) présenta deux coupes — l'une de lait, l'autre de vin. Il ﷺ choisit le lait. Jibrîl dit : « Tu as suivi la nature originelle ; si tu avais pris le vin, ta communauté se serait égarée. » (Sahih Muslim)",
+           "Sahih Muslim : 172"],
+          ["🪜 Le voyage dans les cieux",
+           "Puis il ﷺ fut élevé avec Jibrîl (paix sur lui) à travers les cieux. Selon Sahih al-Bukhari et Muslim : au premier ciel Adam (paix sur lui), au deuxième Yahyâ et 'Issâ (paix sur eux), au troisième Yoûsouf (paix sur lui), au quatrième Idrîs (paix sur lui), au cinquième Hâroûn (paix sur lui), au sixième Mûsâ (paix sur lui) et au septième Ibrâhîm (paix sur lui). Chacun le salua, l'accueillit et confirma sa prophétie. Au septième ciel, Ibrâhîm (paix sur lui) était appuyé contre la Maison peuplée (al-Bayt al-Ma'moûr). Puis il ﷺ fut conduit au Lotus de la limite (Sidrat al-Mountahâ) — un arbre immense au septième ciel, couvert de lumière et de couleurs.",
+           "Sahih al-Bukhari : 3207 ; Sahih Muslim (Livre de la foi, chapitre al-Isrâ')"],
+          ["🤲 Les cinq prières",
+           "Allah imposa cinquante prières à la communauté du Prophète ﷺ. Au retour, Mûsâ (paix sur lui) dit : « Ta communauté ne pourra pas supporter cela ; j'ai éprouvé les Enfants d'Isrâ'îl ; retourne vers ton Seigneur et demande une réduction. » Il ﷺ y retourna plusieurs fois, et chaque fois elles furent allégées, jusqu'à ce qu'il en reste cinq. Mûsâ (paix sur lui) conseilla encore, et il ﷺ dit : « J'ai eu honte de mon Seigneur ; je suis satisfait. » Alors il fut annoncé : « J'ai décrété Mon obligation et allégé pour Mes serviteurs : elles sont cinq et elles valent cinquante ; Ma parole ne change pas. » (Sahih al-Bukhari et Muslim). C'est une immense miséricorde pour cette communauté.",
+           "Sahih al-Bukhari : 349 ; Sahih Muslim (Livre de la foi, chapitre al-Isrâ')"],
+          ["🌟 Des dons précieux",
+           "Au Mi'râj, le Prophète ﷺ reçut : les cinq prières, les deux derniers versets de sourate al-Baqara, et l'annonce que celui de sa communauté qui ne commet pas d'association à Allah, Allah lui pardonnera les péchés graves qui ne sont pas de cet ordre, s'Il le veut (Sahih Muslim : 173). Ce fut une immense annonce pour cette communauté.",
+           "Sahih Muslim : 173"],
+          ["😢 Le démenti des Quraysh",
+           "Le matin, le Prophète ﷺ raconta l'épisode aux Quraysh. Ils s'en moquèrent et le traitèrent de menteur ; certains coururent chez Abou Bakr (qu'Allah l'agrée). Il dit : « S'il l'a dit, il a dit vrai. Moi je le crois pour plus grand que cela (la nouvelle du ciel matin et soir). » C'est à cause de cette attestation que son surnom « as-Siddîq » devint célèbre (al-Moustadrak d'al-Hâkim).",
+           "al-Moustadrak d'al-Hâkim (récit du surnom d'Abou Bakr)"],
+          ["🎯 La leçon",
+           "L'épisode du Mi'râj montre combien le bien-aimé ﷺ est cher à son Seigneur. Les cinq prières sont un don : nous devons les préserver et les accomplir avec une pleine présence.",
+           ""]
+        ],
+        [
+          ["D'où commença le Mi'râj ?", ["La grotte de Hirâ'", "La Mosquée sacrée", "Tâ'if"]],
+          ["Combien de prières furent rendues obligatoires ?", ["3", "5", "50"]],
+          ["Quel est le surnom d'Abou Bakr (qu'Allah l'agrée) ?", ["Al-Fâroûq", "As-Siddîq", "Dhou-n-Noûrayn"]]
+        ],
+        [
+          ["10-12 de la prophétie", "Al-Isrâ' et al-Mi'râj"],
+          ["10-12 de la prophétie", "Obligation des cinq prières"],
+          ["10-12 de la prophétie", "L'attestation d'Abou Bakr (qu'Allah l'agrée)"]
+        ]
+      ],
+      es: [
+        "Al-Isra y al-Miraj: el viaje a los cielos",
+        "Mezquita Sagrada → Mezquita al-Aqsa → los cielos",
+        "Poco antes de la emigración (fecha discutida)",
+        "Comprender el episodio del Miraj, la obligatoriedad de las cinco oraciones y el viaje del Profeta ﷺ por los cielos.",
+        "Por consejo de Musa (la paz sea con él), las oraciones pasaron de cincuenta a cinco, pero la recompensa sigue siendo la de cincuenta; y aun así nos resultan pesadas las cinco. ¡Oh Alá! Concédenos valorar la oración. Amín.",
+        [
+          "El Miraj antes de la emigración (año discutido)",
+          "De la Mezquita Sagrada a la Mezquita al-Aqsa",
+          "El Profeta ﷺ imán de los profetas",
+          "Los siete cielos",
+          "Las cinco oraciones obligatorias",
+          "El apelativo as-Siddiq para Abu Bakr (que Alá esté complacido con él)"
+        ],
+        [
+          ["🌌 Al-Isra: el viaje nocturno",
+           "Una noche (su fecha es discutida; el 27 de rayab es famoso pero sin prueba auténtica), el Profeta ﷺ estaba en la Mezquita Sagrada, junto al Hiyir, entre el sueño y la vigilia. Vino Yibril (la paz sea con él), abrió su pecho, lavó su corazón con agua de Zamzam y lo llenó de sabiduría y fe. Luego le presentaron el Buraq: una montura blanca, mayor que un asno y menor que un mulo, que ponía su paso al límite de su vista (Sahih al-Bujari y Muslim). El Corán dice: «سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِّنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى» — sura al-Isra 17:1.",
+           "Sahih al-Bujari: 3207; Sahih Muslim (Libro de la fe, capítulo al-Isra); Corán: 17:1"],
+          ["🕌 En la Mezquita al-Aqsa",
+           "Él ﷺ llegó a Bayt al-Maqdis, ató el Buraq y rezó dos rakas en la mezquita. Según el relato de Sahih Muslim, los profetas estaban reunidos allí y él ﷺ los dirigió en la oración. Luego Yibril (la paz sea con él) presentó dos copas: una de leche y otra de vino. Él ﷺ eligió la leche. Yibril dijo: «Has seguido la naturaleza original; si hubieras tomado el vino, tu comunidad se habría extraviado.» (Sahih Muslim)",
+           "Sahih Muslim: 172"],
+          ["🪜 El viaje por los cielos",
+           "Luego ﷺ fue elevado con Yibril (la paz sea con él) por los cielos. Según Sahih al-Bujari y Muslim: en el primer cielo Adam (la paz sea con él), en el segundo Yahya e Isa (la paz sea con ellos), en el tercero Yusuf (la paz sea con él), en el cuarto Idris (la paz sea con él), en el quinto Harun (la paz sea con él), en el sexto Musa (la paz sea con él) y en el séptimo Ibrahim (la paz sea con él). Cada uno lo saludó, lo acogió y confirmó su profecía. En el séptimo cielo, Ibrahim (la paz sea con él) estaba recostado junto a la Casa Poblada (al-Bayt al-Mamur). Luego ﷺ fue llevado al Loto del Límite (Sidrat al-Muntaha), un árbol inmenso en el séptimo cielo, cubierto de luz y colores.",
+           "Sahih al-Bujari: 3207; Sahih Muslim (Libro de la fe, capítulo al-Isra)"],
+          ["🤲 Las cinco oraciones",
+           "Alá impuso cincuenta oraciones a la comunidad del Profeta ﷺ. A la vuelta, Musa (la paz sea con él) dijo: «Tu comunidad no podrá con ello; yo he probado a los Hijos de Israel; vuelve a tu Señor y pide una reducción.» Él ﷺ volvió varias veces y cada vez fueron aligeradas, hasta que quedaron cinco. Musa (la paz sea con él) aconsejó de nuevo, y él ﷺ dijo: «He sentido vergüenza de mi Señor; estoy satisfecho.» Entonces se anunció: «He cumplido Mi obligación y he aligerado a Mis siervos: son cinco y valen cincuenta; Mi palabra no cambia.» (Sahih al-Bujari y Muslim). Es una misericordia inmensa para esta comunidad.",
+           "Sahih al-Bujari: 349; Sahih Muslim (Libro de la fe, capítulo al-Isra)"],
+          ["🌟 Dones preciosos",
+           "En el Miraj el Profeta ﷺ recibió: las cinco oraciones, las dos últimas aleyas de la sura al-Baqara, y el anuncio de que a quien de su comunidad no asocie nada a Alá, Alá le perdonará los pecados graves que no sean de ese orden, si Él quiere (Sahih Muslim: 173). Fue un anuncio inmenso para esta comunidad.",
+           "Sahih Muslim: 173"],
+          ["😢 El desmentido de los Quraysh",
+           "Por la mañana, el Profeta ﷺ contó el episodio a los Quraysh. Se burlaron y lo tacharon de mentiroso; algunos corrieron a casa de Abu Bakr (que Alá esté complacido con él). Él dijo: «Si lo ha dicho, ha dicho la verdad. Yo le creo para algo aún mayor (la noticia del cielo mañana y tarde).» Por esta confirmación se hizo famoso su apelativo «as-Siddiq» (al-Mustadrak de al-Hakim).",
+           "al-Mustadrak de al-Hakim (relato del apelativo de Abu Bakr)"],
+          ["🎯 La lección",
+           "El episodio del Miraj muestra cuán querido es el amado ﷺ para su Señor. Las cinco oraciones son un regalo: debemos cuidarlas y rezarlas con plena presencia.",
+           ""]
+        ],
+        [
+          ["¿De dónde comenzó el Miraj?", ["La cueva de Hira", "La Mezquita Sagrada", "Taif"]],
+          ["¿Cuántas oraciones se hicieron obligatorias?", ["3", "5", "50"]],
+          ["¿Cuál es el apelativo de Abu Bakr (que Alá esté complacido con él)?", ["Al-Faruq", "As-Siddiq", "Du-n-Nurayn"]]
+        ],
+        [
+          ["Años 10-12 de la profecía", "Al-Isra y al-Miraj"],
+          ["Años 10-12 de la profecía", "Obligación de las cinco oraciones"],
+          ["Años 10-12 de la profecía", "La confirmación de Abu Bakr (que Alá esté complacido con él)"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 15 — Bai'at-e-Aqabah ═══════════════ */
+    15: {
+      mr: [
+        "अकबाच्या बैअती — मदिन्याचा मार्ग",
+        "मिना (मक्केजवळ)",
+        "इ.स. ६२१-६२२ (नबवी ११-१२)",
+        "अन्सारांची पहिली व दुसरी बैअत आणि मदिन्यात इस्लाम पसरल्याची घटना समजून घेणे.",
+        "मुसअब (र.अ.) एक तरुण, सुखवस्तू घरातील, पण इस्लामसाठी मदिन्याला गेले आणि एका वर्षात संपूर्ण शहर बदलले. हीच दावतीची शक्ती आहे. हे अल्लाह! आम्हालाही दावतीची तौफीक दे. आमीन.",
+        [
+          "पहिली बैअत: १२ लोक",
+          "दुसरी बैअत: ७५ लोक",
+          "मुसअब (र.अ.) मदिन्याला पाठवले",
+          "१२ नकीब नेमले",
+          "हिजरतीचा निर्णय"
+        ],
+        [
+          ["🌴 मदिन्यात इस्लामचा प्रकाश",
+           "मदिन्यात (यसरीब) यहुदी टोळ्यांसोबत अरब टोळ्या औस व खजरज वसलेल्या होत्या, ज्या आपापसातील कठोर युद्धांनी (जंगे-बुआस इ.) थकल्या होत्या. यहुदी म्हणत असत की एक नबी येणार आहे. नबवी ११ च्या हजमध्ये खजरजचे सहा लोक नबी ﷺ यांना भेटले; आप ﷺ यांनी त्यांना कुरआन ऐकवले, ते ईमान आणले आणि आपल्या शहरात परत जाऊन दावत देऊ लागले. (इब्न इशाक)",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🅰️ पहिली बैअते-अकबा — इ.स. ६२१",
+           "मिनामध्ये, हजच्या वेळी, १२ लोक (मदिन्याचे) नबी ﷺ यांना भेटले. त्यांनी इस्लाम स्वीकारला आणि ही बैअत केली: «आम्ही अल्लाहसोबत कोणालाही सहभागी करणार नाही, चोरी करणार नाही, व्यभिचार करणार नाही, संततीची हत्या करणार नाही, कोणावर बदनामी करणार नाही, आणि नबी ﷺ यांचे प्रत्येक चांगले बोलणे मान्य करू.» या बैअतीवर नबी ﷺ म्हणाले: «जर तुम्ही पूर्ण कराल तर जन्नत आहे; आणि कसूर केला तर अल्लाह माफ करेल किंवा शिक्षा देईल.»",
+           "सहीह बुखारी: १८, ३८९२ (उबादा बिन सामित (र.अ.))"],
+          ["📿 मुसअब बिन उमैर (र.अ.) यांची नेमणूक",
+           "नबी ﷺ यांनी मुसअब बिन उमैर (र.अ.) यांना मदिन्याला पाठवले की कुरआन शिकवावे आणि इस्लामची शिकवण द्यावी. मुसअब (र.अ.) यांनी खूप मेहनत केली — एका वर्षात मदिन्यात इस्लाम पसरला. औस व खजरजचे सरदार साद बिन मुआज (र.अ.) व उसैद बिन हुदैर (र.अ.) हेदेखील मुस्लिम झाले, नंतर त्यांच्या कौमनेही इस्लाम स्वीकारला. हेच ते लोक होते ज्यांनी पुढे हिजरतीत नबी ﷺ यांना मदत केली.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🅱️ दुसरी बैअते-अकबा — इ.स. ६२२",
+           "पुढच्या वर्षी हजला ७५ लोक (७३ पुरुष, २ स्त्रिया) आले — मदिन्याचे. नबी ﷺ यांचे काका अब्बास (र.अ.) (तेव्हापर्यंत मुस्लिम नव्हते, पण पाठिंब्यासाठी आले) म्हणाले: «मुहम्मद ﷺ आमच्या टोळीत मानाचे आहेत. जर तुम्ही त्यांना मदिन्याला न्यायचे असेल तर प्रत्येक परिस्थितीत संरक्षण करा.» त्यांनी म्हटले: «आम्ही आप ﷺ यांचे संरक्षण करू जसे आपल्या बायका-मुलांचे करतो.» ही बैअत फार महत्त्वाची होती — यात नबी ﷺ यांनी १२ नकीब (सरदार) नेमले.",
+           "मुस्नद अहमद (काब बिन मलिक (र.अ.) यांची रिवायत); अर-रहीकुल-मख्तूम"],
+          ["🏡 मदिन्याच्या हिजरतीचा निर्णय",
+           "आता नबी ﷺ सहाबांना म्हणाले: «मदिन्याला जा, तिथे तुमचे बंधू आहेत, ते तुम्हाला मदत करतील.» सहाबांनी हिजरत सुरू केली — गुप्तपणे, बहुतेक रात्री. काहींनी सर्व माल सोडला, कुटुंब सोडले, पण ईमान सोडले नाही.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🎯 बोध",
+           "अन्सारांच्या बैअतीने आणि मुसअब (र.अ.) यांच्या मेहनतीने मदिन्यात इस्लाम पसरला. आपण दावतीसाठी तयारी केली पाहिजे आणि शहाणपणाने काम केले पाहिजे. एक चांगला शिक्षक एका वर्षात संपूर्ण वस्ती बदलू शकतो.",
+           ""]
+        ],
+        [
+          ["पहिल्या बैअतीत किती लोक?", ["१०", "१२", "२०"]],
+          ["मदिन्याला कोण पाठवले?", ["अली (र.अ.)", "मुसअब (र.अ.)", "झैद (र.अ.)"]],
+          ["दुसऱ्या बैअतीत किती?", ["५०", "७५", "१००"]]
+        ],
+        [
+          ["इ.स. ६२१", "पहिली बैअते-अकबा"],
+          ["इ.स. ६२१", "मुसअब (र.अ.) यांचे मदिन्याला प्रयाण"],
+          ["इ.स. ६२२", "दुसरी बैअते-अकबा"]
+        ]
+      ],
+      ar: [
+        "بيعتا العقبة — الطريق إلى المدينة",
+        "منى (قرب مكة)",
+        "621-622 م (11-12 من النبوة)",
+        "فهم بيعة الأنصار الأولى والثانية، وانتشار الإسلام في المدينة.",
+        "مصعب رضي الله عنه شاب من بيت نعمة، لكنه خرج إلى المدينة من أجل الإسلام فغيّر مدينة كاملة في سنة. هذه قوة الدعوة. اللهم وفقنا للدعوة إليك. آمين.",
+        [
+          "البيعة الأولى: 12 رجلًا",
+          "البيعة الثانية: 75",
+          "إرسال مصعب رضي الله عنه",
+          "تعيين 12 نقيبًا",
+          "قرار الهجرة إلى المدينة"
+        ],
+        [
+          ["🌴 بذرة الإسلام في المدينة",
+           "كانت المدينة (يثرب) تسكنها قبائل عربية هي الأوس والخزرج مع قبائل يهودية، وقد تعبت من حروبها الشديدة (يوم بعاث وغيره). وكان اليهود يقولون إن نبيًّا سيُبعث. وفي حج السنة الحادية عشرة لقي ستة من الخزرج النبي ﷺ، فقرأ عليهم القرآن فآمنوا، ورجعوا إلى بلدهم يدعون إليه. (ابن إسحاق)",
+           "رواية سيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🅰️ بيعة العقبة الأولى — 621 م",
+           "في منى، في موسم الحج، لقيه ﷺ اثنا عشر رجلًا من المدينة. فأسلموا وبايعوه على: «ألا نشرك بالله شيئًا، ولا نسرق، ولا نزني، ولا نقتل أولادنا، ولا نأتي ببهتان نفتريه، ولا نعصيه في معروف». فقال ﷺ: «فمن وفى منكم فله الجنة، ومن أصاب شيئًا من ذلك فستر الله عليه فهو إلى الله: إن شاء عذّبه وإن شاء غفر له».",
+           "صحيح البخاري: 18، 3892 (عبادة بن الصامت رضي الله عنه)"],
+          ["📿 إرسال مصعب بن عمير رضي الله عنه",
+           "بعث النبي ﷺ مصعب بن عمير رضي الله عنه إلى المدينة يعلّم القرآن ويفقّه في الدين. فاجتهد مصعب رضي الله عنه حتى انتشر الإسلام في المدينة في سنة واحدة. وأسلم سعد بن معاذ وأسيد بن حضير رضي الله عنهما سيدا الأوس والخزرج، ثم أسلمت قومهما. وهؤلاء هم الذين ناصروا النبي ﷺ في الهجرة بعد ذلك.",
+           "رواية سيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🅱️ بيعة العقبة الثانية — 622 م",
+           "في الحج من العام التالي جاء خمسة وسبعون (73 رجلًا وامرأتان) من المدينة. فقال عباس رضي الله عنه، عم النبي ﷺ (ولم يكن أسلم بعد، لكنه جاء نصرة): «إن محمدًا ﷺ في قومه بمنعة؛ فإن أردتم أخذه إلى المدينة فاحفظوه في كل حال». فقالوا: «نحفظه كما نحفظ أبناءنا ونساءنا». وكانت هذه البيعة عظيمة، وفيها عيّن ﷺ اثني عشر نقيبًا.",
+           "مسند أحمد (رواية كعب بن مالك رضي الله عنه)؛ الرحيق المختوم"],
+          ["🏡 قرار الهجرة إلى المدينة",
+           "ثم قال النبي ﷺ لأصحابه: «اذهبوا إلى المدينة، فإن بها إخوانًا لكم ينصرونكم». فبدأ الصحابة بالهجرة سرًّا، وأكثرهم ليلًا. وترك بعضهم مالًا وأهلًا، ولم يتركوا الإيمان.",
+           "رواية سيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🎯 العبرة",
+           "ببيعة الأنصار واجتهاد مصعب رضي الله عنه انتشر الإسلام في المدينة. فعلينا أن نستعد للدعوة ونعمل بالحكمة. فالمعلم الصالح قد يغيّر بلدة كاملة في سنة.",
+           ""]
+        ],
+        [
+          ["كم عدد من بايع في البيعة الأولى؟", ["10", "12", "20"]],
+          ["من أُرسل إلى المدينة؟", ["علي رضي الله عنه", "مصعب رضي الله عنه", "زيد رضي الله عنه"]],
+          ["كم عدد البيعة الثانية؟", ["50", "75", "100"]]
+        ],
+        [
+          ["621", "بيعة العقبة الأولى"],
+          ["621", "خروج مصعب رضي الله عنه إلى المدينة"],
+          ["622", "بيعة العقبة الثانية"]
+        ]
+      ],
+      fr: [
+        "Les serments d'al-'Aqaba — la route de Médine",
+        "Minâ (près de La Mecque)",
+        "621-622 (11e-12e année de la prophétie)",
+        "Comprendre le premier et le second serment des Ansâr et la diffusion de l'islam à Médine.",
+        "Mous'ab (qu'Allah l'agrée), un jeune homme d'une famille aisée, partit à Médine pour l'islam et changea toute une ville en un an. C'est la force de la prédication. Ô Allah ! Accorde-nous d'appeler vers Toi. Âmîn.",
+        [
+          "Premier serment : 12 hommes",
+          "Second serment : 75",
+          "Envoi de Mous'ab (qu'Allah l'agrée)",
+          "Désignation de 12 chefs (nouqabâ')",
+          "La décision de l'émigration à Médine"
+        ],
+        [
+          ["🌴 La semence de l'islam à Médine",
+           "Médine (Yathrib) était habitée par les tribus arabes d'al-Aws et al-Khazraj, aux côtés de tribus juives ; elles étaient épuisées par leurs guerres violentes (la bataille de Bou'âth, etc.). Les Juifs disaient qu'un prophète allait venir. Lors du pèlerinage de la 11e année, six hommes de Khazraj rencontrèrent le Prophète ﷺ ; il leur récita le Coran, ils crurent et retournèrent chez eux pour appeler à l'islam. (Ibn Ishâq)",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🅰️ Le premier serment d'al-'Aqaba — 621",
+           "À Minâ, pendant le pèlerinage, douze hommes de Médine rencontrèrent le Prophète ﷺ. Ils embrassèrent l'islam et lui prêtèrent serment : « Nous n'associerons rien à Allah, nous ne volerons pas, nous ne forniquerons pas, nous ne tuerons pas nos enfants, nous ne proférerons pas de calomnie, et nous ne te désobéirons pas dans le bien. » Le Prophète ﷺ dit : « Si vous l'accomplissez, c'est le Paradis ; si vous y manquez, c'est à Allah : Il punit ou pardonne, s'Il veut. »",
+           "Sahih al-Bukhari : 18, 3892 ('Ubâda ibn as-Sâmit, qu'Allah l'agrée)"],
+          ["📿 L'envoi de Mous'ab ibn 'Umayr (qu'Allah l'agrée)",
+           "Le Prophète ﷺ envoya Mous'ab ibn 'Umayr (qu'Allah l'agrée) à Médine pour enseigner le Coran et la religion. Il s'y employa si bien qu'en un an l'islam se répandit à Médine. Les chefs d'al-Aws et al-Khazraj, Sa'd ibn Mou'âdh et Ousayd ibn Houdhayr (qu'Allah les agrée), embrassèrent l'islam, puis leurs tribus. Ce sont eux qui soutinrent ensuite le Prophète ﷺ lors de l'émigration.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🅱️ Le second serment d'al-'Aqaba — 622",
+           "L'année suivante, au pèlerinage, vinrent soixante-quinze personnes (73 hommes et 2 femmes) de Médine. Al-'Abbâs (qu'Allah l'agrée), oncle du Prophète ﷺ — qui n'était pas encore musulman mais vint en soutien — dit : « Mouhammad ﷺ est honoré dans sa tribu ; si vous voulez l'emmener à Médine, protégez-le en toute circonstance. » Ils dirent : « Nous le protégerons comme nous protégeons nos femmes et nos enfants. » Ce serment fut très important : le Prophète ﷺ y désigna douze chefs (nouqabâ').",
+           "Mousnad Ahmad (récit de Ka'b ibn Mâlik, qu'Allah l'agrée) ; Ar-Rahîq al-Makhtûm"],
+          ["🏡 La décision de l'émigration à Médine",
+           "Alors le Prophète ﷺ dit aux Compagnons : « Allez à Médine : vous y avez des frères qui vous secourront. » Les Compagnons commencèrent l'émigration, en secret, souvent de nuit. Certains laissèrent tous leurs biens et leur famille, mais pas leur foi.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🎯 La leçon",
+           "Par le serment des Ansâr et le labeur de Mous'ab (qu'Allah l'agrée), l'islam se répandit à Médine. Nous devons nous préparer à la prédication et agir avec sagesse. Un bon enseignant peut transformer tout un bourg en un an.",
+           ""]
+        ],
+        [
+          ["Combien étaient-ils au premier serment ?", ["10", "12", "20"]],
+          ["Qui fut envoyé à Médine ?", ["'Alî (qu'Allah l'agrée)", "Mous'ab (qu'Allah l'agrée)", "Zayd (qu'Allah l'agrée)"]],
+          ["Combien au second serment ?", ["50", "75", "100"]]
+        ],
+        [
+          ["621", "Le premier serment d'al-'Aqaba"],
+          ["621", "Départ de Mous'ab (qu'Allah l'agrée) pour Médine"],
+          ["622", "Le second serment d'al-'Aqaba"]
+        ]
+      ],
+      es: [
+        "Los juramentos de al-Aqaba: el camino a Medina",
+        "Mina (cerca de La Meca)",
+        "621-622 (años 11 y 12 de la profecía)",
+        "Comprender el primer y segundo juramento de los Ansar y la difusión del islam en Medina.",
+        "Musab (que Alá esté complacido con él), un joven de familia acomodada, fue a Medina por el islam y cambió toda una ciudad en un año. Ese es el poder de la predicación. ¡Oh Alá! Concédenos llamar hacia Ti. Amín.",
+        [
+          "Primer juramento: 12 hombres",
+          "Segundo juramento: 75",
+          "Envío de Musab (que Alá esté complacido con él)",
+          "Designación de 12 jefes (nuqaba)",
+          "La decisión de emigrar a Medina"
+        ],
+        [
+          ["🌴 La semilla del islam en Medina",
+           "Medina (Yatrib) estaba habitada por las tribus árabes de al-Aws y al-Jazray, junto a tribus judías; estaban agotadas por sus guerras violentas (la batalla de Buaath, etc.). Los judíos decían que iba a venir un profeta. En la peregrinación del año 11, seis hombres de Jazray se encontraron con el Profeta ﷺ; él les recitó el Corán, creyeron y volvieron a su tierra a llamar al islam. (Ibn Ishaq)",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🅰️ El primer juramento de al-Aqaba: 621",
+           "En Mina, durante la peregrinación, doce hombres de Medina se encontraron con el Profeta ﷺ. Abrazaron el islam y le juraron: «No asociaremos nada a Alá, no robaremos, no fornicaremos, no mataremos a nuestros hijos, no proferiremos calumnia y no te desobedeceremos en el bien.» El Profeta ﷺ dijo: «Si lo cumplís, tendréis el Paraíso; si falláis, es cosa de Alá: castiga o perdona, si quiere.»",
+           "Sahih al-Bujari: 18, 3892 (Ubada ibn as-Samit, que Alá esté complacido con él)"],
+          ["📿 El envío de Musab ibn Umayr (que Alá esté complacido con él)",
+           "El Profeta ﷺ envió a Musab ibn Umayr (que Alá esté complacido con él) a Medina para enseñar el Corán y la religión. Se esforzó tanto que en un año el islam se difundió en Medina. Los jefes de al-Aws y al-Jazray, Sad ibn Muaz y Usayd ibn Hudayr (que Alá esté complacido con ellos), abrazaron el islam, y luego sus tribus. Ellos fueron quienes después apoyaron al Profeta ﷺ en la emigración.",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🅱️ El segundo juramento de al-Aqaba: 622",
+           "Al año siguiente, en la peregrinación, vinieron setenta y cinco personas (73 hombres y 2 mujeres) de Medina. Al-Abbas (que Alá esté complacido con él), tío del Profeta ﷺ —que aún no era musulmán pero vino en apoyo—, dijo: «Muhámmad ﷺ es honrado en su tribu; si queréis llevarlo a Medina, protegedlo en toda circunstancia.» Dijeron: «Lo protegeremos como protegemos a nuestras mujeres e hijos.» Este juramento fue muy importante: en él el Profeta ﷺ designó a doce jefes (nuqaba).",
+           "Musnad Ahmad (relato de Kab ibn Malik, que Alá esté complacido con él); Ar-Rahiq al-Majtum"],
+          ["🏡 La decisión de emigrar a Medina",
+           "Entonces el Profeta ﷺ dijo a los Compañeros: «Id a Medina: allí tenéis hermanos que os socorrerán.» Los Compañeros comenzaron la emigración en secreto, a menudo de noche. Algunos dejaron todos sus bienes y su familia, pero no su fe.",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🎯 La lección",
+           "Por el juramento de los Ansar y el esfuerzo de Musab (que Alá esté complacido con él), el islam se difundió en Medina. Debemos prepararnos para la predicación y actuar con sabiduría. Un buen maestro puede transformar todo un poblado en un año.",
+           ""]
+        ],
+        [
+          ["¿Cuántos eran en el primer juramento?", ["10", "12", "20"]],
+          ["¿A quién se envió a Medina?", ["Ali (que Alá esté complacido con él)", "Musab (que Alá esté complacido con él)", "Zayd (que Alá esté complacido con él)"]],
+          ["¿Cuántos en el segundo juramento?", ["50", "75", "100"]]
+        ],
+        [
+          ["621", "El primer juramento de al-Aqaba"],
+          ["621", "Partida de Musab (que Alá esté complacido con él) a Medina"],
+          ["622", "El segundo juramento de al-Aqaba"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 16 — Hijrat-e-Madina ═══════════════ */
+    16: {
+      mr: [
+        "मदिन्याची हिजरत — इतिहासाचे नवे पर्व",
+        "मक्का → सौर गुहा → मदिना",
+        "इ.स. ६२२ (नबवी १२)",
+        "हिजरतीची घटना, सौर गुहा, सुराका आणि इस्लामी इतिहासातील नव्या वर्षाची सुरुवात समजून घेणे.",
+        "संपूर्ण कुरैश मागे लागले होते, पण अल्लाहने आपल्या नबी ﷺ यांचे रक्षण केले. हे अल्लाह! आम्हालाही भरवसा दे. आमीन.",
+        [
+          "हिजरत: इ.स. ६२२",
+          "सौर गुहेत ३ रात्री",
+          "सुराकाचा पाठलाग",
+          "उम्मे मअबदचा तंबू",
+          "अबू अय्यूब अन्सारी यांचे घर",
+          "हिजरी वर्ष: हजरत उमर (र.अ.) यांनी ठरवले"
+        ],
+        [
+          ["🎯 हिजरतीची परवानगी",
+           "सहाबा मोठ्या संख्येने मदिन्याला जाऊन पोहोचले होते. कुरैशला काळजी वाटली की जर मुहम्मद ﷺ ही मदिन्याला पोहोचले तर तिथे मुस्लिमांची शक्ती वाढेल. दारुन-नदवामध्ये सल्ला झाला की प्रत्येक टोळीतून एक तरुण घ्यावा आणि सर्वांनी मिळून एकाच वारात आप ﷺ यांची हत्या करावी, जेणेकरून बनू हाशिम सर्वांकडून सूड घेऊ शकणार नाहीत. अल्लाहने नबी ﷺ यांना बातमी दिली आणि हिजरतीची परवानगी दिली. आप ﷺ यांनी अली (र.अ.) यांना आपल्या बिछान्यावर झोपवले आणि लोकांच्या अनामती परत करण्याची जबाबदारी दिली, नंतर हत्यारांच्या समोरून निघून गेले — अल्लाहने त्यांच्या डोळ्यांवर पडदा टाकला (सीरतची रिवायत).",
+           "कुरआन: ८:३०; मुस्नद अहमद (इब्न अब्बास (र.अ.) यांची रिवायत); सहीह बुखारी: ३९०५"],
+          ["🕳️ सौर गुहा",
+           "नबी ﷺ अबू बक्र (र.अ.) यांच्यासोबत मक्केपासून दक्षिणेकडे सौर गुहेत लपले (मदिन्याचा मार्ग उत्तरेकडे होता; कुरैशला दिशाभूल करण्यासाठी उलट बाजूला गेले). अबू बक्र (र.अ.) यांचे पुत्र अब्दुल्लाह (र.अ.) दिवसभर मक्केत राहून कुरैशच्या बातम्या ऐकत आणि रात्री गुहेत येऊन सांगत, मुलगी अस्मा (र.अ.) अन्न पोहोचवत, आणि मेंढपाळ आमिर बिन फुहैरा (र.अ.) शेळ्या चारत पावलांचे ठसे पुसत आणि ताजे दूध आणत. तीन रात्री गुहेत राहिले. एके वेळी कुरैशचे शोधक गुहेच्या तोंडापर्यंत पोहोचले, अबू बक्र (र.अ.) म्हणाले: «यांपैकी कोणी खाली पाहिले तर आपल्याला दिसेल.» नबी ﷺ म्हणाले: «अबू बक्र! ज्यांचा तिसरा अल्लाह आहे त्यांच्याबद्दल तुमचे काय मत आहे?» (सहीह बुखारी: ३६५३). कुरआनात आहे: «لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا» (दुःख करू नको, अल्लाह आपल्यासोबत आहे) — सूरह अत-तौबा ९:४०. कोळ्याचे जाळे व कबुतराची अंडी ही कथा प्रसिद्ध आहे, पण तिच्या सनदा जईफ आहेत, म्हणून आपण कुरआन व सहीह हदीसवर समाधान मानतो.",
+           "सहीह बुखारी: ३९०५, ३६५३; कुरआन: ९:४०"],
+          ["🐎 सुराकाचा पाठलाग",
+           "कुरैशने आप ﷺ यांना पकडून आणण्यावर १०० उंटांचे बक्षीस ठेवले. सुराका बिन मलिकने पाठलाग केला. जवळ आल्यावर त्याच्या घोड्याचे पाय जमिनीत रुतले आणि तो पडला. त्याने अमान मागितले; आप ﷺ यांनी दुआ केली आणि घोडा बाहेर निघाला; असे अनेक वेळा झाले. शेवटी त्याला खात्री झाली की आप ﷺ सुरक्षित आहेत, आणि तो परत जाऊन इतर पाठलाग करणाऱ्यांनाही परतवत गेला (सहीह बुखारी). रिवायतीत आहे की नबी ﷺ यांनी त्याला म्हटले: «सुराका! जेव्हा तू किसराचे कडे परिधान करशील तेव्हा तुझी काय अवस्था असेल?» (बैहकी; या रिवायतीच्या सनदेवर विद्वानांनी चर्चा केली आहे). सुराका (र.अ.) नंतर मुस्लिम झाले, आणि त्याच रिवायतीनुसार हजरत उमर (र.अ.) यांच्या काळात इराण जिंकल्यावर किसराचे कडे त्यांनाच परिधान केले गेले.",
+           "सहीह बुखारी (किताबु मनाकिबिल-अन्सार, बाबु हिजरत); बैहकी (कड्यांची भविष्यवाणी; सनदेवर चर्चा)"],
+          ["🌴 उम्मे मअबदचा तंबू",
+           "वाटेत उम्मे मअबदचा तंबू आला. त्यांची शेळी कमजोर होती आणि दूध देत नव्हती. नबी ﷺ यांनी शेळीच्या कासेवर हात फिरवला, दुआ केली आणि दूध उतरले, सर्वांनी प्यायले. त्यांचे पती परत आले तेव्हा उम्मे मअबदने पाहुण्याचे वर्णन तपशीलवार सांगितले. पती म्हणाले: «हाच तो कुरैशी आहे ज्याला कुरैश शोधत आहेत; जर भेटला तर मी त्यांची संगत धरेन.» (मुस्तद्रक हाकिम; रिवायतीच्या सनदेवर विद्वानांनी चर्चा केली आहे.)",
+           "मुस्तद्रक हाकिम (सनदेवर चर्चा)"],
+          ["🌅 मदिन्यात आगमन",
+           "नबी ﷺ प्रथम कुबामध्ये बनू अम्र बिन औफकडे सोमवारी पोहोचले (रबीउल-अव्वलची तारीख: प्रसिद्ध मत १२, काहींच्या मते ८) आणि मुक्काम करून मस्जिदे-कुबाची पायाभरणी केली (मुक्कामाचा कालावधी: इब्न इशाकनुसार सुमारे ४ दिवस, तर सहीह बुखारीत अनस (र.अ.) यांच्याकडून १४ रात्री आल्या आहेत). नंतर शुक्रवारी मदिन्याला निघाले; वाटेत बनू सालिमच्या परिसरात पहिला जुम्मा पढवला. मदिन्याचे लोक आनंदाने बाहेर आले आणि प्रत्येकाला वाटत होते की आप ﷺ त्याच्याकडे उतरावेत; आप ﷺ म्हणाले की उंटीण सोडा, ती अल्लाहतर्फे नेमलेली आहे. ती अबू अय्यूब अन्सारी (र.अ.) यांच्या घरासमोर बसली आणि आप ﷺ तिथेच राहिले. «तलअल-बद्रु अलैना» हे स्वागतगीत प्रसिद्ध असले तरी तिची सनद सिद्ध नाही, म्हणून आपण फक्त या आनंदाचा उल्लेख करतो. हिजरी वर्षाची सुरुवात हिजरतीच्या वेळी झाली नाही, तर हजरत उमर (र.अ.) यांनी आपल्या काळात (१७ हिजरी) हिजरतीला आधार मानून हिजरी कॅलेंडर ठरवले.",
+           "सहीह बुखारी (अनस (र.अ.) यांची रिवायत: बनू अम्र बिन औफकडे १४ रात्री); बाकी: सीरतच्या रिवायती"],
+          ["🎯 बोध",
+           "हिजरतीत तवक्कुल, संयम आणि अल्लाहवर भरवसा आहे. नबी ﷺ म्हणाले: «घाबरू नका, अल्लाह आपल्यासोबत आहे» — हा तो विश्वास आहे जो प्रत्येक मुस्लिमाच्या मनात असला पाहिजे.",
+           ""]
+        ],
+        [
+          ["हिजरतीत सोबत कोण होते?", ["अली (र.अ.)", "अबू बक्र (र.अ.)", "उमर (र.अ.)"]],
+          ["गुहेत किती दिवस राहिले?", ["१", "३", "५"]],
+          ["मदिन्यात कोणाच्या घरी उतरले?", ["साद (र.अ.)", "अबू अय्यूब (र.अ.)", "मुसअब (र.अ.)"]]
+        ],
+        [
+          ["इ.स. ६२२", "दारुन-नदवामध्ये हत्येचा सल्ला"],
+          ["इ.स. ६२२", "सौर गुहेत ३ रात्री"],
+          ["इ.स. ६२२", "रबीउल-अव्वल — कुबा व मदिन्यात आगमन"]
+        ]
+      ],
+      ar: [
+        "الهجرة إلى المدينة — صفحة جديدة في التاريخ",
+        "مكة ← غار ثور ← المدينة",
+        "622 م (السنة الثانية عشرة من النبوة)",
+        "فهم حادثة الهجرة، وغار ثور، وسُراقة، وبداية التقويم الهجري.",
+        "كانت قريش كلها في الطلب، فحفظ الله نبيه ﷺ. اللهم ارزقنا التوكل عليك. آمين.",
+        [
+          "الهجرة: 622 م",
+          "ثلاث ليالٍ في غار ثور",
+          "مطاردة سُراقة",
+          "خيمة أم معبد",
+          "بيت أبي أيوب الأنصاري",
+          "التقويم الهجري: وضعه عمر رضي الله عنه"
+        ],
+        [
+          ["🎯 الإذن بالهجرة",
+           "كان الصحابة قد ذهبوا إلى المدينة بأعداد كبيرة. فخافت قريش أن يصل محمد ﷺ إلى المدينة فتزداد قوة المسلمين. فتشاوروا في دار الندوة على أن يأخذوا من كل قبيلة فتىً فيقتلوه ﷺ جميعًا ضربة رجل واحد، حتى لا تستطيع بنو هاشم الأخذ بثأرها من الجميع. فأخبر الله نبيه ﷺ وأذن له بالهجرة. فأنام ﷺ عليًّا رضي الله عنه على فراشه، وأوصاه بردّ الأمانات إلى أهلها، ثم خرج من بين القتلة — وقد أعمى الله أبصارهم (رواية سيرة).",
+           "القرآن: 8:30؛ مسند أحمد (رواية ابن عباس رضي الله عنه)؛ صحيح البخاري: 3905"],
+          ["🕳️ غار ثور",
+           "اختفى ﷺ مع أبي بكر رضي الله عنه في غار ثور جنوب مكة (وطريق المدينة شمالًا، فسلكا خلافه ليُضلّا قريشًا). وكان عبد الله بن أبي بكر رضي الله عنه يبيت في مكة نهارًا يسمع أخبار قريش، ويأتي الغار ليلًا فيخبرهما؛ وتأتيهما أسماء رضي الله عنها بالطعام؛ وكان عامر بن فهيرة رضي الله عنه يرعى الغنم فيمحو الأثر ويأتي باللبن. ومكثا في الغار ثلاث ليالٍ. ووصلت قريش مرة إلى فم الغار، فقال أبو بكر: «لو نظر أحدهم تحت قدميه لرآنا». فقال ﷺ: «يا أبا بكر، ما ظنك باثنين الله ثالثهما؟» (صحيح البخاري: 3653). وفي القرآن: «لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا» — سورة التوبة 9:40. وقصة بيت العنكبوت وبيض الحمام مشهورة، لكن أسانيدها ضعيفة، فنكتفي بالقرآن والحديث الصحيح.",
+           "صحيح البخاري: 3905، 3653؛ القرآن: 9:40"],
+          ["🐎 مطاردة سُراقة",
+           "جعلت قريش مئة ناقة لمن يأتي بهما. فتبعهما سُراقة بن مالك، فلما دنا ساخت قدما فرسه في الأرض فسقط. فطلب الأمان، فدعا له ﷺ فخرجت؛ وحدث ذلك مرارًا. ثم أيقن أنهما محفوظان، فرجع وكان يردّ من يطلبهم (صحيح البخاري). وفي الرواية أن النبي ﷺ قال له: «يا سُراقة، كيف بك إذا لبست سواري كسرى؟» (البيهقي؛ وفي إسنادها كلام). وأسلم سُراقة رضي الله عنه بعد ذلك، وفي خلافة عمر رضي الله عنه فُتحت فارس فأُلبس سواري كسرى.",
+           "صحيح البخاري (كتاب مناقب الأنصار، باب الهجرة)؛ البيهقي (بشارة السوارين؛ وفي الإسناد كلام)"],
+          ["🌴 خيمة أم معبد",
+           "مرّ ﷺ في طريقه بخيمة أم معبد، وكانت شاتها ضعيفة لا تُدرّ. فمسح ﷺ ضرعها ودعا، فدرّ اللبن فشرب الجميع. ولما رجع زوجها وصفت له أم معبد صفة الضيف. فقال زوجها: «هذا هو القرشي الذي تطلبه قريش؛ فإن ظفرت به لأصحبنّه». (المستدرك للحاكم؛ وفي إسنادها كلام)",
+           "المستدرك للحاكم (وفي الإسناد كلام)"],
+          ["🌅 الوصول إلى المدينة",
+           "نزل ﷺ أولًا بقباء على بني عمرو بن عوف يوم الاثنين (والمشهور في تاريخ ربيع الأول الثاني عشر، وقيل الثامن)، وأقام فأسّس مسجد قباء (ومدة الإقامة: نحو أربعة أيام عند ابن إسحاق، وفي صحيح البخاري عن أنس رضي الله عنه أربع عشرة ليلة). ثم خرج يوم الجمعة إلى المدينة، فصلى بهم أول جمعة في بني سالم. وخرج أهل المدينة فرحين، وكلٌّ يريد أن ينزل ﷺ عنده؛ فقال ﷺ: «خلّوا الناقة، فإنها مأمورة». فبركت عند بيت أبي أيوب الأنصاري رضي الله عنه، فنزل ﷺ هناك. ونشيد «طلع البدر علينا» مشهور لكن إسناده لم يثبت، فنذكر الفرح فقط. ولم يبدأ التأريخ الهجري وقت الهجرة، بل جعله عمر رضي الله عنه في خلافته (سنة 17) وجعل الهجرة مبدأً للتقويم.",
+           "صحيح البخاري (رواية أنس رضي الله عنه: أربع عشرة ليلة عند بني عمرو بن عوف)؛ والباقي: روايات السيرة"],
+          ["🎯 العبرة",
+           "في الهجرة توكل وصبر وثقة بالله. قال ﷺ: «لا تحزن، إن الله معنا» — وهذا اليقين الذي ينبغي أن يكون في قلب كل مسلم.",
+           ""]
+        ],
+        [
+          ["من كان معه ﷺ في الهجرة؟", ["علي رضي الله عنه", "أبو بكر رضي الله عنه", "عمر رضي الله عنه"]],
+          ["كم ليلة مكثا في الغار؟", ["1", "3", "5"]],
+          ["عند من نزل ﷺ في المدينة؟", ["سعد رضي الله عنه", "أبو أيوب رضي الله عنه", "مصعب رضي الله عنه"]]
+        ],
+        [
+          ["622", "التشاور في دار الندوة على القتل"],
+          ["622", "ثلاث ليالٍ في غار ثور"],
+          ["622", "ربيع الأول — الوصول إلى قباء والمدينة"]
+        ]
+      ],
+      fr: [
+        "L'émigration à Médine — une nouvelle page de l'histoire",
+        "La Mecque → la grotte de Thawr → Médine",
+        "622 (12e année de la prophétie)",
+        "Comprendre l'épisode de l'émigration, la grotte de Thawr, Souraka et le début du calendrier hégirien.",
+        "Tous les Quraysh étaient à leur poursuite, mais Allah protégea Son Prophète ﷺ. Ô Allah ! Accorde-nous la confiance en Toi. Âmîn.",
+        [
+          "L'émigration : 622",
+          "Trois nuits dans la grotte de Thawr",
+          "La poursuite de Souraka",
+          "La tente d'Oumm Ma'bad",
+          "La maison d'Abou Ayyûb al-Ansârî",
+          "Le calendrier hégirien : établi par 'Umar (qu'Allah l'agrée)"
+        ],
+        [
+          ["🎯 L'autorisation d'émigrer",
+           "Les Compagnons étaient partis en grand nombre à Médine. Les Quraysh craignirent que Mouhammad ﷺ n'atteigne Médine et que la force des musulmans n'y croisse. Ils se concertèrent dans la Dâr an-Nadwa : prendre un jeune homme de chaque tribu et le tuer ﷺ tous ensemble d'un seul coup, afin que les Banou Hâchim ne puissent se venger de tous. Allah informa Son Prophète ﷺ et l'autorisa à émigrer. Il fit coucher 'Alî (qu'Allah l'agrée) dans son lit, lui confia la restitution des dépôts, puis sortit au milieu des meurtriers — Allah voila leurs regards (récit de Sîra).",
+           "Coran : 8:30 ; Mousnad Ahmad (récit d'Ibn 'Abbâs) ; Sahih al-Bukhari : 3905"],
+          ["🕳️ La grotte de Thawr",
+           "Le Prophète ﷺ et Abou Bakr (qu'Allah l'agrée) se cachèrent dans la grotte de Thawr, au sud de La Mecque (la route de Médine étant au nord, ils prirent la direction opposée pour tromper les Quraysh). 'Abdoullah, fils d'Abou Bakr (qu'Allah l'agrée), passait la journée à La Mecque pour écouter les nouvelles des Quraysh et venait la nuit les en informer ; sa fille Asmâ' (qu'Allah l'agrée) apportait la nourriture ; le berger 'Âmir ibn Fouhayra (qu'Allah l'agrée) faisait paître les bêtes, effaçait les traces et apportait du lait frais. Ils restèrent trois nuits. Un jour les éclaireurs quraysh arrivèrent à l'entrée de la grotte ; Abou Bakr dit : « Si l'un d'eux regarde sous ses pieds, il nous verra. » Le Prophète ﷺ dit : « Abou Bakr ! Que penses-tu de deux dont Allah est le troisième ? » (Sahih al-Bukhari : 3653). Le Coran dit : « لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا » — sourate at-Tawba 9:40. L'histoire de la toile d'araignée et des œufs de colombe est célèbre, mais ses chaînes sont faibles ; nous nous en tenons au Coran et au hadith authentique.",
+           "Sahih al-Bukhari : 3905, 3653 ; Coran : 9:40"],
+          ["🐎 La poursuite de Souraka",
+           "Les Quraysh promirent cent chameaux à qui les ramènerait. Souraka ibn Mâlik les suivit. Comme il approchait, les pieds de son cheval s'enfoncèrent dans le sol et il tomba. Il demanda la sécurité ; le Prophète ﷺ invoqua Allah et le cheval se dégagea ; cela se répéta plusieurs fois. Finalement il fut convaincu qu'ils étaient protégés, et il revint en détournant les autres poursuivants (Sahih al-Bukhari). Le récit rapporte que le Prophète ﷺ lui dit : « Souraka ! Que sera-t-il de toi quand tu porteras les bracelets de Kisrâ ? » (al-Bayhaqî ; chaîne discutée). Souraka (qu'Allah l'agrée) embrassa l'islam plus tard, et sous le califat de 'Umar (qu'Allah l'agrée), la Perse fut conquise et on lui fit porter les bracelets de Kisrâ.",
+           "Sahih al-Bukhari (Livre des mérites des Ansâr, chapitre de l'émigration) ; al-Bayhaqî (l'annonce des bracelets ; chaîne discutée)"],
+          ["🌴 La tente d'Oumm Ma'bad",
+           "En chemin, ils passèrent près de la tente d'Oumm Ma'bad. Sa chèvre était faible et ne donnait pas de lait. Le Prophète ﷺ passa la main sur sa mamelle, invoqua Allah, et le lait vint ; tous en burent. Quand son mari revint, Oumm Ma'bad lui décrivit longuement l'hôte. Il dit : « C'est ce Qourachî que les Quraysh recherchent ; si je le trouve, je l'accompagnerai. » (al-Moustadrak d'al-Hâkim ; chaîne discutée)",
+           "al-Moustadrak d'al-Hâkim (chaîne discutée)"],
+          ["🌅 L'arrivée à Médine",
+           "Le Prophète ﷺ arriva d'abord à Qoubâ' chez les Banou 'Amr ibn 'Awf, un lundi (date de rabî' al-awwal : le 12 selon l'avis célèbre, le 8 selon d'autres), y séjourna et posa les fondations de la mosquée de Qoubâ' (durée du séjour : environ quatre jours selon Ibn Ishâq, tandis que Sahih al-Bukhari rapporte d'Anas quatorze nuits). Puis il partit pour Médine le vendredi et dirigea la première prière du vendredi chez les Banou Sâlim. Les gens de Médine sortirent joyeux, chacun voulant qu'il descende chez lui ; il ﷺ dit : « Laissez la chamelle, elle est commandée. » Elle s'agenouilla devant la maison d'Abou Ayyûb al-Ansârî (qu'Allah l'agrée), et il y descendit. Le chant « Tala'a al-badrou 'alaynâ » est célèbre mais sa chaîne n'est pas établie ; nous ne mentionnons donc que la joie. Le calendrier hégirien ne commença pas à l'époque de l'émigration : c'est 'Umar (qu'Allah l'agrée) qui, sous son califat (an 17), prit l'émigration comme point de départ du calendrier.",
+           "Sahih al-Bukhari (récit d'Anas : quatorze nuits chez les Banou 'Amr ibn 'Awf) ; le reste : récits de Sîra"],
+          ["🎯 La leçon",
+           "L'émigration contient la confiance en Allah, la patience et la remise à Lui. Le Prophète ﷺ dit : « Ne crains pas, Allah est avec nous » — c'est la certitude qui doit habiter le cœur de chaque musulman.",
+           ""]
+        ],
+        [
+          ["Qui accompagnait le Prophète ﷺ dans l'émigration ?", ["'Alî (qu'Allah l'agrée)", "Abou Bakr (qu'Allah l'agrée)", "'Umar (qu'Allah l'agrée)"]],
+          ["Combien de nuits restèrent-ils dans la grotte ?", ["1", "3", "5"]],
+          ["Chez qui le Prophète ﷺ descendit-il à Médine ?", ["Sa'd (qu'Allah l'agrée)", "Abou Ayyûb (qu'Allah l'agrée)", "Mous'ab (qu'Allah l'agrée)"]]
+        ],
+        [
+          ["622", "La concertation de Dâr an-Nadwa pour le tuer"],
+          ["622", "Trois nuits dans la grotte de Thawr"],
+          ["622", "Rabî' al-awwal — arrivée à Qoubâ' et à Médine"]
+        ]
+      ],
+      es: [
+        "La emigración a Medina: una nueva página de la historia",
+        "La Meca → la cueva de Zawr → Medina",
+        "622 (año 12 de la profecía)",
+        "Comprender el episodio de la emigración, la cueva de Zawr, Suraqa y el comienzo del calendario hiyri.",
+        "Todos los Quraysh los perseguían, pero Alá protegió a Su Profeta ﷺ. ¡Oh Alá! Concédenos la confianza en Ti. Amín.",
+        [
+          "La emigración: 622",
+          "Tres noches en la cueva de Zawr",
+          "La persecución de Suraqa",
+          "La tienda de Umm Mabad",
+          "La casa de Abu Ayyub al-Ansari",
+          "El calendario hiyri: lo estableció Umar (que Alá esté complacido con él)"
+        ],
+        [
+          ["🎯 El permiso para emigrar",
+           "Los Compañeros habían ido a Medina en gran número. Los Quraysh temieron que Muhámmad ﷺ llegara a Medina y creciera allí la fuerza de los musulmanes. Se reunieron en la Dar an-Nadwa y acordaron tomar un joven de cada tribu y matarlo ﷺ todos a la vez, para que los Banu Hashim no pudieran vengarse de todos. Alá informó a Su Profeta ﷺ y le autorizó a emigrar. Él ﷺ hizo que Ali (que Alá esté complacido con él) durmiera en su lecho, le encargó devolver los depósitos a sus dueños y luego salió entre los asesinos: Alá veló sus ojos (relato de Sira).",
+           "Corán: 8:30; Musnad Ahmad (relato de Ibn Abbas); Sahih al-Bujari: 3905"],
+          ["🕳️ La cueva de Zawr",
+           "El Profeta ﷺ y Abu Bakr (que Alá esté complacido con él) se ocultaron en la cueva de Zawr, al sur de La Meca (el camino a Medina está al norte, así que tomaron la dirección opuesta para engañar a los Quraysh). Abdalah, hijo de Abu Bakr (que Alá esté complacido con él), pasaba el día en La Meca escuchando las noticias de los Quraysh y venía de noche a informarles; su hija Asma (que Alá esté complacido con ella) traía la comida; y el pastor Amir ibn Fuhayra (que Alá esté complacido con él) pastoreaba, borraba las huellas y traía leche fresca. Permanecieron tres noches. Un día los rastreadores de Quraysh llegaron a la boca de la cueva; Abu Bakr dijo: «Si uno de ellos mira bajo sus pies, nos verá.» El Profeta ﷺ dijo: «¡Abu Bakr! ¿Qué piensas de dos cuyo tercero es Alá?» (Sahih al-Bujari: 3653). El Corán dice: «لَا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا» — sura at-Tawba 9:40. La historia de la tela de araña y los huevos de paloma es famosa, pero sus cadenas son débiles; nos atenemos al Corán y al hadiz auténtico.",
+           "Sahih al-Bujari: 3905, 3653; Corán: 9:40"],
+          ["🐎 La persecución de Suraqa",
+           "Los Quraysh ofrecieron cien camellos a quien los trajera. Suraqa ibn Malik los siguió. Al acercarse, los pies de su caballo se hundieron en la tierra y cayó. Pidió seguridad; el Profeta ﷺ suplicó a Alá y el caballo salió; esto ocurrió varias veces. Finalmente se convenció de que estaban protegidos, y volvió apartando a los demás perseguidores (Sahih al-Bujari). El relato dice que el Profeta ﷺ le dijo: «¡Suraqa! ¿Qué será de ti cuando lleves los brazaletes de Kisra?» (al-Bayhaqi; cadena discutida). Suraqa (que Alá esté complacido con él) abrazó el islam después, y en el califato de Umar (que Alá esté complacido con él) se conquistó Persia y se le hicieron llevar los brazaletes de Kisra.",
+           "Sahih al-Bujari (Libro de las virtudes de los Ansar, capítulo de la emigración); al-Bayhaqi (el anuncio de los brazaletes; cadena discutida)"],
+          ["🌴 La tienda de Umm Mabad",
+           "En el camino pasaron junto a la tienda de Umm Mabad. Su cabra era débil y no daba leche. El Profeta ﷺ pasó la mano por su ubre, suplicó a Alá y la leche brotó; todos bebieron. Cuando su esposo volvió, Umm Mabad le describió con detalle al huésped. Él dijo: «Ese es el qurayshí que buscan los Quraysh; si lo encuentro, lo acompañaré.» (al-Mustadrak de al-Hakim; cadena discutida)",
+           "al-Mustadrak de al-Hakim (cadena discutida)"],
+          ["🌅 La llegada a Medina",
+           "El Profeta ﷺ llegó primero a Quba, a casa de los Banu Amr ibn Awf, un lunes (fecha de rabi' al-awwal: el 12 según la opinión famosa, el 8 según otros), se alojó y puso los cimientos de la mezquita de Quba (duración: unos cuatro días según Ibn Ishaq, mientras que en Sahih al-Bujari se transmiten de Anas catorce noches). Luego partió a Medina el viernes y dirigió la primera oración del viernes en casa de los Banu Salim. La gente de Medina salió gozosa, y cada uno quería que él ﷺ se alojara en su casa; él ﷺ dijo: «Dejad a la camella, pues está mandada.» Se arrodilló ante la casa de Abu Ayyub al-Ansari (que Alá esté complacido con él), y allí se alojó. El canto «Tala'a al-badru alayna» es famoso pero su cadena no está probada; por eso solo mencionamos la alegría. El calendario hiyri no comenzó en la época de la emigración: fue Umar (que Alá esté complacido con él) quien, en su califato (año 17), tomó la emigración como inicio del calendario.",
+           "Sahih al-Bujari (relato de Anas: catorce noches en casa de los Banu Amr ibn Awf); el resto: relatos de Sira"],
+          ["🎯 La lección",
+           "En la emigración hay confianza en Alá, paciencia y encomienda a Él. El Profeta ﷺ dijo: «No temas, Alá está con nosotros»; esa es la certeza que debe haber en el corazón de cada musulmán.",
+           ""]
+        ],
+        [
+          ["¿Quién acompañaba al Profeta ﷺ en la emigración?", ["Ali (que Alá esté complacido con él)", "Abu Bakr (que Alá esté complacido con él)", "Umar (que Alá esté complacido con él)"]],
+          ["¿Cuántas noches estuvieron en la cueva?", ["1", "3", "5"]],
+          ["¿En casa de quién se alojó el Profeta ﷺ en Medina?", ["Sad (que Alá esté complacido con él)", "Abu Ayyub (que Alá esté complacido con él)", "Musab (que Alá esté complacido con él)"]]
+        ],
+        [
+          ["622", "La reunión de Dar an-Nadwa para matarlo"],
+          ["622", "Tres noches en la cueva de Zawr"],
+          ["622", "Rabi al-awwal: llegada a Quba y a Medina"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 17 — Masjid-e-Nabawi o bhaichaara ═══════════════ */
+    17: {
+      mr: [
+        "मस्जिदे-नबवी आणि बंधुत्व",
+        "मदिना",
+        "इ.स. ६२२-६२३",
+        "मस्जिदीची बांधणी, मुहाजिर व अन्सार यांचे बंधुत्व आणि इस्लामी समाजाची स्थापना समजून घेणे.",
+        "अन्सारांनी मुहाजिरांना आपला अर्धा माल दिला — हे प्रेम फक्त अल्लाहसाठी होते. हे अल्लाह! आम्हालाही असे प्रेम दे. आमीन.",
+        [
+          "मस्जिदे-नबवीची बांधणी",
+          "नबी ﷺ स्वतः विटा उचलत",
+          "असहाबे-सुफ्फा: पहिली पाठशाळा",
+          "मुहाजिर व अन्सार यांचे बंधुत्व",
+          "मिसाके-मदिना",
+          "अजानची सुरुवात"
+        ],
+        [
+          ["🕌 मस्जिदे-नबवीची बांधणी",
+           "नबी ﷺ यांनी उंटीण सोडली, ती अबू अय्यूब (र.अ.) यांच्या घराजवळ बसली. तिथेच मस्जिदे-नबवीची पायाभरणी झाली. जमीन दोन अनाथ मुलांची (सहल व सुहैल) होती, जी आप ﷺ यांनी किंमत देऊन विकत घेतली (सहीह बुखारी). नबी ﷺ स्वतः विटा उचलत, सहाबांनीही — मुहाजिर व अन्सार सर्वांनी मिळून. मस्जिद साधी होती: कच्च्या विटांच्या भिंती, खजुरीच्या खोडांचे स्तंभ, खजुरीच्या फांद्यांचे छत आणि कच्चा फरशी. सहाबांनी नबी ﷺ यांच्यासोबत रजझ म्हटले: «अल्लाहुम्मा ला खैरा इल्ला खैरल-आखिरा, फगफिर लिल-अन्सारि वल-मुहाजिरा» (हे अल्लाह! आखिरतच्या भल्याशिवाय कोणतेही भले नाही, अन्सार व मुहाजिरांना माफ कर) (सहीह बुखारी). मस्जिदीजवळ कक्ष बांधले गेले जिथे नबी ﷺ यांच्या पत्नी राहिल्या — «हुजराते-नबवी».",
+           "सहीह बुखारी: ४२८, ३९०६"],
+          ["🏘️ सुफ्फा — पाठशाळा",
+           "मस्जिदीच्या एका बाजूला सुफ्फा नावाचा चबुतरा बांधला, जिथे गरीब सहाबा राहत आणि कुरआन शिकत — त्याला इस्लामची सुरुवातीची पाठशाळा म्हणतात. त्यांना «असहाबे-सुफ्फा» म्हणतात. अबू हुरैरा (र.अ.) यांसारखे हदीसचे हाफिज असहाबे-सुफ्फात होते.",
+           "सहीह बुखारी: ६४५२ (असहाबे-सुफ्फा)"],
+          ["🤝 बंधुत्व",
+           "मुहाजिर सर्व काही सोडून मदिन्याला आले होते. नबी ﷺ यांनी एका मुहाजिराला एका अन्सारीशी बंधू बनवले — माल, घर आणि व्यवसाय सर्वात सहभागी. अन्सारांनी नबी ﷺ यांना म्हटले: «आमच्या व आमच्या मुहाजिर बंधूंच्या दरम्यान खजुरीच्या बागा वाटून द्या.» आप ﷺ म्हणाले: «नाही.» तेव्हा अन्सारांनी मुहाजिरांना म्हटले: «तुम्ही आमच्यातर्फे मेहनत करा आणि फळात आमच्यासोबत सहभागी राहा.» मुहाजिरांनी म्हटले: «आम्ही ऐकले आणि मान्य केले.» (सहीह बुखारी). हेच बंधुत्व होते. हजरत साद बिन रबीअ (र.अ.) यांनी आपल्या मुहाजिर बंधू अब्दुर्रहमान बिन औफ (र.अ.) यांना म्हटले: «माझा माल, माझे घर — अर्धे घ्या.» अब्दुर्रहमान (र.अ.) म्हणाले: «अल्लाह तुम्हाला बरकत दे, मला बाजाराचा रस्ता दाखवा.» आणि बाजारात जाऊन व्यापार सुरू केला, इतके कमावले की लवकर श्रीमंत झाले, नंतर लग्न केले.",
+           "सहीह बुखारी: ३७८०, ३७८२"],
+          ["📜 मिसाके-मदिना",
+           "नबी ﷺ यांनी मदिन्यात मुहाजिर, अन्सार आणि यहुद्यांसोबत एक करार केला — हे पहिले इस्लामी बंधनपत्र होते. त्यात: सर्व मिळून बचाव करतील, कोणी कोणावर अत्याचार करणार नाही, निर्णय नबी ﷺ यांचा असेल, पीडिताला मदत होईल. यहुदी आपल्या दीनावर राहतील, मुस्लिम आपल्या दीनावर. सर्व एकमेकांसोबत राहतील. काही इतिहासकार याला सुरुवातीचे लिखित बंधनपत्र म्हणतात (सीरत इब्न हिशाम; या पत्राच्या सनदेबद्दल विद्वानांत मतभेद आहे).",
+           "सीरत इब्न हिशाम; अर-रहीकुल-मख्तूम (सनदेवर विद्वानांत मतभेद)"],
+          ["🕌 अजानची सुरुवात",
+           "मदिन्यात नमाजची वेळ कशी कळवायची? सहाबांनी सल्ला केला: नाकूस वाजवणे (ख्रिश्चनांप्रमाणे) किंवा शिंग फुंकणे (यहुद्यांप्रमाणे) (सहीह बुखारी). नंतर अब्दुल्लाह बिन झैद (र.अ.) यांनी स्वप्नात अजानचे शब्द ऐकले. त्यांनी नबी ﷺ यांना सांगितले तेव्हा आप ﷺ म्हणाले: «हे खरे स्वप्न आहे», आणि म्हणाले की बिलाल (र.अ.) यांना शिकवा कारण त्यांचा आवाज उंच आहे. हजरत उमर (र.अ.) यांनीही असेच स्वप्न पाहिले होते. अशा प्रकारे अजान सुरू झाली (सुनन अबी दाऊद).",
+           "सहीह बुखारी: ६०४; सुनन अबी दाऊद: ४९९"],
+          ["🎯 बोध",
+           "मस्जिदे-नबवी आणि बंधुत्व हा इस्लामी समाजाचा पाया आहे. आपण मस्जिदीशी जोडलेले राहिले पाहिजे आणि मुस्लिमांसोबत बंधुत्वाने राहिले पाहिजे, त्यांची नस्ल, भाषा किंवा रंग कोणताही असो.",
+           ""]
+        ],
+        [
+          ["सुफ्फा काय होते?", ["बाजार", "पाठशाळा", "बाग"]],
+          ["बंधुत्व कोणी प्रस्थापित केले?", ["अबू बक्र (र.अ.)", "नबी ﷺ", "उमर (र.अ.)"]],
+          ["मदिन्यात मुस्लिम व यहुद्यांमधील कराराला काय म्हणतात?", ["मिसाके-मदिना", "मिसाके-उमर", "मिसाके-नबवी"]]
+        ],
+        [
+          ["इ.स. ६२२", "मस्जिदे-नबवीची पायाभरणी"],
+          ["इ.स. ६२२", "बंधुत्वाची स्थापना"],
+          ["हिजरी १", "मिसाके-मदिना"],
+          ["हिजरी १", "अजानची सुरुवात"]
+        ]
+      ],
+      ar: [
+        "المسجد النبوي والأخوّة",
+        "المدينة",
+        "622-623 م",
+        "فهم بناء المسجد، والمؤاخاة بين المهاجرين والأنصار، وقيام المجتمع الإسلامي.",
+        "أعطى الأنصار للمهاجرين نصف أموالهم — وكان ذلك الحب لله وحده. اللهم ارزقنا مثل هذا الحب. آمين.",
+        [
+          "بناء المسجد النبوي",
+          "النبي ﷺ كان يحمل اللبن بنفسه",
+          "أهل الصفة: أول مدرسة",
+          "المؤاخاة بين المهاجرين والأنصار",
+          "صحيفة المدينة",
+          "بداية الأذان"
+        ],
+        [
+          ["🕌 بناء المسجد النبوي",
+           "ترك ﷺ الناقة فبركت عند بيت أبي أيوب رضي الله عنه، وهناك وُضع أساس المسجد النبوي. وكانت الأرض ليتيمين (سهل وسهيل)، فاشتراها ﷺ بثمنها (صحيح البخاري). وكان ﷺ يحمل اللبن بنفسه، والصحابة معه — المهاجرون والأنصار جميعًا. وكان المسجد بسيطًا: جدران من اللبن، وأعمدة من جذوع النخل، وسقف من سعف النخل، وأرض ترابية. ورجز الصحابة مع النبي ﷺ: «اللهم لا خير إلا خير الآخرة، فاغفر للأنصار والمهاجرة» (صحيح البخاري). وبُني بجانب المسجد حجرات سكن فيها أزواج النبي ﷺ — «الحجرات النبوية».",
+           "صحيح البخاري: 428، 3906"],
+          ["🏘️ الصفة — مدرسة",
+           "بُني في جانب المسجد مكان مرتفع يسمى الصفة، يسكنه فقراء الصحابة ويتعلمون القرآن — ويُعد أول مدرسة في الإسلام. ويُسمَّون «أهل الصفة». وكان فيهم مثل أبي هريرة رضي الله عنه من حفاظ الحديث.",
+           "صحيح البخاري: 6452 (أهل الصفة)"],
+          ["🤝 المؤاخاة",
+           "جاء المهاجرون إلى المدينة وقد تركوا كل شيء. فآخى النبي ﷺ بين كل مهاجر وأنصاري — في المال والبيت والتجارة. وقال الأنصار للنبي ﷺ: «اقسم بيننا وبين إخواننا المهاجرين حيطان النخل». فقال ﷺ: «لا». فقال الأنصار للمهاجرين: «تكفوننا المؤونة وتشركوننا في الثمر». فقال المهاجرون: «سمعنا وأطعنا» (صحيح البخاري). وكان هذا هو الإيثار. وقال سعد بن الربيع رضي الله عنه لأخيه المهاجري عبد الرحمن بن عوف رضي الله عنه: «مالي وبيتي — خذ نصفه». فقال عبد الرحمن: «بارك الله فيك، دلّني على السوق». فذهب فاتّجر حتى ربح وأصبح غنيًّا ثم تزوج.",
+           "صحيح البخاري: 3780، 3782"],
+          ["📜 صحيفة المدينة",
+           "كتب النبي ﷺ بين المهاجرين والأنصار واليهود في المدينة كتابًا — وهو أول دستور إسلامي. فيه: أنهم ينصرون من دهمهم، ولا يظلم أحد أحدًا، وأن ما اختلفوا فيه يُرد إلى النبي ﷺ، وأن المظلوم يُنصر. ولليهود دينهم وللمسلمين دينهم، وكلٌّ يتعايش مع الآخر. ويراه بعض المؤرخين أول وثيقة دستورية مكتوبة (سيرة ابن هشام؛ وفي إسناد هذه الصحيفة خلاف بين أهل العلم).",
+           "سيرة ابن هشام؛ الرحيق المختوم (وفي الإسناد خلاف بين أهل العلم)"],
+          ["🕌 بداية الأذان",
+           "كيف يُعلم الناس بوقت الصلاة في المدينة؟ تشاور الصحابة: ضرب الناقوس (كالنصارى) أو النفخ في البوق (كيهود) (صحيح البخاري). ثم رأى عبد الله بن زيد رضي الله عنه في المنام كلمات الأذان. فأخبر النبي ﷺ فقال: «إنها لرؤيا حق»، وأمر أن يعلّمها بلالًا رضي الله عنه لنداء صوته. وقد رأى عمر رضي الله عنه مثل ذلك. وهكذا بدأ الأذان (سنن أبي داود).",
+           "صحيح البخاري: 604؛ سنن أبي داود: 499"],
+          ["🎯 العبرة",
+           "المسجد النبوي والأخوّة أساس المجتمع الإسلامي. فعلينا أن نتعلق بالمسجد، وأن نعيش مع المسلمين بالأخوّة، أيًّا كان جنسهم ولغتهم ولونهم.",
+           ""]
+        ],
+        [
+          ["ما هي الصفة؟", ["سوق", "مدرسة", "بستان"]],
+          ["من أسّس المؤاخاة؟", ["أبو بكر رضي الله عنه", "النبي ﷺ", "عمر رضي الله عنه"]],
+          ["ماذا يسمى العهد بين المسلمين واليهود في المدينة؟", ["صحيفة المدينة", "عهد عمر", "العهد النبوي"]]
+        ],
+        [
+          ["622", "أساس المسجد النبوي"],
+          ["622", "قيام المؤاخاة"],
+          ["السنة الأولى", "صحيفة المدينة"],
+          ["السنة الأولى", "بداية الأذان"]
+        ]
+      ],
+      fr: [
+        "La mosquée du Prophète et la fraternité",
+        "Médine",
+        "622-623",
+        "Comprendre la construction de la mosquée, la fraternité entre les émigrés et les Ansâr, et l'établissement de la société islamique.",
+        "Les Ansâr donnèrent aux émigrés la moitié de leurs biens — cet amour n'était que pour Allah. Ô Allah ! Accorde-nous un tel amour. Âmîn.",
+        [
+          "La construction de la mosquée du Prophète",
+          "Le Prophète ﷺ portait lui-même les briques",
+          "Les gens de la Souffa : la première école",
+          "La fraternité entre émigrés et Ansâr",
+          "Le pacte de Médine",
+          "Le début de l'adhan"
+        ],
+        [
+          ["🕌 La construction de la mosquée",
+           "Il ﷺ laissa la chamelle, qui s'agenouilla près de la maison d'Abou Ayyûb (qu'Allah l'agrée) ; là furent posées les fondations de la mosquée du Prophète. Le terrain appartenait à deux orphelins (Sahl et Souhayl) ; il ﷺ l'acheta à son prix (Sahih al-Bukhari). Le Prophète ﷺ portait lui-même les briques, et les Compagnons avec lui — émigrés et Ansâr ensemble. La mosquée était simple : murs de briques crues, colonnes de troncs de palmier, toit de palmes et sol de terre. Les Compagnons récitaient avec lui ﷺ : « Allâhumma lâ khayra illâ khayr al-âkhira, faghfir lil-Ansâri wal-Mouhâjira » (Ô Allah ! Il n'y a de bien que celui de l'au-delà ; pardonne aux Ansâr et aux émigrés) (Sahih al-Bukhari). Des chambres furent bâties près de la mosquée pour les épouses du Prophète ﷺ — les « chambres prophétiques ».",
+           "Sahih al-Bukhari : 428, 3906"],
+          ["🏘️ La Souffa — une école",
+           "On construisit sur un côté de la mosquée une plateforme appelée as-Souffa, où vivaient les Compagnons pauvres et où ils apprenaient le Coran — on la considère comme la première école de l'islam. On les appelle « les gens de la Souffa ». Parmi eux se trouvaient des mémorisateurs de hadiths comme Abou Hourayra (qu'Allah l'agrée).",
+           "Sahih al-Bukhari : 6452 (les gens de la Souffa)"],
+          ["🤝 La fraternité",
+           "Les émigrés étaient venus à Médine en abandonnant tout. Le Prophète ﷺ unit chaque émigré à un Ansârî comme frère — partageant biens, maison et commerce. Les Ansâr dirent au Prophète ﷺ : « Partage entre nous et nos frères émigrés les vergers de palmiers. » Il ﷺ dit : « Non. » Alors les Ansâr dirent aux émigrés : « Chargez-vous du travail pour nous et partagez avec nous les fruits. » Les émigrés dirent : « Nous avons entendu et nous acceptons. » (Sahih al-Bukhari). Telle était la fraternité. Sa'd ibn Rabî' (qu'Allah l'agrée) dit à son frère émigré 'Abd ar-Rahmân ibn 'Awf (qu'Allah l'agrée) : « Mon bien, ma maison — prends-en la moitié. » Il répondit : « Qu'Allah te bénisse ; montre-moi le chemin du marché. » Il alla commercer et gagna tant qu'il devint riche, puis se maria.",
+           "Sahih al-Bukhari : 3780, 3782"],
+          ["📜 Le pacte de Médine",
+           "Le Prophète ﷺ conclut à Médine un pacte entre les émigrés, les Ansâr et les Juifs — ce fut la première constitution islamique. Elle stipulait : tous défendent ensemble, nul n'opprime autrui, le jugement revient au Prophète ﷺ, l'opprimé est secouru. Les Juifs gardent leur religion, les musulmans la leur ; tous vivent ensemble. Certains historiens y voient le premier document constitutionnel écrit (Sîra d'Ibn Hichâm ; les savants divergent sur la chaîne de ce document).",
+           "Sîra d'Ibn Hichâm ; Ar-Rahîq al-Makhtûm (divergence des savants sur la chaîne)"],
+          ["🕌 Le début de l'adhan",
+           "Comment annoncer l'heure de la prière à Médine ? Les Compagnons proposèrent : frapper le nâqoûs (comme les chrétiens) ou souffler dans une corne (comme les Juifs) (Sahih al-Bukhari). Puis 'Abdoullah ibn Zayd (qu'Allah l'agrée) entendit en rêve les paroles de l'adhan. Il en informa le Prophète ﷺ, qui dit : « C'est un rêve véridique », et ordonna de les enseigner à Bilâl (qu'Allah l'agrée) dont la voix portait. 'Umar (qu'Allah l'agrée) fit un rêve semblable. Ainsi commença l'adhan (Sunan Abi Dawud).",
+           "Sahih al-Bukhari : 604 ; Sunan Abi Dawud : 499"],
+          ["🎯 La leçon",
+           "La mosquée du Prophète et la fraternité sont le fondement de la société islamique. Nous devons rester attachés à la mosquée et vivre en fraternité avec les musulmans, quels que soient leur origine, leur langue et leur couleur.",
+           ""]
+        ],
+        [
+          ["Qu'était la Souffa ?", ["Un marché", "Une école", "Un jardin"]],
+          ["Qui établit la fraternité ?", ["Abou Bakr (qu'Allah l'agrée)", "Le Prophète ﷺ", "'Umar (qu'Allah l'agrée)"]],
+          ["Comment appelle-t-on le pacte entre musulmans et Juifs à Médine ?", ["Le pacte de Médine", "Le pacte de 'Umar", "Le pacte prophétique"]]
+        ],
+        [
+          ["622", "Fondation de la mosquée du Prophète"],
+          ["622", "Établissement de la fraternité"],
+          ["1re année hégirienne", "Le pacte de Médine"],
+          ["1re année hégirienne", "Le début de l'adhan"]
+        ]
+      ],
+      es: [
+        "La mezquita del Profeta y la hermandad",
+        "Medina",
+        "622-623",
+        "Comprender la construcción de la mezquita, la hermandad entre emigrados y Ansar, y el establecimiento de la sociedad islámica.",
+        "Los Ansar dieron a los emigrados la mitad de sus bienes; ese amor era solo por Alá. ¡Oh Alá! Concédenos un amor así. Amín.",
+        [
+          "La construcción de la mezquita del Profeta",
+          "El Profeta ﷺ llevaba él mismo los ladrillos",
+          "La gente de la Suffa: la primera escuela",
+          "La hermandad entre emigrados y Ansar",
+          "El pacto de Medina",
+          "El comienzo del adhan"
+        ],
+        [
+          ["🕌 La construcción de la mezquita",
+           "Él ﷺ dejó a la camella, que se arrodilló junto a la casa de Abu Ayyub (que Alá esté complacido con él); allí se pusieron los cimientos de la mezquita del Profeta. El terreno era de dos huérfanos (Sahl y Suhayl) y él ﷺ lo compró por su precio (Sahih al-Bujari). El Profeta ﷺ llevaba él mismo los ladrillos, y los Compañeros con él: emigrados y Ansar juntos. La mezquita era sencilla: muros de ladrillo crudo, columnas de troncos de palmera, techo de palmas y suelo de tierra. Los Compañeros recitaban con él ﷺ: «Aláhumma la jayra illa jayr al-ajira, fagfir lil-Ansari wal-Muhayira» (¡Oh Alá! No hay bien sino el del más allá; perdona a los Ansar y a los emigrados) (Sahih al-Bujari). Junto a la mezquita se construyeron habitaciones donde vivieron las esposas del Profeta ﷺ: las «habitaciones proféticas».",
+           "Sahih al-Bujari: 428, 3906"],
+          ["🏘️ La Suffa: una escuela",
+           "Se construyó a un lado de la mezquita una plataforma llamada as-Suffa, donde vivían los Compañeros pobres y aprendían el Corán; se la considera la primera escuela del islam. Se les llama «la gente de la Suffa». Entre ellos había memorizadores de hadices como Abu Hurayra (que Alá esté complacido con él).",
+           "Sahih al-Bujari: 6452 (la gente de la Suffa)"],
+          ["🤝 La hermandad",
+           "Los emigrados habían llegado a Medina dejándolo todo. El Profeta ﷺ unió a cada emigrado con un Ansari como hermano, compartiendo bienes, casa y comercio. Los Ansar dijeron al Profeta ﷺ: «Reparte entre nosotros y nuestros hermanos emigrados los huertos de palmeras.» Él ﷺ dijo: «No.» Entonces los Ansar dijeron a los emigrados: «Trabajad por nosotros y compartid con nosotros los frutos.» Los emigrados dijeron: «Hemos oído y aceptamos.» (Sahih al-Bujari). Esa era la hermandad. Sad ibn Rabi (que Alá esté complacido con él) dijo a su hermano emigrado Abd ar-Rahman ibn Awf (que Alá esté complacido con él): «Mi bien y mi casa: toma la mitad.» Él respondió: «Que Alá te bendiga; muéstrame el camino del mercado.» Fue a comerciar y ganó tanto que se hizo rico, y luego se casó.",
+           "Sahih al-Bujari: 3780, 3782"],
+          ["📜 El pacto de Medina",
+           "El Profeta ﷺ concluyó en Medina un pacto entre los emigrados, los Ansar y los judíos; fue la primera constitución islámica. Establecía: todos defienden juntos, nadie oprime a otro, la decisión corresponde al Profeta ﷺ, se auxilia al oprimido. Los judíos conservan su religión y los musulmanes la suya; todos conviven. Algunos historiadores lo consideran el primer documento constitucional escrito (Sira de Ibn Hisham; los sabios discrepan sobre la cadena de este documento).",
+           "Sira de Ibn Hisham; Ar-Rahiq al-Majtum (discrepancia de los sabios sobre la cadena)"],
+          ["🕌 El comienzo del adhan",
+           "¿Cómo anunciar la hora de la oración en Medina? Los Compañeros propusieron: tocar el naqus (como los cristianos) o soplar un cuerno (como los judíos) (Sahih al-Bujari). Luego Abdalah ibn Zayd (que Alá esté complacido con él) oyó en sueños las palabras del adhan. Se lo comunicó al Profeta ﷺ, que dijo: «Es un sueño verdadero», y ordenó enseñárselas a Bilal (que Alá esté complacido con él), cuya voz era potente. Umar (que Alá esté complacido con él) tuvo un sueño semejante. Así comenzó el adhan (Sunan Abi Dawud).",
+           "Sahih al-Bujari: 604; Sunan Abi Dawud: 499"],
+          ["🎯 La lección",
+           "La mezquita del Profeta y la hermandad son el fundamento de la sociedad islámica. Debemos permanecer unidos a la mezquita y vivir en hermandad con los musulmanes, sea cual sea su origen, lengua o color.",
+           ""]
+        ],
+        [
+          ["¿Qué era la Suffa?", ["Un mercado", "Una escuela", "Un jardín"]],
+          ["¿Quién estableció la hermandad?", ["Abu Bakr (que Alá esté complacido con él)", "El Profeta ﷺ", "Umar (que Alá esté complacido con él)"]],
+          ["¿Cómo se llama el pacto entre musulmanes y judíos en Medina?", ["El pacto de Medina", "El pacto de Umar", "El pacto profético"]]
+        ],
+        [
+          ["622", "Fundación de la mezquita del Profeta"],
+          ["622", "Establecimiento de la hermandad"],
+          ["Año 1 hiyri", "El pacto de Medina"],
+          ["Año 1 hiyri", "El comienzo del adhan"]
+        ]
+      ]
     }
 
   }
