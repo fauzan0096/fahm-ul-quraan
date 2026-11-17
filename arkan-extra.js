@@ -216,3 +216,56 @@ window.ARKAN_X = {
   "237": { mr: "→ इस्लामचे स्तंभ", ar: "→ أركان الإسلام", fr: "→ Les piliers de l'islam", es: "→ Pilares del islam" },
   "238": { mr: "नमाज ←", ar: "الصلاة ←", fr: "La prière ←", es: "La oración ←" }
 };
+
+
+/* ═══════════════════════════════════════════════════════════
+   Arkan ka hub page (arkan.html) + uske cards ke naam
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.ARKAN_X, {
+
+  "690": { mr: "🕌 इस्लामचे स्तंभ", ar: "🕌 أركان الإسلام", fr: "🕌 Les piliers de l'islam", es: "🕌 Los pilares del islam" },
+  "692": { mr: "इस्लामचे स्तंभ", ar: "أركان الإسلام", fr: "Les piliers de l'islam", es: "Los pilares del islam" },
+  "693": { mr: "इस्लामचे पाच मूलभूत स्तंभ — कुरआन व हदीसच्या हवाल्यांसह, सोप्या भाषेत",
+           ar: "أركان الإسلام الخمسة — مع مراجع القرآن والحديث، بلغة مبسطة",
+           fr: "Les cinq piliers de l'islam — avec les références du Coran et du hadith, en langage simple",
+           es: "Los cinco pilares del islam, con referencias del Corán y el hadiz, en lenguaje sencillo" },
+  "694": { mr: "<span class=\"ic\">📖</span>इस्लामची पाया पाच गोष्टींवर आहे", ar: "<span class=\"ic\">📖</span>بُني الإسلام على خمس", fr: "<span class=\"ic\">📖</span>L'islam repose sur cinq choses", es: "<span class=\"ic\">📖</span>El islam se apoya en cinco cosas" },
+  "695": { mr: "इस्लामची पाया पाच गोष्टींवर आहे: अल्लाहशिवाय कोणी उपास्य नाही व मुहम्मद ﷺ अल्लाहचे रसूल आहेत याची साक्ष देणे, नमाज कायम करणे, जकात देणे, हज करणे आणि रमजानचे रोजे ठेवणे.",
+           ar: "بُني الإسلام على خمس: شهادة أن لا إله إلا الله وأن محمدًا رسول الله، وإقام الصلاة، وإيتاء الزكاة، وحج البيت، وصوم رمضان.",
+           fr: "L'islam repose sur cinq choses : témoigner qu'il n'y a de divinité qu'Allah et que Muhammad ﷺ est Son Messager, accomplir la prière, donner la zakât, faire le Hajj et jeûner Ramadan.",
+           es: "El islam se apoya en cinco cosas: testimoniar que no hay divinidad salvo Alá y que Mujámmad ﷺ es Su Mensajero, establecer la oración, dar la zakat, hacer el Hach y ayunar Ramadán." },
+  "696": { mr: "ज्या स्तंभापासून सुरुवात करायची असेल तिथून करा. प्रत्येक भागाच्या शेवटी «वाचले» असे निशाण लावू शकता — तुमची प्रगती फक्त याच डिव्हाइसवर सुरक्षित राहते.",
+           ar: "ابدأ من الركن الذي تحب. ويمكنك وضع علامة «قرأت» في آخر كل جزء — وتقدمك محفوظ على هذا الجهاز فقط.",
+           fr: "Commencez par le pilier que vous voulez. À la fin de chaque partie, vous pouvez marquer « lu » — votre progression reste enregistrée sur cet appareil uniquement.",
+           es: "Empieza por el pilar que quieras. Al final de cada parte puedes marcar «leído»; tu progreso se guarda solo en este dispositivo." },
+  "697": { mr: "स्तंभ 1 · 8 भाग", ar: "الركن 1 · 8 أجزاء", fr: "Pilier 1 · 8 parties", es: "Pilar 1 · 8 partes" },
+  "698": { mr: "ईमानाचा पाया — चार कलिमे व ईमान-ए-मुफस्सल", ar: "أساس الإيمان — الكلمات الأربع والإيمان المفصل", fr: "Le fondement de la foi — les quatre Kalimas et la foi détaillée", es: "El fundamento de la fe: las cuatro Kalimas y la fe detallada" },
+  "699": { mr: "स्तंभ 2 · 13 भाग", ar: "الركن 2 · 13 جزءًا", fr: "Pilier 2 · 13 parties", es: "Pilar 2 · 13 partes" },
+  "700": { mr: "वेळा, रकअती, वुजू, पद्धत, अरकान व सुन्नती", ar: "الأوقات، الركعات، الوضوء، الطريقة، الأركان والسنن", fr: "Horaires, rak'ahs, ablutions, méthode, piliers et sunan", es: "Horarios, rakas, wudu, método, pilares y sunnas" },
+  "701": { mr: "स्तंभ 3 · 6 भाग", ar: "الركن 3 · 6 أجزاء", fr: "Pilier 3 · 6 parties", es: "Pilar 3 · 6 partes" },
+  "702": { mr: "निसाब, पात्र, जकात-उल-फित्र आणि कॅल्क्युलेटर", ar: "النصاب، المستحقون، زكاة الفطر والحاسبة", fr: "Nisâb, bénéficiaires, zakât al-fitr et calculateur", es: "Nisab, beneficiarios, zakat al-fitr y calculadora" },
+  "703": { mr: "स्तंभ 4 · 10 भाग", ar: "الركن 4 · 10 أجزاء", fr: "Pilier 4 · 10 parties", es: "Pilar 4 · 10 partes" },
+  "704": { mr: "रमजान, नफल रोजे, रोजा तोडणाऱ्या गोष्टी, सूट आणि एतेकाफ", ar: "رمضان، صيام النفل، المفطرات، الرخص والاعتكاف", fr: "Ramadan, jeûnes surérogatoires, ce qui rompt le jeûne, dispenses et i'tikâf", es: "Ramadán, ayunos voluntarios, lo que rompe el ayuno, dispensas e i'tikaf" },
+  "705": { mr: "स्तंभ 5 · 11 भाग", ar: "الركن 5 · 11 جزءًا", fr: "Pilier 5 · 11 parties", es: "Pilar 5 · 11 partes" },
+  "706": { mr: "अटी, अरकान, वाजिबात, मीकात आणि हजचे दिवस", ar: "الشروط، الأركان، الواجبات، الميقات وأيام الحج", fr: "Conditions, piliers, wâjibât, mîqât et jours du Hajj", es: "Condiciones, pilares, wajibat, miqat y días del Hach" },
+  "707": { mr: "<span class=\"ic\">🧭</span>इस्लाम, ईमान आणि एहसान — हदीस-ए-जिब्राईल", ar: "<span class=\"ic\">🧭</span>الإسلام والإيمان والإحسان — حديث جبريل", fr: "<span class=\"ic\">🧭</span>Islam, foi et excellence — le hadith de Jibril", es: "<span class=\"ic\">🧭</span>Islam, fe y excelencia: el hadiz de Yibril" },
+  "708": { mr: "एका दिवशी जिब्राईल (अ.स.) माणसाच्या रूपात नबी ﷺ यांच्याकडे आले आणि प्रश्न विचारले:",
+           ar: "جاء جبريل عليه السلام يومًا في صورة رجل إلى النبي ﷺ فسأله:",
+           fr: "Un jour, Jibril vint auprès du Prophète ﷺ sous forme humaine et posa des questions :",
+           es: "Un día, Yibril vino al Profeta ﷺ en forma humana e hizo preguntas:" },
+  "709": { mr: "<b>इस्लाम</b> — पाच स्तंभ: शहादतैन, नमाज, जकात, रमजानचे रोजे आणि ऐपत असल्यास हज.", ar: "<b>الإسلام</b> — خمسة أركان: الشهادتان، الصلاة، الزكاة، صوم رمضان، والحج مع الاستطاعة.", fr: "<b>L'islam</b> — cinq piliers : les deux témoignages, la prière, la zakât, le jeûne de Ramadan et le Hajj si l'on en a les moyens.", es: "<b>El islam</b>: cinco pilares: los dos testimonios, la oración, la zakat, el ayuno de Ramadán y el Hach si se tiene capacidad." },
+  "710": { mr: "<b>ईमान</b> — अल्लाह, देवदूत, ग्रंथ, रसूल, आखिरतचा दिवस आणि नियतीवर विश्वास. (तपशील «कलिमा-ए-शहादत» मध्ये)", ar: "<b>الإيمان</b> — بالله وملائكته وكتبه ورسله واليوم الآخر والقدر. (التفصيل في «كلمة الشهادة»)", fr: "<b>La foi</b> — en Allah, Ses anges, Ses livres, Ses messagers, le Jour dernier et le décret. (Détail dans « La Kalima de la shahâda »)", es: "<b>La fe</b>: en Alá, Sus ángeles, Sus libros, Sus mensajeros, el Último Día y el decreto. (Detalle en «La Kalima de la shahada»)" },
+  "711": { mr: "<b>एहसान</b> — अल्लाहची उपासना अशी करणे जणू तू त्याला पाहत आहेस, आणि जर ही अवस्था नसेल तर हा विश्वास की तो तुला पाहत आहे.", ar: "<b>الإحسان</b> — أن تعبد الله كأنك تراه، فإن لم تكن تراه فإنه يراك.", fr: "<b>L'excellence</b> — adorer Allah comme si tu Le voyais, et si tu ne Le vois pas, Il te voit.", es: "<b>La excelencia</b>: adorar a Alá como si Le vieras, y si no Le ves, Él te ve." },
+  "712": { mr: "<span class=\"ic\">ℹ️</span>या भागाबद्दल", ar: "<span class=\"ic\">ℹ️</span>عن هذا القسم", fr: "<span class=\"ic\">ℹ️</span>À propos de cette partie", es: "<span class=\"ic\">ℹ️</span>Sobre esta parte" },
+  "713": { mr: "हवाले सहीह बुखारी, सहीह मुस्लिम आणि सुनन या ग्रंथांतून आहेत.", ar: "المراجع من صحيح البخاري وصحيح مسلم والسنن.", fr: "Les références viennent du Sahih al-Bukhari, du Sahih Muslim et des Sunan.", es: "Las referencias son del Sahih al-Bujari, Sahih Muslim y los Sunan." },
+  "714": { mr: "जे मुद्दे दलिलाने सिद्ध होतात तेच घेतले आहेत, आणि जिथे शक्य होते तिथे हवाला दिला आहे.", ar: "اقتُصر على المسائل الثابتة بالدليل، وذُكر المصدر حيث أمكن.", fr: "Seuls les points établis par la preuve ont été retenus, avec la référence quand c'était possible.", es: "Solo se recogen los puntos probados con evidencia, con la referencia cuando fue posible." },
+  "715": { mr: "हे विद्यार्थ्यासाठी मूलभूत मार्गदर्शन आहे; फतवा नाही. वैयक्तिक व बारीक प्रश्नांसाठी विश्वासू मुफ्ती/विद्वानाकडे जा.", ar: "هذا إرشاد أساسي لطالب العلم لا فتوى. أما المسائل الشخصية الدقيقة فارجع فيها إلى مفتٍ موثوق.", fr: "C'est une orientation de base pour l'étudiant, non une fatwa. Pour les questions personnelles délicates, consultez un mufti reconnu.", es: "Es una orientación básica para el estudiante, no una fatua. Para asuntos personales delicados, consulta a un muftí reconocido." },
+  "716": { mr: "हदीसचे क्रमांक वेगवेगळ्या आवृत्त्यांत थोडे वेगळे असू शकतात; जिथे शक्य होते तिथे पुस्तक व बाब यांवरूनही पाहा.", ar: "قد تختلف أرقام الأحاديث قليلًا بين الطبعات؛ فراجع الكتاب والباب أيضًا حيث أمكن.", fr: "Les numéros de hadith peuvent varier légèrement selon les éditions ; vérifiez aussi le livre et le chapitre quand c'est possible.", es: "Los números de hadiz pueden variar algo entre ediciones; consulta también el libro y el capítulo cuando sea posible." },
+
+  /* hub cards ke chhote naam (kuch page aur jagah par bhi use hote hain) */
+  "177": { mr: "कलिमा-ए-शहादत", ar: "كلمة الشهادة", fr: "La Kalima de la shahâda", es: "La Kalima de la shahada" },
+  "254": { mr: "नमाज", ar: "الصلاة", fr: "La prière", es: "La oración" },
+  "593": { mr: "जकात", ar: "الزكاة", fr: "La zakât", es: "La zakat" },
+  "466": { mr: "रोजा", ar: "الصوم", fr: "Le jeûne", es: "El ayuno" },
+  "14": { mr: "हज व उमरा", ar: "الحج والعمرة", fr: "Hajj et Umrah", es: "Hach y Umra" }
+});

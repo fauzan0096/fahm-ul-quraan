@@ -95,7 +95,9 @@
 // v106: ARKAN-E-ISLAM — naya arkan-extra.js: Kalima ka poora page (kalmay, iman-e-mufassal, sharaa'it,
 //       fazail) मराठी / العربية / Français / Español mein. arkan-lang.js pehle wahan dekhta hai, warna
 //       English. Nayi zubaan par arkan-i18n.js ka hash-engine band rehta hai (warna Urdu par gir jata).
-const CACHE_NAME = 'quran-ustad-auto-v106';
+// v107: ARKAN hub page (arkan.html) bhi मराठी / العربية / Français / Español mein — paanch stambh ke cards,
+//       unke bhaag, aur "Islam/Iman/Ihsan" ka hissa (arkan-extra.js, id 690-716 + 177/254/593/466/14).
+const CACHE_NAME = 'quran-ustad-auto-v107';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
