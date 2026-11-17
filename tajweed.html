@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
     <script src="app.js"></script>
+    <script src="lang-extra.js"></script>
     <meta name="theme-color" content="#0F4C3A">
     <script src="sounds.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -152,13 +153,13 @@
             hi: { exp: 'हिंदी वज़ाहत', ex: '📚 मिसालें', m: '📌 मिसाल', play: '🔊 सुनें (क़ारी की आवाज़)', haw: '📍 हवाला', q: 'क़ुरआन', none: 'कोई क़ायदा नहीं मिला।' },
             en: { exp: 'English Explanation', ex: '📚 Examples', m: '📌 Example', play: '🔊 Listen (Qari)', haw: '📍 Reference', q: 'Quran', none: 'No rule found.' }
         };
-        function tTitle(it, l) { return (l === 'hi' ? it.title_hi : l === 'en' ? it.title_en : it.title).replace(/^\d+\.\s*/, ''); }
-        function tText(it, l) { return l === 'u' ? it.urdu : l === 'ro' ? it.urdu_ro : l === 'hi' ? it.urdu_hi : it.roman; }
-        function tEx(ex, l) { return l === 'u' ? ex.ur : l === 'ro' ? ex.ur_ro : l === 'hi' ? ex.ur_hi : ex.ro; }
+        function tTitle(it, l) { if (!TL[l]) l = 'en'; return (l === 'hi' ? it.title_hi : l === 'en' ? it.title_en : it.title).replace(/^\d+\.\s*/, ''); }
+        function tText(it, l) { if (!TL[l]) l = 'en'; return l === 'u' ? it.urdu : l === 'ro' ? it.urdu_ro : l === 'hi' ? it.urdu_hi : it.roman; }
+        function tEx(ex, l) { if (!TL[l]) l = 'en'; return l === 'u' ? ex.ur : l === 'ro' ? ex.ur_ro : l === 'hi' ? ex.ur_hi : ex.ro; }
         function renderCards(filterText = "", category = "all") {
             const container = document.getElementById('tajweedContainer');
             container.innerHTML = '';
-            const l = QSLang.get(), L = TL[l], ft = filterText.toLowerCase();
+            const l = QSLang.get(), L = TL[l] || TL.en, ft = filterText.toLowerCase();
             const filtered = tajweedData.filter(item => {
                 const ms = !ft || [item.title, item.title_hi, item.title_en, item.urdu, item.urdu_ro, item.urdu_hi, item.roman, item.hawala]
                     .some(v => String(v || '').toLowerCase().includes(ft));

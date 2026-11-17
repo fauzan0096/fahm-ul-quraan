@@ -665,7 +665,8 @@
         hi: { aria: 'अरबी तारीख़', r: { li: 'आपके इलाक़े (भारत/पाकिस्तान/बांग्लादेश) के हिसाब से — आम तौर पर सऊदी से 1 दिन पीछे', la: 'आपकी लोकेशन के हिसाब से (उम्मुल-क़ुरा)', ti: 'टाइमज़ोन के हिसाब से (भारत/पाकिस्तान/बांग्लादेश) — आम तौर पर सऊदी से 1 दिन पीछे', ta: 'उम्मुल-क़ुरा (सऊदी) के हिसाब से' }, mag: '🌇 मग़रिब हो चुकी — इस्लामी दिन बदल गया', loc: '📍 सही हिसाब के लिए \u201cनमाज़ का हिसाब\u201d में लोकेशन सेट करें', moon: 'चाँद देखने से 1 दिन का फ़र्क़ हो सकता है।', m1: '◀ \u22121 दिन', p1: '+1 दिन ▶', auto: 'ऑटो', ok: 'ठीक है' },
         en: { aria: 'Hijri date', r: { li: 'Based on your region (India/Pakistan/Bangladesh) — usually 1 day behind Saudi Arabia', la: 'Based on your location (Umm al-Qura)', ti: 'Based on your timezone (India/Pakistan/Bangladesh) — usually 1 day behind Saudi Arabia', ta: 'Based on Umm al-Qura (Saudi Arabia)' }, mag: '🌇 Maghrib has passed — the Islamic day has changed', loc: '📍 For accuracy, set your location in \u201cPrayer Tracker\u201d', moon: 'Moon sighting can make a one-day difference.', m1: '◀ \u22121 day', p1: '+1 day ▶', auto: 'Auto', ok: 'OK' }
     };
-    function L() { return (window.QSLang && QSLang.get()) || 'u'; }
+    // TX mein sirf 4 zubaanein hain — nayi zubaan (mr/ar/fr/es) par English, warna crash
+    function L() { var v = (window.QSLang && QSLang.get()) || 'u'; return TX[v] ? v : 'en'; }
     function num(n, l) { return l === 'u' ? String(n).replace(/\d/g, function (d) { return '\u06F0\u06F1\u06F2\u06F3\u06F4\u06F5\u06F6\u06F7\u06F8\u06F9'.charAt(+d); }) : String(n); }
     var styled = false, pop = null;
 
@@ -1427,7 +1428,8 @@
     var LOC = { u: 'ur-PK', ro: 'en-GB', hi: 'hi-IN', en: 'en-GB' };
     var FALL = ['2027-02-08', '2028-01-28', '2029-01-16', '2030-01-06', '2030-12-26', '2031-12-15'];   // Umm al-Qura ke qareeb (Intl na ho to)
     var styled = false;
-    function L() { return (window.QSLang && QSLang.get()) || 'u'; }
+    // Ramzan counter: TX mein sirf 4 zubaanein — nayi zubaan par English
+    function L() { var v = (window.QSLang && QSLang.get()) || 'u'; return TX[v] ? v : 'en'; }
     function umq(dt) {
         try {
             var p = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn', { day: 'numeric', month: 'numeric', year: 'numeric' }).formatToParts(dt), o = {};

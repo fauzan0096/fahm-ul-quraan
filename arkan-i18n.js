@@ -120,7 +120,8 @@
   }
   function refresh() {
     var lang = getLang();
-    if (LANGS.indexOf(lang) < 0) lang = 'u';
+    // Arkan ka tarjuma sirf 4 zubaanon mein hai — nayi zubaan (mr/ar/fr/es) par English
+    if (LANGS.indexOf(lang) < 0) lang = 'en';
     if (lang === 'u') { if (applied !== 'u' || document.documentElement.getAttribute('dir') !== 'rtl') apply('u'); return; }
     setDir(lang);                                   // foran disha/font, tarjuma file aate hi
     loadData(function () { apply(getLang()); });

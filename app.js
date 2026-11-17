@@ -971,8 +971,20 @@ if (!window.QS_LITE) {
    Kaam: QSLang.get(), QSLang.set(v), QSLang.cycle(), QSLang.onChange(fn), QSLang.pick(obj, 'u') -> obj.u / obj.u_ro / obj.u_hi / obj.u_en */
 (function () {
     'use strict';
-    var LIST = ['u', 'ro', 'hi', 'en'];
-    var LAB = { u: 'اردو', ro: 'Roman', hi: 'हिंदी', en: 'English' };
+    // 8 zubaanein: pehli 4 app ki apni (matn + tarjuma), aakhri 4 "extra" (lang-extra.js).
+    // Extra zubaan ka tarjuma jahan na ho wahan English dikhta hai — kuch bhi khaali/undefined nahi.
+    var LIST = ['u', 'ro', 'hi', 'en', 'mr', 'ar', 'fr', 'es'];
+    var LAB = { u: 'اردو', ro: 'Roman', hi: 'हिंदी', en: 'English', mr: 'मराठी', ar: 'العربية', fr: 'Français', es: 'Español' };
+    // D / PAT ki list [Urdu, Hindi, English] hai; extra zubaanein usi tarteeb ke baad aati hain
+    var XIDX = { u: 0, hi: 1, en: 2, mr: 3, ar: 4, fr: 5, es: 6 };
+    function xl(v) { try { return (window.FQ_XLANG || {})[v] || null; } catch (e) { return null; } }
+    // Tarjuma chuno: pehle us zubaan ka, na mile to English (Roman matn khud source hai — wahan null)
+    function val(arr, v) {
+        if (!arr || v === 'ro') return null;
+        var k = XIDX[v];
+        if (k != null && arr[k] != null) return arr[k];
+        return arr[2] != null ? arr[2] : null;
+    }
     var KEY = 'mlang', cbs = [];
     function rd(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
     function wr(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
@@ -1009,7 +1021,13 @@ if (!window.QS_LITE) {
         masnoon: ['مسنون دعائیں', 'Masnoon Duaein', 'मसनून दुआएँ', 'Masnoon Duas'],
         asmah: ['أسماء الله الحسنى', 'Asma-ul-Husna', 'अस्माउल-हुस्ना', '99 Names of Allah']
     };
-    function t(k, v) { var a = LB[k]; if (!a) return k; var i = LIST.indexOf(v || get()); return a[i < 0 ? 0 : i]; }
+    function t(k, v) {
+        var vv = v || get(), x = xl(vv), a = LB[k];
+        if (x && x.lb && x.lb[k] != null) return x.lb[k];
+        if (!a) return k;
+        var i = LIST.indexOf(vv), s = i < 0 ? a[0] : a[i];
+        return s != null ? s : (a[3] != null ? a[3] : a[0]);
+    }
     /*@AUTO_START*/
     /* ===== Auto-translate: Roman title / button / tab / label / placeholder -> chuni hui zubaan =====
        D: 'Roman matn' -> [اردو, हिंदी, English]. Shuru ka emoji/nishaan aur aakhir ka "(7)" wapas laga diya jata hai.
@@ -1401,25 +1419,31 @@ if (!window.QS_LITE) {
     var REC = new WeakMap(), AREC = new WeakMap(), obs = null;
     var PRE = /^[^A-Za-z0-9(\u0600-\u06FF\u0900-\u097F]+/, CNT = /(\s*\(\d+(?:\/\d+)?\):?|\s*\u25BE)\s*$/;
     var ATTRS = ['title', 'placeholder', 'aria-label'];
-    function idx3(v) { return v === 'u' ? 0 : v === 'hi' ? 1 : v === 'en' ? 2 : -1; }
-    function tr(txt, i) {
+    function idx3(v) { return v === 'u' ? 0 : v === 'hi' ? 1 : v === 'en' ? 2 : -1; }   // purana helper
+    // Roman matn (core) ka tarjuma — v = abhi ki zubaan. Extra zubaan: pehle lang-extra.js ki dict.
+    function tr(txt, v) {
         var m = /^(\s*)([\s\S]*?)(\s*)$/.exec(txt), core = m[2].replace(/\s+/g, ' ');
-        if (!core) return null;
-        var pre = '', suf = '', p = PRE.exec(core), s, out = null, hit;
+        if (!core || v === 'ro') return null;
+        var pre = '', suf = '', p = PRE.exec(core), s, out = null, hit, x = xl(v);
         if (p) { pre = p[0]; core = core.slice(pre.length); }
         if ((s = CNT.exec(core))) { suf = s[0]; core = core.slice(0, s.index); }
-        if ((hit = D[core])) out = hit[i];
+        if (x && x.dict && x.dict[core] != null) out = x.dict[core];
+        else if ((hit = D[core])) out = val(hit, v);
         else for (var k = 0; k < PAT.length; k++) {
             var r = PAT[k][0].exec(core);
-            if (r) { out = PAT[k][1][i].replace(/\$(\d)/g, function (_, n) { return r[n]; }); break; }
+            if (r) {
+                var pat = val(PAT[k][1], v);
+                if (pat != null) out = pat.replace(/\$(\d)/g, function (_, n) { return r[n]; });
+                break;
+            }
         }
         return out == null ? null : m[1] + pre + out + suf + m[3];
     }
-    function doNode(n, i) {
+    function doNode(n, v) {
         var rec = REC.get(n), cur = n.nodeValue;
         if (rec) { if (cur !== rec.s) rec.o = cur; }
-        else { if (i < 0 || !/[A-Za-z]/.test(cur)) return; rec = { o: cur }; REC.set(n, rec); }
-        var t = i < 0 ? null : tr(rec.o, i), nv = t == null ? rec.o : t;
+        else { if (v === 'ro' || !/[A-Za-z]/.test(cur)) return; rec = { o: cur }; REC.set(n, rec); }
+        var t = v === 'ro' ? null : tr(rec.o, v), nv = t == null ? rec.o : t;
         if (nv !== cur) n.nodeValue = nv;
         rec.s = nv;
     }
@@ -1428,51 +1452,59 @@ if (!window.QS_LITE) {
         if (NOAUTO && !(p.closest && p.closest('#qsInst'))) return true;   // Arkan/Nahw-Sarf: sirf install popup mein engine chale
         return !!(p.closest && p.closest('[data-lb],[data-lbh],[data-noi18n],.ar,[contenteditable]'));
     }
-    function doAttrs(el, i) {
+    function doAttrs(el, v) {
         if (skipEl(el)) return;
         var R = AREC.get(el);
         for (var k = 0; k < ATTRS.length; k++) {
             var a = ATTRS[k], cur = el.getAttribute(a); if (cur == null) continue;
             var rec = R && R[a];
             if (rec) { if (cur !== rec.s) rec.o = cur; }
-            else { if (i < 0 || !/[A-Za-z]/.test(cur)) continue; if (!R) { R = {}; AREC.set(el, R); } rec = R[a] = { o: cur }; }
-            var t = i < 0 ? null : tr(rec.o, i), nv = t == null ? rec.o : t;
+            else { if (v === 'ro' || !/[A-Za-z]/.test(cur)) continue; if (!R) { R = {}; AREC.set(el, R); } rec = R[a] = { o: cur }; }
+            var t = v === 'ro' ? null : tr(rec.o, v), nv = t == null ? rec.o : t;
             if (nv !== cur) el.setAttribute(a, nv);
             rec.s = nv;
         }
     }
-    function doH(el) {
-        var hv = HT[el.getAttribute('data-lbh')]; if (!hv) return;
-        var x = hv[LIST.indexOf(get())]; if (x != null && el.innerHTML !== x) el.innerHTML = x;
+    // data-lbh (poore HTML hisse): pehle lang-extra.js ka override, warna HT ki 4-zubaan list (na mile to English)
+    function htmlFor(key, v) {
+        var x = xl(v);
+        if (x && x.html && x.html[key] != null) return x.html[key];
+        var hv = HT[key]; if (!hv) return null;
+        var i = LIST.indexOf(v), s = i < 0 ? hv[0] : hv[i];
+        return s != null ? s : hv[3];
     }
-    function walk(root, i) {
-        if (root.nodeType === 3) { if (!skipEl(root.parentElement)) doNode(root, i); return; }
+    function doH(el) {
+        var x = htmlFor(el.getAttribute('data-lbh'), get());
+        if (x != null && el.innerHTML !== x) el.innerHTML = x;
+    }
+    function walk(root, v) {
+        if (root.nodeType === 3) { if (!skipEl(root.parentElement)) doNode(root, v); return; }
         if (root.nodeType !== 1) return;
         var cache = new Map(), w = document.createTreeWalker(root, 4), n;
         while ((n = w.nextNode())) {
             var p = n.parentElement, sk = cache.get(p);
             if (sk === undefined) { sk = skipEl(p); cache.set(p, sk); }
-            if (!sk) doNode(n, i);
+            if (!sk) doNode(n, v);
         }
         if (root.hasAttribute && root.hasAttribute('data-lbh')) doH(root);
         var hh = root.querySelectorAll('[data-lbh]');
         for (var q = 0; q < hh.length; q++) doH(hh[q]);
-        if (root.hasAttribute && !(root.id === 'qiSprite')) doAttrs(root, i);
+        if (root.hasAttribute && !(root.id === 'qiSprite')) doAttrs(root, v);
         var els = root.querySelectorAll('[title],[placeholder],[aria-label]');
-        for (var j = 0; j < els.length; j++) doAttrs(els[j], i);
+        for (var j = 0; j < els.length; j++) doAttrs(els[j], v);
     }
     function auto() {
         if (NOALL || !document.body) return;
-        var i = idx3(get());
-        walk(document.body, i);
-        if (!obs && i >= 0 && window.MutationObserver) {
+        var v = get();
+        walk(document.body, v);
+        if (!obs && v !== 'ro' && window.MutationObserver) {
             obs = new MutationObserver(function (list) {
-                var j = idx3(get()); if (j < 0) return;
+                var jv = get(); if (jv === 'ro') return;
                 for (var a = 0; a < list.length; a++) {
                     var m = list[a];
-                    if (m.type === 'childList') { for (var b = 0; b < m.addedNodes.length; b++) walk(m.addedNodes[b], j); }
-                    else if (m.type === 'characterData') { if (!skipEl(m.target.parentElement)) doNode(m.target, j); }
-                    else if (m.type === 'attributes') doAttrs(m.target, j);
+                    if (m.type === 'childList') { for (var b = 0; b < m.addedNodes.length; b++) walk(m.addedNodes[b], jv); }
+                    else if (m.type === 'characterData') { if (!skipEl(m.target.parentElement)) doNode(m.target, jv); }
+                    else if (m.type === 'attributes') doAttrs(m.target, jv);
                 }
             });
             obs.observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ATTRS });
@@ -1486,7 +1518,7 @@ if (!window.QS_LITE) {
         var ls = document.querySelectorAll('[data-lb]');
         for (var j = 0; j < ls.length; j++) { var x = t(ls[j].getAttribute('data-lb'), v); if (ls[j].textContent !== x) ls[j].textContent = x; }
         var hs = document.querySelectorAll('[data-lbh]');
-        for (var h = 0; h < hs.length; h++) { var hv = HT[hs[h].getAttribute('data-lbh')]; if (hv) { var hx = hv[LIST.indexOf(v)]; if (hs[h].innerHTML !== hx) hs[h].innerHTML = hx; } }
+        for (var h = 0; h < hs.length; h++) { var hx = htmlFor(hs[h].getAttribute('data-lbh'), v); if (hx != null && hs[h].innerHTML !== hx) hs[h].innerHTML = hx; }
         document.documentElement.setAttribute('data-mlang', v);
         auto();
     }
@@ -1496,9 +1528,15 @@ if (!window.QS_LITE) {
         wr(KEY, v); wr('meaningLang', v); paint(); fire(v);
     }
     function cycle() { set(LIST[(LIST.indexOf(get()) + 1) % LIST.length]); }
-    function pick(o, base) { var v = get(); return v === 'u' ? o[base] : (o[base + '_' + v] || o[base]); }
-    window.QSLang = { list: LIST, labels: LAB, t: t, tr: function (x, v) { var i = idx3(v || get()); return i < 0 ? x : (tr(x, i) || x); }, get: get, set: set, cycle: cycle, onChange: function (fn) { cbs.push(fn); }, pick: pick, paint: paint };
-
+    function pick(o, base) {
+        var v = get();
+        if (v === 'u') return o[base];
+        var s = o[base + '_' + v];
+        if (s != null) return s;
+        if (XIDX[v] != null) { var en = o[base + '_en']; if (en != null) return en; }   // nayi zubaan: English behtar hai Urdu se
+        return o[base];
+    }
+    window.QSLang = { list: LIST, labels: LAB, xlang: function (v) { return !!xl(v || get()); }, t: t, tr: function (x, v) { var vv = v || get(); return vv === 'ro' ? x : (tr(x, vv) || x); }, get: get, set: set, cycle: cycle, onChange: function (fn) { cbs.push(fn); }, pick: pick, paint: paint };
     /* alert / confirm ke seedhe (poore) jumle bhi chuni hui zubaan mein */
     ['alert', 'confirm'].forEach(function (n) { var o = window[n]; if (typeof o !== 'function') return; window[n] = function (m) { try { m = window.QSLang.tr(String(m)); } catch (e) {} return o.call(window, m); }; });    window.addEventListener('storage', function (e) { if (e.key === KEY) { paint(); fire(get()); } });
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', paint); else paint();

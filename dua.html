@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
     <script src="app.js"></script>
+    <script src="lang-extra.js"></script>
     <meta name="theme-color" content="#0F4C3A">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -405,12 +406,16 @@
             en: { ur: 'Translation', taf: '📖 Explanation / Benefit', haw: '📍 Reference', arb: 'Arabic Text', pa: '🔊 Listen Arabic', pu: '🔊 Listen Translation', none: 'No dua found.' }
         };
         const TTS = { u: 'ur', ro: 'ur', hi: 'hi', en: 'en' };
+        // Nayi zubaan (Marathi/Arabi/French/Spanish) par bhi kuch toota na jaye — labels English par gir jate hain
+        const LBLO = () => LBL[QSLang.get()] || LBL.en;
+        const TTSX = () => TTS[QSLang.get()] || 'en';
         function duaText(d) {
             const l = QSLang.get(), t = (window.duaTr || {})[d._i] || {};
             if (l === 'u') return { title: d.title.replace(/^\d+\.\s*/, ''), mean: d.urdu, taf: d.tafseel };
+            const alt = (l === 'ro' || l === 'hi' || l === 'en') ? l : 'en';   // nayi zubaan: English tarjuma
             return {
-                title: l === 'ro' ? d.title.replace(/^\d+\.\s*/, '') : (t['title_' + l] || d.title.replace(/^\d+\.\s*/, '')),
-                mean: t['urdu_' + l] || d.urdu, taf: t['tafseel_' + l] || d.tafseel
+                title: alt === 'ro' ? d.title.replace(/^\d+\.\s*/, '') : (t['title_' + alt] || d.title.replace(/^\d+\.\s*/, '')),
+                mean: t['urdu_' + alt] || d.urdu, taf: t['tafseel_' + alt] || d.tafseel
             };
         }
         function renderDuas(filterText = "", category = "all") {
@@ -428,14 +433,14 @@
             if (filtered.length === 0) {
                 container.innerHTML = (category === 'fav' && !filterText)
                     ? '<div class="fav-empty">⭐ Abhi koi favourite nahi hai.<br>Jo dua baar baar padhni ho, uske card par ☆ dabayein — wo yahan aa jayegi.</div>'
-                    : '<p style="text-align:center; color:gray; padding: 20px;">' + LBL[QSLang.get()].none + '</p>';
+                    : '<p style="text-align:center; color:gray; padding: 20px;">' + LBLO().none + '</p>';
                 return;
             }
 
             filtered.forEach((dua, index) => {
                 const m = dua.title.match(/^(\d+)\.\s*(.*)$/);
                 const num = m ? m[1] : (index + 1);
-                const X = duaText(dua), LB = LBL[QSLang.get()], ttl = X.title;
+                const X = duaText(dua), LB = LBLO(), ttl = X.title;
                 const card = document.createElement('div');
                 card.className = 'card';
                 card.innerHTML = `
@@ -466,7 +471,7 @@
                 `;
                 card.querySelector('.fav-btn').onclick = function () { toggleFav(dua, this); };
                 const pa = card.querySelector('.play-ar'); if (pa) pa.onclick = function () { speakText(dua.arabic, 'ar', this); };
-                const pu = card.querySelector('.play-ur'); if (pu) pu.onclick = function () { speakText(X.mean, TTS[QSLang.get()], this); };
+                const pu = card.querySelector('.play-ur'); if (pu) pu.onclick = function () { speakText(X.mean, TTSX(), this); };
                 container.appendChild(card);
             });
         }

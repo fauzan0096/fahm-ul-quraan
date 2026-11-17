@@ -4,7 +4,7 @@
   function load() { try { return JSON.parse(localStorage.getItem(K)) || {}; } catch (e) { return {}; } }
   function save(o) { try { localStorage.setItem(K, JSON.stringify(o)); } catch (e) {} }
   var page = document.body.getAttribute('data-page');
-  function LI() { var l = window.QSLang ? QSLang.get() : 'u'; return { u: 0, ro: 1, hi: 2, en: 3 }[l] || 0; }
+  function LI() { var l = window.QSLang ? QSLang.get() : 'u'; var i = { u: 0, ro: 1, hi: 2, en: 3 }[l]; return i == null ? 3 : i; }
   var S = {
     read:   ['✅ پڑھ لیا', '✅ Padh liya', '✅ पढ़ लिया', '✅ Read'],
     unread: ['☐ یہ حصہ پڑھ لیا', '☐ Yeh hissa padh liya', '☐ यह हिस्सा पढ़ लिया', '☐ Mark this section as read'],

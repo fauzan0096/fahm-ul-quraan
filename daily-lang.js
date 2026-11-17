@@ -855,7 +855,8 @@ var FQ_SUNNAT_L10N = [
 
 /* ===== Zubaan badalne par Aaj ki Ayat + Sunnat bhi badalte hain ===== */
 (function () {
-    function idx(v) { return { u: 0, ro: 1, hi: 2, en: 3 }[v]; }
+    // 8 zubaanein: nayi zubaan (mr/ar/fr/es) ka tarjuma yahan nahi, is liye English par gir jate hain
+    function idx(v) { return { u: 0, ro: 1, hi: 2, en: 3, mr: 3, ar: 3, fr: 3, es: 3 }[v]; }
     function lang() {
         try { if (window.QSLang && QSLang.get) return QSLang.get() || 'u'; } catch (e) {}
         try { return localStorage.getItem('mlang') || 'u'; } catch (e) { return 'u'; }
