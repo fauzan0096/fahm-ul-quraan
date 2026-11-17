@@ -781,3 +781,249 @@ Object.assign(window.FQ_DUA_LANG, {
 });
 
 if (window.FQDuaLangApply) window.FQDuaLangApply();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Subah-Sham Azkar (1 – 10)
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_DUA_LANG, {
+
+  "Neend se uthne ki dua": {
+    t: { mr: "झोपेतून उठल्यावरची दुआ", ar: "دعاء الاستيقاظ من النوم", fr: "Doua au réveil", es: "Dua al despertar" },
+    m: { mr: "सर्व स्तुती अल्लाहसाठी जिने आम्हाला (झोपेच्या) मृत्यूनंतर जिवंत केले, आणि त्याच्याकडेच परत जायचे आहे.",
+         ar: "الحمد لله الذي أحيانا بعد ما أماتنا وإليه النشور.",
+         fr: "Louange à Allah qui nous a rendu la vie après nous avoir fait mourir, et c'est vers Lui que se fera la résurrection.",
+         es: "Alabanza a Alá que nos devolvió la vida después de hacernos morir, y hacia Él es la resurrección." },
+    f: { mr: "झोपेला एक प्रकारची मृत्यू म्हटले आहे; सकाळी जागे होणे हे नवे जीवन आहे.",
+         ar: "النوم كالموت، والاستيقاظ حياة جديدة.",
+         fr: "Le sommeil est comme une mort ; se réveiller le matin est une vie nouvelle.",
+         es: "El sueño es como una muerte; despertar por la mañana es una vida nueva." }
+  },
+
+  "Ghar se nikalte waqt": {
+    t: { mr: "घरातून बाहेर पडताना", ar: "دعاء الخروج من المنزل", fr: "En sortant de la maison", es: "Al salir de casa" },
+    m: { mr: "अल्लाहच्या नावाने, मी अल्लाहवर भरवसा ठेवला; आणि पापापासून दूर राहण्याची शक्ती व नेकी करण्याची ताकद अल्लाहच्या मदतीशिवाय नाही.",
+         ar: "بسم الله، توكلت على الله، ولا حول ولا قوة إلا بالله.",
+         fr: "Au nom d'Allah, je m'en remets à Allah ; il n'y a de force contre le péché ni de puissance pour le bien sans l'aide d'Allah.",
+         es: "En el nombre de Alá, me encomiendo a Alá; no hay fuerza contra el pecado ni poder para el bien sin la ayuda de Alá." },
+    f: { mr: "घरातून बाहेर पडताना हे वाचल्यास मार्गदर्शन, पुरेपूर मदत आणि सुरक्षिततेचे वचन आहे.",
+         ar: "من قالها عند خروجه كُفي وهُدي ووُقي.",
+         fr: "Celui qui la dit en sortant est suffi, guidé et protégé.",
+         es: "A quien la diga al salir, se le basta, se le guía y se le protege." }
+  },
+
+  "Teeno Qul (Subah + Sham 3-3 martaba)": {
+    t: { mr: "तीनही कुल (सकाळ-संध्याकाळ ३-३ वेळा)", ar: "المعوذات (صباحًا ومساءً ثلاثًا)", fr: "Les trois Qoul (matin et soir, 3 fois)", es: "Las tres Qul (mañana y tarde, 3 veces)" },
+    m: { mr: "सांग: तो अल्लाह एक आहे; अल्लाह निरपेक्ष आहे; त्याला संतती नाही व तो जन्मला नाही; आणि त्याच्यासारखा कोणी नाही. सांग: मी पहाटेच्या रबाची पनाह मागतो... सांग: मी लोकांच्या रबाची पनाह मागतो...",
+         ar: "قل هو الله أحد… قل أعوذ برب الفلق… قل أعوذ برب الناس…",
+         fr: "Dis : Il est Allah, Unique… Dis : je cherche protection auprès du Seigneur de l'aube naissante… Dis : je cherche protection auprès du Seigneur des hommes…",
+         es: "Di: Él es Alá, Uno… Di: busco protección en el Señor del alba… Di: busco protección en el Señor de los hombres…" },
+    f: { mr: "सकाळ-संध्याकाळ तीन वेळा वाचल्यास प्रत्येक गोष्टीपासून पुरेशी सुरक्षा मिळते.",
+         ar: "من قالها ثلاثًا صباحًا ومساءً كفته من كل شيء.",
+         fr: "Celui qui les récite trois fois matin et soir, cela lui suffit contre toute chose.",
+         es: "A quien las recite tres veces por la mañana y por la tarde, le bastan contra toda cosa." }
+  },
+
+  "Din ki bhalai maangne ki dua (Asbahna...)": {
+    t: { mr: "दिवसाचे भले मागण्याची दुआ (अस्बह्ना…)", ar: "دعاء أصبحنا وأصبح الملك لله", fr: "Doua du matin (Asbahnâ…)", es: "Dua de la mañana (Asbahna…)" },
+    m: { mr: "आम्ही सकाळी झालो आणि सारे राज्य अल्लाहचे आहे; सर्व स्तुती अल्लाहसाठी. अल्लाहशिवाय कोणी उपास्य नाही, तो एकटाच आहे, त्याला कोणी भागीदार नाही; त्याचेच राज्य व स्तुती आहे आणि तो प्रत्येक गोष्टीवर सामर्थ्यवान आहे. हे माझ्या रबा! मी तुझ्याकडे या दिवसाचे भले आणि त्यानंतरचे भले मागतो, आणि या दिवसाच्या वाईटापासून व त्यानंतरच्या वाईटापासून तुझी पनाह मागतो. हे माझ्या रबा! मी आळशीपणापासून आणि निकामी म्हातारपणापासून तुझी पनाह मागतो; जहन्नमच्या अझाबापासून व कबरच्या अझाबापासून तुझी पनाह मागतो.",
+         ar: "أصبحنا وأصبح الملك لله، والحمد لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، رب أسألك خير ما في هذا اليوم وخير ما بعده، وأعوذ بك من شر ما في هذا اليوم وشر ما بعده، رب أعوذ بك من الكسل وسوء الكبر، رب أعوذ بك من عذاب في النار وعذاب في القبر.",
+         fr: "Nous voici au matin et la royauté appartient à Allah ; louange à Allah. Il n'y a de divinité qu'Allah, unique sans associé ; à Lui la royauté et la louange, et Il est capable de toute chose. Mon Seigneur, je Te demande le bien de ce jour et le bien de ce qui le suit, et je cherche refuge contre le mal de ce jour et le mal de ce qui le suit. Mon Seigneur, je cherche refuge contre la paresse et la décrépitude, contre le châtiment du Feu et le châtiment de la tombe.",
+         es: "Hemos amanecido y el reino es de Alá; alabanza a Alá. No hay divinidad salvo Alá, Único sin asociado; Suyo es el reino y Suya la alabanza, y Él es capaz de todo. Señor mío, Te pido el bien de este día y el bien de lo que le sigue, y busco refugio del mal de este día y del mal de lo que le sigue. Señor mío, busco refugio de la pereza y de la vejez decrépita, y busco refugio del castigo del Fuego y del castigo de la tumba." },
+    f: { mr: "ही सकाळची जामी दुआ आहे; संध्याकाळी ‘अस्बह्ना’ऐवजी ‘अम्सैना’ म्हणतात.",
+         ar: "هذا دعاء الصباح، ويُقال في المساء: «أمسينا وأمسى الملك لله».",
+         fr: "C'est la doua du matin ; le soir on dit « Amsaynâ » au lieu de « Asbahnâ ».",
+         es: "Es la dua de la mañana; por la tarde se dice «Amsayna» en lugar de «Asbahna»." }
+  },
+
+  "Nuqsan se hifazat ki dua (3 martaba)": {
+    t: { mr: "हानीपासून सुरक्षेची दुआ (३ वेळा)", ar: "دعاء الحفظ من الضرر (ثلاثًا)", fr: "Doua de protection contre tout mal (3 fois)", es: "Dua de protección contra todo daño (3 veces)" },
+    m: { mr: "अल्लाहच्या नावाने, ज्याच्या नावासोबत धरती व आकाशातील कोणतीही गोष्ट हानी पोहोचवू शकत नाही; आणि तो ऐकणारा, जाणणारा आहे.",
+         ar: "بسم الله الذي لا يضر مع اسمه شيء في الأرض ولا في السماء وهو السميع العليم.",
+         fr: "Au nom d'Allah, avec le nom duquel rien sur la terre ni dans le ciel ne peut nuire ; Il est l'Audient, l'Omniscient.",
+         es: "En el nombre de Alá, con cuyo nombre nada en la tierra ni en el cielo puede dañar; Él es el Oyente, el Sabio." },
+    f: { mr: "सकाळ-संध्याकाळ ३ वेळा वाचल्यास कोणतीही गोष्ट हानी पोहोचवत नाही.",
+         ar: "من قالها ثلاثًا صباحًا ومساءً لم يضره شيء.",
+         fr: "Celui qui la récite trois fois matin et soir, rien ne lui nuira.",
+         es: "A quien la recite tres veces por la mañana y por la tarde, nada le dañará." }
+  },
+
+  "Afiyat (sehat, salamati) ki jaame dua": {
+    t: { mr: "आरोग्य व सुखशांतीची सर्वांगीण दुआ", ar: "دعاء جامع للعافية", fr: "Doua complète pour la santé et la sécurité", es: "Dua completa por la salud y la seguridad" },
+    m: { mr: "हे अल्लाह! मी तुझ्याकडे दुनिया व आखिरतची आरोग्यता मागतो. हे अल्लाह! मी माझ्या दीन, दुनिया, कुटुंब आणि मालामध्ये क्षमा व आरोग्यता मागतो. हे अल्लाह! माझी लपलेली कमतरता झाकून टाक आणि माझी भीती शांत कर. हे अल्लाह! माझ्या पुढून, मागून, उजवीकडून, डावीकडून आणि वरून माझे रक्षण कर; आणि माझ्या खालून येणाऱ्या आकस्मिक संकटापासून तुझ्या महानतेची पनाह मागतो.",
+         ar: "اللهم إني أسألك العافية في الدنيا والآخرة، اللهم إني أسألك العفو والعافية في ديني ودنياي وأهلي ومالي، اللهم استر عوراتي وآمن روعاتي، اللهم احفظني من بين يدي ومن خلفي وعن يميني وعن شمالي ومن فوقي، وأعوذ بعظمتك أن أُغتال من تحتي.",
+         fr: "Ô Allah, je Te demande la santé ici-bas et dans l'au-delà. Ô Allah, je Te demande le pardon et la santé dans ma religion, ma vie, ma famille et mes biens. Ô Allah, couvre mes défauts et rassure mes craintes. Ô Allah, protège-moi devant, derrière, à ma droite, à ma gauche et au-dessus de moi, et je cherche refuge dans Ta grandeur contre ce qui pourrait me saisir par-dessous.",
+         es: "Oh Alá, Te pido salud en este mundo y en el más allá. Oh Alá, Te pido perdón y salud en mi religión, mi vida, mi familia y mis bienes. Oh Alá, cubre mis defectos y calma mis miedos. Oh Alá, protégeme por delante, por detrás, a mi derecha, a mi izquierda y por encima de mí, y busco refugio en Tu grandeza de lo que pueda sorprenderme por debajo." },
+    f: { mr: "ही सकाळ-संध्याकाळ वाचली जाणारी सर्वांगीण दुआ आहे.",
+         ar: "تُقال صباحًا ومساءً.",
+         fr: "On la récite matin et soir.",
+         es: "Se recita por la mañana y por la tarde." }
+  },
+
+  "Mamlaat sanwarne ki dua (Fatima RA ki wasiyat)": {
+    t: { mr: "कामे सुधारण्याची दुआ (फातिमा र.अ. यांची वसियत)", ar: "دعاء إصلاح الشأن (وصية فاطمة رضي الله عنها)", fr: "Doua pour la bonne marche des affaires (recommandée à Fatima)", es: "Dua para el buen curso de los asuntos (recomendada a Fátima)" },
+    m: { mr: "हे जिवंत! हे सर्वांना सांभाळणाऱ्या! मी तुझ्या दयेच्या माध्यमातून हाक मारतो; माझी सर्व कामे सुधार आणि मला पापणी मिचकावण्याइतकाही माझ्या मनाच्या स्वाधीन करू नकोस.",
+         ar: "يا حي يا قيوم برحمتك أستغيث، أصلح لي شأني كله، ولا تكلني إلى نفسي طرفة عين.",
+         fr: "Ô Vivant, ô Subsistant, par Ta miséricorde j'implore secours : réforme toutes mes affaires, et ne me laisse pas à moi-même l'espace d'un clin d'œil.",
+         es: "Oh Viviente, oh Subsistente, por Tu misericordia imploro auxilio: repara todos mis asuntos y no me dejes a mí mismo ni el tiempo de un parpadeo." },
+    f: { mr: "नबी ﷺ यांनी फातिमा र.अ. यांना ही दुआ सांगितली.",
+         ar: "أوصى بها النبي ﷺ فاطمة رضي الله عنها.",
+         fr: "Le Prophète ﷺ la recommanda à Fatima.",
+         es: "El Profeta ﷺ se la recomendó a Fátima." }
+  },
+
+  "Nafs aur shaitan ke shar se panah (Abu Bakr RA ko sikhayi)": {
+    t: { mr: "स्वतःच्या मनाच्या व शैतानाच्या वाईटापासून पनाह (अबू बक्र र.अ. यांना शिकवली)", ar: "الاستعاذة من شر النفس والشيطان (علّمها أبو بكر)", fr: "Refuge contre le mal de soi-même et de Satan (enseignée à Abu Bakr)", es: "Refugio del mal propio y de Satán (enseñada a Abu Bakr)" },
+    m: { mr: "हे अल्लाह! गुप्त व प्रकट जाणणाऱ्या, आकाशे व धरतीच्या निर्माणकर्त्या, प्रत्येक गोष्टीच्या रबा व मालक! मी साक्ष देतो की तुझ्याशिवाय कोणी उपास्य नाही. मी माझ्या मनाच्या वाईटापासून, शैतान व त्याच्या शिर्कापासून, आणि स्वतःवर वाईट केल्यापासून किंवा ते कोणा मुस्लिमाकडे ओढल्यापासून तुझी पनाह मागतो.",
+         ar: "اللهم عالم الغيب والشهادة، فاطر السماوات والأرض، رب كل شيء ومليكه، أشهد أن لا إله إلا أنت، أعوذ بك من شر نفسي، ومن شر الشيطان وشركه، وأن أقترف على نفسي سوءًا أو أجره إلى مسلم.",
+         fr: "Ô Allah, connaisseur de l'invisible et du visible, créateur des cieux et de la terre, Seigneur et maître de toute chose, je témoigne qu'il n'y a de divinité que Toi. Je cherche refuge contre le mal de moi-même, contre le mal de Satan et de son polythéisme, et contre le fait de commettre un mal ou de l'attirer vers un musulman.",
+         es: "Oh Alá, conocedor de lo oculto y lo visible, creador de los cielos y la tierra, Señor y dueño de toda cosa, doy testimonio de que no hay divinidad sino Tú. Busco refugio del mal de mí mismo, del mal de Satán y de su politeísmo, y de cometer un mal o de arrastrarlo hacia un musulmán." },
+    f: { mr: "नबी ﷺ यांनी अबू बक्र र.अ. यांना ही दुआ शिकवली.",
+         ar: "علّمها النبي ﷺ أبا بكر رضي الله عنه.",
+         fr: "Le Prophète ﷺ l'a enseignée à Abu Bakr.",
+         es: "El Profeta ﷺ se la enseñó a Abu Bakr." }
+  },
+
+  "Iman ki tajdeed ka kalimah": {
+    t: { mr: "ईमानाच्या नूतनीकरणाचा कलिमा", ar: "كلمة تجديد الإيمان", fr: "La formule de renouvellement de la foi", es: "La fórmula de renovación de la fe" },
+    m: { mr: "अल्लाह माझा रब, इस्लाम माझा दीन आणि मुहम्मद ﷺ माझे नबी यावर मी राजी आहे.",
+         ar: "رضيت بالله ربًا، وبالإسلام دينًا، وبمحمد نبيًا.",
+         fr: "Je suis satisfait d'Allah comme Seigneur, de l'islam comme religion et de Muhammad ﷺ comme Prophète.",
+         es: "Estoy complacido con Alá como Señor, con el islam como religión y con Mujámmad ﷺ como Profeta." },
+    f: { mr: "जो हे मनापासून मानेल, त्याच्यासाठी जन्नत अनिवार्य होते.",
+         ar: "من قالها بقلبه وجبت له الجنة.",
+         fr: "Celui qui le dit du cœur, le Paradis lui est assuré.",
+         es: "A quien lo diga con el corazón, el Paraíso le queda asegurado." }
+  },
+
+  "Subhanallah wa bihamdihi (100 martaba)": {
+    t: { mr: "‘सुभानअल्लाह व बिहम्दिहि’ (१०० वेळा)", ar: "سبحان الله وبحمده (مئة مرة)", fr: "« Subhânallâhi wa bihamdih » (100 fois)", es: "«Subhan Alá wa bihamdih» (100 veces)" },
+    m: { mr: "अल्लाह पवित्र आहे आणि मी त्याच्या स्तुतीसह त्याची तस्बीह करतो.",
+         ar: "سبحان الله وبحمده.",
+         fr: "Gloire à Allah et louange à Lui.",
+         es: "Gloria a Alá y alabanza a Él." },
+    f: { mr: "सकाळ-संध्याकाळ १०० वेळा वाचल्यास पापे माफ होतात.",
+         ar: "من قالها مئة مرة صباحًا ومساءً حُطت خطاياه.",
+         fr: "Celui qui la dit cent fois matin et soir, ses péchés sont effacés.",
+         es: "A quien la diga cien veces por la mañana y por la tarde, se le borran sus pecados." }
+  }
+});
+
+if (window.FQDuaLangApply) window.FQDuaLangApply();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Subah-Sham Azkar (11 – 19)
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_DUA_LANG, {
+
+  "La ilaha illallah (100 martaba)": {
+    t: { mr: "‘ला इलाहा इल्लल्लाह’ (१०० वेळा)", ar: "لا إله إلا الله (مئة مرة)", fr: "« Lâ ilâha illallâh » (100 fois)", es: "«La ilaha illa Alá» (100 veces)" },
+    m: { mr: "अल्लाहशिवाय कोणी उपास्य नाही, तो एकटाच आहे, त्याला कोणी भागीदार नाही; त्याचेच राज्य व स्तुती आहे आणि तो प्रत्येक गोष्टीवर सामर्थ्यवान आहे.",
+         ar: "لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.",
+         fr: "Il n'y a de divinité qu'Allah, unique sans associé ; à Lui la royauté et la louange, et Il est capable de toute chose.",
+         es: "No hay divinidad salvo Alá, Único sin asociado; Suyo es el reino y Suya la alabanza, y Él es capaz de todo." },
+    f: { mr: "दिवसात १०० वेळा वाचल्यास दहा गुलाम मुक्त केल्याचा मोबदला, १०० नेक्या, १०० पापे माफ.",
+         ar: "من قالها مئة مرة في اليوم كان له عدل عشر رقاب، ومئة حسنة، ومُحيت عنه مئة سيئة.",
+         fr: "Cent fois par jour : la récompense d'affranchir dix esclaves, cent bonnes actions, et cent péchés effacés.",
+         es: "Cien veces al día: la recompensa de liberar diez esclavos, cien buenas obras y cien pecados borrados." }
+  },
+
+  "Darood Shareef": {
+    t: { mr: "दुरुद शरीफ", ar: "الصلاة على النبي", fr: "Bénédiction sur le Prophète", es: "Bendición sobre el Profeta" },
+    m: { mr: "हे अल्लाह! मुहम्मद ﷺ आणि त्यांच्या कुटुंबावर दया पाठव, जशी तू इब्राहीम आणि त्यांच्या कुटुंबावर पाठवली; निःसंशय तू स्तुतीपात्र व महिमावान आहेस. हे अल्लाह! मुहम्मद ﷺ आणि त्यांच्या कुटुंबावर बरकत पाठव, जशी तू इब्राहीम आणि त्यांच्या कुटुंबावर पाठवली.",
+         ar: "اللهم صل على محمد وعلى آل محمد كما صليت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد، اللهم بارك على محمد وعلى آل محمد كما باركت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد.",
+         fr: "Ô Allah, prie sur Muhammad et sa famille comme Tu as prié sur Ibrahim et sa famille ; Tu es Digne de louange, Glorieux. Bénis Muhammad et sa famille comme Tu as béni Ibrahim et sa famille.",
+         es: "Oh Alá, bendice a Mujámmad y a su familia como bendijiste a Ibrahim y a su familia; Tú eres Digno de alabanza, Glorioso. Colma de bendiciones a Mujámmad y a su familia como colmaste a Ibrahim y a su familia." },
+    f: { mr: "दुरुद वाचणे हे सर्वात उत्तम स्मरणांपैकी एक आहे.",
+         ar: "الصلاة على النبي من أفضل الأذكار.",
+         fr: "La bénédiction sur le Prophète est l'un des meilleurs dhikrs.",
+         es: "La bendición sobre el Profeta es uno de los mejores dhikrs." }
+  },
+
+  "Sayyidul Istighfar": {
+    t: { mr: "सय्यिदुल इस्तिगफार", ar: "سيد الاستغفار", fr: "Sayyid al-istighfâr", es: "Sayyid al-istighfar" },
+    m: { mr: "हे अल्लाह! तू माझा रब आहेस, तुझ्याशिवाय कोणी उपास्य नाही; तू मला निर्माण केले आणि मी तुझा दास आहे. मी तुझ्या वचनावर व करारावर माझ्या ताकदीपुरता आहे. मी केलेल्या वाईटापासून तुझी पनाह मागतो. माझ्यावरच्या तुझ्या कृपेची कबुली देतो आणि माझ्या पापाचीही कबुली देतो; तर मला माफ कर, कारण तुझ्याशिवाय कोणी पापे माफ करत नाही.",
+         ar: "اللهم أنت ربي لا إله إلا أنت، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتك علي، وأبوء بذنبي فاغفر لي، فإنه لا يغفر الذنوب إلا أنت.",
+         fr: "Ô Allah, Tu es mon Seigneur, il n'y a de divinité que Toi ; Tu m'as créé et je suis Ton serviteur. Je reste fidèle à Ton pacte et à Ta promesse autant que je le peux. Je cherche refuge contre le mal que j'ai commis. Je reconnais Ton bienfait sur moi et je reconnais mon péché : pardonne-moi, car nul ne pardonne les péchés sauf Toi.",
+         es: "Oh Alá, Tú eres mi Señor, no hay divinidad sino Tú; Tú me creaste y yo soy Tu siervo. Mantengo Tu pacto y Tu promesa en la medida que puedo. Busco refugio del mal que he cometido. Reconozco Tu favor sobre mí y reconozco mi pecado: perdóname, pues nadie perdona los pecados sino Tú." },
+    f: { mr: "जो दिवसा किंवा रात्री विश्वासाने हे वाचेल आणि त्याच दिवशी/रात्री मरण पावेल, तो जन्नतात जाईल.",
+         ar: "من قالها بالنهار أو الليل موقنًا بها فمات دخل الجنة.",
+         fr: "Celui qui la récite de jour ou de nuit avec conviction et meurt, entre au Paradis.",
+         es: "Quien la recite de día o de noche con convicción y muera, entra en el Paraíso." }
+  },
+
+  "Rasulullah ﷺ ka roz ka istighfar (100 martaba)": {
+    t: { mr: "नबी ﷺ यांचा रोजचा इस्तिगफार (१०० वेळा)", ar: "استغفار النبي ﷺ كل يوم (مئة مرة)", fr: "L'istighfâr quotidien du Prophète ﷺ (100 fois)", es: "El istighfar diario del Profeta ﷺ (100 veces)" },
+    m: { mr: "मी अल्लाहकडे क्षमा मागतो आणि त्याच्याकडे तौबा करतो.",
+         ar: "أستغفر الله وأتوب إليه.",
+         fr: "Je demande pardon à Allah et je reviens à Lui.",
+         es: "Pido perdón a Alá y a Él vuelvo." },
+    f: { mr: "नबी ﷺ रोज १०० वेळा इस्तिगफार करत असत.",
+         ar: "كان النبي ﷺ يستغفر مئة مرة في اليوم.",
+         fr: "Le Prophète ﷺ demandait pardon cent fois par jour.",
+         es: "El Profeta ﷺ pedía perdón cien veces al día." }
+  },
+
+  "Gunahon ki muafi ka mukammal istighfar": {
+    t: { mr: "पापांच्या माफीचा सर्वांगीण इस्तिगफार", ar: "الاستغفار الجامع لمغفرة الذنوب", fr: "L'istighfâr complet pour le pardon des péchés", es: "El istighfar completo para el perdón de los pecados" },
+    m: { mr: "मी महान अल्लाहकडे क्षमा मागतो, ज्याच्याशिवाय कोणी उपास्य नाही, जो जिवंत व सर्वांना टिकवणारा आहे; आणि मी त्याच्याकडे तौबा करतो.",
+         ar: "أستغفر الله العظيم الذي لا إله إلا هو الحي القيوم وأتوب إليه.",
+         fr: "Je demande pardon à Allah le Très Grand, en dehors duquel il n'y a de divinité, le Vivant, le Subsistant, et je reviens à Lui.",
+         es: "Pido perdón a Alá el Inmenso, fuera de Quien no hay divinidad, el Viviente, el Subsistente, y a Él vuelvo." },
+    f: { mr: "जो हे म्हणेल, अल्लाह त्याला माफ करतो — जरी तो रणांगणातून पळाला असेल तरी.",
+         ar: "من قاله غُفر له وإن كان فر من الزحف.",
+         fr: "Celui qui le dit, Allah lui pardonne, même s'il a fui le champ de bataille.",
+         es: "A quien lo diga, Alá le perdona, aunque haya huido del campo de batalla." }
+  },
+
+  "Rabbi ghfir li wa tub 'alayya": {
+    t: { mr: "‘रब्बिगफिर ली व तुब अलय्य’", ar: "رب اغفر لي وتب عليّ", fr: "« Rabbighfir lî wa tub 'alayya »", es: "«Rabbi-ghfir li wa tub 'alayya»" },
+    m: { mr: "हे माझ्या रबा! मला माफ कर आणि माझी तौबा कबूल कर; निःसंशय तूच तौबा कबूल करणारा, परम दयाळू आहेस.",
+         ar: "رب اغفر لي وتب عليّ، إنك أنت التواب الرحيم.",
+         fr: "Mon Seigneur, pardonne-moi et accepte mon repentir ; Tu es Celui qui accepte le repentir, le Très Miséricordieux.",
+         es: "Señor mío, perdóname y acepta mi arrepentimiento; Tú eres Quien acepta el arrepentimiento, el Misericordioso." },
+    f: { mr: "नबी ﷺ एकाच मजलिसीत १०० वेळा हे वाचत असत.",
+         ar: "كان النبي ﷺ يقوله مئة مرة في المجلس الواحد.",
+         fr: "Le Prophète ﷺ le disait cent fois dans une même assemblée.",
+         es: "El Profeta ﷺ lo decía cien veces en una misma reunión." }
+  },
+
+  "Saare gunahon ki muafi ki dua": {
+    t: { mr: "सर्व पापांच्या माफीची दुआ", ar: "دعاء مغفرة الذنوب كلها", fr: "Doua pour le pardon de tous les péchés", es: "Dua por el perdón de todos los pecados" },
+    m: { mr: "हे अल्लाह! माझी सर्व पापे माफ कर — लहान व मोठी, पहिली व शेवटची, उघडी व लपलेली.",
+         ar: "اللهم اغفر لي ذنبي كله، دقه وجله، وأوله وآخره، وعلانيته وسره.",
+         fr: "Ô Allah, pardonne-moi tous mes péchés : petits et grands, premiers et derniers, apparents et cachés.",
+         es: "Oh Alá, perdona todos mis pecados: pequeños y grandes, primeros y últimos, manifiestos y ocultos." },
+    f: { mr: "सजद्यात किंवा कधीही वाचू शकता.",
+         ar: "تُقال في السجود أو في أي وقت.",
+         fr: "On peut la réciter dans le sujud ou à tout moment.",
+         es: "Se puede recitar en el suyud o en cualquier momento." }
+  },
+
+  "Adam AS ki tauba ki dua": {
+    t: { mr: "आदम (अ.स.) यांच्या तौब्याची दुआ", ar: "دعاء توبة آدم عليه السلام", fr: "La doua du repentir d'Adam", es: "La dua del arrepentimiento de Adán" },
+    m: { mr: "हे आमच्या रबा! आम्ही आमच्या जिवांवर अन्याय केला; आणि जर तू आम्हाला माफ केले नाहीस व आमच्यावर दया केली नाहीस, तर आम्ही निश्चितच तोटा सहन करणाऱ्यांमध्ये होऊ.",
+         ar: "ربنا ظلمنا أنفسنا وإن لم تغفر لنا وترحمنا لنكونن من الخاسرين.",
+         fr: "Notre Seigneur, nous nous sommes fait du tort ; si Tu ne nous pardonnes pas et ne nous fais pas miséricorde, nous serons du nombre des perdants.",
+         es: "Señor nuestro, nos hemos hecho injusticia; si no nos perdonas y tienes misericordia de nosotros, seremos de los perdedores." },
+    f: { mr: "ही हजरत आदम व हव्वा (अ.स.) यांच्या तौब्याची दुआ आहे.",
+         ar: "هي دعاء توبة آدم وحواء عليهما السلام.",
+         fr: "C'est la doua du repentir d'Adam et Ève.",
+         es: "Es la dua del arrepentimiento de Adán y Eva." }
+  },
+
+  "Maafi (Afw) ki dua": {
+    t: { mr: "माफी (अफव) ची दुआ", ar: "دعاء العفو", fr: "Doua du pardon (al-'afw)", es: "Dua del perdón (al-'afw)" },
+    m: { mr: "हे अल्लाह! निःसंशय तू मोठा माफ करणारा आहेस, माफी आवडते; तर मला माफ कर.",
+         ar: "اللهم إنك عفو تحب العفو فاعف عني.",
+         fr: "Ô Allah, Tu es Pardonneur et Tu aimes le pardon : pardonne-moi.",
+         es: "Oh Alá, Tú eres Indulgente y amas el perdón: perdóname." },
+    f: { mr: "विशेषतः रमजानच्या शेवटच्या रात्रींमध्ये वाचा.",
+         ar: "تُقال خاصة في العشر الأواخر من رمضان.",
+         fr: "À réciter surtout les dernières nuits de Ramadan.",
+         es: "Recitarla sobre todo en las últimas noches de Ramadán." }
+  }
+});
+
+if (window.FQDuaLangApply) window.FQDuaLangApply();
