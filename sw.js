@@ -83,7 +83,10 @@
 // v22: Qari ki awaaz har Quran ke hisse par (multi-ayat, teeno Qul, Ayatul Kursi) + dua mein Favourites — cache badalna zaroori hai
 // (v21: naya login (pura naam + multi-user profiles) aur certificate naam fix)
 // NOTE: sirf Cache Storage badalta hai, users ki history (localStorage) ko koi asar nahi
-const CACHE_NAME = 'quran-ustad-auto-v96';
+// v97: AAJ KI AYAT + SUNNAT — ab 60 ayat aur 60 sunnat (pehle 27/26). Naye 34 ayat (Juz Amma aur mashhoor
+//      ayaat) aur naye 34 sunnat sirf sahih/hasan riwayatein: Bukhari, Muslim, ya Tirmidhi/Abu Dawud jinhein
+//      Albani (rah) ne sahih/hasan kaha. Sunne/share ka wohi purana tareeqa hai.
+const CACHE_NAME = 'quran-ustad-auto-v97';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
