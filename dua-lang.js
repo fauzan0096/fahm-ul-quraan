@@ -226,3 +226,369 @@ window.FQ_DUA_LANG = {
     else window.addEventListener('load', apply);
   }
 })();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Namaz ki duaein (16 – 30)
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_DUA_LANG, {
+
+  "Ruku/Sajde mein Subbuhun Quddus": {
+    t: { mr: "रुकू व सजद्यात ‘सुब्बूहुन कुद्दूस’", ar: "سبوح قدوس في الركوع والسجود", fr: "« Subbuhun Quddus » dans le ruku' et le sujud", es: "«Subbuhun Quddus» en el ruku y el suyud" },
+    m: { mr: "अत्यंत पवित्र, अत्यंत पावन, देवदूतांचा आणि जिब्राईल (रूह) चा रब.",
+         ar: "سبوح قدوس، رب الملائكة والروح.",
+         fr: "Très Glorifié, Très Saint, Seigneur des anges et de l'Esprit.",
+         es: "Muy Glorificado, Muy Santo, Señor de los ángeles y del Espíritu." },
+    f: { mr: "नबी ﷺ रुकू आणि सजद्यात हेही म्हणत असत.",
+         ar: "كان النبي ﷺ يقوله في الركوع والسجود.",
+         fr: "Le Prophète ﷺ le disait dans le ruku' et le sujud.",
+         es: "El Profeta ﷺ lo decía en el ruku y el suyud." }
+  },
+
+  "Ruku se uthte hue (Qawmah)": {
+    t: { mr: "रुकूतून उठताना (कौमा)", ar: "الرفع من الركوع (القومة)", fr: "En se relevant du ruku' (qawmah)", es: "Al levantarse del ruku (qawmah)" },
+    m: { mr: "ज्याने त्याची स्तुती केली, अल्लाहने ती ऐकली. हे आमच्या रबा! तुझीच स्तुती आहे — खूप, पवित्र आणि बरकतीची स्तुती.",
+         ar: "سمع الله لمن حمده، ربنا ولك الحمد حمدًا كثيرًا طيبًا مباركًا فيه.",
+         fr: "Allah entend celui qui Le loue. Notre Seigneur, à Toi la louange, louange abondante, pure et bénie.",
+         es: "Alá escucha a quien Le alaba. Señor nuestro, a Ti la alabanza, alabanza abundante, pura y bendita." },
+    f: { mr: "एका सहाबीने हे वाचले तेव्हा नबी ﷺ म्हणाले की ३० पेक्षा जास्त देवदूत ते लिहिण्यासाठी घाई करत होते.",
+         ar: "قالها صحابي فقال النبي ﷺ: «رأيت ثلاثين ملكًا يبتدرونها أيهم يكتبها».",
+         fr: "Un compagnon la récita ; le Prophète ﷺ dit que plus de trente anges se hâtaient de l'écrire.",
+         es: "Un compañero la recitó y el Profeta ﷺ dijo que más de treinta ángeles se apresuraban a escribirla." }
+  },
+
+  "Sajde ki tasbeeh": {
+    t: { mr: "सजद्याची तस्बीह", ar: "تسبيح السجود", fr: "Tasbih du sujud", es: "Tasbih del suyud" },
+    m: { mr: "माझा रब पवित्र आहे, सर्वांत उंच.",
+         ar: "سبحان ربي الأعلى.",
+         fr: "Gloire à mon Seigneur, le Très-Haut.",
+         es: "Gloria a mi Señor, el Altísimo." },
+    f: { mr: "सजद्यात वाचली जाते; तीन वेळा वाचणे उत्तम.",
+         ar: "تُقال في السجود، والأفضل ثلاثًا.",
+         fr: "On la récite dans le sujud, trois fois de préférence.",
+         es: "Se recita en el suyud, preferiblemente tres veces." }
+  },
+
+  "Sajde ki dua (Ali RA)": {
+    t: { mr: "सजद्याची दुआ (अली र.अ.)", ar: "دعاء السجود (عن علي رضي الله عنه)", fr: "Doua du sujud (Ali)", es: "Dua del suyud (Ali)" },
+    m: { mr: "हे अल्लाह! मी तुझ्यासाठी सजदा केला, तुझ्यावर ईमान राखले आणि तुझा आज्ञाधारक झालो. माझा चेहरा त्या सत्तेस सजदा करतो जिने त्याला निर्माण केले, आकार दिला आणि त्याचे कान व डोळे उघडले. अल्लाह बरकतवाला आहे, सर्वोत्तम निर्माणकर्ता.",
+         ar: "اللهم لك سجدت وبك آمنت ولك أسلمت، سجد وجهي للذي خلقه وصوره وشق سمعه وبصره، تبارك الله أحسن الخالقين.",
+         fr: "Ô Allah, c'est pour Toi que je me suis prosterné, en Toi que j'ai cru et à Toi que je me suis soumis. Mon visage s'est prosterné devant Celui qui l'a créé, lui a donné forme, et lui a ouvert l'ouïe et la vue. Béni soit Allah, le meilleur des créateurs.",
+         es: "Oh Alá, por Ti me he postrado, en Ti he creído y a Ti me he sometido. Mi rostro se postró ante Quien lo creó, le dio forma y le abrió el oído y la vista. Bendito sea Alá, el mejor de los creadores." },
+    f: { mr: "नबी ﷺ सजद्यात ही दुआ वाचत असत.",
+         ar: "كان النبي ﷺ يقولها في السجود.",
+         fr: "Le Prophète ﷺ la récitait dans le sujud.",
+         es: "El Profeta ﷺ la recitaba en el suyud." }
+  },
+
+  "Sajde mein saare gunahon ki muafi": {
+    t: { mr: "सजद्यात सर्व पापांची माफी", ar: "سؤال مغفرة الذنوب كلها في السجود", fr: "Demander le pardon de tous les péchés dans le sujud", es: "Pedir perdón de todos los pecados en el suyud" },
+    m: { mr: "हे अल्लाह! माझी सर्व पापे माफ कर — लहान व मोठी, पहिली व शेवटची, उघडी व लपलेली.",
+         ar: "اللهم اغفر لي ذنبي كله، دقه وجله، وأوله وآخره، وعلانيته وسره.",
+         fr: "Ô Allah, pardonne-moi tous mes péchés : les petits et les grands, les premiers et les derniers, les apparents et les cachés.",
+         es: "Oh Alá, perdona todos mis pecados: los pequeños y los grandes, los primeros y los últimos, los manifiestos y los ocultos." },
+    f: { mr: "सजदा ही अशी अवस्था आहे जेव्हा बंदा आपल्या रबाच्या सर्वात जवळ असतो; त्यात दुआ जास्त करा.",
+         ar: "السجود أقرب ما يكون العبد من ربه، فأكثروا فيه الدعاء.",
+         fr: "Le sujud est le moment où le serviteur est le plus proche de son Seigneur : multipliez-y les invocations.",
+         es: "El suyud es el momento en que el siervo está más cerca de su Señor: multiplicad las súplicas en él." }
+  },
+
+  "Do sajdon ke darmiyan (Jalsa)": {
+    t: { mr: "दोन सजद्यांमध्ये (जल्सा)", ar: "بين السجدتين (الجلسة)", fr: "Entre les deux prosternations (jalsah)", es: "Entre las dos postraciones (yalsa)" },
+    m: { mr: "हे माझ्या रबा! मला माफ कर, हे माझ्या रबा! मला माफ कर.",
+         ar: "رب اغفر لي، رب اغفر لي.",
+         fr: "Mon Seigneur, pardonne-moi ; mon Seigneur, pardonne-moi.",
+         es: "Señor mío, perdóname; Señor mío, perdóname." },
+    f: { mr: "दोन सजद्यांमध्ये ही दुआ वाचली जाते.",
+         ar: "تُقال بين السجدتين.",
+         fr: "On la récite entre les deux prosternations.",
+         es: "Se recita entre las dos postraciones." }
+  },
+
+  "Do sajdon ke darmiyan mukammal dua": {
+    t: { mr: "दोन सजद्यांमधील पूर्ण दुआ", ar: "الدعاء الكامل بين السجدتين", fr: "Doua complète entre les deux prosternations", es: "Dua completa entre las dos postraciones" },
+    m: { mr: "हे अल्लाह! मला माफ कर, माझ्यावर दया कर, माझी अवस्था सुधार, मला मार्गदर्शन दे आणि मला रोजी दे.",
+         ar: "اللهم اغفر لي، وارحمني، واجبرني، واهدني، وارزقني.",
+         fr: "Ô Allah, pardonne-moi, fais-moi miséricorde, remets-moi debout, guide-moi et accorde-moi la subsistance.",
+         es: "Oh Alá, perdóname, ten misericordia de mí, restáuranos, guíame y concédeme el sustento." },
+    f: { mr: "नबी ﷺ दोन सजद्यांमध्ये ही दुआ वाचत असत.",
+         ar: "كان النبي ﷺ يقولها بين السجدتين.",
+         fr: "Le Prophète ﷺ la récitait entre les deux prosternations.",
+         es: "El Profeta ﷺ la recitaba entre las dos postraciones." }
+  },
+
+  "Tashahhud (At-Tahiyyat)": {
+    t: { mr: "तशह्हुद (अत-तहिय्यात)", ar: "التشهد (التحيات)", fr: "Tashahhud (At-Tahiyyat)", es: "Tashahhud (At-Tahiyyat)" },
+    m: { mr: "सर्व वाचिक, शारीरिक व आर्थिक उपासना अल्लाहसाठी आहे. हे नबी ﷺ! तुमच्यावर शांती, अल्लाहची दया व बरकती असो. आमच्यावर आणि अल्लाहच्या नेक बंद्यांवरही शांती असो. मी साक्ष देतो की अल्लाहशिवाय कोणी उपास्य नाही आणि मी साक्ष देतो की मुहम्मद ﷺ त्याचे दास व रसूल आहेत.",
+         ar: "التحيات لله والصلوات والطيبات، السلام عليك أيها النبي ورحمة الله وبركاته، السلام علينا وعلى عباد الله الصالحين، أشهد أن لا إله إلا الله وأشهد أن محمدًا عبده ورسوله.",
+         fr: "Les salutations, les prières et les bonnes choses sont pour Allah. Paix sur toi, ô Prophète, ainsi que la miséricorde d'Allah et Ses bénédictions. Paix sur nous et sur les serviteurs vertueux d'Allah. Je témoigne qu'il n'y a de divinité qu'Allah, et je témoigne que Muhammad est Son serviteur et Messager.",
+         es: "Las salutaciones, las oraciones y las cosas buenas son para Alá. La paz sea contigo, oh Profeta, y la misericordia de Alá y Sus bendiciones. La paz sea con nosotros y con los siervos virtuosos de Alá. Doy testimonio de que no hay divinidad salvo Alá y de que Mujámmad es Su siervo y Mensajero." },
+    f: { mr: "ही नमाजच्या कयादाची दुआ आहे; त्यानंतर दुरुद वाचला जातो.",
+         ar: "هي دعاء القعدة في الصلاة، ويُقرأ بعدها الصلاة على النبي.",
+         fr: "C'est la doua de la station assise dans la prière ; on récite ensuite la bénédiction sur le Prophète.",
+         es: "Es la dua de la posición sentada en la oración; después se recita la bendición sobre el Profeta." }
+  },
+
+  "Darood Ibrahim": {
+    t: { mr: "दुरुदे इब्राहीम", ar: "الصلاة الإبراهيمية", fr: "Bénédiction d'Ibrahim", es: "Bendición de Ibrahim" },
+    m: { mr: "हे अल्लाह! मुहम्मद ﷺ आणि त्यांच्या कुटुंबावर दया पाठव, जशी तू इब्राहीम आणि त्यांच्या कुटुंबावर पाठवली; निःसंशय तू स्तुतीपात्र व महिमावान आहेस. हे अल्लाह! मुहम्मद ﷺ आणि त्यांच्या कुटुंबावर बरकत पाठव, जशी तू इब्राहीम आणि त्यांच्या कुटुंबावर पाठवली; निःसंशय तू स्तुतीपात्र व महिमावान आहेस.",
+         ar: "اللهم صل على محمد وعلى آل محمد كما صليت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد، اللهم بارك على محمد وعلى آل محمد كما باركت على إبراهيم وعلى آل إبراهيم إنك حميد مجيد.",
+         fr: "Ô Allah, prie sur Muhammad et sa famille comme Tu as prié sur Ibrahim et sa famille ; Tu es Digne de louange, Glorieux. Ô Allah, bénis Muhammad et sa famille comme Tu as béni Ibrahim et sa famille ; Tu es Digne de louange, Glorieux.",
+         es: "Oh Alá, bendice a Mujámmad y a su familia como bendijiste a Ibrahim y a su familia; Tú eres Digno de alabanza, Glorioso. Oh Alá, colma de bendiciones a Mujámmad y a su familia como colmaste a Ibrahim y a su familia; Tú eres Digno de alabanza, Glorioso." },
+    f: { mr: "शेवटच्या कयाद्यात तशह्हुदनंतर दुरुद वाचणे ही नबी ﷺ यांची शिकवण आहे.",
+         ar: "الصلاة على النبي بعد التشهد في القعدة الأخيرة من تعليم النبي ﷺ.",
+         fr: "Réciter la bénédiction après le tashahhud dans la dernière station assise fait partie de l'enseignement du Prophète ﷺ.",
+         es: "Recitar la bendición tras el tashahhud en la última posición sentada forma parte de la enseñanza del Profeta ﷺ." }
+  },
+
+  "Jahannam, qabr aur dajjal se panah": {
+    t: { mr: "जहन्नम, कबर आणि दज्जालपासून पनाह", ar: "الاستعاذة من عذاب جهنم والقبر والدجال", fr: "Refuge contre l'Enfer, la tombe et le Dajjal", es: "Refugio del Infierno, la tumba y el Dayyal" },
+    m: { mr: "हे अल्लाह! मी तुझी पनाह मागतो जहन्नमच्या अझाबापासून, कबरच्या अझाबापासून, जगण्या-मरण्याच्या फितन्यापासून आणि मसीह दज्जालच्या फितन्याच्या वाईटापासून.",
+         ar: "اللهم إني أعوذ بك من عذاب جهنم، ومن عذاب القبر، ومن فتنة المحيا والممات، ومن شر فتنة المسيح الدجال.",
+         fr: "Ô Allah, je cherche refuge auprès de Toi contre le châtiment de l'Enfer, contre le châtiment de la tombe, contre l'épreuve de la vie et de la mort, et contre le mal de l'épreuve du Faux Messie.",
+         es: "Oh Alá, busco refugio en Ti del castigo del Infierno, del castigo de la tumba, de la prueba de la vida y de la muerte, y del mal de la prueba del Falso Mesías." },
+    f: { mr: "शेवटच्या तशह्हुदनंतर ही दुआ वाचली जाते.",
+         ar: "تُقال بعد التشهد الأخير.",
+         fr: "On la récite après le dernier tashahhud.",
+         es: "Se recita después del último tashahhud." }
+  },
+
+  "Salam se pehle (Abu Bakr RA ki dua)": {
+    t: { mr: "सलामापूर्वी (अबू बक्र र.अ. यांची दुआ)", ar: "دعاء قبل السلام (عن أبي بكر رضي الله عنه)", fr: "Avant le salam (doua d'Abu Bakr)", es: "Antes del salam (dua de Abu Bakr)" },
+    m: { mr: "हे अल्लाह! मी माझ्या जिवावर खूप अन्याय केला, आणि पापे तुझ्याशिवाय कोणी माफ करत नाही; तर तुझ्याकडून मला क्षमा दे आणि माझ्यावर दया कर; निःसंशय तूच क्षमाशील व परम दयाळू आहेस.",
+         ar: "اللهم إني ظلمت نفسي ظلمًا كثيرًا، ولا يغفر الذنوب إلا أنت، فاغفر لي مغفرة من عندك وارحمني، إنك أنت الغفور الرحيم.",
+         fr: "Ô Allah, je me suis fait beaucoup de tort, et nul ne pardonne les péchés sauf Toi : accorde-moi un pardon de Ta part et fais-moi miséricorde ; Tu es le Pardonneur, le Très Miséricordieux.",
+         es: "Oh Alá, me he hecho mucho daño, y nadie perdona los pecados sino Tú: concédeme un perdón de Tu parte y ten misericordia de mí; Tú eres el Perdonador, el Misericordioso." },
+    f: { mr: "नबी ﷺ यांनी हजरत अबू बक्र र.अ. यांना ही दुआ शिकवली होती.",
+         ar: "علّمها النبي ﷺ أبا بكر رضي الله عنه.",
+         fr: "Le Prophète ﷺ l'a enseignée à Abu Bakr.",
+         es: "El Profeta ﷺ se la enseñó a Abu Bakr." }
+  },
+
+  "Namaz khatam karne waqt salam": {
+    t: { mr: "नमाज संपवताना सलाम", ar: "السلام عند ختام الصلاة", fr: "Le salam à la fin de la prière", es: "El salam al terminar la oración" },
+    m: { mr: "तुमच्यावर शांती आणि अल्लाहची दया.",
+         ar: "السلام عليكم ورحمة الله.",
+         fr: "Que la paix soit sur vous et la miséricorde d'Allah.",
+         es: "La paz sea con vosotros y la misericordia de Alá." },
+    f: { mr: "नमाज संपवताना प्रथम उजवीकडे नंतर डावीकडे सलाम फिरवला जातो.",
+         ar: "يُسلّم عن اليمين ثم عن الشمال عند ختام الصلاة.",
+         fr: "On salue d'abord à droite puis à gauche à la fin de la prière.",
+         es: "Se saluda primero a la derecha y luego a la izquierda al terminar la oración." }
+  },
+
+  "Salam ke baad takbir": {
+    t: { mr: "सलामानंतर तकबीर", ar: "التكبير بعد السلام", fr: "Le takbir après le salam", es: "El takbir tras el salam" },
+    m: { mr: "अल्लाह सर्वांत मोठा आहे.",
+         ar: "الله أكبر.",
+         fr: "Allah est le plus Grand.",
+         es: "Alá es el más Grande." },
+    f: { mr: "नमाज संपल्याची घोषणा.",
+         ar: "إعلان ختام الصلاة.",
+         fr: "L'annonce de la fin de la prière.",
+         es: "El anuncio del fin de la oración." }
+  },
+
+  "Salam ke baad Istighfar aur Salamati": {
+    t: { mr: "सलामानंतर इस्तिगफार आणि शांती", ar: "الاستغفار والسلام بعد الصلاة", fr: "Istighfar et salam après la prière", es: "Istighfar y salam tras la oración" },
+    m: { mr: "मी अल्लाहकडे क्षमा मागतो (तीन वेळा). हे अल्लाह! तू शांती देणारा आहेस आणि तुझ्याकडूनच शांती येते; तू बरकतवाला आहेस, हे महिमा व सन्मानाच्या स्वामी.",
+         ar: "أستغفر الله (ثلاثًا). اللهم أنت السلام ومنك السلام، تباركت يا ذا الجلال والإكرام.",
+         fr: "Je demande pardon à Allah (trois fois). Ô Allah, Tu es la Paix et de Toi vient la paix ; béni sois-Tu, ô Maître de majesté et de générosité.",
+         es: "Pido perdón a Alá (tres veces). Oh Alá, Tú eres la Paz y de Ti viene la paz; bendito seas, oh Dueño de majestad y generosidad." },
+    f: { mr: "नमाजनंतर हे अजकार वाचणे सुन्नत आहे.",
+         ar: "من سنن ما بعد الصلاة.",
+         fr: "Réciter ces invocations après la prière est une sunna.",
+         es: "Recitar estas invocaciones tras la oración es sunna." }
+  },
+
+  "Tauheed aur Allah ke ata karne ka iqrar": {
+    t: { mr: "तौहीद आणि अल्लाहच्या देण्याची कबुली", ar: "التوحيد والإقرار بعطاء الله", fr: "Unicité et reconnaissance du don d'Allah", es: "Unidad y reconocimiento del don de Alá" },
+    m: { mr: "अल्लाहशिवाय कोणी उपास्य नाही, तो एकटाच आहे, त्याला कोणी भागीदार नाही; त्याचेच राज्य आहे, त्याचीच स्तुती आहे आणि तो प्रत्येक गोष्टीवर सामर्थ्यवान आहे. हे अल्लाह! तू जे देतेस ते कोणी रोखू शकत नाही आणि तू जे रोखतेस ते कोणी देऊ शकत नाही; आणि कोणा मोठ्या व्यक्तीची मोठेपणा तुझ्यासमोर उपयोगी पडत नाही.",
+         ar: "لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، اللهم لا مانع لما أعطيت، ولا معطي لما منعت، ولا ينفع ذا الجد منك الجد.",
+         fr: "Il n'y a de divinité qu'Allah, unique sans associé ; à Lui la royauté et la louange, et Il est capable de toute chose. Ô Allah, nul ne peut retenir ce que Tu donnes, ni donner ce que Tu retiens ; et la grandeur d'un grand ne lui sert à rien devant Toi.",
+         es: "No hay divinidad salvo Alá, Único sin asociado; Suyo es el reino y Suya la alabanza, y Él es capaz de todo. Oh Alá, nadie puede retener lo que Tú das ni dar lo que Tú retienes; y la grandeza de un grande de nada le sirve ante Ti." },
+    f: { mr: "प्रत्येक फर्ज नमाजनंतर हे वाचणे मसनून आहे.",
+         ar: "مسنون بعد كل صلاة مفروضة.",
+         fr: "Il est recommandé de le réciter après chaque prière obligatoire.",
+         es: "Es recomendable recitarlo tras cada oración obligatoria." }
+  }
+});
+
+if (window.FQDuaLangApply) window.FQDuaLangApply();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Namaz ki duaein (31 – 45)
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_DUA_LANG, {
+
+  "Tasbeehat: 33+33+33 aur kalima-e-tauheed": {
+    t: { mr: "तस्बीहात: ३३+३३+३३ आणि कलिमा-ए-तौहीद", ar: "التسبيحات: ٣٣+٣٣+٣٣ وكلمة التوحيد", fr: "Tasbihât : 33+33+33 et le kalima du tawhid", es: "Tasbihat: 33+33+33 y la kalima del tawhid" },
+    m: { mr: "अल्लाह पवित्र आहे (३३ वेळा), सर्व स्तुती अल्लाहसाठी आहे (३३ वेळा), अल्लाह सर्वांत मोठा आहे (३३ वेळा). नंतर (शंभर पूर्ण करण्यासाठी): अल्लाहशिवाय कोणी उपास्य नाही, तो एकटाच आहे, त्याला कोणी भागीदार नाही; त्याचेच राज्य आहे, त्याचीच स्तुती आहे आणि तो प्रत्येक गोष्टीवर सामर्थ्यवान आहे.",
+         ar: "سبحان الله (٣٣)، الحمد لله (٣٣)، الله أكبر (٣٣). ثم: لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.",
+         fr: "Gloire à Allah (33), louange à Allah (33), Allah est le plus Grand (33). Puis : il n'y a de divinité qu'Allah, unique sans associé ; à Lui la royauté et la louange, et Il est capable de toute chose.",
+         es: "Gloria a Alá (33), alabanza a Alá (33), Alá es el más Grande (33). Luego: no hay divinidad salvo Alá, Único sin asociado; Suyo es el reino y Suya la alabanza, y Él es capaz de todo." },
+    f: { mr: "नमाजनंतर हे तस्बीहात पापांची माफी मिळवून देतात.",
+         ar: "هذه التسبيحات بعد الصلاة سبب لمغفرة الذنوب.",
+         fr: "Ces tasbihs après la prière sont une cause de pardon des péchés.",
+         es: "Estos tasbihs tras la oración son causa de perdón de los pecados." }
+  },
+
+  "Mu'aqqibat: 33+33+34": {
+    t: { mr: "मुअक्किबात: ३३+३३+३४", ar: "المعقبات: ٣٣+٣٣+٣٤", fr: "Mu'aqqibât : 33+33+34", es: "Mu'aqqibat: 33+33+34" },
+    m: { mr: "अल्लाह पवित्र आहे (३३), सर्व स्तुती अल्लाहसाठी आहे (३३), अल्लाह सर्वांत मोठा आहे (३४).",
+         ar: "سبحان الله (٣٣)، الحمد لله (٣٣)، الله أكبر (٣٤).",
+         fr: "Gloire à Allah (33), louange à Allah (33), Allah est le plus Grand (34).",
+         es: "Gloria a Alá (33), alabanza a Alá (33), Alá es el más Grande (34)." },
+    f: { mr: "फर्ज नमाजनंतर हे तस्बीहात वाचणे फार मोठा मोबदला आहे.",
+         ar: "لهذه التسبيحات بعد الفريضة أجر عظيم.",
+         fr: "Réciter ces tasbihs après la prière obligatoire vaut une immense récompense.",
+         es: "Recitar estos tasbihs tras la oración obligatoria tiene una recompensa inmensa." }
+  },
+
+  "Ayatul Kursi (Har namaz ke baad)": {
+    t: { mr: "आयतुल कुर्सी (प्रत्येक नमाजनंतर)", ar: "آية الكرسي بعد كل صلاة", fr: "Ayat al-Kursi (après chaque prière)", es: "Ayat al-Kursi (tras cada oración)" },
+    m: { mr: "अल्लाह, त्याच्याशिवाय कोणी उपास्य नाही; तो सदैव जिवंत, सर्वांना टिकवणारा आहे. त्याला झोप किंवा डुलकी येत नाही. आकाशात व धरतीवर जे काही आहे ते त्याचेच आहे. त्याच्या परवानगीशिवाय त्याच्याजवळ शिफारस कोण करू शकतो? त्यांच्या पुढे व मागे जे आहे ते तो जाणतो... त्याची कुर्सी आकाश व धरती व्यापते आणि त्यांचे रक्षण त्याला थकवत नाही; तोच उच्च व महान आहे.",
+         ar: "الله لا إله إلا هو الحي القيوم، لا تأخذه سنة ولا نوم، له ما في السماوات وما في الأرض، من ذا الذي يشفع عنده إلا بإذنه، يعلم ما بين أيديهم وما خلفهم، ولا يحيطون بشيء من علمه إلا بما شاء، وسع كرسيه السماوات والأرض، ولا يئوده حفظهما، وهو العلي العظيم.",
+         fr: "Allah, il n'y a de divinité que Lui, le Vivant, le Subsistant. Ni somnolence ni sommeil ne Le saisissent. À Lui appartient tout ce qui est dans les cieux et sur la terre. Qui peut intercéder auprès de Lui sans Sa permission ? Il sait ce qui est devant eux et derrière eux… Son Trône englobe les cieux et la terre, et leur garde ne Lui pèse point. Il est le Très-Haut, le Très Grand.",
+         es: "Alá, no hay divinidad sino Él, el Viviente, el Subsistente. Ni somnolencia ni sueño Le alcanzan. Suyo es cuanto está en los cielos y en la tierra. ¿Quién puede interceder ante Él sin Su permiso? Sabe lo que está ante ellos y detrás de ellos… Su Trono abarca los cielos y la tierra, y su custodia no Le pesa. Él es el Altísimo, el Inmenso." },
+    f: { mr: "जो प्रत्येक फर्ज नमाजनंतर हे वाचेल, त्याला जन्नतमध्ये प्रवेश करण्यापासून केवळ मृत्यूच रोखतो.",
+         ar: "من قرأها دبر كل صلاة لم يمنعه من دخول الجنة إلا الموت.",
+         fr: "Celui qui la récite après chaque prière obligatoire, seul la mort le sépare du Paradis.",
+         es: "A quien la recite tras cada oración obligatoria, solo la muerte le separa del Paraíso." }
+  },
+
+  "Mu'awwidhat (Teeno Qul)": {
+    t: { mr: "मुअव्विझात (तीनही कुल)", ar: "المعوذات (الثلاث قل)", fr: "Al-Mu'awwidhât (les trois Qoul)", es: "Al-Mu'awwidhat (las tres Qul)" },
+    m: { mr: "सांग: तो अल्लाह एक आहे; अल्लाह निरपेक्ष आहे; त्याला संतती नाही आणि तो कोणापासून जन्मला नाही; आणि त्याच्यासारखा कोणी नाही. सांग: मी पहाटेच्या रबाची पनाह मागतो... सांग: मी लोकांच्या रबाची पनाह मागतो, लोकांचा राजा, लोकांचा उपास्य...",
+         ar: "قل هو الله أحد، الله الصمد، لم يلد ولم يولد، ولم يكن له كفوًا أحد. قل أعوذ برب الفلق… قل أعوذ برب الناس، ملك الناس، إله الناس…",
+         fr: "Dis : Il est Allah, Unique. Allah, le Seul à être imploré. Il n'a pas engendré et n'a pas été engendré, et nul n'est égal à Lui. Dis : je cherche protection auprès du Seigneur de l'aube naissante… Dis : je cherche protection auprès du Seigneur des hommes, le Roi des hommes, le Dieu des hommes…",
+         es: "Di: Él es Alá, Uno. Alá, el Absoluto. No ha engendrado ni ha sido engendrado, y no hay nadie igual a Él. Di: busco protección en el Señor del alba… Di: busco protección en el Señor de los hombres, el Rey de los hombres, el Dios de los hombres…" },
+    f: { mr: "ही तीन सूरे सकाळ-संध्याकाळ आणि सुतण्यापूर्वी तीन वेळा वाचणे सुन्नत आहे.",
+         ar: "تُقرأ هذه السور الثلاث ثلاثًا صباحًا ومساءً وعند النوم.",
+         fr: "Ces trois sourates se récitent trois fois matin et soir, et avant de dormir.",
+         es: "Estas tres suras se recitan tres veces por la mañana y por la noche, y antes de dormir." }
+  },
+
+  "Zikr, Shukr aur Ibadat ki madad": {
+    t: { mr: "झिक्र, शुक्र आणि उपासनेसाठी मदत", ar: "العون على الذكر والشكر والعبادة", fr: "Aide pour le dhikr, la gratitude et l'adoration", es: "Ayuda para el dhikr, la gratitud y la adoración" },
+    m: { mr: "हे अल्लाह! मला मदत कर की मी तुझे स्मरण करू, तुझे आभार मानू आणि सर्वोत्तम पद्धतीने तुझी उपासना करू.",
+         ar: "اللهم أعني على ذكرك وشكرك وحسن عبادتك.",
+         fr: "Ô Allah, aide-moi à T'évoquer, à Te remercier et à T'adorer de la meilleure façon.",
+         es: "Oh Alá, ayúdame a recordarte, a agradecerte y a adorarte de la mejor manera." },
+    f: { mr: "नबी ﷺ यांनी मुआझ र.अ. यांना ही दुआ प्रत्येक नमाजनंतर कधीही न सोडण्याची वसियत केली.",
+         ar: "أوصى النبي ﷺ معاذًا رضي الله عنه ألا يدع هذه الدعاء دبر كل صلاة.",
+         fr: "Le Prophète ﷺ recommanda à Mu'adh de ne jamais délaisser cette doua après chaque prière.",
+         es: "El Profeta ﷺ recomendó a Mu'adh no dejar nunca esta dua tras cada oración." }
+  },
+
+  "Qayamat ke azab se panah": {
+    t: { mr: "कयामतच्या अझाबापासून पनाह", ar: "الاستعاذة من عذاب يوم القيامة", fr: "Refuge contre le châtiment du Jour du Jugement", es: "Refugio del castigo del Día del Juicio" },
+    m: { mr: "हे माझ्या रबा! ज्या दिवशी तू आपल्या बंद्यांना उठवशील, त्या दिवशी मला तुझ्या अझाबापासून वाचव.",
+         ar: "رب قني عذابك يوم تبعث عبادك.",
+         fr: "Mon Seigneur, préserve-moi de Ton châtiment le jour où Tu ressusciteras Tes serviteurs.",
+         es: "Señor mío, protégeme de Tu castigo el día en que resucites a Tus siervos." },
+    f: { mr: "नबी ﷺ सलामानंतर ही दुआ वाचत असत.",
+         ar: "كان النبي ﷺ يقولها بعد السلام.",
+         fr: "Le Prophète ﷺ la récitait après le salam.",
+         es: "El Profeta ﷺ la recitaba tras el salam." }
+  },
+
+  "Namaz ke baad in cheezon se panah": {
+    t: { mr: "नमाजनंतर या गोष्टींपासून पनाह", ar: "الاستعاذة بعد الصلاة من أمور", fr: "Refuge après la prière contre plusieurs maux", es: "Refugio tras la oración de varios males" },
+    m: { mr: "हे अल्लाह! मी भित्रेपणापासून तुझी पनाह मागतो, आणि या गोष्टीपासून पनाह मागतो की मला अत्यंत निकामी म्हातारपणाकडे परत केले जावे, आणि दुनियेच्या फितन्यापासून व कबरच्या अझाबापासून तुझी पनाह मागतो.",
+         ar: "اللهم إني أعوذ بك من الجبن، وأعوذ بك أن أرد إلى أرذل العمر، وأعوذ بك من فتنة الدنيا، وأعوذ بك من عذاب القبر.",
+         fr: "Ô Allah, je cherche refuge contre la lâcheté, contre le retour au plus vil âge, contre l'épreuve de ce monde et contre le châtiment de la tombe.",
+         es: "Oh Alá, busco refugio de la cobardía, de ser devuelto a la edad más vil, de la prueba de este mundo y del castigo de la tumba." },
+    f: { mr: "नबी ﷺ नमाजनंतर हे अजकार वाचत असत.",
+         ar: "كان النبي ﷺ يقولها دبر الصلاة.",
+         fr: "Le Prophète ﷺ la récitait après la prière.",
+         es: "El Profeta ﷺ la recitaba tras la oración." }
+  },
+
+  "Fajr ke baad: ilm, rizq aur amal ki dua": {
+    t: { mr: "फजरनंतर: ज्ञान, रोजी व कर्माची दुआ", ar: "بعد الفجر: دعاء العلم والرزق والعمل", fr: "Après Fajr : doua pour le savoir, la subsistance et les œuvres", es: "Tras Fajr: dua por el conocimiento, el sustento y las obras" },
+    m: { mr: "हे अल्लाह! मी तुझ्याकडे उपयुक्त ज्ञान, पवित्र (हलाल) रोजी आणि स्वीकारले जाणारे कर्म मागतो.",
+         ar: "اللهم إني أسألك علمًا نافعًا، ورزقًا طيبًا، وعملًا متقبلًا.",
+         fr: "Ô Allah, je Te demande un savoir utile, une subsistance pure et des œuvres acceptées.",
+         es: "Oh Alá, Te pido conocimiento útil, sustento puro y obras aceptadas." },
+    f: { mr: "फक्त फजरच्या नमाजनंतर वाचली जाते.",
+         ar: "تُقال بعد صلاة الفجر خاصة.",
+         fr: "On la récite spécialement après la prière de Fajr.",
+         es: "Se recita especialmente tras la oración de Fajr." }
+  },
+
+  "Panj waqta farz namaz": {
+    t: { mr: "पाच वेळची फर्ज नमाज", ar: "الصلوات الخمس المفروضة", fr: "Les cinq prières obligatoires", es: "Las cinco oraciones obligatorias" },
+    m: { mr: "निःसंशय नमाज ईमानवाल्यांवर ठरलेल्या वेळी फर्ज आहे. फजर २, जोहर ४, असर ४, मगरिब ३ आणि इशा ४ रकअत.",
+         ar: "إن الصلاة كانت على المؤمنين كتابًا موقوتًا. الفجر ٢، الظهر ٤، العصر ४، المغرب ३، العشاء ४.",
+         fr: "La prière est prescrite aux croyants à des heures déterminées. Fajr 2, Dhuhr 4, Asr 4, Maghrib 3, Isha 4 rak'ahs.",
+         es: "La oración está prescrita a los creyentes en horas determinadas. Fajr 2, Dhuhr 4, Asr 4, Maghrib 3, Isha 4 rakas." },
+    f: { mr: "इस्लामचा स्तंभ. पुरुषांनी मशिदीत जमातीने पाळणे ताकीदी आहे.",
+         ar: "هي ركن الإسلام، والجماعة في المسجد للرجال مؤكدة.",
+         fr: "C'est le pilier de l'islam ; pour les hommes, la prière en groupe à la mosquée est fortement recommandée.",
+         es: "Es el pilar del islam; para los hombres, orar en grupo en la mezquita está muy recomendado." }
+  },
+
+  "Sunnat-e-Mu'akkadah (Rawatib) - 12 rak'at": {
+    t: { mr: "सुन्नत-ए-मुअक्कदा (रवातिब) — १२ रकअत", ar: "السنن المؤكدة (الرواتب) — १२ ركعة", fr: "Sunan mu'akkada (rawâtib) — 12 rak'ahs", es: "Sunan mu'akkada (rawatib): 12 rakas" },
+    m: { mr: "फर्जाशिवाय रोज १२ रकअत सुन्नत वाचणाऱ्यासाठी जन्नतमध्ये घर आहे.",
+         ar: "من صلى اثنتي عشرة ركعة تطوعًا غير الفريضة بنى الله له بيتًا في الجنة.",
+         fr: "Celui qui prie douze rak'ahs surérogatoires en plus des obligatoires, Allah lui bâtit une maison au Paradis.",
+         es: "Quien reza doce rakas voluntarias además de las obligatorias, Alá le construye una casa en el Paraíso." },
+    f: { mr: "ह्या ताकीदी सुन्नती फर्जसोबत वाचल्या जातात.",
+         ar: "هذه السنن المؤكدة تُصلى مع الفرائض.",
+         fr: "Ces sunan sont priées avec les prières obligatoires.",
+         es: "Estas sunnas se rezan junto a las oraciones obligatorias." }
+  },
+
+  "Fajr ki do sunnatein": {
+    t: { mr: "फजरच्या दोन सुन्नती", ar: "سنتا الفجر", fr: "Les deux sunan de Fajr", es: "Las dos sunnas de Fajr" },
+    m: { mr: "फजरच्या दोन सुन्नती दुनिया आणि त्यात जे काही आहे त्यापेक्षा उत्तम आहेत.",
+         ar: "ركعتا الفجر خير من الدنيا وما فيها.",
+         fr: "Les deux rak'ahs de Fajr valent mieux que ce monde et tout ce qu'il contient.",
+         es: "Las dos rakas de Fajr valen más que este mundo y todo lo que contiene." },
+    f: { mr: "ह्या फार हलक्या व संक्षिप्त वाचल्या जातात.",
+         ar: "تُصلى خفيفتين قصيرتين.",
+         fr: "On les prie très légères et courtes.",
+         es: "Se rezan muy ligeras y breves." }
+  },
+
+  "Witr": {
+    t: { mr: "वित्र", ar: "الوتر", fr: "Witr", es: "Witr" },
+    m: { mr: "रात्रीची नमाज दोन-दोन रकअत आहे, नंतर एक रकअत मिळवून वित्र करा.",
+         ar: "صلاة الليل مثنى مثنى، ثم يوتر بواحدة.",
+         fr: "La prière de nuit se fait par deux, puis on conclut par une rak'ah (witr).",
+         es: "La oración nocturna es de dos en dos, y luego se cierra con una raka (witr)." },
+    f: { mr: "रात्रीची शेवटची नमाज.",
+         ar: "آخر صلاة الليل.",
+         fr: "C'est la dernière prière de la nuit.",
+         es: "Es la última oración de la noche." }
+  },
+
+  "Witr ki dua-e-Qunoot": {
+    t: { mr: "वित्रची दुआ-ए-कुनूत", ar: "دعاء القنوت في الوتر", fr: "Doua du qunût dans le witr", es: "Dua del qunut en el witr" },
+    m: { mr: "हे अल्लाह! ज्यांना तू मार्गदर्शन दिले त्यांच्यात मलाही मार्गदर्शन दे; ज्यांना तू सुरक्षित ठेवले त्यांच्यात मलाही सुरक्षित ठेव; ज्यांचा तू जबाबदार झालास त्यांच्यात माझीही जबाबदारी घे; जे तू दिले त्यात बरकत दे; जे तू ठरवले त्याच्या वाईटापासून मला वाचव; निःसंशय तूच ठरवतोस आणि तुझ्याविरुद्ध कोणी ठरवत नाही; ज्याला तू मित्र बनवले तो अपमानित होत नाही आणि ज्याच्याशी तू वैर केले तो सन्मानित होत नाही. हे आमच्या रबा! तू बरकतवाला व उंच आहेस.",
+         ar: "اللهم اهدني فيمن هديت، وعافني فيمن عافيت، وتولني فيمن توليت، وبارك لي فيما أعطيت، وقني شر ما قضيت، فإنك تقضي ولا يقضى عليك، وإنه لا يذل من واليت، ولا يعز من عاديت، تباركت ربنا وتعاليت.",
+         fr: "Ô Allah, guide-moi parmi ceux que Tu as guidés, préserve-moi parmi ceux que Tu as préservés, prends-moi en charge parmi ceux dont Tu prends soin, bénis ce que Tu m'as donné, protège-moi du mal de ce que Tu as décrété. C'est Toi qui décrètes et nul ne décrète contre Toi ; celui que Tu prends pour allié n'est jamais avili, et celui à qui Tu t'opposes n'est jamais honoré. Béni et exalté sois-Tu, notre Seigneur.",
+         es: "Oh Alá, guíame entre quienes Tú has guiado, protégeme entre quienes Tú has protegido, hazte cargo de mí entre aquellos de quienes Te haces cargo, bendice lo que me has dado y líbrame del mal de lo que has decretado. Tú decretas y nadie decreta contra Ti; a quien Tú tomas por aliado nunca es humillado, y a quien Tú te opones nunca es honrado. Bendito y exaltado seas, Señor nuestro." },
+    f: { mr: "वित्रच्या शेवटच्या रकअतीत वाचली जाते.",
+         ar: "تُقال في الركعة الأخيرة من الوتر.",
+         fr: "On la récite dans la dernière rak'ah du witr.",
+         es: "Se recita en la última raka del witr." }
+  },
+
+  "Witr ke baad: Subhanal-Malikil-Quddus": {
+    t: { mr: "वित्रनंतर: ‘सुभानल-मलिकिल-कुद्दूस’", ar: "بعد الوتر: سبحان الملك القدوس", fr: "Après le witr : « Subhâna-l-Maliki-l-Quddûs »", es: "Tras el witr: «Subhana-l-Maliki-l-Quddus»" },
+    m: { mr: "पवित्र आहे तो राजा जो प्रत्येक दोषापासून पवित्र आहे.",
+         ar: "سبحان الملك القدوس.",
+         fr: "Gloire au Roi, le Très Saint.",
+         es: "Gloria al Rey, el Santísimo." },
+    f: { mr: "वित्रच्या सलामानंतर ३ वेळा, तिसऱ्या वेळी आवाज उंच करून.",
+         ar: "بعد سلام الوتر ثلاثًا، ويرفع صوته في الثالثة.",
+         fr: "Trois fois après le salam du witr, en élevant la voix la troisième fois.",
+         es: "Tres veces tras el salam del witr, elevando la voz la tercera vez." }
+  }
+});
+
+if (window.FQDuaLangApply) window.FQDuaLangApply();
