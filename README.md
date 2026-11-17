@@ -42,7 +42,7 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 **Abhi baaki (content-level tarjuma):** course ke 900 lafz ke matlab, duaein (`dua.js`), tajweed ke 38 qawaid, Arkan (`arkan-lang.js`) aur Seerat (`seerat.js`) — inka matn sirf 4 zubaanoN mein hai; nayi 4 zubaanoN par yeh **English** dikhate hain. Inka tarjuma ek ek hissa karke, tasdeeq ke saath add karna hai (deeni matn mein jaldi karna theek nahi).
 
-**Course ke lafz (chal raha hai):** `course-lang.js` — har lafz ke liye `{ mr: [matlab, tafseel], ar: [...], fr: [...], es: [...] }`, `"عربی لفظ"` se juda hua. Yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Ab tak **Day 1–10 (100 lafz)** mukammal. Naya hissa jodne ke liye sirf us table mein entry — koi doosra code nahi chhedna. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
+**Course ke lafz (mukammal):** `course-lang.js` — **Day 1–90, saare 900 lafz** ka matlab + mashq ki tafseel chaar zubaanoN mein (मराठी · العربية · Français · Español). Har entry `"عربی لفظ"` se judi hai; yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Kisi lafz ka tarjuma theek karna ho to sirf usi entry ko badlein — baaki par asar nahi. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
 
 **Silver/Gold exam mein anbiya ke naam (Adam, Musa, Isa, Muhammad ﷺ wagairah) nahi aate** — na sawal mein, na options mein. Roz ke Day exam mein wo aate hain.
 
