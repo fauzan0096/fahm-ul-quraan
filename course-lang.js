@@ -976,3 +976,123 @@ Object.assign(window.FQ_COURSE_LANG, {
 });
 
 if (window.FQCourseLangApply) window.FQCourseLangApply();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Day 35 – 44
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_COURSE_LANG, {
+
+  /* ── Day 35 ── */
+  "عُنُق": { mr: ["मान, गळा", "मान"], ar: ["العنق", "الرقبة"], fr: ["Cou", "Cou"], es: ["Cuello", "Cuello"] },
+  "زَنَى": { mr: ["व्यभिचार केला", "व्यभिचार"], ar: ["زنى", "الزنا"], fr: ["Il a forniqué", "Fornication"], es: ["Fornicó", "Fornicación"] },
+  "تَسْبِيح": { mr: ["तस्बीह (स्तुती)", "तस्बीह"], ar: ["التسبيح", "التسبيح"], fr: ["Glorification", "Glorifier"], es: ["Glorificación", "Glorificar"] },
+  "حَدِيد": { mr: ["लोखंड", "लोखंड"], ar: ["الحديد", "حديد"], fr: ["Fer", "Fer"], es: ["Hierro", "Hierro"] },
+  "رَجَاء": { mr: ["आशा", "आशा"], ar: ["الرجاء", "الأمل"], fr: ["Espoir", "Espoir"], es: ["Esperanza", "Esperanza"] },
+  "تَهَجُّد": { mr: ["रात्रीची नमाज (तहज्जुद)", "रात्रीची नमाज"], ar: ["التهجد", "صلاة الليل"], fr: ["Prière de nuit", "Prière nocturne"], es: ["Oración nocturna", "Oración de noche"] },
+  "حَقّ": { mr: ["सत्य, हक्क", "सत्य"], ar: ["الحق", "الحق"], fr: ["Vérité, droit", "Vérité"], es: ["Verdad, derecho", "Verdad"] },
+  "بَاطِل": { mr: ["असत्य", "असत्य"], ar: ["الباطل", "الباطل"], fr: ["Fausseté", "Fausseté"], es: ["Falsedad", "Falsedad"] },
+  "كَانَ": { mr: ["होता", "असणे"], ar: ["كان", "الكون"], fr: ["Il était", "Être"], es: ["Era", "Ser"] },
+  "رُوح": { mr: ["आत्मा, रूह", "आत्मा"], ar: ["الروح", "الروح"], fr: ["Âme, esprit", "Esprit"], es: ["Alma, espíritu", "Espíritu"] },
+
+  /* ── Day 36 ── */
+  "أَمْر": { mr: ["आदेश, काम", "आदेश"], ar: ["الأمر", "الأمر"], fr: ["Ordre, affaire", "Ordre"], es: ["Orden, asunto", "Orden"] },
+  "يَنْبُوع": { mr: ["झरा", "झरा"], ar: ["ينبوع", "نبع"], fr: ["Source", "Source"], es: ["Manantial", "Manantial"] },
+  "خَزَائِن": { mr: ["खजिने", "खजिना"], ar: ["الخزائن", "خزائن"], fr: ["Trésors", "Trésor"], es: ["Tesoros", "Tesoro"] },
+  "رَحْمَة": { mr: ["दया, कृपा", "दया"], ar: ["الرحمة", "الرحمة"], fr: ["Miséricorde", "Miséricorde"], es: ["Misericordia", "Misericordia"] },
+  "إِنْفَاق": { mr: ["खर्च करणे", "खर्च"], ar: ["الإنفاق", "الإنفاق"], fr: ["Dépense", "Dépenser"], es: ["Gasto", "Gastar"] },
+  "تِسْعَة": { mr: ["नऊ", "नऊ"], ar: ["تسعة", "تسعة"], fr: ["Neuf", "Neuf"], es: ["Nueve", "Nueve"] },
+  "خُشُوع": { mr: ["नम्रता, दीनता", "नम्रता"], ar: ["الخشوع", "الخشوع"], fr: ["Humilité", "Humilité"], es: ["Humildad", "Humildad"] },
+  "تَكْبِير": { mr: ["अल्लाहु अकबर म्हणणे", "अल्लाहची मोठेपणा"], ar: ["التكبير", "تعظيم الله"], fr: ["Proclamer la grandeur d'Allah", "Glorifier Allah"], es: ["Proclamar la grandeza de Alá", "Engrandecer a Alá"] },
+  "أَبَدًا": { mr: ["कधीही", "कधीही"], ar: ["أبدا", "أبدا"], fr: ["Jamais, éternellement", "Jamais"], es: ["Jamás, eternamente", "Jamás"] },
+  "كَهْف": { mr: ["गुहा, लेणी", "गुहा"], ar: ["الكهف", "كهف"], fr: ["Grotte", "Grotte"], es: ["Cueva", "Cueva"] },
+
+  /* ── Day 37 ── */
+  "رَقِيم": { mr: ["कोरीव लेख", "लेख"], ar: ["الرقيم", "الرقيم"], fr: ["Inscription", "Inscription"], es: ["Inscripción", "Inscripción"] },
+  "أَوَى": { mr: ["आश्रय दिला", "आश्रय"], ar: ["أوى", "الإيواء"], fr: ["Il a abrité", "Abriter"], es: ["Refugió", "Refugiar"] },
+  "يَمِين": { mr: ["उजवा, उजवीकडे", "उजवा"], ar: ["اليمين", "اليمين"], fr: ["Droite", "Droite"], es: ["Derecha", "Derecha"] },
+  "شِمَال": { mr: ["डावा, डावीकडे", "डावा"], ar: ["الشمال", "الشمال"], fr: ["Gauche", "Gauche"], es: ["Izquierda", "Izquierda"] },
+  "رُقُود": { mr: ["झोपलेले", "झोपलेले"], ar: ["رقود", "رقود"], fr: ["Endormis", "Endormis"], es: ["Dormidos", "Dormidos"] },
+  "لَبِثَ": { mr: ["राहिले, थांबले", "राहणे"], ar: ["لبث", "اللبث"], fr: ["Il est resté", "Rester"], es: ["Permaneció", "Permanecer"] },
+  "خَمْسَة": { mr: ["पाच", "पाच"], ar: ["خمسة", "خمسة"], fr: ["Cinq", "Cinq"], es: ["Cinco", "Cinco"] },
+  "سَبْعَة": { mr: ["सात", "सात"], ar: ["سبعة", "سبعة"], fr: ["Sept", "Sept"], es: ["Siete", "Siete"] },
+  "سُرَادِق": { mr: ["मंडप, तंबू", "तंबू"], ar: ["سرادق", "خيمة"], fr: ["Pavillon, tente", "Tente"], es: ["Pabellón, tienda", "Tienda"] },
+  "لَبِسَ": { mr: ["घातले", "घालणे"], ar: ["لبس", "اللبس"], fr: ["Il a porté", "Porter"], es: ["Vistió", "Vestir"] },
+
+  /* ── Day 38 ── */
+  "دَخَلَ": { mr: ["आत गेले", "आत जाणे"], ar: ["دخل", "الدخول"], fr: ["Il est entré", "Entrer"], es: ["Entró", "Entrar"] },
+  "قُوَّةَ": { mr: ["शक्ती, ताकद", "शक्ती"], ar: ["القوة", "القوة"], fr: ["Force, puissance", "Force"], es: ["Fuerza, poder", "Fuerza"] },
+  "طَلَبًا": { mr: ["शोध, मागणी", "मागणी"], ar: ["طلبا", "الطلب"], fr: ["Recherche, demande", "Demande"], es: ["Búsqueda, petición", "Petición"] },
+  "زِينَة": { mr: ["शृंगार, सजावट", "सजावट"], ar: ["الزينة", "الزينة"], fr: ["Parure, ornement", "Parure"], es: ["Adorno, ornamento", "Adorno"] },
+  "فَسَقَ": { mr: ["अवज्ञा केली, मार्ग सोडला", "अवज्ञा"], ar: ["فسق", "الفسق"], fr: ["Il a dévié", "Désobéir"], es: ["Desvió", "Desviarse"] },
+  "رَكِبَ": { mr: ["स्वार झाले", "स्वार होणे"], ar: ["ركب", "الركوب"], fr: ["Il a monté", "Monter"], es: ["Montó", "Montar"] },
+  "سَفِينَة": { mr: ["नौका, होडी", "नौका"], ar: ["السفينة", "سفينة"], fr: ["Navire, bateau", "Bateau"], es: ["Nave, barco", "Barco"] },
+  "وَرَاء": { mr: ["मागे, पलीकडे", "मागे"], ar: ["وراء", "خلف"], fr: ["Derrière", "Derrière"], es: ["Detrás", "Detrás"] },
+  "كَنْز": { mr: ["खजिना", "खजिना"], ar: ["كنز", "كنز"], fr: ["Trésor", "Trésor"], es: ["Tesoro", "Tesoro"] },
+  "ظَلَمَ": { mr: ["अन्याय केला", "अन्याय"], ar: ["ظلم", "الظلم"], fr: ["Il a fait injustice", "Injustice"], es: ["Oprimió", "Injusticia"] },
+
+  /* ── Day 39 ── */
+  "آمَنَ": { mr: ["विश्वास ठेवला, ईमान आणले", "ईमान"], ar: ["آمن", "الإيمان"], fr: ["Il a cru", "Croire"], es: ["Creyó", "Creer"] },
+  "صُور": { mr: ["सूर (रणशिंग)", "सूर"], ar: ["الصور", "الصور"], fr: ["La Trompette", "La Trompette"], es: ["La Trompeta", "La Trompeta"] },
+  "عَظْم": { mr: ["हाड", "हाड"], ar: ["العظم", "عظم"], fr: ["Os", "Os"], es: ["Hueso", "Hueso"] },
+  "رَأْس": { mr: ["डोके", "डोके"], ar: ["الرأس", "رأس"], fr: ["Tête", "Tête"], es: ["Cabeza", "Cabeza"] },
+  "يَحْيَى": { mr: ["यह्या (अ.स.)", "नबी"], ar: ["يحيى عليه السلام", "نبي"], fr: ["Yahya (Jean)", "Prophète"], es: ["Yahya (Juan)", "Profeta"] },
+  "وَالِدَيْن": { mr: ["आई-वडील", "आई-वडील"], ar: ["الوالدين", "الوالدان"], fr: ["Parents", "Parents"], es: ["Padres", "Padres"] },
+  "حَمَلَ": { mr: ["उचलले, वाहून नेले", "उचलणे"], ar: ["حمل", "الحمل"], fr: ["Il a porté", "Porter"], es: ["Cargó", "Cargar"] },
+  "ابْن": { mr: ["मुलगा", "मुलगा"], ar: ["الابن", "ابن"], fr: ["Fils", "Fils"], es: ["Hijo", "Hijo"] },
+  "وَلَد": { mr: ["अपत्य, मूल", "मुलगा"], ar: ["الولد", "الولد"], fr: ["Enfant, fils", "Fils"], es: ["Hijo, niño", "Hijo"] },
+  "إِسْمَاعِيل": { mr: ["इस्माईल (अ.स.)", "नबी"], ar: ["إسماعيل عليه السلام", "نبي"], fr: ["Ismail (Ismaël)", "Prophète"], es: ["Ismail (Ismael)", "Profeta"] },
+
+  /* ── Day 40 ── */
+  "إِدْرِيس": { mr: ["इदरीस (अ.स.)", "नबी"], ar: ["إدريس عليه السلام", "نبي"], fr: ["Idris (Hénoc)", "Prophète"], es: ["Idris (Enoc)", "Profeta"] },
+  "مُتَّقِي": { mr: ["परहेजगार, देवभिऊ", "परहेजगार"], ar: ["المتقي", "التقي"], fr: ["Pieux, craignant Allah", "Pieux"], es: ["Piadoso, temeroso de Alá", "Piadoso"] },
+  "جَهَنَّم": { mr: ["जहन्नम", "जहन्नम"], ar: ["جهنم", "جهنم"], fr: ["Enfer", "Enfer"], es: ["Infierno", "Infierno"] },
+  "عَرْش": { mr: ["अर्श (सिंहासन)", "तख्त"], ar: ["العرش", "العرش"], fr: ["Le Trône", "Le Trône"], es: ["El Trono", "El Trono"] },
+  "مُوسَى": { mr: ["मूसा (अ.स.)", "अल्लाहाशी बोलणारे"], ar: ["موسى عليه السلام", "كليم الله"], fr: ["Musa (Moïse)", "Celui à qui Allah a parlé"], es: ["Musa (Moisés)", "A quien Alá habló"] },
+  "أَنَا": { mr: ["मी", "मी"], ar: ["أنا", "أنا"], fr: ["Je", "Je"], es: ["Yo", "Yo"] },
+  "صَلَاة": { mr: ["नमाज", "नमाज"], ar: ["الصلاة", "الصلاة"], fr: ["Prière", "Prière"], es: ["Oración", "Oración"] },
+  "هِيَ": { mr: ["ती", "ती"], ar: ["هي", "هي"], fr: ["Elle", "Elle"], es: ["Ella", "Ella"] },
+  "حَيَّة": { mr: ["सर्प", "सर्प"], ar: ["الحية", "حية"], fr: ["Serpent", "Serpent"], es: ["Serpiente", "Serpiente"] },
+  "فِرْعَوْن": { mr: ["फिरऔन", "राजा"], ar: ["فرعون", "ملك"], fr: ["Pharaon", "Roi"], es: ["Faraón", "Rey"] },
+
+  /* ── Day 41 ── */
+  "قَالَ": { mr: ["म्हणाले", "म्हणणे"], ar: ["قال", "القول"], fr: ["Il a dit", "Dire"], es: ["Dijo", "Decir"] },
+  "اشْرَحْ": { mr: ["उघड, विस्तार कर", "उघडणे"], ar: ["اشرح", "الشرح"], fr: ["Ouvre, élargis", "Ouvrir"], es: ["Abre, expande", "Abrir"] },
+  "أَهْل": { mr: ["कुटुंब, घरचे", "कुटुंब"], ar: ["الأهل", "الأهل"], fr: ["Famille, proches", "Famille"], es: ["Familia, allegados", "Familia"] },
+  "هَارُون": { mr: ["हारून (अ.स.)", "नबी"], ar: ["هارون عليه السلام", "نبي"], fr: ["Harun (Aaron)", "Prophète"], es: ["Harun (Aarón)", "Profeta"] },
+  "أَخ": { mr: ["भाऊ", "भाऊ"], ar: ["الأخ", "أخ"], fr: ["Frère", "Frère"], es: ["Hermano", "Hermano"] },
+  "كَيْ": { mr: ["यासाठी", "यासाठी"], ar: ["كي", "كي"], fr: ["Afin que", "Afin que"], es: ["Para que", "Para que"] },
+  "خَشَعَ": { mr: ["नम्र झाले, दीन झाले", "नम्र होणे"], ar: ["خشع", "الخشوع"], fr: ["Il s'est humilié", "S'humilier"], es: ["Se humilló", "Humillarse"] },
+  "هَمْس": { mr: ["कुजबुज, मंद आवाज", "कुजबुज"], ar: ["الهمس", "الهمس"], fr: ["Chuchotement", "Chuchotement"], es: ["Susurro", "Susurro"] },
+  "شَفَاعَة": { mr: ["शिफारस", "शिफारस"], ar: ["الشفاعة", "الشفاعة"], fr: ["Intercession", "Intercession"], es: ["Intercesión", "Intercesión"] },
+  "زِدْنِي": { mr: ["मला वाढव (ज्ञानात)", "ज्ञानाची प्रार्थना"], ar: ["زدني", "دعاء العلم"], fr: ["Augmente-moi", "Invocation pour le savoir"], es: ["Auméntame", "Súplica por el conocimiento"] },
+
+  /* ── Day 42 ── */
+  "شَجَرَة": { mr: ["झाड", "झाड"], ar: ["الشجرة", "شجرة"], fr: ["Arbre", "Arbre"], es: ["Árbol", "Árbol"] },
+  "زَهْرَة": { mr: ["फूल, बहर", "फूल"], ar: ["زهرة", "زهرة"], fr: ["Fleur, éclat", "Fleur"], es: ["Flor, esplendor", "Flor"] },
+  "جَسَد": { mr: ["शरीर", "शरीर"], ar: ["الجسد", "جسد"], fr: ["Corps", "Corps"], es: ["Cuerpo", "Cuerpo"] },
+  "عِبَادَة": { mr: ["उपासना", "उपासना"], ar: ["العبادة", "العبادة"], fr: ["Adoration", "Adoration"], es: ["Adoración", "Adoración"] },
+  "لَوْ": { mr: ["जर, काश", "काश"], ar: ["لو", "لو"], fr: ["Si seulement", "Si seulement"], es: ["Si, ojalá", "Ojalá"] },
+  "اسْتَهْزَأَ": { mr: ["थट्टा केली, उपहास केला", "थट्टा"], ar: ["استهزأ", "الاستهزاء"], fr: ["Il a raillé", "Railler"], es: ["Se burló", "Burlarse"] },
+  "سَخِرَ": { mr: ["उपहास केला", "उपहास"], ar: ["سخر", "السخرية"], fr: ["Il s'est moqué", "Se moquer"], es: ["Se mofó", "Mofarse"] },
+  "خَرْدَل": { mr: ["मोहरीचा दाणा", "मोहरीचा दाणा"], ar: ["خردل", "خردل"], fr: ["Graine de moutarde", "Moutarde"], es: ["Grano de mostaza", "Mostaza"] },
+  "فَتَى": { mr: ["तरुण, तरुण मुलगा", "तरुण"], ar: ["فتى", "شاب"], fr: ["Jeune homme", "Jeune homme"], es: ["Joven", "Joven"] },
+  "إِبْرَاهِيم": { mr: ["इब्राहीम (अ.स.)", "अल्लाहचा मित्र"], ar: ["إبراهيم عليه السلام", "خليل الله"], fr: ["Ibrahim (Abraham)", "Ami d'Allah"], es: ["Ibrahim (Abraham)", "Amigo de Alá"] },
+
+  /* ── Day 43 ── */
+  "يَعْقُوب": { mr: ["याकूब (अ.स.)", "नबी"], ar: ["يعقوب عليه السلام", "نبي"], fr: ["Yaqub (Jacob)", "Prophète"], es: ["Yaqub (Jacob)", "Profeta"] },
+  "أَيُّوب": { mr: ["अय्यूब (अ.स.)", "नबी"], ar: ["أيوب عليه السلام", "نبي"], fr: ["Ayyub (Job)", "Prophète"], es: ["Ayyub (Job)", "Profeta"] },
+  "ضُرّ": { mr: ["त्रास, तकलीफ", "त्रास"], ar: ["الضر", "الضر"], fr: ["Mal, détresse", "Détresse"], es: ["Daño, aflicción", "Aflicción"] },
+  "نَجَّى": { mr: ["वाचवले", "वाचवणे"], ar: ["نجى", "النجاة"], fr: ["Il a sauvé", "Sauver"], es: ["Salvó", "Salvar"] },
+  "زَكَرِيَّا": { mr: ["जकरिया (अ.स.)", "नबी"], ar: ["زكريا عليه السلام", "نبي"], fr: ["Zakariyya (Zacharie)", "Prophète"], es: ["Zakariyya (Zacarías)", "Profeta"] },
+  "هَذِهِ": { mr: ["ही (स्त्रीलिंग)", "ही"], ar: ["هذه", "هذه"], fr: ["Celle-ci", "Celle-ci"], es: ["Esta", "Esta"] },
+  "يَأْجُوج": { mr: ["याजूज", "याजूज"], ar: ["يأجوج", "يأجوج"], fr: ["Yajuj (Gog)", "Yajuj"], es: ["Yajuy (Gog)", "Yajuy"] },
+  "مَأْجُوج": { mr: ["माजूज", "माजूज"], ar: ["مأجوج", "مأجوج"], fr: ["Majuj (Magog)", "Majuj"], es: ["Mayuy (Magog)", "Mayuy"] },
+  "زَبُور": { mr: ["जबूर", "ग्रंथ"], ar: ["الزبور", "الكتاب"], fr: ["Psaumes (Zabur)", "Écriture"], es: ["Salmos (Zabur)", "Escritura"] },
+  "زَلْزَلَة": { mr: ["भूकंप, हादरणे", "भूकंप"], ar: ["الزلزلة", "الزلزلة"], fr: ["Tremblement de terre", "Séisme"], es: ["Terremoto", "Terremoto"] },
+
+  /* ── Day 44 (shuru) ── */
+  "بَعْث": { mr: ["पुन्हा जिवंत करणे", "उठवणे"], ar: ["البعث", "البعث"], fr: ["Résurrection", "Ressusciter"], es: ["Resurrección", "Resucitar"] }
+});
+
+if (window.FQCourseLangApply) window.FQCourseLangApply();
