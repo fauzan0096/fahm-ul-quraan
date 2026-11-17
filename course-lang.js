@@ -1446,3 +1446,120 @@ Object.assign(window.FQ_COURSE_LANG, {
 });
 
 if (window.FQCourseLangApply) window.FQCourseLangApply();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Day 71 – 79
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_COURSE_LANG, {
+
+  /* ── Day 71 ── */
+  "هُنَّ": { mr: ["त्या स्त्रिया", "त्या सर्व"], ar: ["هن", "هن"], fr: ["Elles", "Elles"], es: ["Ellas", "Ellas"] },
+  "قَوْل": { mr: ["बोलणे, वचन", "बोलणे"], ar: ["القول", "القول"], fr: ["Parole, propos", "Parole"], es: ["Palabra, dicho", "Palabra"] },
+  "نَاجَى": { mr: ["कानगोष्ट केली", "कानगोष्ट"], ar: ["ناجى", "المناجاة"], fr: ["Il a parlé en secret", "Parler en secret"], es: ["Habló en secreto", "Hablar en secreto"] },
+  "كَتَبَ": { mr: ["लिहिले, फर्मान दिले", "लिहिणे"], ar: ["كتب", "الكتب"], fr: ["Il a écrit, prescrit", "Écrire"], es: ["Escribió, prescribió", "Escribir"] },
+  "جَبَل": { mr: ["पर्वत", "पर्वत"], ar: ["الجبل", "جبل"], fr: ["Montagne", "Montagne"], es: ["Montaña", "Montaña"] },
+  "يَتَفَكَّرُونَ": { mr: ["ते विचार करतात", "विचार"], ar: ["يتفكرون", "التفكر"], fr: ["Ils réfléchissent", "Réfléchir"], es: ["Reflexionan", "Reflexionar"] },
+  "الَّذِي": { mr: ["जो (पुल्लिंग)", "जो"], ar: ["الذي", "الذي"], fr: ["Celui qui", "Celui qui"], es: ["El que", "El que"] },
+  "السَّلَامُ": { mr: ["शांती देणारा", "नमाजानंतर"], ar: ["السلام", "بعد الصلاة"], fr: ["La Paix", "Après la prière"], es: ["La Paz", "Después de la oración"] },
+  "خَالِق": { mr: ["निर्माणकर्ता", "निर्माण करणारा"], ar: ["الخالق", "الخالق"], fr: ["Créateur", "Créateur"], es: ["Creador", "Creador"] },
+  "بَرَأَ": { mr: ["निर्माण केले", "निर्माण करणे"], ar: ["برأ", "البرء"], fr: ["Il a créé", "Créer"], es: ["Creó", "Crear"] },
+
+  /* ── Day 72 ── */
+  "بُنْيَان": { mr: ["इमारत", "इमारत"], ar: ["بنيان", "البناء"], fr: ["Édifice, bâtiment", "Bâtiment"], es: ["Edificio", "Edificio"] },
+  "أَحْمَد": { mr: ["अहमद ﷺ", "नबी"], ar: ["أحمد ﷺ", "النبي"], fr: ["Ahmad ﷺ", "Le Prophète"], es: ["Ahmad ﷺ", "El Profeta"] },
+  "عَدْن": { mr: ["कायम राहण्याचे बाग (अदन)", "जन्नत"], ar: ["عدن", "الجنة"], fr: ["Éden (Paradis)", "Paradis"], es: ["Edén (Paraíso)", "Paraíso"] },
+  "حِمَار": { mr: ["गाढव", "गाढव"], ar: ["الحمار", "حمار"], fr: ["Âne", "Âne"], es: ["Burro", "Burro"] },
+  "خَشَب": { mr: ["लाकूड", "लाकूड"], ar: ["الخشب", "خشب"], fr: ["Bois", "Bois"], es: ["Madera", "Madera"] },
+  "كَافِر": { mr: ["इन्कार करणारा (काफिर)", "काफिर"], ar: ["الكافر", "كافر"], fr: ["Mécréant", "Mécréant"], es: ["Incréyente", "Incréyente"] },
+  "زَعَمَ": { mr: ["दावा केला, गृहीत धरले", "दावा"], ar: ["زعم", "الزعم"], fr: ["Il a prétendu", "Prétendre"], es: ["Afirmó", "Afirmar"] },
+  "نُور": { mr: ["प्रकाश", "प्रकाश"], ar: ["النور", "النور"], fr: ["Lumière", "Lumière"], es: ["Luz", "Luz"] },
+  "أَنْفِقُوا": { mr: ["खर्च करा", "खर्च"], ar: ["أنفقوا", "الإنفاق"], fr: ["Dépensez !", "Dépenser"], es: ["¡Gastad!", "Gastar"] },
+  "سِعَة": { mr: ["विस्तार, समृद्धी", "विस्तार"], ar: ["سعة", "السعة"], fr: ["Amplitude, aisance", "Aisance"], es: ["Amplitud, holgura", "Holgura"] },
+
+  /* ── Day 73 ── */
+  "ذَاقَ": { mr: ["चाखले", "चाखणे"], ar: ["ذاق", "الذوق"], fr: ["Il a goûté", "Goûter"], es: ["Probó", "Probar"] },
+  "بِنْت": { mr: ["मुलगी", "मुलगी"], ar: ["البنت", "بنت"], fr: ["Fille", "Fille"], es: ["Hija", "Hija"] },
+  "قُنُوت": { mr: ["आज्ञापालन, इबादतात उभे राहणे", "आज्ञापालन"], ar: ["القنوت", "القنوت"], fr: ["Dévotion, obéissance", "Obéissance"], es: ["Devoción, obediencia", "Obediencia"] },
+  "حَيَاة": { mr: ["जीवन", "जीवन"], ar: ["الحياة", "الحياة"], fr: ["Vie", "Vie"], es: ["Vida", "Vida"] },
+  "عَمَل": { mr: ["कर्म, काम", "कर्म"], ar: ["العمل", "العمل"], fr: ["Acte, action", "Acte"], es: ["Obra, acción", "Obra"] },
+  "لَطِيف": { mr: ["सूक्ष्मदर्शी, दयाळू", "दयाळू"], ar: ["لطيف", "اللطيف"], fr: ["Subtil, Doux", "Doux"], es: ["Sutil, Amable", "Amable"] },
+  "جَعَلَ": { mr: ["केले, बनवले", "बनवणे"], ar: ["جعل", "الجعل"], fr: ["Il a fait", "Faire"], es: ["Hizo", "Hacer"] },
+  "كُلُوا": { mr: ["खा", "खाणे"], ar: ["كلوا", "الأكل"], fr: ["Mangez !", "Manger"], es: ["¡Comed!", "Comer"] },
+  "نُشُور": { mr: ["मृत्यूनंतर उठणे", "उठवले जाणे"], ar: ["النشور", "النشور"], fr: ["Résurrection", "Résurrection"], es: ["Resurrección", "Resurrección"] },
+  "مَتَى": { mr: ["केव्हा", "केव्हा"], ar: ["متى", "متى"], fr: ["Quand", "Quand"], es: ["Cuándo", "Cuándo"] },
+
+  /* ── Day 74 ── */
+  "هَذَا": { mr: ["हा (पुल्लिंग)", "हा"], ar: ["هذا", "هذا"], fr: ["Celui-ci", "Celui-ci"], es: ["Este", "Este"] },
+  "وَعْد": { mr: ["वचन, वायदा", "वचन"], ar: ["الوعد", "الوعد"], fr: ["Promesse", "Promesse"], es: ["Promesa", "Promesa"] },
+  "إِن": { mr: ["जर", "जर"], ar: ["إن", "إن"], fr: ["Si", "Si"], es: ["Si", "Si"] },
+  "حَاقَّة": { mr: ["निश्चित घडणारी घटना", "निश्चित घटना"], ar: ["الحاقة", "الحاقة"], fr: ["La Réalité inévitable", "La Réalité"], es: ["La Realidad inevitable", "La Realidad"] },
+  "أَدْرَى": { mr: ["माहीत करून दिले", "माहीत करणे"], ar: ["أدرى", "الإدراء"], fr: ["Il a fait savoir", "Faire savoir"], es: ["Hizo saber", "Hacer saber"] },
+  "أُذُن": { mr: ["कान", "कान"], ar: ["الأذن", "أذن"], fr: ["Oreille", "Oreille"], es: ["Oreja", "Oreja"] },
+  "أَرْجَاء": { mr: ["बाजू, किनारे", "बाजू"], ar: ["أرجاء", "أطراف"], fr: ["Côtés, confins", "Côtés"], es: ["Lados, confines", "Lados"] },
+  "هَلَكَ": { mr: ["नाश झाला", "नाश"], ar: ["هلك", "الهلاك"], fr: ["Il a péri", "Périr"], es: ["Pereció", "Perecer"] },
+  "سَأَلَ": { mr: ["विचारले", "विचारणे"], ar: ["سأل", "السؤال"], fr: ["Il a demandé", "Demander"], es: ["Preguntó", "Preguntar"] },
+  "نُوح": { mr: ["नूह (अ.स.)", "नबी"], ar: ["نوح عليه السلام", "نبي"], fr: ["Nuh (Noé)", "Prophète"], es: ["Nuh (Noé)", "Profeta"] },
+
+  /* ── Day 75 ── */
+  "قَوْم": { mr: ["कौम, लोक", "लोक"], ar: ["القوم", "القوم"], fr: ["Peuple, nation", "Peuple"], es: ["Pueblo, nación", "Pueblo"] },
+  "نَبَات": { mr: ["वनस्पती", "वनस्पती"], ar: ["النبات", "النبات"], fr: ["Plantes", "Plantes"], es: ["Plantas", "Plantas"] },
+  "جِنّ": { mr: ["जिन्न", "जिन्न"], ar: ["الجن", "الجن"], fr: ["Djinns", "Djinns"], es: ["Yinn", "Yinn"] },
+  "دُونَ": { mr: ["शिवाय, खाली", "शिवाय"], ar: ["دون", "دون"], fr: ["En dehors de", "En dehors"], es: ["Aparte de", "Aparte de"] },
+  "قَامَ": { mr: ["उभे राहिले", "उभे राहणे"], ar: ["قام", "القيام"], fr: ["Il s'est levé", "Se lever"], es: ["Se levantó", "Levantarse"] },
+  "بَلَّغَ": { mr: ["पोहोचवले", "पोहोचवणे"], ar: ["بلّغ", "التبليغ"], fr: ["Il a transmis", "Transmettre"], es: ["Transmitió", "Transmitir"] },
+  "أَحْصَى": { mr: ["मोजले, गणले", "मोजणे"], ar: ["أحصى", "الإحصاء"], fr: ["Il a dénombré", "Dénombrer"], es: ["Contó", "Contar"] },
+  "تَرْتِيل": { mr: ["थांबून थांबून वाचणे", "थांबून वाचणे"], ar: ["الترتيل", "الترتيل"], fr: ["Récitation mesurée", "Réciter lentement"], es: ["Recitación pausada", "Recitar despacio"] },
+  "كَثِيب": { mr: ["वाळूचा ढिग", "वाळूचा ढिग"], ar: ["كثيب", "الكثيب"], fr: ["Dune de sable", "Dune"], es: ["Duna de arena", "Duna"] },
+  "ثِيَاب": { mr: ["कपडे", "कपडा"], ar: ["الثياب", "الثياب"], fr: ["Vêtements", "Vêtement"], es: ["Ropas", "Ropa"] },
+
+  /* ── Day 76 ── */
+  "نَظَرَ": { mr: ["पाहिले", "पाहणे"], ar: ["نظر", "النظر"], fr: ["Il a regardé", "Regarder"], es: ["Miró", "Mirar"] },
+  "بَشَر": { mr: ["मनुष्य", "मनुष्य"], ar: ["البشر", "البشر"], fr: ["Être humain", "Humain"], es: ["Ser humano", "Humano"] },
+  "تَقْوَى": { mr: ["तकवा (देवभय)", "तकवा"], ar: ["التقوى", "التقوى"], fr: ["Piété, taqwa", "Taqwa"], es: ["Piedad, taqwa", "Taqwa"] },
+  "قِيَامَة": { mr: ["कयामत", "कयामत"], ar: ["القيامة", "القيامة"], fr: ["Résurrection", "Résurrection"], es: ["Resurrección", "Resurrección"] },
+  "بَلَى": { mr: ["होय, का नाही", "का नाही"], ar: ["بلى", "بلى"], fr: ["Oui, certes", "Oui"], es: ["Sí, ciertamente", "Sí"] },
+  "أَمَام": { mr: ["समोर", "समोर"], ar: ["أمام", "أمام"], fr: ["Devant", "Devant"], es: ["Delante", "Delante"] },
+  "يَوْمَئِذٍ": { mr: ["त्या दिवशी", "त्या दिवशी"], ar: ["يومئذ", "يومئذ"], fr: ["Ce jour-là", "Ce jour-là"], es: ["Ese día", "Ese día"] },
+  "أَيْنَ": { mr: ["कुठे", "कुठे"], ar: ["أين", "أين"], fr: ["Où", "Où"], es: ["Dónde", "Dónde"] },
+  "هَلْ": { mr: ["काय? (प्रश्न)", "काय"], ar: ["هل", "هل"], fr: ["Est-ce que", "Est-ce que"], es: ["¿Acaso?", "¿Acaso?"] },
+  "عَلَى": { mr: ["वर", "वर"], ar: ["على", "على"], fr: ["Sur", "Sur"], es: ["Sobre", "Sobre"] },
+
+  /* ── Day 77 ── */
+  "شُكْر": { mr: ["कृतज्ञता", "शुक्र"], ar: ["الشكر", "الشكر"], fr: ["Gratitude", "Gratitude"], es: ["Gratitud", "Gratitud"] },
+  "جَزَى": { mr: ["मोबदला दिला", "मोबदला देणे"], ar: ["جزى", "الجزاء"], fr: ["Il a récompensé", "Récompenser"], es: ["Recompensó", "Recompensar"] },
+  "فِضَّة": { mr: ["चांदी", "चांदी"], ar: ["الفضة", "فضة"], fr: ["Argent (métal)", "Argent"], es: ["Plata", "Plata"] },
+  "سَقَى": { mr: ["पाणी पाजले", "पाणी पाजणे"], ar: ["سقى", "السقي"], fr: ["Il a abreuvé", "Abreuver"], es: ["Dio de beber", "Dar de beber"] },
+  "مَاء": { mr: ["पाणी", "पाणी"], ar: ["الماء", "الماء"], fr: ["Eau", "Eau"], es: ["Agua", "Agua"] },
+  "الْقَادِر": { mr: ["सामर्थ्यवान", "सामर्थ्य"], ar: ["القادر", "القادر"], fr: ["Le Capable", "Puissant"], es: ["El Poderoso", "Poderoso"] },
+  "ظِلّ": { mr: ["सावली", "सावली"], ar: ["الظل", "الظل"], fr: ["Ombre", "Ombre"], es: ["Sombra", "Sombra"] },
+  "كَذَلِكَ": { mr: ["त्याचप्रमाणे", "त्याचप्रमाणे"], ar: ["كذلك", "كذلك"], fr: ["Ainsi", "Ainsi"], es: ["Así", "Así"] },
+  "مُحْسِن": { mr: ["नेकी करणारा", "नेक"], ar: ["المحسن", "المحسن"], fr: ["Bienfaisant", "Bienfaisant"], es: ["Benefactor", "Benefactor"] },
+  "أَوْتَاد": { mr: ["मेखा, खुंटे", "मेखा"], ar: ["أوتاد", "أوتاد"], fr: ["Pieux, piquets", "Pieux"], es: ["Estacas", "Estacas"] },
+
+  /* ── Day 78 ── */
+  "جَزَاء": { mr: ["मोबदला, बदला", "मोबदला"], ar: ["الجزاء", "الجزاء"], fr: ["Récompense", "Récompense"], es: ["Recompensa", "Recompensa"] },
+  "عَطَاء": { mr: ["देणगी, बक्षीस", "देणगी"], ar: ["العطاء", "العطاء"], fr: ["Don, présent", "Don"], es: ["Don, regalo", "Don"] },
+  "سَاهِرَة": { mr: ["पसरट मैदान", "मैदान"], ar: ["الساهرة", "الساهرة"], fr: ["Plaine (du jugement)", "Plaine"], es: ["Llanura (del juicio)", "Llanura"] },
+  "عَصَى": { mr: ["अवज्ञा केली", "अवज्ञा"], ar: ["عصى", "العصيان"], fr: ["Il a désobéi", "Désobéir"], es: ["Desobedeció", "Desobedecer"] },
+  "أَخَذَ": { mr: ["घेतले", "घेणे"], ar: ["أخذ", "الأخذ"], fr: ["Il a pris", "Prendre"], es: ["Tomó", "Tomar"] },
+  "بَعْدَ": { mr: ["नंतर", "नंतर"], ar: ["بعد", "بعد"], fr: ["Après", "Après"], es: ["Después", "Después"] },
+  "طَامَّة": { mr: ["मोठी आपत्ती", "आपत्ती"], ar: ["الطامة", "الطامة"], fr: ["Grande calamité", "Calamité"], es: ["Gran calamidad", "Calamidad"] },
+  "نَهَى": { mr: ["मना केले", "मना करणे"], ar: ["نهى", "النهي"], fr: ["Il a interdit", "Interdire"], es: ["Prohibió", "Prohibir"] },
+  "شَاءَ": { mr: ["इच्छिले", "इच्छा"], ar: ["شاء", "المشيئة"], fr: ["Il a voulu", "Vouloir"], es: ["Quiso", "Querer"] },
+  "كِرَام": { mr: ["सन्माननीय, थोर", "सन्माननीय"], ar: ["كرام", "كرام"], fr: ["Nobles, honorés", "Honorés"], es: ["Nobles, honrados", "Honrados"] },
+
+  /* ── Day 79 ── */
+  "طَعَام": { mr: ["अन्न, खाणे", "अन्न"], ar: ["الطعام", "الطعام"], fr: ["Nourriture", "Nourriture"], es: ["Comida", "Comida"] },
+  "أَنْبَتَ": { mr: ["उगवले", "उगवणे"], ar: ["أنبت", "الإنبات"], fr: ["Il a fait pousser", "Faire pousser"], es: ["Hizo crecer", "Hacer crecer"] },
+  "عِنَب": { mr: ["द्राक्षे", "द्राक्षे"], ar: ["العنب", "عنب"], fr: ["Raisins", "Raisins"], es: ["Uvas", "Uvas"] },
+  "نَخْل": { mr: ["खजुरीचे झाड", "खजूर"], ar: ["النخل", "نخل"], fr: ["Palmier-dattier", "Palmier"], es: ["Palmera datilera", "Palmera"] },
+  "صَاخَّة": { mr: ["कान फाडणारा आवाज", "कान फाड आवाज"], ar: ["الصاخة", "الصاخة"], fr: ["Cri assourdissant", "Cri assourdissant"], es: ["Estruendo ensordecedor", "Estruendo"] },
+  "فَرَّ": { mr: ["पळून गेले", "पळणे"], ar: ["فر", "الفرار"], fr: ["Il a fui", "Fuir"], es: ["Huyó", "Huir"] },
+  "أُفُق": { mr: ["क्षितिज", "क्षितिज"], ar: ["الأفق", "الأفق"], fr: ["Horizon", "Horizon"], es: ["Horizonte", "Horizonte"] },
+  "إِذَا": { mr: ["जेव्हा (भविष्य)", "जेव्हा"], ar: ["إذا", "إذا"], fr: ["Quand (futur)", "Quand"], es: ["Cuando (futuro)", "Cuando"] },
+  "كَرِيم": { mr: ["उदार, थोर", "उदार"], ar: ["كريم", "الكريم"], fr: ["Généreux, noble", "Généreux"], es: ["Generoso, noble", "Generoso"] },
+  "نَعِيم": { mr: ["आनंद, नेमती", "नेमत"], ar: ["النعيم", "النعيم"], fr: ["Félicité, délices", "Délices"], es: ["Delicia, bendiciones", "Delicias"] }
+});
+
+if (window.FQCourseLangApply) window.FQCourseLangApply();
