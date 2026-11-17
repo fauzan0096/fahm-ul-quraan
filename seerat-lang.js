@@ -1205,6 +1205,186 @@ window.SEERAT_LANG = {
           ["613", "Fin de la predicación secreta"]
         ]
       ]
+    },
+
+    /* ═══════════════ DAY 7 — Da'wat-e-alaniya ═══════════════ */
+    7: {
+      mr: [
+        "खुली दावत — सफा टेकडीवरून घोषणा",
+        "मक्का, सफा टेकडी",
+        "इ.स. ६१३",
+        "खुल्या दावतीची सुरुवात, कुरैशच्या विरोधाची सुरुवात आणि अबू लहबचे शत्रुत्व समजून घेणे.",
+        "सीरतच्या रिवायतींनुसार हजरत सुमय्या (र.अ.) यांना अबू जहलने भाला मारला आणि त्या पहिल्या शहीदा झाल्या. हे अल्लाह! दीनासाठी कुर्बानी देण्याची तौफीक आम्हालाही दे. आमीन.",
+        [
+          "खुली दावत: सफा टेकडीवर",
+          "अबू लहबचे शत्रुत्व",
+          "सूरह अल-मसद उतरली",
+          "पहिली शहीदा: सुमय्या (र.अ.)",
+          "अबू तालिब यांचे संरक्षण"
+        ],
+        [
+          ["🗣️ «या अय्युहन्नास»",
+           "जेव्हा हा हुकूम आला: «وَأَنذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ» (आपल्या जवळच्या नातेवाइकांना भय दाखव) — सूरह अश-शुअरा २६:२१४ (सहीह बुखारी), आणि खुल्या दावतीचा हुकूम: «فَاصْدَعْ بِمَا تُؤْمَرُ» (जे हुकूम दिले आहे ते खुलेपणाने सांग) — सूरह अल-हिज्र १५:९४. नबी ﷺ सफा टेकडीवर चढले आणि मोठ्या आवाजात हाक दिली: «या सबाहाह! या सबाहाह!» (पहाटेच्या हल्ल्यापासून सावध!) — ही अरबमध्ये धोक्याची घोषणा होती. कुरैशच्या टोळ्या जमल्या. नबी ﷺ म्हणाले: «जर मी सांगितले की या डोंगरामागे शत्रूचे सैन्य आहे, तर तुम्ही मानाल का?» सर्वांनी म्हटले: «होय, तुम्ही कधीही खोटे बोलले नाही.» नंतर ते म्हणाले: «तर मी तुम्हाला अल्लाहच्या अज़ाबापासून भय दाखवतो.»",
+           "सहीह बुखारी: ४७७०; कुरआन: २६:२१४, १५:९४"],
+          ["🔥 अबू लहबचे शत्रुत्व",
+           "अबू लहब (नबी ﷺ यांचा काका) म्हणाला: «नाश हो तुमचा! यासाठीच बोलावले होते का?» (सहीह बुखारी व मुस्लिम). अल्लाहने सूरह अल-मसद उतरवली: «تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ ۝ مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ» (अबू लहबचे हात तुटोत आणि तो स्वतः नष्ट होवो; त्याचा माल आणि कमाई कामी आली नाही). ही अबू लहबच्या शत्रुत्वाची औपचारिक घोषणा होती.",
+           "सहीह बुखारी: ४९७१; सहीह मुस्लिम: २०८; कुरआन: १११"],
+          ["💢 कुरैशच्या विरोधाची ३ कारणे",
+           "१) तौहीद — «आमच्या मूर्तींचे काय होईल?» २) रिसालत — «अल्लाह एखाद्या सामान्य माणसाला नबी का बनवेल?» ३) आखिरत — «आमचे वडील-आजोबा मरून माती झाले, पुन्हा जिवंत?» या तीन्ही गोष्टी कुरैशच्या स्वार्थांवर घाव होत्या — काबाचा व्यापार, सरदारी आणि स्वातंत्र्य.",
+           ""],
+          ["😢 कष्टांची सुरुवात",
+           "आता प्रत्येक मुस्लिमाला छळ सुरू झाला. हजरत बिलाल (र.अ.) यांना गरम वाळूवर झोपवले जात, त्यांच्यावर दगड ठेवले जात, तरी ते म्हणत «अहद, अहद» (एक अल्लाह, एक अल्लाह). हजरत अम्मार (र.अ.), त्यांचे वडील यासिर (र.अ.) आणि आई सुमय्या (र.अ.) — तिघांनाही छळले गेले. सीरतच्या रिवायतींनुसार सुमय्या (र.अ.) यांना अबू जहलने भाला मारला आणि त्या पहिल्या शहीदा झाल्या. हजरत अबू बक्र (र.अ.) यांना मस्जिदीत इतके मारले गेले की चेहरा ओळखताच येत नव्हता (सीरतची रिवायत).",
+           "सुनन इब्न माजा: १५० (हसन); मुस्नद अहमद: ३८३२ (बिलाल र.अ.); सुमय्या (र.अ.) यांची शहादत व अबू बक्र (र.अ.) यांच्या छळाचा तपशील: सीरतच्या रिवायती"],
+          ["🛡️ अबू तालिब यांचे संरक्षण",
+           "अबू तालिब यांनी कुरैशला सांगितले की मी माझ्या भाच्याचे रक्षण करीन. कुरैशने दबाव आणला, धमक्या दिल्या, नंतर एक सौदा मांडला (इब्न इशाक): अमारा बिन वलीद (कुरैशचा देखणा तरुण) याला आपला मुलगा करून घ्या आणि आपल्या भाच्याला आमच्या स्वाधीन करा जेणेकरून आम्ही त्याला ठार मारू. अबू तालिब म्हणाले: «हा कसला न्याय? तुम्ही आपला मुलगा मला द्या जेणेकरून मी त्याला वाढवू, आणि मी माझा मुलगा तुम्हाला द्या जेणेकरून तुम्ही त्याला ठार माराल?» आणि त्यांनी स्पष्ट नकार दिला.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🎯 बोध",
+           "सत्य सांगण्यात कोणतीही भीती नाही. नबी ﷺ यांनी खुली दावत दिली, कष्ट सोसले, पण मागे हटले नाहीत. आपण सत्यासाठी ठाम उभे राहिले पाहिजे, कितीही कठीण असो.",
+           ""]
+        ],
+        [
+          ["खुली दावत कुठून सुरू झाली?", ["मस्जिदे-हराम", "सफा टेकडी", "उहुद पर्वत"]],
+          ["पहिली शहीदा कोण?", ["खदीजा", "सुमय्या", "आयशा"]],
+          ["नबी ﷺ यांना कोणत्या काकांनी छळले?", ["अबू तालिब", "अबू लहब", "हमझा"]]
+        ],
+        [
+          ["इ.स. ६१३", "सफा टेकडीवरून घोषणा"],
+          ["इ.स. ६१३", "अबू लहबचे शत्रुत्व"],
+          ["इ.स. सु. ६१४", "पहिली शहीदा सुमय्या (र.अ.)"]
+        ]
+      ],
+      ar: [
+        "الدعوة العلنية — الإعلان على الصفا",
+        "مكة، جبل الصفا",
+        "613 م",
+        "فهم بداية الدعوة العلنية، وبداية معارضة قريش، وعداوة أبي لهب.",
+        "جاء في روايات السيرة أن أبا جهل طعن سمية رضي الله عنها بحربة فكانت أول شهيدة. اللهم ارزقنا التضحية من أجل الدين. آمين.",
+        [
+          "الدعوة العلنية: على جبل الصفا",
+          "عداوة أبي لهب",
+          "نزول سورة المسد",
+          "أول شهيدة: سمية رضي الله عنها",
+          "حماية أبي طالب"
+        ],
+        [
+          ["🗣️ «يا أيها الناس»",
+           "لما نزل: «وَأَنذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ» — سورة الشعراء 26:214 (صحيح البخاري)، ونزل الأمر بالجهر: «فَاصْدَعْ بِمَا تُؤْمَرُ» — سورة الحجر 15:94. صعد النبي ﷺ الصفا ونادى بأعلى صوته: «يا صباحاه! يا صباحاه!» — وكان ذلك إعلان خطر عند العرب. فاجتمعت قبائل قريش. فقال ﷺ: «لو أخبرتكم أن خيلًا بالوادي تريد أن تغير عليكم أكنتم مصدقيّ؟» قالوا: «نعم، ما جربنا عليك كذبًا». فقال: «فإني نذير لكم بين يدي عذاب شديد».",
+           "صحيح البخاري: 4770؛ القرآن: 26:214، 15:94"],
+          ["🔥 عداوة أبي لهب",
+           "قال أبو لهب (عم النبي ﷺ): «تبًّا لك! ألهذا جمعتنا؟» (صحيح البخاري ومسلم). فأنزل الله سورة المسد: «تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ ۝ مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ». وكان ذلك إعلانًا رسميًّا لعداوة أبي لهب.",
+           "صحيح البخاري: 4971؛ صحيح مسلم: 208؛ القرآن: 111"],
+          ["💢 أسباب معارضة قريش الثلاثة",
+           "1) التوحيد — «ماذا يكون بآلهتنا؟» 2) الرسالة — «أيبعث الله بشرًا من عامة الناس نبيًّا؟» 3) الآخرة — «آباؤنا صاروا ترابًا، أيُبعثون؟» وهذه الثلاث كانت ضربة لمصالح قريش: تجارة الكعبة، والسيادة، والحرية.",
+           ""],
+          ["😢 بداية الأذى",
+           "بدأ تعذيب كل مسلم. كان بلال رضي الله عنه يُطرح على الرمل الحار ويُوضع عليه الحجر، وهو يقول: «أحد، أحد». وعُذّب عمار رضي الله عنه وأبوه ياسر وأمه سمية رضي الله عنهما. وجاء في روايات السيرة أن أبا جهل طعن سمية رضي الله عنها بحربة فكانت أول شهيدة. وضُرب أبو بكر رضي الله عنه في المسجد حتى لم يُعرف وجهه (رواية سيرة).",
+           "سنن ابن ماجه: 150 (حسن)؛ مسند أحمد: 3832 (بلال رضي الله عنه)؛ تفصيل شهادة سمية رضي الله عنها وإيذاء أبي بكر رضي الله عنه: روايات السيرة"],
+          ["🛡️ حماية أبي طالب",
+           "قال أبو طالب لقريش: إني سأحمي ابن أخي. فضغطت قريش وهددت، ثم عرضت صفقة (ابن إسحاق): خذ عمارة بن الوليد (فتى قريش الوسيم) ابنًا لك، وسلّم إلينا ابن أخيك لنقتله. فقال أبو طالب: «أيُّ إنصاف هذا؟ تعطونني ابنكم أغذوه، وأعطيكم ابني تقتلونه؟» ورفض رفضًا صريحًا.",
+           "من روايات السيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🎯 العبرة",
+           "لا خوف في قول الحق. أعلن النبي ﷺ الدعوة علنًا، واحتمل الأذى، ولم يتراجع. فعلينا أن نثبت على الحق مهما كان صعبًا.",
+           ""]
+        ],
+        [
+          ["من أين بدأت الدعوة العلنية؟", ["المسجد الحرام", "جبل الصفا", "جبل أحد"]],
+          ["من أول شهيدة؟", ["خديجة", "سمية", "عائشة"]],
+          ["أي عم أذى النبي ﷺ؟", ["أبو طالب", "أبو لهب", "حمزة"]]
+        ],
+        [
+          ["613", "الإعلان على جبل الصفا"],
+          ["613", "عداوة أبي لهب"],
+          ["نحو 614", "أول شهيدة: سمية رضي الله عنها"]
+        ]
+      ],
+      fr: [
+        "La prédication publique — l'annonce sur Safâ",
+        "La Mecque, la colline de Safâ",
+        "613",
+        "Comprendre le début de la prédication publique, le début de l'opposition des Quraysh et l'hostilité d'Abou Lahab.",
+        "Les récits de Sîra rapportent qu'Abou Jahl frappa Soumayya (qu'Allah l'agrée) d'une lance et qu'elle fut la première martyre. Ô Allah ! Accorde-nous le sacrifice pour la religion. Âmîn.",
+        [
+          "La prédication publique : sur la colline de Safâ",
+          "L'hostilité d'Abou Lahab",
+          "La révélation de sourate al-Masad",
+          "Première martyre : Soumayya (qu'Allah l'agrée)",
+          "La protection d'Abou Tâlib"
+        ],
+        [
+          ["🗣️ « Ô gens ! »",
+           "Quand vint l'ordre : « وَأَنذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ » (avertis tes proches parents) — sourate ach-Chou'arâ' 26:214 (Sahih al-Bukhari), et l'ordre d'annoncer publiquement : « فَاصْدَعْ بِمَا تُؤْمَرُ » (proclame ce qui t'est ordonné) — sourate al-Hijr 15:94. Le Prophète ﷺ monta sur Safâ et cria d'une voix forte : « Yâ sabâhâh ! Yâ sabâhâh ! » (alerte à l'attaque du matin !) — c'était l'annonce d'un danger chez les Arabes. Les tribus de Quraysh se rassemblèrent. Le Prophète ﷺ dit : « Si je vous disais qu'une armée est derrière cette montagne, me croiriez-vous ? » Tous dirent : « Oui, tu n'as jamais menti. » Il dit : « Je vous avertis donc du châtiment d'Allah. »",
+           "Sahih al-Bukhari : 4770 ; Coran : 26:214, 15:94"],
+          ["🔥 L'hostilité d'Abou Lahab",
+           "Abou Lahab (l'oncle du Prophète ﷺ) dit : « Que tu périsses ! Est-ce pour cela que tu nous as rassemblés ? » (Sahih al-Bukhari et Muslim). Allah révéla alors sourate al-Masad : « تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ ۝ مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ » (Que périssent les deux mains d'Abou Lahab, et qu'il périsse ! Sa richesse et ce qu'il a acquis ne lui ont servi à rien). Ce fut l'annonce officielle de l'hostilité d'Abou Lahab.",
+           "Sahih al-Bukhari : 4971 ; Sahih Muslim : 208 ; Coran : 111"],
+          ["💢 Les trois causes de l'opposition des Quraysh",
+           "1) L'unicité — « Qu'adviendra-t-il de nos idoles ? » 2) La prophétie — « Pourquoi Allah ferait-Il d'un homme ordinaire un prophète ? » 3) L'au-delà — « Nos pères sont devenus poussière, et ils revivraient ? » Ces trois points frappaient les intérêts des Quraysh : le commerce de la Kaaba, la primauté et la liberté.",
+           ""],
+          ["😢 Le début des épreuves",
+           "Chaque musulman fut alors persécuté. Bilâl (qu'Allah l'agrée) était étendu sur le sable brûlant, une pierre posée sur lui, et il disait : « Ahad, ahad » (Un, Un). 'Ammâr (qu'Allah l'agrée), son père Yâsir et sa mère Soumayya (qu'Allah les agrée) furent torturés. Les récits de Sîra rapportent qu'Abou Jahl frappa Soumayya (qu'Allah l'agrée) d'une lance et qu'elle fut la première martyre. Abou Bakr (qu'Allah l'agrée) fut frappé à la mosquée au point qu'on ne reconnaissait plus son visage (récit de Sîra).",
+           "Sunan Ibn Mâjah : 150 (hasan) ; Mousnad Ahmad : 3832 (Bilâl) ; détail du martyre de Soumayya et de la persécution d'Abou Bakr : récits de Sîra"],
+          ["🛡️ La protection d'Abou Tâlib",
+           "Abou Tâlib dit aux Quraysh qu'il protégerait son neveu. Les Quraysh firent pression, menacèrent, puis proposèrent un marché (Ibn Ishâq) : prends 'Umâra ibn al-Walîd (le beau jeune homme des Quraysh) comme fils, et remets-nous ton neveu pour que nous le tuions. Abou Tâlib dit : « Quelle justice est-ce là ? Vous me donnez votre fils pour que je l'élève, et je vous donne le mien pour que vous le tuiez ? » Et il refusa catégoriquement.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🎯 La leçon",
+           "Aucune crainte à dire la vérité. Le Prophète ﷺ prêcha publiquement, endura les épreuves et ne recula pas. Nous devons tenir ferme pour la vérité, quelle que soit la difficulté.",
+           ""]
+        ],
+        [
+          ["Où commença la prédication publique ?", ["La Mosquée sacrée", "La colline de Safâ", "Le mont Ouhoud"]],
+          ["Qui fut la première martyre ?", ["Khadîja", "Soumayya", "'Â'icha"]],
+          ["Quel oncle persécuta le Prophète ﷺ ?", ["Abou Tâlib", "Abou Lahab", "Hamza"]]
+        ],
+        [
+          ["613", "L'annonce sur la colline de Safâ"],
+          ["613", "L'hostilité d'Abou Lahab"],
+          ["~614", "La première martyre, Soumayya (qu'Allah l'agrée)"]
+        ]
+      ],
+      es: [
+        "La predicación pública: el anuncio en Safa",
+        "La Meca, la colina de Safa",
+        "613",
+        "Comprender el comienzo de la predicación pública, el inicio de la oposición de los Quraysh y la hostilidad de Abu Lahab.",
+        "Los relatos de Sira cuentan que Abu Yahal hirió a Sumayya (que Alá esté complacido con ella) con una lanza y fue la primera mártir. ¡Oh Alá! Concédenos el sacrificio por la religión. Amín.",
+        [
+          "La predicación pública: en la colina de Safa",
+          "La hostilidad de Abu Lahab",
+          "La revelación de la sura al-Masad",
+          "Primera mártir: Sumayya (que Alá esté complacido con ella)",
+          "La protección de Abu Talib"
+        ],
+        [
+          ["🗣️ «¡Oh gente!»",
+           "Cuando vino la orden: «وَأَنذِرْ عَشِيرَتَكَ الْأَقْرَبِينَ» (advierte a tus parientes más cercanos) — sura ash-Shu'ara 26:214 (Sahih al-Bujari), y la orden de proclamar públicamente: «فَاصْدَعْ بِمَا تُؤْمَرُ» (proclama lo que se te ordena) — sura al-Hiyy 15:94. El Profeta ﷺ subió a Safa y gritó con voz fuerte: «¡Ya sabahah! ¡Ya sabahah!» (¡alerta de ataque al amanecer!) — era el anuncio de un peligro entre los árabes. Se reunieron las tribus de Quraysh. El Profeta ﷺ dijo: «Si os dijera que hay un ejército detrás de este monte, ¿me creeríais?» Todos dijeron: «Sí, nunca has mentido.» Dijo: «Os advierto, pues, del castigo de Alá.»",
+           "Sahih al-Bujari: 4770; Corán: 26:214, 15:94"],
+          ["🔥 La hostilidad de Abu Lahab",
+           "Abu Lahab (tío del Profeta ﷺ) dijo: «¡Que perezcas! ¿Para esto nos has reunido?» (Sahih al-Bujari y Muslim). Entonces Alá reveló la sura al-Masad: «تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ ۝ مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ» (¡Perezcan las dos manos de Abu Lahab, y perezca él! De nada le sirvieron su riqueza ni lo que ganó). Fue el anuncio oficial de la hostilidad de Abu Lahab.",
+           "Sahih al-Bujari: 4971; Sahih Muslim: 208; Corán: 111"],
+          ["💢 Las tres causas de la oposición de los Quraysh",
+           "1) La unicidad: «¿Qué será de nuestros ídolos?» 2) La profecía: «¿Por qué Alá haría profeta a un hombre común?» 3) El más allá: «Nuestros padres se volvieron tierra, ¿y resucitarán?» Estos tres puntos golpeaban los intereses de los Quraysh: el comercio de la Kaaba, la primacía y la libertad.",
+           ""],
+          ["😢 El comienzo de las pruebas",
+           "Entonces se persiguió a cada musulmán. A Bilal (que Alá esté complacido con él) lo tendían sobre arena caliente y le ponían una piedra encima, y él decía: «Ahad, ahad» (Uno, Uno). Ammar (que Alá esté complacido con él), su padre Yasir y su madre Sumayya (que Alá esté complacido con ellos) fueron torturados. Los relatos de Sira cuentan que Abu Yahal hirió a Sumayya (que Alá esté complacido con ella) con una lanza y fue la primera mártir. A Abu Bakr (que Alá esté complacido con él) lo golpearon en la mezquita hasta que no se le reconocía el rostro (relato de Sira).",
+           "Sunan Ibn Maya: 150 (hasan); Musnad Ahmad: 3832 (Bilal); detalle del martirio de Sumayya y de la persecución de Abu Bakr: relatos de Sira"],
+          ["🛡️ La protección de Abu Talib",
+           "Abu Talib dijo a los Quraysh que protegería a su sobrino. Los Quraysh presionaron, amenazaron y luego propusieron un trato (Ibn Ishaq): toma a Umara ibn al-Walid (el apuesto joven de los Quraysh) como hijo, y entréganos a tu sobrino para que lo matemos. Abu Talib dijo: «¿Qué justicia es esta? Me dais vuestro hijo para que lo críe, y yo os doy el mío para que lo matéis?» Y se negó tajantemente.",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🎯 La lección",
+           "No hay miedo al decir la verdad. El Profeta ﷺ predicó públicamente, soportó las pruebas y no retrocedió. Debemos mantenernos firmes por la verdad, por difícil que sea.",
+           ""]
+        ],
+        [
+          ["¿Dónde comenzó la predicación pública?", ["La Mezquita Sagrada", "La colina de Safa", "El monte Uhud"]],
+          ["¿Quién fue la primera mártir?", ["Jadiya", "Sumayya", "Aisha"]],
+          ["¿Qué tío persiguió al Profeta ﷺ?", ["Abu Talib", "Abu Lahab", "Hamza"]]
+        ],
+        [
+          ["613", "El anuncio en la colina de Safa"],
+          ["613", "La hostilidad de Abu Lahab"],
+          ["~614", "La primera mártir, Sumayya (que Alá esté complacido con ella)"]
+        ]
+      ]
     }
 
   }
