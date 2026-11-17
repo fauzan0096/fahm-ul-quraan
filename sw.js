@@ -102,7 +102,10 @@
 //       jamaat/jumma, doosri namazein aur musafir ki namaz (arkan-extra.js, id 240-454 + 26/27/53/58/9001).
 // v109: ARKAN — ZAKAT ka poora page (arkan-zakat.html) मराठी / العربية / Français / Español mein: ahmiyat,
 //       sharaa'it, nisab, calculator ke saare labels aur uske nateeje (ARKAN_Z), 8 masarif aur sadqa-e-fitr.
-const CACHE_NAME = 'quran-ustad-auto-v109';
+// v110: ARKAN — ROZA ka poora page (arkan-roza.html) मराठी / العربية / Français / Español mein: ahmiyat,
+//       ramazan ke roze, sehri/iftar, mufattirat, qaza-o-kafara, rukhsat, nafl roze, Lailatul-Qadr,
+//       e'tikaf aur aadaab (arkan-extra.js, id 455-585 + 129).
+const CACHE_NAME = 'quran-ustad-auto-v110';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
