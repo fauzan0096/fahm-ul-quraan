@@ -1520,6 +1520,8 @@ if (!window.QS_LITE) {
         var hs = document.querySelectorAll('[data-lbh]');
         for (var h = 0; h < hs.length; h++) { var hx = htmlFor(hs[h].getAttribute('data-lbh'), v); if (hx != null && hs[h].innerHTML !== hx) hs[h].innerHTML = hx; }
         document.documentElement.setAttribute('data-mlang', v);
+        // <html lang> bhi theek rakho (font/hyphenation ke liye) — layout ki disha nahi badalti
+        try { document.documentElement.setAttribute('lang', v === 'u' ? 'ur' : v === 'hi' ? 'hi' : v === 'mr' ? 'mr' : v === 'ar' ? 'ar' : v === 'fr' ? 'fr' : v === 'es' ? 'es' : 'en'); } catch (e) {}
         auto();
     }
     function fire(v) { for (var i = 0; i < cbs.length; i++) { try { cbs[i](v); } catch (e) {} } }

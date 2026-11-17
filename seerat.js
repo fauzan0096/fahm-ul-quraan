@@ -3335,7 +3335,7 @@ window.SEERAT_UI = {"u": {"daysDone": "دن مکمل", "dayOf": "دن", "keyFact
     function done() { try { var a = JSON.parse(ls(key('seeratDone')) || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
     function setDone(a) { lsSet(key('seeratDone'), JSON.stringify(a)); }
     var LANGS = ['u', 'ro', 'hi', 'en'], hooked = false;
-    function L() { var v = null; try { v = (window.QSLang && QSLang.get()) || ls('mlang'); } catch (e) {} return LANGS.indexOf(v) >= 0 ? v : 'u'; }
+    function L() { var v = null; try { v = (window.QSLang && QSLang.get()) || ls('mlang'); } catch (e) {} return LANGS.indexOf(v) >= 0 ? v : 'en'; }
     function UIs(k) { var u = window.SEERAT_UI || {}; var l = L(); return (u[l] && u[l][k]) || (u.u && u.u[k]) || ''; }
     function TRd(x) { var t = window.SEERAT_TR && window.SEERAT_TR[x.day]; return (L() !== 'u' && t && t[L()]) || null; }
     function Pk(T, i, def) { return (T && T[i] !== undefined && T[i] !== null && T[i] !== '') ? T[i] : def; }

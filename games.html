@@ -1480,8 +1480,20 @@ html[data-mlang="u"] .main-nav{direction:rtl}
     pool = pool.filter(usable);
 
     // ---------- Zubaan: lafz ka matlab chuni hui zubaan mein ----------
-    function mean(w) { var l = GL(); return l === 'u' ? { t: w.u, u: '' } : l === 'hi' ? { t: w.u_hi || w.u_ro, u: '' } : l === 'en' ? { t: w.u_en || w.u_ro, u: '' } : { t: w.u_ro, u: w.u }; }
-    function mean2(w) { var l = GL(); return l === 'u' ? w.t : l === 'hi' ? w.t_hi : l === 'en' ? w.t_en : w.t_ro; }
+    function mean(w) {
+      var l = GL();
+      if (l === 'u') return { t: w.u, u: '' };
+      if (l === 'hi') return { t: w.u_hi || w.u_ro, u: '' };
+      if (l === 'ro') return { t: w.u_ro, u: w.u };
+      return { t: w.u_en || w.u_ro, u: '' };   // en + nayi zubaanein (mr/ar/fr/es)
+    }
+    function mean2(w) {
+      var l = GL();
+      if (l === 'u') return w.t;
+      if (l === 'hi') return w.t_hi || w.t_ro;
+      if (l === 'ro') return w.t_ro;
+      return w.t_en || w.t_ro;                 // en + nayi zubaanein
+    }
     function tn(i) { return GU('tier' + i); }
     // ---------- Question builder ----------
     // Darja 1-2: lafz -> matlab | 3: ayat ka hissa -> matlab | 4: matlab -> lafz | 5: Roman -> matlab (Urdu script mein)

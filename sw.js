@@ -92,11 +92,10 @@
 // v99: Aaj ki Ayat + Sunnat ka 4-zubaan tarjuma (daily-lang.js) — app ka ek hi language button
 //      (اردو / Roman / हिंदी / English) ab in dono ka tarjuma bhi badalta hai (pehle sirf heading badalti thi).
 //      daily-lang.js core shell mein hai, is liye offline bhi chalta hai.
-// v100: 8 zubaanein — اردو / Roman / हिंदी / English ke baad ab मराठी, العربية, Français, Español bhi.
-//       Engine app.js mein (LIST/LAB/val/htmlFor), nayi zubaanoN ka tarjuma naye lang-extra.js mein.
-//       Jahan tarjuma na ho wahan English dikhta hai — kuch bhi khaali/undefined nahi. Duha/Tajweed pages
-//       bhi nayi zubaanoN par crash nahi karte (labels English par gir jate hain).
-const CACHE_NAME = 'quran-ustad-auto-v100';
+// v101: 8 zubaanein — UI ke saare lafz (button, heading, label, toast, login errors) nayi 4 zubaanoN
+//       (मराठी / العربية / Français / Español) mein. Jahan tarjuma na ho wahan ENGLISH — kahin bhi Urdu
+//       par gir kar adhoora nahi chhodta. <html lang> bhi zubaan ke hisaab se set hota hai.
+const CACHE_NAME = 'quran-ustad-auto-v101';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

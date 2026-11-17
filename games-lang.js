@@ -10,6 +10,8 @@
   var IX = { ro: 0, u: 1, hi: 2, en: 3 };
   function GL() { try { return (window.QSLang && QSLang.get()) || 'u'; } catch (e) { return 'u'; } }
   window.GL = GL;
+  // Nayi zubaanein (mr/ar/fr/es) ka tarjuma is file mein nahi — un par English
+  function ii() { var i = IX[GL()]; return i == null ? 3 : i; }
   window.GT = function (s) {
     var l = GL(); if (l === 'ro') return s;
     var t = TR[s]; if (!t) return s;
@@ -17,13 +19,14 @@
   };
   window.GU = function (k, v) {
     var e = UI[k]; if (!e) return k;
-    var s = e[IX[GL()]] || e[0];
+    var s = e[ii()] || e[0];
     if (v) s = s.replace(/\{(\w+)\}/g, function (m, n) { return v[n] != null ? v[n] : m; });
     return s;
   };
   window.GM = function (ur) {
     var l = GL(); if (l === 'u') return ur;
     var m = MEM[ur]; if (!m) return ur;
-    return m[l === 'ro' ? 0 : l === 'hi' ? 1 : 2] || ur;
+    var i = l === 'ro' ? 0 : l === 'hi' ? 1 : 2;
+    return m[i] || ur;
   };
 })();
