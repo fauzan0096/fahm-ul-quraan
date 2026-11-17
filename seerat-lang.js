@@ -1385,6 +1385,522 @@ window.SEERAT_LANG = {
           ["~614", "La primera mártir, Sumayya (que Alá esté complacido con ella)"]
         ]
       ]
+    },
+
+    /* ═══════════════ DAY 8 — Masaa'ib o aziyatein ═══════════════ */
+    8: {
+      mr: [
+        "कष्ट व छळ — संयमाची परीक्षा",
+        "मक्का",
+        "इ.स. ६१४-६१५",
+        "सहाबांच्या कुर्बान्या, विशेषतः गुलाम व दुर्बल लोकांचे कष्ट समजून घेणे.",
+        "हजरत बिलाल (र.अ.), हजरत सुमय्या (र.अ.) आणि हजरत अम्मार (र.अ.) — यांच्याच कुर्बान्यांमुळे आज आपल्याला ईमान मिळाले. हे अल्लाह! त्यांच्या कुर्बान्यांचे कृतज्ञता व्यक्त करणारे आपल्याला बनव. आमीन.",
+        [
+          "बिलाल (र.अ.) यांना गरम वाळूवर झोपवले",
+          "पहिली शहीदा: सुमय्या (र.अ.)",
+          "अम्मार (र.अ.) यांचे आई-वडील शहीद",
+          "अबू बक्र (र.अ.) यांना मारले गेले",
+          "उमर (र.अ.)ही आधी विरोधक होते (दिवस १० मध्ये)"
+        ],
+        [
+          ["🔥 अत्याचाराचा कळस",
+           "कुरैशने प्रत्येक मुस्लिमाला छळायला सुरुवात केली. जो गुलाम मुस्लिम झाला, त्याचा मालक त्याच्यावर अत्याचार करत असे — गरम वाळूवर झोपवून छातीवर दगड ठेवले जात, पाणी मिळत नसे आणि चाबकाचे मार पडत. हजरत बिलाल (र.अ.) यांची घटना प्रसिद्ध आहे — उमय्या बिन खलफ त्यांना गरम वाळूवर झोपवत, दगड ठेवत आणि म्हणत: «मुहम्मद ﷺ यांना नाकार» — ते म्हणत «अहद, अहद». हजरत अबू बक्र (र.अ.) यांनी त्यांना विकत घेऊन मुक्त केले.",
+           "सहीह बुखारी: ३७५४ (अबू बक्र (र.अ.) यांनी बिलाल (र.अ.) यांना मुक्त करणे); बाकी तपशील: सीरतच्या रिवायती"],
+          ["👨‍👩‍👦 यासिर यांचे कुटुंब",
+           "हजरत यासिर (र.अ.), हजरत सुमय्या (र.अ.) आणि हजरत अम्मार (र.अ.) — हे तिघेही गुलाम होते आणि मुस्लिम झाले. सीरतच्या रिवायतींनुसार अबू जहलने सुमय्या (र.अ.) यांना भाला मारला आणि त्या शहीद झाल्या — इस्लामची पहिली शहीदा. यासिर (र.अ.)ही शहीद झाले. अम्मार (र.अ.) यांना कठोर छळ दिला गेला, इतका की त्यांना भाग्यवश कुफ्राचे शब्द बोलावे लागले — पण मन ईमानाने भरलेले होते. जेव्हा ते नबी ﷺ यांच्याकडे आले, तेव्हा आप ﷺ यांनी विचारले: «मन कसे आहे?» ते म्हणाले: «ईमानाने भरलेले.» आप ﷺ म्हणाले: «पुन्हा असे करावे लागले तर काही हरकत नाही.» (यावर ही आयत उतरली — सूरह अन-नहल १६:१०६: «مَنْ كَفَرَ بِاللَّهِ مِن بَعْدِ إِيمَانِهِ إِلَّا مَنْ أُكْرِهَ وَقَلْبُهُ مُطْمَئِنٌّ بِالْإِيمَانِ»).",
+           "कुरआन: १६:१०६; सबबे-नुझूल: तफसीर तबरी / मुस्तद्रक हाकिम (मुर्सल); सुमय्या (र.अ.) व यासिर (र.अ.) यांची शहादत: सीरतच्या रिवायती"],
+          ["💔 हजरत अबू बक्र (र.अ.) यांचा छळ",
+           "हजरत अबू बक्र (र.अ.) यांना मस्जिदे-हराममध्ये मारले गेले, इतके मारले की चेहरा ओळखताच येत नव्हता. बनू तैम टोळीने त्यांना उचलले आणि घरी नेले; शुद्धी आल्यावर पहिला प्रश्न होता: «नबी ﷺ कसे आहेत?» एवढ्या त्रासातही नबी ﷺ यांची काळजी. रात्री आईसोबत नबी ﷺ यांना भेटायला गेले, दुआ दिली आणि परत आले.",
+           "सीरतची रिवायत — अल-बिदाया वन-निहाया / सीरत इब्न हिशाम (सनदेवर चर्चा)"],
+          ["🏹 हजरत उमर (र.अ.) यांचा विरोध",
+           "इस्लाम आणण्यापूर्वी हजरत उमर (र.अ.) मुस्लिमांच्या कडव्या विरोधकांत होते. पण अल्लाहने त्यांच्यासाठी हिदायत लिहून ठेवली होती — त्यांच्या इस्लामबद्दलची घटना आणि त्याचा परिणाम आपण दिवस १० मध्ये वाचू.",
+           ""],
+          ["🎯 बोध",
+           "या कुर्बान्या पाहून डोळे भरून येतात. हजरत बिलाल (र.अ.) गरम वाळूवर «अहद, अहद» म्हणत राहिले, हजरत सुमय्या (र.अ.) यांनी जीव दिला, हजरत अम्मार (र.अ.) यांनी छळ सहन केला — पण ईमान सोडले नाही. आपण त्यांच्या कुर्बान्या लक्षात ठेवल्या पाहिजेत आणि आपल्या छोट्या कष्टांतही संयम ठेवला पाहिजे.",
+           ""]
+        ],
+        [
+          ["पहिली शहीदा कोण?", ["खदीजा", "सुमय्या", "आयशा"]],
+          ["बिलाल (र.अ.) यांचा मालक कोण होता?", ["अबू जहल", "उमय्या बिन खलफ", "अबू सुफियान"]],
+          ["सीरतच्या प्रसिद्ध रिवायतीनुसार हजरत उमर (र.अ.) यांनी कोणती सूरत ऐकून इस्लाम स्वीकारला?", ["अल-फातिहा", "ता-हा", "यासीन"]]
+        ],
+        [
+          ["इ.स. सु. ६१४", "सुमय्या (र.अ.) यांची शहादत"],
+          ["इ.स. सु. ६१४", "बिलाल (र.अ.) यांचा छळ"],
+          ["इ.स. ६१६", "हजरत उमर (र.अ.) यांचा इस्लाम"]
+        ]
+      ],
+      ar: [
+        "المصائب والأذى — امتحان الصبر",
+        "مكة",
+        "614-615 م",
+        "فهم تضحيات الصحابة رضي الله عنهم، وخاصة مصائب العبيد والضعفاء.",
+        "بلال وسمية وعمار رضي الله عنهم — بتضحيات هؤلاء وصل إلينا الإيمان اليوم. اللهم اجعلنا من الشاكرين لتضحياتهم. آمين.",
+        [
+          "بلال رضي الله عنه على الرمل الحار",
+          "أول شهيدة: سمية رضي الله عنها",
+          "والدا عمار رضي الله عنه شهيدان",
+          "أبو بكر رضي الله عنه ضُرب",
+          "عمر رضي الله عنه كان معارضًا أولًا (في اليوم العاشر)"
+        ],
+        [
+          ["🔥 ذروة الظلم",
+           "بدأت قريش تعذيب كل مسلم. فمن أسلم من العبيد عذّبه سيده — يُطرح على الرمل الحار ويُوضع الحجر على صدره، ولا يُسقى، ويُضرب بالسياط. وقصة بلال رضي الله عنه مشهورة: كان أمية بن خلف يطرحه على الرمل الحار ويضع الحجر ويقول: «اكفر بمحمد ﷺ»، وهو يقول: «أحد، أحد». فاشتراه أبو بكر رضي الله عنه وأعتقه.",
+           "صحيح البخاري: 3754 (عتق أبي بكر لبلال)؛ وبقية التفصيل: روايات السيرة"],
+          ["👨‍👩‍👦 آل ياسر",
+           "ياسر وسمية وعمار رضي الله عنهم كانوا عبيدًا فأسلموا. وجاء في روايات السيرة أن أبا جهل طعن سمية رضي الله عنها بحربة فماتت شهيدة — أول شهيدة في الإسلام. واستُشهد ياسر رضي الله عنه أيضًا. وعُذّب عمار رضي الله عنه عذابًا شديدًا حتى اضطر إلى كلمة الكفر — وقلبه مطمئن بالإيمان. فلما جاء إلى النبي ﷺ سأله: «كيف قلبك؟» قال: «مطمئن بالإيمان». فقال ﷺ: «إن عادوا فعد». (فنزلت: سورة النحل 16:106).",
+           "القرآن: 16:106؛ سبب النزول: تفسير الطبري / المستدرك للحاكم (مرسل)؛ شهادة سمية وياسر رضي الله عنهما: روايات السيرة"],
+          ["💔 إيذاء أبي بكر رضي الله عنه",
+           "ضُرب أبو بكر رضي الله عنه في المسجد الحرام حتى لم يُعرف وجهه. فحمله قومه بنو تيم إلى البيت، فلما أفاق كان أول سؤاله: «كيف رسول الله ﷺ؟» — في هذا الألم كله كان يهتم بالنبي ﷺ. ثم ذهب ليلًا مع أمه ليرى النبي ﷺ فدعا له ورجع.",
+           "رواية سيرة — البداية والنهاية / سيرة ابن هشام (وفي الإسناد كلام)"],
+          ["🏹 معارضة عمر رضي الله عنه",
+           "كان عمر رضي الله عنه قبل إسلامه من أشد المعارضين. لكن الله كتب له الهداية — وسنقرأ قصة إسلامه وأثره في اليوم العاشر.",
+           ""],
+          ["🎯 العبرة",
+           "تُدمع العين هذه التضحيات. لقد بقي بلال رضي الله عنه على الرمل الحار يقول «أحد، أحد»، وبذلت سمية رضي الله عنها روحها، واحتمل عمار رضي الله عنه الأذى — ولم يتركوا الإيمان. فعلينا أن نتذكر تضحياتهم وأن نصبر في مصائبنا الصغيرة.",
+           ""]
+        ],
+        [
+          ["من أول شهيدة؟", ["خديجة", "سمية", "عائشة"]],
+          ["من سيد بلال رضي الله عنه؟", ["أبو جهل", "أمية بن خلف", "أبو سفيان"]],
+          ["بأي سورة أسلم عمر رضي الله عنه في رواية السيرة المشهورة؟", ["الفاتحة", "طه", "يس"]]
+        ],
+        [
+          ["نحو 614", "شهادة سمية رضي الله عنها"],
+          ["نحو 614", "تعذيب بلال رضي الله عنه"],
+          ["616", "إسلام عمر رضي الله عنه"]
+        ]
+      ],
+      fr: [
+        "Les persécutions et les épreuves — l'épreuve de la patience",
+        "La Mecque",
+        "614-615",
+        "Comprendre les sacrifices des Compagnons, en particulier les épreuves des esclaves et des faibles.",
+        "Bilâl, Soumayya et 'Ammâr (qu'Allah les agrée) — c'est par leurs sacrifices que la foi nous est parvenue aujourd'hui. Ô Allah ! Fais de nous des reconnaissants de leurs sacrifices. Âmîn.",
+        [
+          "Bilâl (qu'Allah l'agrée) étendu sur le sable brûlant",
+          "Première martyre : Soumayya (qu'Allah l'agrée)",
+          "Les parents de 'Ammâr (qu'Allah l'agrée) martyrs",
+          "Abou Bakr (qu'Allah l'agrée) frappé",
+          "'Umar (qu'Allah l'agrée) fut d'abord un opposant (au jour 10)"
+        ],
+        [
+          ["🔥 Le comble de l'injustice",
+           "Les Quraysh commencèrent à persécuter chaque musulman. L'esclave qui embrassait l'islam était torturé par son maître : étendu sur le sable brûlant, une pierre posée sur la poitrine, privé d'eau et frappé de coups. L'épisode de Bilâl (qu'Allah l'agrée) est célèbre : Umayya ibn Khalaf l'étendait sur le sable brûlant, posait une pierre et disait : « Renie Mouhammad ﷺ » ; il répondait : « Ahad, ahad » (Un, Un). Abou Bakr (qu'Allah l'agrée) l'acheta et l'affranchit.",
+           "Sahih al-Bukhari : 3754 (Abou Bakr affranchit Bilâl) ; le reste : récits de Sîra"],
+          ["👨‍👩‍👦 La famille de Yâsir",
+           "Yâsir, Soumayya et 'Ammâr (qu'Allah les agrée) étaient esclaves et embrassèrent l'islam. Les récits de Sîra rapportent qu'Abou Jahl frappa Soumayya (qu'Allah l'agrée) d'une lance et qu'elle mourut martyre — la première martyre de l'islam. Yâsir (qu'Allah l'agrée) fut aussi martyrisé. 'Ammâr (qu'Allah l'agrée) fut torturé si durement qu'il fut contraint de prononcer des paroles de mécréance — mais son cœur était plein de foi. Quand il vint au Prophète ﷺ, celui-ci demanda : « Comment est ton cœur ? » Il dit : « Rempli de foi. » Il ﷺ dit : « S'ils recommencent, recommence. » (Sur cela descendit le verset — sourate an-Nahl 16:106).",
+           "Coran : 16:106 ; occasion de la révélation : Tafsîr at-Tabarî / al-Moustadrak d'al-Hâkim (moursal) ; le martyre de Soumayya et Yâsir : récits de Sîra"],
+          ["💔 La persécution d'Abou Bakr (qu'Allah l'agrée)",
+           "Abou Bakr (qu'Allah l'agrée) fut frappé à la Mosquée sacrée, tant frappé qu'on ne reconnaissait plus son visage. Sa tribu, Banou Taym, le porta à la maison ; revenu à lui, sa première question fut : « Comment va le Prophète ﷺ ? » Dans une telle souffrance, il se souciait du Prophète ﷺ. La nuit, il alla avec sa mère voir le Prophète ﷺ, reçut son invocation, et revint.",
+           "Récit de Sîra — al-Bidâya wan-Nihâya / Sîra d'Ibn Hichâm (chaîne discutée)"],
+          ["🏹 L'opposition de 'Umar (qu'Allah l'agrée)",
+           "Avant son islam, 'Umar (qu'Allah l'agrée) était parmi les opposants les plus durs. Mais Allah lui avait écrit la guidée — nous lirons l'épisode de son islam et son effet au jour 10.",
+           ""],
+          ["🎯 La leçon",
+           "Ces sacrifices font monter les larmes aux yeux. Bilâl (qu'Allah l'agrée) répétait « ahad, ahad » sur le sable brûlant, Soumayya (qu'Allah l'agrée) donna sa vie, 'Ammâr (qu'Allah l'agrée) endura les tortures — sans abandonner la foi. Nous devons garder le souvenir de leurs sacrifices et être patients dans nos petites épreuves.",
+           ""]
+        ],
+        [
+          ["Qui fut la première martyre ?", ["Khadîja", "Soumayya", "'Â'icha"]],
+          ["Qui était le maître de Bilâl (qu'Allah l'agrée) ?", ["Abou Jahl", "Umayya ibn Khalaf", "Abou Soufyân"]],
+          ["Quelle sourate fit embrasser l'islam à 'Umar (qu'Allah l'agrée) selon le récit célèbre ?", ["Al-Fâtiha", "Tâ-Hâ", "Yâ-Sîn"]]
+        ],
+        [
+          ["~614", "Martyre de Soumayya (qu'Allah l'agrée)"],
+          ["~614", "Persécution de Bilâl (qu'Allah l'agrée)"],
+          ["616", "Islam de 'Umar (qu'Allah l'agrée)"]
+        ]
+      ],
+      es: [
+        "Las persecuciones y las pruebas: la prueba de la paciencia",
+        "La Meca",
+        "614-615",
+        "Comprender los sacrificios de los Compañeros, en especial las pruebas de los esclavos y los débiles.",
+        "Bilal, Sumayya y Ammar (que Alá esté complacido con ellos): por sus sacrificios nos llegó hoy la fe. ¡Oh Alá! Haznos agradecidos de sus sacrificios. Amín.",
+        [
+          "A Bilal (que Alá esté complacido con él) lo tendían sobre arena caliente",
+          "Primera mártir: Sumayya (que Alá esté complacido con ella)",
+          "Los padres de Ammar (que Alá esté complacido con él), mártires",
+          "A Abu Bakr (que Alá esté complacido con él) lo golpearon",
+          "Umar (que Alá esté complacido con él) fue primero un opositor (en el día 10)"
+        ],
+        [
+          ["🔥 El colmo de la injusticia",
+           "Los Quraysh comenzaron a perseguir a cada musulmán. Al esclavo que abrazaba el islam lo torturaba su amo: lo tendían sobre arena caliente, le ponían una piedra en el pecho, le negaban agua y lo azotaban. El episodio de Bilal (que Alá esté complacido con él) es famoso: Umayya ibn Jalaf lo tendía sobre la arena caliente, ponía una piedra y decía: «Reniega de Muhámmad ﷺ», y él decía: «Ahad, ahad» (Uno, Uno). Abu Bakr (que Alá esté complacido con él) lo compró y lo libertó.",
+           "Sahih al-Bujari: 3754 (Abu Bakr libera a Bilal); el resto: relatos de Sira"],
+          ["👨‍👩‍👦 La familia de Yasir",
+           "Yasir, Sumayya y Ammar (que Alá esté complacido con ellos) eran esclavos y abrazaron el islam. Los relatos de Sira cuentan que Abu Yahal hirió a Sumayya (que Alá esté complacido con ella) con una lanza y murió mártir: la primera mártir del islam. Yasir (que Alá esté complacido con él) también fue martirizado. A Ammar (que Alá esté complacido con él) lo torturaron tan duramente que se vio obligado a pronunciar palabras de incredulidad, pero su corazón estaba lleno de fe. Cuando vino al Profeta ﷺ, este preguntó: «¿Cómo está tu corazón?» Dijo: «Lleno de fe.» Él ﷺ dijo: «Si vuelven a hacerlo, vuelve a hacerlo.» (Sobre esto descendió la aleya: sura an-Nahl 16:106).",
+           "Corán: 16:106; ocasión de la revelación: Tafsir at-Tabari / al-Mustadrak de al-Hakim (mursal); el martirio de Sumayya y Yasir: relatos de Sira"],
+          ["💔 La persecución de Abu Bakr (que Alá esté complacido con él)",
+           "A Abu Bakr (que Alá esté complacido con él) lo golpearon en la Mezquita Sagrada, tanto que no se le reconocía el rostro. Su tribu, Banu Taym, lo llevó a casa; al recobrar el sentido, su primera pregunta fue: «¿Cómo está el Profeta ﷺ?» En tal sufrimiento se preocupaba por el Profeta ﷺ. De noche fue con su madre a ver al Profeta ﷺ, recibió su súplica y regresó.",
+           "Relato de Sira: al-Bidaya wan-Nihaya / Sira de Ibn Hisham (cadena discutida)"],
+          ["🏹 La oposición de Umar (que Alá esté complacido con él)",
+           "Antes de su islam, Umar (que Alá esté complacido con él) era de los opositores más duros. Pero Alá le tenía escrita la guía; leeremos el episodio de su islam y su efecto en el día 10.",
+           ""],
+          ["🎯 La lección",
+           "Estos sacrificios hacen brotar lágrimas. Bilal (que Alá esté complacido con él) repetía «ahad, ahad» sobre la arena caliente, Sumayya (que Alá esté complacido con ella) dio su vida, Ammar (que Alá esté complacido con él) soportó las torturas, sin abandonar la fe. Debemos recordar sus sacrificios y ser pacientes en nuestras pequeñas pruebas.",
+           ""]
+        ],
+        [
+          ["¿Quién fue la primera mártir?", ["Jadiya", "Sumayya", "Aisha"]],
+          ["¿Quién era el amo de Bilal (que Alá esté complacido con él)?", ["Abu Yahal", "Umayya ibn Jalaf", "Abu Sufian"]],
+          ["¿Qué sura hizo que Umar (que Alá esté complacido con él) abrazara el islam según el relato famoso?", ["Al-Fatiha", "Ta-Ha", "Ya-Sin"]]
+        ],
+        [
+          ["~614", "Martirio de Sumayya (que Alá esté complacido con ella)"],
+          ["~614", "Persecución de Bilal (que Alá esté complacido con él)"],
+          ["616", "Islam de Umar (que Alá esté complacido con él)"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 9 — Hijrat-e-Habsha ═══════════════ */
+    9: {
+      mr: [
+        "हबशाची हिजरत — पहिले आश्रयस्थान",
+        "हबशा (इथिओपिया)",
+        "इ.स. ६१५ (नबवी ५)",
+        "मुस्लिमांची पहिली हिजरत, नजाशीचा न्याय आणि मुश्रिकांचा कट समजून घेणे.",
+        "हजरत जाफर (र.अ.) यांनी नजाशीसमोर सूरह मरियम वाचली — किती सुंदर दृश्य असेल. नजाशीचे डोळे भरून आले. हे अल्लाह! आम्हालाही कुरआनवर तसेच प्रेम दे. आमीन.",
+        [
+          "नबवी ५ मध्ये हिजरत",
+          "नजाशीचा न्याय",
+          "पहिल्यांदा: १५ व्यक्ती",
+          "दुसऱ्यांदा: सुमारे १०० व्यक्ती",
+          "सूरह मरियमने नजाशीवर परिणाम केला"
+        ],
+        [
+          ["🚢 हिजरतीची परवानगी",
+           "कष्ट वाढत गेल्यावर नबी ﷺ सहाबांना म्हणाले: «हबशाला जा, तिथे असा राजा आहे जो कोणावरही अत्याचार करत नाही.» पहिल्यांदा ११ पुरुष व ४ स्त्रिया गेल्या. दुसऱ्यांदा ८३ पुरुष व १८ स्त्रिया गेल्या. ही पहिली हिजरत होती — अल्लाहसाठी घर, माल आणि कुटुंब सोडणे.",
+           "अर-रहीकुल-मख्तूम; मुस्नद अहमद: १७४०"],
+          ["👑 नजाशीचा न्याय",
+           "हबशाचा राजा नजाशी (असहमा) यांनी आश्रय दिला. कुरैशने अम्र बिन अल-आस व अब्दुल्लाह बिन अबी रबीआ यांना मौल्यवान भेटवस्तू घेऊन पाठवले आणि म्हणाले: «काही मूर्ख तरुण आमच्या दीनापासून फिरले आहेत, त्यांना परत द्या.» नजाशीने विचारले: «तुमचा दीन काय आहे?» जाफर बिन अबी तालिब (र.अ.) म्हणाले: «आम्ही जाहिलियतमध्ये होतो — मूर्ती पूजत, मेलेले खात, व्यभिचार करत, नाती तोडत आणि दुर्बलांवर अत्याचार करत. नंतर अल्लाहने आमच्यातून एक रसूल पाठवले, ज्यांना आम्ही ओळखतो — ते सत्यवादी व विश्वासू आहेत. त्यांनी तौहीद, नमाज़, रोजा, जकात आणि पवित्रता शिकवली. नंतर आमच्यावर अत्याचार झाला, म्हणून आम्ही हिजरत केली.» नजाशीने विचारले: «कुरआन ऐकवा.» जाफर (र.अ.) यांनी सूरह मरियमच्या सुरुवातीच्या आयती वाचल्या — नजाशी इतका रडला की त्याची दाढी ओली झाली, आणि म्हणाला: «हा शब्द आणि ईसा (अ.स.) जे (इंजील) घेऊन आले, दोन्ही एकाच दिव्यातून निघाले आहेत.» आणि घोषणा केली: «मी या लोकांना तुमच्या स्वाधीन करणार नाही.»",
+           "मुस्नद अहमद: १७४० (उम्मे सलमा (र.अ.) यांची रिवायत)"],
+          ["💢 मुश्रिकांचा कट",
+           "दुसऱ्या दिवशी अम्र बिन अल-आसने दुसरी चाल केली. तो नजाशीला म्हणाला: «हे राजा! हे लोक ईसा बिन मरियम यांच्याबद्दल मोठी गोष्ट सांगतात.» नजाशीने मुस्लिमांना बोलावून विचारले. जाफर (र.अ.) म्हणाले: «आम्ही तेच सांगतो जे आमचे नबी ﷺ घेऊन आले: ते अल्लाहचे दास, त्याचे रसूल, त्याची रूह आणि त्याचा शब्द आहेत, जो त्याने कुमारी मरियम (अ.स.) यांच्याकडे टाकला.» नजाशीने जमिनीवरून एक काडी उचलली आणि म्हणाला: «ईसा (अ.स.) आणि तुम्ही जे सांगितले त्यात एका काडीइतकाही फरक नाही.» (म्हणजे गोष्ट तीच आहे) (मुस्नद अहमद). मुश्रिक रिकाम्या हाताने परत गेले.",
+           "मुस्नद अहमद: १७४० (उम्मे सलमा (र.अ.) यांची रिवायत)"],
+          ["🤍 हबशात शांती",
+           "मुस्लिमांनी हबशात शांतीने उपासना केली. एकदा नजाशीविरुद्ध कोणी बंड केले, तेव्हा मुस्लिमांना मोठी काळजी झाली की नजाशी हरू नये; त्यांनी त्याच्या विजयासाठी दुआ केली आणि तो विजयी झाल्यावर सर्व आनंदी झाले (मुस्नद अहमद). काही सहाबा नंतर मक्का व मदिन्याला परत आले, आणि जाफर (र.अ.) व त्यांचे साथीदार ७ हिजरीत खैबरच्या वेळी मदिन्याला पोहोचले. नजाशी नंतर मुस्लिम झाले; त्यांच्या निधनाची बातमी मिळाल्यावर नबी ﷺ यांनी गैरहजेरीत नमाज़े-जनाज़ा पढली (सहीह बुखारी).",
+           "मुस्नद अहमद: १७४०; सहीह बुखारी: १२४५ (नजाशीची नमाज़े-जनाज़ा) आणि गझवा-ए-खैबरचा बाब (जाफर (र.अ.) यांचे आगमन)"],
+          ["👨‍👩‍👧 कुटुंबांची कुर्बानी",
+           "ही हिजरत सोपी नव्हती. कुटुंबे विखुरली. हजरत उस्मान (र.अ.) आपल्या पत्नी रुकय्या (र.अ.) (नबी ﷺ यांची मुलगी) यांच्यासोबत गेले. हजरत जाफर (र.अ.) आपल्या पत्नी अस्मा बिंत उमैस (र.अ.) यांच्यासोबत गेले, आणि तिथेच त्यांचा मुलगा अब्दुल्लाह जन्मला. हजरत उम्मे सलमा (र.अ.) आपले पती अबू सलमा (र.अ.) यांच्यासोबत हबशाला गेल्या होत्या; नंतर मदिन्याच्या हिजरतीच्या वेळी त्यांना यापेक्षा मोठी परीक्षा आली — त्यांच्या माहेरच्यांनी त्यांना आणि सासरच्यांनी त्यांच्या मुलाला रोखले, पती एकटे निघाले, आणि त्या सुमारे वर्षभर रडत राहिल्या, नंतर त्यांना परवानगी मिळाली.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम / अर-रहीकुल-मख्तूम (सहीह हदीस नाही)"],
+          ["🎯 बोध",
+           "अल्लाहसाठी घर सोडणे किती कठीण आहे — हे हजरत उम्मे सलमा (र.अ.) यांच्या घटनेवरून कळते. पण त्यांनी ईमान सोडले नाही. दीनासाठी कुर्बानी द्यायला आपण घाबरू नये.",
+           ""]
+        ],
+        [
+          ["नजाशीला कोणत्या सूरतीने परिणाम केला?", ["अल-फातिहा", "मरियम", "यासीन"]],
+          ["हबशाच्या राजाचे नाव काय?", ["किसरा", "कैसर", "नजाशी"]],
+          ["मुस्लिमांतर्फे बोलायला कोण गेले?", ["जाफर (र.अ.)", "अली (र.अ.)", "उस्मान (र.अ.)"]]
+        ],
+        [
+          ["इ.स. ६१५", "पहिली हिजरत-ए-हबशा"],
+          ["इ.स. सु. ६१६", "दुसरी हिजरत-ए-हबशा"],
+          ["इ.स. सु. ६१६", "अम्र बिन अल-आसचा कट"]
+        ]
+      ],
+      ar: [
+        "الهجرة إلى الحبشة — أول ملجأ",
+        "الحبشة (إثيوبيا)",
+        "615 م (السنة الخامسة من النبوة)",
+        "فهم أول هجرة للمسلمين، وعدل النجاشي، ومكيدة المشركين.",
+        "قرأ جعفر رضي الله عنه سورة مريم أمام النجاشي — يا له من مشهد جميل! فاضت عينا النجاشي. اللهم ارزقنا حب القرآن كما أحبه النبي ﷺ. آمين.",
+        [
+          "الهجرة في السنة الخامسة",
+          "عدل النجاشي",
+          "المرة الأولى: 15 شخصًا",
+          "المرة الثانية: نحو مئة",
+          "سورة مريم أثّرت في النجاشي"
+        ],
+        [
+          ["🚢 الإذن بالهجرة",
+           "لما اشتد الأذى قال النبي ﷺ لأصحابه: «اذهبوا إلى الحبشة، فإن بها ملكًا لا يظلم أحدًا». فذهب أولًا أحد عشر رجلًا وأربع نساء. ثم ذهب في المرة الثانية ثلاثة وثمانون رجلًا وثماني عشرة امرأة. وكانت هذه أول هجرة — ترك البيت والمال والأهل من أجل الله.",
+           "الرحيق المختوم؛ مسند أحمد: 1740"],
+          ["👑 عدل النجاشي",
+           "آواهم ملك الحبشة النجاشي (أصحمة). فأرسلت قريش عمرو بن العاص وعبد الله بن أبي ربيعة بهدايا ثمينة وقالوا: «فتيان سفهاء فارقوا ديننا، فردّهم إلينا». فسأل النجاشي: «ما دينكم؟» فقال جعفر بن أبي طالب رضي الله عنه: «كنا في جاهلية — نعبد الأصنام، ونأكل الميتة، ونفعل الفواحش، ونقطع الأرحام، ونظلم الضعيف. ثم بعث الله فينا رسولًا نعرفه: صادق أمين. فعلّمنا التوحيد والصلاة والصيام والزكاة والطهارة. ثم ظُلمنا فهاجرنا». فقال النجاشي: «اقرأ عليّ القرآن». فقرأ جعفر رضي الله عنه صدر سورة مريم — فبكى النجاشي حتى بلّ لحيته وقال: «إن هذا والذي جاء به عيسى عليه السلام ليخرجان من مشكاة واحدة». وأعلن: «لن أسلّمهم إليكم».",
+           "مسند أحمد: 1740 (رواية أم سلمة رضي الله عنها)"],
+          ["💢 مكيدة المشركين",
+           "في الغد جاء عمرو بن العاص بحيلة ثانية، فقال للنجاشي: «أيها الملك، إن هؤلاء يقولون في عيسى بن مريم قولًا عظيمًا». فدعاهم النجاشي وسألهم. فقال جعفر رضي الله عنه: «نقول ما جاء به نبينا ﷺ: هو عبد الله ورسوله، وروحه وكلمته ألقاها إلى مريم العذراء». فأخذ النجاشي عودًا من الأرض وقال: «ما عيسى عليه السلام مما قلتم بقدر هذا العود» (أي القول واحد). (مسند أحمد). فرجع المشركون خائبين.",
+           "مسند أحمد: 1740 (رواية أم سلمة رضي الله عنها)"],
+          ["🤍 الطمأنينة في الحبشة",
+           "عبد المسلمون في الحبشة في أمن. ولما خرج أحد على النجاشي مرة، اهتم المسلمون كثيرًا خشية أن يُغلب، فدعوا له بالنصر وفرحوا بنصره (مسند أحمد). ورجع بعض الصحابة بعد ذلك إلى مكة والمدينة، ووصل جعفر رضي الله عنه وأصحابه إلى المدينة سنة سبع عند خيبر. وأسلم النجاشي بعد ذلك؛ فلما بلغ النبي ﷺ خبر وفاته صلى عليه صلاة الغائب (صحيح البخاري).",
+           "مسند أحمد: 1740؛ صحيح البخاري: 1245 (الصلاة على النجاشي) وباب غزوة خيبر (قدوم جعفر رضي الله عنه)"],
+          ["👨‍👩‍👧 تضحية الأسر",
+           "لم تكن هذه الهجرة سهلة؛ تفرقت الأسر. ذهب عثمان رضي الله عنه مع زوجته رقية رضي الله عنها (بنت النبي ﷺ). وذهب جعفر رضي الله عنه مع زوجته أسماء بنت عميس رضي الله عنها، وهناك وُلد ابنه عبد الله. وذهبت أم سلمة رضي الله عنها مع زوجها أبي سلمة رضي الله عنه إلى الحبشة؛ ثم عند الهجرة إلى المدينة لاقت امتحانًا أشد — حبسها أهلها وحبسوا ابنها في أهل زوجها، فسافر زوجها وحده، وبقيت تبكي نحو سنة، ثم أُذن لها.",
+           "رواية سيرة — سيرة ابن هشام / الرحيق المختوم (ليست حديثًا صحيحًا)"],
+          ["🎯 العبرة",
+           "ما أصعب ترك البيت من أجل الله — ويظهر ذلك في قصة أم سلمة رضي الله عنها. ومع ذلك لم تترك الإيمان. فلا نهاب التضحية من أجل الدين.",
+           ""]
+        ],
+        [
+          ["أي سورة أثّرت في النجاشي؟", ["الفاتحة", "مريم", "يس"]],
+          ["ما اسم ملك الحبشة؟", ["كسرى", "قيصر", "النجاشي"]],
+          ["من تكلم عن المسلمين؟", ["جعفر رضي الله عنه", "علي رضي الله عنه", "عثمان رضي الله عنه"]]
+        ],
+        [
+          ["615", "أول هجرة إلى الحبشة"],
+          ["نحو 616", "الهجرة الثانية إلى الحبشة"],
+          ["نحو 616", "مكيدة عمرو بن العاص"]
+        ]
+      ],
+      fr: [
+        "L'émigration en Abyssinie — le premier refuge",
+        "L'Abyssinie (Éthiopie)",
+        "615 (5e année de la prophétie)",
+        "Comprendre la première émigration des musulmans, la justice du Négus et la machination des polythéistes.",
+        "Ja'far (qu'Allah l'agrée) récita sourate Maryam devant le Négus — quel beau tableau ! Les yeux du Négus se remplirent de larmes. Ô Allah ! Accorde-nous pour le Coran l'amour qu'avait le Prophète ﷺ. Âmîn.",
+        [
+          "Émigration en la 5e année",
+          "La justice du Négus",
+          "Première fois : 15 personnes",
+          "Deuxième fois : environ 100 personnes",
+          "Sourate Maryam toucha le Négus"
+        ],
+        [
+          ["🚢 L'autorisation d'émigrer",
+           "Les épreuves s'aggravant, le Prophète ﷺ dit aux Compagnons : « Allez en Abyssinie : il y a là un roi qui n'opprime personne. » La première fois partirent onze hommes et quatre femmes. La seconde fois, quatre-vingt-trois hommes et dix-huit femmes. Ce fut la première émigration — quitter maison, biens et famille pour Allah.",
+           "Ar-Rahîq al-Makhtûm ; Mousnad Ahmad : 1740"],
+          ["👑 La justice du Négus",
+           "Le roi d'Abyssinie, le Négus (Asmaha), les accueillit. Les Quraysh envoyèrent 'Amr ibn al-'Âs et 'Abdoullah ibn Abî Rabî'a avec de riches présents, disant : « Des jeunes insensés ont quitté notre religion, rends-les-nous. » Le Négus demanda : « Quelle est votre religion ? » Ja'far ibn Abî Tâlib (qu'Allah l'agrée) dit : « Nous étions dans l'ignorance — nous adorions les idoles, mangions la bête morte, commettions l'immoralité, rompions les liens de parenté et opprimions les faibles. Puis Allah envoya parmi nous un Messager que nous connaissons : véridique et digne de confiance. Il nous enseigna l'unicité, la prière, le jeûne, la zakât et la pureté. Puis on nous opprima, et nous émigrâmes. » Le Négus dit : « Récite-moi le Coran. » Ja'far (qu'Allah l'agrée) récita le début de sourate Maryam — le Négus pleura au point de mouiller sa barbe et dit : « Ceci et ce qu'Issâ (paix sur lui) a apporté sortent de la même lampe. » Et il déclara : « Je ne vous les livrerai pas. »",
+           "Mousnad Ahmad : 1740 (récit d'Oumm Salama, qu'Allah l'agrée)"],
+          ["💢 La machination des polythéistes",
+           "Le lendemain, 'Amr ibn al-'Âs tenta une seconde ruse. Il dit au Négus : « Ô roi ! Ces gens disent une chose énorme sur 'Issâ ibn Maryam. » Le Négus les convoqua et interrogea. Ja'far (qu'Allah l'agrée) dit : « Nous disons ce qu'a apporté notre Prophète ﷺ : il est le serviteur d'Allah, Son messager, Son esprit et Sa parole qu'Il a déposée en Maryam la vierge. » Le Négus ramassa un brin de paille et dit : « 'Issâ (paix sur lui) ne diffère en rien de ce que vous avez dit, pas même d'un brin de paille » (c'est-à-dire : c'est la même chose) (Mousnad Ahmad). Les polythéistes revinrent bredouilles.",
+           "Mousnad Ahmad : 1740 (récit d'Oumm Salama)"],
+          ["🤍 La quiétude en Abyssinie",
+           "Les musulmans adorèrent en paix en Abyssinie. Une fois, quelqu'un se révolta contre le Négus ; les musulmans s'inquiétèrent vivement qu'il ne fût vaincu, invoquèrent Allah pour sa victoire et se réjouirent de son triomphe (Mousnad Ahmad). Certains Compagnons revinrent ensuite à La Mecque et à Médine, et Ja'far (qu'Allah l'agrée) et ses compagnons arrivèrent à Médine en l'an 7, à l'occasion de Khaybar. Le Négus embrassa l'islam plus tard ; quand la nouvelle de sa mort parvint, le Prophète ﷺ fit la prière funéraire en son absence (Sahih al-Bukhari).",
+           "Mousnad Ahmad : 1740 ; Sahih al-Bukhari : 1245 (la prière pour le Négus) et le chapitre de Khaybar (arrivée de Ja'far)"],
+          ["👨‍👩‍👧 Le sacrifice des familles",
+           "Cette émigration ne fut pas facile : les familles se dispersèrent. 'Uthmân (qu'Allah l'agrée) partit avec son épouse Rouqayya (qu'Allah l'agrée), fille du Prophète ﷺ. Ja'far (qu'Allah l'agrée) partit avec son épouse Asmâ' bint 'Umays (qu'Allah l'agrée), et là naquit son fils 'Abdoullah. Oumm Salama (qu'Allah l'agrée) était partie en Abyssinie avec son mari Abou Salama (qu'Allah l'agrée) ; plus tard, lors de l'émigration vers Médine, elle subit une épreuve plus grande : les siens la retinrent et la famille de son mari retint son fils, son époux partit seul, et elle pleura près d'un an, puis on la laissa partir.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm / Ar-Rahîq al-Makhtûm (ce n'est pas un hadith authentique)"],
+          ["🎯 La leçon",
+           "Qu'il est difficile de quitter sa maison pour Allah — la preuve en est l'épisode d'Oumm Salama (qu'Allah l'agrée). Pourtant elle n'abandonna pas la foi. Nous ne devons pas craindre le sacrifice pour la religion.",
+           ""]
+        ],
+        [
+          ["Quelle sourate toucha le Négus ?", ["Al-Fâtiha", "Maryam", "Yâ-Sîn"]],
+          ["Quel est le nom du roi d'Abyssinie ?", ["Kisrâ", "César", "Le Négus"]],
+          ["Qui parla au nom des musulmans ?", ["Ja'far (qu'Allah l'agrée)", "'Alî (qu'Allah l'agrée)", "'Uthmân (qu'Allah l'agrée)"]]
+        ],
+        [
+          ["615", "La première émigration en Abyssinie"],
+          ["~616", "La seconde émigration en Abyssinie"],
+          ["~616", "La machination de 'Amr ibn al-'Âs"]
+        ]
+      ],
+      es: [
+        "La emigración a Abisinia: el primer refugio",
+        "Abisinia (Etiopía)",
+        "615 (año 5 de la profecía)",
+        "Comprender la primera emigración de los musulmanes, la justicia del Negus y la conspiración de los idólatras.",
+        "Yafar (que Alá esté complacido con él) recitó la sura Maryam ante el Negus; ¡qué escena tan hermosa! Se le llenaron los ojos de lágrimas. ¡Oh Alá! Concédenos por el Corán el amor que tenía el Profeta ﷺ. Amín.",
+        [
+          "Emigración en el año 5",
+          "La justicia del Negus",
+          "Primera vez: 15 personas",
+          "Segunda vez: unas 100 personas",
+          "La sura Maryam impresionó al Negus"
+        ],
+        [
+          ["🚢 El permiso para emigrar",
+           "Al agravarse las pruebas, el Profeta ﷺ dijo a los Compañeros: «Id a Abisinia, allí hay un rey que no oprime a nadie.» La primera vez fueron once hombres y cuatro mujeres. La segunda, ochenta y tres hombres y dieciocho mujeres. Fue la primera emigración: dejar casa, bienes y familia por Alá.",
+           "Ar-Rahiq al-Majtum; Musnad Ahmad: 1740"],
+          ["👑 La justicia del Negus",
+           "El rey de Abisinia, el Negus (Asmaha), les dio refugio. Los Quraysh enviaron a Amr ibn al-As y a Abdalah ibn Abi Rabia con ricos regalos, diciendo: «Unos jóvenes insensatos han dejado nuestra religión; devuélvenoslos.» El Negus preguntó: «¿Cuál es vuestra religión?» Yafar ibn Abi Talib (que Alá esté complacido con él) dijo: «Estábamos en la ignorancia: adorábamos ídolos, comíamos animales muertos, cometíamos inmoralidades, rompíamos los lazos familiares y oprimíamos a los débiles. Luego Alá envió entre nosotros un Mensajero al que conocemos: veraz y digno de confianza. Nos enseñó la unicidad, la oración, el ayuno, la zakat y la pureza. Después nos oprimieron y emigramos.» El Negus dijo: «Recítame el Corán.» Yafar (que Alá esté complacido con él) recitó el comienzo de la sura Maryam; el Negus lloró hasta mojar su barba y dijo: «Esto y lo que Isa (la paz sea con él) trajo salen de la misma lámpara.» Y declaró: «No os los entregaré.»",
+           "Musnad Ahmad: 1740 (relato de Umm Salama, que Alá esté complacido con ella)"],
+          ["💢 La conspiración de los idólatras",
+           "Al día siguiente, Amr ibn al-As intentó otra artimaña. Dijo al Negus: «¡Oh rey! Esta gente dice algo enorme sobre Isa ibn Maryam.» El Negus los convocó y preguntó. Yafar (que Alá esté complacido con él) dijo: «Decimos lo que trajo nuestro Profeta ﷺ: él es el siervo de Alá, Su mensajero, Su espíritu y Su palabra que depositó en Maryam la virgen.» El Negus tomó una brizna de paja del suelo y dijo: «Isa (la paz sea con él) no difiere de lo que habéis dicho ni en una brizna» (es decir, es lo mismo) (Musnad Ahmad). Los idólatras volvieron con las manos vacías.",
+           "Musnad Ahmad: 1740 (relato de Umm Salama)"],
+          ["🤍 La tranquilidad en Abisinia",
+           "Los musulmanes adoraron en paz en Abisinia. Una vez alguien se rebeló contra el Negus y los musulmanes se preocuparon mucho por si era vencido; suplicaron por su victoria y se alegraron cuando venció (Musnad Ahmad). Algunos Compañeros volvieron luego a La Meca y a Medina, y Yafar (que Alá esté complacido con él) y sus compañeros llegaron a Medina en el año 7, con motivo de Jaybar. El Negus abrazó el islam después; cuando llegó la noticia de su muerte, el Profeta ﷺ hizo la oración funeraria en su ausencia (Sahih al-Bujari).",
+           "Musnad Ahmad: 1740; Sahih al-Bujari: 1245 (la oración por el Negus) y el capítulo de Jaybar (llegada de Yafar)"],
+          ["👨‍👩‍👧 El sacrificio de las familias",
+           "Esta emigración no fue fácil: las familias se dispersaron. Uzman (que Alá esté complacido con él) partió con su esposa Ruqayya (que Alá esté complacido con ella), hija del Profeta ﷺ. Yafar (que Alá esté complacido con él) partió con su esposa Asma bint Umays (que Alá esté complacido con ella), y allí nació su hijo Abdalah. Umm Salama (que Alá esté complacido con ella) había ido a Abisinia con su esposo Abu Salama (que Alá esté complacido con él); más tarde, en la emigración a Medina, sufrió una prueba mayor: los suyos la retuvieron y la familia de su esposo retuvo a su hijo, su esposo partió solo y ella lloró cerca de un año, hasta que le dieron permiso.",
+           "Relato de Sira: Sira de Ibn Hisham / Ar-Rahiq al-Majtum (no es un hadiz auténtico)"],
+          ["🎯 La lección",
+           "Qué difícil es dejar la casa por Alá; lo muestra el episodio de Umm Salama (que Alá esté complacido con ella). Y aun así no abandonó la fe. No debemos temer el sacrificio por la religión.",
+           ""]
+        ],
+        [
+          ["¿Qué sura impresionó al Negus?", ["Al-Fatiha", "Maryam", "Ya-Sin"]],
+          ["¿Cómo se llamaba el rey de Abisinia?", ["Kisra", "César", "El Negus"]],
+          ["¿Quién habló en nombre de los musulmanes?", ["Yafar (que Alá esté complacido con él)", "Ali (que Alá esté complacido con él)", "Uzman (que Alá esté complacido con él)"]]
+        ],
+        [
+          ["615", "La primera emigración a Abisinia"],
+          ["~616", "La segunda emigración a Abisinia"],
+          ["~616", "La conspiración de Amr ibn al-As"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 10 — Hamza ؓ o Umar ؓ ka Islam ═══════════════ */
+    10: {
+      mr: [
+        "हमझा (र.अ.) व उमर (र.अ.) यांचा इस्लाम — शक्तीत वाढ",
+        "मक्का",
+        "इ.स. ६१६ (नबवी ६)",
+        "दोन शक्तिशाली साथीदारांच्या इस्लामामुळे मुस्लिमांची शक्ती वाढल्याची घटना समजून घेणे.",
+        "हजरत उमर (र.अ.) यांनी कुरआन ऐकून म्हटले: «किती सुंदर गोष्टी आहेत» — हीच कुरआनची शक्ती आहे. हे अल्लाह! आम्हालाही कुरआनचे प्रेम दे. आमीन.",
+        [
+          "हमझा (र.अ.): नबी ﷺ यांचे काका",
+          "हमझा (र.अ.) यांनी अबू जहलच्या डोक्यावर धनुष्य मारले",
+          "सीरतच्या प्रसिद्ध रिवायतीनुसार उमर (र.अ.) यांनी सूरह ता-हा ऐकून इस्लाम स्वीकारला",
+          "दोघांनी इस्लामला शक्ती दिली",
+          "खुली नमाज़ सुरू झाली"
+        ],
+        [
+          ["🦁 हमझा (र.अ.) यांचा इस्लाम — आत्माभिमानाची भावना",
+           "हजरत हमझा (र.अ.) नबी ﷺ यांचे काका, शूर आणि शिकारीचे शौकीन होते. एके दिवशी शिकारीतून परत आले, तेव्हा त्यांना सांगण्यात आले की अबू जहलने सफाजवळ आपल्या (ﷺ) भाच्याला शिव्या दिल्या आणि छळले. हमझा (र.अ.) रागाने सरळ मस्जिदे-हराममध्ये गेले, अबू जहलच्या डोक्यावर धनुष्य मारले आणि म्हणाले: «तुम्ही मुहम्मद ﷺ यांना शिव्या देता? मीही त्यांच्या दीनावर आहे, ते जे सांगतात तेच मीही सांगतो — हिंमत असेल तर मला रोखून दाखवा.» नंतर अल्लाहने त्यांचे मन इस्लामसाठी उघडले आणि ते इस्लामावर मजबुतीने ठाम राहिले (इब्न इशाक, मुस्तद्रक हाकिम). सुरुवात आत्माभिमानाने झाली आणि अल्लाहने तिला ईमान बनवले.",
+           "सीरतची रिवायत — सीरत इब्न हिशाम; मुस्तद्रक हाकिम (सनदेवर चर्चा)"],
+          ["🦁 हमझा (र.अ.) यांच्या इस्लामचा परिणाम",
+           "हजरत हमझा (र.अ.) यांच्या इस्लामामुळे कुरैशला फार धक्का बसला. ते शूर व शक्तिशाली होते, म्हणून कुरैशने नबी ﷺ यांना छळण्यात सावधगिरी सुरू केली आणि मुस्लिमांना बळ मिळाले.",
+           ""],
+          ["💪 उमर (र.अ.) यांचा इस्लाम — कुरआनची शक्ती",
+           "हजरत उमर (र.अ.) (इस्लामपूर्वी) फार कठोर, शूर पण कडवे विरोधक होते. एके दिवशी तलवार घेऊन नबी ﷺ यांना ठार मारायला निघाले. वाटेत नुऐम बिन अब्दुल्लाह म्हणाला: «आधी आपल्या घरी जा, तुमची बहीण फातिमा आणि तिचा नवरा सईद मुस्लिम झाले आहेत.» हजरत उमर (र.अ.) रागाने बहिणीच्या घरी गेले; ते कुरआन वाचत होते. त्यांनी मारले, नंतर पत्र मागितले: «काय आहे दाखवा?» बहिणीने म्हटले: «तुम्ही अपवित्र आहात, हे पवित्र आहे, देऊ शकत नाही.» ते स्नान करून आले आणि वाचले (सूरह ता-हाच्या सुरुवातीच्या आयती). वाचून म्हणाले: «किती सुंदर गोष्टी आहेत, कोणी आणल्या?» म्हणाल्या: «मुहम्मद ﷺ आणले.» तलवार घेऊन नबी ﷺ यांच्याकडे गेले. (ही प्रसिद्ध सीरती रिवायत आहे; दुसऱ्या रिवायतीत आहे की उमर (र.अ.) यांनी नबी ﷺ यांच्याकडून सूरह अल-हाक्का ऐकली होती.)",
+           "सीरतची रिवायत — सीरत इब्न हिशाम; सुनन दारकुत्नी (सनदेवर चर्चा); सूरह अल-हाक्काची रिवायत: मुस्नद अहमद (सनद जईफ)"],
+          ["💥 उमर (र.अ.) यांची घोषणा",
+           "नबी ﷺ दारुल-अरकममध्ये सहाबांसोबत होते. दारावर उमर (र.अ.) आले, तेव्हा हजरत हमझा (र.अ.) म्हणाले: «येऊ द्या; जर चांगल्या हेतूने आला आहे तर ठीक, आणि वाईट हेतू असेल तर त्याच्याच तलवारीने त्याचा शिरच्छेद करीन.» नबी ﷺ यांनी त्यांचा झगा धरला आणि म्हणाले: «हे इब्ने खत्ताब! तुम्ही थांबणार नाही का?» उमर (र.अ.) यांनी लगेच म्हटले: «मी साक्ष देतो की अल्लाहशिवाय कोणी उपास्य नाही आणि तुम्ही अल्लाहचे रसूल आहात.» सर्व सहाबांनी मोठ्याने «अल्लाहु अकबर» म्हटले. नंतर मुस्लिम दोन रांगांत काबाकडे निघाले आणि उघडपणे नमाज़ पढली. इब्न मसऊद (र.अ.) म्हणतात: «उमर (र.अ.) यांच्या इस्लामनंतर आम्ही कायम मान व प्रभुत्वात राहिलो» (सहीह बुखारी). नबी ﷺ यांनी आधीच दुआ केली होती: «हे अल्लाह! अबू जहल किंवा उमर बिन खत्ताब यांपैकी जो तुला अधिक प्रिय असेल त्याच्याद्वारे इस्लामला मान दे» (जामे तिर्मिझी: ३६८१).",
+           "सहीह बुखारी: ३६८४; जामे तिर्मिझी: ३६८१; बाकी तपशील: सीरतच्या रिवायती"],
+          ["🎯 बोध",
+           "हजरत हमझा (र.अ.) यांनी आत्माभिमानाने आणि हजरत उमर (र.अ.) यांनी कुरआनने इस्लाम स्वीकारला. दोघेही शक्तिशाली होते आणि दोघांनी इस्लामला शक्ती दिली. आपण आपली शक्ती दीनासाठी वापरली पाहिजे. हे अल्लाह! आम्हालाही दीनाची सेवा करण्याची तौफीक दे. आमीन.",
+           ""]
+        ],
+        [
+          ["हमझा (र.अ.) नबी ﷺ यांचे कोण लागतात?", ["भाऊ", "काका", "आजोबा"]],
+          ["सीरतच्या प्रसिद्ध रिवायतीनुसार उमर (र.अ.) यांनी कोणती सूरत ऐकून इस्लाम स्वीकारला?", ["अल-फातिहा", "ता-हा", "यासीन"]],
+          ["उमर (र.अ.) यांचे विशेषण?", ["सिद्दीक", "फारूक", "झुन्नूरैन"]]
+        ],
+        [
+          ["इ.स. सु. ६१६", "हमझा (र.अ.) यांचा इस्लाम"],
+          ["इ.स. ६१६", "उमर (र.अ.) यांचा इस्लाम"],
+          ["इ.स. ६१६", "काबामध्ये खुली नमाज़"]
+        ]
+      ],
+      ar: [
+        "إسلام حمزة وعمر رضي الله عنهما — قوة تزداد",
+        "مكة",
+        "616 م (السنة السادسة من النبوة)",
+        "فهم قصة ازدياد قوة المسلمين بإسلام رفيقين قويين.",
+        "لما سمع عمر رضي الله عنه القرآن قال: «ما أحسن هذه الكلام» — وهذه قوة القرآن. اللهم ارزقنا حب القرآن. آمين.",
+        [
+          "حمزة رضي الله عنه: عم النبي ﷺ",
+          "حمزة رضي الله عنه ضرب أبا جهل بالقوس على رأسه",
+          "عمر رضي الله عنه أسلم بسماع سورة طه في رواية السيرة المشهورة",
+          "كلاهما قوّى الإسلام",
+          "بدأت الصلاة علنًا"
+        ],
+        [
+          ["🦁 إسلام حمزة رضي الله عنه — حميّة",
+           "كان حمزة رضي الله عنه عم النبي ﷺ، شجاعًا محبًّا للصيد. فلما رجع من صيده يومًا أُخبر أن أبا جهل شتم ابن أخيه ﷺ وآذاه عند الصفا. فذهب حمزة رضي الله عنه مغضبًا إلى المسجد الحرام، وضرب أبا جهل بالقوس على رأسه وقال: «أتشتم محمدًا ﷺ؟ أنا على دينه، أقول ما يقول — فإن استطعت أن تمنعني فافعل». ثم شرح الله صدره للإسلام فثبت عليه (ابن إسحاق، المستدرك للحاكم). بدأ الأمر بحميّة فجعله الله إيمانًا.",
+           "رواية سيرة — سيرة ابن هشام؛ المستدرك للحاكم (وفي الإسناد كلام)"],
+          ["🦁 أثر إسلام حمزة رضي الله عنه",
+           "شقّ إسلام حمزة رضي الله عنه قريشًا شقًّا كبيرًا. وكان شجاعًا قويًّا، فبدأت قريش تحذر في إيذاء النبي ﷺ، وتقوّى المسلمون.",
+           ""],
+          ["💪 إسلام عمر رضي الله عنه — قوة القرآن",
+           "كان عمر رضي الله عنه (قبل إسلامه) شديدًا شجاعًا، لكنه من أشد المعارضين. خرج يومًا بسيفه ليقتل النبي ﷺ، فلقيَه نعيم بن عبد الله فقال: «ارجع إلى أهل بيتك، فقد أسلمت أختك فاطمة وزوجها سعيد». فذهب عمر رضي الله عنه مغضبًا إلى بيت أخته وهما يقرآن القرآن. فضربهما، ثم طلب الصحيفة: «أروني ما هذا؟» فقالت أخته: «إنك نجس، وهذا طاهر، لا أعطيكه». فاغتسل وقرأ (صدر سورة طه). ثم قال: «ما أحسن هذا الكلام، من جاء به؟» قالت: «محمد ﷺ». فأخذ سيفه وذهب إلى النبي ﷺ. (وهذه رواية السيرة المشهورة؛ وفي رواية أخرى أنه سمع سورة الحاقة من النبي ﷺ.)",
+           "رواية سيرة — سيرة ابن هشام؛ سنن الدارقطني (وفي الإسناد كلام)؛ رواية سورة الحاقة: مسند أحمد (إسناد ضعيف)"],
+          ["💥 إعلان عمر رضي الله عنه",
+           "كان النبي ﷺ في دار الأرقم مع أصحابه. فجاء عمر رضي الله عنه إلى الباب، فقال حمزة رضي الله عنه: «ائذن له؛ إن كان جاء بخير فهو ذاك، وإن كان جاء بشرّ قتلتُه بسيفه». فأخذه النبي ﷺ بجُمَّته وقال: «يا ابن الخطاب، أما تنتهي؟» فقال عمر رضي الله عنه في الحال: «أشهد أن لا إله إلا الله وأنك رسول الله». فكبّر الصحابة رضي الله عنهم تكبيرًا عظيمًا. ثم خرج المسلمون في صفين إلى الكعبة فصلّوا علانية. قال ابن مسعود رضي الله عنه: «ما زلنا أعزة منذ أسلم عمر» (صحيح البخاري). وقد دعا النبي ﷺ قبل ذلك: «اللهم أعزّ الإسلام بأحب الرجلين إليك: أبي جهل أو عمر بن الخطاب» (جامع الترمذي: 3681).",
+           "صحيح البخاري: 3684؛ جامع الترمذي: 3681؛ وبقية التفصيل: روايات السيرة"],
+          ["🎯 العبرة",
+           "أسلم حمزة رضي الله عنه بحميّة، وأسلم عمر رضي الله عنه بالقرآن. وكلاهما كان قويًّا، وكلاهما قوّى الإسلام. فعلينا أن نستعمل قوتنا في الدين. اللهم وفقنا لخدمة دينك. آمين.",
+           ""]
+        ],
+        [
+          ["ما قرابة حمزة رضي الله عنه للنبي ﷺ؟", ["أخوه", "عمه", "جده"]],
+          ["بأي سورة أسلم عمر رضي الله عنه في رواية السيرة المشهورة؟", ["الفاتحة", "طه", "يس"]],
+          ["ما لقب عمر رضي الله عنه؟", ["الصديق", "الفاروق", "ذو النورين"]]
+        ],
+        [
+          ["نحو 616", "إسلام حمزة رضي الله عنه"],
+          ["616", "إسلام عمر رضي الله عنه"],
+          ["616", "الصلاة علنًا في الكعبة"]
+        ]
+      ],
+      fr: [
+        "L'islam de Hamza et de 'Umar (qu'Allah les agrée) — la force s'accroît",
+        "La Mecque",
+        "616 (6e année de la prophétie)",
+        "Comprendre l'épisode de l'accroissement de la force des musulmans par l'islam de deux compagnons puissants.",
+        "En entendant le Coran, 'Umar (qu'Allah l'agrée) dit : « Que ces paroles sont belles ! » — c'est là la force du Coran. Ô Allah ! Accorde-nous l'amour du Coran. Âmîn.",
+        [
+          "Hamza (qu'Allah l'agrée) : oncle du Prophète ﷺ",
+          "Hamza (qu'Allah l'agrée) frappa Abou Jahl de son arc sur la tête",
+          "'Umar (qu'Allah l'agrée) embrassa l'islam en entendant sourate Tâ-Hâ selon le récit célèbre",
+          "Tous deux fortifièrent l'islam",
+          "La prière devint publique"
+        ],
+        [
+          ["🦁 L'islam de Hamza (qu'Allah l'agrée) — l'ardeur",
+           "Hamza (qu'Allah l'agrée), oncle du Prophète ﷺ, était brave et aimait la chasse. Un jour, revenant de la chasse, il apprit qu'Abou Jahl avait insulté et maltraité le fils de son frère ﷺ près de Safâ. Hamza (qu'Allah l'agrée) se rendit furieux à la Mosquée sacrée, frappa Abou Jahl de son arc sur la tête et dit : « Tu insultes Mouhammad ﷺ ? Je suis de sa religion, je dis ce qu'il dit — si tu peux m'en empêcher, essaie. » Puis Allah ouvrit son cœur à l'islam et il s'y tint fermement (Ibn Ishâq, al-Moustadrak d'al-Hâkim). Cela commença par l'ardeur, et Allah en fit la foi.",
+           "Récit de Sîra — Sîra d'Ibn Hichâm ; al-Moustadrak d'al-Hâkim (chaîne discutée)"],
+          ["🦁 L'effet de l'islam de Hamza (qu'Allah l'agrée)",
+           "L'islam de Hamza (qu'Allah l'agrée) affligea profondément les Quraysh. Il était brave et puissant, aussi les Quraysh commencèrent-ils à se montrer prudents en persécutant le Prophète ﷺ, et les musulmans furent fortifiés.",
+           ""],
+          ["💪 L'islam de 'Umar (qu'Allah l'agrée) — la force du Coran",
+           "'Umar (qu'Allah l'agrée), avant l'islam, était très dur, brave, mais un opposant acharné. Un jour il partit, son épée à la main, pour tuer le Prophète ﷺ. En chemin, Nou'aym ibn 'Abdoullah lui dit : « Va d'abord chez toi : ta sœur Fâtima et son mari Sa'îd ont embrassé l'islam. » 'Umar (qu'Allah l'agrée) se rendit furieux chez sa sœur, qui lisait le Coran. Il la frappa, puis demanda la feuille : « Montrez-moi ce que c'est. » Elle dit : « Tu es impur ; ceci est pur, je ne peux pas te le donner. » Il se lava, puis lut (le début de sourate Tâ-Hâ). Après avoir lu, il dit : « Que ces paroles sont belles ! Qui les a apportées ? » Elle dit : « Mouhammad ﷺ. » Il prit son épée et alla vers le Prophète ﷺ. (C'est le récit de Sîra célèbre ; un autre récit dit que 'Umar avait entendu sourate al-Hâqqa du Prophète ﷺ.)",
+           "Récit de Sîra — Sîra d'Ibn Hichâm ; Sunan ad-Dâraqoutnî (chaîne discutée) ; le récit d'al-Hâqqa : Mousnad Ahmad (chaîne faible)"],
+          ["💥 La déclaration de 'Umar (qu'Allah l'agrée)",
+           "Le Prophète ﷺ était à la maison d'al-Arqam avec les Compagnons. 'Umar (qu'Allah l'agrée) vint à la porte ; Hamza (qu'Allah l'agrée) dit : « Laisse-le entrer : s'il vient avec du bien, c'est cela ; s'il vient avec du mal, je le tue de son propre sabre. » Le Prophète ﷺ le saisit par son vêtement et dit : « Ô Ibn al-Khattâb ! Ne vas-tu pas cesser ? » 'Umar (qu'Allah l'agrée) dit aussitôt : « J'atteste qu'il n'y a de divinité qu'Allah et que tu es le Messager d'Allah. » Les Compagnons proclamèrent alors un grand takbîr. Puis les musulmans sortirent en deux rangs vers la Kaaba et prièrent ouvertement. Ibn Mas'oûd (qu'Allah l'agrée) dit : « Nous sommes restés puissants depuis l'islam de 'Umar » (Sahih al-Bukhari). Le Prophète ﷺ avait déjà invoqué : « Ô Allah ! Honore l'islam par celui que Tu aimes le plus des deux hommes : Abou Jahl ou 'Umar ibn al-Khattâb » (Jâmi' at-Tirmidhi : 3681).",
+           "Sahih al-Bukhari : 3684 ; Jâmi' at-Tirmidhi : 3681 ; le reste : récits de Sîra"],
+          ["🎯 La leçon",
+           "Hamza (qu'Allah l'agrée) embrassa l'islam par ardeur, 'Umar (qu'Allah l'agrée) par le Coran. Tous deux étaient forts, tous deux fortifièrent l'islam. Nous devons employer notre force pour la religion. Ô Allah ! Accorde-nous de servir Ta religion. Âmîn.",
+           ""]
+        ],
+        [
+          ["Quel est le lien de Hamza (qu'Allah l'agrée) avec le Prophète ﷺ ?", ["Son frère", "Son oncle", "Son grand-père"]],
+          ["Quelle sourate fit embrasser l'islam à 'Umar (qu'Allah l'agrée) selon le récit célèbre ?", ["Al-Fâtiha", "Tâ-Hâ", "Yâ-Sîn"]],
+          ["Quel est le surnom de 'Umar (qu'Allah l'agrée) ?", ["As-Siddîq", "Al-Fâroûq", "Dhou-n-Noûrayn"]]
+        ],
+        [
+          ["~616", "Islam de Hamza (qu'Allah l'agrée)"],
+          ["616", "Islam de 'Umar (qu'Allah l'agrée)"],
+          ["616", "Prière publique dans la Kaaba"]
+        ]
+      ],
+      es: [
+        "El islam de Hamza y Umar (que Alá esté complacido con ellos): la fuerza crece",
+        "La Meca",
+        "616 (año 6 de la profecía)",
+        "Comprender el episodio del aumento de la fuerza de los musulmanes con el islam de dos compañeros poderosos.",
+        "Al oír el Corán, Umar (que Alá esté complacido con él) dijo: «¡Qué hermosas palabras!» Ese es el poder del Corán. ¡Oh Alá! Concédenos el amor al Corán. Amín.",
+        [
+          "Hamza (que Alá esté complacido con él): tío del Profeta ﷺ",
+          "Hamza (que Alá esté complacido con él) golpeó a Abu Yahal con su arco en la cabeza",
+          "Umar (que Alá esté complacido con él) abrazó el islam al oír la sura Ta-Ha según el relato famoso",
+          "Ambos fortalecieron el islam",
+          "La oración se hizo pública"
+        ],
+        [
+          ["🦁 El islam de Hamza (que Alá esté complacido con él): el ardor",
+           "Hamza (que Alá esté complacido con él), tío del Profeta ﷺ, era valiente y aficionado a la caza. Un día, al volver de cazar, le dijeron que Abu Yahal había insultado y maltratado al hijo de su hermano ﷺ junto a Safa. Hamza (que Alá esté complacido con él) fue furioso a la Mezquita Sagrada, golpeó a Abu Yahal con su arco en la cabeza y dijo: «¿Insultas a Muhámmad ﷺ? Yo estoy en su religión, digo lo que él dice; si puedes impedírmelo, inténtalo.» Después Alá abrió su corazón al islam y se mantuvo firme en él (Ibn Ishaq, al-Mustadrak de al-Hakim). Comenzó por el ardor y Alá lo convirtió en fe.",
+           "Relato de Sira: Sira de Ibn Hisham; al-Mustadrak de al-Hakim (cadena discutida)"],
+          ["🦁 El efecto del islam de Hamza (que Alá esté complacido con él)",
+           "El islam de Hamza (que Alá esté complacido con él) afligió profundamente a los Quraysh. Era valiente y poderoso, así que los Quraysh comenzaron a ser cautos al perseguir al Profeta ﷺ, y los musulmanes se fortalecieron.",
+           ""],
+          ["💪 El islam de Umar (que Alá esté complacido con él): la fuerza del Corán",
+           "Umar (que Alá esté complacido con él), antes del islam, era muy duro, valiente, pero un opositor acérrimo. Un día salió con su espada para matar al Profeta ﷺ. En el camino, Nuaym ibn Abdalah le dijo: «Ve primero a tu casa: tu hermana Fatima y su esposo Said han abrazado el islam.» Umar (que Alá esté complacido con él) fue furioso a casa de su hermana, que estaba leyendo el Corán. La golpeó y luego pidió la hoja: «Muéstrame qué es.» Ella dijo: «Estás impuro; esto es puro, no puedo dártelo.» Se lavó y leyó (el comienzo de la sura Ta-Ha). Tras leer dijo: «¡Qué hermosas palabras! ¿Quién las trajo?» Ella dijo: «Muhámmad ﷺ.» Tomó su espada y fue hacia el Profeta ﷺ. (Este es el relato famoso de la Sira; otro relato dice que Umar había oído la sura al-Haqqa del Profeta ﷺ.)",
+           "Relato de Sira: Sira de Ibn Hisham; Sunan ad-Daraqutni (cadena discutida); el relato de al-Haqqa: Musnad Ahmad (cadena débil)"],
+          ["💥 La declaración de Umar (que Alá esté complacido con él)",
+           "El Profeta ﷺ estaba en la casa de al-Arqam con los Compañeros. Umar (que Alá esté complacido con él) llegó a la puerta; Hamza (que Alá esté complacido con él) dijo: «Dejadle entrar: si viene con bien, es eso; si viene con mal, lo mato con su propia espada.» El Profeta ﷺ lo tomó por su ropa y dijo: «¡Oh Ibn al-Jattab! ¿No vas a cesar?» Umar (que Alá esté complacido con él) dijo de inmediato: «Atestiguo que no hay divinidad sino Alá y que tú eres el Mensajero de Alá.» Los Compañeros pronunciaron entonces un gran takbir. Luego los musulmanes salieron en dos filas hacia la Kaaba y rezaron abiertamente. Ibn Masud (que Alá esté complacido con él) dijo: «Hemos permanecido poderosos desde el islam de Umar» (Sahih al-Bujari). El Profeta ﷺ ya había suplicado: «¡Oh Alá! Honra el islam con el que más ames de estos dos hombres: Abu Yahal o Umar ibn al-Jattab» (Yami at-Tirmidhi: 3681).",
+           "Sahih al-Bujari: 3684; Yami at-Tirmidhi: 3681; el resto: relatos de Sira"],
+          ["🎯 La lección",
+           "Hamza (que Alá esté complacido con él) abrazó el islam por ardor y Umar (que Alá esté complacido con él) por el Corán. Ambos eran fuertes y ambos fortalecieron el islam. Debemos emplear nuestra fuerza por la religión. ¡Oh Alá! Concédenos servir Tu religión. Amín.",
+           ""]
+        ],
+        [
+          ["¿Qué parentesco tiene Hamza (que Alá esté complacido con él) con el Profeta ﷺ?", ["Su hermano", "Su tío", "Su abuelo"]],
+          ["¿Qué sura hizo que Umar (que Alá esté complacido con él) abrazara el islam según el relato famoso?", ["Al-Fatiha", "Ta-Ha", "Ya-Sin"]],
+          ["¿Cuál es el apelativo de Umar (que Alá esté complacido con él)?", ["As-Siddiq", "Al-Faruq", "Du-n-Nurayn"]]
+        ],
+        [
+          ["~616", "Islam de Hamza (que Alá esté complacido con él)"],
+          ["616", "Islam de Umar (que Alá esté complacido con él)"],
+          ["616", "Oración pública en la Kaaba"]
+        ]
+      ]
     }
 
   }

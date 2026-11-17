@@ -111,8 +111,8 @@
 //       Hajj) chaar nayi zubaanoN mein poore hain.
 // v112: ARKAN — arkan.js ke chhote labels (✅ Read / ☐ Mark this section as read / progress / pichla-agla /
 //       wapas / theme) aur hero ki "Aap ki pesh raft" line bhi nayi 4 zubaanoN mein (ARKAN_UI).
-// v116: SEERAT — Day 1-7 ka tarjuma (Da'wat-e-alaniya tak).
-const CACHE_NAME = 'quran-ustad-auto-v116';
+// v117: SEERAT — Day 1-10 ka tarjuma (Hamza ؓ aur Umar ؓ ke Islam tak).
+const CACHE_NAME = 'quran-ustad-auto-v117';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
