@@ -1707,7 +1707,9 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
         }
 
         // --- ✨ AAJ KI AYAT GENERATOR ---
-        const AYATS = [
+        // Ayat ki list ek hi jagah hai: app.js ka DAILY_AYAT (60 ayat) — dashboard ka card aur yeh card
+        // dono ek hi din mein ek hi ayat dikhate hain. Neeche wali 7-entry list sirf fallback hai.
+        const AYATS = (window.FQDailyAyat && window.FQDailyAyat.all) || [
             { ar: "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا", ur: "بے شک مشکل کے ساتھ آسانی ہے۔", ref: "سورۃ الشرح 94:5" },
             { ar: "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ", ur: "سن لو! اللہ کے ذکر سے ہی دلوں کو سکون ملتا ہے۔", ref: "سورۃ الرعد 13:28" },
             { ar: "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ", ur: "تم میں سے بہتر وہ ہے جو قرآن سیکھے اور سکھائے۔", ref: "صحیح بخاری" },
@@ -1722,7 +1724,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
 
         function showDailyAyat() {
             const dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
-            currentAyat = AYATS[dayOfYear % AYATS.length];
+            currentAyat = (window.FQDailyAyat && window.FQDailyAyat.today) ? window.FQDailyAyat.today() : AYATS[dayOfYear % AYATS.length];
             
             document.getElementById('ayatAr').innerText = currentAyat.ar;
             document.getElementById('ayatUr').innerText = currentAyat.ur;

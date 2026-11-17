@@ -86,7 +86,10 @@
 // v97: AAJ KI AYAT + SUNNAT — ab 60 ayat aur 60 sunnat (pehle 27/26). Naye 34 ayat (Juz Amma aur mashhoor
 //      ayaat) aur naye 34 sunnat sirf sahih/hasan riwayatein: Bukhari, Muslim, ya Tirmidhi/Abu Dawud jinhein
 //      Albani (rah) ne sahih/hasan kaha. Sunne/share ka wohi purana tareeqa hai.
-const CACHE_NAME = 'quran-ustad-auto-v97';
+// v98: Aaj ki Ayat ek hi list se — index.html ka "Aaj ki Ayat + Sunnat" card pehle apni alag 7 ayat ki list
+//      dikhata tha (har hafte wahi ghoomti thi). Ab woh bhi app.js ka DAILY_AYAT (60 ayat) use karta hai,
+//      is liye roz nayi ayat + nayi sunnat aati hai aur dashboard ke card se match karti hai.
+const CACHE_NAME = 'quran-ustad-auto-v98';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

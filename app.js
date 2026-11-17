@@ -398,6 +398,14 @@ if (!window.QS_LITE) {
             else if (navigator.clipboard) { navigator.clipboard.writeText(txt); if (window.showToast) showToast('📋 Copy ho gaya!'); }
         };
     }
+
+    // Aaj ki Ayat ek hi list se — index.html ka "Aaj ki Ayat + Sunnat" card bhi yahi 60 ayat dikhata hai
+    // (pehle wahan 7 ayat ki alag list thi, is liye woh har hafte hi badalta tha)
+    window.FQDailyAyat = {
+        all: DAILY_AYAT.map(function (x) { return { ar: x[0], ur: x[1], ref: x[2] }; }),
+        today: function () { var x = DAILY_AYAT[dailyIndex()]; return { ar: x[0], ur: x[1], ref: x[2] }; }
+    };
+
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderDailyAyat); else renderDailyAyat();
 })();
 }
