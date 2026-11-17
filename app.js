@@ -378,11 +378,13 @@ if (!window.QS_LITE) {
         var box = document.getElementById('dailyCard');
         if (!box) return;
         var a = DAILY_AYAT[dailyIndex()];
+        // Zubaan (اردو / Roman / हिंदी / English) ke hisaab se tarjuma — daily-lang.js
+        var tr = (window.FQDual && window.FQDual.ayatOf(a[2])) || a[1];
         box.innerHTML =
             '<div class="daily-card">' +
               '<div class="d-label">📖 AAJ KI AYAT</div>' +
               '<div class="d-ar">' + a[0] + '</div>' +
-              '<div class="d-ur">' + a[1] + '</div>' +
+              '<div class="d-ur">' + tr + '</div>' +
               '<div class="d-ref">' + a[2] + '</div>' +
               '<div class="d-acts">' +
                 '<button type="button" id="dailySuno" class="d-btn">🔊 Suno</button>' +
@@ -393,7 +395,7 @@ if (!window.QS_LITE) {
             if (window.QSpeech) QSpeech.speak(a[0], { lang: 'ar', rate: 0.7, btn: this });
         };
         document.getElementById('dailyShare').onclick = function () {
-            var txt = a[0] + '\n\n' + a[1] + '\n\n(' + a[2] + ')\n\n- Fahm-ul-Quran';
+            var txt = a[0] + '\n\n' + tr + '\n\n(' + a[2] + ')\n\n- Fahm-ul-Quran';
             if (navigator.share) navigator.share({ title: 'Fahm-ul-Quran', text: txt }).catch(function () {});
             else if (navigator.clipboard) { navigator.clipboard.writeText(txt); if (window.showToast) showToast('📋 Copy ho gaya!'); }
         };
@@ -403,7 +405,8 @@ if (!window.QS_LITE) {
     // (pehle wahan 7 ayat ki alag list thi, is liye woh har hafte hi badalta tha)
     window.FQDailyAyat = {
         all: DAILY_AYAT.map(function (x) { return { ar: x[0], ur: x[1], ref: x[2] }; }),
-        today: function () { var x = DAILY_AYAT[dailyIndex()]; return { ar: x[0], ur: x[1], ref: x[2] }; }
+        today: function () { var x = DAILY_AYAT[dailyIndex()]; return { ar: x[0], ur: x[1], ref: x[2] }; },
+        render: renderDailyAyat   // zubaan badalne par card dobara likhne ke liye (daily-lang.js)
     };
 
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderDailyAyat); else renderDailyAyat();

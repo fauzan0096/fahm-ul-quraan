@@ -89,7 +89,10 @@
 // v98: Aaj ki Ayat ek hi list se — index.html ka "Aaj ki Ayat + Sunnat" card pehle apni alag 7 ayat ki list
 //      dikhata tha (har hafte wahi ghoomti thi). Ab woh bhi app.js ka DAILY_AYAT (60 ayat) use karta hai,
 //      is liye roz nayi ayat + nayi sunnat aati hai aur dashboard ke card se match karti hai.
-const CACHE_NAME = 'quran-ustad-auto-v98';
+// v99: Aaj ki Ayat + Sunnat ka 4-zubaan tarjuma (daily-lang.js) — app ka ek hi language button
+//      (اردو / Roman / हिंदी / English) ab in dono ka tarjuma bhi badalta hai (pehle sirf heading badalti thi).
+//      daily-lang.js core shell mein hai, is liye offline bhi chalta hai.
+const CACHE_NAME = 'quran-ustad-auto-v99';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -113,7 +116,8 @@ const CORE = [
     './sounds.js',
     './icons.js',
     './course.js',
-    './sunnat.js'
+    './sunnat.js',
+    './daily-lang.js'
 ];
 
 // Baaki sab — pichhe se bharti hain (activate / page ka message / sync). Offline ke liye poora app
@@ -136,6 +140,7 @@ const ASSETS = [
     './sounds.js',
     './course.js',
     './sunnat.js',
+    './daily-lang.js',
     './dua.js',
     './icon.png',
     './icon-192.png',

@@ -313,5 +313,10 @@ var SUNNAT_SOURCE = "المصدر: رياض الصالحين للنووي — ا
 function getTodaySunnat() {
     var n = new Date();
     var dayOfYear = Math.floor((Date.UTC(n.getFullYear(), n.getMonth(), n.getDate()) - Date.UTC(n.getFullYear(), 0, 0)) / 86400000);
-    return SUNNATS[dayOfYear % SUNNATS.length];
+    var i = dayOfYear % SUNNATS.length;
+    var s = SUNNATS[i];
+    // daily-lang.js ko index chahiye hota hai (tarjuma usi tarteeb se juda hai)
+    try { Object.defineProperty(s, '__i', { value: i, enumerable: false, configurable: true }); }
+    catch (e) { s.__i = i; }
+    return s;
 }

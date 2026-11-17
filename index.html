@@ -40,6 +40,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <script src="tools.js" defer></script>
     <script src="sounds.js"></script>
+    <script src="daily-lang.js"></script>
     <meta name="theme-color" content="#0F4C3A">
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Figtree:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,800;1,600&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -1738,8 +1739,39 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                 document.getElementById('sunnatTip').innerText = '🌟 ' + currentSunnat.tip;
                 document.getElementById('sunnatRef').innerText = currentSunnat.ref;
             } else { sb.style.display = 'none'; }
+            dailyLangPaint();
             document.getElementById('ayatModal').classList.remove('hidden');
         }
+
+        // App ka language button (اردو / Roman / हिंदी / English) — Aaj ki Ayat + Sunnat ka tarjuma bhi badalta hai
+        // (pehle sirf heading badalti thi). Tarjume daily-lang.js mein hain.
+        function dailyLangPaint() {
+            const v = (window.FQDual && FQDual.lang && FQDual.lang()) || 'u';
+            const urdu = (v === 'u');
+            const face = urdu ? "'Nastaliq', serif" : "'Figtree', system-ui, sans-serif";
+            const style = (el, uSize, oSize) => {
+                if (!el) return;
+                el.style.direction = urdu ? 'rtl' : 'ltr';
+                el.style.textAlign = 'center';
+                el.style.fontFamily = face;
+                el.style.fontSize = (urdu ? uSize : oSize);
+                el.style.lineHeight = urdu ? '2' : '1.7';
+            };
+            const aEl = document.getElementById('ayatUr');
+            if (aEl && currentAyat) {
+                const t = (window.FQDual && FQDual.ayatOf) ? FQDual.ayatOf(currentAyat.ref) : null;
+                aEl.innerText = t || currentAyat.ur;
+                style(aEl, '20px', '17px');
+            }
+            if (currentSunnat) {
+                const st = (window.FQDual && FQDual.sunnatText) ? FQDual.sunnatText(currentSunnat) : null;
+                const sEl = document.getElementById('sunnatUr');
+                if (sEl) { sEl.innerText = st ? st.ur : currentSunnat.ur; style(sEl, '18px', '16px'); }
+                const tEl = document.getElementById('sunnatTip');
+                if (tEl) { tEl.innerText = '🌟 ' + (st ? st.tip : currentSunnat.tip); style(tEl, '16px', '14.5px'); }
+            }
+        }
+        window.FQDailyModal = dailyLangPaint;
 
         function shareDailyAyat() {
             if (!currentAyat) return;
@@ -1752,6 +1784,11 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
 
             const logoImg = new Image(); logoImg.src = 'icon-192.png';
             const drawAyatCard = () => {
+                // Zubaan ke hisaab se tarjuma (daily-lang.js) — Urdu na ho to Figtree font
+                const lv = (window.FQDual && FQDual.lang && FQDual.lang()) || 'u';
+                const urFace = (lv === 'u') ? '"Noto Nastaliq Urdu", serif' : '"Figtree", system-ui, sans-serif';
+                const tAyat = (window.FQDual && FQDual.ayatOf) ? (FQDual.ayatOf(currentAyat.ref) || currentAyat.ur) : currentAyat.ur;
+                const tSun = currentSunnat ? ((window.FQDual && FQDual.sunnatText) ? FQDual.sunnatText(currentSunnat) : null) : null;
                 const g = ctx.createLinearGradient(0, 0, 0, 1920);
                 g.addColorStop(0, '#0F4C3A'); g.addColorStop(1, '#0A2E24');
                 ctx.fillStyle = g; ctx.fillRect(0, 0, 1080, 1920);
@@ -1790,8 +1827,8 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                 arabicLines.forEach((line, i) => { ctx.fillText(line, 540, y + i * aLH); });
                 y += (arabicLines.length - 1) * aLH + 80;
 
-                ctx.fillStyle = '#F4F1E3'; ctx.font = (hasS ? '700 40px' : '700 50px') + ' "Noto Nastaliq Urdu", serif';
-                const urduLines = wrapText(currentAyat.ur, 850);
+                ctx.fillStyle = '#F4F1E3'; ctx.font = (hasS ? '700 40px' : '700 50px') + ' ' + urFace;
+                const urduLines = wrapText(tAyat, 850);
                 const uLH = hasS ? 75 : 90;
                 urduLines.forEach((line, i) => { ctx.fillText(line, 540, y + i * uLH); });
                 y += (urduLines.length - 1) * uLH + 60;
@@ -1812,15 +1849,15 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                     const sA = wrapText(currentSunnat.ar, 880);
                     sA.forEach((line, i) => { ctx.fillText(line, 540, y + i * 66); });
                     y += (sA.length - 1) * 66 + 70;
-                    ctx.fillStyle = '#F4F1E3'; ctx.font = '700 32px "Noto Nastaliq Urdu", serif';
-                    const sU = wrapText(currentSunnat.ur, 860);
+                    ctx.fillStyle = '#F4F1E3'; ctx.font = '700 32px ' + urFace;
+                    const sU = wrapText(tSun ? tSun.ur : currentSunnat.ur, 860);
                     sU.forEach((line, i) => { ctx.fillText(line, 540, y + i * 58); });
                     y += (sU.length - 1) * 58 + 60;
-                    ctx.fillStyle = '#D9B65A'; ctx.font = '700 30px "Noto Nastaliq Urdu", serif';
-                    const sT = wrapText(currentSunnat.tip, 860);
+                    ctx.fillStyle = '#D9B65A'; ctx.font = '700 30px ' + urFace;
+                    const sT = wrapText(tSun ? tSun.tip : currentSunnat.tip, 860);
                     sT.forEach((line, i) => { ctx.fillText(line, 540, y + i * 54); });
                     y += (sT.length - 1) * 54 + 50;
-                    ctx.fillStyle = 'rgba(255,255,255,0.65)'; ctx.font = '400 26px "Noto Nastaliq Urdu", serif';
+                    ctx.fillStyle = 'rgba(255,255,255,0.65)'; ctx.font = '400 26px ' + urFace;
                     ctx.fillText(currentSunnat.ref, 540, y);
                 }
 
@@ -1845,7 +1882,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                             await navigator.share({
                                 files: [file],
                                 title: 'Aaj ki Ayat - Fahm-ul-Quran',
-                                text: 'Aaj ka paigham: ' + currentAyat.ur + ' (' + currentAyat.ref + ')' + (currentSunnat ? '\n\n🌿 Aaj ki Sunnat: ' + currentSunnat.ur + ' (' + currentSunnat.ref + ')\n' + currentSunnat.tip : '') + '\n\nDownload Fahm-ul-Quran App:\n' + APP_LINK
+                                text: 'Aaj ka paigham: ' + tAyat + ' (' + currentAyat.ref + ')' + (currentSunnat ? '\n\n🌿 Aaj ki Sunnat: ' + (tSun ? tSun.ur : currentSunnat.ur) + ' (' + currentSunnat.ref + ')\n' + (tSun ? tSun.tip : currentSunnat.tip) : '') + '\n\nDownload Fahm-ul-Quran App:\n' + APP_LINK
                             });
                             showToast('📤 Share Ho Gaya!');
                         } catch (e) {
