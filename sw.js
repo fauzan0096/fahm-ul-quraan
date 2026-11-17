@@ -105,7 +105,11 @@
 // v110: ARKAN — ROZA ka poora page (arkan-roza.html) मराठी / العربية / Français / Español mein: ahmiyat,
 //       ramazan ke roze, sehri/iftar, mufattirat, qaza-o-kafara, rukhsat, nafl roze, Lailatul-Qadr,
 //       e'tikaf aur aadaab (arkan-extra.js, id 455-585 + 129).
-const CACHE_NAME = 'quran-ustad-auto-v110';
+// v111: ARKAN MUKAMMAL — HAJJ o UMRAH ka poora page (arkan-hajj.html) bhi मराठी / العربية / Français /
+//       Español mein: ahmiyat, sharaa'it, teen aqsaam, arkaan, wajibat, ihram/talbiyah, mahzurat,
+//       miqat, umrah, tawaf aur hajj ke din. Ab paanchon Arkan pages (hub, Kalima, Namaz, Zakat, Roza,
+//       Hajj) chaar nayi zubaanoN mein poore hain.
+const CACHE_NAME = 'quran-ustad-auto-v111';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
