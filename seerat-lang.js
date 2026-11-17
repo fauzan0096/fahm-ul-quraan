@@ -3909,6 +3909,786 @@ window.SEERAT_LANG = {
           ["625", "70 mártires y el Profeta ﷺ herido"]
         ]
       ]
+    },
+
+    /* ═══════════════ DAY 22 — Ghazwa-e-Khandaq ═══════════════ */
+    22: {
+      mr: [
+        "खंदकाचे युद्ध — शहाणपण व योजना",
+        "मदिना",
+        "शव्वाल हिजरी ५ (इ.स. ६२७) — मतभेद: इब्न इशाक व अर-रहीक हिजरी ५, मूसा बिन उकबा हिजरी ४",
+        "खंदकाची योजना, हजरत सलमान (र.अ.) यांचा सल्ला आणि १० हजारांचा वेढा अयशस्वी झाल्याची घटना समजून घेणे.",
+        "१०,००० चे सैन्य वाऱ्याने विखुरले; अल्लाहची मदत पुरेशी आहे. हे अल्लाह! आम्हालाही सल्ला, मेहनत आणि भरवशाची तौफीक दे. आमीन.",
+        [
+          "हिजरी ५ (एक मत ४)",
+          "सुमारे १०,००० शत्रू",
+          "सलमान (र.अ.) यांचा सल्ला (सीरतची रिवायत)",
+          "वेढा सुमारे १५–२७ दिवस",
+          "थंड वादळ"
+        ],
+        [
+          ["📅 तारखेत मतभेद",
+           "इब्न उमर (र.अ.) यांचे वय (उहुदमध्ये १४ वर्षे, खंदकात १५ वर्षे — सहीह बुखारी ४०९७) या दोन्ही युद्धांमध्ये एका वर्षाचे अंतर दाखवते; म्हणून मूसा बिन उकबाने खंदक हिजरी ४ मध्ये मानले; इब्न इशाक व अर-रहीकुल-मख्तूम हिजरी ५ म्हणतात.",
+           ""],
+          ["🌪️ कट",
+           "बनू नजीरचे यहुदी सरदार (हय्य बिन अख्तब इ.) कुरैश व गतफानला घेऊन आले; सैन्य सुमारे १०,०००, मुस्लिम सुमारे ३,००० (अर-रहीकुल-मख्तूम). सलमान (र.अ.) यांचा खंदकाचा सल्ला सीरत (इब्न इशाक) मध्ये आहे, सनद जईफ/मुन्कते; प्रसिद्ध आहे पण सहीह हदीसमध्ये नाही.",
+           ""],
+          ["⛏️ खोदकाम",
+           "उत्तरेकडील मोकळ्या बाजूला. नबी ﷺ माती उचलत राहिले, इतके की पोटाला माती लागली (सहीह बुखारी ४१०४). जाबिर (र.अ.) यांनी भुकेमुळे पोटाला दगड बांधलेला पाहिला; त्यांच्या निमंत्रणात बरकतीने सुमारे १,००० लोकांनी जेवण केले (सहीह बुखारी ४१०१).",
+           ""],
+          ["🛡️ वेढा",
+           "कुरआन ३३:१०–११ (डोळे फिरले, मने घशापर्यंत आली, कठोर हादरे दिले). नमाजा उशिरा: असर सूर्यास्तानंतर (सहीह बुखारी ४११२; सहीह मुस्लिम ६२७); मतभेद: काही रिवायतींमध्ये जास्त नमाजा (तिर्मिझी १७९, नसाई ६६२). अम्र बिन अब्दवुदचा अली (र.अ.) यांच्या हातून वध आणि बनू कुरैजाची करारभंग ही सीरतची रिवायती आहेत, सहीह सनदेने सिद्ध नाहीत. कालावधी: सुमारे १५ ते २७ दिवस, काहींच्या मते सुमारे एक महिना (मतभेद).",
+           ""],
+          ["💪 नबी ﷺ यांची दुआ आणि नुऐम (र.अ.)",
+           "«हे ग्रंथ उतरवणाऱ्या, लवकर हिशोब घेणाऱ्या! या सैन्यांना हरव आणि त्यांना नष्ट कर» (सहीह बुखारी २९३३; सहीह मुस्लिम १७४२). «युद्ध हे कपट आहे» (सहीह बुखारी ३०३०; सहीह मुस्लिम १७३९) ही सहीह हदीस आहे, पण नुऐम बिन मसऊद (र.अ.) यांची घटना सीरतची जईफ/मुर्सल रिवायत आहे; या हदीचा संदर्भ काब बिन अशरफची घटना आहे.",
+           ""],
+          ["🌪️ रात्रीचे वादळ",
+           "कुरआन ३३:९ (वारा आणि न दिसणारे सैन्य). हुजैफा (र.अ.) यांना रात्री बातमी आणण्यास पाठवले; थंड वारा आला, आग विझली आणि अबू सुफियानने परतीची घोषणा केली (सहीह मुस्लिम १७८८). «मला पूर्वेच्या वाऱ्याने (सबा) मदत झाली» (सहीह बुखारी १०३५). नंतर ते म्हणाले: «आता आपण त्यांच्यावर चढाई करू, ते आपल्यावर नाही» (सहीह बुखारी ४११०).",
+           ""],
+          ["🎯 बोध",
+           "सल्ला, मेहनत आणि अल्लाहवर भरवसा.",
+           ""]
+        ],
+        [
+          ["शत्रूंची संख्या?", ["१०००", "सुमारे १०,०००", "५०००"]],
+          ["वेढ्याचा कालावधी?", ["१० दिवसांपेक्षा कमी", "दोन आठवड्यांपासून एका महिन्यापर्यंत", "एक वर्ष"]],
+          ["खंदकाचा सल्ला कोणी दिला (सीरतची रिवायत)?", ["उमर (र.अ.)", "सलमान (र.अ.)", "अबू बक्र (र.अ.)"]]
+        ],
+        [
+          ["इ.स. ६२७", "सैन्यांचे आगमन"],
+          ["इ.स. ६२७", "खंदक व वेढा"],
+          ["इ.स. ६२७", "वादळ व परती"]
+        ]
+      ],
+      ar: [
+        "غزوة الخندق — حكمة وتدبير",
+        "المدينة",
+        "شوال السنة الخامسة (627 م) — خلاف: ابن إسحاق والرحيق: السنة الخامسة، وموسى بن عقبة: الرابعة",
+        "فهم خطة الخندق، ومشورة سلمان رضي الله عنه، وفشل حصار العشرة آلاف.",
+        "تفرّق جيش العشرة آلاف بالريح؛ وكفاية الله تكفي. اللهم وفقنا للمشورة والعمل والتوكل. آمين.",
+        [
+          "السنة الخامسة (وقيل الرابعة)",
+          "نحو عشرة آلاف عدو",
+          "مشورة سلمان رضي الله عنه (رواية سيرة)",
+          "الحصار نحو 15–27 يومًا",
+          "ريح باردة"
+        ],
+        [
+          ["📅 خلاف في التاريخ",
+           "عمر ابن عمر رضي الله عنه (14 سنة في أحد و15 في الخندق — صحيح البخاري 4097) يدل على سنة واحدة بين الغزوتين، ولذلك جعل موسى بن عقبة الخندق في السنة الرابعة؛ وابن إسحاق والرحيق المختوم يقولان: الخامسة.",
+           ""],
+          ["🌪️ المكيدة",
+           "جاء سادة يهود بني النضير (حيي بن أخطب وغيره) بقريش وغطفان؛ فالجيش نحو عشرة آلاف، والمسلمون نحو ثلاثة آلاف (الرحيق المختوم). ومشورة سلمان رضي الله عنه بالخندق في السيرة (ابن إسحاق) بإسناد ضعيف أو منقطع؛ وهي مشهورة لكنها ليست في حديث صحيح.",
+           ""],
+          ["⛏️ الحفر",
+           "في الجهة الشمالية المكشوفة. وكان النبي ﷺ ينقل التراب حتى غطى التراب بطنه (صحيح البخاري 4104). ورأى جابر رضي الله عنه حجرًا مشدودًا على بطنه من الجوع؛ وفي دعوته أكل نحو ألف رجل ببركة (صحيح البخاري 4101).",
+           ""],
+          ["🛡️ الحصار",
+           "القرآن 33:10–11 (زاغت الأبصار، وبلغت القلوب الحناجر، وزُلزلوا زلزالًا شديدًا). وتأخرت الصلوات: العصر بعد الغروب (صحيح البخاري 4112؛ صحيح مسلم 627)؛ وفي روايات أخرى أكثر من صلاة (الترمذي 179، النسائي 662). وقتل عمرو بن عبدود على يد علي رضي الله عنه ونقض بني قريظة من روايات السيرة، لم تثبت بسند صحيح. والمدة: نحو 15 إلى 27 يومًا، وقيل نحو شهر (خلاف).",
+           ""],
+          ["💪 دعاء النبي ﷺ ونعيم رضي الله عنه",
+           "«اللهم منزل الكتاب، سريع الحساب، اهزم الأحزاب، اللهم اهزمهم وزلزلهم» (صحيح البخاري 2933؛ صحيح مسلم 1742). و«الحرب خدعة» (صحيح البخاري 3030؛ صحيح مسلم 1739) حديث صحيح، لكن قصة نعيم بن مسعود رضي الله عنه رواية سيرة ضعيفة أو مرسلة؛ وسياق هذا الحديث في قصة كعب بن الأشرف.",
+           ""],
+          ["🌪️ ريح الليل",
+           "القرآن 33:9 (ريحًا وجنودًا لم تروها). وأُرسل حذيفة رضي الله عنه يأتي بالخبر؛ فجاءت ريح باردة، وانطفأت النار، وأعلن أبو سفيان الرحيل (صحيح مسلم 1788). و«نُصرت بالصبا» (صحيح البخاري 1035). وقال بعد ذلك: «الآن نغزوهم ولا يغزوننا» (صحيح البخاري 4110).",
+           ""],
+          ["🎯 العبرة",
+           "المشورة، والعمل، والتوكل على الله.",
+           ""]
+        ],
+        [
+          ["كم كان عدد الأعداء؟", ["1000", "نحو 10,000", "5000"]],
+          ["كم دام الحصار؟", ["أقل من عشرة أيام", "بين أسبوعين وشهر", "سنة"]],
+          ["من أشار بالخندق (رواية سيرة)؟", ["عمر رضي الله عنه", "سلمان رضي الله عنه", "أبو بكر رضي الله عنه"]]
+        ],
+        [
+          ["627", "قدوم الأحزاب"],
+          ["627", "الخندق والحصار"],
+          ["627", "الريح والرحيل"]
+        ]
+      ],
+      fr: [
+        "La bataille du Fossé — sagesse et stratégie",
+        "Médine",
+        "Chawwâl de l'an 5 (627) — divergence : Ibn Ishâq et Ar-Rahîq : an 5 ; Mûsâ ibn 'Oqba : an 4",
+        "Comprendre le plan du fossé, le conseil de Salmân (qu'Allah l'agrée) et l'échec du siège de dix mille hommes.",
+        "L'armée de dix mille fut dispersée par le vent ; le secours d'Allah suffit. Ô Allah ! Accorde-nous la consultation, l'effort et la confiance. Âmîn.",
+        [
+          "An 5 (ou 4 selon un avis)",
+          "Environ 10 000 ennemis",
+          "Le conseil de Salmân (qu'Allah l'agrée) (récit de Sîra)",
+          "Un siège d'environ 15 à 27 jours",
+          "Un vent froid"
+        ],
+        [
+          ["📅 Divergence de date",
+           "L'âge d'Ibn 'Umar (qu'Allah l'agrée) (14 ans à Ouhoud, 15 au Fossé — Sahih al-Bukhari : 4097) indique un an d'écart entre les deux batailles ; c'est pourquoi Mûsâ ibn 'Oqba place le Fossé en l'an 4 ; Ibn Ishâq et Ar-Rahîq al-Makhtûm disent l'an 5.",
+           ""],
+          ["🌪️ La conspiration",
+           "Les chefs juifs des Banou Nadîr (Houyay ibn Akhtab et d'autres) amenèrent les Quraysh et Ghatafân ; l'armée comptait environ 10 000 hommes, les musulmans environ 3000 (Ar-Rahîq al-Makhtûm). Le conseil du fossé donné par Salmân (qu'Allah l'agrée) figure dans la Sîra (Ibn Ishâq) avec une chaîne faible ou interrompue ; il est célèbre mais absent des hadiths authentiques.",
+           ""],
+          ["⛏️ Le creusement",
+           "Du côté nord, ouvert. Le Prophète ﷺ portait la terre jusqu'à ce qu'elle couvrît son ventre (Sahih al-Bukhari : 4104). Jâbir (qu'Allah l'agrée) le vit avec une pierre nouée sur le ventre à cause de la faim ; à son invitation, environ mille personnes mangèrent par bénédiction (Sahih al-Bukhari : 4101).",
+           ""],
+          ["🛡️ Le siège",
+           "Coran 33:10-11 (les regards se troublèrent, les cœurs montèrent aux gorges, et ils furent violemment ébranlés). Les prières furent retardées : 'Asr après le coucher du soleil (Sahih al-Bukhari : 4112 ; Sahih Muslim : 627) ; d'autres récits parlent de plus de prières (Tirmidhi 179, Nasâ'î 662). La mort de 'Amr ibn 'Abd Woudd par la main de 'Alî (qu'Allah l'agrée) et la trahison des Banou Qourayza sont des récits de Sîra, non établis par une chaîne authentique. Durée : environ 15 à 27 jours, et jusqu'à un mois selon d'autres (divergence).",
+           ""],
+          ["💪 L'invocation du Prophète ﷺ et Nou'aym (qu'Allah l'agrée)",
+           "« Ô Allah, Toi qui as révélé le Livre, prompt au compte, défais les coalisés, défais-les et ébranle-les. » (Sahih al-Bukhari : 2933 ; Sahih Muslim : 1742). « La guerre est une ruse » (Sahih al-Bukhari : 3030 ; Sahih Muslim : 1739) est un hadith authentique, mais l'épisode de Nou'aym ibn Mas'oûd (qu'Allah l'agrée) est un récit de Sîra faible ou moursal ; le contexte de ce hadith concerne l'affaire de Ka'b ibn al-Achraf.",
+           ""],
+          ["🌪️ Le vent de la nuit",
+           "Coran 33:9 (un vent et des armées que vous ne voyiez pas). Houdayfa (qu'Allah l'agrée) fut envoyé chercher des nouvelles ; un vent froid vint, les feux s'éteignirent, et Abou Soufyân annonça le départ (Sahih Muslim : 1788). « J'ai été secouru par le vent d'est (as-Sabâ) » (Sahih al-Bukhari : 1035). Puis il dit : « Désormais nous les attaquerons, et ils ne nous attaqueront plus. » (Sahih al-Bukhari : 4110)",
+           ""],
+          ["🎯 La leçon",
+           "La consultation, l'effort et la confiance en Allah.",
+           ""]
+        ],
+        [
+          ["Combien d'ennemis ?", ["1000", "Environ 10 000", "5000"]],
+          ["Combien de temps dura le siège ?", ["Moins de dix jours", "Entre deux semaines et un mois", "Un an"]],
+          ["Qui proposa le fossé (récit de Sîra) ?", ["'Umar (qu'Allah l'agrée)", "Salmân (qu'Allah l'agrée)", "Abou Bakr (qu'Allah l'agrée)"]]
+        ],
+        [
+          ["627", "L'arrivée des coalisés"],
+          ["627", "Le fossé et le siège"],
+          ["627", "Le vent et le départ"]
+        ]
+      ],
+      es: [
+        "La batalla del Foso: sabiduría y estrategia",
+        "Medina",
+        "Shawal del año 5 (627); discrepancia: Ibn Ishaq y Ar-Rahiq: año 5; Musa ibn Uqba: año 4",
+        "Comprender el plan del foso, el consejo de Salman (que Alá esté complacido con él) y el fracaso del asedio de diez mil hombres.",
+        "El ejército de diez mil se dispersó con el viento; el auxilio de Alá basta. ¡Oh Alá! Concédenos la consulta, el esfuerzo y la confianza. Amín.",
+        [
+          "Año 5 (o 4 según una opinión)",
+          "Unos 10 000 enemigos",
+          "El consejo de Salman (que Alá esté complacido con él) (relato de Sira)",
+          "Un asedio de unos 15 a 27 días",
+          "Un viento frío"
+        ],
+        [
+          ["📅 Discrepancia de fecha",
+           "La edad de Ibn Umar (que Alá esté complacido con él) (14 años en Uhud, 15 en el Foso; Sahih al-Bujari: 4097) indica un año de diferencia entre las dos batallas; por eso Musa ibn Uqba sitúa el Foso en el año 4, mientras que Ibn Ishaq y Ar-Rahiq al-Majtum dicen el año 5.",
+           ""],
+          ["🌪️ La conspiración",
+           "Los jefes judíos de los Banu Nadir (Huyay ibn Ajtab y otros) trajeron a los Quraysh y a Gatafan; el ejército era de unos 10 000 y los musulmanes unos 3000 (Ar-Rahiq al-Majtum). El consejo del foso de Salman (que Alá esté complacido con él) figura en la Sira (Ibn Ishaq) con una cadena débil o interrumpida; es famoso pero no está en los hadices auténticos.",
+           ""],
+          ["⛏️ La excavación",
+           "En el lado norte, abierto. El Profeta ﷺ cargaba tierra hasta que le cubrió el vientre (Sahih al-Bujari: 4104). Yabir (que Alá esté complacido con él) lo vio con una piedra atada al vientre por el hambre; en su invitación comieron unas mil personas por bendición (Sahih al-Bujari: 4101).",
+           ""],
+          ["🛡️ El asedio",
+           "Corán 33:10-11 (las miradas se turbaron, los corazones llegaron a las gargantas y fueron sacudidos con violencia). Las oraciones se retrasaron: el Asr después de la puesta del sol (Sahih al-Bujari: 4112; Sahih Muslim: 627); otros relatos hablan de más oraciones (Tirmidhi 179, Nasai 662). La muerte de Amr ibn Abd Wudd a manos de Ali (que Alá esté complacido con él) y la traición de los Banu Qurayza son relatos de Sira, no probados con cadena auténtica. Duración: unos 15 a 27 días, y hasta un mes según otros (discrepancia).",
+           ""],
+          ["💪 La súplica del Profeta ﷺ y Nuaym (que Alá esté complacido con él)",
+           "«¡Oh Alá, que revelaste el Libro y eres rápido en el ajuste de cuentas: derrota a los coaligados, derrótalos y sacúdelos!» (Sahih al-Bujari: 2933; Sahih Muslim: 1742). «La guerra es engaño» (Sahih al-Bujari: 3030; Sahih Muslim: 1739) es un hadiz auténtico, pero el episodio de Nuaym ibn Masud (que Alá esté complacido con él) es un relato de Sira débil o mursal; el contexto de ese hadiz es el asunto de Kab ibn al-Ashraf.",
+           ""],
+          ["🌪️ El viento de la noche",
+           "Corán 33:9 (un viento y ejércitos que no veíais). Se envió a Hudayfa (que Alá esté complacido con él) a traer noticias; vino un viento frío, se apagaron los fuegos y Abu Sufian anunció la retirada (Sahih Muslim: 1788). «Fui auxiliado con el viento del este (as-Saba)» (Sahih al-Bujari: 1035). Luego dijo: «Ahora nosotros los atacaremos, y ellos no nos atacarán.» (Sahih al-Bujari: 4110)",
+           ""],
+          ["🎯 La lección",
+           "La consulta, el esfuerzo y la confianza en Alá.",
+           ""]
+        ],
+        [
+          ["¿Cuántos enemigos eran?", ["1000", "Unos 10 000", "5000"]],
+          ["¿Cuánto duró el asedio?", ["Menos de diez días", "Entre dos semanas y un mes", "Un año"]],
+          ["¿Quién propuso el foso (relato de Sira)?", ["Umar (que Alá esté complacido con él)", "Salman (que Alá esté complacido con él)", "Abu Bakr (que Alá esté complacido con él)"]]
+        ],
+        [
+          ["627", "La llegada de los coaligados"],
+          ["627", "El foso y el asedio"],
+          ["627", "El viento y la retirada"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 23 — Sulah-e-Hudaibiya ═══════════════ */
+    23: {
+      mr: [
+        "हुदैबियाचा तह — स्पष्ट विजय",
+        "हुदैबिया",
+        "झुलकदा हिजरी ६ (मार्च इ.स. ६२८)",
+        "तहाची घटना, दिसणारे नुकसान, आंतरिक विजय आणि सूरह अल-फतह उतरल्याची गोष्ट समजून घेणे.",
+        "दिसणारा पराभव, आंतरिक विजय. हे अल्लाह! आम्हालाही तुझ्या शहाणपणावर भरवसा ठेवणारे बनव. आमीन.",
+        [
+          "हिजरी ६",
+          "सुमारे १४०० सहाबा (१३००–१५००)",
+          "बैअते-रिझवान",
+          "१० वर्षांचा तह (एक मत २)",
+          "सूरह अल-फतह"
+        ],
+        [
+          ["🕋 उमऱ्याचा विचार",
+           "रसूलुल्लाह ﷺ यांना स्वप्नात मस्जिदे-हराममध्ये शांतीने प्रवेश दाखवला गेला (अल-फतह ४८:२७). सहाबा सुमारे १४०० होते (सहीह बुखारी ४१५४). मतभेद: १३०० (सहीह बुखारी ४१५५) आणि १५०० अशा रिवायतीही आहेत. हदीसाठी सुमारे ७० उंट (अर-रहीकुल-मख्तूम); प्रवाशाप्रमाणे म्यानात तलवारी (सहीह बुखारी २७३१).",
+           ""],
+          ["🤝 कुरैशचा अडथळा",
+           "खालिद बिन वलीदच्या स्वारांपासून बचावासाठी मार्ग बदलला; नाका कसवा बसली तेव्हा आप ﷺ म्हणाले: «तिला हत्तीला रोखणाऱ्याने रोखले आहे» (सहीह बुखारी २७३१). उर्वा बिन मसऊदने सहाबांचे प्रेम पाहिले (सहीह बुखारी २७३१). उस्मान (र.अ.) दूत बनले. कुरैशने त्यांनाच उमरा करण्याची विनंती केली आणि त्यांनी नकार दिला — ही सीरतची रिवायत आहे.",
+           ""],
+          ["🌳 बैअते-रिझवान",
+           "उस्मान (र.अ.) यांच्या वधाच्या अफवेवर झाडाखाली बैअत (अल-फतह ४८:१८); नबी ﷺ यांनी आपला हात उस्मान (र.अ.) यांचा हात मानला (सहीह बुखारी ३६९८). मतभेद: सलमा बिन अकवा (र.अ.) यांच्यानुसार मृत्यूवर बैअत (सहीह बुखारी ४१६९); इब्न उमर (र.अ.) यांच्यानुसार न पळण्यावर. बुशरत: बैअत करणाऱ्यांपैकी कोणी जहन्नममध्ये जाणार नाही (सहीह मुस्लिम २४९६).",
+           ""],
+          ["📜 तह",
+           "सुहैल बिन अम्र यांच्याकडून; «बिस्मिक अल्लाहुम्म» आणि «मुहम्मद बिन अब्दुल्लाह» असे लिहिले गेले; अली (र.अ.) यांनी «रसूलुल्लाह» पुसण्यास नकार दिला तेव्हा नबी ﷺ यांनी स्वतः पुसले (सहीह बुखारी २६९८, २७३१). अटी: या वर्षी परती, पुढच्या वर्षी तीन दिवस; वालीच्या परवानगीशिवाय येणारा कुरैशी परत, मदिन्याहून जाणारा परत नाही; टोळ्यांना अधिकार (सहीह बुखारी २७३१). मतभेद: कालावधी १० वर्षे (सुनन अबी दाऊद २७६६; इब्न इशाक) विरुद्ध २ वर्षे (वाकिदी). अबू जंदल (र.अ.) यांना परत पाठवले गेले. उमर (र.अ.) यांनी प्रश्न विचारला; नबी ﷺ म्हणाले की मी अल्लाहचा रसूल आहे, त्याची अवज्ञा करणार नाही (सहीह बुखारी २७३१). कुर्बानी व डोके मुंडण्यात सहाबांच्या संकोचावर उम्मे सलमा (र.अ.) यांच्या सल्ल्याने आप ﷺ यांनी पुढाकार घेतला आणि सर्वांनी केले (सहीह बुखारी २७३१).",
+           ""],
+          ["🌟 सूरह अल-फतह",
+           "परतीच्या वेळी उतरली (सहीह मुस्लिम १७८६); «माझ्यावर अशी सूरत उतरली जी मला जग व त्यातील सर्व गोष्टींपेक्षा अधिक प्रिय आहे» (सहीह बुखारी ४१७७). बरा (र.अ.): तुम्ही मक्केच्या विजयाला फतह मानता, आम्ही बैअते-रिझवानला फतह मानतो (सहीह बुखारी ४१५०). खालिद व अम्र बिन अल-आस (र.अ.) नंतर (हिजरी ७–८, सीरत) मुस्लिम झाले; मक्केचा विजय हिजरी ८ मध्ये झाला.",
+           ""],
+          ["🎯 बोध",
+           "दिसणारे नुकसान विजय होऊ शकते; अल्लाहच्या शहाणपणावर भरवसा ठेवा.",
+           ""]
+        ],
+        [
+          ["हुदैबियाचा तह कोणत्या वर्षी झाला?", ["हिजरी ५", "हिजरी ६", "हिजरी ७"]],
+          ["सहाबांची संख्या (प्रसिद्ध मत)?", ["७००", "सुमारे १४००", "३०००"]],
+          ["या प्रसंगी कोणती सूरत उतरली?", ["अल-फतह", "अल-इसरा", "अल-हज"]]
+        ],
+        [
+          ["इ.स. ६२८", "उमऱ्याचा विचार"],
+          ["इ.स. ६२८", "हुदैबियाचा मुक्काम"],
+          ["इ.स. ६२८", "बैअते-रिझवान"],
+          ["इ.स. ६२८", "तह आणि सूरह अल-फतह"]
+        ]
+      ],
+      ar: [
+        "صلح الحديبية — فتح مبين",
+        "الحديبية",
+        "ذو القعدة السنة السادسة (مارس 628)",
+        "فهم قصة الصلح، والخسارة الظاهرة، والفتح الباطن، ونزول سورة الفتح.",
+        "خسارة ظاهرة وفتح باطن. اللهم اجعلنا ممن يتوكلون على حكمتك. آمين.",
+        [
+          "السنة السادسة",
+          "نحو 1400 صحابي (1300–1500)",
+          "بيعة الرضوان",
+          "صلح عشر سنين (وقيل سنتان)",
+          "سورة الفتح"
+        ],
+        [
+          ["🕋 قصد العمرة",
+           "أُري رسول الله ﷺ في المنام دخول المسجد الحرام آمنًا (الفتح 48:27). وكان الصحابة نحو 1400 (صحيح البخاري 4154). والخلاف: 1300 (صحيح البخاري 4155) و1500. وأهدى نحو سبعين بدنة (الرحيق المختوم)؛ وتقلّدوا السيوف في الأغماد كالمسافرين (صحيح البخاري 2731).",
+           ""],
+          ["🤝 اعتراض قريش",
+           "غيّروا الطريق تجنبًا لخيول خالد بن الوليد؛ فبركت الناقة القصواء فقال ﷺ: «حبسها حابس الفيل» (صحيح البخاري 2731). ورأى عروة بن مسعود محبة الصحابة له ﷺ (صحيح البخاري 2731). وأُرسل عثمان رضي الله عنه سفيرًا. وعرض قريش عليه ﷺ العمرة في عامه ورفضه من روايات السيرة.",
+           ""],
+          ["🌳 بيعة الرضوان",
+           "لما بلغهم مقتل عثمان رضي الله عنه بايعوه تحت الشجرة (الفتح 48:18)؛ وجعل ﷺ يده مكان يد عثمان (صحيح البخاري 3698). والخلاف: عند سلمة بن الأكوع على الموت (صحيح البخاري 4169)، وعند ابن عمر على ألا يفروا. والبشارة: لا يدخل النار أحد ممن بايع (صحيح مسلم 2496).",
+           ""],
+          ["📜 الصلح",
+           "على يد سهيل بن عمرو؛ وكُتب «بسمك اللهم» و«محمد بن عبد الله»؛ وأبى علي رضي الله عنه محو «رسول الله» فمحاه ﷺ بيده (صحيح البخاري 2698، 2731). والشروط: الرجوع هذا العام ودخول العام القادم ثلاثة أيام؛ ومن جاء من قريش بغير إذن وليه رُدّ، ومن ذهب من المدينة لم يُردّ؛ والقبائل بالخيار (صحيح البخاري 2731). والخلاف في المدة: عشر سنين (سنن أبي داود 2766؛ ابن إسحاق) أو سنتان (الواقدي). ورُدّ أبو جندل رضي الله عنه. وسأل عمر رضي الله عنه، فقال ﷺ: أنا رسول الله ولا أعصيه (صحيح البخاري 2731). وتأخر الصحابة في الهدي والحلق، فأشارت أم سلمة رضي الله عنها، فبدأ ﷺ ففعلوا (صحيح البخاري 2731).",
+           ""],
+          ["🌟 سورة الفتح",
+           "نزلت في الرجوع (صحيح مسلم 1786)؛ «لقد أُنزلت عليّ سورة لهي أحب إليّ من الدنيا وما فيها» (صحيح البخاري 4177). وقال البراء رضي الله عنه: إنكم تعدّون فتح مكة فتحًا، ونحن نعدّ بيعة الرضوان فتحًا (صحيح البخاري 4150). وأسلم خالد وعمرو بن العاص رضي الله عنهما بعد ذلك (7–8 من الهجرة، سيرة)؛ وكان فتح مكة سنة ثمانٍ.",
+           ""],
+          ["🎯 العبرة",
+           "قد تكون الخسارة الظاهرة فتحًا؛ فتوكل على حكمة الله.",
+           ""]
+        ],
+        [
+          ["في أي سنة كانت صلح الحديبية؟", ["السنة الخامسة", "السادسة", "السابعة"]],
+          ["كم كان عدد الصحابة (المشهور)؟", ["700", "نحو 1400", "3000"]],
+          ["أي سورة نزلت في هذا المقام؟", ["الفتح", "الإسراء", "الحج"]]
+        ],
+        [
+          ["628", "قصد العمرة"],
+          ["628", "النزول بالحديبية"],
+          ["628", "بيعة الرضوان"],
+          ["628", "الصلح وسورة الفتح"]
+        ]
+      ],
+      fr: [
+        "Le traité de Houdaybiyya — une victoire éclatante",
+        "Houdaybiyya",
+        "Dhou al-qi'da de l'an 6 (mars 628)",
+        "Comprendre l'épisode du traité, la perte apparente, la victoire intérieure et la révélation de sourate al-Fath.",
+        "Une perte apparente, une victoire intérieure. Ô Allah ! Fais de nous ceux qui se fient à Ta sagesse. Âmîn.",
+        [
+          "An 6",
+          "Environ 1400 Compagnons (1300 à 1500)",
+          "Le serment du contentement",
+          "Une trêve de dix ans (ou deux selon un avis)",
+          "Sourate al-Fath"
+        ],
+        [
+          ["🕋 L'intention de la 'Umra",
+           "Le Messager d'Allah ﷺ vit en rêve son entrée paisible dans la Mosquée sacrée (al-Fath 48:27). Les Compagnons étaient environ 1400 (Sahih al-Bukhari : 4154). Divergence : 1300 (Sahih al-Bukhari : 4155) et 1500. Environ soixante-dix offrandes (Ar-Rahîq al-Makhtûm) ; ils portaient les épées au fourreau comme des voyageurs (Sahih al-Bukhari : 2731).",
+           ""],
+          ["🤝 L'obstruction des Quraysh",
+           "Ils changèrent de route pour éviter les cavaliers de Khâlid ibn al-Walîd ; la chamelle al-Qaswâ' s'agenouilla, et il ﷺ dit : « Celui qui a retenu l'éléphant l'a retenue. » (Sahih al-Bukhari : 2731). 'Ourwa ibn Mas'oûd vit l'amour des Compagnons pour lui ﷺ (Sahih al-Bukhari : 2731). 'Uthmân (qu'Allah l'agrée) fut envoyé comme ambassadeur. Que les Quraysh lui aient proposé de faire lui-même la 'Umra et qu'il ait refusé relève des récits de Sîra.",
+           ""],
+          ["🌳 Le serment du contentement",
+           "Sur la rumeur du meurtre de 'Uthmân (qu'Allah l'agrée), ils lui prêtèrent serment sous l'arbre (al-Fath 48:18) ; le Prophète ﷺ mit sa main à la place de celle de 'Uthmân (Sahih al-Bukhari : 3698). Divergence : selon Salama ibn al-Akwa', le serment portait sur la mort (Sahih al-Bukhari : 4169) ; selon Ibn 'Umar, sur la fuite à ne pas commettre. Annonce : nul de ceux qui prêtèrent serment n'entrera en Enfer (Sahih Muslim : 2496).",
+           ""],
+          ["📜 Le traité",
+           "Négocié avec Souhayl ibn 'Amr ; on écrivit « Bismika-llâhumma » et « Mouhammad ibn 'Abdillâh » ; 'Alî (qu'Allah l'agrée) refusa d'effacer « Messager d'Allah », et le Prophète ﷺ l'effaça lui-même (Sahih al-Bukhari : 2698, 2731). Conditions : retour cette année, entrée l'année suivante pour trois jours ; tout Qourachî venant sans l'autorisation de son tuteur est rendu, et celui qui part de Médine n'est pas rendu ; les tribus restent libres (Sahih al-Bukhari : 2731). Divergence sur la durée : dix ans (Sunan Abi Dawud : 2766 ; Ibn Ishâq) ou deux ans (al-Wâqidî). Abou Jandal (qu'Allah l'agrée) fut rendu. 'Umar (qu'Allah l'agrée) interrogea, et il ﷺ dit : « Je suis le Messager d'Allah et je ne Lui désobéis pas. » (Sahih al-Bukhari : 2731). Les Compagnons hésitèrent à égorger et à se raser ; sur le conseil d'Oumm Salama (qu'Allah l'agrée), il ﷺ commença et tous firent de même (Sahih al-Bukhari : 2731).",
+           ""],
+          ["🌟 Sourate al-Fath",
+           "Elle descendit au retour (Sahih Muslim : 1786) ; « Une sourate m'a été révélée qui m'est plus chère que le monde et tout ce qu'il contient » (Sahih al-Bukhari : 4177). Al-Barâ' (qu'Allah l'agrée) dit : vous considérez la conquête de La Mecque comme une victoire, nous considérons le serment du contentement comme une victoire (Sahih al-Bukhari : 4150). Khâlid et 'Amr ibn al-'Âs (qu'Allah les agrée) embrassèrent l'islam plus tard (7e-8e année, Sîra) ; la conquête de La Mecque eut lieu en l'an 8.",
+           ""],
+          ["🎯 La leçon",
+           "Une perte apparente peut devenir une victoire ; fais confiance à la sagesse d'Allah.",
+           ""]
+        ],
+        [
+          ["En quelle année eut lieu le traité ?", ["An 5", "An 6", "An 7"]],
+          ["Combien de Compagnons (avis célèbre) ?", ["700", "Environ 1400", "3000"]],
+          ["Quelle sourate descendit à cette occasion ?", ["Al-Fath", "Al-Isrâ'", "Al-Hajj"]]
+        ],
+        [
+          ["628", "L'intention de la 'Umra"],
+          ["628", "Le campement à Houdaybiyya"],
+          ["628", "Le serment du contentement"],
+          ["628", "Le traité et sourate al-Fath"]
+        ]
+      ],
+      es: [
+        "El tratado de Hudaybiyya: una victoria clara",
+        "Hudaybiyya",
+        "Du l-qi'da del año 6 (marzo de 628)",
+        "Comprender el episodio del tratado, la pérdida aparente, la victoria interior y la revelación de la sura al-Fath.",
+        "Una pérdida aparente, una victoria interior. ¡Oh Alá! Haznos de quienes confían en Tu sabiduría. Amín.",
+        [
+          "Año 6",
+          "Unos 1400 Compañeros (1300 a 1500)",
+          "El juramento del contento",
+          "Una tregua de diez años (o dos según una opinión)",
+          "La sura al-Fath"
+        ],
+        [
+          ["🕋 La intención de la Umra",
+           "El Mensajero de Alá ﷺ vio en sueños su entrada pacífica en la Mezquita Sagrada (al-Fath 48:27). Los Compañeros eran unos 1400 (Sahih al-Bujari: 4154). Discrepancia: 1300 (Sahih al-Bujari: 4155) y 1500. Unas setenta ofrendas (Ar-Rahiq al-Majtum); llevaban las espadas en la funda como viajeros (Sahih al-Bujari: 2731).",
+           ""],
+          ["🤝 La obstrucción de los Quraysh",
+           "Cambiaron de ruta para evitar a los jinetes de Jalid ibn al-Walid; la camella al-Qaswa se arrodilló y él ﷺ dijo: «La ha retenido Quien retuvo al elefante.» (Sahih al-Bujari: 2731). Urwa ibn Masud vio el amor de los Compañeros por él ﷺ (Sahih al-Bujari: 2731). Uzman (que Alá esté complacido con él) fue enviado como embajador. Que los Quraysh le ofrecieran hacer él mismo la Umra y que lo rechazara pertenece a los relatos de Sira.",
+           ""],
+          ["🌳 El juramento del contento",
+           "Ante el rumor del asesinato de Uzman (que Alá esté complacido con él), le juraron bajo el árbol (al-Fath 48:18); el Profeta ﷺ puso su mano en lugar de la de Uzman (Sahih al-Bujari: 3698). Discrepancia: según Salama ibn al-Akwa, el juramento fue sobre la muerte (Sahih al-Bujari: 4169); según Ibn Umar, sobre no huir. Anuncio: ninguno de los que juraron entrará en el Infierno (Sahih Muslim: 2496).",
+           ""],
+          ["📜 El tratado",
+           "Negociado con Suhayl ibn Amr; se escribió «Bismika Aláhumma» y «Muhámmad ibn Abdil-lah»; Ali (que Alá esté complacido con él) se negó a borrar «Mensajero de Alá» y el Profeta ﷺ lo borró él mismo (Sahih al-Bujari: 2698, 2731). Condiciones: regreso este año, entrada el año siguiente por tres días; todo qurayshí que venga sin permiso de su tutor es devuelto, y quien parta de Medina no es devuelto; las tribus quedan libres (Sahih al-Bujari: 2731). Discrepancia sobre la duración: diez años (Sunan Abi Dawud: 2766; Ibn Ishaq) o dos (al-Waqidi). Abu Yandal (que Alá esté complacido con él) fue devuelto. Umar (que Alá esté complacido con él) preguntó, y él ﷺ dijo: «Soy el Mensajero de Alá y no Le desobedezco.» (Sahih al-Bujari: 2731). Los Compañeros dudaron en sacrificar y afeitarse; por consejo de Umm Salama (que Alá esté complacido con ella), él ﷺ comenzó y todos hicieron lo mismo (Sahih al-Bujari: 2731).",
+           ""],
+          ["🌟 La sura al-Fath",
+           "Descendió a la vuelta (Sahih Muslim: 1786); «Se me ha revelado una sura que me es más querida que el mundo y cuanto contiene» (Sahih al-Bujari: 4177). Al-Bara (que Alá esté complacido con él) dijo: vosotros tenéis la conquista de La Meca por victoria, nosotros tenemos el juramento del contento por victoria (Sahih al-Bujari: 4150). Jalid y Amr ibn al-As (que Alá esté complacido con ellos) abrazaron el islam después (años 7-8, Sira); la conquista de La Meca fue en el año 8.",
+           ""],
+          ["🎯 La lección",
+           "Una pérdida aparente puede ser una victoria; confía en la sabiduría de Alá.",
+           ""]
+        ],
+        [
+          ["¿En qué año fue el tratado?", ["Año 5", "Año 6", "Año 7"]],
+          ["¿Cuántos Compañeros (opinión famosa)?", ["700", "Unos 1400", "3000"]],
+          ["¿Qué sura descendió en esa ocasión?", ["Al-Fath", "Al-Isra", "Al-Hayy"]]
+        ],
+        [
+          ["628", "La intención de la Umra"],
+          ["628", "El campamento en Hudaybiyya"],
+          ["628", "El juramento del contento"],
+          ["628", "El tratado y la sura al-Fath"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 24 — Ghazwa-e-Khaibar ═══════════════ */
+    24: {
+      mr: [
+        "खैबरचे युद्ध — किल्ल्यांचा विजय",
+        "खैबर",
+        "मुहर्रम हिजरी ७ (इ.स. ६२८) — इब्न इशाक व अर-रहीक; काहींच्या मते सफर",
+        "खैबरचा विजय, यहुद्यांचे कट आणि हजरत अली (र.अ.) यांची भूमिका समजून घेणे.",
+        "ज्याला अल्लाह व रसूल प्रिय होते त्यालाच निशाण मिळाले. हे अल्लाह! आम्हाला खरे प्रेम दे. आमीन.",
+        [
+          "हिजरी ७",
+          "किल्ले जिंकले",
+          "निशाण अली (र.अ.) यांना",
+          "सफिय्या (र.अ.) यांच्याशी विवाह",
+          "मुझाराअत (सामायिक पीक)",
+          "विषाची घटना"
+        ],
+        [
+          ["🏰 पार्श्वभूमी",
+           "खैबर यहुद्यांची वस्ती होती (मदिन्यापासून सुमारे १५०–१७० किमी उत्तरेला); बनू नजीरच्या हद्दपार सरदारांनी (हय्य बिन अख्तब इ.) अहझाबला भडकवले होते (सीरत). फक्त हुदैबियाचे लोक निघाले (अल-फतह ४८:१५–१९); सुमारे १४०० पायी, सुमारे २०० स्वार (अर-रहीकुल-मख्तूम). रात्री पोहोचले, नबी ﷺ यांनी रात्री हल्ला केला नाही; सकाळी यहुदी कुदळी घेऊन बाहेर आले तेव्हा आप ﷺ म्हणाले «अल्लाहु अकबर, खैबर उद्ध्वस्त झाले» (सहीह बुखारी ३७१, ४१९७).",
+           ""],
+          ["⚔️ किल्ले",
+           "नाइम, कमूस, सअब बिन मुआज इ. (सीरत). अबू बक्र व उमर (र.अ.) यांना निशाण मिळाले पण विजय मिळाला नाही (मुस्नद अहमद, बुरैदा (र.अ.); सहीहैनमध्ये नाही). नंतर आप ﷺ म्हणाले: «उद्या निशाण अशाला देईन जो अल्लाह व रसूलवर प्रेम करतो आणि अल्लाह व रसूल त्याच्यावर प्रेम करतात» (सहीह बुखारी ३७०१; सहीह मुस्लिम २४०६). अली (र.अ.) यांचे डोळे दुखत होते, आप ﷺ यांच्या थुंकीने बरे झाले; मार्गदर्शन: «शांतपणे जा, इस्लामची दावत द्या; तुमच्यामुळे एखादा माणूस हिदायत मिळवेल तर ते लाल उंटांपेक्षा उत्तम आहे» (सहीह बुखारी ३७०१).",
+           ""],
+          ["🦁 अली (र.अ.) व मरहब",
+           "सहीह मुस्लिम १८०७ (सलमा बिन अकवा (र.अ.)) नुसार अली (र.अ.) यांनी मरहबचा वध केला. मतभेद: इब्न इशाकच्या मते मुहम्मद बिन मुस्लिमा (र.अ.) यांनी. दरवाजा उपटण्याची रिवायत जईफ आहे, ती समाविष्ट केलेली नाही.",
+           ""],
+          ["💔 सफिय्या (र.अ.)",
+           "हय्य यांची मुलगी; नबी ﷺ यांनी त्यांना मुक्त करून मुक्तीचा मेहर केला आणि विवाह केला (सहीह बुखारी ९४७, ४२००; सहीह मुस्लिम १३६५); सहाबांनी म्हटले की जर पडदा केला तर त्या उम्मुल-मोमिनीन आहेत (सहीह बुखारी ४२१३).",
+           ""],
+          ["🍇 जमीन",
+           "यहुद्यांना निम्म्या उत्पन्नावर काम करू दिले (सहीह बुखारी २३३१, २३३८); उमर (र.अ.) यांनी आपल्या काळात त्यांना हद्दपार केले (सहीह बुखारी २७३०; सहीह मुस्लिम १५५१).",
+           ""],
+          ["☠️ विष",
+           "एका यहुदी स्त्रीने भाजलेल्या बकरीत विष मिसळले; नबी ﷺ यांनी घास थुंकून टाकला (सहीह बुखारी २६१७; सहीह मुस्लिम २१९०). तिचे नाव झैनब बिंत हारिस सीरतमध्ये येते. मतभेद: बुखारी व मुस्लिममध्ये तिला ठार मारले गेले नाही; सुनन अबी दाऊदमध्ये (किताबुद-दियात) बिश्र बिन बरा (र.अ.) यांच्या मृत्यूवर वधाचा उल्लेख आहे. विद्वान असे एकत्र करतात: आधी माफी, बिश्र (र.अ.) यांच्या मृत्यूनंतर किसास.",
+           ""],
+          ["🐴 भर",
+           "पाळीव गाढवांचे मांस हराम झाले (सहीह बुखारी ४२१९).",
+           ""],
+          ["🎯 बोध",
+           "अल्लाह व रसूल यांचे प्रेम; अहले-बैत व सहाबांचा आदर.",
+           ""]
+        ],
+        [
+          ["खैबरचे युद्ध कोणत्या वर्षी झाले?", ["हिजरी ६", "हिजरी ७", "हिजरी ८"]],
+          ["निशाण कोणाला मिळाले?", ["उमर (र.अ.)", "अली (र.अ.)", "उस्मान (र.अ.)"]],
+          ["निशाण देताना कोणता गुण सांगितला?", ["अल्लाह व रसूल यांचे प्रेम", "तलवारीचे कौशल्य", "धन-दौलत"]]
+        ],
+        [
+          ["इ.स. ६२८", "प्रयाण"],
+          ["इ.स. ६२८", "किल्ल्यांचा विजय"],
+          ["इ.स. ६२८", "सफिय्या (र.अ.) यांच्याशी विवाह"]
+        ]
+      ],
+      ar: [
+        "غزوة خيبر — فتح الحصون",
+        "خيبر",
+        "محرم السنة السابعة (628) — ابن إسحاق والرحيق؛ وقيل صفر",
+        "فهم فتح خيبر، ومكائد اليهود، ودور علي رضي الله عنه.",
+        "أُعطي الراية من كان يحب الله ورسوله. اللهم ارزقنا المحبة الصادقة. آمين.",
+        [
+          "السنة السابعة",
+          "فتح الحصون",
+          "الراية لعلي رضي الله عنه",
+          "زواجه ﷺ بصفية رضي الله عنها",
+          "المزارعة",
+          "قصة السم"
+        ],
+        [
+          ["🏰 الخلفية",
+           "كانت خيبر بلدة يهود (نحو 150–170 كم شمال المدينة)؛ وقد حرّض سادة بني النضير المنفيون (حيي بن أخطب وغيره) الأحزاب (سيرة). ولم يخرج إلا أهل الحديبية (الفتح 48:15–19)؛ نحو 1400 راجل و200 فارس (الرحيق المختوم). وصلوا ليلًا فلم يهجم ﷺ ليلًا؛ فلما خرج اليهود بالمساحي صباحًا قال: «الله أكبر، خربت خيبر» (صحيح البخاري 371، 4197).",
+           ""],
+          ["⚔️ الحصون",
+           "ناعم وقموص وصعب بن معاذ وغيرها (سيرة). وأُعطى الراية لأبي بكر وعمر رضي الله عنهما فلم يُفتح؛ ثم قال ﷺ: «لأعطين الراية غدًا رجلًا يحب الله ورسوله ويحبه الله ورسوله» (صحيح البخاري 3701؛ صحيح مسلم 2406). وكان علي رضي الله عنه أرمد، فبرئ بريق النبي ﷺ؛ وقال له: «انفذ على رسلك، وادعهم إلى الإسلام؛ فوالله لأن يهدي الله بك رجلًا واحدًا خير لك من حمر النعم» (صحيح البخاري 3701).",
+           ""],
+          ["🦁 علي رضي الله عنه ومرحب",
+           "في صحيح مسلم 1807 (سلمة بن الأكوع رضي الله عنه) أن عليًّا رضي الله عنه قتل مرحبًا. والخلاف: عند ابن إسحاق قتله محمد بن مسلمة رضي الله عنه. وأما قلع الباب فرواية ضعيفة لم تُدرج.",
+           ""],
+          ["💔 صفية رضي الله عنها",
+           "بنت حيي؛ أعتقها النبي ﷺ وجعل عتقها صداقها وتزوجها (صحيح البخاري 947، 4200؛ صحيح مسلم 1365)؛ فقال الصحابة: إن حُجب عنها فهي أم المؤمنين (صحيح البخاري 4213).",
+           ""],
+          ["🍇 الأرض",
+           "أُقرّ اليهود على العمل بنصف الثمر (صحيح البخاري 2331، 2338)؛ وأجلاهم عمر رضي الله عنه في خلافته (صحيح البخاري 2730؛ صحيح مسلم 1551).",
+           ""],
+          ["☠️ السم",
+           "دسّت امرأة يهودية السم في شاة مشوية؛ فلفظ النبي ﷺ اللقمة (صحيح البخاري 2617؛ صحيح مسلم 2190). واسمها زينب بنت الحارث في السيرة. والخلاف: في البخاري ومسلم لم تُقتل؛ وفي سنن أبي داود (كتاب الديات) ذكر القتل لوفاة بشر بن البراء رضي الله عنه. ويجمع العلماء: العفو أولًا، ثم القصاص عند وفاة بشر رضي الله عنه.",
+           ""],
+          ["🐴 زيادة",
+           "حرّمت لحوم الحمر الأهلية (صحيح البخاري 4219).",
+           ""],
+          ["🎯 العبرة",
+           "محبة الله ورسوله؛ وإجلال أهل البيت والصحابة.",
+           ""]
+        ],
+        [
+          ["في أي سنة كانت خيبر؟", ["السادسة", "السابعة", "الثامنة"]],
+          ["من أُعطي الراية؟", ["عمر رضي الله عنه", "علي رضي الله عنه", "عثمان رضي الله عنه"]],
+          ["ما الصفة المذكورة عند إعطاء الراية؟", ["محبة الله ورسوله", "مهارة السيف", "المال"]]
+        ],
+        [
+          ["628", "الخروج"],
+          ["628", "فتح الحصون"],
+          ["628", "زواجه ﷺ بصفية رضي الله عنها"]
+        ]
+      ],
+      fr: [
+        "La bataille de Khaybar — la prise des forteresses",
+        "Khaybar",
+        "Mouharram de l'an 7 (628) — Ibn Ishâq et Ar-Rahîq ; safar selon d'autres",
+        "Comprendre la prise de Khaybar, les intrigues des Juifs et le rôle de 'Alî (qu'Allah l'agrée).",
+        "L'étendard fut donné à celui qui aimait Allah et Son Messager. Ô Allah ! Accorde-nous l'amour sincère. Âmîn.",
+        [
+          "An 7",
+          "Les forteresses prises",
+          "L'étendard à 'Alî (qu'Allah l'agrée)",
+          "Le mariage avec Safiyya (qu'Allah l'agrée)",
+          "Le métayage",
+          "L'affaire du poison"
+        ],
+        [
+          ["🏰 Le contexte",
+           "Khaybar était une localité juive (à environ 150-170 km au nord de Médine) ; les chefs exilés des Banou Nadîr (Houyay ibn Akhtab et d'autres) avaient poussé les coalisés (Sîra). Seuls ceux de Houdaybiyya sortirent (al-Fath 48:15-19) ; environ 1400 à pied et 200 cavaliers (Ar-Rahîq al-Makhtûm). Ils arrivèrent de nuit, et le Prophète ﷺ n'attaqua pas de nuit ; au matin, quand les Juifs sortirent avec leurs pioches, il dit : « Allah est le plus grand, Khaybar est ruinée » (Sahih al-Bukhari : 371, 4197).",
+           ""],
+          ["⚔️ Les forteresses",
+           "Nâ'im, Qamoûs, Sa'b ibn Mou'âdh, etc. (Sîra). L'étendard fut donné à Abou Bakr puis à 'Umar (qu'Allah les agrée), sans succès ; puis il ﷺ dit : « Je donnerai demain l'étendard à un homme qui aime Allah et Son Messager, et qu'Allah et Son Messager aiment. » (Sahih al-Bukhari : 3701 ; Sahih Muslim : 2406). 'Alî (qu'Allah l'agrée) souffrait des yeux et fut guéri par la salive du Prophète ﷺ ; il lui dit : « Avance avec calme et appelle-les à l'islam ; par Allah, qu'Allah guide par toi un seul homme vaut mieux pour toi que les chameaux roux. » (Sahih al-Bukhari : 3701)",
+           ""],
+          ["🦁 'Alî (qu'Allah l'agrée) et Marhab",
+           "Selon Sahih Muslim 1807 (Salama ibn al-Akwa'), 'Alî (qu'Allah l'agrée) tua Marhab. Divergence : selon Ibn Ishâq, ce fut Mouhammad ibn Maslama (qu'Allah l'agrée). Le récit de la porte arrachée est faible et n'a pas été retenu.",
+           ""],
+          ["💔 Safiyya (qu'Allah l'agrée)",
+           "Fille de Houyay ; le Prophète ﷺ l'affranchit, fit de son affranchissement sa dot et l'épousa (Sahih al-Bukhari : 947, 4200 ; Sahih Muslim : 1365) ; les Compagnons dirent : s'il la voile, elle est mère des croyants (Sahih al-Bukhari : 4213).",
+           ""],
+          ["🍇 La terre",
+           "Les Juifs furent maintenus à cultiver contre la moitié des fruits (Sahih al-Bukhari : 2331, 2338) ; 'Umar (qu'Allah l'agrée) les expulsa sous son califat (Sahih al-Bukhari : 2730 ; Sahih Muslim : 1551).",
+           ""],
+          ["☠️ Le poison",
+           "Une femme juive mit du poison dans une chèvre rôtie ; le Prophète ﷺ recracha le morceau (Sahih al-Bukhari : 2617 ; Sahih Muslim : 2190). Son nom, Zaynab bint al-Hârith, figure dans la Sîra. Divergence : dans al-Bukhari et Muslim elle ne fut pas tuée ; dans Sunan Abi Dawud (Livre des diyât) il est question de la mise à mort après la mort de Bichr ibn al-Barâ' (qu'Allah l'agrée). Les savants concilient : d'abord le pardon, puis la loi du talion à la mort de Bichr.",
+           ""],
+          ["🐴 En plus",
+           "La viande des ânes domestiques fut rendue illicite (Sahih al-Bukhari : 4219).",
+           ""],
+          ["🎯 La leçon",
+           "L'amour d'Allah et de Son Messager ; le respect des gens de la maison et des Compagnons.",
+           ""]
+        ],
+        [
+          ["En quelle année eut lieu Khaybar ?", ["An 6", "An 7", "An 8"]],
+          ["À qui fut donné l'étendard ?", ["'Umar (qu'Allah l'agrée)", "'Alî (qu'Allah l'agrée)", "'Uthmân (qu'Allah l'agrée)"]],
+          ["Quelle qualité fut mentionnée en donnant l'étendard ?", ["L'amour d'Allah et de Son Messager", "La maîtrise du sabre", "La richesse"]]
+        ],
+        [
+          ["628", "Le départ"],
+          ["628", "La prise des forteresses"],
+          ["628", "Le mariage avec Safiyya (qu'Allah l'agrée)"]
+        ]
+      ],
+      es: [
+        "La batalla de Jaybar: la toma de las fortalezas",
+        "Jaybar",
+        "Muharram del año 7 (628); Ibn Ishaq y Ar-Rahiq: así; safar según otros",
+        "Comprender la toma de Jaybar, las intrigas de los judíos y el papel de Ali (que Alá esté complacido con él).",
+        "El estandarte fue dado a quien amaba a Alá y a Su Mensajero. ¡Oh Alá! Concédenos el amor sincero. Amín.",
+        [
+          "Año 7",
+          "Se tomaron las fortalezas",
+          "El estandarte a Ali (que Alá esté complacido con él)",
+          "El matrimonio con Safiyya (que Alá esté complacido con ella)",
+          "El aparcero",
+          "El asunto del veneno"
+        ],
+        [
+          ["🏰 El contexto",
+           "Jaybar era una localidad judía (a unos 150-170 km al norte de Medina); los jefes exiliados de los Banu Nadir (Huyay ibn Ajtab y otros) habían incitado a los coaligados (Sira). Solo salieron los de Hudaybiyya (al-Fath 48:15-19); unos 1400 a pie y 200 jinetes (Ar-Rahiq al-Majtum). Llegaron de noche y el Profeta ﷺ no atacó de noche; por la mañana, cuando los judíos salieron con sus azadas, dijo: «Alá es el más grande, Jaybar está arruinada» (Sahih al-Bujari: 371, 4197).",
+           ""],
+          ["⚔️ Las fortalezas",
+           "Naim, Qamus, Sab ibn Muaz, etc. (Sira). El estandarte fue dado a Abu Bakr y luego a Umar (que Alá esté complacido con ellos) sin éxito; entonces ﷺ dijo: «Mañana daré el estandarte a un hombre que ama a Alá y a Su Mensajero, y a quien Alá y Su Mensajero aman.» (Sahih al-Bujari: 3701; Sahih Muslim: 2406). Ali (que Alá esté complacido con él) tenía los ojos enfermos y sanó con la saliva del Profeta ﷺ; le dijo: «Avanza con calma y llámalos al islam; por Alá, que Alá guíe por ti a un solo hombre vale más para ti que los camellos rojos.» (Sahih al-Bujari: 3701)",
+           ""],
+          ["🦁 Ali (que Alá esté complacido con él) y Marhab",
+           "Según Sahih Muslim 1807 (Salama ibn al-Akwa), Ali (que Alá esté complacido con él) mató a Marhab. Discrepancia: según Ibn Ishaq, fue Muhámmad ibn Maslama (que Alá esté complacido con él). El relato de la puerta arrancada es débil y no se ha incluido.",
+           ""],
+          ["💔 Safiyya (que Alá esté complacido con ella)",
+           "Hija de Huyay; el Profeta ﷺ la libertó, hizo de su liberación su dote y se casó con ella (Sahih al-Bujari: 947, 4200; Sahih Muslim: 1365); los Compañeros dijeron: si la cubre con velo, es madre de los creyentes (Sahih al-Bujari: 4213).",
+           ""],
+          ["🍇 La tierra",
+           "Se dejó a los judíos cultivarla a cambio de la mitad de los frutos (Sahih al-Bujari: 2331, 2338); Umar (que Alá esté complacido con él) los expulsó en su califato (Sahih al-Bujari: 2730; Sahih Muslim: 1551).",
+           ""],
+          ["☠️ El veneno",
+           "Una mujer judía puso veneno en una cabra asada; el Profeta ﷺ escupió el bocado (Sahih al-Bujari: 2617; Sahih Muslim: 2190). Su nombre, Zaynab bint al-Hariz, aparece en la Sira. Discrepancia: en al-Bujari y Muslim no fue matada; en Sunan Abi Dawud (Libro de las diyat) se menciona la muerte tras el fallecimiento de Bishr ibn al-Bara (que Alá esté complacido con él). Los sabios concilian: primero el perdón, luego la ley del talión a la muerte de Bishr.",
+           ""],
+          ["🐴 Además",
+           "Se prohibió la carne de los asnos domésticos (Sahih al-Bujari: 4219).",
+           ""],
+          ["🎯 La lección",
+           "El amor a Alá y a Su Mensajero; el respeto a la gente de la casa y a los Compañeros.",
+           ""]
+        ],
+        [
+          ["¿En qué año fue Jaybar?", ["Año 6", "Año 7", "Año 8"]],
+          ["¿A quién se dio el estandarte?", ["Umar (que Alá esté complacido con él)", "Ali (que Alá esté complacido con él)", "Uzman (que Alá esté complacido con él)"]],
+          ["¿Qué cualidad se mencionó al dar el estandarte?", ["El amor a Alá y a Su Mensajero", "La destreza con la espada", "La riqueza"]]
+        ],
+        [
+          ["628", "La salida"],
+          ["628", "La toma de las fortalezas"],
+          ["628", "El matrimonio con Safiyya (que Alá esté complacido con ella)"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 25 — Waqi'a-e-Ifk ═══════════════ */
+    25: {
+      mr: [
+        "इफ्कची घटना — पावित्र्याची परीक्षा",
+        "मदिना",
+        "गझवा-ए-बनू मुस्तलिकहून परतीच्या वेळी — शाबान हिजरी ५ (इब्न इशाक) / हिजरी ६ (अर-रहीक) / हिजरी ४ (मूसा बिन उकबा), सुमारे इ.स. ६२७",
+        "हजरत आयशा (र.अ.) यांच्यावरील बदनामी, कुरआनची निर्दोषता आणि संयमाची घटना समजून घेणे.",
+        "«फसब्रुन जमील» — अल्लाहने कायमचे आयशा (र.अ.) यांची निर्दोषता उतरवली. हे अल्लाह! आमच्या जिभांना बदनामीपासून सुरक्षित ठेव. आमीन.",
+        [
+          "आयशा (र.अ.) यांच्यावर बदनामी",
+          "मुनाफिकांचा कट",
+          "सूरह अन-नूर",
+          "निर्दोषतेची घोषणा",
+          "हद्दे-कज्फ",
+          "आयशा (र.अ.) यांचा संयम"
+        ],
+        [
+          ["⚠️ क्रम आणि तारीख",
+           "ही घटना गझवा-ए-बनू मुस्तलिकहून परतीच्या वेळी घडली. इब्न इशाकच्या हिशोबाने ही खंदकाच्या युद्धापूर्वीची आहे (दिवस २२), म्हणून अभ्यासक्रमाच्या क्रमात तारखेचा फरक लक्षात ठेवा.",
+           ""],
+          ["🐪 घटना",
+           "परतीच्या वेळी आयशा (र.अ.) हजेरीसाठी गेल्या, हार हरवला; होदा उचलणाऱ्यांनी समजले की त्या आत आहेत (त्या हलक्या होत्या). सफवान बिन मुअत्तल (र.अ.) यांनी त्यांना पाहिले, «इन्ना लिल्लाहि व इन्ना इलैहि राजिऊन» म्हटले, उंटीण बसवली आणि वाग घेऊन घेऊन आले; याशिवाय काहीच बोलले नाहीत (सहीह बुखारी ४१४१).",
+           ""],
+          ["🗣️ बदनामी",
+           "मुख्य सूत्रधार अब्दुल्लाह बिन उबय्य बिन सलूल होता; काही मुस्लिमही (हस्सान, मिस्तह व हम्ना (र.अ.)) त्यात सामील झाले (सहीह बुखारी ४१४१; सुनन अबी दाऊद ४४७४). आयशा (र.अ.) आजारी पडल्या आणि सुमारे एक महिना बेखबर राहिल्या; त्यांना नबी ﷺ यांची पूर्वीची ममता जाणवली नाही. उम्मे मिस्तहकडून त्यांना कळले. नबी ﷺ यांनी अली, उसामा व बरैरा (र.अ.) यांचा सल्ला घेतला; झैनब बिंत जहश (र.अ.) यांनी फक्त चांगलेच सांगितले (सहीह बुखारी ४१४१). सूचना: रिवायतीत साद बिन मुआज (र.अ.) यांचा उल्लेख आहे, जरी ते गझवा-ए-बनू कुरैजानंतर गेले; म्हणून काही विद्वान याला वर्णनकर्त्याची भूल किंवा तारखेचा गोंधळ म्हणतात (याच्याशी तारखेचा मतभेद जोडलेला आहे).",
+           ""],
+          ["💔 आयशा (र.अ.) यांचा संयम",
+           "त्या दोन रात्री व एक दिवस रडत राहिल्या; नबी ﷺ म्हणाले: निर्दोष असाल तर अल्लाह उघड करेल, गुन्हा झाला असेल तर तौबा करा. याकूब (अ.स.) यांचे नाव आठवले नाही तेव्हा त्या म्हणाल्या: «मी तेच म्हणते जे यूसुफच्या वडिलांनी म्हटले: फसब्रुन जमील» (यूसुफ १२:१८) (सहीह बुखारी ४१४१).",
+           ""],
+          ["📖 कुरआनची निर्दोषता",
+           "वही आली, थंडीतही घाम आला, नबी ﷺ हसून म्हणाले: «आयशा! अल्लाहने तुमची निर्दोषता उतरवली.» आईंनी म्हटले आप ﷺ यांचे आभार माना; त्या म्हणाल्या: «अल्लाहची शपथ! मी फक्त अल्लाहची स्तुती करीन.» सूरह अन-नूर २४:११–२० (दहा आयती). अबू बक्र (र.अ.) यांनी मिस्तहला मदत थांबवली होती, तेव्हा २४:२२ उतरली आणि त्यांनी पुन्हा सुरू केली (सहीह बुखारी ४१४१).",
+           ""],
+          ["⚖️ हद",
+           "कज्फची हद ८० चाबक्या (अन-नूर २४:४). सुनन अबी दाऊद ४४७४, तिर्मिझी ३१८१, इब्न माजा २५६७ नुसार मिस्तह, हस्सान व हम्ना (र.अ.) यांना हद लागली. सूचना: हा उल्लेख सहीहैनमध्ये नाही; अल्बानी यांनी हसन म्हटले. अब्दुल्लाह बिन उबय्यवर हद न लागण्याची कारणे विद्वानांनी वेगवेगळी सांगितली आहेत (आखिरतची शिक्षा, अन-नूर २४:११; फितनेपासून बचाव इ.).",
+           ""],
+          ["🎯 बोध",
+           "बदनामी मोठा गुन्हा आहे; जीभ आवरा; पुराव्याशिवाय बोलू नका.",
+           ""]
+        ],
+        [
+          ["बदनामी कोणावर केली?", ["खदीजा (र.अ.)", "आयशा (र.अ.)", "हफ्सा (र.अ.)"]],
+          ["निर्दोषता कोणत्या सूरतीत उतरली?", ["अन-नूर", "अल-फतह", "अल-अहझाब"]],
+          ["हद्दे-कज्फ किती चाबक्या?", ["४०", "८०", "१००"]]
+        ],
+        [
+          ["इ.स. ६२७", "गझवा-ए-बनू मुस्तलिकहून परती"],
+          ["इ.स. ६२७", "बदनामीचा प्रसार"],
+          ["इ.स. ६२७", "सूरह अन-नूरचे अवतरण"]
+        ]
+      ],
+      ar: [
+        "حديث الإفك — امتحان العفة",
+        "المدينة",
+        "في الرجوع من غزوة بني المصطلق — شعبان السنة الخامسة (ابن إسحاق) / السادسة (الرحيق) / الرابعة (موسى بن عقبة)، نحو 627 م",
+        "فهم بُهتان عائشة رضي الله عنها، وبراءتها في القرآن، وقصة الصبر.",
+        "«فصبر جميل» — وقد أنزل الله براءة عائشة رضي الله عنها إلى الأبد. اللهم احفظ ألسنتنا من البهتان. آمين.",
+        [
+          "البهتان على عائشة رضي الله عنها",
+          "مكيدة المنافقين",
+          "سورة النور",
+          "إعلان البراءة",
+          "حد القذف",
+          "صبر عائشة رضي الله عنها"
+        ],
+        [
+          ["⚠️ الترتيب والتاريخ",
+           "وقعت هذه القصة في الرجوع من غزوة بني المصطلق. وبحساب ابن إسحاق هي قبل غزوة الخندق (اليوم 22)، فانتبه إلى اختلاف التاريخ في ترتيب الدروس.",
+           ""],
+          ["🐪 القصة",
+           "في الرجوع ذهبت عائشة رضي الله عنها لقضاء حاجتها فضاع عقدها؛ وظنّ من رفع الهودج أنها فيه (وكانت خفيفة). فوجدها صفوان بن المعطل رضي الله عنه فقال: «إنا لله وإنا إليه راجعون»، وأناخ الناقة وأخذ بالزمام وأتى بها؛ ولم يزد على ذلك (صحيح البخاري 4141).",
+           ""],
+          ["🗣️ البهتان",
+           "كان رأس الأمر عبد الله بن أُبيّ بن سلول؛ ودخل فيه بعض المسلمين (حسان ومسطح وحمنة رضي الله عنهم) (صحيح البخاري 4141؛ سنن أبي داود 4474). ومرضت عائشة رضي الله عنها وبقيت نحو شهر لا تعلم؛ ولم تجد من النبي ﷺ لطفه الأول. وعرفت من أم مسطح. فاستشار النبي ﷺ عليًّا وأسامة وبريدة رضي الله عنهم؛ وقالت زينب بنت جحش رضي الله عنها خيرًا (صحيح البخاري 4141). تنبيه: في الرواية ذكر سعد بن معاذ رضي الله عنه، وقد توفي بعد غزوة بني قريظة؛ فاعتبره بعض العلماء وهمًا من الراوي أو إشكالًا في التاريخ (ومنه جاء اختلاف التاريخ).",
+           ""],
+          ["💔 صبر عائشة رضي الله عنها",
+           "بكت ليلتين ويومًا؛ فقال ﷺ: إن كنت بريئة فسيظهر الله ذلك، وإن كنت أذنبت فاستغفري. ولم يحضرها اسم يعقوب عليه السلام فقالت: «أقول ما قاله أبو يوسف: فصبر جميل» (يوسف 12:18) (صحيح البخاري 4141).",
+           ""],
+          ["📖 براءة القرآن",
+           "جاء الوحي، وسال العرق في البرد، فتبسم ﷺ وقال: «عائشة! قد أنزل الله براءتك». فقالت أمها: اشكري رسول الله ﷺ؛ فقالت: «والله لا أشكر إلا الله». سورة النور 24:11–20 (عشر آيات). وكان أبو بكر رضي الله عنه قد قطع نفقة مسطح، فنزلت 24:22 فأعادها (صحيح البخاري 4141).",
+           ""],
+          ["⚖️ الحد",
+           "حد القذف ثمانون جلدة (النور 24:4). وفي سنن أبي داود 4474 والترمذي 3181 وابن ماجه 2567 أن الحد أُقيم على مسطح وحسان وحمنة رضي الله عنهم. تنبيه: هذا ليس في الصحيحين؛ وقال الألباني: حسن. وأسباب عدم إقامة الحد على عبد الله بن أُبيّ ذكرها العلماء (عقوبة الآخرة، النور 24:11؛ ودرء الفتنة، وغيرها).",
+           ""],
+          ["🎯 العبرة",
+           "البهتان كبيرة؛ فاحفظ لسانك؛ ولا تتكلم بلا بينة.",
+           ""]
+        ],
+        [
+          ["على من كان البهتان؟", ["خديجة رضي الله عنها", "عائشة رضي الله عنها", "حفصة رضي الله عنها"]],
+          ["في أي سورة نزلت البراءة؟", ["النور", "الفتح", "الأحزاب"]],
+          ["كم جلدة في حد القذف؟", ["40", "80", "100"]]
+        ],
+        [
+          ["627", "الرجوع من غزوة بني المصطلق"],
+          ["627", "انتشار البهتان"],
+          ["627", "نزول سورة النور"]
+        ]
+      ],
+      fr: [
+        "L'affaire du calomnieux mensonge (al-Ifk) — l'épreuve de la chasteté",
+        "Médine",
+        "Au retour de l'expédition des Banou al-Moustaliq — chaabane de l'an 5 (Ibn Ishâq) / an 6 (Ar-Rahîq) / an 4 (Mûsâ ibn 'Oqba), vers 627",
+        "Comprendre la calomnie contre 'Â'icha (qu'Allah l'agrée), son innocence dans le Coran et l'épisode de la patience.",
+        "« Fasabroun jamîl » — Allah a révélé pour toujours l'innocence de 'Â'icha (qu'Allah l'agrée). Ô Allah ! Protège nos langues de la calomnie. Âmîn.",
+        [
+          "La calomnie contre 'Â'icha (qu'Allah l'agrée)",
+          "La machination des hypocrites",
+          "Sourate an-Noûr",
+          "L'annonce de l'innocence",
+          "La peine de la calomnie",
+          "La patience de 'Â'icha (qu'Allah l'agrée)"
+        ],
+        [
+          ["⚠️ Ordre et date",
+           "Cet épisode eut lieu au retour de l'expédition des Banou al-Moustaliq. Selon le calcul d'Ibn Ishâq, il précède la bataille du Fossé (jour 22) ; attention donc à l'écart de date dans l'ordre du cours.",
+           ""],
+          ["🐪 L'épisode",
+           "Au retour, 'Â'icha (qu'Allah l'agrée) s'éloigna pour ses besoins et son collier se perdit ; ceux qui portaient le palanquin crurent qu'elle y était (elle était légère). Safwân ibn al-Mou'attal (qu'Allah l'agrée) la trouva, dit : « Inna lillâhi wa innâ ilayhi râji'oûn », fit agenouiller la chamelle et la ramena en tenant la bride ; il ne dit rien de plus (Sahih al-Bukhari : 4141).",
+           ""],
+          ["🗣️ La calomnie",
+           "Le meneur était 'Abdoullah ibn Oubayy ibn Saloûl ; quelques musulmans y entrèrent (Hassân, Mistah et Hamna, qu'Allah les agrée) (Sahih al-Bukhari : 4141 ; Sunan Abi Dawud : 4474). 'Â'icha (qu'Allah l'agrée) tomba malade et resta près d'un mois sans savoir ; elle ne retrouva pas la douceur habituelle du Prophète ﷺ. Elle l'apprit par Oumm Mistah. Le Prophète ﷺ consulta 'Alî, Ousâma et Barîra (qu'Allah les agrée) ; Zaynab bint Jahch (qu'Allah l'agrée) ne dit que du bien (Sahih al-Bukhari : 4141). Remarque : le récit mentionne Sa'd ibn Mou'âdh (qu'Allah l'agrée), alors qu'il mourut après l'expédition des Banou Qourayza ; certains savants y voient une erreur du transmetteur ou un problème de date (d'où la divergence de date).",
+           ""],
+          ["💔 La patience de 'Â'icha (qu'Allah l'agrée)",
+           "Elle pleura deux nuits et un jour ; le Prophète ﷺ dit : si tu es innocente, Allah le montrera ; si tu as péché, repens-toi. Le nom de Ya'qoûb (paix sur lui) ne lui vint pas à l'esprit, alors elle dit : « Je dis ce qu'a dit le père de Yoûsouf : fasabroun jamîl » (Yoûsouf 12:18) (Sahih al-Bukhari : 4141).",
+           ""],
+          ["📖 L'innocence révélée",
+           "La révélation vint ; il transpira même par temps froid, puis il ﷺ dit en souriant : « 'Â'icha ! Allah a révélé ton innocence. » Sa mère lui dit : remercie le Messager d'Allah ; elle répondit : « Par Allah, je ne remercierai qu'Allah. » Sourate an-Noûr 24:11-20 (dix versets). Abou Bakr (qu'Allah l'agrée) avait cessé d'aider Mistah ; alors descendit 24:22 et il reprit (Sahih al-Bukhari : 4141).",
+           ""],
+          ["⚖️ La peine",
+           "La peine de la calomnie est de quatre-vingts coups (an-Noûr 24:4). Selon Sunan Abi Dawud 4474, Tirmidhi 3181 et Ibn Mâjah 2567, la peine fut appliquée à Mistah, Hassân et Hamna (qu'Allah les agrée). Remarque : cela n'est pas dans les deux Sahih ; al-Albani l'a jugé hasan. Les raisons pour lesquelles la peine ne fut pas appliquée à 'Abdoullah ibn Oubayy sont diverses selon les savants (châtiment de l'au-delà, an-Noûr 24:11 ; éviter la discorde, etc.).",
+           ""],
+          ["🎯 La leçon",
+           "La calomnie est un grand péché ; maîtrise ta langue ; ne parle pas sans preuve.",
+           ""]
+        ],
+        [
+          ["Contre qui fut la calomnie ?", ["Khadîja (qu'Allah l'agrée)", "'Â'icha (qu'Allah l'agrée)", "Hafsa (qu'Allah l'agrée)"]],
+          ["Dans quelle sourate vint l'innocence ?", ["An-Noûr", "Al-Fath", "Al-Ahzâb"]],
+          ["Combien de coups pour la calomnie ?", ["40", "80", "100"]]
+        ],
+        [
+          ["627", "Le retour de l'expédition des Banou al-Moustaliq"],
+          ["627", "La diffusion de la calomnie"],
+          ["627", "La révélation de sourate an-Noûr"]
+        ]
+      ],
+      es: [
+        "El episodio de la calumnia (al-Ifk): la prueba de la castidad",
+        "Medina",
+        "A la vuelta de la expedición de los Banu al-Mustaliq: Shaabán del año 5 (Ibn Ishaq), año 6 (Ar-Rahiq), año 4 (Musa ibn Uqba), hacia 627",
+        "Comprender la calumnia contra Aisha (que Alá esté complacido con ella), su inocencia en el Corán y el episodio de la paciencia.",
+        "«Fasabrun yamil»: Alá reveló para siempre la inocencia de Aisha (que Alá esté complacido con ella). ¡Oh Alá! Protege nuestras lenguas de la calumnia. Amín.",
+        [
+          "La calumnia contra Aisha (que Alá esté complacido con ella)",
+          "La conspiración de los hipócritas",
+          "La sura an-Nur",
+          "El anuncio de la inocencia",
+          "La pena de la calumnia",
+          "La paciencia de Aisha (que Alá esté complacido con ella)"
+        ],
+        [
+          ["⚠️ Orden y fecha",
+           "Este episodio ocurrió a la vuelta de la expedición de los Banu al-Mustaliq. Según el cálculo de Ibn Ishaq, es anterior a la batalla del Foso (día 22); atención, pues, a la diferencia de fecha en el orden del curso.",
+           ""],
+          ["🐪 El episodio",
+           "A la vuelta, Aisha (que Alá esté complacido con ella) se alejó para sus necesidades y se perdió su collar; quienes llevaban el palanquín creyeron que ella estaba dentro (era ligera). Safwan ibn al-Muattal (que Alá esté complacido con él) la encontró, dijo: «Inna lil-lahi wa inna ilayhi rayi'un», hizo arrodillar a la camella y la trajo tomando las riendas; no dijo nada más (Sahih al-Bujari: 4141).",
+           ""],
+          ["🗣️ La calumnia",
+           "El cabecilla era Abdalah ibn Ubayy ibn Salul; algunos musulmanes entraron en ello (Hassan, Mistah y Hamna, que Alá esté complacido con ellos) (Sahih al-Bujari: 4141; Sunan Abi Dawud: 4474). Aisha (que Alá esté complacido con ella) enfermó y estuvo cerca de un mes sin saberlo; no encontró la dulzura habitual del Profeta ﷺ. Lo supo por Umm Mistah. El Profeta ﷺ consultó a Ali, Usama y Barira (que Alá esté complacido con ellos); Zaynab bint Yahsh (que Alá esté complacido con ella) solo dijo bien (Sahih al-Bujari: 4141). Nota: el relato menciona a Sad ibn Muaz (que Alá esté complacido con él), que murió después de la expedición de los Banu Qurayza; algunos sabios lo ven como un error del transmisor o un problema de fecha (de ahí la discrepancia).",
+           ""],
+          ["💔 La paciencia de Aisha (que Alá esté complacido con ella)",
+           "Lloró dos noches y un día; el Profeta ﷺ dijo: si eres inocente, Alá lo mostrará; si has pecado, arrepiéntete. No le vino el nombre de Yaqub (la paz sea con él), así que dijo: «Digo lo que dijo el padre de Yusuf: fasabrun yamil» (Yusuf 12:18) (Sahih al-Bujari: 4141).",
+           ""],
+          ["📖 La inocencia revelada",
+           "Vino la revelación; sudó incluso con frío, y luego ﷺ dijo sonriendo: «¡Aisha! Alá ha revelado tu inocencia.» Su madre le dijo: agradece al Mensajero de Alá; ella respondió: «Por Alá, no agradeceré sino a Alá.» Sura an-Nur 24:11-20 (diez aleyas). Abu Bakr (que Alá esté complacido con él) había dejado de ayudar a Mistah; entonces descendió 24:22 y lo reanudó (Sahih al-Bujari: 4141).",
+           ""],
+          ["⚖️ La pena",
+           "La pena de la calumnia es de ochenta azotes (an-Nur 24:4). Según Sunan Abi Dawud 4474, Tirmidhi 3181 e Ibn Maya 2567, la pena se aplicó a Mistah, Hassan y Hamna (que Alá esté complacido con ellos). Nota: esto no está en los dos Sahih; al-Albani lo consideró hasan. Las razones por las que no se aplicó a Abdalah ibn Ubayy son diversas según los sabios (castigo del más allá, an-Nur 24:11; evitar la discordia, etc.).",
+           ""],
+          ["🎯 La lección",
+           "La calumnia es un pecado grave; domina tu lengua; no hables sin prueba.",
+           ""]
+        ],
+        [
+          ["¿Contra quién fue la calumnia?", ["Jadiya (que Alá esté complacido con ella)", "Aisha (que Alá esté complacido con ella)", "Hafsa (que Alá esté complacido con ella)"]],
+          ["¿En qué sura vino la inocencia?", ["An-Nur", "Al-Fath", "Al-Ahzab"]],
+          ["¿Cuántos azotes por la calumnia?", ["40", "80", "100"]]
+        ],
+        [
+          ["627", "La vuelta de la expedición de los Banu al-Mustaliq"],
+          ["627", "La difusión de la calumnia"],
+          ["627", "La revelación de la sura an-Nur"]
+        ]
+      ]
     }
 
   }
