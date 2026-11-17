@@ -97,7 +97,10 @@
 //       English. Nayi zubaan par arkan-i18n.js ka hash-engine band rehta hai (warna Urdu par gir jata).
 // v107: ARKAN hub page (arkan.html) bhi मराठी / العربية / Français / Español mein — paanch stambh ke cards,
 //       unke bhaag, aur "Islam/Iman/Ihsan" ka hissa (arkan-extra.js, id 690-716 + 177/254/593/466/14).
-const CACHE_NAME = 'quran-ustad-auto-v107';
+// v108: ARKAN — NAMAZ ka poora page (arkan-namaz.html) मराठी / العربية / Français / Español mein: ahemiyat,
+//       auqaat, rika'at, sharaa'it, wuzu, tareeqa (ek rik'at), arkaan, sunnatein, sajda-e-sahw, mubtilat,
+//       jamaat/jumma, doosri namazein aur musafir ki namaz (arkan-extra.js, id 240-454 + 26/27/53/58/9001).
+const CACHE_NAME = 'quran-ustad-auto-v108';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
