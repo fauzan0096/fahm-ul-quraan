@@ -3173,6 +3173,742 @@ window.SEERAT_LANG = {
           ["Año 1 hiyri", "El comienzo del adhan"]
         ]
       ]
+    },
+
+    /* ═══════════════ DAY 18 — Qibla ki tabdeeli ═══════════════ */
+    18: {
+      mr: [
+        "किब्ल्याची बदल — उम्मतीची ओळख",
+        "मदिना",
+        "इ.स. ६२४ (हिजरी २)",
+        "बैतुल-मुकद्दसकडून काबाकडे किब्ला बदलण्याची आणि उम्मतीची स्वतंत्र ओळख निर्माण झाल्याची घटना समजून घेणे.",
+        "एका हुकुमाने संपूर्ण उम्मतीची ओळख बदलली. हे अल्लाह! आम्हाला आमच्या इस्लामी ओळखीवर ठाम ठेव. आमीन.",
+        [
+          "आधी बैतुल-मुकद्दस",
+          "नंतर काबाचा हुकूम",
+          "मस्जिदे-किब्लतैन",
+          "यहुद्यांचा आक्षेप",
+          "उम्मते-वस्ताचे फजीलत"
+        ],
+        [
+          ["🕌 आधी बैतुल-मुकद्दस",
+           "हिजरतीनंतर सुमारे १६-१७ महिने नबी ﷺ व सहाबा बैतुल-मुकद्दसकडे तोंड करून नमाज़ पढत राहिले (सहीह बुखारी). मक्केत आप ﷺ अशा प्रकारे उभे राहत की काबाही समोर असे; मदिन्यापासून या दोन्ही वेगवेगळ्या दिशांना होत्या. नबी ﷺ यांची इच्छा होती की इब्राहीम (अ.स.) यांच्या किब्ल्याकडे, म्हणजे काबाकडे तोंड व्हावे; म्हणून आप ﷺ वारंवार आकाशाकडे पाहत आणि वहीची वाट पाहत.",
+           "सहीह बुखारी: ४०, ३९९; मुस्नद अहमद (इब्न अब्बास (र.अ.): मक्केत)"],
+          ["📖 वही उतरली",
+           "अल्लाहने उतरवले: «قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِي السَّمَاءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَاهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ» (आम्ही तुमचे आकाशाकडे वारंवार पाहणे पाहिले; आता आम्ही तुम्हाला तो किब्ला देऊ ज्याने तुम्ही राजी व्हाल, तेव्हा आपले तोंड मस्जिदे-हरामकडे फिरवा) — सूरह अल-बकरा २:१४४.",
+           "कुरआन: २:१४४"],
+          ["🔄 नमाज़ेदरम्यान बदल",
+           "सीरतच्या रिवायतींनुसार एका मस्जिदीत (जी नंतर «मस्जिदे-किब्लतैन» म्हणून प्रसिद्ध झाली) नमाज़ सुरू होती की हुकूम पोहोचला आणि नमाजी त्याच अवस्थेत काबाकडे वळले. त्याचप्रमाणे कुबाच्या लोकांना फजरच्या नमाज़ेत बातमी पोहोचली आणि तेही नमाज़ेतच काबाकडे वळले (सहीह बुखारी व मुस्लिम). सहीह बुखारीत (बरा (र.अ.) यांच्याकडून) आहे की काबाकडे पढलेली पहिली नमाज़ असरची होती.",
+           "सहीह बुखारी (किताबुस-सलात, बाबु अहलि कुबा); सहीह मुस्लिम; मस्जिदे-किब्लतैनची घटना: सीरतच्या रिवायती"],
+          ["🕍 यहुद्यांचा नकार",
+           "यहुदी म्हणाले: «आता मुहम्मद ﷺ यांनी आमचा किब्ला सोडून काबाकडे तोंड का केले?» अल्लाहने उत्तर दिले: «لِّلَّهِ الْمَشْرِقُ وَالْمَغْرِبُ ۚ يَهْدِي مَن يَشَاءُ إِلَىٰ صِرَاطٍ مُّسْتَقِيمٍ» (पूर्व व पश्चिम अल्लाहचे आहे, ज्याला इच्छा त्याला सरळ मार्ग दाखवतो) — सूरह अल-बकरा २:१४२. खरी गोष्ट ही होती की किब्ला बदलल्याने उम्मतीची स्वतंत्र ओळख बनली — आता मुस्लिम एक वेगळी उम्मत आहेत, यहुदी व ख्रिश्चनांपासून वेगळी.",
+           "कुरआन: २:१४२"],
+          ["🌟 उम्मते-वस्ता",
+           "अल्लाहने सांगितले: «وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا» (आम्ही तुम्हाला «उम्मते-वस्ता» बनवले जेणेकरून तुम्ही लोकांवर साक्षीदार व्हाल आणि रसूल तुमच्यावर साक्षीदार असेल) — सूरह अल-बकरा २:१४३. हे उम्मतीचे फजीलत आहे, हाच किब्ला बदलण्याचा खरा उद्देश.",
+           "कुरआन: २:१४३"],
+          ["🎯 बोध",
+           "किब्ला बदलल्यावरून कळते की अल्लाह आपल्या उम्मतीला स्वतंत्र ओळख देतो. आपण आपल्या इस्लामी ओळखीचा अभिमान बाळगला पाहिजे आणि यहुदी व ख्रिश्चनांची नक्कल करू नये.",
+           ""]
+        ],
+        [
+          ["किब्ला कुठून कुठे बदलला?", ["काबाकडून बैतुल-मुकद्दसकडे", "बैतुल-मुकद्दसकडून काबाकडे", "मदिन्यापासून मक्केकडे"]],
+          ["कोणत्या मस्जिदीत बदल झाला?", ["मस्जिदे-नबवी", "मस्जिदे-किब्लतैन", "मस्जिदे-कुबा"]],
+          ["उम्मतीला काय म्हटले गेले?", ["उम्मते-वस्ता", "उम्मते-आखिर", "उम्मते-अव्वल"]]
+        ],
+        [
+          ["इ.स. ६२४", "किब्ला बदलाचा हुकूम"],
+          ["इ.स. ६२४", "मस्जिदे-किब्लतैनची घटना"]
+        ]
+      ],
+      ar: [
+        "تحويل القبلة — هوية الأمة",
+        "المدينة",
+        "624 م (السنة الثانية من الهجرة)",
+        "فهم تحويل القبلة من بيت المقدس إلى الكعبة، ونشوء هوية الأمة المتميزة.",
+        "حكم واحد غيّر هوية الأمة كلها. اللهم ثبّتنا على هويتنا الإسلامية. آمين.",
+        [
+          "أولًا بيت المقدس",
+          "ثم الأمر بالكعبة",
+          "مسجد القبلتين",
+          "اعتراض اليهود",
+          "فضل الأمة الوسط"
+        ],
+        [
+          ["🕌 أولًا بيت المقدس",
+           "بعد الهجرة استقبل النبي ﷺ وأصحابه بيت المقدس في الصلاة نحو ستة عشر أو سبعة عشر شهرًا (صحيح البخاري). وكان ﷺ في مكة يقف بحيث تكون الكعبة بين يديه؛ أما في المدينة فاتجهت الجهتان مختلفتين. وكان ﷺ يحب أن تكون قبلته قبلة إبراهيم عليه السلام، أي الكعبة، فكان يقلّب وجهه في السماء ينتظر الوحي.",
+           "صحيح البخاري: 40، 399؛ مسند أحمد (ابن عباس رضي الله عنه: في مكة)"],
+          ["📖 نزول الوحي",
+           "أنزل الله: «قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِي السَّمَاءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَاهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ» — سورة البقرة 2:144.",
+           "القرآن: 2:144"],
+          ["🔄 التحويل في أثناء الصلاة",
+           "جاء في روايات السيرة أنهم كانوا يصلّون في مسجد (عُرف بعد ذلك بمسجد القبلتين) فبلغهم الأمر فاستداروا إلى الكعبة في صلاتهم. وكذلك بلغ أهل قباء الخبر في صلاة الفجر فاستداروا إلى الكعبة وهم في الصلاة (صحيح البخاري ومسلم). وفي صحيح البخاري عن البراء رضي الله عنه أن أول صلاة صُلّيت إلى الكعبة كانت العصر.",
+           "صحيح البخاري (كتاب الصلاة، باب أهل قباء)؛ صحيح مسلم؛ قصة مسجد القبلتين: روايات السيرة"],
+          ["🕍 اعتراض اليهود",
+           "قال اليهود: «ما بال محمد ﷺ ترك قبلتنا واستقبل الكعبة؟» فأجاب الله: «لِّلَّهِ الْمَشْرِقُ وَالْمَغْرِبُ ۚ يَهْدِي مَن يَشَاءُ إِلَىٰ صِرَاطٍ مُّسْتَقِيمٍ» — سورة البقرة 2:142. والحقيقة أن تحويل القبلة جعل للأمة هوية مستقلة — فالمسلمون الآن أمة متميزة عن اليهود والنصارى.",
+           "القرآن: 2:142"],
+          ["🌟 الأمة الوسط",
+           "قال الله: «وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا» — سورة البقرة 2:143. هذا فضل الأمة، وهذا هو المقصد الحقيقي من تحويل القبلة.",
+           "القرآن: 2:143"],
+          ["🎯 العبرة",
+           "يُفهم من تحويل القبلة أن الله يمنح أمته هوية خاصة. فعلينا أن نعتز بهويتنا الإسلامية وألا نقلّد اليهود والنصارى.",
+           ""]
+        ],
+        [
+          ["من أين إلى أين حُوّلت القبلة؟", ["من الكعبة إلى بيت المقدس", "من بيت المقدس إلى الكعبة", "من المدينة إلى مكة"]],
+          ["في أي مسجد وقع التحويل؟", ["المسجد النبوي", "مسجد القبلتين", "مسجد قباء"]],
+          ["بماذا وُصفت الأمة؟", ["الأمة الوسط", "الأمة الآخرة", "الأمة الأولى"]]
+        ],
+        [
+          ["624", "الأمر بتحويل القبلة"],
+          ["624", "قصة مسجد القبلتين"]
+        ]
+      ],
+      fr: [
+        "Le changement de qibla — l'identité de la communauté",
+        "Médine",
+        "624 (2e année de l'hégire)",
+        "Comprendre le changement de qibla de Bayt al-Maqdis vers la Kaaba et la naissance d'une identité propre à la communauté.",
+        "Un seul ordre a changé l'identité de toute la communauté. Ô Allah ! Affermis-nous dans notre identité islamique. Âmîn.",
+        [
+          "D'abord Bayt al-Maqdis",
+          "Puis l'ordre de la Kaaba",
+          "La mosquée des deux qiblas",
+          "L'objection des Juifs",
+          "Le mérite de la communauté médiane"
+        ],
+        [
+          ["🕌 D'abord Bayt al-Maqdis",
+           "Après l'émigration, le Prophète ﷺ et les Compagnons prièrent en direction de Bayt al-Maqdis pendant environ seize ou dix-sept mois (Sahih al-Bukhari). À La Mecque, il ﷺ se plaçait de façon que la Kaaba fût aussi devant lui ; à Médine, les deux directions étaient différentes. Il ﷺ désirait que sa qibla fût celle d'Ibrâhîm (paix sur lui), c'est-à-dire la Kaaba ; il levait donc souvent les yeux vers le ciel, attendant la révélation.",
+           "Sahih al-Bukhari : 40, 399 ; Mousnad Ahmad (Ibn 'Abbâs : à La Mecque)"],
+          ["📖 La révélation descendit",
+           "Allah révéla : « قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِي السَّمَاءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَاهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ » — sourate al-Baqara 2:144.",
+           "Coran : 2:144"],
+          ["🔄 Le changement pendant la prière",
+           "Les récits de Sîra rapportent qu'on priait dans une mosquée (appelée ensuite « mosquée des deux qiblas ») quand l'ordre parvint : les fidèles se tournèrent vers la Kaaba en pleine prière. De même, les gens de Qoubâ' apprirent la nouvelle pendant la prière de Fajr et se tournèrent vers la Kaaba sans interrompre leur prière (Sahih al-Bukhari et Muslim). Selon Sahih al-Bukhari (d'après al-Barâ'), la première prière accomplie vers la Kaaba fut celle de 'Asr.",
+           "Sahih al-Bukhari (Livre de la prière, chapitre des gens de Qoubâ') ; Sahih Muslim ; l'épisode de la mosquée des deux qiblas : récits de Sîra"],
+          ["🕍 Le refus des Juifs",
+           "Les Juifs dirent : « Pourquoi Mouhammad ﷺ a-t-il délaissé notre qibla pour la Kaaba ? » Allah répondit : « لِّلَّهِ الْمَشْرِقُ وَالْمَغْرِبُ ۚ يَهْدِي مَن يَشَاءُ إِلَىٰ صِرَاطٍ مُّسْتَقِيمٍ » — sourate al-Baqara 2:142. En vérité, le changement de qibla donna à la communauté une identité distincte : les musulmans sont désormais une communauté à part, distincte des Juifs et des chrétiens.",
+           "Coran : 2:142"],
+          ["🌟 La communauté médiane",
+           "Allah dit : « وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا » — sourate al-Baqara 2:143. C'est le mérite de cette communauté, et c'est le but réel du changement de qibla.",
+           "Coran : 2:143"],
+          ["🎯 La leçon",
+           "Le changement de qibla montre qu'Allah donne à Sa communauté une identité propre. Nous devons être fiers de notre identité islamique et ne pas imiter les Juifs et les chrétiens.",
+           ""]
+        ],
+        [
+          ["D'où vers où la qibla fut-elle changée ?", ["De la Kaaba à Bayt al-Maqdis", "De Bayt al-Maqdis à la Kaaba", "De Médine à La Mecque"]],
+          ["Dans quelle mosquée eut lieu le changement ?", ["La mosquée du Prophète", "La mosquée des deux qiblas", "La mosquée de Qoubâ'"]],
+          ["Comment la communauté fut-elle qualifiée ?", ["La communauté médiane", "La dernière communauté", "La première communauté"]]
+        ],
+        [
+          ["624", "L'ordre du changement de qibla"],
+          ["624", "L'épisode de la mosquée des deux qiblas"]
+        ]
+      ],
+      es: [
+        "El cambio de qibla: la identidad de la comunidad",
+        "Medina",
+        "624 (año 2 de la hégira)",
+        "Comprender el cambio de qibla de Bayt al-Maqdis hacia la Kaaba y el nacimiento de una identidad propia de la comunidad.",
+        "Una sola orden cambió la identidad de toda la comunidad. ¡Oh Alá! Afirmanos en nuestra identidad islámica. Amín.",
+        [
+          "Primero Bayt al-Maqdis",
+          "Luego la orden de la Kaaba",
+          "La mezquita de las dos qiblas",
+          "La objeción de los judíos",
+          "El mérito de la comunidad media"
+        ],
+        [
+          ["🕌 Primero Bayt al-Maqdis",
+           "Tras la emigración, el Profeta ﷺ y los Compañeros rezaron hacia Bayt al-Maqdis unos dieciséis o diecisiete meses (Sahih al-Bujari). En La Meca él ﷺ se colocaba de modo que la Kaaba quedara también al frente; en Medina las dos direcciones eran distintas. Él ﷺ deseaba que su qibla fuera la de Ibrahim (la paz sea con él), es decir, la Kaaba; por eso levantaba a menudo los ojos al cielo esperando la revelación.",
+           "Sahih al-Bujari: 40, 399; Musnad Ahmad (Ibn Abbas: en La Meca)"],
+          ["📖 La revelación descendió",
+           "Alá reveló: «قَدْ نَرَىٰ تَقَلُّبَ وَجْهِكَ فِي السَّمَاءِ ۖ فَلَنُوَلِّيَنَّكَ قِبْلَةً تَرْضَاهَا ۚ فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ» — sura al-Baqara 2:144.",
+           "Corán: 2:144"],
+          ["🔄 El cambio durante la oración",
+           "Los relatos de Sira cuentan que se rezaba en una mezquita (llamada después «mezquita de las dos qiblas») cuando llegó la orden, y los fieles se giraron hacia la Kaaba en plena oración. Igualmente, a la gente de Quba le llegó la noticia durante la oración del Fayr y se giraron hacia la Kaaba sin interrumpir la oración (Sahih al-Bujari y Muslim). Según Sahih al-Bujari (de al-Bara), la primera oración hecha hacia la Kaaba fue la del Asr.",
+           "Sahih al-Bujari (Libro de la oración, capítulo de la gente de Quba); Sahih Muslim; el episodio de la mezquita de las dos qiblas: relatos de Sira"],
+          ["🕍 El rechazo de los judíos",
+           "Los judíos dijeron: «¿Por qué Muhámmad ﷺ ha dejado nuestra qibla por la Kaaba?» Alá respondió: «لِّلَّهِ الْمَشْرِقُ وَالْمَغْرِبُ ۚ يَهْدِي مَن يَشَاءُ إِلَىٰ صِرَاطٍ مُّسْتَقِيمٍ» — sura al-Baqara 2:142. La verdad es que el cambio de qibla dio a la comunidad una identidad distinta: los musulmanes son ahora una comunidad aparte, distinta de judíos y cristianos.",
+           "Corán: 2:142"],
+          ["🌟 La comunidad media",
+           "Alá dijo: «وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا» — sura al-Baqara 2:143. Ese es el mérito de esta comunidad, y ese es el propósito real del cambio de qibla.",
+           "Corán: 2:143"],
+          ["🎯 La lección",
+           "El cambio de qibla muestra que Alá da a Su comunidad una identidad propia. Debemos enorgullecernos de nuestra identidad islámica y no imitar a judíos y cristianos.",
+           ""]
+        ],
+        [
+          ["¿De dónde a dónde cambió la qibla?", ["De la Kaaba a Bayt al-Maqdis", "De Bayt al-Maqdis a la Kaaba", "De Medina a La Meca"]],
+          ["¿En qué mezquita ocurrió el cambio?", ["La mezquita del Profeta", "La mezquita de las dos qiblas", "La mezquita de Quba"]],
+          ["¿Cómo se calificó a la comunidad?", ["La comunidad media", "La última comunidad", "La primera comunidad"]]
+        ],
+        [
+          ["624", "La orden del cambio de qibla"],
+          ["624", "El episodio de la mezquita de las dos qiblas"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 19 — Ramazan o roze ═══════════════ */
+    19: {
+      mr: [
+        "रमजान आणि रोजे — उपासनेचे प्रशिक्षण",
+        "मदिना",
+        "इ.स. ६२४ (हिजरी २)",
+        "रोज्यांची फर्जियत, रमजानचे फजीलत आणि उम्मतीच्या प्रशिक्षणाची घटना समजून घेणे.",
+        "रोज्याचा उद्देश तकवा आहे. हे अल्लाह! आम्हाला रमजानची किंमत दे आणि रमजानचे प्रशिक्षण आयुष्यभर टिकवण्याची तौफीक दे. आमीन.",
+        [
+          "रोजे हिजरी २ मध्ये फर्ज",
+          "कुरआन रमजानमध्ये उतरले",
+          "लैलतुल-कद्र हजार महिन्यांपेक्षा उत्तम",
+          "सहरीत बरकत",
+          "रोजा फक्त उपाशी राहणे नाही"
+        ],
+        [
+          ["📖 फर्जियतीचा हुकूम",
+           "मदिन्यात, हिजरी २ मध्ये अल्लाहने रोजे फर्ज केले: «يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ» (हे ईमानवाल्यांनो! तुमच्यावर रोजे फर्ज केले गेले, जसे तुमच्यापूर्वीच्या लोकांवर फर्ज केले गेले होते, यासाठी की तुम्ही मुत्तकी व्हावे) — सूरह अल-बकरा २:१८३.",
+           "कुरआन: २:१८३"],
+          ["🌙 रमजानचे फजीलत",
+           "रमजान तो महिना आहे ज्यात कुरआन उतरले: «شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ» (रमजानचा महिना तो आहे ज्यात कुरआन उतरवले गेले, जे लोकांसाठी हिदायत आहे) — सूरह अल-बकरा २:१८५. याच महिन्यात पहिली वही आली, यातच लैलतुल-कद्र आहे जी हजार महिन्यांपेक्षा उत्तम आहे.",
+           "कुरआन: २:१८५, ९७:३"],
+          ["🍽️ सहरी व इफ्तार",
+           "नबी ﷺ म्हणाले: «सहरी खा, कारण सहरीत बरकत आहे.» (सहीह बुखारी: १९२३). दुसरी रिवायत: «रोजादारासाठी दोन आनंद आहेत: एक इफ्तारच्या वेळी आणि एक आपल्या रबला भेटल्यावर.» (सहीह मुस्लिम: ११५१). नबी ﷺ नमाज़ेपूर्वी ताज्या खजुरीने रोजा सोडत; त्या नसतील तर सुक्या खजुरीने, आणि त्याही नसतील तर काही घोट पाण्याने (सुनन अबी दाऊद: २३५६, हसन).",
+           "सहीह बुखारी: १९२३; सहीह मुस्लिम: ११५१; सुनन अबी दाऊद: २३५६ (हसन)"],
+          ["🤲 सहानुभूतीचे प्रशिक्षण",
+           "रोज्याचा खरा उद्देश तकवा आहे. नबी ﷺ म्हणाले: «ज्याने खोटे आणि खोट्यावर आचरण सोडले नाही, अल्लाहला त्याच्या खाणे-पिणे सोडण्याची गरज नाही.» (सहीह बुखारी: १९०३). रोजा फक्त उपाशी राहणे नाही, तर डोळे, जीभ आणि मन सर्वांचा रोजा आहे. नबी ﷺ सर्व लोकांत सर्वाधिक उदार होते आणि रमजानमध्ये सर्वाधिक दानशूर — वाहणाऱ्या वाऱ्यापेक्षाही जास्त (सहीह बुखारी: ६).",
+           "सहीह बुखारी: १९०३, ६"],
+          ["🌟 नफिल रोजे",
+           "नबी ﷺ सोमवार, गुरुवार, अय्यामे-बीज (१३, १४, १५ तारखा), अरफा आणि आशूरा (१० मुहर्रम) यांचे रोजे राखत, मुहर्रममध्ये जास्त आणि शाबानमध्ये जास्त. ते म्हणाले: «ज्याने रमजाननंतर शव्वालचे ६ रोजे राखले, त्याला कायम रोजे राखल्याचे फळ मिळाले.» (सहीह मुस्लिम: ११६४).",
+           "सहीह मुस्लिम: ११६२, ११६३, ११६४; सहीह बुखारी: १९६९"],
+          ["🎯 बोध",
+           "रमजानचे प्रशिक्षण संपूर्ण आयुष्यासाठी आहे. रमजानमध्ये जो तकवा, सहानुभूती आणि स्वतःवरील नियंत्रण शिकलो, तो आयुष्यभर टिकवला पाहिजे.",
+           ""]
+        ],
+        [
+          ["रोजे कधी फर्ज झाले?", ["हिजरी १", "हिजरी २", "हिजरी ३"]],
+          ["लैलतुल-कद्र किती रात्रींपेक्षा उत्तम?", ["१००", "५००", "१०००"]],
+          ["रोज्याचा खरा उद्देश?", ["उपाशी राहणे", "तकवा", "वजन कमी करणे"]]
+        ],
+        [
+          ["इ.स. ६२४", "रोज्यांची फर्जियत"],
+          ["इ.स. ६२४", "मदिन्यातील पहिला रमजान"]
+        ]
+      ],
+      ar: [
+        "رمضان والصيام — تربية على العبادة",
+        "المدينة",
+        "624 م (السنة الثانية من الهجرة)",
+        "فهم فرض الصيام، وفضل رمضان، وتربية الأمة.",
+        "مقصود الصيام التقوى. اللهم ارزقنا تعظيم رمضان ووفقنا لإبقاء تربية رمضان طوال حياتنا. آمين.",
+        [
+          "فُرض الصيام في السنة الثانية",
+          "نزل القرآن في رمضان",
+          "ليلة القدر خير من ألف شهر",
+          "في السحور بركة",
+          "الصيام ليس مجرد جوع"
+        ],
+        [
+          ["📖 الأمر بالفرض",
+           "في المدينة، في السنة الثانية، فرض الله الصيام: «يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ» — سورة البقرة 2:183.",
+           "القرآن: 2:183"],
+          ["🌙 فضل رمضان",
+           "رمضان هو الشهر الذي أُنزل فيه القرآن: «شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ» — سورة البقرة 2:185. وفيه نزل الوحي الأول، وفيه ليلة القدر التي هي خير من ألف شهر.",
+           "القرآن: 2:185، 97:3"],
+          ["🍽️ السحور والإفطار",
+           "قال ﷺ: «تسحّروا فإن في السحور بركة» (صحيح البخاري: 1923). وفي رواية: «للصائم فرحتان: فرحة عند فطره، وفرحة عند لقاء ربه» (صحيح مسلم: 1151). وكان ﷺ يفطر قبل الصلاة على رطب، فإن لم يجد فتمر، فإن لم يجد فحسوات من ماء (سنن أبي داود: 2356، حسن).",
+           "صحيح البخاري: 1923؛ صحيح مسلم: 1151؛ سنن أبي داود: 2356 (حسن)"],
+          ["🤲 تربية على الرحمة",
+           "مقصد الصيام التقوى. قال ﷺ: «من لم يدع قول الزور والعمل به فليس لله حاجة في أن يدع طعامه وشرابه» (صحيح البخاري: 1903). فالصيام ليس جوعًا فقط، بل صيام العين واللسان والقلب. وكان ﷺ أجود الناس، وكان في رمضان أجود بالخير من الريح المرسلة (صحيح البخاري: 6).",
+           "صحيح البخاري: 1903، 6"],
+          ["🌟 صيام النفل",
+           "كان ﷺ يصوم الاثنين والخميس، وأيام البيض (13 و14 و15)، وعرفة، وعاشوراء (10 محرم)، ويكثر في محرم، ويكثر في شعبان. وقال: «من صام رمضان ثم أتبعه ستًّا من شوال كان كصيام الدهر» (صحيح مسلم: 1164).",
+           "صحيح مسلم: 1162، 1163، 1164؛ صحيح البخاري: 1969"],
+          ["🎯 العبرة",
+           "تربية رمضان للحياة كلها. فعلينا أن نحفظ ما تعلمناه في رمضان من تقوى ورحمة وضبط للنفس طوال حياتنا.",
+           ""]
+        ],
+        [
+          ["متى فُرض الصيام؟", ["السنة الأولى", "السنة الثانية", "السنة الثالثة"]],
+          ["ليلة القدر خير من كم شهر؟", ["100", "500", "1000"]],
+          ["ما مقصود الصيام؟", ["الجوع", "التقوى", "إنقاص الوزن"]]
+        ],
+        [
+          ["624", "فرض الصيام"],
+          ["624", "أول رمضان في المدينة"]
+        ]
+      ],
+      fr: [
+        "Ramadan et le jeûne — une éducation à l'adoration",
+        "Médine",
+        "624 (2e année de l'hégire)",
+        "Comprendre l'obligation du jeûne, le mérite de Ramadan et l'éducation de la communauté.",
+        "Le but du jeûne est la piété. Ô Allah ! Accorde-nous d'estimer Ramadan et de garder toute la vie l'éducation qu'il nous donne. Âmîn.",
+        [
+          "Le jeûne rendu obligatoire en l'an 2",
+          "Le Coran révélé en Ramadan",
+          "La nuit du Destin meilleure que mille mois",
+          "La bénédiction du sahûr",
+          "Jeûner n'est pas seulement avoir faim"
+        ],
+        [
+          ["📖 L'ordre de l'obligation",
+           "À Médine, en l'an 2 de l'hégire, Allah rendit le jeûne obligatoire : « يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ » — sourate al-Baqara 2:183.",
+           "Coran : 2:183"],
+          ["🌙 Le mérite de Ramadan",
+           "Ramadan est le mois où le Coran fut révélé : « شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ » — sourate al-Baqara 2:185. C'est en ce mois que vint la première révélation, et c'est en lui que se trouve la nuit du Destin, meilleure que mille mois.",
+           "Coran : 2:185, 97:3"],
+          ["🍽️ Le sahûr et l'iftâr",
+           "Le Prophète ﷺ dit : « Prenez le sahûr, car il y a une bénédiction dans le sahûr. » (Sahih al-Bukhari : 1923). Un autre récit : « Le jeûneur a deux joies : une à la rupture du jeûne et une à la rencontre de son Seigneur. » (Sahih Muslim : 1151). Il ﷺ rompait le jeûne avant la prière avec des dattes fraîches, sinon des dattes sèches, sinon quelques gorgées d'eau (Sunan Abi Dawud : 2356, hasan).",
+           "Sahih al-Bukhari : 1923 ; Sahih Muslim : 1151 ; Sunan Abi Dawud : 2356 (hasan)"],
+          ["🤲 Une éducation à la compassion",
+           "Le but du jeûne est la piété. Le Prophète ﷺ dit : « Celui qui ne renonce pas au mensonge et à ce qui l'accompagne, Allah n'a pas besoin qu'il laisse sa nourriture et sa boisson. » (Sahih al-Bukhari : 1903). Jeûner n'est pas seulement avoir faim : c'est le jeûne de l'œil, de la langue et du cœur. Il ﷺ était le plus généreux des hommes, et en Ramadan plus généreux que le vent qui souffle (Sahih al-Bukhari : 6).",
+           "Sahih al-Bukhari : 1903, 6"],
+          ["🌟 Les jeûnes surérogatoires",
+           "Le Prophète ﷺ jeûnait le lundi et le jeudi, les jours blancs (13, 14, 15), le jour d'Arafa et d'Achoura (10 muharram), beaucoup en muharram et beaucoup en chaabane. Il dit : « Celui qui jeûne Ramadan puis y ajoute six jours de Chawwâl, c'est comme s'il avait jeûné toute une vie. » (Sahih Muslim : 1164).",
+           "Sahih Muslim : 1162, 1163, 1164 ; Sahih al-Bukhari : 1969"],
+          ["🎯 La leçon",
+           "L'éducation de Ramadan est pour toute la vie. La piété, la compassion et la maîtrise de soi apprises en Ramadan doivent être gardées toute la vie.",
+           ""]
+        ],
+        [
+          ["Quand le jeûne fut-il rendu obligatoire ?", ["1re année", "2e année", "3e année"]],
+          ["La nuit du Destin est meilleure que combien de mois ?", ["100", "500", "1000"]],
+          ["Quel est le but du jeûne ?", ["Avoir faim", "La piété", "Perdre du poids"]]
+        ],
+        [
+          ["624", "Obligation du jeûne"],
+          ["624", "Premier Ramadan à Médine"]
+        ]
+      ],
+      es: [
+        "Ramadán y el ayuno: una educación en la adoración",
+        "Medina",
+        "624 (año 2 de la hégira)",
+        "Comprender la obligatoriedad del ayuno, el mérito de Ramadán y la educación de la comunidad.",
+        "El propósito del ayuno es la piedad. ¡Oh Alá! Concédenos valorar Ramadán y mantener toda la vida la educación que nos da. Amín.",
+        [
+          "El ayuno se hizo obligatorio en el año 2",
+          "El Corán fue revelado en Ramadán",
+          "La noche del Destino mejor que mil meses",
+          "En el suhur hay bendición",
+          "Ayunar no es solo tener hambre"
+        ],
+        [
+          ["📖 La orden de la obligación",
+           "En Medina, en el año 2 de la hégira, Alá hizo obligatorio el ayuno: «يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ» — sura al-Baqara 2:183.",
+           "Corán: 2:183"],
+          ["🌙 El mérito de Ramadán",
+           "Ramadán es el mes en que se reveló el Corán: «شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ» — sura al-Baqara 2:185. En él vino la primera revelación, y en él está la noche del Destino, mejor que mil meses.",
+           "Corán: 2:185, 97:3"],
+          ["🍽️ El suhur y el iftar",
+           "El Profeta ﷺ dijo: «Tomad el suhur, pues en el suhur hay bendición.» (Sahih al-Bujari: 1923). Otro relato: «El ayunante tiene dos alegrías: una al romper el ayuno y otra al encontrarse con su Señor.» (Sahih Muslim: 1151). Él ﷺ rompía el ayuno antes de la oración con dátiles frescos; si no había, con dátiles secos; y si no, con unos sorbos de agua (Sunan Abi Dawud: 2356, hasan).",
+           "Sahih al-Bujari: 1923; Sahih Muslim: 1151; Sunan Abi Dawud: 2356 (hasan)"],
+          ["🤲 Una educación en la compasión",
+           "El propósito del ayuno es la piedad. El Profeta ﷺ dijo: «Quien no deja la mentira y obrar conforme a ella, Alá no tiene necesidad de que deje su comida y su bebida.» (Sahih al-Bujari: 1903). Ayunar no es solo tener hambre: es el ayuno del ojo, la lengua y el corazón. Él ﷺ era el más generoso de los hombres, y en Ramadán más generoso que el viento que sopla (Sahih al-Bujari: 6).",
+           "Sahih al-Bujari: 1903, 6"],
+          ["🌟 Los ayunos voluntarios",
+           "El Profeta ﷺ ayunaba los lunes y jueves, los días blancos (13, 14 y 15), el día de Arafa y de Ashura (10 de Muharram), mucho en Muharram y mucho en Shaabán. Dijo: «Quien ayuna Ramadán y luego añade seis días de Shawal, es como si hubiera ayunado toda la vida.» (Sahih Muslim: 1164).",
+           "Sahih Muslim: 1162, 1163, 1164; Sahih al-Bujari: 1969"],
+          ["🎯 La lección",
+           "La educación de Ramadán es para toda la vida. La piedad, la compasión y el dominio de uno mismo aprendidos en Ramadán deben mantenerse toda la vida.",
+           ""]
+        ],
+        [
+          ["¿Cuándo se hizo obligatorio el ayuno?", ["Año 1", "Año 2", "Año 3"]],
+          ["¿La noche del Destino es mejor que cuántos meses?", ["100", "500", "1000"]],
+          ["¿Cuál es el propósito del ayuno?", ["Tener hambre", "La piedad", "Perder peso"]]
+        ],
+        [
+          ["624", "Obligatoriedad del ayuno"],
+          ["624", "Primer Ramadán en Medina"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 20 — Ghazwa-e-Badr ═══════════════ */
+    20: {
+      mr: [
+        "बद्रचे युद्ध — सत्य व असत्याचा निर्णय",
+        "बद्र",
+        "शुक्रवार, १७ रमजान, हिजरी २ (मार्च इ.स. ६२४) — बहुसंख्यांच्या मते; काही रिवायतींमध्ये १९ किंवा २१ रमजान",
+        "बद्रची घटना, मुस्लिमांची कुर्बानी, देवदूतांची मदत आणि विजयाची घटना समजून घेणे.",
+        "ईमानाने भरलेल्या मनांनी संख्येला हरवले. हे अल्लाह! आम्हालाही ईमान व भरवशाची ही संपत्ती दे. आमीन.",
+        [
+          "१७ रमजान हिजरी २",
+          "~३१३ विरुद्ध ~१०००",
+          "१४ शहीद",
+          "~७० ठार, ~७० कैदी",
+          "यवमुल-फुरकान"
+        ],
+        [
+          ["🎯 पार्श्वभूमी",
+           "मुस्लिम अबू सुफियानच्या काफिल्यासाठी निघाले (सूरह अल-अनफाल ८:७); काफिला निसटला आणि कुरैशचे सैन्य (सुमारे ९५०–१०००) येऊन पोहोचले (सहीह मुस्लिम १७६३). नबी ﷺ यांनी सहाबांचा सल्ला घेतला; मिकदाद (र.अ.) म्हणाले की आम्ही मूसा (अ.स.) यांच्या कौमसारखे बोलणार नाही, आम्ही तुमच्यासोबत लढू (सहीह बुखारी ३९५२). (मुहाजिरांचे माल जप्त झाल्याची गोष्ट सीरतच्या पुस्तकांतून आहे, सहीह हदीसांतून नाही.)",
+           ""],
+          ["🏕️ बद्रच्या मैदानात",
+           "सुमारे ३१३ मुस्लिम (सहीह बुखारी ३९५९; काही रिवायतींमध्ये ३१४/३१७), ७० उंट पाळीपाळीने, २ घोडे (झुबैर व मिकदाद (र.अ.) — सीरत). मतभेद: अली (र.अ.) यांच्या रिवायतीत फक्त मिकदाद (र.अ.) यांचा घोडा आहे (मुस्नद अहमद १०२३). नबी ﷺ यांनी दुआ केली इतकी की चादर पडली; अबू बक्र (र.अ.) म्हणाले «पुरेसे आहे». दुआ: «जर हा गट नष्ट झाला तर जमिनीवर तुझी उपासना होणार नाही» (सहीह मुस्लिम १७६३).",
+           ""],
+          ["🌧️ रात्रीची मदत",
+           "हलकी झोप शांतीसाठी आणि पाऊस (अल-अनफाल ८:११). नबी ﷺ यांनी रात्र झाडाखाली नमाज़ व रडण्यात घालवली (मुस्नद अहमद १०२३). आप ﷺ यांनी शत्रूंच्या पडण्याच्या जागा सांगितल्या (सहीह मुस्लिम १७७९). (कुरैशच्या बाजूच्या चिखलाची गोष्ट सीरतमधून आहे.)",
+           ""],
+          ["⚔️ युद्ध",
+           "आधी वैयक्तिक मुकाबले: हमझा, अली व उबैदा (र.अ.) विरुद्ध शैबा, उत्बा व वलीद (सहीह बुखारी ३९६५–३९६८; अल-हज २२:१९). मतभेद: कोण कोणाशी लढले, त्याचा क्रम रिवायतींमध्ये वेगळा आहे. देवदूत (अल-अनफाल ८:९, आले-इमरान ३:१२४). अबू जहलला दोन अन्सारी तरुणांनी (मुआज बिन अम्र व मुआज बिन अफरा (र.अ.)) जखमी केले (सहीह बुखारी ३१४१) आणि इब्न मसऊद (र.अ.) यांनी त्याचा शेवट केला (सहीह बुखारी ३९६२).",
+           ""],
+          ["🌟 विजय",
+           "१४ शहीद (६ मुहाजिर, ८ अन्सार — अर-रहीकुल-मख्तूम); ७० कुरैशी ठार, ७० कैदी (सहीह मुस्लिम १७६३). कुरआनाने याला «यवमुल-फुरकान» म्हटले (अल-अनफाल ८:४१). मृतदेह विहिरीत टाकले गेले, नबी ﷺ तीन रात्री थांबले (सहीह बुखारी ३९७६).",
+           ""],
+          ["🎯 बोध",
+           "३१३ ने १००० ला ईमान, तयारी आणि अल्लाहवरील भरवशाने हरवले.",
+           ""]
+        ],
+        [
+          ["बद्र युद्धात मुस्लिमांची संख्या?", ["१००", "३१३", "१०००"]],
+          ["कुरैशची संख्या?", ["५००", "१०००", "२०००"]],
+          ["बद्र युद्धाचे दुसरे नाव?", ["यवमुन-नस्र", "यवमुल-फुरकान", "यवमुल-फतह"]]
+        ],
+        [
+          ["८ रमजान", "प्रयाण (काहींच्या मते १२)"],
+          ["रमजान हिजरी २", "काफिल्याची बातमी व कुरैशचे सैन्य"],
+          ["१७ रमजान", "बद्रचे युद्ध"]
+        ]
+      ],
+      ar: [
+        "غزوة بدر — الفرقان بين الحق والباطل",
+        "بدر",
+        "الجمعة 17 رمضان، السنة الثانية (مارس 624) — عند الجمهور؛ وفي بعض الروايات 19 أو 21 رمضان",
+        "فهم غزوة بدر، وتضحية المسلمين، ونصر الله بالملائكة، وحقيقة الفتح.",
+        "قلوب مملوءة بالإيمان غلبت الكثرة. اللهم ارزقنا هذه الثروة: الإيمان والتوكل. آمين.",
+        [
+          "17 رمضان من السنة الثانية",
+          "نحو 313 مقابل نحو 1000",
+          "14 شهيدًا",
+          "نحو 70 قتيلًا و70 أسيرًا",
+          "يوم الفرقان"
+        ],
+        [
+          ["🎯 الخلفية",
+           "خرج المسلمون لقافلة أبي سفيان (سورة الأنفال 8:7)؛ فأفلتت القافلة ووصل جيش قريش (نحو 950–1000) (صحيح مسلم 1763). فاستشار ﷺ أصحابه؛ فقال المقداد رضي الله عنه: لا نقول لك كما قالت بنو إسرائيل لموسى، بل نقاتل معك (صحيح البخاري 3952). (وأما مسألة أخذ أموال المهاجرين فهي من كتب السيرة لا من الأحاديث الصحيحة.)",
+           ""],
+          ["🏕️ في ميدان بدر",
+           "نحو 313 مسلمًا (صحيح البخاري 3959؛ وفي بعض الروايات 314 أو 317)، و70 بعيرًا يتعاقبونها، وفرسان (الزبير والمقداد رضي الله عنهما — سيرة). وفي رواية علي رضي الله عنه فرس المقداد فقط (مسند أحمد 1023). ودعا ﷺ حتى سقط رداؤه؛ فقال أبو بكر: «حسبك». ومن دعائه: «اللهم إن تهلك هذه العصابة لا تُعبد في الأرض» (صحيح مسلم 1763).",
+           ""],
+          ["🌧️ مدد الليل",
+           "نعاسًا أمنةً ومطرًا (الأنفال 8:11). وبات ﷺ يصلي ويبكي تحت شجرة (مسند أحمد 1023). وأشار ﷺ إلى مصارع القوم (صحيح مسلم 1779). (وأما الطين في جانب قريش فمن السيرة.)",
+           ""],
+          ["⚔️ القتال",
+           "أولًا المبارزة: حمزة وعلي وعبيدة رضي الله عنهم مقابل شيبة وعتبة والوليد (صحيح البخاري 3965–3968؛ الحج 22:19). والترتيب مختلف في الروايات. والملائكة (الأنفال 8:9، آل عمران 3:124). وجرح أبا جهل معاذان من الأنصار (معاذ بن عمرو ومعاذ بن عفراء رضي الله عنهما) (صحيح البخاري 3141)، وأجهز عليه ابن مسعود رضي الله عنه (صحيح البخاري 3962).",
+           ""],
+          ["🌟 الفتح",
+           "14 شهيدًا (6 من المهاجرين و8 من الأنصار — الرحيق المختوم)؛ و70 قتيلًا من قريش و70 أسيرًا (صحيح مسلم 1763). وسماه القرآن «يوم الفرقان» (الأنفال 8:41). وأُلقي القتلى في القليب، وأقام ﷺ ثلاث ليالٍ (صحيح البخاري 3976).",
+           ""],
+          ["🎯 العبرة",
+           "313 غلبوا 1000 بالإيمان والاستعداد والتوكل على الله.",
+           ""]
+        ],
+        [
+          ["كم كان عدد المسلمين في بدر؟", ["100", "313", "1000"]],
+          ["كم كان عدد قريش؟", ["500", "1000", "2000"]],
+          ["ما الاسم الآخر لغزوة بدر؟", ["يوم النصر", "يوم الفرقان", "يوم الفتح"]]
+        ],
+        [
+          ["8 رمضان", "الخروج (وقيل 12)"],
+          ["رمضان السنة الثانية", "خبر القافلة وجيش قريش"],
+          ["17 رمضان", "غزوة بدر"]
+        ]
+      ],
+      fr: [
+        "La bataille de Badr — la distinction entre le vrai et le faux",
+        "Badr",
+        "Vendredi 17 Ramadan, an 2 (mars 624) — selon la majorité ; 19 ou 21 Ramadan selon d'autres",
+        "Comprendre l'épisode de Badr, le sacrifice des musulmans, le secours des anges et la réalité de la victoire.",
+        "Des cœurs remplis de foi ont vaincu le nombre. Ô Allah ! Accorde-nous cette richesse : la foi et la confiance. Âmîn.",
+        [
+          "17 Ramadan de l'an 2",
+          "Environ 313 contre environ 1000",
+          "14 martyrs",
+          "Environ 70 tués et 70 prisonniers",
+          "Le jour de la distinction"
+        ],
+        [
+          ["🎯 Le contexte",
+           "Les musulmans sortirent pour la caravane d'Abou Soufyân (sourate al-Anfâl 8:7) ; la caravane échappa et l'armée des Quraysh (environ 950 à 1000) arriva (Sahih Muslim : 1763). Le Prophète ﷺ consulta ses Compagnons ; al-Miqdâd (qu'Allah l'agrée) dit : nous ne dirons pas comme les Enfants d'Isrâ'îl à Mûsâ, nous combattrons avec toi (Sahih al-Bukhari : 3952). (Quant à la saisie des biens des émigrés, cela vient des livres de Sîra, non des hadiths authentiques.)",
+           ""],
+          ["🏕️ Sur le champ de Badr",
+           "Environ 313 musulmans (Sahih al-Bukhari : 3959 ; 314 ou 317 dans d'autres récits), 70 chameaux qu'ils se partageaient, deux chevaux (az-Zoubayr et al-Miqdâd — Sîra). Divergence : dans le récit de 'Alî, seul le cheval d'al-Miqdâd (Mousnad Ahmad : 1023). Le Prophète ﷺ invoqua jusqu'à ce que son manteau tombât ; Abou Bakr dit : « Cela suffit. » Son invocation : « Si cette troupe périt, Tu ne seras plus adoré sur la terre. » (Sahih Muslim : 1763)",
+           ""],
+          ["🌧️ Le secours de la nuit",
+           "Un sommeil apaisant et la pluie (al-Anfâl 8:11). Il ﷺ passa la nuit à prier et à pleurer sous un arbre (Mousnad Ahmad : 1023). Il ﷺ indiqua les lieux où tomberaient les ennemis (Sahih Muslim : 1779). (La boue du côté des Quraysh vient de la Sîra.)",
+           ""],
+          ["⚔️ Le combat",
+           "D'abord les duels : Hamza, 'Alî et 'Oubayda (qu'Allah les agrée) contre Chayba, 'Outba et al-Walîd (Sahih al-Bukhari : 3965-3968 ; al-Hajj 22:19). L'ordre des duels varie selon les récits. Les anges (al-Anfâl 8:9, Âl 'Imrân 3:124). Abou Jahl fut blessé par deux jeunes Ansâr (Mu'âdh ibn 'Amr et Mu'âdh ibn 'Afrâ') (Sahih al-Bukhari : 3141) et achevé par Ibn Mas'oûd (Sahih al-Bukhari : 3962).",
+           ""],
+          ["🌟 La victoire",
+           "14 martyrs (6 émigrés et 8 Ansâr — Ar-Rahîq al-Makhtûm) ; 70 Quraysh tués et 70 prisonniers (Sahih Muslim : 1763). Le Coran l'appela « le jour de la distinction » (al-Anfâl 8:41). Les corps furent jetés dans le puits ; le Prophète ﷺ resta trois nuits (Sahih al-Bukhari : 3976).",
+           ""],
+          ["🎯 La leçon",
+           "313 ont vaincu 1000 par la foi, la préparation et la confiance en Allah.",
+           ""]
+        ],
+        [
+          ["Combien de musulmans à Badr ?", ["100", "313", "1000"]],
+          ["Combien de Quraysh ?", ["500", "1000", "2000"]],
+          ["Quel autre nom porte Badr ?", ["Le jour de la victoire", "Le jour de la distinction", "Le jour de la conquête"]]
+        ],
+        [
+          ["8 Ramadan", "Le départ (12 selon d'autres)"],
+          ["Ramadan an 2", "La nouvelle de la caravane et l'armée quraysh"],
+          ["17 Ramadan", "La bataille de Badr"]
+        ]
+      ],
+      es: [
+        "La batalla de Badr: la distinción entre la verdad y la falsedad",
+        "Badr",
+        "Viernes 17 de Ramadán, año 2 (marzo de 624), según la mayoría; 19 o 21 según otros",
+        "Comprender el episodio de Badr, el sacrificio de los musulmanes, el auxilio de los ángeles y la realidad de la victoria.",
+        "Corazones llenos de fe vencieron al número. ¡Oh Alá! Concédenos esa riqueza: la fe y la confianza. Amín.",
+        [
+          "17 de Ramadán del año 2",
+          "Unos 313 frente a unos 1000",
+          "14 mártires",
+          "Unos 70 muertos y 70 prisioneros",
+          "El día de la distinción"
+        ],
+        [
+          ["🎯 El contexto",
+           "Los musulmanes salieron por la caravana de Abu Sufian (sura al-Anfal 8:7); la caravana escapó y llegó el ejército de los Quraysh (unos 950 a 1000) (Sahih Muslim: 1763). El Profeta ﷺ consultó a sus Compañeros; al-Miqdad (que Alá esté complacido con él) dijo: no diremos como los Hijos de Israel a Musa, combatiremos contigo (Sahih al-Bujari: 3952). (Lo de la confiscación de los bienes de los emigrados viene de los libros de Sira, no de los hadices auténticos.)",
+           ""],
+          ["🏕️ En el campo de Badr",
+           "Unos 313 musulmanes (Sahih al-Bujari: 3959; 314 o 317 en otros relatos), 70 camellos que se turnaban y dos caballos (az-Zubayr y al-Miqdad, según la Sira). Discrepancia: en el relato de Ali solo el caballo de al-Miqdad (Musnad Ahmad: 1023). El Profeta ﷺ suplicó hasta que se le cayó el manto; Abu Bakr dijo: «Basta.» Su súplica: «Si esta tropa perece, no serás adorado en la tierra.» (Sahih Muslim: 1763)",
+           ""],
+          ["🌧️ El auxilio de la noche",
+           "Un sueño apacible y la lluvia (al-Anfal 8:11). Él ﷺ pasó la noche rezando y llorando bajo un árbol (Musnad Ahmad: 1023). Él ﷺ señaló los lugares donde caerían los enemigos (Sahih Muslim: 1779). (El barro del lado de los Quraysh viene de la Sira.)",
+           ""],
+          ["⚔️ El combate",
+           "Primero los duelos: Hamza, Ali y Ubayda (que Alá esté complacido con ellos) frente a Shayba, Utba y al-Walid (Sahih al-Bujari: 3965-3968; al-Hayy 22:19). El orden de los duelos varía según los relatos. Los ángeles (al-Anfal 8:9, Al Imran 3:124). A Abu Yahal lo hirieron dos jóvenes Ansar (Muaz ibn Amr y Muaz ibn Afra) (Sahih al-Bujari: 3141) y lo remató Ibn Masud (Sahih al-Bujari: 3962).",
+           ""],
+          ["🌟 La victoria",
+           "14 mártires (6 emigrados y 8 Ansar, según Ar-Rahiq al-Majtum); 70 qurayshíes muertos y 70 prisioneros (Sahih Muslim: 1763). El Corán lo llamó «el día de la distinción» (al-Anfal 8:41). Los cuerpos fueron arrojados al pozo; el Profeta ﷺ permaneció tres noches (Sahih al-Bujari: 3976).",
+           ""],
+          ["🎯 La lección",
+           "313 vencieron a 1000 con la fe, la preparación y la confianza en Alá.",
+           ""]
+        ],
+        [
+          ["¿Cuántos musulmanes había en Badr?", ["100", "313", "1000"]],
+          ["¿Cuántos qurayshíes?", ["500", "1000", "2000"]],
+          ["¿Qué otro nombre tiene Badr?", ["El día de la victoria", "El día de la distinción", "El día de la conquista"]]
+        ],
+        [
+          ["8 de Ramadán", "La salida (12 según otros)"],
+          ["Ramadán del año 2", "La noticia de la caravana y el ejército qurayshí"],
+          ["17 de Ramadán", "La batalla de Badr"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 21 — Ghazwa-e-Uhud ═══════════════ */
+    21: {
+      mr: [
+        "उहुदचे युद्ध — संयमाची परीक्षा",
+        "उहुद पर्वत",
+        "शव्वाल हिजरी ३ (मार्च इ.स. ६२५) — अर-रहीक: ७ शव्वाल; काहींच्या मते ११ किंवा १५",
+        "उहुदची घटना, हुकुमाचे पालन करण्याचे महत्त्व आणि नबी ﷺ जखमी झाल्याची घटना समजून घेणे.",
+        "हमझा (र.अ.) शहीद, नबी ﷺ जखमी, तरीही दयेचा दामन सुटला नाही. हे अल्लाह! आम्हालाही ही दया दे. आमीन.",
+        [
+          "हिजरी ३, उहुद पर्वत",
+          "मुश्रिक: ३०००",
+          "मुस्लिम: सुमारे ७००",
+          "५० धनुर्धाऱ्यांचा हुकूम",
+          "७० शहीद",
+          "हमझा (र.अ.) शहीद",
+          "नबी ﷺ जखमी"
+        ],
+        [
+          ["🎯 पार्श्वभूमी",
+           "बद्रचा बदला घेण्यासाठी कुरैशचे सुमारे ३००० सैन्य आले (७०० चिलखतधारी, २०० स्वार, ३००० उंट — अर-रहीकुल-मख्तूम). नबी ﷺ मदिन्यात राहून बचाव करू इच्छित होते, पण तरुणांच्या आग्रहाने बाहेर निघाले (मुस्नद अहमद; सीरत इब्न इशाक).",
+           ""],
+          ["⛰️ उहुद पर्वतावर",
+           "अब्दुल्लाह बिन उबय्य सुमारे ३०० साथीदारांसह परत गेला (सीरत; सहीह बुखारी ४०५० मध्ये दोन गटांच्या घसरणीचा उल्लेख, आले-इमरान ३:१२२); सुमारे ७०० राहिले. ५० धनुर्धारी अब्दुल्लाह बिन जुबैर (र.अ.) यांच्या नेतृत्वाखाली; हुकूम: «पक्षी आम्हाला उचलून नेले तरी जागा सोडू नका» (सहीह बुखारी ३०३९, ४०४३).",
+           ""],
+          ["⚔️ पहिला टप्पा",
+           "मुस्लिम प्रभावी झाले; बहुतेक धनुर्धाऱ्यांनी मालमत्तेसाठी जागा सोडली (सहीह बुखारी ३०३९); खालिद बिन वलीद (जे तेव्हा मुस्लिम नव्हते) यांनी मागून हल्ला केला.",
+           ""],
+          ["💔 दुसरा टप्पा — परीक्षा",
+           "नबी ﷺ यांचा दात शहीद झाला, चेहरा जखमी झाला आणि शिरस्त्राच्या कड्या गालात घुसल्या (सहीह बुखारी ४०७३–४०७५; सहीह मुस्लिम १७९०). तल्हा (र.अ.) व साद (र.अ.) यांच्यासह सात अन्सारी व दोन कुरैशी सहाबा बचावात राहिले (सहीह मुस्लिम १७८९; सहीह बुखारी ३७२४). मुसअब (र.अ.) शहीद झाले; इब्न कमीअने «मुहम्मदला ठार मारले» असे सांगितले (सीरत). फातिमा (र.अ.) यांनी जखम धुतली आणि अली (र.अ.) पाणी आणले (सहीह बुखारी २९११).",
+           ""],
+          ["🤲 नबी ﷺ यांची दया",
+           "«ज्या कौमने आपल्या नबीला जखमी केले ती कशी यशस्वी होईल?» तेव्हा आले-इमरान ३:१२८ उतरली (सहीह मुस्लिम १७९१). स्पष्टीकरण: सहीह बुखारी ४०६९ मध्ये आहे की आप ﷺ यांनी काही सरदारांना शाप दिला होता तेव्हा ही आयत उतरली. मतभेद: «हे अल्लाह, माझ्या कौमला माफ कर» ही दुआ दुसऱ्या एका नबीची आहे जी नबी ﷺ यांनी सांगितली (सहीह बुखारी ३४७७; सहीह मुस्लिम १७९२); त्या नबीचे नाव सहीह हदीसमध्ये नाही, विद्वानांची मते वेगळी आहेत.",
+           ""],
+          ["🌟 शहीद",
+           "७० शहीद (सहीह बुखारी ४०४३); सुमारे ६५ अन्सारी व ४ मुहाजिर (अर-रहीकुल-मख्तूम); कुरैशचे सुमारे २२ ठार. हमझा (र.अ.) यांना वहशीने शहीद केले, जो नंतर मुस्लिम झाला (सहीह बुखारी ४०७२). मुसअब (र.अ.) यांचे कफन लहान होते (सहीह बुखारी १२७६). अनस बिन नज्र (र.अ.) यांच्या अंगावर ८० हून अधिक जखमा होत्या (सहीह बुखारी २८०५). (हनझल (र.अ.) यांचे «गसीलुल-मलाइका» होणे व साद बिन रबीअ (र.अ.) यांची घटना सीरत/मुस्तद्रकच्या रिवायती आहेत, सहीहैनमध्ये नाहीत.)",
+           ""],
+          ["🎯 बोध",
+           "हुकूम पाळा; मालाला दीनापेक्षा प्राधान्य देऊ नका.",
+           ""]
+        ],
+        [
+          ["उहुदमध्ये मुश्रिकांची संख्या?", ["१०००", "३०००", "५०००"]],
+          ["किती शहीद झाले?", ["१४", "७०", "१००"]],
+          ["नबी ﷺ यांचे कोणते काका शहीद झाले?", ["अबू तालिब", "हमझा (र.अ.)", "अब्बास (र.अ.)"]]
+        ],
+        [
+          ["इ.स. ६२५", "उहुदची तयारी"],
+          ["इ.स. ६२५", "युद्धाची सुरुवात"],
+          ["इ.स. ६२५", "धनुर्धाऱ्यांची चूक"],
+          ["इ.स. ६२५", "७० शहीद, नबी ﷺ जखमी"]
+        ]
+      ],
+      ar: [
+        "غزوة أحد — امتحان الصبر",
+        "جبل أحد",
+        "شوال السنة الثالثة (مارس 625) — الرحيق: 7 شوال؛ وقيل 11 أو 15",
+        "فهم غزوة أحد، وأهمية طاعة الأمر، وجرح النبي ﷺ.",
+        "حمزة رضي الله عنه شهيد، والنبي ﷺ جريح، ومع ذلك لم يُفلت طرف الرحمة. اللهم ارزقنا هذه الرحمة. آمين.",
+        [
+          "السنة الثالثة، جبل أحد",
+          "المشركون: 3000",
+          "المسلمون: نحو 700",
+          "أمر الخمسين من الرماة",
+          "70 شهيدًا",
+          "استشهاد حمزة رضي الله عنه",
+          "جرح النبي ﷺ"
+        ],
+        [
+          ["🎯 الخلفية",
+           "جاء جيش قريش نحو 3000 للثأر من بدر (700 دارع، و200 فارس، و3000 بعير — الرحيق المختوم). وكان ﷺ يريد البقاء في المدينة للدفاع، فخرج لشدّة الشبان (مسند أحمد؛ سيرة ابن إسحاق).",
+           ""],
+          ["⛰️ عند جبل أحد",
+           "انصرف عبد الله بن أُبيّ بنحو 300 (سيرة؛ وفي صحيح البخاري 4050 ذكر انزلاق طائفتين، آل عمران 3:122)، وبقي نحو 700. وخمسون راميًا تحت إمرة عبد الله بن جبير رضي الله عنه؛ والأمر: «لا تبرحوا مكانكم وإن تخطفتنا الطير» (صحيح البخاري 3039، 4043).",
+           ""],
+          ["⚔️ المرحلة الأولى",
+           "ظهر المسلمون؛ وترك أكثر الرماة مواقعهم للغنيمة (صحيح البخاري 3039)؛ فهجم خالد بن الوليد (ولم يكن أسلم بعد) من الخلف.",
+           ""],
+          ["💔 المرحلة الثانية — الامتحان",
+           "شُجّ وجه النبي ﷺ وكُسرت رباعيته ودخلت حلقتا المغفر في وجنته (صحيح البخاري 4073–4075؛ صحيح مسلم 1790). وثبت للدفاع سبعة من الأنصار واثنان من قريش ومنهم طلحة وسعد رضي الله عنهم (صحيح مسلم 1789؛ صحيح البخاري 3724). واستُشهد مصعب رضي الله عنه؛ وقال ابن قميئة: «قتلت محمدًا» (سيرة). وغسلت فاطمة رضي الله عنها الجرح وكان علي رضي الله عنه يأتي بالماء (صحيح البخاري 2911).",
+           ""],
+          ["🤲 رحمة النبي ﷺ",
+           "«كيف يفلح قوم شجّوا نبيّهم؟» فنزلت آل عمران 3:128 (صحيح مسلم 1791). وبيان ذلك في صحيح البخاري 4069 أن النبي ﷺ دعا على بعض ساداتهم فنزلت. والخلاف: دعاء «اللهم اغفر لقومي» هو لنبيٍّ آخر حدّث به النبي ﷺ (صحيح البخاري 3477؛ صحيح مسلم 1792)؛ ولم يُسمَّ في الحديث الصحيح، وأقوال العلماء مختلفة.",
+           ""],
+          ["🌟 الشهداء",
+           "سبعون شهيدًا (صحيح البخاري 4043)؛ نحو 65 من الأنصار و4 من المهاجرين (الرحيق المختوم)؛ ونحو 22 قتيلًا من قريش. قتل وحشيٌّ حمزة رضي الله عنه ثم أسلم (صحيح البخاري 4072). وكان كفن مصعب رضي الله عنه قصيرًا (صحيح البخاري 1276). وفي جسد أنس بن النضر رضي الله عنه أكثر من ثمانين جرحًا (صحيح البخاري 2805). (وأما كون حنظلة رضي الله عنه «غسيل الملائكة» وقصة سعد بن الربيع فهي من روايات السيرة والمستدرك لا من الصحيحين.)",
+           ""],
+          ["🎯 العبرة",
+           "أطع الأمر؛ ولا تقدّم المال على الدين.",
+           ""]
+        ],
+        [
+          ["كم كان عدد المشركين في أحد؟", ["1000", "3000", "5000"]],
+          ["كم شهيدًا كان في أحد؟", ["14", "70", "100"]],
+          ["أي عم للنبي ﷺ استُشهد؟", ["أبو طالب", "حمزة رضي الله عنه", "العباس رضي الله عنه"]]
+        ],
+        [
+          ["625", "الاستعداد لأحد"],
+          ["625", "بداية القتال"],
+          ["625", "خطأ الرماة"],
+          ["625", "70 شهيدًا وجرح النبي ﷺ"]
+        ]
+      ],
+      fr: [
+        "La bataille d'Ouhoud — l'épreuve de la patience",
+        "Le mont Ouhoud",
+        "Chawwâl de l'an 3 (mars 625) — Ar-Rahîq : 7 Chawwâl ; 11 ou 15 selon d'autres",
+        "Comprendre l'épisode d'Ouhoud, l'importance d'obéir à l'ordre et la blessure du Prophète ﷺ.",
+        "Hamza (qu'Allah l'agrée) martyr, le Prophète ﷺ blessé, et pourtant il ne lâcha pas le pan de la miséricorde. Ô Allah ! Accorde-nous cette miséricorde. Âmîn.",
+        [
+          "An 3, mont Ouhoud",
+          "Polythéistes : 3000",
+          "Musulmans : environ 700",
+          "L'ordre aux cinquante archers",
+          "70 martyrs",
+          "Hamza (qu'Allah l'agrée) martyr",
+          "Le Prophète ﷺ blessé"
+        ],
+        [
+          ["🎯 Le contexte",
+           "L'armée des Quraysh vint, environ 3000 hommes, pour venger Badr (700 cuirassés, 200 cavaliers, 3000 chameaux — Ar-Rahîq al-Makhtûm). Le Prophète ﷺ voulait rester à Médine pour défendre, mais sortit sur l'insistance des jeunes (Mousnad Ahmad ; Sîra d'Ibn Ishâq).",
+           ""],
+          ["⛰️ Au mont Ouhoud",
+           "'Abdoullah ibn Oubayy se retira avec environ 300 hommes (Sîra ; Sahih al-Bukhari : 4050 mentionne le glissement de deux groupes, Âl 'Imrân 3:122) ; il resta environ 700. Cinquante archers sous le commandement de 'Abdoullah ibn Joubayr (qu'Allah l'agrée) ; l'ordre : « Ne quittez pas vos places, même si les oiseaux nous enlèvent. » (Sahih al-Bukhari : 3039, 4043)",
+           ""],
+          ["⚔️ La première phase",
+           "Les musulmans dominèrent ; la plupart des archers quittèrent leurs postes pour le butin (Sahih al-Bukhari : 3039) ; Khâlid ibn al-Walîd (qui n'était pas encore musulman) attaqua par l'arrière.",
+           ""],
+          ["💔 La seconde phase — l'épreuve",
+           "Le Prophète ﷺ eut une dent cassée, le visage blessé, et les anneaux du casque entrèrent dans sa joue (Sahih al-Bukhari : 4073-4075 ; Sahih Muslim : 1790). Sept Ansâr et deux Quraysh restèrent pour le défendre, dont Talha et Sa'd (qu'Allah les agrée) (Sahih Muslim : 1789 ; Sahih al-Bukhari : 3724). Mous'ab (qu'Allah l'agrée) fut martyrisé ; Ibn Qami'a dit : « J'ai tué Mouhammad » (Sîra). Fâtima (qu'Allah l'agrée) lava la blessure et 'Alî apporta l'eau (Sahih al-Bukhari : 2911).",
+           ""],
+          ["🤲 La miséricorde du Prophète ﷺ",
+           "« Comment un peuple qui a blessé son prophète pourrait-il réussir ? » Alors descendit Âl 'Imrân 3:128 (Sahih Muslim : 1791). Précision : selon Sahih al-Bukhari 4069, le Prophète ﷺ avait invoqué contre certains chefs, et ce verset descendit alors. Divergence : l'invocation « Ô Allah, pardonne à mon peuple » est celle d'un autre prophète que le Prophète ﷺ a rapportée (Sahih al-Bukhari : 3477 ; Sahih Muslim : 1792) ; ce prophète n'est pas nommé dans le hadith authentique, et les avis des savants divergent.",
+           ""],
+          ["🌟 Les martyrs",
+           "Soixante-dix martyrs (Sahih al-Bukhari : 4043) ; environ 65 Ansâr et 4 émigrés (Ar-Rahîq al-Makhtûm) ; environ 22 tués chez les Quraysh. Wahchî tua Hamza (qu'Allah l'agrée), puis embrassa l'islam (Sahih al-Bukhari : 4072). Le linceul de Mous'ab (qu'Allah l'agrée) était court (Sahih al-Bukhari : 1276). Le corps d'Anas ibn an-Nadr (qu'Allah l'agrée) portait plus de quatre-vingts blessures (Sahih al-Bukhari : 2805). (Que Hanzala soit « lavé par les anges » et l'épisode de Sa'd ibn Rabî' viennent des récits de Sîra et d'al-Moustadrak, non des deux Sahih.)",
+           ""],
+          ["🎯 La leçon",
+           "Obéis à l'ordre ; ne préfère pas le bien à la religion.",
+           ""]
+        ],
+        [
+          ["Combien de polythéistes à Ouhoud ?", ["1000", "3000", "5000"]],
+          ["Combien de martyrs ?", ["14", "70", "100"]],
+          ["Quel oncle du Prophète ﷺ fut martyrisé ?", ["Abou Tâlib", "Hamza (qu'Allah l'agrée)", "Al-'Abbâs (qu'Allah l'agrée)"]]
+        ],
+        [
+          ["625", "Les préparatifs d'Ouhoud"],
+          ["625", "Le début du combat"],
+          ["625", "L'erreur des archers"],
+          ["625", "70 martyrs et le Prophète ﷺ blessé"]
+        ]
+      ],
+      es: [
+        "La batalla de Uhud: la prueba de la paciencia",
+        "El monte Uhud",
+        "Shawal del año 3 (marzo de 625); Ar-Rahiq: 7 de Shawal; 11 o 15 según otros",
+        "Comprender el episodio de Uhud, la importancia de obedecer la orden y la herida del Profeta ﷺ.",
+        "Hamza (que Alá esté complacido con él) mártir, el Profeta ﷺ herido, y aun así no soltó el manto de la misericordia. ¡Oh Alá! Concédenos esa misericordia. Amín.",
+        [
+          "Año 3, monte Uhud",
+          "Idólatras: 3000",
+          "Musulmanes: unos 700",
+          "La orden a los cincuenta arqueros",
+          "70 mártires",
+          "Hamza (que Alá esté complacido con él) mártir",
+          "El Profeta ﷺ herido"
+        ],
+        [
+          ["🎯 El contexto",
+           "El ejército de los Quraysh vino con unos 3000 hombres para vengar Badr (700 con coraza, 200 jinetes, 3000 camellos, según Ar-Rahiq al-Majtum). El Profeta ﷺ quería quedarse en Medina para defender, pero salió por la insistencia de los jóvenes (Musnad Ahmad; Sira de Ibn Ishaq).",
+           ""],
+          ["⛰️ En el monte Uhud",
+           "Abdalah ibn Ubayy se retiró con unos 300 hombres (Sira; Sahih al-Bujari: 4050 menciona el resbalar de dos grupos, Al Imran 3:122); quedaron unos 700. Cincuenta arqueros bajo el mando de Abdalah ibn Yubayr (que Alá esté complacido con él); la orden: «No dejéis vuestras posiciones, aunque los pájaros nos lleven.» (Sahih al-Bujari: 3039, 4043)",
+           ""],
+          ["⚔️ La primera fase",
+           "Los musulmanes dominaron; la mayoría de los arqueros dejó sus puestos por el botín (Sahih al-Bujari: 3039); Jalid ibn al-Walid (que aún no era musulmán) atacó por la retaguardia.",
+           ""],
+          ["💔 La segunda fase: la prueba",
+           "Al Profeta ﷺ se le rompió un diente, se le hirió el rostro y los anillos del casco se le clavaron en la mejilla (Sahih al-Bujari: 4073-4075; Sahih Muslim: 1790). Siete Ansar y dos qurayshíes permanecieron para defenderlo, entre ellos Talha y Sad (que Alá esté complacido con ellos) (Sahih Muslim: 1789; Sahih al-Bujari: 3724). Musab (que Alá esté complacido con él) fue martirizado; Ibn Qami'a dijo: «He matado a Muhámmad» (Sira). Fatima (que Alá esté complacido con ella) lavó la herida y Ali trajo el agua (Sahih al-Bujari: 2911).",
+           ""],
+          ["🤲 La misericordia del Profeta ﷺ",
+           "«¿Cómo puede prosperar un pueblo que ha herido a su profeta?» Entonces descendió Al Imran 3:128 (Sahih Muslim: 1791). Precisión: según Sahih al-Bujari 4069, el Profeta ﷺ había suplicado contra algunos jefes, y entonces descendió la aleya. Discrepancia: la súplica «¡Oh Alá, perdona a mi pueblo!» es de otro profeta que el Profeta ﷺ narró (Sahih al-Bujari: 3477; Sahih Muslim: 1792); ese profeta no se nombra en el hadiz auténtico y los sabios discrepan.",
+           ""],
+          ["🌟 Los mártires",
+           "Setenta mártires (Sahih al-Bujari: 4043); unos 65 Ansar y 4 emigrados (Ar-Rahiq al-Majtum); unos 22 muertos entre los Quraysh. Wahshi mató a Hamza (que Alá esté complacido con él), y luego abrazó el islam (Sahih al-Bujari: 4072). El sudario de Musab (que Alá esté complacido con él) era corto (Sahih al-Bujari: 1276). El cuerpo de Anas ibn an-Nadr (que Alá esté complacido con él) tenía más de ochenta heridas (Sahih al-Bujari: 2805). (Que Hanzala sea «lavado por los ángeles» y el episodio de Sad ibn Rabi vienen de relatos de Sira y al-Mustadrak, no de los dos Sahih.)",
+           ""],
+          ["🎯 La lección",
+           "Obedece la orden; no prefieras el bien a la religión.",
+           ""]
+        ],
+        [
+          ["¿Cuántos idólatras había en Uhud?", ["1000", "3000", "5000"]],
+          ["¿Cuántos mártires hubo?", ["14", "70", "100"]],
+          ["¿Qué tío del Profeta ﷺ fue martirizado?", ["Abu Talib", "Hamza (que Alá esté complacido con él)", "Al-Abbas (que Alá esté complacido con él)"]]
+        ],
+        [
+          ["625", "Los preparativos de Uhud"],
+          ["625", "El comienzo del combate"],
+          ["625", "El error de los arqueros"],
+          ["625", "70 mártires y el Profeta ﷺ herido"]
+        ]
+      ]
     }
 
   }
