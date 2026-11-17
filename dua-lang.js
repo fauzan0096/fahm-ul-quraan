@@ -1333,3 +1333,216 @@ Object.assign(window.FQ_DUA_LANG, {
 });
 
 if (window.FQDuaLangApply) window.FQDuaLangApply();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Roz marra (10 – 26)
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_DUA_LANG, {
+
+  "Salam karna": {
+    t: { mr: "सलाम करणे", ar: "السلام", fr: "Saluer (le salam)", es: "Saludar (el salam)" },
+    m: { mr: "तुमच्यावर शांती, अल्लाहची दया आणि त्याच्या बरकती असोत.",
+         ar: "السلام عليكم ورحمة الله وبركاته.",
+         fr: "Que la paix, la miséricorde d'Allah et Ses bénédictions soient sur vous.",
+         es: "La paz, la misericordia de Alá y Sus bendiciones sean con vosotros." },
+    f: { mr: "उत्तरात «व अलैकुमुस्सलामु व रहमतुल्लाहि व बरकातुहु» म्हणतात. पूर्ण सलाम केल्यास जास्त नेक्या मिळतात.",
+         ar: "ويرد: «وعليكم السلام ورحمة الله وبركاته»، والسلام التام أفضل.",
+         fr: "On répond : « Wa 'alaykum as-salâm wa rahmatullâhi wa barakâtuh ». Le salam complet vaut plus de récompense.",
+         es: "Se responde: «Wa 'alaykum as-salam wa rahmatul-lahi wa barakatuh». El salam completo da más recompensa." }
+  },
+
+  "Kisi ne bhalai ki to": {
+    t: { mr: "कोणी भले केले तर", ar: "إذا أحسن إليك أحد", fr: "Quand quelqu'un vous fait du bien", es: "Cuando alguien te hace un bien" },
+    m: { mr: "अल्लाह तुम्हाला चांगला मोबदला दे.",
+         ar: "جزاك الله خيرًا.",
+         fr: "Qu'Allah te récompense par le bien.",
+         es: "Que Alá te recompense con el bien." },
+    f: { mr: "नबी ﷺ म्हणाले: ज्याच्याशी भले केले जाईल आणि तो भले करणाऱ्याला हे म्हणेल, त्याने उत्तम आभार मानले.",
+         ar: "قال النبي ﷺ: «من أُحسن إليه فقال هذا فقد أبلغ في الثناء».",
+         fr: "Le Prophète ﷺ a dit : celui à qui on fait du bien et qui dit cela a parfaitement remercié.",
+         es: "El Profeta ﷺ dijo: a quien se le hace un bien y dice esto, ha agradecido plenamente." }
+  },
+
+  "Majlis se uthte waqt (Kaffarah-e-Majlis)": {
+    t: { mr: "मजलिसीतून उठताना (कफ्फारा-ए-मजलिस)", ar: "كفارة المجلس", fr: "En quittant une assemblée (kaffârat al-majlis)", es: "Al levantarse de una reunión (kaffarat al-maylis)" },
+    m: { mr: "हे अल्लाह! तू पवित्र आहेस आणि तुझीच स्तुती आहे; मी साक्ष देतो की तुझ्याशिवाय कोणी उपास्य नाही; मी तुझी क्षमा मागतो आणि तुझ्याकडे तौबा करतो.",
+         ar: "سبحانك اللهم وبحمدك، أشهد أن لا إله إلا أنت، أستغفرك وأتوب إليك.",
+         fr: "Gloire à Toi, ô Allah, et louange à Toi ; je témoigne qu'il n'y a de divinité que Toi ; je Te demande pardon et je reviens à Toi.",
+         es: "Gloria a Ti, oh Alá, y alabanza a Ti; doy testimonio de que no hay divinidad sino Tú; Te pido perdón y a Ti vuelvo." },
+    f: { mr: "मजलिसीत झालेल्या कमतरतेचा हा प्रायश्चित्त आहे; म्हणून मजलिस संपताना वाचा.",
+         ar: "هي كفارة ما يكون في المجلس، فتُقال عند القيام.",
+         fr: "C'est l'expiation de ce qui se passe dans une assemblée : on la dit en se levant.",
+         es: "Es la expiación de lo que ocurre en una reunión: se dice al levantarse." }
+  },
+
+  "Gusse ke waqt": {
+    t: { mr: "रागाच्या वेळी", ar: "عند الغضب", fr: "En cas de colère", es: "En el enfado" },
+    m: { mr: "मी धिक्कारलेल्या शैतानापासून अल्लाहची पनाह मागतो.",
+         ar: "أعوذ بالله من الشيطان الرجيم.",
+         fr: "Je cherche refuge auprès d'Allah contre Satan le maudit.",
+         es: "Busco refugio en Alá contra Satán el maldito." },
+    f: { mr: "नबी ﷺ म्हणाले: मला एक कलिमा माहीत आहे, रागीट माणसाने तो म्हटला तर त्याचा राग जाईल — आणि तो हाच आहे.",
+         ar: "قال النبي ﷺ: «إني لأعلم كلمة لو قالها الغضبان لذهب غضبه»، وهي هذه.",
+         fr: "Le Prophète ﷺ a dit : je connais une parole qui, dite par le coléreux, fait partir sa colère — c'est celle-ci.",
+         es: "El Profeta ﷺ dijo: conozco una palabra que, si la dice el airado, se le va el enfado: es esta." }
+  },
+
+  "Sawari par baithne ki dua": {
+    t: { mr: "वाहनावर बसताना", ar: "دعاء الركوب", fr: "En montant sur un véhicule", es: "Al subir a un vehículo" },
+    m: { mr: "पवित्र आहे तो जिने हे (वाहन) आमच्या ताब्यात दिले, जरी आम्ही ते ताब्यात आणणारे नव्हतो; आणि निःसंशय आम्ही आपल्या रबाकडे परत जाणारे आहोत.",
+         ar: "سبحان الذي سخر لنا هذا وما كنا له مقرنين، وإنا إلى ربنا لمنقلبون.",
+         fr: "Gloire à Celui qui a mis ceci à notre service, alors que nous n'étions pas capables de le dompter ; et c'est vers notre Seigneur que nous retournerons.",
+         es: "Gloria a Quien puso esto a nuestro servicio, aunque no éramos capaces de dominarlo; y hacia nuestro Señor hemos de volver." },
+    f: { mr: "गाडी, बस, विमान वा कोणत्याही वाहनावर बसून वाचा.",
+         ar: "تُقال عند الركوب في سيارة أو طائرة أو غيرها.",
+         fr: "On la récite en montant dans une voiture, un bus, un avion ou tout véhicule.",
+         es: "Se recita al subir a un coche, autobús, avión o cualquier vehículo." }
+  },
+
+  "Safar ki dua": {
+    t: { mr: "प्रवासाची दुआ", ar: "دعاء السفر", fr: "Doua du voyage", es: "Dua del viaje" },
+    m: { mr: "हे अल्लाह! आम्ही तुझ्याकडे या प्रवासात नेकी व तकवा मागतो आणि असे कर्म मागतो ज्याने तू राजी होशील. हे अल्लाह! आमचा हा प्रवास सोपा कर आणि त्याचे अंतर आमच्यासाठी आवळून टाक.",
+         ar: "اللهم إنا نسألك في سفرنا هذا البر والتقوى، ومن العمل ما ترضى، اللهم هون علينا سفرنا هذا واطو عنا بعده.",
+         fr: "Ô Allah, nous Te demandons dans ce voyage la piété et la crainte, et des œuvres qui Te plaisent. Ô Allah, facilite-nous ce voyage et rapproche-nous sa distance.",
+         es: "Oh Alá, Te pedimos en este viaje la piedad y el temor, y obras que Te complazcan. Oh Alá, facilítanos este viaje y acorta su distancia." },
+    f: { mr: "प्रवासाला निघताना ही दुआ वाचली जाते.",
+         ar: "تُقال عند السفر.",
+         fr: "On la récite en partant en voyage.",
+         es: "Se recita al partir de viaje." }
+  },
+
+  "Naya chand dekhne par": {
+    t: { mr: "नवीन चंद्र दिसल्यावर", ar: "دعاء رؤية الهلال", fr: "En voyant le nouveau croissant", es: "Al ver la luna nueva" },
+    m: { mr: "हे अल्लाह! हा चंद्र आमच्यावर बरकत, ईमान, सुरक्षितता आणि इस्लामसह उगव. (हे चंद्रा!) माझा आणि तुझा रब अल्लाह आहे.",
+         ar: "اللهم أهله علينا باليمن والإيمان والسلامة والإسلام، ربي وربك الله.",
+         fr: "Ô Allah, fais-le apparaître sur nous avec la bénédiction, la foi, la sécurité et l'islam. (Ô lune,) mon Seigneur et le tien est Allah.",
+         es: "Oh Alá, hazlo aparecer sobre nosotros con bendición, fe, seguridad e islam. (Oh luna,) mi Señor y el tuyo es Alá." },
+    f: { mr: "नव्या महिन्याचा चंद्र पाहिल्यावर वाचली जाते.",
+         ar: "تُقال عند رؤية هلال الشهر الجديد.",
+         fr: "On la récite en voyant le croissant du nouveau mois.",
+         es: "Se recita al ver la luna nueva del mes." }
+  },
+
+  "Baarish ke waqt": {
+    t: { mr: "पावसाच्या वेळी", ar: "دعاء نزول المطر", fr: "Quand la pluie tombe", es: "Cuando llueve" },
+    m: { mr: "हे अल्लाह! फायदा देणारा पाऊस पाड.",
+         ar: "اللهم صيبًا نافعًا.",
+         fr: "Ô Allah, fais tomber une pluie utile.",
+         es: "Oh Alá, haz caer una lluvia provechosa." },
+    f: { mr: "पाऊस पाहून ही दुआ वाचली जाते.",
+         ar: "تُقال عند رؤية المطر.",
+         fr: "On la récite en voyant la pluie.",
+         es: "Se recita al ver la lluvia." }
+  },
+
+  "Roza iftar karte waqt": {
+    t: { mr: "रोजा सोडताना (इफ्तार)", ar: "دعاء الإفطار", fr: "Doua au moment de rompre le jeûne", es: "Dua al romper el ayuno" },
+    m: { mr: "तहान गेली, रक्तवाहिन्या ओल्या झाल्या आणि अल्लाहने इच्छिले तर मोबदला निश्चित झाला.",
+         ar: "ذهب الظمأ وابتلت العروق وثبت الأجر إن شاء الله.",
+         fr: "La soif est partie, les veines sont humectées et la récompense est acquise, si Allah le veut.",
+         es: "Se fue la sed, se humedecieron las venas y queda confirmada la recompensa, si Alá quiere." },
+    f: { mr: "रोजा सोडल्यानंतर वाचली जाते.",
+         ar: "تُقال بعد الإفطار.",
+         fr: "On la récite après avoir rompu le jeûne.",
+         es: "Se recita después de romper el ayuno." }
+  },
+
+  "Rizq-e-halal ki dua": {
+    t: { mr: "हलाल रोजीची दुआ", ar: "دعاء الرزق الحلال", fr: "Doua pour une subsistance licite", es: "Dua por un sustento lícito" },
+    m: { mr: "हे अल्लाह! तुझ्या हलालाच्या माध्यमातून मला हरामापासून पुरेसे कर आणि तुझ्या कृपेने तुझ्याशिवाय सर्वांपासून निरपेक्ष कर.",
+         ar: "اللهم اكفني بحلالك عن حرامك، وأغنني بفضلك عمن سواك.",
+         fr: "Ô Allah, suffis-moi par ce que Tu as rendu licite contre l'illicite, et rends-moi indépendant de tout autre que Toi par Ta faveur.",
+         es: "Oh Alá, bastéceme con lo lícito frente a lo ilícito, y hazme independiente de todo otro que Tú por Tu favor." },
+    f: { mr: "कर्ज व तंगीतून सुटका आणि हलाल रोजीसाठी ही सर्वांगीण दुआ आहे.",
+         ar: "دعاء جامع للخلاص من الدين والضيق وللرزق الحلال.",
+         fr: "C'est une doua complète pour sortir de la dette et de la gêne et obtenir une subsistance licite.",
+         es: "Es una dua completa para salir de la deuda y la estrechez y obtener sustento lícito." }
+  },
+
+  "Dunya aur Aakhirat ki bhalai": {
+    t: { mr: "दुनिया व आखिरतचे भले", ar: "خيري الدنيا والآخرة", fr: "Le bien ici-bas et dans l'au-delà", es: "El bien en este mundo y en el más allá" },
+    m: { mr: "हे आमच्या रबा! आम्हाला दुनियेत भले दे आणि आखिरतमध्येही भले दे, आणि आम्हाला अग्नीच्या अझाबापासून वाचव.",
+         ar: "ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة وقنا عذاب النار.",
+         fr: "Notre Seigneur, donne-nous le bien ici-bas et le bien dans l'au-delà, et préserve-nous du châtiment du Feu.",
+         es: "Señor nuestro, danos el bien en este mundo y el bien en el más allá, y protégeme del castigo del Fuego." },
+    f: { mr: "अनस र.अ. यांच्यानुसार नबी ﷺ यांची बहुतेक दुआ हीच असे.",
+         ar: "كان أكثر دعاء النبي ﷺ هذه الدعاء (رواه أنس رضي الله عنه).",
+         fr: "C'était la doua la plus fréquente du Prophète ﷺ selon Anas.",
+         es: "Era la dua más frecuente del Profeta ﷺ según Anas." }
+  },
+
+  "Dil ko deen par saabit rakhne ki dua": {
+    t: { mr: "मनाला दीनावर स्थिर ठेवण्याची दुआ", ar: "دعاء تثبيت القلب على الدين", fr: "Doua pour affermir le cœur dans la religion", es: "Dua para afianzar el corazón en la religión" },
+    m: { mr: "हे मन फिरवणाऱ्या! माझे मन तुझ्या दीनावर स्थिर ठेव.",
+         ar: "يا مقلب القلوب ثبت قلبي على دينك.",
+         fr: "Ô Toi qui fais tourner les cœurs, affermis mon cœur dans Ta religion.",
+         es: "Oh Tú que haces girar los corazones, afianza mi corazón en Tu religión." },
+    f: { mr: "नबी ﷺ ही दुआ भरपूर करत असत.",
+         ar: "كان النبي ﷺ يكثر من هذه الدعاء.",
+         fr: "Le Prophète ﷺ la récitait abondamment.",
+         es: "El Profeta ﷺ la recitaba mucho." }
+  },
+
+  "Ilm mein izafe ki dua": {
+    t: { mr: "ज्ञानात वाढीची दुआ", ar: "دعاء الزيادة في العلم", fr: "Doua pour l'accroissement du savoir", es: "Dua por el aumento del conocimiento" },
+    m: { mr: "हे माझ्या रबा! माझ्या ज्ञानात वाढ कर.",
+         ar: "رب زدني علمًا.",
+         fr: "Mon Seigneur, augmente mon savoir.",
+         es: "Señor mío, aumenta mi conocimiento." },
+    f: { mr: "अभ्यासाच्या वेळी आणि ज्ञान मिळवताना ही दुआ करा.",
+         ar: "تُقال عند طلب العلم وبداية الدراسة.",
+         fr: "À réciter en cherchant le savoir et en commençant l'étude.",
+         es: "Recitarla al buscar conocimiento y al comenzar el estudio." }
+  },
+
+  "Walidain ke liye dua": {
+    t: { mr: "आई-वडिलांसाठी दुआ", ar: "دعاء للوالدين", fr: "Doua pour les parents", es: "Dua por los padres" },
+    m: { mr: "हे माझ्या रबा! या दोघांवर दया कर, जसे त्यांनी बालपणी माझे पालनपोषण केले.",
+         ar: "رب ارحمهما كما ربياني صغيرًا.",
+         fr: "Mon Seigneur, fais-leur miséricorde comme ils m'ont élevé tout petit.",
+         es: "Señor mío, ten misericordia de ellos como me criaron de pequeño." },
+    f: { mr: "आई-वडिलांसाठी — ते जिवंत असोत वा गेले असोत — ही दुआ कुरआनात शिकवली आहे.",
+         ar: "دعاء للوالدين أحياءً أو أمواتًا، علّمه القرآن.",
+         fr: "Cette doua pour les parents, vivants ou morts, est enseignée par le Coran.",
+         es: "Esta dua por los padres, vivos o muertos, la enseña el Corán." }
+  },
+
+  "Bachchon ko nazar aur shaitan se bachane ki dua": {
+    t: { mr: "मुलांना नजर व शैतानापासून वाचवण्याची दुआ", ar: "دعاء حماية الأطفال من الشيطان والعين", fr: "Doua pour protéger les enfants de Satan et du mauvais œil", es: "Dua para proteger a los niños de Satán y del mal de ojo" },
+    m: { mr: "मी तुम्हा दोघांना अल्लाहच्या पूर्ण शब्दांच्या आश्रयात देतो — प्रत्येक शैतान, विषारी प्राणी आणि हानी पोहोचवणाऱ्या नजरेपासून.",
+         ar: "أعيذكما بكلمات الله التامة من كل شيطان وهامة، ومن كل عين لامة.",
+         fr: "Je vous place tous deux sous la protection des paroles parfaites d'Allah contre tout démon, toute bête venimeuse et tout mauvais œil.",
+         es: "Os pongo a los dos bajo la protección de las palabras perfectas de Alá contra todo demonio, todo animal venenoso y todo mal de ojo." },
+    f: { mr: "नबी ﷺ हसन व हुसैन र.अ. यांच्यासाठी ही दुआ वाचून दम करत असत. एका मुलासाठी «उईज़ुका» म्हणा.",
+         ar: "كان النبي ﷺ يعوذ الحسن والحسين بها؛ ولواحد يقول: «أعيذك».",
+         fr: "Le Prophète ﷺ protégeait ainsi Hasan et Husayn ; pour un seul enfant on dit « U'îdhuka ».",
+         es: "El Profeta ﷺ protegía así a Hasán y Husáyn; para un solo niño se dice «U'idhuka»." }
+  },
+
+  "Shaadi par mubarakbad dene ki dua": {
+    t: { mr: "लग्नाच्या शुभेच्छेची दुआ", ar: "دعاء التهنئة بالزواج", fr: "Doua de félicitations pour le mariage", es: "Dua de felicitación por el matrimonio" },
+    m: { mr: "अल्लाह तुमच्यासाठी बरकत दे, तुमच्यावर बरकत उतरव आणि तुम्हा दोघांना भल्यात एकत्र ठेव.",
+         ar: "بارك الله لك، وبارك عليك، وجمع بينكما في خير.",
+         fr: "Qu'Allah te bénisse, répande Sa bénédiction sur toi et vous réunisse dans le bien.",
+         es: "Que Alá te bendiga, derrame Su bendición sobre ti y os reúna en el bien." },
+    f: { mr: "नववधू वा नवरदेवाला शुभेच्छा देताना ही दुआ दिली जाते.",
+         ar: "تُقال تهنئةً للعروسين.",
+         fr: "On la dit en félicitant les jeunes mariés.",
+         es: "Se dice al felicitar a los recién casados." }
+  },
+
+  "Qabristan mein dakhil hote waqt": {
+    t: { mr: "कबरस्तानात प्रवेश करताना", ar: "دعاء دخول المقبرة", fr: "En entrant au cimetière", es: "Al entrar en el cementerio" },
+    m: { mr: "या घरांच्या ईमानवाले व मुस्लिम रहिवासीयांनो! तुमच्यावर शांती असो. अल्लाहने इच्छिले तर आम्हीही तुम्हाला भेटणारे आहोत. आम्ही अल्लाहकडे आमच्यासाठी व तुमच्यासाठी आरोग्यता मागतो.",
+         ar: "السلام عليكم أهل الديار من المؤمنين والمسلمين، وإنا إن شاء الله بكم لاحقون، نسأل الله لنا ولكم العافية.",
+         fr: "Paix sur vous, habitants de ces demeures, croyants et musulmans ; nous vous rejoindrons, si Allah le veut. Nous demandons à Allah la santé pour nous et pour vous.",
+         es: "La paz sea con vosotros, moradores de estas casas, creyentes y musulmanes; os alcanzaremos, si Alá quiere. Pedimos a Alá salud para nosotros y para vosotros." },
+    f: { mr: "कबरस्तानात प्रवेश करताना ही दुआ वाचली जाते.",
+         ar: "تُقال عند دخول المقبرة.",
+         fr: "On la récite en entrant au cimetière.",
+         es: "Se recita al entrar en el cementerio." }
+  }
+});
+
+if (window.FQDuaLangApply) window.FQDuaLangApply();
