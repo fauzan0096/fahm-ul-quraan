@@ -1798,3 +1798,22 @@ Object.assign(window.ARKAN_X, {
   "165": { mr: "→ रोजा", ar: "→ الصوم", fr: "→ Le jeûne", es: "→ El ayuno" },
   "166": { mr: "इस्लामचे स्तंभ ←", ar: "أركان الإسلام ←", fr: "Les piliers de l'islam ←", es: "Pilares del islam ←" }
 });
+
+
+
+/* ═══════════════════════════════════════════════════════════
+   Arkan ke apne chhote labels (arkan.js ka S) — nayi 4 zubaanein
+   "padh liya", progress, pichla/agla, wapas, theme
+   ═══════════════════════════════════════════════════════════ */
+window.ARKAN_UI = {
+  read:   { mr: "✅ वाचले", ar: "✅ تمت القراءة", fr: "✅ Lu", es: "✅ Leído" },
+  unread: { mr: "☐ हा भाग वाचला", ar: "☐ قرأت هذا الجزء", fr: "☐ J'ai lu cette partie", es: "☐ He leído esta parte" },
+  prog:   { mr: " भाग वाचले", ar: " جزءًا مقروءًا", fr: " parties lues", es: " partes leídas" },
+  progLbl:{ mr: "📍 तुमची प्रगती", ar: "📍 تقدمك", fr: "📍 Votre progression", es: "📍 Tu progreso" },
+  pdone:  { mr: " वाचले", ar: " مقروء", fr: " lus", es: " leídos" },
+  sec:    { mr: "भाग ", ar: "الجزء ", fr: "Partie ", es: "Parte " },
+  prev:   { mr: "→ मागील", ar: "→ السابق", fr: "← Précédent", es: "← Anterior" },
+  next:   { mr: "पुढील ←", ar: "التالي ←", fr: "Suivant →", es: "Siguiente →" },
+  back:   { mr: "मागे", ar: "رجوع", fr: "Retour", es: "Atrás" },
+  theme:  { mr: "थीम", ar: "المظهر", fr: "Thème", es: "Tema" }
+};

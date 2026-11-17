@@ -109,7 +109,9 @@
 //       Español mein: ahmiyat, sharaa'it, teen aqsaam, arkaan, wajibat, ihram/talbiyah, mahzurat,
 //       miqat, umrah, tawaf aur hajj ke din. Ab paanchon Arkan pages (hub, Kalima, Namaz, Zakat, Roza,
 //       Hajj) chaar nayi zubaanoN mein poore hain.
-const CACHE_NAME = 'quran-ustad-auto-v111';
+// v112: ARKAN — arkan.js ke chhote labels (✅ Read / ☐ Mark this section as read / progress / pichla-agla /
+//       wapas / theme) aur hero ki "Aap ki pesh raft" line bhi nayi 4 zubaanoN mein (ARKAN_UI).
+const CACHE_NAME = 'quran-ustad-auto-v112';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

@@ -9,6 +9,7 @@
     read:   ['✅ پڑھ لیا', '✅ Padh liya', '✅ पढ़ लिया', '✅ Read'],
     unread: ['☐ یہ حصہ پڑھ لیا', '☐ Yeh hissa padh liya', '☐ यह हिस्सा पढ़ लिया', '☐ Mark this section as read'],
     prog:   [' حصے پڑھ لیے', ' hisse padh liye', ' हिस्से पढ़ लिए', ' sections read'],
+    progLbl:['📍 آپ کی پیش رفت', '📍 Aap ki pesh raft', '📍 आपकी प्रगति', '📍 Your progress'],
     pdone:  [' پڑھے', ' padhe', ' पढ़े', ' read'],
     sec:    ['حصہ ', 'Hissa ', 'हिस्सा ', 'Section '],
     prev:   ['→ پچھلا', '← Pichhla', '← पिछला', '← Previous'],
@@ -16,7 +17,12 @@
     back:   ['واپس', 'Wapas', 'वापस', 'Back'],
     theme:  ['تھیم', 'Theme', 'थीम', 'Theme']
   };
-  function s(k) { return S[k][LI()]; }
+  // Nayi 4 zubaanein (mr/ar/fr/es) ka tarjuma arkan-extra.js ke ARKAN_UI mein hai; na mile to English
+  function s(k) {
+    var U = window.ARKAN_UI, l = window.QSLang ? QSLang.get() : 'u';
+    if (U && U[k] && U[k][l]) return U[k][l];
+    return S[k][LI()];
+  }
 
   function paintHero(all) {
     var secs = document.querySelectorAll('.sec[data-sec]'), n = secs.length;
@@ -24,6 +30,8 @@
     var f = document.getElementById('progFill'), t = document.getElementById('progText');
     if (f) f.style.width = (n ? Math.round(d * 100 / n) : 0) + '%';
     if (t) t.textContent = d + ' / ' + n + s('prog');
+    var sc = document.getElementById('secCount');
+    if (sc) sc.textContent = s('progLbl');
   }
   function paintBtn(b, on) {
     b.classList.toggle('on', !!on);
