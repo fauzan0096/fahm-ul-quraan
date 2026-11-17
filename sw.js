@@ -111,7 +111,10 @@
 //       Hajj) chaar nayi zubaanoN mein poore hain.
 // v112: ARKAN — arkan.js ke chhote labels (✅ Read / ☐ Mark this section as read / progress / pichla-agla /
 //       wapas / theme) aur hero ki "Aap ki pesh raft" line bhi nayi 4 zubaanoN mein (ARKAN_UI).
-const CACHE_NAME = 'quran-ustad-auto-v112';
+// v113: SEERAT — naya seerat-lang.js: Seerat-e-Nabawi ﷺ (30 din + Shamail) ka tarjuma मराठी / العربية /
+//       Français / Español mein, ek ek din karke. seerat.js ka reader ab 8 zubaanein jaanta hai (dir/rtl
+//       Arbi ke liye bhi), aur jo din abhi tarjuma na hua us par saaf note aata hai. Shuru: Day 1.
+const CACHE_NAME = 'quran-ustad-auto-v113';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -173,6 +176,7 @@ const ASSETS = [
     './icon-maskable.png',
     './signature.png',
     './seerat.js',
+    './seerat-lang.js',
     './arkan.html',
     './arkan-kalima.html',
     './arkan-namaz.html',

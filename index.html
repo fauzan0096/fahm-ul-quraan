@@ -850,15 +850,22 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             updateXPUI(); renderCourse(); updateStreak(); checkDailyGoal();
         }
 
-        // Seerat course: seerat.js sirf tap karne par load hota hai (jo nahi kholta uske liye kuch download nahi)
+        // Seerat course: seerat-lang.js (nayi 4 zubaanoN ka tarjuma) phir seerat.js — dono sirf tap karne par
         function openSeerat() {
             if (userRole !== 'admin' && userRole !== 'guest') return;
             const ud = document.getElementById('userDrop'); if (ud) ud.classList.add('hidden');
             if (window.FQSeerat) { FQSeerat.open(); return; }
             window.__srtOpenWhenReady = true;
-            const sc = document.createElement('script'); sc.src = 'seerat.js';
-            sc.onerror = () => { window.__srtOpenWhenReady = false; showToast('Seerat file load nahi hui — net check karein'); };
-            document.head.appendChild(sc);
+            const load = (src) => new Promise((res, rej) => {
+                const s = document.createElement('script'); s.src = src;
+                s.onload = res; s.onerror = rej; document.head.appendChild(s);
+            });
+            // tarjuma file na mile to bhi course chale (Urdu/English/… phir bhi kaam karte hain)
+            const pre = window.SEERAT_LANG ? Promise.resolve() : load('seerat-lang.js').catch(() => {});
+            pre.then(() => load('seerat.js')).catch(() => {
+                window.__srtOpenWhenReady = false;
+                showToast('Seerat file load nahi hui — net check karein');
+            });
         }
 
         function pick(w, k) { return QSLang.pick(w, k); }

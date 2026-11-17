@@ -3322,6 +3322,24 @@ window.SEERAT_TOP = {"ro": {"title": "Seerat-e-Nabawi ﷺ — 30 din ka safar + 
 window.SEERAT_UI = {"u": {"daysDone": "دن مکمل", "dayOf": "دن", "keyFacts": "📌 اہم نکات", "timeline": "🗓️ ٹائم لائن", "refs": "📚 ماخذ اور حوالہ جات", "reflect": "🤲 غور و فکر", "quiz": "📝 چھوٹا سا امتحان", "hadith": "📜 صحیح احادیث (متن، ترجمہ اور حوالہ)", "next": "اگلا دن ←", "prev": "→ پچھلا دن", "done": "✅ آج کا دن مکمل", "undone": "✓ مکمل (ہٹائیں)", "pending": "(اس دن کا ترجمہ جلد آ رہا ہے — فی الحال اردو دکھائی جا رہی ہے)"}, "ro": {"daysDone": "din mukammal", "dayOf": "Din", "keyFacts": "📌 Aham nukat", "timeline": "🗓️ Timeline", "refs": "📚 Maakhaz aur hawale", "reflect": "🤲 Ghaur o fikr", "quiz": "📝 Chhota sa imtihan", "hadith": "📜 Sahih ahadith (matn, tarjuma aur hawala)", "next": "Agla din ›", "prev": "‹ Pichla din", "done": "✅ Aaj ka din mukammal", "undone": "✓ Mukammal (hatayein)", "pending": "(Is din ka Roman tarjuma jald aa raha hai — filhaal Urdu dikhayi ja rahi hai)"}, "hi": {"daysDone": "दिन मुकम्मल", "dayOf": "दिन", "keyFacts": "📌 अहम नुकात", "timeline": "🗓️ टाइमलाइन", "refs": "📚 स्रोत और हवाले", "reflect": "🤲 ग़ौर व फ़िक्र", "quiz": "📝 छोटा सा इम्तिहान", "hadith": "📜 सहीह हदीसें (मतन, तर्जुमा और हवाला)", "next": "अगला दिन ›", "prev": "‹ पिछला दिन", "done": "✅ आज का दिन मुकम्मल", "undone": "✓ मुकम्मल (हटाएँ)", "pending": "(इस दिन का हिंदी तर्जुमा जल्द आ रहा है — फ़िलहाल उर्दू दिखाई जा रही है)"}, "en": {"daysDone": "days completed", "dayOf": "Day", "keyFacts": "📌 Key points", "timeline": "🗓️ Timeline", "refs": "📚 Sources and references", "reflect": "🤲 Reflection", "quiz": "📝 A short quiz", "hadith": "📜 Authentic hadith (text, translation and reference)", "next": "Next day ›", "prev": "‹ Previous day", "done": "✅ Mark today complete", "undone": "✓ Completed (undo)", "pending": "(The English translation of this day is coming soon — Urdu is shown for now)"}};
 /*SRT-TR-END*/
 
+/* ───────────── Nayi 4 zubaanein: seerat-lang.js ka data yahan mil jata hai ─────────────
+   seerat-lang.js pehle load hoti hai (index.html). Jo din wahan na ho, uska tarjuma
+   yahan nahi aata — us din par English/Urdu hi dikhta hai, kuch tootta nahi. */
+(function () {
+    var X = window.SEERAT_LANG; if (!X) return;
+    var TR = window.SEERAT_TR || (window.SEERAT_TR = {});
+    var TOP = window.SEERAT_TOP || (window.SEERAT_TOP = {});
+    var UI = window.SEERAT_UI || (window.SEERAT_UI = {});
+    var lg, d;
+    if (X.top) for (lg in X.top) { if (X.top[lg]) TOP[lg] = X.top[lg]; }
+    if (X.ui) for (lg in X.ui) { if (X.ui[lg]) UI[lg] = X.ui[lg]; }
+    if (X.days) for (d in X.days) {
+        if (!X.days[d]) continue;
+        TR[d] = TR[d] || {};
+        for (lg in X.days[d]) { if (X.days[d][lg]) TR[d][lg] = X.days[d][lg]; }
+    }
+})();
+
 /* ───────────── Reader (UI) ───────────── */
 (function () {
     'use strict';
@@ -3334,7 +3352,10 @@ window.SEERAT_UI = {"u": {"daysDone": "دن مکمل", "dayOf": "دن", "keyFact
     function key(k) { return 'p_' + ls('activeProfile') + '_' + k; }
     function done() { try { var a = JSON.parse(ls(key('seeratDone')) || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
     function setDone(a) { lsSet(key('seeratDone'), JSON.stringify(a)); }
-    var LANGS = ['u', 'ro', 'hi', 'en'], hooked = false;
+    var LANGS = ['u', 'ro', 'hi', 'en', 'mr', 'ar', 'fr', 'es'], hooked = false;
+    var DIR = { u: 'rtl', ar: 'rtl' };
+    var LANGATTR = { u: 'ur', ro: 'ur-Latn', hi: 'hi', en: 'en', mr: 'mr', ar: 'ar', fr: 'fr', es: 'es' };
+    var LBL = { u: 'اردو', ro: 'Roman', hi: 'हिंदी', en: 'English', mr: 'मराठी', ar: 'العربية', fr: 'Français', es: 'Español' };
     function L() { var v = null; try { v = (window.QSLang && QSLang.get()) || ls('mlang'); } catch (e) {} return LANGS.indexOf(v) >= 0 ? v : 'en'; }
     function UIs(k) { var u = window.SEERAT_UI || {}; var l = L(); return (u[l] && u[l][k]) || (u.u && u.u[k]) || ''; }
     function TRd(x) { var t = window.SEERAT_TR && window.SEERAT_TR[x.day]; return (L() !== 'u' && t && t[L()]) || null; }
@@ -3408,7 +3429,10 @@ window.SEERAT_UI = {"u": {"daysDone": "دن مکمل", "dayOf": "دن", "keyFact
         '#srtOverlay[dir=ltr] .srt-o{text-align:left}' +
         '#srtOverlay[dir=ltr] .srt-refs{padding:0 0 0 18px}' +
         '#srtOverlay[dir=ltr] details p,#srtOverlay[dir=ltr] .srt-goal,#srtOverlay[dir=ltr] .srt-ref,#srtOverlay[dir=ltr] .srt-ur{line-height:1.85}' +
-        '#srtOverlay[dir=ltr] h2,#srtOverlay[dir=ltr] .srt-t,#srtOverlay[dir=ltr] summary{line-height:1.6}';
+        '#srtOverlay[dir=ltr] h2,#srtOverlay[dir=ltr] .srt-t,#srtOverlay[dir=ltr] summary{line-height:1.6}' +
+        '#srtOverlay[lang=ar]{font-family:"Amiri","Noto Naskh Arabic","Traditional Arabic",serif}' +
+        '#srtOverlay[lang=ar] h2,#srtOverlay[lang=ar] details p,#srtOverlay[lang=ar] .srt-goal,#srtOverlay[lang=ar] .srt-ref,#srtOverlay[lang=ar] .srt-ur{line-height:2}' +
+        '#srtOverlay[lang=ar] .srt-t,#srtOverlay[lang=ar] .srt-day,#srtOverlay[lang=ar] summary{line-height:1.9}';
         document.head.appendChild(s);
     }
 
@@ -3461,10 +3485,10 @@ window.SEERAT_UI = {"u": {"daysDone": "دن مکمل", "dayOf": "دن", "keyFact
 
     function draw() {
         if (!el) return;
-        var bar = '<div class="srt-bar"><button class="srt-x" data-a="back" aria-label="Wapas">' + (view === 'list' ? '✕' : (L() === 'u' ? '→' : '←')) + '</button><b>' +
+        var bar = '<div class="srt-bar"><button class="srt-x" data-a="back" aria-label="Wapas">' + (view === 'list' ? '✕' : (DIR[L()] === 'rtl' ? '→' : '←')) + '</button><b>' +
             (view === 'list' ? esc(((window.SEERAT_TOP && SEERAT_TOP[L()]) || {}).title || C.title) : esc(UIs('dayOf')) + ' ' + C.days[curDay].day + ' / ' + C.days.length) + '</b>' +
-            '<button class="srt-x srt-lang" data-a="lang" aria-label="Zubaan">' + esc((window.QSLang && QSLang.labels ? QSLang.labels[L()] : ({ u: 'اردو', ro: 'Roman', hi: 'हिंदी', en: 'English' })[L()])) + '</button></div>';
-        el.setAttribute('dir', L() === 'u' ? 'rtl' : 'ltr'); el.setAttribute('lang', ({ u: 'ur', ro: 'ur-Latn', hi: 'hi', en: 'en' })[L()]);
+            '<button class="srt-x srt-lang" data-a="lang" aria-label="Zubaan">' + esc((window.QSLang && QSLang.labels ? QSLang.labels[L()] : LBL[L()]) || LBL[L()]) + '</button></div>';
+        el.setAttribute('dir', DIR[L()] || 'ltr'); el.setAttribute('lang', LANGATTR[L()] || 'en');
         el.innerHTML = bar + '<div class="srt-wrap">' + (view === 'list' ? listHTML() : dayHTML(curDay)) + '</div>';
         el.scrollTop = 0;
     }
@@ -3474,7 +3498,7 @@ window.SEERAT_UI = {"u": {"daysDone": "دن مکمل", "dayOf": "دن", "keyFact
         var a = t.getAttribute('data-a');
         if (a === 'lang') {
             if (window.QSLang && QSLang.cycle) { QSLang.cycle(); }   // onChange neeche draw() karta hai
-            else { lsSet('mlang', LANGS[(LANGS.indexOf(L()) + 1) % 4]); var s0 = el.scrollTop; draw(); el.scrollTop = s0; }
+            else { lsSet('mlang', LANGS[(LANGS.indexOf(L()) + 1) % LANGS.length]); var s0 = el.scrollTop; draw(); el.scrollTop = s0; }
             return;
         }
         if (t.hasAttribute('data-d')) { curDay = +t.getAttribute('data-d'); view = 'day'; lsSet(key('seeratLast'), curDay); draw(); return; }

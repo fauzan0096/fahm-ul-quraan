@@ -44,7 +44,9 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 **Arkan-e-Islam (mukammal):** `arkan-extra.js` — Arkan ke **paanchon pages** ka tarjuma मराठी / العربية / Français / Español mein, `data-i` id se juda hua: hub (`arkan.html`), **Kalima** (chaar kalmay, iman-e-mufassal, sharaa'it, fazail), **Namaz** (auqaat, rika'at, sharaa'it, wuzu, tareeqa, arkaan, sunnatein, sajda-e-sahw, mubtilat, jamaat/jumma, doosri namazein, musafir), **Zakat** (nisab, calculator, 8 masarif, sadqa-e-fitr), **Roza** (ramazan ke roze, sehri/iftar, mufattirat, qaza/kafara, rukhsat, nafl, Lailatul-Qadr, e'tikaf, aadaab) aur **Hajj-o-Umrah** (sharaa'it, teen aqsaam, arkaan, wajibat, ihram/talbiyah, mahzurat, miqat, umrah, tawaf, hajj ke din). `arkan-lang.js` ka `apply()` pehle yahan dekhta hai; jo id yahan na ho wahan English. Zakat calculator ke nateeje `window.ARKAN_Z` mein hain (aur `arkan-lang.js` ka `z()` pehle wahan dekhta hai). Arabi matn (Quran/hadees/dua) **kabhi nahi badalta** — sirf uska tarjuma. Nayi zubaan par `arkan-i18n.js` ka hash-engine band rehta hai (warna matn Urdu par gir jata hai).
 
-**Abhi baaki (content-level tarjuma):** tajweed ke 38 qawaid aur Seerat (`seerat.js`) — inka matn sirf 4 zubaanoN mein hai; nayi 4 zubaanoN par yeh **English** dikhate hain.
+**Seerat (chal raha hai):** `seerat-lang.js` — Seerat-e-Nabawi ﷺ (30 din + Shamail ke 4 din) ka tarjuma मराठी / العربية / Français / Español mein, **ek ek din karke**. Har din ki entry wohi tarteeb rakhti hai jo `seerat.js` ke `SEERAT_TR` mein hai: `[0]` title, `[1]` jagah, `[2]` waqt, `[3]` maqsad, `[4]` ghaur-o-fikr, `[5]` aham nukat, `[6]` hisse `[h,p,src]`, `[7]` imtihan `[sawal,[options]]`, `[8]` timeline `[saal,waqia]`, `[9]` hawale, `[10]` hadith `[who,ur,ref]`. `seerat.js` shuru hote waqt ise `SEERAT_TR` / `SEERAT_TOP` / `SEERAT_UI` mein mila deta hai. Ab tak: **Day 1**. Jo din abhi tarjuma na hua, us par saaf note aata hai ("is din ka tarjuma jald aa raha hai") aur Urdu dikhti hai — kuch khaali ya toota nahi.
+
+**Abhi baaki (content-level tarjuma):** tajweed ke 38 qawaid, aur Seerat ke Day 2–34 — inka matn sirf 4 zubaanoN mein hai; nayi 4 zubaanoN par yeh **English** dikhate hain.
 
 **Course ke lafz (mukammal):** `course-lang.js` — **Day 1–90, saare 900 lafz** ka matlab + mashq ki tafseel chaar zubaanoN mein (मराठी · العربية · Français · Español). Har entry `"عربی لفظ"` se judi hai; yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Kisi lafz ka tarjuma theek karna ho to sirf usi entry ko badlein — baaki par asar nahi. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
 
@@ -57,8 +59,8 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 ### 📜 Seerat-e-Nabawi ﷺ — 30 din (`seerat.js`) — ab sab ke liye khula
 - Home ke quick links mein **📜 Seerat** (login ke baad sab ko). Har din: maqsad, tafseel (khulne wale hisse), ahem nukte, timeline, ghaur-o-fikr, 3 sawal ka chhota imtihan, aur "din mukammal" ka nishan (profile ke saath save).
-- `seerat.js` sirf tab load hoti hai jab Seerat button dabaya jaye, isliye jo na kholey uske liye koi bojh nahi.
-- Text badalna ho to `seerat.js` ke `SEERAT_COURSE` mein badlein. (Seerat 4 zubaan: app ki zubaan follow karta hai.)
+- `seerat.js` sirf tab load hoti hai jab Seerat button dabaya jaye, isliye jo na kholey uske liye koi bojh nahi. `seerat-lang.js` (nayi 4 zubaanoN ka tarjuma) usse pehle load hoti hai.
+- Text badalna ho to `seerat.js` ke `SEERAT_COURSE` mein badlein. (Seerat 8 zubaan: app ki zubaan follow karta hai — reader mein Arabic ke liye RTL khud lagta hai.)
 
 ### 📝 50 Lafz ka Exam (v75)
 - Har 5 din (50 lafz) poore hone par unhi 50 lafz se **20 sawal**; pass **80% (16/20)**; dobara de sakte hain (naye sawal). Din/Silver/Gold ko lock nahi karta. Constants: `BLOCK_DAYS, BLOCK_QS, BLOCK_PASS` (`index.html`).
