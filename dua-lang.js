@@ -1027,3 +1027,132 @@ Object.assign(window.FQ_DUA_LANG, {
 });
 
 if (window.FQDuaLangApply) window.FQDuaLangApply();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Mushkil & Pareshani (1 – 7) · Bimari & Shifa (1 – 3)
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_DUA_LANG, {
+
+  "Pareshani aur Takleef ki dua (Dua-ul-Karb)": {
+    t: { mr: "काळजी व त्रासाची दुआ (दुआ-उल-कर्ब)", ar: "دعاء الكرب", fr: "Doua de la détresse (du'â al-karb)", es: "Dua de la angustia (dua al-karb)" },
+    m: { mr: "अल्लाहशिवाय कोणी उपास्य नाही जो महान व सहनशील आहे. अल्लाहशिवाय कोणी उपास्य नाही जो महान अर्शचा रब आहे. अल्लाहशिवाय कोणी उपास्य नाही जो आकाशांचा, धरतीचा आणि सन्मानित अर्शचा रब आहे.",
+         ar: "لا إله إلا الله العظيم الحليم، لا إله إلا الله رب العرش العظيم، لا إله إلا الله رب السماوات ورب الأرض ورب العرش الكريم.",
+         fr: "Il n'y a de divinité qu'Allah, l'Immense, le Très Indulgent ; il n'y a de divinité qu'Allah, Seigneur du Trône immense ; il n'y a de divinité qu'Allah, Seigneur des cieux, de la terre et du Trône généreux.",
+         es: "No hay divinidad salvo Alá, el Inmenso, el Tolerante; no hay divinidad salvo Alá, Señor del Trono inmenso; no hay divinidad salvo Alá, Señor de los cielos, de la tierra y del Trono noble." },
+    f: { mr: "नबी ﷺ कठीण प्रसंगी ही दुआ वाचत असत.",
+         ar: "كان النبي ﷺ يدعو بها عند الكرب.",
+         fr: "Le Prophète ﷺ l'invoquait dans la détresse.",
+         es: "El Profeta ﷺ la invocaba en la angustia." }
+  },
+
+  "Bechaini mein: Allahumma rahmataka arju": {
+    t: { mr: "अस्वस्थतेत: ‘अल्लाहुम्मा रहमतका अर्जू’", ar: "اللهم رحمتك أرجو", fr: "Dans l'angoisse : « Allâhumma rahmataka arjû »", es: "En la inquietud: «Aláhumma rahmataka aryu»" },
+    m: { mr: "हे अल्लाह! मी तुझ्या दयेची आशा धरतो; तर मला पापणी मिचकावण्याइतकाही माझ्या मनाच्या स्वाधीन करू नको आणि माझी सर्व कामे सुधार; तुझ्याशिवाय कोणी उपास्य नाही.",
+         ar: "اللهم رحمتك أرجو، فلا تكلني إلى نفسي طرفة عين، وأصلح لي شأني كله، لا إله إلا أنت.",
+         fr: "Ô Allah, j'espère Ta miséricorde : ne me laisse pas à moi-même l'espace d'un clin d'œil, réforme toutes mes affaires ; il n'y a de divinité que Toi.",
+         es: "Oh Alá, espero Tu misericordia: no me dejes a mí mismo ni un parpadeo, repara todos mis asuntos; no hay divinidad sino Tú." },
+    f: { mr: "जेव्हा माणूस स्वतःला असहाय्य वाटतो तेव्हा ही दुआ वाचावी.",
+         ar: "تُقال عند الشعور بالعجز.",
+         fr: "On la récite quand on se sent impuissant.",
+         es: "Se recita cuando uno se siente impotente." }
+  },
+
+  "Yunus AS ki dua": {
+    t: { mr: "युनूस (अ.स.) यांची दुआ", ar: "دعاء يونس عليه السلام", fr: "La doua de Yunus", es: "La dua de Yunus" },
+    m: { mr: "तुझ्याशिवाय कोणी उपास्य नाही, तू पवित्र आहेस; निःसंशय मी अन्यायी लोकांमध्ये होतो.",
+         ar: "لا إله إلا أنت سبحانك إني كنت من الظالمين.",
+         fr: "Il n'y a de divinité que Toi, gloire à Toi ; j'ai été du nombre des injustes.",
+         es: "No hay divinidad sino Tú, gloria a Ti; yo fui de los injustos." },
+    f: { mr: "प्रत्येक अडचण व गरजेसाठी वाचता येते.",
+         ar: "تُقال عند كل هم وحاجة.",
+         fr: "On peut la réciter pour toute difficulté et tout besoin.",
+         es: "Se puede recitar para toda dificultad y necesidad." }
+  },
+
+  "Gham, Fikr aur Qarz se panah": {
+    t: { mr: "दुःख, काळजी व कर्जापासून पनाह", ar: "الاستعاذة من الهم والحزن والدين", fr: "Refuge contre le souci, le chagrin et la dette", es: "Refugio de la preocupación, la tristeza y la deuda" },
+    m: { mr: "हे अल्लाह! मी काळजी व दुःखापासून, असमर्थता व आळशीपणापासून, कंजूषपणा व भित्रेपणापासून, कर्जाच्या ओझ्यापासून आणि लोकांच्या दडपणापासून तुझी पनाह मागतो.",
+         ar: "اللهم إني أعوذ بك من الهم والحزن، والعجز والكسل، والبخل والجبن، وضلع الدين وغلبة الرجال.",
+         fr: "Ô Allah, je cherche refuge contre le souci et le chagrin, contre l'impuissance et la paresse, contre l'avarice et la lâcheté, contre le poids de la dette et la domination des gens.",
+         es: "Oh Alá, busco refugio de la preocupación y la tristeza, de la incapacidad y la pereza, de la avaricia y la cobardía, del peso de la deuda y del dominio de la gente." },
+    f: { mr: "नबी ﷺ ही दुआ बऱ्याच वेळा वाचत असत.",
+         ar: "كان النبي ﷺ يكثر من هذه الدعاء.",
+         fr: "Le Prophète ﷺ récitait souvent cette doua.",
+         es: "El Profeta ﷺ recitaba mucho esta dua." }
+  },
+
+  "Hasbunallah (Dushman/Khauf ke waqt)": {
+    t: { mr: "‘हस्बुनल्लाह’ (शत्रू व भीतीच्या वेळी)", ar: "حسبنا الله (عند الخوف والعدو)", fr: "« Hasbunallâh » (face à l'ennemi et à la peur)", es: "«Hasbun Alá» (ante el enemigo y el miedo)" },
+    m: { mr: "आम्हाला अल्लाह पुरेसा आहे आणि तो सर्वोत्तम कारभारी आहे.",
+         ar: "حسبنا الله ونعم الوكيل.",
+         fr: "Allah nous suffit, et Il est le meilleur garant.",
+         es: "Alá nos basta, y Él es el mejor garante." },
+    f: { mr: "इब्राहीम (अ.स.) यांनी अग्नीत टाकले जाताना हे म्हटले.",
+         ar: "قالها إبراهيم عليه السلام حين ألقي في النار.",
+         fr: "Ibrahim la dit lorsqu'il fut jeté au feu.",
+         es: "Ibrahim lo dijo cuando fue arrojado al fuego." }
+  },
+
+  "La hawla wa la quwwata illa billah": {
+    t: { mr: "‘ला हौला व ला कुव्वता इल्ला बिल्लाह’", ar: "لا حول ولا قوة إلا بالله", fr: "« Lâ hawla wa lâ quwwata illâ billâh »", es: "«La hawla wa la quwwata illa billah»" },
+    m: { mr: "पापापासून दूर राहण्याची शक्ती आणि नेकी करण्याची ताकद अल्लाहच्या मदतीशिवाय नाही.",
+         ar: "لا حول عن المعصية ولا قوة على الطاعة إلا بالله.",
+         fr: "Il n'y a de force contre le péché ni de puissance pour le bien sans l'aide d'Allah.",
+         es: "No hay fuerza contra el pecado ni poder para el bien sin la ayuda de Alá." },
+    f: { mr: "हे जन्नतच्या खजिन्यांपैकी एक खजिना आहे.",
+         ar: "هي كنز من كنوز الجنة.",
+         fr: "C'est un trésor parmi les trésors du Paradis.",
+         es: "Es un tesoro de los tesoros del Paraíso." }
+  },
+
+  "Musibat pahunchne par": {
+    t: { mr: "संकट आल्यावर", ar: "عند نزول المصيبة", fr: "Quand survient une épreuve", es: "Cuando llega una desgracia" },
+    m: { mr: "निःसंशय आम्ही अल्लाहचेच आहोत आणि त्याच्याकडेच परत जाणारे आहोत. हे अल्लाह! मला माझ्या संकटात मोबदला दे आणि त्याऐवजी मला त्यापेक्षा चांगले दे.",
+         ar: "إنا لله وإنا إليه راجعون، اللهم أجرني في مصيبتي وأخلف لي خيرًا منها.",
+         fr: "Nous sommes à Allah et c'est vers Lui que nous retournons. Ô Allah, récompense-moi dans mon épreuve et remplace-la par quelque chose de meilleur.",
+         es: "Somos de Alá y hacia Él volvemos. Oh Alá, recompénsame en mi desgracia y sustitúyela por algo mejor." },
+    f: { mr: "हजरत उम्मे सलमा र.अ. यांनी हे वाचले तेव्हा अल्लाहने त्यांना नबी ﷺ यांची सोबत (पती म्हणून) दिली.",
+         ar: "قالتها أم سلمة رضي الله عنها فأبدلها الله خيرًا، فتزوجها النبي ﷺ.",
+         fr: "Umm Salama la récita et Allah lui donna mieux : elle épousa le Prophète ﷺ.",
+         es: "Umm Salama la recitó y Alá le dio algo mejor: se casó con el Profeta ﷺ." }
+  },
+
+  "Jism mein dard ho to (Ruqyah)": {
+    t: { mr: "अंगात वेदना असल्यास (रुक्या)", ar: "عند الألم في الجسد (رقية)", fr: "En cas de douleur corporelle (ruqya)", es: "En caso de dolor corporal (ruqya)" },
+    m: { mr: "अल्लाहच्या नावाने (३ वेळा). मी अल्लाह व त्याच्या सामर्थ्याची पनाह मागतो त्या गोष्टीच्या वाईटापासून जी मला जाणवते व ज्याची मला भीती वाटते (७ वेळा).",
+         ar: "بسم الله (ثلاثًا)، أعوذ بالله وقدرته من شر ما أجد وأحاذر (سبعًا).",
+         fr: "Au nom d'Allah (3 fois). Je cherche refuge en Allah et en Sa puissance contre le mal que je ressens et que je redoute (7 fois).",
+         es: "En el nombre de Alá (3 veces). Busco refugio en Alá y en Su poder del mal que siento y temo (7 veces)." },
+    f: { mr: "दुखणाऱ्या जागी हात ठेवून हा मसनून उपाय करा.",
+         ar: "يضع يده على موضع الألم ويقول ذلك.",
+         fr: "On pose la main sur l'endroit douloureux en le récitant.",
+         es: "Se pone la mano en el lugar del dolor al recitarlo." }
+  },
+
+  "Bimar ke liye shifa ki dua": {
+    t: { mr: "आजारासाठी बरे होण्याची दुआ", ar: "دعاء الشفاء للمريض", fr: "Doua de guérison pour le malade", es: "Dua de curación para el enfermo" },
+    m: { mr: "हे अल्लाह! लोकांच्या रबा! त्रास दूर कर, बरे कर, तूच बरे करणारा आहेस; तुझ्या बरे करण्याशिवाय कोणतेही बरे होणे नाही — असे बरे होणे जे कोणताही आजार शेष ठेवत नाही.",
+         ar: "اللهم رب الناس، أذهب البأس، اشف أنت الشافي، لا شفاء إلا شفاؤك، شفاءً لا يغادر سقمًا.",
+         fr: "Ô Allah, Seigneur des gens, ôte le mal, guéris : Tu es le Guérisseur, il n'y a de guérison que la Tienne, une guérison qui ne laisse aucune maladie.",
+         es: "Oh Alá, Señor de la gente, quita el mal, cura: Tú eres el Curador, no hay curación sino la Tuya, una curación que no deja enfermedad." },
+    f: { mr: "नबी ﷺ आजारी व्यक्तीवर हात फिरवत व ही दुआ वाचत असत.",
+         ar: "كان النبي ﷺ يمسح بيده على المريض ويقولها.",
+         fr: "Le Prophète ﷺ passait sa main sur le malade en la récitant.",
+         es: "El Profeta ﷺ pasaba su mano sobre el enfermo al recitarla." }
+  },
+
+  "Ayyub AS ki dua (Sakht bimari mein)": {
+    t: { mr: "अय्यूब (अ.स.) यांची दुआ (गंभीर आजारात)", ar: "دعاء أيوب عليه السلام (في المرض الشديد)", fr: "La doua d'Ayyub (dans la maladie grave)", es: "La dua de Ayyub (en la enfermedad grave)" },
+    m: { mr: "मला त्रास पोहोचला आहे आणि तू सर्व दयाळूंपेक्षा जास्त दयाळू आहेस.",
+         ar: "أني مسني الضر وأنت أرحم الراحمين.",
+         fr: "Le mal m'a atteint, et Tu es le plus miséricordieux des miséricordieux.",
+         es: "Me ha tocado el daño, y Tú eres el más misericordioso de los misericordiosos." },
+    f: { mr: "हजरत अय्यूब (अ.स.) यांनी दीर्घ आजारात संयम ठेवला आणि ही दुआ केली.",
+         ar: "صبر أيوب عليه السلام في مرضه الطويل وقال هذا الدعاء.",
+         fr: "Ayyub patienta dans sa longue maladie et prononça cette doua.",
+         es: "Ayyub tuvo paciencia en su larga enfermedad y pronunció esta dua." }
+  }
+});
+
+if (window.FQDuaLangApply) window.FQDuaLangApply();
