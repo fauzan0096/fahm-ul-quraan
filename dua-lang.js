@@ -1156,3 +1156,180 @@ Object.assign(window.FQ_DUA_LANG, {
 });
 
 if (window.FQDuaLangApply) window.FQDuaLangApply();
+
+
+/* ═══════════════════════════════════════════════════════════
+   Sone se pehle (1 – 5) · Roz marra (1 – 13)
+   ═══════════════════════════════════════════════════════════ */
+Object.assign(window.FQ_DUA_LANG, {
+
+  "Ayatul Kursi": {
+    t: { mr: "आयतुल कुर्सी", ar: "آية الكرسي", fr: "Ayat al-Kursi", es: "Ayat al-Kursi" },
+    m: { mr: "अल्लाह, त्याच्याशिवाय कोणी उपास्य नाही; तो सदैव जिवंत, सर्वांना टिकवणारा आहे. त्याला झोप वा डुलकी येत नाही... त्याची कुर्सी आकाश व धरती व्यापते आणि त्यांचे रक्षण त्याला थकवत नाही; तोच उच्च व महान आहे.",
+         ar: "الله لا إله إلا هو الحي القيوم… وسع كرسيه السماوات والأرض ولا يئوده حفظهما وهو العلي العظيم.",
+         fr: "Allah, il n'y a de divinité que Lui, le Vivant, le Subsistant… Son Trône englobe les cieux et la terre, et leur garde ne Lui pèse point ; Il est le Très-Haut, le Très Grand.",
+         es: "Alá, no hay divinidad sino Él, el Viviente, el Subsistente… Su Trono abarca los cielos y la tierra, y su custodia no Le pesa; Él es el Altísimo, el Inmenso." },
+    f: { mr: "सुतण्यापूर्वी वाचल्यास संपूर्ण रात्र अल्लाहच्या संरक्षणात राहते.",
+         ar: "من قرأها عند نومه كان عليه من الله حافظ حتى يصبح.",
+         fr: "Celui qui la récite avant de dormir est protégé par Allah jusqu'au matin.",
+         es: "Quien la recite antes de dormir queda protegido por Alá hasta la mañana." }
+  },
+
+  "Teeno Qul (Sone se pehle 3 martaba)": {
+    t: { mr: "तीनही कुल (सुतण्यापूर्वी ३ वेळा)", ar: "المعوذات قبل النوم (ثلاثًا)", fr: "Les trois Qoul avant de dormir (3 fois)", es: "Las tres Qul antes de dormir (3 veces)" },
+    m: { mr: "सांग: तो अल्लाह एक आहे... सांग: मी पहाटेच्या रबाची पनाह मागतो... सांग: मी लोकांच्या रबाची पनाह मागतो...",
+         ar: "قل هو الله أحد… قل أعوذ برب الفلق… قل أعوذ برب الناس…",
+         fr: "Dis : Il est Allah, Unique… Dis : je cherche protection auprès du Seigneur de l'aube… Dis : je cherche protection auprès du Seigneur des hommes…",
+         es: "Di: Él es Alá, Uno… Di: busco protección en el Señor del alba… Di: busco protección en el Señor de los hombres…" },
+    f: { mr: "नबी ﷺ सुतण्यापूर्वी हातांवर फुंकून तीनही कुल वाचत व अंगावरून हात फिरवत असत.",
+         ar: "كان النبي ﷺ ينفث في يديه ويقرأ المعوذات ثم يمسح بهما جسده.",
+         fr: "Le Prophète ﷺ soufflait dans ses mains, récitait les trois Qoul puis passait ses mains sur son corps.",
+         es: "El Profeta ﷺ soplaba en sus manos, recitaba las tres Qul y luego pasaba las manos por su cuerpo." }
+  },
+
+  "Surah Baqarah ki aakhri 2 ayaat": {
+    t: { mr: "सूरा बकराच्या शेवटच्या २ आयती", ar: "آخر سورتي البقرة", fr: "Les deux derniers versets de la sourate Al-Baqarah", es: "Los dos últimos aleyas de la sura Al-Báqara" },
+    m: { mr: "रसूल आपल्या रबाकडून जे त्यांच्यावर अवतरित झाले त्यावर ईमान राखतात आणि ईमानवालेही... अल्लाह कोणा जिवाला त्याच्या ताकदीपेक्षा जास्त त्रास देत नाही... हे आमच्या रबा! आम्हाला पकडू नको जर आम्ही विसरलो वा चूक झाली; आम्हाला माफ कर, आमच्यावर दया कर; तूच आमचा स्वामी आहेस.",
+         ar: "آمن الرسول بما أنزل إليه من ربه والمؤمنون… لا يكلف الله نفسًا إلا وسعها… ربنا لا تؤاخذنا إن نسينا أو أخطأنا… واعف عنا واغفر لنا وارحمنا أنت مولانا.",
+         fr: "Le Messager a cru en ce qui a été révélé de son Seigneur, et les croyants aussi… Allah n'impose à aucune âme plus que sa capacité… Notre Seigneur, ne nous tiens pas rigueur si nous oublions ou si nous nous trompons… Pardonne-nous, fais-nous miséricorde, Tu es notre Maître.",
+         es: "El Mensajero creyó en lo que se le reveló de su Señor, y los creyentes también… Alá no impone a nadie más de lo que puede… Señor nuestro, no nos tomes en cuenta si olvidamos o erramos… Perdónanos, ten misericordia de nosotros, Tú eres nuestro Dueño." },
+    f: { mr: "रात्री वाचल्यास त्या दोन आयती पुरेशा आहेत.",
+         ar: "من قرأهما في ليلة كفتاه.",
+         fr: "Celui qui les récite dans la nuit, elles lui suffisent.",
+         es: "A quien las recite por la noche, le bastan." }
+  },
+
+  "Sone ki dua": {
+    t: { mr: "झोपण्याची दुआ", ar: "دعاء النوم", fr: "Doua avant de dormir", es: "Dua antes de dormir" },
+    m: { mr: "हे अल्लाह! तुझ्याच नावाने मी मरतो (सुततो) आणि जगतो (जागतो).",
+         ar: "باسمك اللهم أموت وأحيا.",
+         fr: "En Ton nom, ô Allah, je meurs (je dors) et je vis (je me réveille).",
+         es: "En Tu nombre, oh Alá, muero (duermo) y vivo (despierto)." },
+    f: { mr: "झोपेला मृत्यूचा भाऊ म्हटले आहे.",
+         ar: "النوم أخو الموت.",
+         fr: "Le sommeil est le frère de la mort.",
+         es: "El sueño es el hermano de la muerte." }
+  },
+
+  "Tasbeeh-e-Fatima RA": {
+    t: { mr: "तस्बीह-ए-फातिमा (र.अ.)", ar: "تسبيح فاطمة رضي الله عنها", fr: "Le tasbih de Fatima", es: "El tasbih de Fátima" },
+    m: { mr: "अल्लाह पवित्र आहे (३३ वेळा). सर्व स्तुती अल्लाहसाठी आहे (३३ वेळा). अल्लाह सर्वांत मोठा आहे (३४ वेळा).",
+         ar: "سبحان الله (٣٣)، الحمد لله (٣٣)، الله أكبر (٣٤).",
+         fr: "Gloire à Allah (33), louange à Allah (33), Allah est le plus Grand (34).",
+         es: "Gloria a Alá (33), alabanza a Alá (33), Alá es el más Grande (34)." },
+    f: { mr: "फातिमा र.अ. यांनी सेवक मागितला तेव्हा नबी ﷺ यांनी हे सेवकापेक्षा उत्तम असल्याचे सांगितले.",
+         ar: "لما طلبت فاطمة خادمًا أخبرها النبي ﷺ أن هذا خير من خادم.",
+         fr: "Fatima ayant demandé un serviteur, le Prophète ﷺ lui dit que cela valait mieux qu'un serviteur.",
+         es: "Fátima pidió un sirviente y el Profeta ﷺ le dijo que esto era mejor que un sirviente." }
+  },
+
+  "Khana shuru karne se pehle": {
+    t: { mr: "जेवण सुरू करण्यापूर्वी", ar: "دعاء قبل الطعام", fr: "Avant de manger", es: "Antes de comer" },
+    m: { mr: "अल्लाहच्या नावाने (सुरुवात करतो).",
+         ar: "بسم الله.",
+         fr: "Au nom d'Allah.",
+         es: "En el nombre de Alá." },
+    f: { mr: "सुरुवातीला विसरल्यास आठवल्यावर म्हणा: «बिस्मिल्लाहि अव्वलहु व आखिरहु».",
+         ar: "فإن نسي في أوله فليقل: «بسم الله أوله وآخره».",
+         fr: "Si on oublie au début, on dit en s'en souvenant : « Bismillâhi awwalahu wa âkhirahu ».",
+         es: "Si se olvida al principio, al recordarlo se dice: «Bismil-lahi awwalahu wa ajirahu»." }
+  },
+
+  "Khana khane ke baad": {
+    t: { mr: "जेवणानंतर", ar: "دعاء بعد الطعام", fr: "Après le repas", es: "Después de comer" },
+    m: { mr: "सर्व स्तुती अल्लाहसाठी जिने मला हे अन्न खायला दिले आणि माझ्या शक्ती व ताकदीशिवाय ते दिले.",
+         ar: "الحمد لله الذي أطعمني هذا ورزقنيه من غير حول مني ولا قوة.",
+         fr: "Louange à Allah qui m'a nourri de ceci et me l'a accordé sans force ni puissance de ma part.",
+         es: "Alabanza a Alá que me alimentó con esto y me lo concedió sin fuerza ni poder de mi parte." },
+    f: { mr: "जो जेवणानंतर हे वाचेल, त्याची पूर्वीची पापे माफ केली जातात.",
+         ar: "من قاله بعد طعامه غُفر له ما تقدم من ذنبه.",
+         fr: "Celui qui le dit après son repas, ses péchés passés sont pardonnés.",
+         es: "A quien lo diga tras su comida, se le perdonan sus pecados anteriores." }
+  },
+
+  "Dawat dene wale ke liye dua": {
+    t: { mr: "आमंत्रण देणाऱ्यासाठी दुआ", ar: "دعاء لمن دعاك إلى الطعام", fr: "Doua pour celui qui vous a invité", es: "Dua por quien te invitó" },
+    m: { mr: "हे अल्लाह! तू जे रोजी त्यांना दिली त्यात बरकत दे, त्यांना माफ कर आणि त्यांच्यावर दया कर.",
+         ar: "اللهم بارك لهم فيما رزقتهم، واغفر لهم وارحمهم.",
+         fr: "Ô Allah, bénis ce que Tu leur as donné comme subsistance, pardonne-leur et fais-leur miséricorde.",
+         es: "Oh Alá, bendice el sustento que les has dado, perdónalos y ten misericordia de ellos." },
+    f: { mr: "ही दुआ नबी ﷺ यांनी आपल्या यजमानासाठी केली. कोणाकडे जेवण घेतल्यावर यजमानासाठी ही दुआ करा.",
+         ar: "دعا بها النبي ﷺ لمضيفه؛ فادعُ بها لمن أكلت عنده.",
+         fr: "Le Prophète ﷺ la fit pour son hôte ; faites-la pour celui chez qui vous mangez.",
+         es: "El Profeta ﷺ la hizo por su anfitrión; hazla por quien te da de comer." }
+  },
+
+  "Naya kapda pehente waqt": {
+    t: { mr: "नवीन कपडे घालताना", ar: "دعاء لبس الجديد", fr: "En mettant un vêtement neuf", es: "Al ponerse ropa nueva" },
+    m: { mr: "हे अल्लाह! तुझीच सर्व स्तुती; तूच मला हे घातले. मी तुझ्याकडे याचे भले आणि ज्या कामासाठी हे बनले त्याचे भले मागतो; आणि याच्या वाईटापासून व ज्या कामासाठी हे बनले त्याच्या वाईटापासून तुझी पनाह मागतो.",
+         ar: "اللهم لك الحمد أنت كسوتنيه، أسألك من خيره وخير ما صنع له، وأعوذ بك من شره وشر ما صنع له.",
+         fr: "Ô Allah, à Toi la louange, c'est Toi qui m'en as vêtu. Je Te demande son bien et le bien de ce pour quoi il a été fait, et je cherche refuge contre son mal et le mal de ce pour quoi il a été fait.",
+         es: "Oh Alá, a Ti la alabanza, Tú me lo has vestido. Te pido su bien y el bien de aquello para lo que fue hecho, y busco refugio de su mal y del mal de aquello para lo que fue hecho." },
+    f: { mr: "नवीन कपडा घालताना ही दुआ वाचा.",
+         ar: "تُقال عند لبس الجديد.",
+         fr: "On la récite en mettant un vêtement neuf.",
+         es: "Se recita al ponerse ropa nueva." }
+  },
+
+  "Kapda pehente waqt (aam)": {
+    t: { mr: "कपडे घालताना (सामान्य)", ar: "دعاء لبس الثوب", fr: "En mettant un vêtement (en général)", es: "Al ponerse ropa (en general)" },
+    m: { mr: "सर्व स्तुती अल्लाहसाठी जिने मला हे घातले आणि माझ्या शक्ती व ताकदीशिवाय ते दिले.",
+         ar: "الحمد لله الذي كساني هذا ورزقنيه من غير حول مني ولا قوة.",
+         fr: "Louange à Allah qui m'a vêtu de ceci et me l'a accordé sans force ni puissance de ma part.",
+         es: "Alabanza a Alá que me vistió con esto y me lo concedió sin fuerza ni poder de mi parte." },
+    f: { mr: "जो कपडा घालून हे वाचेल, त्याची पूर्वीची पापे माफ केली जातात.",
+         ar: "من قاله عند لبسه غُفر له ما تقدم من ذنبه.",
+         fr: "Celui qui le dit en le mettant, ses péchés passés sont pardonnés.",
+         es: "A quien lo diga al ponérselo, se le perdonan sus pecados anteriores." }
+  },
+
+  "Aaina dekhte waqt": {
+    t: { mr: "आरसा पाहताना", ar: "دعاء النظر في المرآة", fr: "En se regardant dans le miroir", es: "Al mirarse al espejo" },
+    m: { mr: "हे अल्लाह! जसे तू माझी सूरत चांगली केली, तसेच माझे स्वभावही चांगले कर.",
+         ar: "اللهم كما حسنت خلقي فحسن خلقي.",
+         fr: "Ô Allah, comme Tu as embelli ma création, embellis aussi mon caractère.",
+         es: "Oh Alá, como embelleciste mi creación, embellece también mi carácter." },
+    f: { mr: "सूरत अल्लाहची देणगी आहे; तिच्याबद्दल कृतज्ञतेसह चांगल्या स्वभावाची दुआ केली जाते.",
+         ar: "الخلق عطاء من الله، فيُشكر عليه ويُسأل حسن الخلق.",
+         fr: "L'apparence est un don d'Allah : on L'en remercie et on demande un bon caractère.",
+         es: "La apariencia es un don de Alá: se Le agradece y se pide buen carácter." }
+  },
+
+  "Bait-ul-khala jane se pehle": {
+    t: { mr: "शौचालयात जाण्यापूर्वी", ar: "دعاء دخول الخلاء", fr: "Avant d'entrer aux toilettes", es: "Antes de entrar al baño" },
+    m: { mr: "हे अल्लाह! मी अपवित्र जिन्नांपासून (नर व मादी) तुझी पनाह मागतो.",
+         ar: "اللهم إني أعوذ بك من الخبث والخبائث.",
+         fr: "Ô Allah, je cherche refuge auprès de Toi contre les démons mâles et femelles.",
+         es: "Oh Alá, busco refugio en Ti de los demonios machos y hembras." },
+    f: { mr: "शौचालयात प्रवेशापूर्वी (किंवा उघड्या जागी सतर सोडण्यापूर्वी) वाचली जाते.",
+         ar: "تُقال قبل دخول الخلاء (أو قبل كشف العورة في الخلاء).",
+         fr: "On la récite avant d'entrer aux toilettes (ou avant de découvrir sa nudité en plein air).",
+         es: "Se recita antes de entrar al baño (o antes de descubrirse en campo abierto)." }
+  },
+
+  "Bait-ul-khala se nikal kar": {
+    t: { mr: "शौचालयातून बाहेर पडल्यावर", ar: "دعاء الخروج من الخلاء", fr: "En sortant des toilettes", es: "Al salir del baño" },
+    m: { mr: "(हे अल्लाह!) मी तुझी क्षमा मागतो.",
+         ar: "غفرانك.",
+         fr: "Ton pardon (ô Allah).",
+         es: "Tu perdón (oh Alá)." },
+    f: { mr: "शौचालयातून बाहेर पडल्यावर हे म्हटले जाते.",
+         ar: "يُقال عند الخروج من الخلاء.",
+         fr: "On le dit en sortant des toilettes.",
+         es: "Se dice al salir del baño." }
+  },
+
+  "Chheenk aane par": {
+    t: { mr: "शिंका आल्यावर", ar: "عند العطاس", fr: "En éternuant", es: "Al estornudar" },
+    m: { mr: "सर्व स्तुती अल्लाहसाठी.",
+         ar: "الحمد لله.",
+         fr: "Louange à Allah.",
+         es: "Alabanza a Alá." },
+    f: { mr: "ज्याला शिंका येईल त्याने «अलहम्दुलिल्लाह» म्हणावे, ऐकणाऱ्याने «यरहमुकल्लाह» म्हणावे आणि शिंका देणाऱ्याने उत्तरात «यहदीकुमुल्लाहु व युस्लिहु बालकुम» म्हणावे.",
+         ar: "يقول العاطس: الحمد لله، ويقول السامع: يرحمك الله، فيرد: يهديكم الله ويصلح بالكم.",
+         fr: "Celui qui éternue dit « Alhamdulillah », celui qui l'entend dit « Yarhamukallah », et l'éternueur répond « Yahdîkumullâhu wa yuslihu bâlakum ».",
+         es: "Quien estornuda dice «Alhamdulil-lah», quien lo oye dice «Yarhamukal-lah», y el que estornudó responde «Yahdikumul-lahu wa yuslihu balakum»." }
+  }
+});
+
+if (window.FQDuaLangApply) window.FQDuaLangApply();
