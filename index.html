@@ -567,6 +567,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
     <div id="toast" class="toast">Message</div>
 
     <script src="course.js"></script>
+    <script src="course-lang.js"></script>
     <script src="sunnat.js"></script>
     <script>
         const ADMIN_PASSWORD = "Fauzan8087";
@@ -893,7 +894,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                     card.innerHTML = `
                         <div class="arabic" onclick="speakText('${word.a}', 'ar', this, '${word.m}')">${word.a}</div>
                         <div class="roman">${word.r}</div>
-                        <div class="urdu ${lang==='u'?'':'lt'}" onclick="speakText('${word.u}', 'ur', this)">${pick(word,'u')}</div>
+                        <div class="urdu ${lang==='u'?'':'lt'}" onclick="speakText('${pick(word,'u')}', 'ur', this)">${pick(word,'u')}</div>
                         <div class="mashq-box"><b>Mashq:</b> <span class="mashq-ar" style="cursor:pointer" onclick="QSpeech.speak('${word.m}', { lang: 'ar', btn: this })">${word.m} 🔊</span><div style="margin-top:4px;opacity:.85;${lang==='u'?'':'direction:ltr;text-align:right;'}">${pick(word,'t')}</div></div>
                         ${ayatBoxHTML(word)}
                     `;

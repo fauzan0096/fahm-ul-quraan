@@ -92,10 +92,11 @@
 // v99: Aaj ki Ayat + Sunnat ka 4-zubaan tarjuma (daily-lang.js) — app ka ek hi language button
 //      (اردو / Roman / हिंदी / English) ab in dono ka tarjuma bhi badalta hai (pehle sirf heading badalti thi).
 //      daily-lang.js core shell mein hai, is liye offline bhi chalta hai.
-// v101: 8 zubaanein — UI ke saare lafz (button, heading, label, toast, login errors) nayi 4 zubaanoN
-//       (मराठी / العربية / Français / Español) mein. Jahan tarjuma na ho wahan ENGLISH — kahin bhi Urdu
-//       par gir kar adhoora nahi chhodta. <html lang> bhi zubaan ke hisaab se set hota hai.
-const CACHE_NAME = 'quran-ustad-auto-v101';
+// v102: COURSE ke lafz ka tarjuma shuru — nayi file course-lang.js (Day 1-10 = 100 lafz, मराठी/العربية/
+//       Français/Español). Yeh courseData ke har lafz mein u_mr/u_ar/u_fr/u_es aur t_mr/t_ar/t_fr/t_es bhar deti
+//       hai, phir QSLang.pick() khud chuni hui zubaan uthata hai. Jo lafz baaki hai un par English.
+//       (Sath hi: card par tap karne se tarjuma ki awaaz chalti thi — ab lafz ki awaaz.)
+const CACHE_NAME = 'quran-ustad-auto-v102';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -119,6 +120,7 @@ const CORE = [
     './sounds.js',
     './icons.js',
     './course.js',
+    './course-lang.js',
     './sunnat.js',
     './daily-lang.js',
     './lang-extra.js'
@@ -143,6 +145,7 @@ const ASSETS = [
     './tools.js',
     './sounds.js',
     './course.js',
+    './course-lang.js',
     './sunnat.js',
     './daily-lang.js',
     './lang-extra.js',
