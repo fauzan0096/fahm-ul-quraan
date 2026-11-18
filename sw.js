@@ -140,7 +140,10 @@
 //       alfaz (يوم، كتاب، ماء، شمس …) yahan nahi — unka matlab wazeh hai. course-lang.js
 //       ka apply() ye sharh u_ar aur (zaroorat ho to) t_ar mein daal deta hai. Arabi lafz
 //       khud kabhi nahi badalta. Baqi 3 nayi zubaanein (mr/fr/es) par koi asar nahi.
-const CACHE_NAME = 'quran-ustad-auto-v136';
+// v137: ARABI MATLAB KA LOOK — index.html mein `html[data-mlang="ar"]` ka style: lafz ka matlab
+//       ab Amiri (Naskh) font mein RTL dikhta hai (pehle LTR + Figtree tha, jo Arabi ke liye
+//       ghalat hai). Marathi/Hindi ke liye Devanagari font. Mashq ki line bhi Arabi mein RTL.
+const CACHE_NAME = 'quran-ustad-auto-v137';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
