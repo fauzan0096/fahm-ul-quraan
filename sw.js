@@ -120,7 +120,12 @@
 //       dikhte hain (khule din chune ja sakte hain, baaki 🔒) — pehle sirf khule din hi list mein
 //       aate the, is liye "sirf 3 din ka course" lagta tha; aur Bazm-e-Fahm ke lafz ab har baar
 //       taza progress se bante hain (admin ko poora course, pehle hamesha 3 din hi rehta tha).
-const CACHE_NAME = 'quran-ustad-auto-v131';
+// v132: GAMES MUKAMMAL — sawal/jawab/kahaniyan bhi nayi 4 zubaanoN mein: games-tr.js (naam, jagah,
+//       surah, mahina, aam jawab), games-tr-kbc.js (Maratib-e-Ilm ke 30 din × 10 sawal),
+//       games-tr-sahaba.js (Sahaba ke sawal aur naam), games-tr-stories.js (50 sahabi ki kahani) aur
+//       games-tr-emoji.js (Emoji quiz). Ab Games page par kuch bhi untranslated nahi — jo lafz
+//       kisi file mein na ho wahan English (kabhi khaali/undefined nahi).
+const CACHE_NAME = 'quran-ustad-auto-v132';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -158,6 +163,11 @@ const ASSETS = [
     './tajweed.html',
     './games.html',
     './games-lang.js',
+    './games-tr.js',
+    './games-tr-kbc.js',
+    './games-tr-sahaba.js',
+    './games-tr-stories.js',
+    './games-tr-emoji.js',
     './games-extra.js',
     './asma.html',
     './asma-lang.js',

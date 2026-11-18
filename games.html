@@ -10,6 +10,11 @@
     <script src="app.js"></script>
     <script src="lang-extra.js"></script>
     <script src="games-lang.js"></script>
+    <script src="games-tr.js"></script>
+    <script src="games-tr-kbc.js"></script>
+    <script src="games-tr-sahaba.js"></script>
+    <script src="games-tr-stories.js"></script>
+    <script src="games-tr-emoji.js"></script>
     <script src="games-extra.js"></script>
     <meta name="theme-color" content="#0F4C3A">
     <script src="sounds.js" defer></script>
@@ -388,7 +393,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
                 audio.play().then(() => {
                     if (btn) { btn.textContent = '🔇 Nasheed Off'; btn.classList.add('on'); }
                 }).catch(() => {
-                    alert('Nasheed file nahi mili.\n"nature-ambience.mp3" file games.html ke saath isi folder mein rakhein.');
+                    alert(GU('nash_miss'));
                 });
             } else {
                 audio.pause();

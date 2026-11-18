@@ -245,6 +245,12 @@
       fr: "Arrêter ici ? Vous recevrez les XP gagnés.", es: "¿Detenerse aquí? Recibirás los XP ganados."
     },
     shukriya: { mr: "धन्यवाद 🤲", ar: "شكرًا 🤲", fr: "Merci 🤲", es: "Gracias 🤲" },
+    nash_miss: {
+      mr: "नशीदची फाइल सापडली नाही.\n«nature-ambience.mp3» फाइल games.html सोबत याच फोल्डरमध्ये ठेवा.",
+      ar: "لم يُعثر على ملف النشيد.\nضع ملف «nature-ambience.mp3» في المجلد نفسه مع games.html.",
+      fr: "Fichier du nasheed introuvable.\nPlacez « nature-ambience.mp3 » dans le même dossier que games.html.",
+      es: "No se encontró el archivo del nasheed.\nPon «nature-ambience.mp3» en la misma carpeta que games.html."
+    },
     cele_def_m: {
       mr: "तुम्ही जिंकलात! अल्लाह तुम्हाला अधिक ज्ञान देवो.", ar: "لقد فزت! زادك الله علمًا.",
       fr: "Vous avez gagné ! Qu'Allah vous accorde plus de savoir.", es: "¡Has ganado! Que Allah te aumente en conocimiento."
@@ -308,7 +314,20 @@
 
   window.FQGamesX = { ui: XUI, mem: XMEM };
 
-  var oGU = window.GU, oGM = window.GM;
+  var oGU = window.GU, oGM = window.GM, oGT = window.GT;
+  function XT(s) { var T = window.FQ_GAMES_TR; return T ? T[s] : null; }
+
+  /* Sawal / jawab / kahani: pehle FQ_GAMES_TR (games-tr*.js) mein dekho,
+     na mile to purana GT() (Urdu/Hindi/English) — nayi zubaan par English. */
+  window.GT = function (s) {
+    var l = cur();
+    if (NEW[l]) {
+      var e = XT(s);
+      if (e && e[l] != null) return e[l];
+      if (e && e.en != null) return e.en;
+    }
+    return oGT ? oGT(s) : s;
+  };
 
   window.GU = function (k, v) {
     var e = XUI[k];
