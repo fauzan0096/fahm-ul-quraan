@@ -111,10 +111,9 @@
 //       Hajj) chaar nayi zubaanoN mein poore hain.
 // v112: ARKAN — arkan.js ke chhote labels (✅ Read / ☐ Mark this section as read / progress / pichla-agla /
 //       wapas / theme) aur hero ki "Aap ki pesh raft" line bhi nayi 4 zubaanoN mein (ARKAN_UI).
-// v129: NAHW-SARF — page ke labels (button, tabs, exam, gardaan ke sarlawh) ab मराठी / العربية /
-//       Français / Español mein; nayi zubaan par course ka matn Urdu par nahi girta, English par girta
-//       hai (jab tak uska tarjuma nahi aata).
-const CACHE_NAME = 'quran-ustad-auto-v129';
+// v130: NAHW-SARF — naya grammar-lang.js: 30 din ke unwan aur maqsad मराठी / العربية / Français /
+//       Español mein (baaqi matn English par girta hai, Urdu par nahi).
+const CACHE_NAME = 'quran-ustad-auto-v130';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -191,6 +190,7 @@ const ASSETS = [
     './arkan-extra.js',
     './arkan-i18n.js',
     './grammar-course.js',
+    './grammar-lang.js',
     './icons.js',
     // purane chhote Arkan pages (root par) — ab inke paths bhi theek hain
     './kalima.html',

@@ -21,6 +21,7 @@
   <script src="sounds.js"></script>
   <script src="tools.js" defer></script>
   <script src="grammar-course.js"></script>
+  <script src="grammar-lang.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Devanagari:wght@400;500;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="theme.css">
   <style>
@@ -334,6 +335,23 @@
       letters: ['A', 'B', 'C', 'D'], right: 'Respuesta correcta',
       num: { s: 'Singular', d: 'Dual', p: 'Plural' }, gen: { m: 'Masc.', f: 'Fem.' }, per: { 3: 'Ausente (3.ª)', 2: 'Presente (2.ª)', 1: 'Hablante (1.ª)' }, perN: { 3: 'Gaib (3.ª persona)', 2: 'Hadir (2.ª persona)', 1: 'Mutakallim (1.ª persona)' }
     };
+    // Nayi 4 zubaanein: grammar-lang.js ka tarjuma us din ke matn ke saath mila diya jata hai
+    // (sirf jo hisse wahan hain — title/goal; baaqi English par girta hai, Urdu par nahi).
+    (function () {
+      var X = window.GRAMMAR_LANG; if (!X) return;
+      var L = ['mr', 'ar', 'fr', 'es'];
+      window.GRAMMAR_COURSE.forEach(function (d) {
+        var x = X[d.day]; if (!x) return;
+        L.forEach(function (g) {
+          if (!x[g]) return;
+          var en = d.t.en || {}, o = {};
+          for (var k in en) o[k] = en[k];
+          if (x[g].title) o.title = x[g].title;
+          if (x[g].goal) o.goal = x[g].goal;
+          d.t[g] = o;
+        });
+      });
+    })();
     const lang = () => { try { const v = QSLang.get(); return UI[v] ? v : (v && v !== 'u' ? 'en' : 'u'); } catch (e) { return 'u'; } };
     const T = () => UI[lang()];
 
