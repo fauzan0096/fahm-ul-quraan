@@ -46,9 +46,13 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 **Seerat (mukammal):** `seerat-lang.js` — Seerat-e-Nabawi ﷺ (**30 din + Shamail ke 4 din, kul 34**) ka tarjuma मराठी / العربية / Français / Español mein. Har din ki entry wohi tarteeb rakhti hai jo `seerat.js` ke `SEERAT_TR` mein hai: `[0]` title, `[1]` jagah, `[2]` waqt, `[3]` maqsad, `[4]` ghaur-o-fikr, `[5]` aham nukat, `[6]` hisse `[h,p,src]`, `[7]` imtihan `[sawal,[options]]`, `[8]` timeline `[saal,waqia]`, `[9]` hawale, `[10]` hadith `[who,ur,ref]`. `seerat.js` shuru hote waqt ise `SEERAT_TR` / `SEERAT_TOP` / `SEERAT_UI` mein mila deta hai. Arabi matn (Quran/hadith) har zubaan mein waisa hi rehta hai — sirf uska tarjuma badalta hai. Nayi zubaan jodni ho to bas `seerat-lang.js` mein uski entries.
 
+**Asma-ul-Husna (mukammal):** `asma-lang.js` — **99 naamon** ka matlab मराठी / العربية / Français / Español mein, tarteeb se (pehla naam = pehli entry). `asma.html` ka `mean()` pehle wahan dekhta hai; na mile to English. Naam ke Arabi alfaaz **wahi** rehte hain — sirf matlab badalta hai. Search bhi nayi zubaan ke lafz par chalti hai, aur Arbi matlab RTL (Naskh font) mein dikhta hai.
+
 **Tajweed (mukammal):** `tajweed-lang.js` — Tajweed ke **38 qawaid** ka naam, wazahat aur misaalein मराठी / العربية / Français / Español mein. Entry qaida ke **number** se judi hai (`tajweedData` ki tarteeb), aur `tajweed.html` ke `tTitle/tText/tEx` pehle wahan dekhte hain; jo na mile wahan English. Search bhi nayi zubaanoN ke lafz par chalta hai, aur Arabic tarjuma RTL mein dikhta hai. Quran ki ayat ka Arabi matn waisa hi rehta hai — sirf uska tarjuma badalta hai.
 
-**Tarjuma ab har jagah mukammal hai:** UI + course ke 900 lafz + 138 duaein + Arkan ke paanchon page + Seerat ke 34 din + Tajweed ke 38 qawaid — sab aath zubaanoN mein.
+**Nahw-Sarf (chal raha hai):** `grammar-lang.js` — 30 din ke **unwan aur maqsad** chaar zubaanoN mein (page ke button/labels aur `arabic-grammar.html` ke andar hi). Ab tak `grammar-lang.js` mein sirf title/goal hain; **sabaq ka poora matn (sections, keyFacts, reflection, quiz)** abhi English par girta hai — Urdu par nahi, taake samajh mein aaye. Woh aage jodna ho to bas `grammar-lang.js` mein us din ki `sections` waghairah likh dein.
+
+**Tarjuma ab yahan mukammal hai:** UI + course ke 900 lafz + 138 duaein + Arkan ke paanchon page + Seerat ke 34 din + Tajweed ke 38 qawaid + Asma ke 99 naam.
 
 **Course ke lafz (mukammal):** `course-lang.js` — **Day 1–90, saare 900 lafz** ka matlab + mashq ki tafseel chaar zubaanoN mein (मराठी · العربية · Français · Español). Har entry `"عربی لفظ"` se judi hai; yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Kisi lafz ka tarjuma theek karna ho to sirf usi entry ko badlein — baaki par asar nahi. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
 
