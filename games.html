@@ -393,7 +393,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
                 audio.play().then(() => {
                     if (btn) { btn.textContent = '🔇 Nasheed Off'; btn.classList.add('on'); }
                 }).catch(() => {
-                    alert(GU('nash_miss'));
+                    alert(window.FQX ? FQX('nash_miss', 'Nasheed file nahi mili.\n"nature-ambience.mp3" file games.html ke saath isi folder mein rakhein.') : 'Nasheed file nahi mili.\n"nature-ambience.mp3" file games.html ke saath isi folder mein rakhein.');
                 });
             } else {
                 audio.pause();

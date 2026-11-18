@@ -251,6 +251,22 @@
       fr: "Fichier du nasheed introuvable.\nPlacez « nature-ambience.mp3 » dans le même dossier que games.html.",
       es: "No se encontró el archivo del nasheed.\nPon «nature-ambience.mp3» en la misma carpeta que games.html."
     },
+    stop_pill: { mr: "⏹ थांबा", ar: "⏹ إيقاف", fr: "⏹ Arrêter", es: "⏹ Parar" },
+    nash_err: { mr: "नशीद चालली नाही: ", ar: "لم يعمل النشيد: ", fr: "Le nasheed n’a pas démarré : ", es: "El nasheed no se reprodujo: " },
+    nash_blocked: {
+      mr: "फोनने थांबवले, बटण पुन्हा दाबा", ar: "الهاتف منعه، اضغط الزر مرة أخرى",
+      fr: "le téléphone l’a bloqué, appuyez encore sur le bouton", es: "el teléfono lo bloqueó, pulsa el botón otra vez"
+    },
+    nash_nofile: {
+      mr: "«nature-ambience.mp3» फाइल सापडली नाही किंवा उघडत नाही", ar: "ملف «nature-ambience.mp3» غير موجود أو لا يُفتح",
+      fr: "« nature-ambience.mp3 » introuvable ou ne s’ouvre pas", es: "«nature-ambience.mp3» no se encuentra o no se abre"
+    },
+    nash_nofile2: {
+      mr: "«nature-ambience.mp3» फाइल सापडली नाही (ती games.html सोबत रेपोमध्ये असावी)",
+      ar: "ملف «nature-ambience.mp3» غير موجود (يجب أن يكون في المستودع مع games.html)",
+      fr: "« nature-ambience.mp3 » introuvable (il doit être dans le dépôt avec games.html)",
+      es: "«nature-ambience.mp3» no se encuentra (debe estar en el repositorio con games.html)"
+    },
     cele_def_m: {
       mr: "तुम्ही जिंकलात! अल्लाह तुम्हाला अधिक ज्ञान देवो.", ar: "لقد فزت! زادك الله علمًا.",
       fr: "Vous avez gagné ! Qu'Allah vous accorde plus de savoir.", es: "¡Has ganado! Que Allah te aumente en conocimiento."
@@ -313,6 +329,16 @@
   };
 
   window.FQGamesX = { ui: XUI, mem: XMEM };
+
+  /* FQX(k, roman) — woh jumle jo purani 4 zubaanoN mein pehle se Roman hain (jaise nasheed ki
+     ghalati). u/ro/hi/en par bilkul wahi Roman matn, nayi 4 par tarjuma. */
+  window.FQX = function (k, d) {
+    try {
+      var l = cur(), e = XUI[k];
+      if (e) { var s = e[l]; if (s != null) return s; if (NEW[l] && e.en != null) return e.en; }
+    } catch (err) {}
+    return d;
+  };
 
   var oGU = window.GU, oGM = window.GM, oGT = window.GT;
   function XT(s) { var T = window.FQ_GAMES_TR; return T ? T[s] : null; }

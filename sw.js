@@ -125,7 +125,9 @@
 //       games-tr-sahaba.js (Sahaba ke sawal aur naam), games-tr-stories.js (50 sahabi ki kahani) aur
 //       games-tr-emoji.js (Emoji quiz). Ab Games page par kuch bhi untranslated nahi — jo lafz
 //       kisi file mein na ho wahan English (kabhi khaali/undefined nahi).
-const CACHE_NAME = 'quran-ustad-auto-v132';
+// v133: GAMES — nasheed ke paigham (file na mile / phone ne block kiya) aur "⏹ Roko" pill bhi nayi
+//       4 zubaanoN mein (games-extra.js ka naya FQX; purani 4 par bilkul wahi Roman matn).
+const CACHE_NAME = 'quran-ustad-auto-v133';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

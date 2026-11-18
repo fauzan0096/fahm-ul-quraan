@@ -424,6 +424,8 @@
     var synth = window.speechSynthesis;
     var current = { btn: null, token: 0 };
     var pill = null, watch = null, audio = null;
+    // Zubaan: nayi 4 zubaanoN par games-extra.js ka FQX, warna wahi Roman matn (pehle jaisa)
+    function T(k, d) { try { return (window.FQX ? FQX(k, d) : d) || d; } catch (e) { return d; } }
     // Bahut chhoti khaali awaaz — iPhone par audio "unlock" karne ke liye (tap ke andar chalani padti hai)
     var SILENT = 'data:wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
 
@@ -442,7 +444,7 @@
         if (pill) return pill;
         pill = document.createElement('button');
         pill.className = 'qs-pill';
-        pill.textContent = '⏹ Roko';
+        pill.textContent = T('stop_pill', '⏹ Roko');
         pill.onclick = stop;
         document.body.appendChild(pill);
         return pill;
@@ -791,6 +793,8 @@
     // 🎵 NASHEED
     // ==========================================================
     let nasheedWanted = false;
+    // Zubaan: nayi 4 zubaanoN par games-extra.js ka FQX, warna wahi Roman matn (pehle jaisa)
+    function TN(k, d) { try { return (window.FQX ? FQX(k, d) : d) || d; } catch (e) { return d; } }
     function getAudio() {
         let a = document.getElementById('kbcNasheed');
         if (!a) {
@@ -839,13 +843,13 @@
         const fail = function (why) {
             nasheedWanted = false;
             syncNasheedBtn();
-            toast('Nasheed nahi chali: ' + why);
+            toast(TN('nash_err', 'Nasheed nahi chali: ') + why);
         };
         const start = function () {
             const p = a.play();
             if (p && p.then) p.then(syncNasheedBtn).catch(function (e) {
-                if (e && e.name === 'NotAllowedError') fail('phone ne block kiya, button dobara dabayein');
-                else fail('"nature-ambience.mp3" file nahi mili ya khul nahi rahi');
+                if (e && e.name === 'NotAllowedError') fail(TN('nash_blocked', 'phone ne block kiya, button dobara dabayein'));
+                else fail(TN('nash_nofile', '"nature-ambience.mp3" file nahi mili ya khul nahi rahi'));
             });
             else syncNasheedBtn();
         };
@@ -857,7 +861,7 @@
                 a.src = 'nature-ambience.mp3?v=' + Date.now();
                 a.load();
                 start();
-            } else fail('"nature-ambience.mp3" file nahi mili (repo mein games.html ke saath honi chahiye)');
+            } else fail(TN('nash_nofile2', '"nature-ambience.mp3" file nahi mili (repo mein games.html ke saath honi chahiye)'));
         };
         if (a.readyState === 0) a.load();
         start();
