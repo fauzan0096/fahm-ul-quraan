@@ -20,6 +20,10 @@
    ========================================================== */
 window.SEERAT_LANG = {
 
+  /* Jin dinon ki tarteeb galti se badal gayi ho (sections ke baad hadith/refs/quiz), unhein
+     seerat.js theek kar deta hai — yahan sirf unke number likhein. */
+  fixOrder: [31],
+
   /* ── sab se upar ki do lines (list ke sarwara mein) ── */
   top: {
     mr: {

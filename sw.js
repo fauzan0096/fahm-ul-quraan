@@ -111,10 +111,8 @@
 //       Hajj) chaar nayi zubaanoN mein poore hain.
 // v112: ARKAN — arkan.js ke chhote labels (✅ Read / ☐ Mark this section as read / progress / pichla-agla /
 //       wapas / theme) aur hero ki "Aap ki pesh raft" line bhi nayi 4 zubaanoN mein (ARKAN_UI).
-// v124: SEERAT MUKAMMAL — saare 34 din (Seerat 1-30 + Shamail 31-34) मराठी / العربية / Français / Español
-//       mein. Har din ka poora tarjuma: maqsad, hisse, aham nukat, timeline, hawale, imtihan aur Shamail
-//       ke dinon ki saari sahih ahadith (matn waisa hi, sirf tarjuma).
-const CACHE_NAME = 'quran-ustad-auto-v124';
+// v125: SEERAT — Day 31 ke tarjume ki tarteeb theek (quiz/timeline/refs/hadith apni jagah).
+const CACHE_NAME = 'quran-ustad-auto-v125';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

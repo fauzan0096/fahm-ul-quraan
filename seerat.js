@@ -3338,6 +3338,18 @@ window.SEERAT_UI = {"u": {"daysDone": "دن مکمل", "dayOf": "دن", "keyFact
         TR[d] = TR[d] || {};
         for (lg in X.days[d]) { if (X.days[d][lg]) TR[d][lg] = X.days[d][lg]; }
     }
+    /* Kuch dinon ki tarteeb galti se aisi likhi gayi thi: sections ke baad hadith, phir refs, phir
+       quiz. Reader ye tarteeb maangta hai — [7] quiz, [8] timeline, [9] refs, [10] hadith — is liye
+       unhein yahan theek kiya jata hai (SEERAT_LANG.fixOrder mein un dinon ke number hain). */
+    (X.fixOrder || []).forEach(function (n) {
+        var t = TR[n]; if (!t) return;
+        ['mr', 'ar', 'fr', 'es'].forEach(function (g) {
+            var a = t[g];
+            if (!a || a.length < 11) return;
+            if (a[10] && a[10].length) return;   // pehle se theek hai
+            t[g] = [a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[9], [], a[8], a[7]];
+        });
+    });
 })();
 
 /* ───────────── Reader (UI) ───────────── */
