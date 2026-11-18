@@ -56,6 +56,9 @@
             .urdu-text.ltr, .example-ur.ltr { direction: ltr; text-align: left; font-family: inherit; line-height: 1.8; }
         .example-ref { font-size: 13px; opacity: .8; margin: 4px 0; direction: ltr; }
         .hawala { margin-top: 12px; font-size: 13px; opacity: .85; padding: 8px 10px; border-top: 1px dashed rgba(128,128,128,.4); direction: ltr; }
+        /* Arbi zubaan: wazahat bhi Naskh mein (Nastaliq Arbi ke liye theek nahi) */
+        html[lang="ar"] .urdu-text, html[lang="ar"] .example-ur { font-family: 'Amiri', 'Noto Naskh Arabic', serif; direction: rtl; text-align: right; line-height: 2; }
+        html[lang="ar"] .card-title { font-family: 'Amiri', 'Noto Naskh Arabic', serif; font-size: 18px; }
     </style>
     <link rel="stylesheet" href="theme.css">
 <style>.qi.qi-h{font-size:1.15em;color:#fff;--qi-a:#E3C36E;margin-inline-end:.3em;vertical-align:-.2em}.qi.qi-hb{font-size:26px;color:#fff;--qi-a:#E3C36E}</style>
@@ -180,6 +183,8 @@
             const container = document.getElementById('tajweedContainer');
             container.innerHTML = '';
             const l = QSLang.get(), L = TL[l] || TL.en, ft = filterText.toLowerCase();
+            // <html lang> — Arbi ke liye Naskh font aur RTL (CSS neeche)
+            document.documentElement.setAttribute('lang', { u: 'ur', ro: 'ur-Latn', hi: 'hi', en: 'en', mr: 'mr', ar: 'ar', fr: 'fr', es: 'es' }[l] || 'en');
             const filtered = tajweedData.filter(item => {
                 const x = TX(item) || {};
                 const extra = [];
