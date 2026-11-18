@@ -4686,7 +4686,391 @@ window.SEERAT_LANG = {
         [
           ["627", "La vuelta de la expedición de los Banu al-Mustaliq"],
           ["627", "La difusión de la calumnia"],
-          ["627", "La revelación de la sura an-Nur"]
+          ["627", "La révélation de la sura an-Nur"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 26 — Fath-e-Makkah ═══════════════ */
+    26: {
+      mr: [
+        "मक्केचा विजय — महान विजय, सर्वसाधारण माफी",
+        "मक्का",
+        "रमजान हिजरी ८ (जानेवारी इ.स. ६३०) — प्रयाण १० रमजान; मक्केत १९ दिवस मुक्काम",
+        "मक्केच्या विजयाची घटना, रक्त न सांडता विजय, सर्वसाधारण माफी आणि काबाची शुद्धी समजून घेणे.",
+        "ज्यांनी छळ केला त्यांनाच माफ केले. हे अल्लाह! आम्हालाही माफ करण्याची व नम्रतेची तौफीक दे. आमीन.",
+        [
+          "हिजरी ८, रमजान",
+          "सुमारे १०,००० सैन्य",
+          "जवळपास रक्तहीन विजय",
+          "३६० मूर्ती पाडल्या",
+          "सर्वसाधारण माफी",
+          "मक्केत १९ दिवस मुक्काम"
+        ],
+        [
+          ["📜 करारभंग",
+           "बनू बक्र (कुरैशचे मित्र) यांनी खुझाआ (नबी ﷺ यांचे मित्र) यांच्यावर हल्ला केला आणि कुरैशने त्यांना मदत केली; अबू सुफियान करार नूतनीकरणासाठी आला पण अयशस्वी झाला (सीरत, इब्न इशाक).",
+           ""],
+          ["🤫 गुप्त तयारी",
+           "सुमारे १०,००० सैन्य (सहीह बुखारी ४२७६). हातिब बिन अबी बल्तआ (र.अ.) यांनी कुरैशला पत्र लिहिले; वहीद्वारे बातमी मिळाली आणि पत्र पकडले गेले; कारण: नातेवाइकांचे रक्षण. उमर (र.अ.) यांनी ठार मारण्याची परवानगी मागितली; नबी ﷺ म्हणाले: तो बद्री आहे, कदाचित अल्लाहने बद्री लोकांकडे पाहून सांगितले असेल की जे पाहिजे ते करा, मी तुम्हाला माफ केले (सहीह बुखारी ३००७, ४२७४; अल-मुम्तहिना ६०:१).",
+           ""],
+          ["🚶 प्रयाण",
+           "रमजानमध्ये रोज्याच्या अवस्थेत निघाले आणि कदीद येथे इफ्तार केला (सहीह बुखारी ४२७५–४२७६). मर्रुज-झहरानमध्ये आग पेटवली; अबू सुफियान, हकीम बिन हिझाम व बदील बिन वरका आले; अब्बास (र.अ.) त्यांना घेऊन आले; अबू सुफियान मुस्लिम झाले (सहीह बुखारी ४२८०, उर्वा; तपशील सीरत).",
+           ""],
+          ["🏳️ मक्केत प्रवेश",
+           "स्वारीवर सूरह अल-फतहची तिलावत (सहीह बुखारी ४२८१). डोके झुकवून प्रवेश केल्याची गोष्ट सीरत (इब्न इशाक) मधून आहे. घोषणा: जो अबू सुफियानच्या घरी जाईल, किंवा शस्त्रे टाकून देईल, किंवा दरवाजा बंद करेल तो सुरक्षित आहे (सहीह मुस्लिम १७८०). खालिद (र.अ.) यांच्या तुकडीची खंदमामध्ये चकमक झाली: सुमारे २ मुस्लिम व १२–१३ मुश्रिक ठार झाले (अर-रहीकुल-मख्तूम). मक्का जबरदस्तीने जिंकला गेला, नंतर अमान दिली (झादुल-मआद); म्हणून «पूर्णपणे रक्तहीन» ऐवजी «जवळपास रक्तहीन» म्हणणे योग्य.",
+           ""],
+          ["🕋 काबाची शुद्धी",
+           "३६० मूर्ती; नबी ﷺ लाकडाने त्या पाडत जात आणि «जाअल-हक्कु व झहकल-बातिल» वाचत (अल-इसरा १७:८१; सबा ३४:४९) (सहीह बुखारी २४७८, ४२८७). चित्रे पुसल्यावर काबाच्या आत नमाज़ पढली (सहीह बुखारी ३३५१, ३९७). बिलाल (र.अ.) यांनी काबाच्या छतावर अजान दिल्याची गोष्ट सीरत (इब्न इशाक) ची रिवायत आहे, सहीह सनदेने सिद्ध नाही.",
+           ""],
+          ["🤲 सर्वसाधारण माफी",
+           "सर्वसाधारण अमानची घोषणा (सहीह मुस्लिम १७८०); खुतबा: मक्केला अल्लाहने हरम केले, लोकांनी नाही (सहीह बुखारी १०४, १८३२). «इजहबू फइन्नकुमुत-तुलकाआ» आणि यूसुफ १२:९२ चा उल्लेख सीरत/बैहकीची रिवायत आहे, सनद जईफ. अपवाद: इब्न खतल काबाच्या पडद्यांना चिकटून होता, तरीही ठार झाला (सहीह बुखारी १८४६, ३०४४). सफवान व इक्रमा (र.अ.) यांची माफी सीरत/मुवत्ता (मुर्सल) मधून आहे.",
+           ""],
+          ["🎯 बोध",
+           "शत्रूंना माफ करणे हा नबी ﷺ यांचा मार्ग आहे; विजयावर नम्रता.",
+           ""]
+        ],
+        [
+          ["मक्केचा विजय कोणत्या वर्षी झाला?", ["हिजरी ६", "हिजरी ८", "हिजरी १०"]],
+          ["सैन्याची संख्या?", ["१४००", "सुमारे १०,०००", "३०,०००"]],
+          ["काबात किती मूर्ती होत्या?", ["१००", "३६०", "५००"]]
+        ],
+        [
+          ["इ.स. ६३०", "करारभंग"],
+          ["इ.स. ६३०", "गुप्त तयारी"],
+          ["इ.स. ६३०", "मक्केचा विजय"]
+        ]
+      ],
+      ar: [
+        "فتح مكة — الفتح الأعظم والعفو العام",
+        "مكة",
+        "رمضان السنة الثامنة (يناير 630) — الخروج 10 رمضان؛ والإقامة بمكة 19 يومًا",
+        "فهم فتح مكة، والفتح بأقل دم، والعفو العام، وتطهير الكعبة.",
+        "عفا عمّن آذوه. اللهم ارزقنا العفو والتواضع. آمين.",
+        [
+          "السنة الثامنة، رمضان",
+          "نحو عشرة آلاف",
+          "فتح شبه بلا دم",
+          "تحطيم 360 صنمًا",
+          "العفو العام",
+          "الإقامة بمكة 19 يومًا"
+        ],
+        [
+          ["📜 نقض العهد",
+           "اعتدت بنو بكر (حلفاء قريش) على خزاعة (حلفاء النبي ﷺ) وأعانتها قريش؛ وجاء أبو سفيان لتجديد العهد ففشل (سيرة، ابن إسحاق).",
+           ""],
+          ["🤫 الاستعداد السري",
+           "جيش نحو عشرة آلاف (صحيح البخاري 4276). وكتب حاطب بن أبي بلتعة رضي الله عنه إلى قريش؛ فأخبر الوحي وأُخذ الكتاب؛ وعذره: حماية أقاربه. فاستأذن عمر رضي الله عنه في قتله؛ فقال ﷺ: إنه من أهل بدر، ولعل الله اطّلع على أهل بدر فقال: اعملوا ما شئتم فقد غفرت لكم (صحيح البخاري 3007، 4274؛ الممتحنة 60:1).",
+           ""],
+          ["🚶 الخروج",
+           "خرجوا في رمضان صائمين، ثم أفطروا بالكديد (صحيح البخاري 4275–4276). وأُوقدت النار بمرّ الظهران؛ وجاء أبو سفيان وحكيم بن حزام وبديل بن ورقاء؛ جاء بهم العباس رضي الله عنه؛ وأسلم أبو سفيان (صحيح البخاري 4280، عروة؛ والتفصيل في السيرة).",
+           ""],
+          ["🏳️ الدخول إلى مكة",
+           "يقرأ سورة الفتح على راحلته (صحيح البخاري 4281). وأما الدخول مطأطئ الرأس فمن السيرة (ابن إسحاق). والإعلان: من دخل دار أبي سفيان، أو ألقى السلاح، أو أغلق بابه فهو آمن (صحيح مسلم 1780). وكانت في مفرزة خالد رضي الله عنه ملاحقة بخندمة: قُتل نحو مسلمين و12 أو 13 مشركًا (الرحيق المختوم). وفُتحت مكة بالقوة ثم أُعطي الأمان (زاد المعاد)؛ فالأولى أن يقال: «شبه بلا دم» لا «بلا دم إطلاقًا».",
+           ""],
+          ["🕋 تطهير الكعبة",
+           "360 صنمًا؛ وكان ﷺ يطعنها بعود ويقرأ «جاء الحق وزَهَق الباطل» (الإسراء 17:81؛ سبأ 34:49) (صحيح البخاري 2478، 4287). وبعد محو الصور صلى داخل الكعبة (صحيح البخاري 3351، 397). وأذان بلال رضي الله عنه على ظهر الكعبة من روايات السيرة (ابن إسحاق) لا يثبت بسند صحيح.",
+           ""],
+          ["🤲 العفو العام",
+           "إعلان الأمان العام (صحيح مسلم 1780)؛ والخطبة: إن مكة حرّمها الله لا الناس (صحيح البخاري 104، 1832). وقول «اذهبوا فأنتم الطلقاء» وتطبيق يوسف 12:92 من روايات السيرة والبيهقي بإسناد ضعيف. والاستثناء: ابن خطل كان متعلقًا بأستار الكعبة فقُتل (صحيح البخاري 1846، 3044). وعفو صفوان وعكرمة رضي الله عنهما من السيرة والموطأ (مرسل).",
+           ""],
+          ["🎯 العبرة",
+           "العفو عن الأعداء طريقة النبي ﷺ؛ والتواضع عند الفتح.",
+           ""]
+        ],
+        [
+          ["في أي سنة كان فتح مكة؟", ["السادسة", "الثامنة", "العاشرة"]],
+          ["كم كان عدد الجيش؟", ["1400", "نحو عشرة آلاف", "30,000"]],
+          ["كم صنمًا كان في الكعبة؟", ["100", "360", "500"]]
+        ],
+        [
+          ["630", "نقض العهد"],
+          ["630", "الاستعداد السري"],
+          ["630", "فتح مكة"]
+        ]
+      ],
+      fr: [
+        "La conquête de La Mecque — une immense victoire, un pardon général",
+        "La Mecque",
+        "Ramadan de l'an 8 (janvier 630) — départ le 10 Ramadan ; séjour de 19 jours à La Mecque",
+        "Comprendre l'épisode de la conquête, la victoire presque sans effusion de sang, le pardon général et la purification de la Kaaba.",
+        "Il pardonna à ceux qui l'avaient persécuté. Ô Allah ! Accorde-nous le pardon et l'humilité. Âmîn.",
+        [
+          "An 8, Ramadan",
+          "Environ 10 000 hommes",
+          "Une victoire presque sans sang",
+          "360 idoles brisées",
+          "Le pardon général",
+          "Séjour de 19 jours à La Mecque"
+        ],
+        [
+          ["📜 La rupture du pacte",
+           "Les Banou Bakr (alliés des Quraysh) attaquèrent Khouzâ'a (alliés du Prophète ﷺ) et les Quraysh les aidèrent ; Abou Soufyân vint renouveler le pacte mais échoua (Sîra, Ibn Ishâq).",
+           ""],
+          ["🤫 Les préparatifs secrets",
+           "Une armée d'environ 10 000 hommes (Sahih al-Bukhari : 4276). Hâtib ibn Abî Balta'a (qu'Allah l'agrée) écrivit aux Quraysh ; la révélation informa et la lettre fut saisie ; son excuse : protéger ses proches. 'Umar (qu'Allah l'agrée) demanda la permission de le tuer ; le Prophète ﷺ dit : il est de ceux de Badr ; peut-être Allah a-t-Il regardé les gens de Badr et dit : faites ce que vous voulez, Je vous ai pardonné (Sahih al-Bukhari : 3007, 4274 ; al-Moumtaḥina 60:1).",
+           ""],
+          ["🚶 Le départ",
+           "Ils sortirent en Ramadan en jeûnant, puis rompirent le jeûne à Kadîd (Sahih al-Bukhari : 4275-4276). Des feux furent allumés à Marr az-Zahrân ; Abou Soufyân, Hakîm ibn Hizâm et Boudhayl ibn Warqâ' vinrent ; al-'Abbâs (qu'Allah l'agrée) les amena ; Abou Soufyân embrassa l'islam (Sahih al-Bukhari : 4280, d'après 'Ourwa ; détails dans la Sîra).",
+           ""],
+          ["🏳️ L'entrée à La Mecque",
+           "Il récitait sourate al-Fath sur sa monture (Sahih al-Bukhari : 4281). Entrer la tête baissée vient de la Sîra (Ibn Ishâq). L'annonce : quiconque entre dans la maison d'Abou Soufyân, dépose les armes ou ferme sa porte est en sécurité (Sahih Muslim : 1780). Il y eut un accrochage à Khandoma avec le détachement de Khâlid (qu'Allah l'agrée) : environ deux musulmans et 12 ou 13 polythéistes tués (Ar-Rahîq al-Makhtûm). La Mecque fut prise par la force, puis l'amnistie fut accordée (Zâd al-Ma'âd) ; mieux vaut donc dire « presque sans sang » que « sans aucune goutte de sang ».",
+           ""],
+          ["🕋 La purification de la Kaaba",
+           "360 idoles ; il ﷺ les faisait tomber d'un bâton en récitant « جاء الحق وزَهَق الباطل » (al-Isrâ' 17:81 ; Saba' 34:49) (Sahih al-Bukhari : 2478, 4287). Après l'effacement des images, il pria à l'intérieur de la Kaaba (Sahih al-Bukhari : 3351, 397). L'adhan de Bilâl (qu'Allah l'agrée) sur le toit de la Kaaba vient des récits de Sîra (Ibn Ishâq) et n'est pas établi par une chaîne authentique.",
+           ""],
+          ["🤲 Le pardon général",
+           "L'annonce de la sécurité générale (Sahih Muslim : 1780) ; le sermon : La Mecque, c'est Allah qui l'a rendue sacrée, non les hommes (Sahih al-Bukhari : 104, 1832). « Allez, vous êtes libres » et l'application de Yoûsouf 12:92 viennent de la Sîra et d'al-Bayhaqî avec une chaîne faible. Exception : Ibn Khatal s'était accroché aux voiles de la Kaaba et fut tué quand même (Sahih al-Bukhari : 1846, 3044). Le pardon de Safwân et de 'Ikrima (qu'Allah les agrée) vient de la Sîra et du Muwatta' (moursal).",
+           ""],
+          ["🎯 La leçon",
+           "Pardonner à ses ennemis est la voie du Prophète ﷺ ; l'humilité dans la victoire.",
+           ""]
+        ],
+        [
+          ["En quelle année eut lieu la conquête ?", ["An 6", "An 8", "An 10"]],
+          ["Combien d'hommes dans l'armée ?", ["1400", "Environ 10 000", "30 000"]],
+          ["Combien d'idoles dans la Kaaba ?", ["100", "360", "500"]]
+        ],
+        [
+          ["630", "La rupture du pacte"],
+          ["630", "Les préparatifs secrets"],
+          ["630", "La conquête de La Mecque"]
+        ]
+      ],
+      es: [
+        "La conquista de La Meca: una gran victoria y un perdón general",
+        "La Meca",
+        "Ramadán del año 8 (enero de 630); salida el 10 de Ramadán; estancia de 19 días en La Meca",
+        "Comprender el episodio de la conquista, la victoria casi sin derramamiento de sangre, el perdón general y la purificación de la Kaaba.",
+        "Perdonó a quienes lo habían perseguido. ¡Oh Alá! Concédenos el perdón y la humildad. Amín.",
+        [
+          "Año 8, Ramadán",
+          "Unos 10 000 hombres",
+          "Una victoria casi sin sangre",
+          "360 ídolos destruidos",
+          "El perdón general",
+          "Estancia de 19 días en La Meca"
+        ],
+        [
+          ["📜 La ruptura del pacto",
+           "Los Banu Bakr (aliados de los Quraysh) atacaron a Juzaa (aliados del Profeta ﷺ) y los Quraysh les ayudaron; Abu Sufian vino a renovar el pacto pero fracasó (Sira, Ibn Ishaq).",
+           ""],
+          ["🤫 Los preparativos secretos",
+           "Un ejército de unos 10 000 (Sahih al-Bujari: 4276). Hatib ibn Abi Baltaa (que Alá esté complacido con él) escribió a los Quraysh; la revelación informó y la carta fue interceptada; su excusa: proteger a sus parientes. Umar (que Alá esté complacido con él) pidió permiso para matarlo; el Profeta ﷺ dijo: es de los de Badr; quizá Alá miró a la gente de Badr y dijo: haced lo que queráis, os he perdonado (Sahih al-Bujari: 3007, 4274; al-Mumtahina 60:1).",
+           ""],
+          ["🚶 La salida",
+           "Salieron en Ramadán ayunando y rompieron el ayuno en Kadid (Sahih al-Bujari: 4275-4276). Se encendieron fuegos en Marr az-Zahran; vinieron Abu Sufian, Hakim ibn Hizam y Budayl ibn Warqa; al-Abbas (que Alá esté complacido con él) los trajo; Abu Sufian abrazó el islam (Sahih al-Bujari: 4280, de Urwa; detalles en la Sira).",
+           ""],
+          ["🏳️ La entrada en La Meca",
+           "Recitaba la sura al-Fath sobre su montura (Sahih al-Bujari: 4281). Entrar con la cabeza baja viene de la Sira (Ibn Ishaq). El anuncio: quien entre en la casa de Abu Sufian, deposite las armas o cierre su puerta está a salvo (Sahih Muslim: 1780). Hubo un choque en Jandama con el destacamento de Jalid (que Alá esté complacido con él): unos dos musulmanes y 12 o 13 idólatras muertos (Ar-Rahiq al-Majtum). La Meca fue tomada por la fuerza y luego se dio la amnistía (Zad al-Maad); por eso es mejor decir «casi sin sangre» que «sin ninguna gota de sangre».",
+           ""],
+          ["🕋 La purificación de la Kaaba",
+           "360 ídolos; él ﷺ los derribaba con un palo recitando «جاء الحق وزَهَق الباطل» (al-Isra 17:81; Saba 34:49) (Sahih al-Bujari: 2478, 4287). Tras borrar las imágenes, rezó dentro de la Kaaba (Sahih al-Bujari: 3351, 397). El adhan de Bilal (que Alá esté complacido con él) sobre el techo de la Kaaba viene de relatos de Sira (Ibn Ishaq) y no está probado con cadena auténtica.",
+           ""],
+          ["🤲 El perdón general",
+           "El anuncio de la seguridad general (Sahih Muslim: 1780); el sermón: La Meca la hizo sagrada Alá, no los hombres (Sahih al-Bujari: 104, 1832). «Id, sois libres» y la aplicación de Yusuf 12:92 vienen de la Sira y de al-Bayhaqi con cadena débil. Excepción: Ibn Jatal estaba colgado de los velos de la Kaaba y fue matado igualmente (Sahih al-Bujari: 1846, 3044). El perdón de Safwan y de Ikrima (que Alá esté complacido con ellos) viene de la Sira y del Muwatta (mursal).",
+           ""],
+          ["🎯 La lección",
+           "Perdonar a los enemigos es el camino del Profeta ﷺ; humildad en la victoria.",
+           ""]
+        ],
+        [
+          ["¿En qué año fue la conquista?", ["Año 6", "Año 8", "Año 10"]],
+          ["¿Cuántos hombres tenía el ejército?", ["1400", "Unos 10 000", "30 000"]],
+          ["¿Cuántos ídolos había en la Kaaba?", ["100", "360", "500"]]
+        ],
+        [
+          ["630", "La ruptura del pacto"],
+          ["630", "Los preparativos secretos"],
+          ["630", "La conquista de La Meca"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 27 — Hunain o Taif ═══════════════ */
+    27: {
+      mr: [
+        "हुनैन व तायफचे युद्ध — विजयानंतर",
+        "हुनैन, तायफ",
+        "शव्वाल हिजरी ८ (जानेवारी–फेब्रुवारी इ.स. ६३०)",
+        "हुनैनची घटना, सुरुवातीचा पराभव, नंतर विजय आणि तायफचा वेढा समजून घेणे.",
+        "अब्बास (र.अ.) यांनी हाक दिली, सहाबा परत आले आणि अल्लाहने विजय दिला. हे अल्लाह! आम्हालाही ठामपणा व निष्ठा दे. आमीन.",
+        [
+          "हिजरी ८",
+          "हवाझिन सुमारे २०,०००",
+          "सुरुवातीचा पराभव",
+          "नबी ﷺ ठाम राहिले",
+          "सुमारे ६००० कैदी",
+          "अन्सारांचा संयम"
+        ],
+        [
+          ["💪 शत्रूचे सैन्य",
+           "हवाझिन व सकीफ, सरदार मलिक बिन औफ नसरी; स्त्रिया, मुले व माल सोबत आणले (अर-रहीकुल-मख्तूम; सीरत). संख्या सुमारे २०,००० (अर-रहीकुल-मख्तूम), यात मतभेद आहे. मुस्लिम १२,००० होते (१०,००० मदिन्याचे + २,००० नवे मक्केचे) (अर-रहीकुल-मख्तूम).",
+           ""],
+          ["🏹 सुरुवातीची माघार",
+           "«संख्येवर गर्व» या बाबतीत कुरआन ९:२५–२६ उतरले. सूचना: हे वाक्य कोणत्याही विशिष्ट सहाबीला (अबू बक्र (र.अ.) इ.) जोडणे ही सीरतची जईफ रिवायत आहे. सकाळी दरीत हवाझिनच्या धनुर्धाऱ्यांचा अचानक हल्ला झाला; अनेक लोक मागे हटले (सहीह बुखारी २८६४, ४३१७). नबी ﷺ पांढऱ्या खेचरावर ठाम राहिले: «मी नबी आहे, खोटे नाही; मी अब्दुलमुत्तलिबचा मुलगा आहे» (सहीह बुखारी २८६४; सहीह मुस्लिम १७७६). अबू सुफियान बिन हारिस (र.अ.) यांनी लगाम धरली (सहीह मुस्लिम १७७६).",
+           ""],
+          ["🦁 अब्बास (र.अ.) यांची हाक",
+           "«हे अन्सारांनो! हे झाडवाल्यांनो (बैअते-रिझवान)!» ते «लब्बैक» म्हणत परत आले (सहीह मुस्लिम १७७५). नबी ﷺ यांनी माती फेकली: «चेहरे बिघडोत» (सहीह मुस्लिम १७७७). शत्रू पळाला; सुमारे ६,००० कैदी (सहीह बुखारी ४३१८–४३१९), सुमारे २४,००० उंट आणि ४०,००० हून अधिक शेळ्या (अर-रहीकुल-मख्तूम; सीरत).",
+           ""],
+          ["🕋 तायफचा वेढा",
+           "सकीफ किल्ल्यात बंदिस्त झाले; वेढा सुमारे २० दिवसांहून थोडा जास्त (अर-रहीकुल-मख्तूम). मतभेद: १० ते ४० दिवसांची मते आहेत (फतहुल-बारी). मंजनीकाचा वापर सीरतची रिवायत आहे. नबी ﷺ यांनी परतीची घोषणा केली तेव्हा सहाबांना ते आवडले नाही; पुढच्या दिवशी लढले, जखमी झाले, नंतर परतीचे सांगितले तेव्हा ते हसले (सहीह बुखारी ४३२५). दुआ: «हे अल्लाह, सकीफला हिदायत दे आणि त्यांना घेऊन ये» (तिर्मिझी ३९४२, अल्बानी: सहीह). सकीफचे शिष्टमंडळ हिजरी ९ मध्ये मुस्लिम झाले.",
+           ""],
+          ["🎁 वाटणी",
+           "जअरानामध्ये हवाझिनच्या शिष्टमंडळाची वाट पाहिली; नबी ﷺ यांनी कैदी किंवा माल यात पर्याय दिला, त्यांनी कैदी निवडले आणि सर्व परत केले गेले (सहीह बुखारी ४३१८–४३१९). नव्या मक्केकरांना (अबू सुफियान, सफवान, अक्रअ, उयैना) प्रत्येकी शंभर उंट दिले (सहीह मुस्लिम १०६०). अन्सारांना तक्रार झाली; आप ﷺ म्हणाले: «तुम्ही राजी नाही का की लोक शेळ्या-उंट घेऊन जातील आणि तुम्ही नबी ﷺ यांना आपल्यासोबत घेऊन जाल?» ते इतके रडले की दाढ्या ओल्या झाल्या (सहीह बुखारी ४३३३).",
+           ""],
+          ["🎯 बोध",
+           "संख्येवर गर्व नाही, अल्लाहवर भरवसा; दानशूरता व संयम.",
+           ""]
+        ],
+        [
+          ["शत्रूची टोळी?", ["कुरैश", "हवाझिन", "यहुदी"]],
+          ["कैद्यांची संख्या?", ["१०००", "सुमारे ६०००", "२०,०००"]],
+          ["तायफचा वेढा?", ["५ दिवस", "सुमारे २० दिवस (मते १०–४०)", "३ महिने"]]
+        ],
+        [
+          ["इ.स. ६३०", "हवाझिनची तयारी"],
+          ["इ.स. ६३०", "हुनैन"],
+          ["इ.स. ६३०", "तायफचा वेढा"],
+          ["इ.स. ६३०", "जअरानामध्ये वाटणी"]
+        ]
+      ],
+      ar: [
+        "غزوتا حنين والطائف — بعد الفتح",
+        "حنين والطائف",
+        "شوال السنة الثامنة (يناير–فبراير 630)",
+        "فهم حنين، والانكسار الأول، ثم النصر، وحصار الطائف.",
+        "نادى العباس رضي الله عنه فرجع الصحابة فمنح الله النصر. اللهم ارزقنا الثبات والوفاء. آمين.",
+        [
+          "السنة الثامنة",
+          "هوازن نحو 20,000",
+          "انهزام أولي",
+          "ثبات النبي ﷺ",
+          "نحو 6000 أسير",
+          "صبر الأنصار"
+        ],
+        [
+          ["💪 جيش العدو",
+           "هوازن وثقيف، وعلى رأسهم مالك بن عوف النصري؛ جاءوا بالنساء والأطفال والأموال (الرحيق المختوم؛ سيرة). والعدد نحو عشرين ألفًا (الرحيق المختوم)، وفيه خلاف. وكان المسلمون اثني عشر ألفًا (عشرة آلاف من المدينة وألفان من أهل مكة الجدد) (الرحيق المختوم).",
+           ""],
+          ["🏹 انسحاب أولي",
+           "نزل القرآن 9:25–26 في العجب بالكثرة. تنبيه: نسبة هذه الكلمة إلى صحابي بعينه (كأبي بكر رضي الله عنه) رواية سيرة ضعيفة. ففي الصباح هجم رماة هوازن في الوادي بغتة، فتراجع كثير من الناس (صحيح البخاري 2864، 4317). وثبت النبي ﷺ على بغلة بيضاء: «أنا النبي لا كذب، أنا ابن عبد المطلب» (صحيح البخاري 2864؛ صحيح مسلم 1776). وأخذ أبو سفيان بن الحارث رضي الله عنه باللجام (صحيح مسلم 1776).",
+           ""],
+          ["🦁 نداء العباس رضي الله عنه",
+           "«يا معشر الأنصار! يا أصحاب الشجرة (بيعة الرضوان)!» فرجعوا يقولون: «لبيك» (صحيح مسلم 1775). وحثا النبي ﷺ التراب: «شاهت الوجوه» (صحيح مسلم 1777). وانهزم العدو؛ ونحو ستة آلاف أسير (صحيح البخاري 4318–4319)، ونحو أربعة وعشرين ألف بعير، وأكثر من أربعين ألف شاة (الرحيق المختوم؛ سيرة).",
+           ""],
+          ["🕋 حصار الطائف",
+           "تحصّنت ثقيف؛ والحصار نحو عشرين يومًا أو أكثر قليلًا (الرحيق المختوم). والخلاف: من عشرة إلى أربعين يومًا (فتح الباري). واستعمال المنجنيق من روايات السيرة. ولما أعلن النبي ﷺ الرجوع كره الصحابة ذلك؛ ثم قاتلوا في الغد وجرحوا، فلما قال الرجوع ضحكوا (صحيح البخاري 4325). ودعا: «اللهم اهدِ ثقيفًا وأتِ بهم» (الترمذي 3942، الألباني: صحيح). وأسلم وفد ثقيف سنة تسع.",
+           ""],
+          ["🎁 القسمة",
+           "انتظر وفد هوازن بالجعرانة؛ فخيّرهم النبي ﷺ بين الأسرى والمال، فاختاروا الأسرى فردّ الجميع (صحيح البخاري 4318–4319). وأعطى أهل مكة الجدد (أبا سفيان وصفوان والأقرع وعيينة) مئة بعير لكل واحد (صحيح مسلم 1060). فشكا الأنصار؛ فقال ﷺ: «أما ترضون أن يذهب الناس بالشاء والبعير وتذهبون برسول الله ﷺ؟» فبكوا حتى بلّوا اللحى (صحيح البخاري 4333).",
+           ""],
+          ["🎯 العبرة",
+           "لا عجب بالكثرة بل توكل على الله؛ والسخاء والصبر.",
+           ""]
+        ],
+        [
+          ["أي قبيلة كانت العدو؟", ["قريش", "هوازن", "اليهود"]],
+          ["كم كان عدد الأسرى؟", ["1000", "نحو 6000", "20,000"]],
+          ["كم دام حصار الطائف؟", ["5 أيام", "نحو 20 يومًا (10–40)", "3 أشهر"]]
+        ],
+        [
+          ["630", "استعداد هوازن"],
+          ["630", "حنين"],
+          ["630", "حصار الطائف"],
+          ["630", "القسمة بالجعرانة"]
+        ]
+      ],
+      fr: [
+        "Les batailles de Hounayn et de Tâ'if — après la conquête",
+        "Hounayn et Tâ'if",
+        "Chawwâl de l'an 8 (janvier-février 630)",
+        "Comprendre Hounayn, la déroute initiale, puis la victoire, et le siège de Tâ'if.",
+        "Al-'Abbâs (qu'Allah l'agrée) appela, les Compagnons revinrent et Allah donna la victoire. Ô Allah ! Accorde-nous la fermeté et la fidélité. Âmîn.",
+        [
+          "An 8",
+          "Hawâzin : environ 20 000",
+          "Une déroute initiale",
+          "Le Prophète ﷺ resta ferme",
+          "Environ 6000 prisonniers",
+          "La patience des Ansâr"
+        ],
+        [
+          ["💪 L'armée ennemie",
+           "Hawâzin et Thaqîf, avec à leur tête Mâlik ibn 'Awf an-Nasrî ; ils vinrent avec femmes, enfants et biens (Ar-Rahîq al-Makhtûm ; Sîra). Leur nombre : environ 20 000 (Ar-Rahîq al-Makhtûm), avec divergence. Les musulmans étaient 12 000 (10 000 de Médine et 2000 des nouveaux Mecquois) (Ar-Rahîq al-Makhtûm).",
+           ""],
+          ["🏹 La déroute initiale",
+           "Le Coran 9:25-26 descendit au sujet de l'orgueil du nombre. Remarque : attribuer cette parole à un Compagnon précis (Abou Bakr, qu'Allah l'agrée) est un récit de Sîra faible. Au matin, les archers de Hawâzin attaquèrent soudainement dans la vallée ; beaucoup reculèrent (Sahih al-Bukhari : 2864, 4317). Le Prophète ﷺ tint bon sur une mule blanche : « Je suis le prophète, sans mensonge ; je suis le fils d''Abd al-Muttalib. » (Sahih al-Bukhari : 2864 ; Sahih Muslim : 1776). Abou Soufyân ibn al-Hârith (qu'Allah l'agrée) saisit la bride (Sahih Muslim : 1776).",
+           ""],
+          ["🦁 L'appel d'al-'Abbâs (qu'Allah l'agrée)",
+           "« Ô Ansâr ! Ô gens de l'arbre (le serment du contentement) ! » Ils revinrent en disant « labbayk » (Sahih Muslim : 1775). Le Prophète ﷺ jeta de la terre : « Que leurs visages soient noircis ! » (Sahih Muslim : 1777). L'ennemi s'enfuit ; environ 6000 prisonniers (Sahih al-Bukhari : 4318-4319), environ 24 000 chameaux et plus de 40 000 moutons (Ar-Rahîq al-Makhtûm ; Sîra).",
+           ""],
+          ["🕋 Le siège de Tâ'if",
+           "Thaqîf s'enferma dans la forteresse ; le siège dura un peu plus de vingt jours (Ar-Rahîq al-Makhtûm). Divergence : de dix à quarante jours (Fath al-Bârî). L'usage du mangonneau vient des récits de Sîra. Quand le Prophète ﷺ annonça le retour, les Compagnons le désapprouvèrent ; ils combattirent le lendemain et furent blessés, puis quand il parla de retour, ils sourirent (Sahih al-Bukhari : 4325). Invocation : « Ô Allah, guide Thaqîf et amène-les. » (Tirmidhi 3942, al-Albani : sahih). La délégation de Thaqîf embrassa l'islam en l'an 9.",
+           ""],
+          ["🎁 Le partage",
+           "On attendit la délégation de Hawâzin à Ji'râna ; le Prophète ﷺ leur laissa le choix entre les captifs et les biens ; ils choisirent les captifs et tous furent rendus (Sahih al-Bukhari : 4318-4319). Il donna cent chameaux à chacun des nouveaux Mecquois (Abou Soufyân, Safwân, al-Aqra' et 'Ouyayna) (Sahih Muslim : 1060). Les Ansâr se plaignirent ; il ﷺ dit : « N'êtes-vous pas satisfaits que les gens emportent les moutons et les chameaux, tandis que vous emportez le Messager d'Allah ﷺ ? » Ils pleurèrent jusqu'à mouiller leurs barbes (Sahih al-Bukhari : 4333).",
+           ""],
+          ["🎯 La leçon",
+           "Pas d'orgueil du nombre, mais confiance en Allah ; générosité et patience.",
+           ""]
+        ],
+        [
+          ["Quelle tribu était l'ennemi ?", ["Quraysh", "Hawâzin", "Les Juifs"]],
+          ["Combien de prisonniers ?", ["1000", "Environ 6000", "20 000"]],
+          ["Combien de temps dura le siège de Tâ'if ?", ["5 jours", "Environ 20 jours (10 à 40)", "3 mois"]]
+        ],
+        [
+          ["630", "Les préparatifs de Hawâzin"],
+          ["630", "Hounayn"],
+          ["630", "Le siège de Tâ'if"],
+          ["630", "Le partage à Ji'râna"]
+        ]
+      ],
+      es: [
+        "Las batallas de Hunayn y Taif: después de la conquista",
+        "Hunayn y Taif",
+        "Shawal del año 8 (enero-febrero de 630)",
+        "Comprender Hunayn, la derrota inicial, luego la victoria y el asedio de Taif.",
+        "Al-Abbas (que Alá esté complacido con él) llamó, los Compañeros volvieron y Alá dio la victoria. ¡Oh Alá! Concédenos la firmeza y la fidelidad. Amín.",
+        [
+          "Año 8",
+          "Hawazin: unos 20 000",
+          "Una derrota inicial",
+          "El Profeta ﷺ se mantuvo firme",
+          "Unos 6000 prisioneros",
+          "La paciencia de los Ansar"
+        ],
+        [
+          ["💪 El ejército enemigo",
+           "Hawazin y Zaqif, encabezados por Malik ibn Awf an-Nasri; trajeron mujeres, niños y bienes (Ar-Rahiq al-Majtum; Sira). Su número: unos 20 000 (Ar-Rahiq al-Majtum), con discrepancias. Los musulmanes eran 12 000 (10 000 de Medina y 2000 de los nuevos mequíes) (Ar-Rahiq al-Majtum).",
+           ""],
+          ["🏹 La derrota inicial",
+           "El Corán 9:25-26 descendió sobre el orgullo del número. Nota: atribuir esta frase a un Compañero concreto (Abu Bakr, que Alá esté complacido con él) es un relato de Sira débil. Por la mañana los arqueros de Hawazin atacaron de repente en el valle; muchos retrocedieron (Sahih al-Bujari: 2864, 4317). El Profeta ﷺ se mantuvo firme sobre una mula blanca: «Soy el profeta, sin mentira; soy el hijo de Abd al-Muttalib.» (Sahih al-Bujari: 2864; Sahih Muslim: 1776). Abu Sufian ibn al-Hariz (que Alá esté complacido con él) tomó las riendas (Sahih Muslim: 1776).",
+           ""],
+          ["🦁 El llamamiento de al-Abbas (que Alá esté complacido con él)",
+           "«¡Oh Ansar! ¡Oh gente del árbol (el juramento del contento)!» Volvieron diciendo «labbayk» (Sahih Muslim: 1775). El Profeta ﷺ arrojó tierra: «¡Que sus rostros se oscurezcan!» (Sahih Muslim: 1777). El enemigo huyó; unos 6000 prisioneros (Sahih al-Bujari: 4318-4319), unos 24 000 camellos y más de 40 000 ovejas (Ar-Rahiq al-Majtum; Sira).",
+           ""],
+          ["🕋 El asedio de Taif",
+           "Zaqif se encerró en la fortaleza; el asedio duró algo más de veinte días (Ar-Rahiq al-Majtum). Discrepancia: de diez a cuarenta días (Fath al-Bari). El uso del manganel viene de los relatos de Sira. Cuando el Profeta ﷺ anunció el regreso, a los Compañeros les disgustó; combatieron al día siguiente y fueron heridos, y cuando habló del regreso, sonrieron (Sahih al-Bujari: 4325). Súplica: «¡Oh Alá, guía a Zaqif y tráelos!» (Tirmidhi 3942, al-Albani: sahih). La delegación de Zaqif abrazó el islam en el año 9.",
+           ""],
+          ["🎁 El reparto",
+           "Se esperó a la delegación de Hawazin en Yirana; el Profeta ﷺ les dio a elegir entre los cautivos y los bienes; eligieron los cautivos y todos fueron devueltos (Sahih al-Bujari: 4318-4319). Dio cien camellos a cada uno de los nuevos mequíes (Abu Sufian, Safwan, al-Aqra y Uyayna) (Sahih Muslim: 1060). Los Ansar se quejaron; él ﷺ dijo: «¿No os complacéis de que la gente se lleve las ovejas y los camellos mientras vosotros os lleváis al Mensajero de Alá ﷺ?» Lloraron hasta mojar sus barbas (Sahih al-Bujari: 4333).",
+           ""],
+          ["🎯 La lección",
+           "Nada de orgullo por el número, sino confianza en Alá; generosidad y paciencia.",
+           ""]
+        ],
+        [
+          ["¿Qué tribu era el enemigo?", ["Quraysh", "Hawazin", "Los judíos"]],
+          ["¿Cuántos prisioneros?", ["1000", "Unos 6000", "20 000"]],
+          ["¿Cuánto duró el asedio de Taif?", ["5 días", "Unos 20 días (10 a 40)", "3 meses"]]
+        ],
+        [
+          ["630", "Los preparativos de Hawazin"],
+          ["630", "Hunayn"],
+          ["630", "El asedio de Taif"],
+          ["630", "El reparto en Yirana"]
         ]
       ]
     }
