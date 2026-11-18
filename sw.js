@@ -111,8 +111,10 @@
 //       Hajj) chaar nayi zubaanoN mein poore hain.
 // v112: ARKAN — arkan.js ke chhote labels (✅ Read / ☐ Mark this section as read / progress / pichla-agla /
 //       wapas / theme) aur hero ki "Aap ki pesh raft" line bhi nayi 4 zubaanoN mein (ARKAN_UI).
-// v125: SEERAT — Day 31 ke tarjume ki tarteeb theek (quiz/timeline/refs/hadith apni jagah).
-const CACHE_NAME = 'quran-ustad-auto-v125';
+// v126: TAJWEED — naya tajweed-lang.js: 38 qawaid ka naam, wazahat aur misaalein मराठी / العربية /
+//       Français / Español mein. tajweed.html pehle wahan dekhta hai, warna English. Search bhi nayi
+//       zubaanoN mein chalta hai, aur Arabic tarjuma RTL mein dikhta hai.
+const CACHE_NAME = 'quran-ustad-auto-v126';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -166,6 +168,7 @@ const ASSETS = [
     './sunnat.js',
     './daily-lang.js',
     './lang-extra.js',
+    './tajweed-lang.js',
     './dua-lang.js',
     './dua.js',
     './icon.png',

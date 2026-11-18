@@ -9,6 +9,7 @@
     <link rel="manifest" href="manifest.json">
     <script src="app.js"></script>
     <script src="lang-extra.js"></script>
+    <script src="tajweed-lang.js"></script>
     <meta name="theme-color" content="#0F4C3A">
     <script src="sounds.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -151,17 +152,45 @@
             u:  { exp: 'اردو وضاحت', ex: '📚 مثالیں', m: '📌 مثال', play: '🔊 سنیں (قاری کی آواز)', haw: '📍 حوالہ', q: 'قرآن', none: 'کوئی قاعدہ نہیں ملا۔' },
             ro: { exp: 'Roman Wazahat', ex: '📚 Misaalein', m: '📌 Misaal', play: '🔊 Suno (Qaari ki Awaaz)', haw: '📍 Hawala', q: 'Quran', none: 'Koi Qaida nahi mila.' },
             hi: { exp: 'हिंदी वज़ाहत', ex: '📚 मिसालें', m: '📌 मिसाल', play: '🔊 सुनें (क़ारी की आवाज़)', haw: '📍 हवाला', q: 'क़ुरआन', none: 'कोई क़ायदा नहीं मिला।' },
-            en: { exp: 'English Explanation', ex: '📚 Examples', m: '📌 Example', play: '🔊 Listen (Qari)', haw: '📍 Reference', q: 'Quran', none: 'No rule found.' }
+            en: { exp: 'English Explanation', ex: '📚 Examples', m: '📌 Example', play: '🔊 Listen (Qari)', haw: '📍 Reference', q: 'Quran', none: 'No rule found.' },
+            mr: { exp: 'मराठी स्पष्टीकरण', ex: '📚 उदाहरणे', m: '📌 उदाहरण', play: '🔊 ऐका (काऱीचा आवाज)', haw: '📍 संदर्भ', q: 'कुरआन', none: 'कोणताही नियम सापडला नाही.' },
+            ar: { exp: 'توضيح', ex: '📚 أمثلة', m: '📌 مثال', play: '🔊 استمع (صوت القارئ)', haw: '📍 المرجع', q: 'القرآن', none: 'لا توجد قاعدة مطابقة.' },
+            fr: { exp: 'Explication', ex: '📚 Exemples', m: '📌 Exemple', play: '🔊 Écouter (le qâri)', haw: '📍 Référence', q: 'Coran', none: 'Aucune règle trouvée.' },
+            es: { exp: 'Explicación', ex: '📚 Ejemplos', m: '📌 Ejemplo', play: '🔊 Escuchar (el qari)', haw: '📍 Referencia', q: 'Corán', none: 'No se encontró ninguna regla.' }
         };
-        function tTitle(it, l) { if (!TL[l]) l = 'en'; return (l === 'hi' ? it.title_hi : l === 'en' ? it.title_en : it.title).replace(/^\d+\.\s*/, ''); }
-        function tText(it, l) { if (!TL[l]) l = 'en'; return l === 'u' ? it.urdu : l === 'ro' ? it.urdu_ro : l === 'hi' ? it.urdu_hi : it.roman; }
-        function tEx(ex, l) { if (!TL[l]) l = 'en'; return l === 'u' ? ex.ur : l === 'ro' ? ex.ur_ro : l === 'hi' ? ex.ur_hi : ex.ro; }
+        // Nayi 4 zubaanoN ka tarjuma tajweed-lang.js mein hai (window.TAJWEED_X), qaida ke number se juda hua
+        function TX(it) { var x = window.TAJWEED_X; return x ? x[tajweedData.indexOf(it) + 1] || null : null; }
+        function tTitle(it, l) {
+            var x = TX(it); if (x && x[l] && x[l].t) return x[l].t;
+            if (!TL[l]) l = 'en';
+            return (l === 'hi' ? it.title_hi : l === 'en' ? it.title_en : it.title).replace(/^\d+\.\s*/, '');
+        }
+        function tText(it, l) {
+            var x = TX(it); if (x && x[l] && x[l].u) return x[l].u;
+            if (!TL[l]) l = 'en';
+            return l === 'u' ? it.urdu : l === 'ro' ? it.urdu_ro : l === 'hi' ? it.urdu_hi : it.roman;
+        }
+        function tEx(ex, l, i, it) {
+            var x = it ? TX(it) : null;
+            if (x && x[l] && x[l].ex && x[l].ex[i]) return x[l].ex[i];
+            if (!TL[l]) l = 'en';
+            return l === 'u' ? ex.ur : l === 'ro' ? ex.ur_ro : l === 'hi' ? ex.ur_hi : ex.ro;
+        }
         function renderCards(filterText = "", category = "all") {
             const container = document.getElementById('tajweedContainer');
             container.innerHTML = '';
             const l = QSLang.get(), L = TL[l] || TL.en, ft = filterText.toLowerCase();
             const filtered = tajweedData.filter(item => {
+                const x = TX(item) || {};
+                const extra = [];
+                ['mr', 'ar', 'fr', 'es'].forEach(g => {
+                    const v = x[g];
+                    if (!v) return;
+                    extra.push(v.t, v.u);
+                    (v.ex || []).forEach(e => extra.push(e));
+                });
                 const ms = !ft || [item.title, item.title_hi, item.title_en, item.urdu, item.urdu_ro, item.urdu_hi, item.roman, item.hawala]
+                    .concat(extra)
                     .some(v => String(v || '').toLowerCase().includes(ft));
                 const mc = category === 'all' || item.cat === category;
                 return ms && mc;
@@ -170,7 +199,7 @@
             filtered.forEach((item, index) => {
                 const card = document.createElement('div');
                 card.className = 'card';
-                const ltr = l !== 'u' ? ' ltr' : '';
+                const ltr = (l !== 'u' && l !== 'ar') ? ' ltr' : '';
                 let examplesHTML = '';
                 item.examples.forEach((ex, i) => {
                     const btnId = `audio-${index}-${i}`;
@@ -178,7 +207,7 @@
                         <div class="example-box">
                             <span class="example-title">${L.m} ${i + 1}</span>
                             <div class="example-ar">${ex.ar}</div>
-                            <div class="example-ur${ltr}">${tEx(ex, l)}</div>
+                            <div class="example-ur${ltr}">${tEx(ex, l, i, item)}</div>
                             ${ex.q ? `<div class="example-ref">📍 ${L.q} ${ex.q}</div>` : ''}
                             ${ex.noAudio ? '' : `<button class="audio-btn" id="${btnId}" onclick="speakArabic('${ex.ar.replace(/'/g, "\\'")}', this)">${L.play}</button>`}
                         </div>

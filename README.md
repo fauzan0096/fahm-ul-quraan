@@ -46,7 +46,9 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 **Seerat (mukammal):** `seerat-lang.js` — Seerat-e-Nabawi ﷺ (**30 din + Shamail ke 4 din, kul 34**) ka tarjuma मराठी / العربية / Français / Español mein. Har din ki entry wohi tarteeb rakhti hai jo `seerat.js` ke `SEERAT_TR` mein hai: `[0]` title, `[1]` jagah, `[2]` waqt, `[3]` maqsad, `[4]` ghaur-o-fikr, `[5]` aham nukat, `[6]` hisse `[h,p,src]`, `[7]` imtihan `[sawal,[options]]`, `[8]` timeline `[saal,waqia]`, `[9]` hawale, `[10]` hadith `[who,ur,ref]`. `seerat.js` shuru hote waqt ise `SEERAT_TR` / `SEERAT_TOP` / `SEERAT_UI` mein mila deta hai. Arabi matn (Quran/hadith) har zubaan mein waisa hi rehta hai — sirf uska tarjuma badalta hai. Nayi zubaan jodni ho to bas `seerat-lang.js` mein uski entries.
 
-**Abhi baaki (content-level tarjuma):** sirf tajweed ke 38 qawaid — unka matn 4 zubaanoN mein hai; nayi 4 zubaanoN par **English** dikhte hain.
+**Tajweed (mukammal):** `tajweed-lang.js` — Tajweed ke **38 qawaid** ka naam, wazahat aur misaalein मराठी / العربية / Français / Español mein. Entry qaida ke **number** se judi hai (`tajweedData` ki tarteeb), aur `tajweed.html` ke `tTitle/tText/tEx` pehle wahan dekhte hain; jo na mile wahan English. Search bhi nayi zubaanoN ke lafz par chalta hai, aur Arabic tarjuma RTL mein dikhta hai. Quran ki ayat ka Arabi matn waisa hi rehta hai — sirf uska tarjuma badalta hai.
+
+**Tarjuma ab har jagah mukammal hai:** UI + course ke 900 lafz + 138 duaein + Arkan ke paanchon page + Seerat ke 34 din + Tajweed ke 38 qawaid — sab aath zubaanoN mein.
 
 **Course ke lafz (mukammal):** `course-lang.js` — **Day 1–90, saare 900 lafz** ka matlab + mashq ki tafseel chaar zubaanoN mein (मराठी · العربية · Français · Español). Har entry `"عربی لفظ"` se judi hai; yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Kisi lafz ka tarjuma theek karna ho to sirf usi entry ko badlein — baaki par asar nahi. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
 
