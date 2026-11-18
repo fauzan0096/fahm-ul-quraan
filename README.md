@@ -64,7 +64,9 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 **Games ka bug (v131):** Maratib-e-Ilm ki day-list mein pehle **sirf khule din** aate the, is liye "30 din ka course" hone par bhi **3 din** hi dikhta tha; ab poore **30 din** list mein hain (khule chune ja sakte hain, baaki par 🔒) aur saath "{a} / {b} din khule" bhi likha aata hai. Bazm-e-Fahm ke lafz bhi pehle sirf ek baar (page khulte waqt) gine jaate the — admin ya bina-login par hamesha "3 din" hi rehta tha; ab har baar shuru ke parde par **taza progress** se bante hain (admin ko poora course).
 
-**Tarjuma ab yahan mukammal hai:** UI + **Games (UI + 300 KBC sawal + Sahaba ke sawal/kahaniyan + Emoji quiz)** + course ke 900 lafz + 138 duaein + Arkan ke paanchon page + Seerat ke 34 din + Tajweed ke 38 qawaid + Asma ke 99 naam.
+**Chhoti chhoti jagahen (v135):** `tools-lang.js` aur `ui-extra.js` — Tasbeeh (tile ki "SubhanAllah • shuru karein" line, zikr ke matlab, Aaj/Kul/Round, Peechhe/Zero/Vibration/Awaaz/Screen on, saare paigham), **Namaz ka Hisaab** (panel, mahine ka report, mahine/haftay ke naam, azan ki awaazein, calendar alarm), **Qibla Finder**, install popup, backup, exam, admin panel, certificate, onboarding aur Quran page ke jumle. Number/naam wale jumle `pat` (regex + `$1`) se badalte hain — `app.js` ka engine nayi zubaan par pehle `dict`, phir `pat`, phir purani 4 zubaanoN ka `D`/`PAT` dekhta hai. **course-lang.js** ab harkaat (zabar/zer/pesh) ke bagair bhi lafz milaata hai, is liye koi lafz English par nahi girta (pehle `بَعُوضَة` jaisa lafz `mosquito` dikha sakta tha). `quran.html` ke lafz-tip mein bhi ab chuni hui zubaan ka matlab aata hai.
+
+**Tarjuma ab yahan mukammal hai:** UI + **Games (UI + 300 KBC sawal + Sahaba ke sawal/kahaniyan + Emoji quiz)** + course ke 900 lafz + 138 duaein + Arkan ke paanchon page + Seerat ke 34 din + Tajweed ke 38 qawaid + Asma ke 99 naam + Tasbeeh/Namaz/Qibla ke saare jumle.
 
 **Course ke lafz (mukammal):** `course-lang.js` — **Day 1–90, saare 900 lafz** ka matlab + mashq ki tafseel chaar zubaanoN mein (मराठी · العربية · Français · Español). Har entry `"عربی لفظ"` se judi hai; yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Kisi lafz ka tarjuma theek karna ho to sirf usi entry ko badlein — baaki par asar nahi. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
 
@@ -226,6 +228,8 @@ Dhyan dein:
 | File | Kya hai andar |
 |---|---|
 | `lang-extra.js` | UI ke lafz, bar/tile labels, poore HTML hisse (`dict`, `lb`, `html`) |
+| `tools-lang.js` | Tasbeeh, Namaz ka Hisaab, Qibla Finder ke jumle + number wale jumle (`pat`) |
+| `ui-extra.js` | Install popup, backup, exam, admin, certificate, onboarding, Quran page |
 | `course-lang.js` | Course ke 900 lafz (`u_mr` / `t_mr` …) |
 | `daily-lang.js` | Aaj ki Ayat + Aaj ki Sunnat |
 | `dua-lang.js` | 138 duaein |
