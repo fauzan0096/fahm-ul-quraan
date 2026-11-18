@@ -433,6 +433,19 @@ if (!window.QS_LITE) {
                 try {
                     if (reg.periodicSync) reg.periodicSync.register('fq-periodic', { minInterval: 24 * 60 * 60 * 1000 }).catch(function () {});
                 } catch (e) {}
+                // Naya version aaye to app khud taaza ho jaye (ek hi baar — loop nahi).
+                // Pehli baar install par reload nahi (wahan controller pehle se nahi hota).
+                try {
+                    var seen = 0, hadCtrl = !!navigator.serviceWorker.controller;
+                    if (navigator.serviceWorker.addEventListener) {
+                        navigator.serviceWorker.addEventListener('controllerchange', function () {
+                            if (!hadCtrl || seen++) return;
+                            setTimeout(function () { try { location.reload(); } catch (e) {} }, 600);
+                        });
+                    }
+                    // page khulne par SW se poochho: naya version hai?
+                    try { reg.update().catch(function () {}); } catch (e) {}
+                } catch (e) {}
             }).catch(function () {});
         });
     }
@@ -986,6 +999,19 @@ if (!window.QS_LITE) {
         return arr[2] != null ? arr[2] : null;
     }
     var KEY = 'mlang', cbs = [];
+    /* Zubaan badalte waqt ek pal ke liye saari transition/animation band — warna har element
+       apna rang/font 0.3s mein badalne lagta hai aur app atakti mehsoos hoti hai. */
+    (function () {
+        try {
+            var st = document.createElement('style');
+            st.id = 'fqLangSwitch';
+            st.textContent = 'html.fq-lang *,html.fq-lang *::before,html.fq-lang *::after{transition:none!important;animation:none!important}';
+            (document.head || document.documentElement).appendChild(st);
+        } catch (e) {}
+    })();
+    function langSwitch(on) {
+        try { document.documentElement.classList[on ? 'add' : 'remove']('fq-lang'); } catch (e) {}
+    }
     function rd(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
     function wr(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
     function get() {
@@ -1416,12 +1442,23 @@ if (!window.QS_LITE) {
                'The detailed list of the 99 names appears in the narrations of Tirmidhi and Ibn Majah (via Walid ibn Muslim). Scholars differ on whether this detailed list is the words of the Prophet ﷺ or an addition by a narrator, so the <b>well-known list</b> is given here. Allah’s names are not limited to 99. Scholars have also explained “ihsa” (memorising) as counting, memorising, understanding and acting upon what the names require. Some names are taken as pairs (such as Al-Mu’izz / Al-Mudhill, An-Nafi’ / Ad-Darr), not alone.']
     };
     var NOAUTO = /arkan|arabic-grammar/.test(location.pathname), NOALL = /privacy|terms|kill/.test(location.pathname);
-    var REC = new WeakMap(), AREC = new WeakMap(), obs = null;
+    var REC = new WeakMap(), AREC = new WeakMap(), obs = null, busy = false, needPass = false;
     var PRE = /^[^A-Za-z0-9(\u0600-\u06FF\u0900-\u097F]+/, CNT = /(\s*\(\d+(?:\/\d+)?\):?|\s*\u25BE)\s*$/;
     var ATTRS = ['title', 'placeholder', 'aria-label'];
     function idx3(v) { return v === 'u' ? 0 : v === 'hi' ? 1 : v === 'en' ? 2 : -1; }   // purana helper
     // Roman matn (core) ka tarjuma — v = abhi ki zubaan. Extra zubaan: pehle lang-extra.js ki dict.
+    // Zubaan badalne par wahi jumle baar baar aate hain, is liye har (zubaan, matn) ka natija yaad rakha jata hai.
+    var TMEMO = {};
     function tr(txt, v) {
+        if (v === 'ro' || !/[A-Za-z]/.test(txt)) return null;
+        var mc = TMEMO[v] || (TMEMO[v] = {});
+        if (Object.prototype.hasOwnProperty.call(mc, txt)) return mc[txt];
+        var res = trCalc(txt, v);
+        if (Object.keys(mc).length > 4000) TMEMO[v] = mc = {};   // bekaar yaad-daasht saaf
+        mc[txt] = res;
+        return res;
+    }
+    function trCalc(txt, v) {
         var m = /^(\s*)([\s\S]*?)(\s*)$/.exec(txt), core = m[2].replace(/\s+/g, ' ');
         if (!core || v === 'ro') return null;
         var pre = '', suf = '', p = PRE.exec(core), s, out = null, hit, x = xl(v);
@@ -1504,9 +1541,11 @@ if (!window.QS_LITE) {
     function auto() {
         if (NOALL || !document.body) return;
         var v = get();
-        walk(document.body, v);
+        busy = true;                       // apne hi badlaav par observer dobara na chale (warna dohra kaam)
+        try { walk(document.body, v); } catch (e) {}
         if (!obs && v !== 'ro' && window.MutationObserver) {
             obs = new MutationObserver(function (list) {
+                if (busy) { needPass = true; return; }   // apne hi paint ke badlaav — baad mein ek pass
                 var jv = get(); if (jv === 'ro') return;
                 for (var a = 0; a < list.length; a++) {
                     var m = list[a];
@@ -1517,25 +1556,48 @@ if (!window.QS_LITE) {
             });
             obs.observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ATTRS });
         }
+        // observer ka callback microtask mein aata hai — tab tak busy rahe, phir chhod do
+        setTimeout(function () {
+            busy = false;
+            if (needPass) { needPass = false; auto(); }   // paint ke doran badla DOM: ek aur pass
+        }, 0);
     }
     /*@AUTO_END*/
+    // paint() ek waqt mein ek hi baar — beech mein dobara aaye to sirf ek baar aur (lag kam)
+    var painting = false, paintAgain = false;
     function paint() {
-        var v = get(), l = LAB[v];
-        var bs = document.querySelectorAll('[data-qs-lang]');
-        for (var i = 0; i < bs.length; i++) { bs[i].textContent = l; bs[i].setAttribute('aria-label', 'Zubaan: ' + l); }
-        var ls = document.querySelectorAll('[data-lb]');
-        for (var j = 0; j < ls.length; j++) { var x = t(ls[j].getAttribute('data-lb'), v); if (ls[j].textContent !== x) ls[j].textContent = x; }
-        var hs = document.querySelectorAll('[data-lbh]');
-        for (var h = 0; h < hs.length; h++) { var hx = htmlFor(hs[h].getAttribute('data-lbh'), v); if (hx != null && hs[h].innerHTML !== hx) hs[h].innerHTML = hx; }
-        document.documentElement.setAttribute('data-mlang', v);
-        // <html lang> bhi theek rakho (font/hyphenation ke liye) — layout ki disha nahi badalti
-        try { document.documentElement.setAttribute('lang', v === 'u' ? 'ur' : v === 'hi' ? 'hi' : v === 'mr' ? 'mr' : v === 'ar' ? 'ar' : v === 'fr' ? 'fr' : v === 'es' ? 'es' : 'en'); } catch (e) {}
-        auto();
+        if (painting) { paintAgain = true; return; }
+        painting = true;
+        langSwitch(true);                 // ek pal ke liye transitions band (atakna kam)
+        try {
+            var v = get(), l = LAB[v];
+            var bs = document.querySelectorAll('[data-qs-lang]');
+            for (var i = 0; i < bs.length; i++) { bs[i].textContent = l; bs[i].setAttribute('aria-label', 'Zubaan: ' + l); }
+            var ls = document.querySelectorAll('[data-lb]');
+            for (var j = 0; j < ls.length; j++) { var x = t(ls[j].getAttribute('data-lb'), v); if (ls[j].textContent !== x) ls[j].textContent = x; }
+            var hs = document.querySelectorAll('[data-lbh]');
+            for (var h = 0; h < hs.length; h++) { var hx = htmlFor(hs[h].getAttribute('data-lbh'), v); if (hx != null && hs[h].innerHTML !== hx) hs[h].innerHTML = hx; }
+            document.documentElement.setAttribute('data-mlang', v);
+            // <html lang> bhi theek rakho (font/hyphenation ke liye) — layout ki disha nahi badalti
+            try { document.documentElement.setAttribute('lang', v === 'u' ? 'ur' : v === 'hi' ? 'hi' : v === 'mr' ? 'mr' : v === 'ar' ? 'ar' : v === 'fr' ? 'fr' : v === 'es' ? 'es' : 'en'); } catch (e) {}
+            auto();
+        } finally {
+            painting = false;
+            // do frame baad transitions wapas (layout/font set ho jaye)
+            try {
+                if (window.requestAnimationFrame) requestAnimationFrame(function () { requestAnimationFrame(function () { langSwitch(false); }); });
+                else setTimeout(function () { langSwitch(false); }, 60);
+            } catch (e) { langSwitch(false); }
+            if (paintAgain) { paintAgain = false; setTimeout(paint, 0); }
+        }
     }
     function fire(v) { for (var i = 0; i < cbs.length; i++) { try { cbs[i](v); } catch (e) {} } }
     function set(v) {
         if (LIST.indexOf(v) < 0) v = 'u';
-        wr(KEY, v); wr('meaningLang', v); paint(); fire(v);
+        var same = (v === get());
+        wr(KEY, v); wr('meaningLang', v);
+        if (!same) paint();
+        fire(v);
     }
     function cycle() { set(LIST[(LIST.indexOf(get()) + 1) % LIST.length]); }
     function pick(o, base) {

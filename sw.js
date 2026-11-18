@@ -143,7 +143,14 @@
 // v137: ARABI MATLAB KA LOOK — index.html mein `html[data-mlang="ar"]` ka style: lafz ka matlab
 //       ab Amiri (Naskh) font mein RTL dikhta hai (pehle LTR + Figtree tha, jo Arabi ke liye
 //       ghalat hai). Marathi/Hindi ke liye Devanagari font. Mashq ki line bhi Arabi mein RTL.
-const CACHE_NAME = 'quran-ustad-auto-v137';
+// v138: PURANA VERSION HATAO — do badi islaahein:
+//   1) activate par purane cache se **code (html/js/css/json) COPY NAHI hota** — pehle copy hota tha
+//      aur fillRest sirf "jo cache mein nahi" wo download karta tha, is liye purana games.html /
+//      app.js hafton tak chalta rehta tha (isi wajah se Maratib-e-Ilm "sirf 3 din" dikhata rehta).
+//   2) pages/scripts/styles ab **NET PEHLE** (2.5s timeout), net na ho to cache se. Pehle cache-first
+//      tha. Isse naya version foran milta hai; offline bilkul pehle jaisa chalta hai.
+//   Bhaari cheezein (tasveerein, fonts, mp3) phir bhi purane cache se copy hoti hain — dobara download nahi.
+const CACHE_NAME = 'quran-ustad-auto-v138';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -260,18 +267,25 @@ self.addEventListener('install', (e) => {
 });
 
 // ===== ACTIVATE: purani files naye cache mein le aao, phir purana cache delete =====
+// Code (html/js/css/json) purane cache se COPY NAHI hota — warna naya version kabhi nahi aata
+// (yahi wajah thi ke Games page purana "sirf 3 din" wala dikhata rehta tha). Bhaari cheezein
+// (tasveerein, fonts, mp3) copy ho jaati hain, is liye dobara download nahi hoti.
+const CODE_RE = /\.(html?|js|css|json|webmanifest)$/i;
 self.addEventListener('activate', (e) => {
     e.waitUntil((async () => {
         const keys = await caches.keys();
         const cache = await caches.open(CACHE_NAME);
 
-        // Purane app cache ki files copy karo — version badalne par 9MB dobara download na ho
+        // Purane app cache ki BHAARI files copy karo (code nahi — wo taaza aayega)
         for (const k of keys) {
             if (k === CACHE_NAME || k.indexOf('quran-ustad-auto') !== 0) continue;
             try {
                 const old = await caches.open(k);
                 const reqs = await old.keys();
                 for (const r of reqs) {
+                    let p = '';
+                    try { p = new URL(r.url).pathname; } catch (err) { p = r.url; }
+                    if (CODE_RE.test(p)) continue;                       // code: hamesha taaza
                     const have = await cache.match(r.url);
                     if (have) continue;
                     const res = await old.match(r);
@@ -401,27 +415,23 @@ async function staleWhileRevalidate(event, request, cacheName) {
     return fresh || Response.error();
 }
 
-// Pages / scripts / styles: cache se foran, peeche taaza. Net na ho to app shell ya saaf message
+// Pages / scripts / styles: NET PEHLE (naya version foran), net na ho to cache se.
+// Pehle "cache first" tha — is liye purana games.html/app.js hafton tak chalta rehta tha.
 async function codeResponse(event, request, isNavigation) {
     const cache = await caches.open(CACHE_NAME);
+    const online = (typeof navigator === 'undefined' || !('onLine' in navigator)) ? true : navigator.onLine;
+
+    // Net ho to pehle net se (2.5 second se zyada intezaar nahi — dheema net ho to cache se foran)
+    if (online) {
+        const fresh = await netFirst(request, cache, 2500);
+        if (fresh) return fresh;
+    }
+
     let hit = await cache.match(request, { ignoreSearch: true });
     if (!hit) {
         try { hit = await caches.match(request, { ignoreSearch: true }); } catch (err) { hit = null; }
     }
-
-    const refresh = fetch(request, { cache: 'no-cache' }).then(res => {
-        if (res && res.status === 200 && res.type === 'basic') return putSafe(cache, request, res);
-        return res;
-    }).catch(() => null);
-
-    if (hit) {
-        // Peeche taaza karo (event ka waqt badha do warna worker band ho jaye)
-        try { event.waitUntil(refresh.then(() => {}, () => {})); } catch (err) {}
-        return hit;
-    }
-
-    const fresh = await refresh;
-    if (fresh) return fresh;
+    if (hit) return hit;
 
     // Internet nahi mila
     if (isNavigation) {
@@ -437,6 +447,24 @@ async function codeResponse(event, request, isNavigation) {
         return offlinePage();
     }
     return Response.error();
+}
+
+// Net se laao (timeout ke saath). Mil jaye to cache mein bhi rakh do.
+function netFirst(request, cache, ms) {
+    return new Promise((resolve) => {
+        let done = false;
+        const timer = setTimeout(() => { if (!done) { done = true; resolve(null); } }, ms || 3000);
+        fetch(request, { cache: 'no-cache' }).then(res => {
+            if (done) return;
+            done = true; clearTimeout(timer);
+            if (res && res.status === 200 && (res.type === 'basic' || res.type === 'default')) putSafe(cache, request, res);
+            resolve(res);
+        }).catch(() => {
+            if (done) return;
+            done = true; clearTimeout(timer);
+            resolve(null);
+        });
+    });
 }
 
 // Tasveerein / icons / font files: cache se, warna net se aur cache mein rakh lo

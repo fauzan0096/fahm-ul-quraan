@@ -1425,15 +1425,23 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
             if (!replay) setTimeout(() => { emojiState.index++; emojiState.sel = null; emojiRender(); }, 1200);
         }
 
-        // Zubaan badalne par chalta hua khel wahin ka wahin rehta hai, bas zubaan badalti hai
+        // Zubaan badalne par chalta hua khel wahin ka wahin rehta hai, bas zubaan badalti hai.
+        // Kaam agle frame mein hota hai (ek hi baar) — taake button dabate waqt app atke na.
+        let gRefreshQueued = false;
         function gRefresh() {
-            paintStatic();
-            if (kbcState && document.getElementById('kbcQuestion')) { kbcShell(); renderLadder(); kbcLoadQuestion(); }
-            else if (kbcResultPaint) kbcResultPaint();
-            if (sahabaState) { const w = sahabaState.answered, sel = sahabaState.sel; sahabaRender(); if (w && sel != null && sahabaState.index < sahabaState.questions.length) sahabaAnswer(sel, true); }
-            if (memoryState) memoryRender();
-            if (emojiState) { const w = emojiState.answered, sel = emojiState.sel; emojiRender(); if (w && sel != null && emojiState.index < emojiState.questions.length) emojiAnswer(sel, true); }
-            if (window.bazmRelang) window.bazmRelang();
+            if (gRefreshQueued) return;
+            gRefreshQueued = true;
+            const run = () => {
+                gRefreshQueued = false;
+                paintStatic();
+                if (kbcState && document.getElementById('kbcQuestion')) { kbcShell(); renderLadder(); kbcLoadQuestion(); }
+                else if (kbcResultPaint) kbcResultPaint();
+                if (sahabaState) { const w = sahabaState.answered, sel = sahabaState.sel; sahabaRender(); if (w && sel != null && sahabaState.index < sahabaState.questions.length) sahabaAnswer(sel, true); }
+                if (memoryState) memoryRender();
+                if (emojiState) { const w = emojiState.answered, sel = emojiState.sel; emojiRender(); if (w && sel != null && emojiState.index < emojiState.questions.length) emojiAnswer(sel, true); }
+                if (window.bazmRelang) window.bazmRelang();
+            };
+            setTimeout(run, 0);          // agle task mein — app.js ka paint pehle poora ho jaye
         }
         if (window.QSLang) QSLang.onChange(gRefresh);
 

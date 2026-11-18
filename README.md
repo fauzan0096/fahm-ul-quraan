@@ -253,13 +253,14 @@ Dhyan dein:
 
 Locally chalane ke liye `python3 -m http.server` chalayein aur `http://localhost:8000` kholen (PWA install aur Qari ki awaaz ke liye server zaroori hai, seedha file kholne se kuch cheezein nahi chalti).
 
-> Koi bhi file badalne par `sw.js` mein `CACHE_NAME` ka number badha dein (jaise `v51` → `v52`), taake purane phones par naya version aaye. Users ki history (localStorage) par koi asar nahi padta.
+> Koi bhi file badalne par `sw.js` mein `CACHE_NAME` ka number badha dein (jaise `v51` → `v52`), taake purane phones par naya version aaye. Users ki history (localStorage) par koi asar nahi padta. **Agar kisi phone par phir bhi purana version dikhe** to app ko ek baar `.../index.html?reset=1` se kholein — ye service worker aur cache saaf karta hai, progress (localStorage) ko chhoota nahi.
 
 ## 📴 Offline
 
 - Pages, JS, CSS, icons, **Google Fonts** aur **azan/nasheed mp3** pehli baar net se aane ke baad offline chalte hain (`sw.js`: `fq-audio-v1`, `fq-fonts-v1` caches, version badalne par delete nahi hote).
 - **v96 (offline fix):** install par sirf bunyaadi shell (index, app, tools, sounds, icons, theme, manifest) save hota hai — service worker foran active ho jata hai. Baaki files (pages, `course.js`, `seerat.js`, duaein, azan/nasheed) **pichhe se** bharti hain: activate ke baad, aur har page khulne par `app.js` jo message bhejta hai (`fq-precache`) us par. Pehle poora ~9 MB install mein utarta tha, is liye kai phones par SW kabhi `installing` se aage nahi badhta tha aur offline app khulti hi nahi thi.
-- Purane cache ki files naye `CACHE_NAME` mein copy ho jaati hain, is liye version badalne par 9 MB dobara download nahi hota — sirf nayi/badli hui files aati hain.
+- Purane cache ki **bhaari** files (tasveerein, fonts, azan/nasheed mp3) naye `CACHE_NAME` mein copy ho jaati hain, is liye version badalne par 9 MB dobara download nahi hota.
+- **v138 (naya version aane ki islaah):** pehle purane cache se **code (html/js/css/json) bhi copy** hota tha aur `fillRest()` sirf "jo cache mein nahi" wo download karta tha — is liye purana `games.html` / `app.js` hafton tak chalta rehta tha (isi wajah se Maratib-e-Ilm "sirf 3 din" dikhata rehta). Ab **code copy nahi hota** aur pages/scripts/styles **net pehle** aate hain (2.5 s timeout), net na ho to cache se. Offline bilkul pehle jaisa chalta hai.
 - Koi page cache mein na ho aur net bhi na ho to app ek saaf message dikhati hai ("Internet ek baar chahiye"), browser ki "no internet" screen nahi.
 - Qari ki ayat ki recording ke liye **⬇️ Download** (neeche) ya internet chahiye. Namaz ke waqt ki location lookup (Aladhan) ke liye bhi net chahiye; ek baar le lene ke baad waqt save rehte hain.
 
