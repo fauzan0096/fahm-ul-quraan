@@ -1428,13 +1428,21 @@ if (!window.QS_LITE) {
         if (p) { pre = p[0]; core = core.slice(pre.length); }
         if ((s = CNT.exec(core))) { suf = s[0]; core = core.slice(0, s.index); }
         if (x && x.dict && x.dict[core] != null) out = x.dict[core];
-        else if ((hit = D[core])) out = val(hit, v);
-        else for (var k = 0; k < PAT.length; k++) {
-            var r = PAT[k][0].exec(core);
-            if (r) {
-                var pat = val(PAT[k][1], v);
-                if (pat != null) out = pat.replace(/\$(\d)/g, function (_, n) { return r[n]; });
-                break;
+        else if (x && x.pat) {                       // nayi zubaan: number/naam wale jumle (tools-lang.js)
+            for (var q = 0; q < x.pat.length; q++) {
+                var rx = x.pat[q][0].exec(core);
+                if (rx) { out = x.pat[q][1].replace(/\$(\d)/g, function (_, n) { return rx[n]; }); break; }
+            }
+        }
+        if (out == null) {                           // purani 4 zubaanein: D / PAT (bilkul pehle jaisa)
+            if ((hit = D[core])) out = val(hit, v);
+            else for (var k = 0; k < PAT.length; k++) {
+                var r = PAT[k][0].exec(core);
+                if (r) {
+                    var pat = val(PAT[k][1], v);
+                    if (pat != null) out = pat.replace(/\$(\d)/g, function (_, n) { return r[n]; });
+                    break;
+                }
             }
         }
         return out == null ? null : m[1] + pre + out + suf + m[3];

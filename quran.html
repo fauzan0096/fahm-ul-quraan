@@ -9,6 +9,7 @@
     <link rel="manifest" href="manifest.json">
     <script src="app.js"></script>
     <script src="lang-extra.js"></script>
+    <script src="ui-extra.js"></script>
     <meta name="theme-color" content="#0F4C3A">
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;600&family=Noto+Nastaliq+Urdu:wght@400;700&family=Scheherazade+New:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -235,6 +236,7 @@
     </div>
 
     <script src="course.js"></script>
+    <script src="course-lang.js"></script>
 <script>
 (function () {
     'use strict';
@@ -381,8 +383,11 @@
         var x = el('button', 'x', '\u2715'); x.onclick = function () { tip.classList.add('hidden'); }; tip.appendChild(x);
         tip.appendChild(el('div', 'ar', w.a));
         if (w.r) tip.appendChild(el('b', null, w.r));
-        if (w.u) tip.appendChild(el('div', 'ur', w.u));
-        if (w.u_ro) tip.appendChild(el('small', null, w.u_ro));
+        // Chuni hui zubaan ka matlab (nayi 4 zubaanein course-lang.js se aati hain)
+        var pick = function (k) { try { return (window.QSLang && QSLang.pick) ? QSLang.pick(w, k) : w[k]; } catch (e) { return w[k]; } };
+        var um = pick('u'), lm = (function () { try { return QSLang.get(); } catch (e) { return 'u'; } })();
+        if (um) tip.appendChild(el('div', lm === 'u' ? 'ur' : 'lt', um));
+        if (lm === 'u' && w.u_ro) tip.appendChild(el('small', null, w.u_ro));
         if (!exact) { var n = el('div'); n.appendChild(el('small', null, 'Is ayat mein ye lafz juRa hua / badla hua rupp hai: ' + tok)); tip.appendChild(n); }
         var d = el('div'); d.appendChild(el('small', null, '\uD83D\uDCC5 Course: Din ' + m.day)); tip.appendChild(d);
         tip.classList.remove('hidden');

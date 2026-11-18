@@ -129,7 +129,13 @@
 //       4 zubaanoN mein (games-extra.js ka naya FQX; purani 4 par bilkul wahi Roman matn).
 // v134: GAMES — namaz ke auqaat ke chhote jawab (Fajr / Zuhr / Asr / Maghrib / Isha) aur "Yusuf"
 //       bhi 4 nayi zubaanoN mein (ye alag options ke tor par KBC aur Emoji mein aate hain).
-const CACHE_NAME = 'quran-ustad-auto-v134';
+// v135: ZUBAAN KI CHHOTI CHHOTI JAGAH — naye tools-lang.js (Tasbeeh, Namaz ka Hisaab, Qibla
+//       Finder) aur ui-extra.js (install popup, backup, exam, admin, certificate, onboarding,
+//       Quran page, namaz ke mahine/din). app.js ke engine mein naya `pat` (number/naam wale
+//       jumle nayi zubaanoN ke liye). course-lang.js ab harkaat ke bagair bhi lafz milaata hai,
+//       is liye koi lafz English par nahi girta. quran.html ke lafz-tip mein bhi chuni hui
+//       zubaan ka matlab dikhta hai (pehle hamesha Urdu).
+const CACHE_NAME = 'quran-ustad-auto-v135';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -157,6 +163,8 @@ const CORE = [
     './sunnat.js',
     './daily-lang.js',
     './lang-extra.js',
+    './tools-lang.js',
+    './ui-extra.js',
     './dua-lang.js'
 ];
 
