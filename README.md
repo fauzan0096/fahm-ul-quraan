@@ -52,7 +52,11 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 **Nahw-Sarf (chal raha hai):** `grammar-lang.js` — 30 din ke **unwan aur maqsad** chaar zubaanoN mein (page ke button/labels aur `arabic-grammar.html` ke andar hi). Ab tak `grammar-lang.js` mein sirf title/goal hain; **sabaq ka poora matn (sections, keyFacts, reflection, quiz)** abhi English par girta hai — Urdu par nahi, taake samajh mein aaye. Woh aage jodna ho to bas `grammar-lang.js` mein us din ki `sections` waghairah likh dein.
 
-**Tarjuma ab yahan mukammal hai:** UI + course ke 900 lafz + 138 duaein + Arkan ke paanchon page + Seerat ke 34 din + Tajweed ke 38 qawaid + Asma ke 99 naam.
+**Games (UI mukammal):** `games-extra.js` — Games page ke **saare button, label aur jumle** (Maratib-e-Ilm ka day-select aur ladder, lifelines, jawab ka "pakka hai?", natije, celebration, Sahaba/Memory/Emoji ke score aur messages, Bazm-e-Fahm ke parde, alert/confirm ke jumle) aur **Memory ke card ke matlab** मराठी / العربية / Français / Español mein. Ye file `games-lang.js` ke `GU()`/`GM()` ko lapet leti hai: nayi zubaan par yahan se, purani 4 par bilkul pehle jaisa. Arabi lafz (card ka `اللہ` waghairah) wahi rehte hain — sirf matlab badalta hai. Bazm-e-Fahm ke lafz ka matlab `course-lang.js` se aata hai (`u_mr` / `t_mr` …). **Baqi:** KBC/Sahaba/Emoji ke **sawal-jawab ka matn** (`games-lang.js` ka `TR`) abhi nayi 4 zubaanoN par English dikhta hai — woh agla kaam hai.
+
+**Games ka bug (v131):** Maratib-e-Ilm ki day-list mein pehle **sirf khule din** aate the, is liye "30 din ka course" hone par bhi **3 din** hi dikhta tha; ab poore **30 din** list mein hain (khule chune ja sakte hain, baaki par 🔒) aur saath "{a} / {b} din khule" bhi likha aata hai. Bazm-e-Fahm ke lafz bhi pehle sirf ek baar (page khulte waqt) gine jaate the — admin ya bina-login par hamesha "3 din" hi rehta tha; ab har baar shuru ke parde par **taza progress** se bante hain (admin ko poora course).
+
+**Tarjuma ab yahan mukammal hai:** UI + Games ka UI + course ke 900 lafz + 138 duaein + Arkan ke paanchon page + Seerat ke 34 din + Tajweed ke 38 qawaid + Asma ke 99 naam.
 
 **Course ke lafz (mukammal):** `course-lang.js` — **Day 1–90, saare 900 lafz** ka matlab + mashq ki tafseel chaar zubaanoN mein (मराठी · العربية · Français · Español). Har entry `"عربی لفظ"` se judi hai; yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Kisi lafz ka tarjuma theek karna ho to sirf usi entry ko badlein — baaki par asar nahi. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
 
@@ -129,6 +133,8 @@ Azan app band hone par bhi bajne ke liye. **Phone/screen par koi lock nahi lagta
 
 ### 🎮 Games (`games.html`)
 🏆 KBC · ⭐ Sahaba · 🧠 Memory · 😀 Emoji · 🎓 **Bazm-e-Fahm** (ab isi page ke andar, alag file nahi; purana `bazm.html` link sirf redirect hai) — sound effects ke saath. Header ka **🎵 button** har game mein nasheed chalata/rokta hai (`nasheed.mp3` chahiye).
+- Maratib-e-Ilm = **30 din × 10 sawal**; day-list mein poore 30 din dikhte hain (khule 🔓 / band 🔒), jeetne par agla din khulta hai.
+- Zubaan: UI aur Memory ke matlab 8 zubaanoN mein (`games-lang.js` + `games-extra.js`), sawal-jawab ka matn filhaal 4 zubaanoN mein.
 
 ### 🎵 Background awaaz (`nature-ambience.mp3`)
 - Games mein 🎵 button hawa + behta paani + parindon (chehchahate, trill, siti, kabootar) ki **original** awaaz chalata hai. Ye awaaz code se bani hai (koi recording / sample istemal nahi hui), isliye uska copyright ka masla nahi.

@@ -10,6 +10,7 @@
     <script src="app.js"></script>
     <script src="lang-extra.js"></script>
     <script src="games-lang.js"></script>
+    <script src="games-extra.js"></script>
     <meta name="theme-color" content="#0F4C3A">
     <script src="sounds.js" defer></script>
     <script src="tools.js" defer></script>
@@ -49,6 +50,8 @@
         #kbc::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 0%, rgba(217,182,90,0.15), transparent 60%); pointer-events: none; }
         .kbc-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; position: relative; z-index: 1; color: var(--kbc-gold); font-weight: bold; font-size: 13px; gap: 8px; }
         .kbc-day { background: rgba(217,182,90,0.2); padding: 5px 12px; border-radius: 15px; }
+        .kbc-dayprog { background: rgba(217,182,90,0.12); padding: 5px 10px; border-radius: 15px; font-size: 11.5px; white-space: nowrap; }
+        .kbc-day option { background: #0b3a2c; color: #fff; }
         .kbc-prize { background: rgba(217,182,90,0.2); padding: 5px 12px; border-radius: 15px; }
         .kbc-qnum { text-align: center; color: #aaa; font-size: 12px; margin-bottom: 10px; position: relative; z-index: 1; }
         .kbc-qnum b { color: var(--kbc-gold); }
@@ -119,8 +122,13 @@
 html[data-mlang="u"] body{font-family:'Noto Nastaliq Urdu','Poppins',sans-serif;line-height:1.9}
 html[data-mlang="u"] button,html[data-mlang="u"] select{font-family:'Noto Nastaliq Urdu','Poppins',sans-serif;line-height:2}
 html[data-mlang="hi"] body,html[data-mlang="hi"] button,html[data-mlang="hi"] select{font-family:'Noto Sans Devanagari','Poppins',sans-serif}
+html[data-mlang="mr"] body,html[data-mlang="mr"] button,html[data-mlang="mr"] select{font-family:'Noto Sans Devanagari','Poppins',sans-serif}
+html[data-mlang="ar"] body,html[data-mlang="ar"] button,html[data-mlang="ar"] select{font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;line-height:1.9}
 .mem-card .tr{font-size:12px;line-height:1.4;direction:ltr}
+html[data-mlang="ar"] .mem-card .tr,html[data-mlang="ar"] .sahaba-q,html[data-mlang="ar"] .sahaba-story p,html[data-mlang="ar"] .kbc-question{direction:rtl;text-align:right}
+html[data-mlang="ar"] .kbc-question,html[data-mlang="ar"] .kbc-opt{text-align:right}
 html[data-mlang="u"] .main-nav{direction:rtl}
+html[data-mlang="ar"] .main-nav{direction:rtl}
 #deeniNotice{font-family:inherit}
     </style>
     <style id="bazmCss">
@@ -284,8 +292,9 @@ html[data-mlang="u"] .main-nav{direction:rtl}
         // ==========================================
         function paintStatic() {
             const l = GL(), de = document.documentElement;
-            de.setAttribute('lang', l === 'u' ? 'ur' : l === 'hi' ? 'hi' : 'en');
-            de.setAttribute('dir', l === 'u' ? 'rtl' : 'ltr');
+            const LMAP = { u: 'ur', ro: 'ur-Latn', hi: 'hi', en: 'en', mr: 'mr', ar: 'ar', fr: 'fr', es: 'es' };
+            de.setAttribute('lang', LMAP[l] || 'en');
+            de.setAttribute('dir', (l === 'u' || l === 'ar') ? 'rtl' : 'ltr');
             document.querySelectorAll('[data-g]').forEach(e => { e.innerHTML = GU(e.getAttribute('data-g')); });
             document.querySelectorAll('[data-g-aria]').forEach(e => e.setAttribute('aria-label', GU(e.getAttribute('data-g-aria'))));
             document.title = (window.QSLang && QSLang.t ? QSLang.t('games') : 'Games') + ' - Fahm-ul-Quran';
@@ -826,12 +835,18 @@ html[data-mlang="u"] .main-nav{direction:rtl}
         // Maratib-e-Ilm ka dhancha (zubaan badalne par state bacha kar dobara banta hai)
         function kbcShell() {
             const unlocked = kbcUnlocked(), dayIndex = kbcDayIdx;
+            // Poore 30 din list mein dikhte hain — khule din chune ja sakte hain, baaki par 🔒
             let dayOpts = '';
-            for (let d = 1; d <= unlocked; d++) dayOpts += `<option value="${d}" ${d === dayIndex + 1 ? 'selected' : ''}>${GU('day', { n: d })}</option>`;
+            for (let d = 1; d <= KBC.length; d++) {
+                const lock = d > unlocked;
+                dayOpts += `<option value="${d}" ${d === dayIndex + 1 ? 'selected' : ''} ${lock ? 'disabled' : ''}>${lock ? '🔒 ' : ''}${GU('day', { n: d })}</option>`;
+            }
             const daySelect = `<select class="kbc-day" style="border:none;color:var(--kbc-gold);font-weight:bold;font-size:13px;background:transparent;" onchange="initKBC(parseInt(this.value,10))">${dayOpts}</select>`;
+            const dayProg = `<span class="kbc-dayprog">${GU('days_prog', { a: unlocked, b: KBC.length })}</span>`;
             document.getElementById('kbc').innerHTML = `
                 <div class="kbc-top">
                     ${daySelect}
+                    ${dayProg}
                     <span class="kbc-prize" id="kbcPrizeDisplay">⭐ 0</span>
                 </div>
                 <div class="kbc-qnum" id="kbcQNum"></div>
@@ -1424,6 +1439,7 @@ html[data-mlang="u"] .main-nav{direction:rtl}
         }
     </script>
     <script src="course.js"></script>
+    <script src="course-lang.js"></script>
     <script>
 
 (function () {
@@ -1471,28 +1487,48 @@ html[data-mlang="u"] .main-nav{direction:rtl}
     }
 
     // ---------- Word pool (sirf wo din jo user tak pahunch chuka) ----------
-    var maxDay = Math.max(MIN_POOL_DAYS, parseInt(ls(profile ? pk('currentDay') : 'x')) || MIN_POOL_DAYS);
-    var pool = [];
-    (typeof courseData !== 'undefined' ? courseData : []).forEach(function (d) {
-        if (d.day <= maxDay) d.words.forEach(function (w) { pool.push({ w: w, day: d.day }); });
-    });
+    // Pehle ye sirf ek baar (page khulte waqt) gina jaata tha, is liye admin/na-logon wale par
+    // hamesha "3 din" hi dikhta tha aur aage progress karne par bhi purana hi rehta tha.
+    // Ab har baar shuru ke parde par taza hisaab hota hai.
+    function refreshWho() { profile = ls('activeProfile'); isAdmin = ls('userRole') === 'admin'; }
+    function dayReached() {
+        var total = (typeof courseData !== 'undefined' && courseData.length) ? courseData.length : 90;
+        if (isAdmin) return total;                                   // admin ke liye poora course
+        var n = parseInt(ls(profile ? pk('currentDay') : 'x'), 10) || 0;
+        return Math.min(total, Math.max(MIN_POOL_DAYS, n));           // kam se kam pehle 3 din, taake khela ja sake
+    }
     function usable(x) { return x.w.a && x.w.r && x.w.u_ro && x.w.u; }
-    pool = pool.filter(usable);
+    var maxDay = MIN_POOL_DAYS, pool = [];
+    function buildPool() {
+        refreshWho();
+        maxDay = dayReached();
+        var list = [];
+        (typeof courseData !== 'undefined' ? courseData : []).forEach(function (d) {
+            if (d.day <= maxDay) d.words.forEach(function (w) { list.push({ w: w, day: d.day }); });
+        });
+        pool = list.filter(usable);
+        return pool;
+    }
+    buildPool();
 
     // ---------- Zubaan: lafz ka matlab chuni hui zubaan mein ----------
+    // mr/ar/fr/es ka matlab course-lang.js bharta hai (u_mr, t_mr ...) — na mile to English
+    var XL = { mr: 1, ar: 1, fr: 1, es: 1 };
     function mean(w) {
       var l = GL();
       if (l === 'u') return { t: w.u, u: '' };
       if (l === 'hi') return { t: w.u_hi || w.u_ro, u: '' };
       if (l === 'ro') return { t: w.u_ro, u: w.u };
-      return { t: w.u_en || w.u_ro, u: '' };   // en + nayi zubaanein (mr/ar/fr/es)
+      if (XL[l]) { var s = w['u_' + l]; if (s) return { t: s, u: '' }; }
+      return { t: w.u_en || w.u_ro, u: '' };   // en (+ nayi zubaan jahan tarjuma na ho)
     }
     function mean2(w) {
       var l = GL();
       if (l === 'u') return w.t;
       if (l === 'hi') return w.t_hi || w.t_ro;
       if (l === 'ro') return w.t_ro;
-      return w.t_en || w.t_ro;                 // en + nayi zubaanein
+      if (XL[l]) { var s = w['t_' + l]; if (s) return s; }
+      return w.t_en || w.t_ro;                 // en (+ nayi zubaan jahan tarjuma na ho)
     }
     function tn(i) { return GU('tier' + i); }
     // ---------- Question builder ----------
@@ -1530,6 +1566,7 @@ html[data-mlang="u"] .main-nav{direction:rtl}
 
     // ---------- UI: shuru ----------
     function drawStart() {
+        buildPool();                       // taza progress ke hisaab se lafz (admin: poora course)
         showXP();
         $('bz_tierList').innerHTML = TIERS.map(function (t, i) {
             return '<div style="display:flex;justify-content:space-between;font-size:13.5px;padding:4px 0;border-bottom:1px solid var(--border)"><span>' + t.ic + ' ' + tn(i) + ' <small style="color:var(--light)">' + GU('tier_q', { a: i * 3 + 1, b: i * 3 + 3 }) + '</small></span><b>' + (PTS[i * 3] + PTS[i * 3 + 1] + PTS[i * 3 + 2]) + ' XP</b></div>';

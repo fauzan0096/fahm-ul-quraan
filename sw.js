@@ -113,7 +113,14 @@
 //       wapas / theme) aur hero ki "Aap ki pesh raft" line bhi nayi 4 zubaanoN mein (ARKAN_UI).
 // v130: NAHW-SARF — naya grammar-lang.js: 30 din ke unwan aur maqsad मराठी / العربية / Français /
 //       Español mein (baaqi matn English par girta hai, Urdu par nahi).
-const CACHE_NAME = 'quran-ustad-auto-v130';
+// v131: GAMES — naya games-extra.js: Games page ke saare button/label/jumle (Maratib-e-Ilm, Sahaba,
+//       Memory, Emoji, Bazm-e-Fahm, natije, alert) aur Memory ke card ke matlab मराठी / العربية /
+//       Français / Español mein; Ar/Emoji/Tajweed/Asma/dua ke deeni notice (data-lbh) bhi 4 nayi
+//       zubaanoN mein. Games ka purana bug bhi theek: Maratib-e-Ilm ki day-list mein poore 30 din
+//       dikhte hain (khule din chune ja sakte hain, baaki 🔒) — pehle sirf khule din hi list mein
+//       aate the, is liye "sirf 3 din ka course" lagta tha; aur Bazm-e-Fahm ke lafz ab har baar
+//       taza progress se bante hain (admin ko poora course, pehle hamesha 3 din hi rehta tha).
+const CACHE_NAME = 'quran-ustad-auto-v131';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -151,6 +158,7 @@ const ASSETS = [
     './tajweed.html',
     './games.html',
     './games-lang.js',
+    './games-extra.js',
     './asma.html',
     './asma-lang.js',
     './arabic-grammar.html',
