@@ -68,7 +68,9 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 **Tarjuma ab yahan mukammal hai:** UI + **Games (UI + 300 KBC sawal + Sahaba ke sawal/kahaniyan + Emoji quiz)** + course ke 900 lafz + 138 duaein + Arkan ke paanchon page + Seerat ke 34 din + Tajweed ke 38 qawaid + Asma ke 99 naam + Tasbeeh/Namaz/Qibla ke saare jumle.
 
-**Course ke lafz (mukammal):** `course-lang.js` — **Day 1–90, saare 900 lafz** ka matlab + mashq ki tafseel chaar zubaanoN mein (मराठी · العربية · Français · Español). Har entry `"عربی لفظ"` se judi hai; yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Kisi lafz ka tarjuma theek karna ho to sirf usi entry ko badlein — baaki par asar nahi. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
+**Course ke lafz (mukammal):** `course-lang.js` — **Day 1–90, saare 900 lafz** ka matlab + mashq ki tafseel chaar zubaanoN mein (मराठी · العربية · Français · Español). Har entry `"عربی لفظ"` se judi hai; yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Lafz harkaat (zabar/zer/pesh) ke bagair bhi mil jaata hai, is liye koi lafz English par nahi girta. Kisi lafz ka tarjuma theek karna ho to sirf usi entry ko badlein — baaki par asar nahi. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
+
+**Arabi sharh (v136):** `course-ar-sharh.js` — jahan Arabi "matlab" khud lafz hi tha (jaise `بعوضة : بعوضة`), wahan ab **chhoti Arabi wazahat** aati hai (`بعوضة : حشرة صغيرة`). Ye file **sirf un lafzon** ki hai jinki sharh zaroori hai — Allah ke naam, ibadat/fiqh ke istilahaat, aakhirat ke alfaz, aur Quran ke khaas alfaz (kul ~230). **Aam roz-marra ke alfaz** (`يوم، كتاب، ماء، شمس، بيت، رجل`) yahan nahi, unka matlab khud wazeh hai. `course-lang.js` ka `apply()` ye sharh `u_ar` mein (aur jahan zaroorat ho `t_ar` mein) daal deta hai. Arabi lafz khud kabhi nahi badalta; मराठी / Français / Español par koi asar nahi. Naya lafz jodna ho to bas `course-ar-sharh.js` mein ek line.
 
 **Silver/Gold exam mein anbiya ke naam (Adam, Musa, Isa, Muhammad ﷺ wagairah) nahi aate** — na sawal mein, na options mein. Roz ke Day exam mein wo aate hain.
 
@@ -231,6 +233,7 @@ Dhyan dein:
 | `tools-lang.js` | Tasbeeh, Namaz ka Hisaab, Qibla Finder ke jumle + number wale jumle (`pat`) |
 | `ui-extra.js` | Install popup, backup, exam, admin, certificate, onboarding, Quran page |
 | `course-lang.js` | Course ke 900 lafz (`u_mr` / `t_mr` …) |
+| `course-ar-sharh.js` | Un lafzon ki chhoti Arabi sharh jinki zaroorat hai |
 | `daily-lang.js` | Aaj ki Ayat + Aaj ki Sunnat |
 | `dua-lang.js` | 138 duaein |
 | `arkan-extra.js` | Arkan ke paanchon page + calculator |

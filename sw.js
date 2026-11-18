@@ -135,7 +135,12 @@
 //       jumle nayi zubaanoN ke liye). course-lang.js ab harkaat ke bagair bhi lafz milaata hai,
 //       is liye koi lafz English par nahi girta. quran.html ke lafz-tip mein bhi chuni hui
 //       zubaan ka matlab dikhta hai (pehle hamesha Urdu).
-const CACHE_NAME = 'quran-ustad-auto-v135';
+// v136: ARABI SHARH — naya course-ar-sharh.js: course ke un lafzon ki chhoti Arabi sharh
+//       jinka "matlab" pehle khud lafz hi tha (jaise بعوضة : بعوضة). Aam roz-marra ke
+//       alfaz (يوم، كتاب، ماء، شمس …) yahan nahi — unka matlab wazeh hai. course-lang.js
+//       ka apply() ye sharh u_ar aur (zaroorat ho to) t_ar mein daal deta hai. Arabi lafz
+//       khud kabhi nahi badalta. Baqi 3 nayi zubaanein (mr/fr/es) par koi asar nahi.
+const CACHE_NAME = 'quran-ustad-auto-v136';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -159,6 +164,7 @@ const CORE = [
     './sounds.js',
     './icons.js',
     './course.js',
+    './course-ar-sharh.js',
     './course-lang.js',
     './sunnat.js',
     './daily-lang.js',

@@ -643,13 +643,17 @@ window.FQ_COURSE_LANG = {
   'use strict';
   var L = ['mr', 'ar', 'fr', 'es'];
   /* Arabi lafz ke harkaat (zabar, zer, pesh, shadda, sukoon, maddah ...) hata kar milaane ke liye.
-     Isse koi lafz chhootta nahi — warna us par app English dikha deti thi. */
-  function bare(s) { return String(s == null ? '' : s).replace(/[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED\u0640]/g, '').replace(/\u0622|\u0623|\u0625|\u0627\u0654/g, '\u0627').replace(/\u0649/g, '\u064A').replace(/\u0629/g, '\u0647').replace(/\s+/g, ''); }
+     Isse koi lafz chhootta nahi — warna us par app English dikha deti thi.
+     (ة/ى ko nahi badla — warna do alag lafz ek jaise ho jate hain.) */
+  function bare(s) { return String(s == null ? '' : s).replace(/[\u0610-\u061A\u064B-\u065F\u0670\u06D6-\u06ED\u0640]/g, '').replace(/[\u0622\u0623\u0625\u0671]/g, '\u0627').replace(/\s+/g, ''); }
   function apply() {
     var data = (typeof courseData !== 'undefined') ? courseData : window.courseData;
     if (!data || !data.length) return false;
     var T = window.FQ_COURSE_LANG || {}, n = 0, N = {}, key;
     for (key in T) if (Object.prototype.hasOwnProperty.call(T, key)) N[bare(key)] = T[key];   // harkaat ke bagair index
+    /* Arabi sharh (course-ar-sharh.js) — sirf wahan jahan matlab khud lafz hi tha */
+    var S = window.FQ_COURSE_AR_SHARH || {}, SN = {}, s;
+    for (key in S) if (Object.prototype.hasOwnProperty.call(S, key)) SN[bare(key)] = S[key];
     for (var d = 0; d < data.length; d++) {
       var ws = data[d].words || [];
       for (var i = 0; i < ws.length; i++) {
@@ -660,6 +664,11 @@ window.FQ_COURSE_LANG = {
           if (!t) continue;
           w['u_' + v] = t[0];
           if (t[1]) w['t_' + v] = t[1];
+        }
+        s = S[w.a] || SN[bare(w.a)];
+        if (s) {                                        // Arabi matlab ki jagah chhoti sharh
+          w.u_ar = s;
+          if (!w.t_ar || bare(w.t_ar) === bare(w.a) || bare(w.t_ar) === bare(w.u_ar)) w.t_ar = s;
         }
         n++;
       }
