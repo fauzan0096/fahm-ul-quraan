@@ -147,8 +147,8 @@
 //   1) activate par purane cache se **code (html/js/css/json) COPY NAHI hota** — pehle copy hota tha
 //      aur fillRest sirf "jo cache mein nahi" wo download karta tha, is liye purana games.html /
 //      app.js hafton tak chalta rehta tha (isi wajah se Maratib-e-Ilm "sirf 3 din" dikhata rehta).
-//   2) pages/scripts/styles ab **NET PEHLE** (2.5s timeout), net na ho to cache se. Pehle cache-first
-//      tha. Isse naya version foran milta hai; offline bilkul pehle jaisa chalta hai.
+//   2) page (HTML) ab **NET PEHLE** (2.5s timeout), net na ho to cache se. Pehle cache-first tha.
+//      JS/CSS pehle jaisa: cache se foran + peeche se taaza. Offline bilkul pehle jaisa chalta hai.
 //   Bhaari cheezein (tasveerein, fonts, mp3) phir bhi purane cache se copy hoti hain — dobara download nahi.
 const CACHE_NAME = 'quran-ustad-auto-v138';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
@@ -415,15 +415,17 @@ async function staleWhileRevalidate(event, request, cacheName) {
     return fresh || Response.error();
 }
 
-// Pages / scripts / styles: NET PEHLE (naya version foran), net na ho to cache se.
-// Pehle "cache first" tha — is liye purana games.html/app.js hafton tak chalta rehta tha.
+// Pages / scripts / styles.
+//  • Page (navigation/HTML) = NET PEHLE — naya version foran. Net na ho to cache se.
+//    (Pehle cache-first tha, is liye purana games.html hafton tak chalta rehta tha.)
+//  • JS / CSS = cache se foran + peeche se taaza (app tez chale; version badalne par
+//    activate hi naya code laata hai, kyunki code copy nahi hota.)
 async function codeResponse(event, request, isNavigation) {
     const cache = await caches.open(CACHE_NAME);
     const online = (typeof navigator === 'undefined' || !('onLine' in navigator)) ? true : navigator.onLine;
 
-    // Net ho to pehle net se (2.5 second se zyada intezaar nahi — dheema net ho to cache se foran)
-    if (online) {
-        const fresh = await netFirst(request, cache, 2500);
+    if (online && isNavigation) {
+        const fresh = await netFirst(request, cache, 2500);   // dheema net ho to cache se foran
         if (fresh) return fresh;
     }
 
@@ -431,7 +433,19 @@ async function codeResponse(event, request, isNavigation) {
     if (!hit) {
         try { hit = await caches.match(request, { ignoreSearch: true }); } catch (err) { hit = null; }
     }
-    if (hit) return hit;
+
+    const refresh = fetch(request, { cache: 'no-cache' }).then(res => {
+        if (res && res.status === 200 && res.type === 'basic') return putSafe(cache, request, res);
+        return res;
+    }).catch(() => null);
+
+    if (hit) {
+        if (online) { try { event.waitUntil(refresh.then(() => {}, () => {})); } catch (err) {} }
+        return hit;
+    }
+
+    const fresh = await refresh;
+    if (fresh) return fresh;
 
     // Internet nahi mila
     if (isNavigation) {
