@@ -17,6 +17,8 @@
   UI['mrt_quit'] = ['🛑 Round khatam karein', '🛑 راؤنڈ ختم کریں', '🛑 राउंड ख़त्म करें', '🛑 End the round'];
   UI['mrt_done'] = ['Din {s} mein se {t} sahi — din mukammal!', 'دن {s} میں سے {t} صحیح — دن مکمل!',
                     'दिन {s} में से {t} सही — दिन मुकम्मल!', 'You got {s} of {t} right — day complete!'];
+  /* Jawab ka hawala (دلیل) — games-refs.js se aata hai, lafz yahan se */
+  UI['hawala'] = ['Hawala', 'حوالہ', 'हवाला', 'Reference'];
   /* Purane inaam-ki-seedhi (lifeline / "pakka jawab" / star ladder) wale lafz ab kisi kaam ke nahi.
      Yaad-daasht se hata do — taake ye tarjume kahin ghalti se wapas na aa jayein.
      (tier0-4 aur yes/no jaan-boojh kar rakhe hain — Bazm-e-Fahm ke darje aur uske buttons inhi se hain.) */

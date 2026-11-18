@@ -157,7 +157,14 @@
 //       aur agla din khulta hai. Andar ke naam bhi badal diye (kbc* -> mrt*), file ka naam
 //       games-tr-kbc.js -> games-tr-maratib.js. Purani progress (…_kbcUnlockedDay) ek baar
 //       apne aap nayi key mein chali jati hai, is liye kisi ka din dobara kholna nahi padta.
-const CACHE_NAME = 'quran-ustad-auto-v139';
+// v140: HAWALA — Games ke har sawal ka jawab ab uski kitab/ayat ke saath aata hai
+//       (games-refs.js: 300 Maratib-e-Ilm + 50 Sahaba sawal). Jawab dene par hawala foran
+//       dikhta hai, aur din ke aakhir mein "Havala" kholkar poore din ka hisab mil jata hai.
+//       Jis sawal ki koi kitabi sanad nahi, uska hawala khaali — jhoothi sanad nahi di jati.
+//       Nahw-Sarf ke 30 dinon par bhi ab hawala (arabic-grammar.html: Ajrumiyya, Qatr al-Nada,
+//       al-Maqsud fi al-Sarf). Sunnat ke 3 hawale Sahih Bukhari/Muslim ke asl number se mila kar
+//       durust kiye (6313, 1239; Muslim 2165 hata kar 2593) — jhooti sanad kabhi nahi.
+const CACHE_NAME = 'quran-ustad-auto-v140';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -204,6 +211,7 @@ const ASSETS = [
     './games-tr-stories.js',
     './games-tr-emoji.js',
     './games-extra.js',
+    './games-refs.js',
     './asma.html',
     './asma-lang.js',
     './arabic-grammar.html',

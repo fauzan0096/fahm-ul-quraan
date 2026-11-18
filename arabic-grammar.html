@@ -106,6 +106,10 @@
     .day-header .sub.rtl { direction: rtl; font-family: 'Noto Nastaliq Urdu', 'Amiri', serif; font-size: 15px; }
     .goal-box { background: linear-gradient(135deg, rgba(184,146,58,.15), rgba(184,146,58,.05)); border-inline-start: 4px solid var(--gold); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; font-size: 14px; line-height: 1.8; }
     .goal-box b { color: var(--primary); }
+    /* Har din ka hawala — kis kitab ke kis baab se ye sabaq hai */
+    .haw-box { background: rgba(15,76,58,.06); border-inline-start: 4px solid var(--primary); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px; font-size: 13.5px; line-height: 2; }
+    .haw-box b { color: var(--primary); }
+    .haw-box .ref-ar { font-family: 'Amiri', 'Noto Naskh Arabic', 'Traditional Arabic', serif; direction: rtl; unicode-bidi: plaintext; }
     .section { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px 16px; margin-bottom: 14px; }
     .section h3 { font-size: 16px; color: var(--primary); margin-bottom: 10px; font-weight: 700; padding-bottom: 8px; border-bottom: 1px dashed var(--border); line-height: 1.6; }
     .section p { font-size: 15px; line-height: 1.95; color: var(--text); text-align: start; }
@@ -220,7 +224,7 @@
         journey: '📍 آپ کا سفر', daysOf: (a, b) => a + ' / ' + b + ' دن',
         dayWord: 'دن', sarf: 'صرف', nahw: 'نحو',
         gSarf: 'صرف — لفظ کی بناوٹ (دن 1–15)', gNahw: 'نحو — جملے کی ساخت (دن 16–30)',
-        back: '← واپس', goal: '🎯 مقصد:', facts: '💡 یاد رکھنے والی باتیں', refl: '🤲 سبق',
+        back: '← واپس', goal: '🎯 مقصد:', facts: '💡 یاد رکھنے والی باتیں', refl: '🤲 سبق', haw: '📚 حوالہ:',
         exam: n => '📝 امتحان — ' + n + ' سوالات', examSub: 'سارے سوالات کے جواب دیں، پھر "جمع کریں" دبائیں',
         submit: '✅ امتحان جمع کریں', next: d => 'اگلا دن (دن ' + d + ') →', prev: '← پچھلا', allDone: '🎉 سارے دن مکمل — واپس', allDone2: '🎉 سارے دن مکمل — واپس جائیں',
         pass: (s, t) => '🎉 مبارک ہو! آپ نے ' + s + '/' + t + ' صحیح کیے۔', passSub: (d, xp) => 'دن ' + d + ' مکمل! +' + xp + ' XP',
@@ -235,7 +239,7 @@
         journey: '📍 Aapka safar', daysOf: (a, b) => a + ' / ' + b + ' din',
         dayWord: 'Din', sarf: 'Sarf', nahw: 'Nahw',
         gSarf: 'Sarf — lafz ki banawat (din 1–15)', gNahw: 'Nahw — jumle ki sakht (din 16–30)',
-        back: '← Wapas', goal: '🎯 Maqsad:', facts: '💡 Yaad rakhne wali baatein', refl: '🤲 Sabaq',
+        back: '← Wapas', goal: '🎯 Maqsad:', facts: '💡 Yaad rakhne wali baatein', refl: '🤲 Sabaq', haw: '📚 Hawala:',
         exam: n => '📝 Imtihan — ' + n + ' sawalat', examSub: 'Saare sawalon ke jawab dein, phir "Jama karein" dabayein',
         submit: '✅ Imtihan jama karein', next: d => 'Agla din (din ' + d + ') →', prev: '← Pichla', allDone: '🎉 Saare din mukammal — wapas', allDone2: '🎉 Saare din mukammal — wapas jayein',
         pass: (s, t) => '🎉 Mubarak ho! Aapne ' + s + '/' + t + ' sahi kiye.', passSub: (d, xp) => 'Din ' + d + ' mukammal! +' + xp + ' XP',
@@ -250,7 +254,7 @@
         journey: '📍 आपका सफ़र', daysOf: (a, b) => a + ' / ' + b + ' दिन',
         dayWord: 'दिन', sarf: 'सर्फ़', nahw: 'नह्व',
         gSarf: 'सर्फ़ — लफ़्ज़ की बनावट (दिन 1–15)', gNahw: 'नह्व — जुमले की बनावट (दिन 16–30)',
-        back: '← वापस', goal: '🎯 मक़सद:', facts: '💡 याद रखने वाली बातें', refl: '🤲 सबक़',
+        back: '← वापस', goal: '🎯 मक़सद:', facts: '💡 याद रखने वाली बातें', refl: '🤲 सबक़', haw: '📚 हवाला:',
         exam: n => '📝 इम्तिहान — ' + n + ' सवाल', examSub: 'सारे सवालों के जवाब दें, फिर "जमा करें" दबाएँ',
         submit: '✅ इम्तिहान जमा करें', next: d => 'अगला दिन (दिन ' + d + ') →', prev: '← पिछला', allDone: '🎉 सारे दिन मुकम्मल — वापस', allDone2: '🎉 सारे दिन मुकम्मल — वापस जाएँ',
         pass: (s, t) => '🎉 मुबारक हो! आपने ' + s + '/' + t + ' सही किए।', passSub: (d, xp) => 'दिन ' + d + ' मुकम्मल! +' + xp + ' XP',
@@ -265,7 +269,7 @@
         journey: '📍 Your journey', daysOf: (a, b) => a + ' / ' + b + ' days',
         dayWord: 'Day', sarf: 'Sarf', nahw: 'Nahw',
         gSarf: 'Sarf — how words are formed (days 1–15)', gNahw: 'Nahw — how sentences work (days 16–30)',
-        back: '← Back', goal: '🎯 Goal:', facts: '💡 Key points to remember', refl: '🤲 Lesson',
+        back: '← Back', goal: '🎯 Goal:', facts: '💡 Key points to remember', refl: '🤲 Lesson', haw: '📚 Reference:',
         exam: n => '📝 Quiz — ' + n + ' questions', examSub: 'Answer all questions, then press "Submit"',
         submit: '✅ Submit quiz', next: d => 'Next day (day ' + d + ') →', prev: '← Previous', allDone: '🎉 All days complete — back', allDone2: '🎉 All days complete — go back',
         pass: (s, t) => '🎉 Congratulations! You got ' + s + '/' + t + ' correct.', passSub: (d, xp) => 'Day ' + d + ' complete! +' + xp + ' XP',
@@ -283,7 +287,7 @@
       journey: '📍 तुमचा प्रवास', daysOf: (a, b) => a + ' / ' + b + ' दिवस',
       dayWord: 'दिवस', sarf: 'सर्फ', nahw: 'नह्व',
       gSarf: 'सर्फ — शब्दाची रचना (दिवस १–१५)', gNahw: 'नह्व — वाक्याची रचना (दिवस १६–३०)',
-      back: '← मागे', goal: '🎯 उद्दिष्ट:', facts: '💡 लक्षात ठेवण्याच्या गोष्टी', refl: '🤲 धडा',
+      back: '← मागे', goal: '🎯 उद्दिष्ट:', facts: '💡 लक्षात ठेवण्याच्या गोष्टी', refl: '🤲 धडा', haw: '📚 आधार:',
       exam: n => '📝 परीक्षा — ' + n + ' प्रश्न', examSub: 'सर्व प्रश्नांची उत्तरे द्या, नंतर "जमा करा" दाबा',
       submit: '✅ परीक्षा जमा करा', next: d => 'पुढील दिवस (दिवस ' + d + ') →', prev: '← मागील', allDone: '🎉 सर्व दिवस पूर्ण — मागे', allDone2: '🎉 सर्व दिवस पूर्ण — मागे जा',
       pass: (s, t) => '🎉 अभिनंदन! तुम्ही ' + s + '/' + t + ' बरोबर केले.', passSub: (d, xp) => 'दिवस ' + d + ' पूर्ण! +' + xp + ' XP',
@@ -298,7 +302,7 @@
       journey: '📍 رحلتك', daysOf: (a, b) => a + ' / ' + b + ' يومًا',
       dayWord: 'اليوم', sarf: 'الصرف', nahw: 'النحو',
       gSarf: 'الصرف — بناء الكلمة (الأيام 1–15)', gNahw: 'النحو — بناء الجملة (الأيام 16–30)',
-      back: '→ رجوع', goal: '🎯 الهدف:', facts: '💡 أمور تُحفظ', refl: '🤲 الدرس',
+      back: '→ رجوع', goal: '🎯 الهدف:', facts: '💡 أمور تُحفظ', refl: '🤲 الدرس', haw: '📚 الدليل:',
       exam: n => '📝 اختبار — ' + n + ' أسئلة', examSub: 'أجب عن كل الأسئلة ثم اضغط «إرسال»',
       submit: '✅ إرسال الاختبار', next: d => 'اليوم التالي (اليوم ' + d + ') ←', prev: '→ السابق', allDone: '🎉 اكتملت كل الأيام — رجوع', allDone2: '🎉 اكتملت كل الأيام — ارجع',
       pass: (s, t) => '🎉 مبارك! أجبت إجابة صحيحة على ' + s + '/' + t + '.', passSub: (d, xp) => 'أكملت اليوم ' + d + '! +' + xp + ' XP',
@@ -313,7 +317,7 @@
       journey: '📍 Votre parcours', daysOf: (a, b) => a + ' / ' + b + ' jours',
       dayWord: 'Jour', sarf: 'Sarf', nahw: 'Nahw',
       gSarf: 'Sarf — la formation du mot (jours 1–15)', gNahw: 'Nahw — la structure de la phrase (jours 16–30)',
-      back: '← Retour', goal: '🎯 But :', facts: '💡 Points à retenir', refl: '🤲 Leçon',
+      back: '← Retour', goal: '🎯 But :', facts: '💡 Points à retenir', refl: '🤲 Leçon', haw: '📚 Référence :',
       exam: n => '📝 Quiz — ' + n + ' questions', examSub: 'Répondez à toutes les questions, puis appuyez sur « Envoyer »',
       submit: '✅ Envoyer le quiz', next: d => 'Jour suivant (jour ' + d + ') →', prev: '← Précédent', allDone: '🎉 Tous les jours terminés — retour', allDone2: '🎉 Tous les jours terminés — revenir',
       pass: (s, t) => '🎉 Félicitations ! Vous avez ' + s + '/' + t + ' bonnes réponses.', passSub: (d, xp) => 'Jour ' + d + ' terminé ! +' + xp + ' XP',
@@ -328,7 +332,7 @@
       journey: '📍 Tu recorrido', daysOf: (a, b) => a + ' / ' + b + ' días',
       dayWord: 'Día', sarf: 'Sarf', nahw: 'Nahw',
       gSarf: 'Sarf: la formación de la palabra (días 1-15)', gNahw: 'Nahw: la estructura de la frase (días 16-30)',
-      back: '← Atrás', goal: '🎯 Objetivo:', facts: '💡 Puntos para recordar', refl: '🤲 Lección',
+      back: '← Atrás', goal: '🎯 Objetivo:', facts: '💡 Puntos para recordar', refl: '🤲 Lección', haw: '📚 Referencia:',
       exam: n => '📝 Cuestionario: ' + n + ' preguntas', examSub: 'Responde todas las preguntas y pulsa «Enviar»',
       submit: '✅ Enviar el cuestionario', next: d => 'Día siguiente (día ' + d + ') →', prev: '← Anterior', allDone: '🎉 Todos los días completados: atrás', allDone2: '🎉 Todos los días completados: volver',
       pass: (s, t) => '🎉 ¡Enhorabuena! Has acertado ' + s + '/' + t + '.', passSub: (d, xp) => '¡Día ' + d + ' completado! +' + xp + ' XP',
@@ -354,6 +358,46 @@
         });
       });
     })();
+    /* ==========================================================
+       GRAM_REFS — har din ka hawala: ye sabaq kis kitab ke kis baab se hai.
+       Sirf woh kitabein jo aam taur par mustanad maani jati hain:
+         • صرف  -> «المقصود في الصرف» (الميداني) aur «الأمثلة العشرية»
+         • نحو  -> «متن الآجرومية» (ابن آجُرُّوم) + «التحفة السنية» (محمد محيي الدين)
+                   aur «قطر الندى» (ابن هشام) jahan Ajrumiyya mein baab nahi.
+       Baab ka naam wahi likha gaya hai jo kitab mein hai — jhooti sanad nahi di jati.
+       ========================================================== */
+    const GRAM_REFS = {
+      1: "المقصود في الصرف (الميداني) — المقدمة",
+      2: "الآجرومية (ابن آجُرُّوم) — المقدمة: الكلمة ثلاثة أقسام",
+      3: "المقصود في الصرف — الجذر الصرفي",
+      4: "المقصود في الصرف — الميزان الصرفي",
+      5: "المقصود في الصرف — تصريف الماضي؛ الأمثلة العشرية",
+      6: "المقصود في الصرف — تصريف المضارع؛ الأمثلة العشرية",
+      7: "المقصود في الصرف — الأمر",
+      8: "المقصود في الصرف — النهي",
+      9: "المقصود في الصرف — أبواب الثلاثي المجرد (١–٣)",
+      10: "المقصود في الصرف — أبواب الثلاثي المجرد (٤–٦)",
+      11: "المقصود في الصرف — اسم الفاعل واسم المفعول",
+      12: "المقصود في الصرف — اسم المكان والزمان واسم الآلة",
+      13: "المقصود في الصرف — الصفة المشبهة واسم التفضيل",
+      14: "المقصود في الصرف — جمع المذكر والمؤنث السالم وجمع التكسير",
+      15: "المقصود في الصرف — الثلاثي المزيد فيه",
+      16: "الآجرومية — المقدمة؛ التحفة السنية (محمد محيي الدين)",
+      17: "الآجرومية — باب الإعراب وعلاماته",
+      18: "الآجرومية — باب المبتدأ والخبر",
+      19: "الآجرومية — باب الفاعل وباب المفعول به",
+      20: "الآجرومية — باب كان وأخواتها",
+      21: "الآجرومية — باب إنَّ وأخواتها",
+      22: "الآجرومية — باب مخفوضات الأسماء (حروف الخفض)",
+      23: "الآجرومية — باب المخفوضات (المضاف إليه)",
+      24: "قطر الندى (ابن هشام) — باب النعت",
+      25: "قطر الندى (ابن هشام) — باب التوابع (العطف والبدل والتوكيد)",
+      26: "الآجرومية — باب المعرفة والنكرة (أسماء الإشارة والموصولة)",
+      27: "الآجرومية — باب المعرفة والنكرة (الضمائر)؛ قطر الندى",
+      28: "الآجرومية — باب الحال والتمييز",
+      29: "الآجرومية — المخفوضات والأدوات التي تجزم",
+      30: "جامع الدروس العربية (الغلاييني) — خلاصة النحو"
+    };
     const lang = () => { try { const v = QSLang.get(); return UI[v] ? v : (v && v !== 'u' ? 'en' : 'u'); } catch (e) { return 'u'; } };
     const T = () => UI[lang()];
 
@@ -449,7 +493,8 @@
       let html = '<div class="day-header ' + (d.type === 'nahw' ? 'nahw-h' : '') + '">' +
         '<div class="label">' + esc(t.dayWord) + ' ' + d.day + ' • ' + (d.type === 'sarf' ? '🔤 ' + esc(t.sarf) : '📖 ' + esc(t.nahw)) + '</div>' +
         '<h2>' + d.emoji + ' ' + fmt(x.title) + '</h2>' + sub + '</div>' +
-        '<div class="goal-box"><b>' + esc(t.goal) + '</b> ' + fmt(x.goal) + '</div>';
+        '<div class="goal-box"><b>' + esc(t.goal) + '</b> ' + fmt(x.goal) + '</div>' +
+        (GRAM_REFS[d.day] ? '<div class="haw-box"><b>' + esc(t.haw) + '</b> <span class="ref-ar" dir="rtl">' + GRAM_REFS[d.day] + '</span></div>' : '');
 
       x.sections.forEach(s => { html += '<div class="section"><h3>' + fmt(s.h) + '</h3><p>' + fmt(s.p) + '</p></div>'; });
 

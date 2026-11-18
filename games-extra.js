@@ -76,6 +76,9 @@
       es: "Respondiste {s} de {t}: ¡día completado!"
     },
 
+    /* Jawab ka hawala (دلیل) — games-refs.js se. Kitabon ke arabi naam har zubaan par wahi. */
+    hawala: { mr: "आधार", ar: "الدليل", fr: "Référence", es: "Referencia" },
+
     next_day: {
       mr: "➡️ पुढील दिवस (दिवस {n})", ar: "➡️ اليوم التالي (اليوم {n})",
       fr: "➡️ Jour suivant (Jour {n})", es: "➡️ Día siguiente (Día {n})"

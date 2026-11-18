@@ -104,6 +104,7 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 - 30 din (15 Sarf + 15 Nahw), **4 zubaanein**: اردو / Roman / हिंदी / English — header ka zubaan button (baaqi pages jaisa `QSLang`).
 - Course ka sara text `grammar-course.js` mein (`GRAMMAR_COURSE`); Arabic alfaz `{{ ... }}` mein, page unhein har zubaan mein ek jaise Arabic font mein dikhata hai.
 - Quiz: options har baar shuffle, galat jawab par sahi jawab bhi dikhta hai, zubaan badalne par jawab/natija bana rehta hai. Gardaan table mein ghaib/hazir/mutakallim ke rang.
+- **📚 Har din ka hawala (v140):** sabaq ke neeche ek chhota hawala-box — `arabic-grammar.html` ke `GRAM_REFS` mein 30 dinon ka hawala (Sarf: «المقصود في الصرف» / «الأمثلة العشرية»; Nahw: «متن الآجرومية» + «التحفة السنية» aur jahan Ajrumiyya mein baab nahi wahan «قطر الندى»). Har zubaan ke liye lafz UI ke `haw` mein, kitabon ke naam arabi mein hi rehte hain.
 
 ### 🎨 Icon set (`icons.js`) — v71
 - Emoji ki jagah apne SVG icons (hara line + sunehri accent): Quran, Sabaq, Games, Tajweed, Duaein, 99 Naam, Nahw-Sarf, Seerat, Arkan, Shop, Maqsad, Ayat, Yaad, Profile, Home.
@@ -151,6 +152,7 @@ Azan app band hone par bhi bajne ke liye. **Phone/screen par koi lock nahi lagta
 🪜 **Maratib-e-Ilm** · ⭐ Sahaba · 🧠 Memory · 😀 Emoji · 🎓 **Bazm-e-Fahm** (ab isi page ke andar, alag file nahi; purana `bazm.html` link sirf redirect hai) — sound effects ke saath. Header ka **🎵 button** har game mein nasheed chalata/rokta hai (`nasheed.mp3` chahiye).
 - Maratib-e-Ilm = **30 din × 10 sawal**; day-list mein poore 30 din dikhte hain (khule 🔓 / band 🔒), jeetne par agla din khulta hai.
 - Zubaan: UI, Memory ke matlab **aur sawal-jawab-kahaniyan** — sab 8 zubaanoN mein (`games-lang.js` + `games-extra.js` + `games-tr*.js`).
+- **📚 Har sawal ka hawala (v140, `games-refs.js`):** Maratib-e-Ilm ke **300** aur Sahaba ke **50** sawal ke saath unka jawab kis ayat/kitab se hai (`"بخاری ۸، مسلم ۱۶"`, `"قرآن ۲:۱۸۵"`). Jawab dene par hawala foran dikhta hai, aur din ke natije par **📖 Hawala** kholkar poore din ka hisab milta hai. Key = sawal ka bilkul wahi Roman jumla; milane se pehle chhote farq (harakat, `’`/`'`, `؟`/`?`, extra space) nazar-andaz kiye jate hain. Jis sawal ki koi kitabi sanad nahi (jaise tasveeri sawal), uska hawala **khaali** rehta hai — jhoothi sanad nahi di jati.
 
 ### 🎵 Background awaaz (`nature-ambience.mp3`)
 - Games mein 🎵 button hawa + behta paani + parindon (chehchahate, trill, siti, kabootar) ki **original** awaaz chalata hai. Ye awaaz code se bani hai (koi recording / sample istemal nahi hui), isliye uska copyright ka masla nahi.
@@ -246,6 +248,7 @@ Dhyan dein:
 | `asma-lang.js` | Asma-ul-Husna ke 99 naam |
 | `grammar-lang.js` | Nahw-Sarf ke 30 din (unwan + maqsad) |
 | `games-extra.js` | Games ka UI + Memory ke matlab + `GT/GU/GM` |
+| `games-refs.js` | Games ke saare sawalon ka hawala (`window.FQ_QREF`) — 300 Maratib-e-Ilm + 50 Sahaba |
 | `games-tr.js` … `games-tr-emoji.js` | Games ke sawal, jawab aur kahaniyan (5 files: `games-tr`, `games-tr-maratib`, `games-tr-sahaba`, `games-tr-stories`, `games-tr-emoji`) |
 
 ## ⚖️ Copyright — kya kisi aur ka hai, aur kya nahi

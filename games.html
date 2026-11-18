@@ -18,6 +18,7 @@
     <script src="games-tr-stories.js"></script>
     <script src="games-tr-emoji.js"></script>
     <script src="games-extra.js"></script>
+    <script src="games-refs.js"></script>
     <meta name="theme-color" content="#0F4C3A">
     <script src="sounds.js" defer></script>
     <script src="tools.js" defer></script>
@@ -75,6 +76,17 @@
         .mrt-btn { background: linear-gradient(135deg, var(--mrt-gold), #B8923A); color: #000; border: none; padding: 12px 25px; border-radius: 25px; font-weight: bold; font-size: 15px; cursor: pointer; margin-top: 10px; }
         .mrt-quit { display: block; margin: 14px auto 0; background: transparent; border: 1px solid rgba(255,255,255,.3); color: #ddd; padding: 8px 16px; border-radius: 16px; font-size: 12px; cursor: pointer; position: relative; z-index: 1; }
         .mrt-note { text-align: center; color: #aaa; font-size: 11px; margin-top: 8px; position: relative; z-index: 1; }
+        /* Hawala (دلیل) — games-refs.js se. Arabi kitab ke naam hamesha RTL hi rehte hain. */
+        .mrt-ref { text-align: center; color: #d9c98a; font-size: 12px; margin-top: 12px; line-height: 1.9; position: relative; z-index: 1; }
+        .mrt-ref b { color: var(--mrt-gold); }
+        .mrt-refs { margin-top: 16px; position: relative; z-index: 1; }
+        .mrt-refs summary { cursor: pointer; color: var(--mrt-gold); font-size: 12.5px; font-weight: bold; text-align: center; padding: 6px 0; list-style: none; }
+        .mrt-refs summary::-webkit-details-marker { display: none; }
+        .mrt-refs summary::before { content: '📖 '; }
+        .mrt-refs .mrt-ref { font-size: 11.5px; text-align: right; margin-top: 6px; border-top: 1px solid rgba(217,182,90,.18); padding-top: 6px; }
+        .ref-ar { font-family: 'Amiri', 'Noto Naskh Arabic', 'Traditional Arabic', serif; unicode-bidi: plaintext; }
+        .sahaba-ref { margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--secondary); font-size: 12px; color: var(--text-light); line-height: 1.9; }
+        .sahaba-ref b { color: var(--primary); }
 
         .sahaba-box { background: var(--card-bg); padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--secondary); }
         .sahaba-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
@@ -831,6 +843,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
                 <div class="mrt-qnum" id="mrtQNum"></div>
                 <div class="mrt-question" id="mrtQuestion"></div>
                 <div class="mrt-options" id="mrtOptions"></div>
+                <div class="mrt-ref" id="mrtRef"></div>
                 <div class="mrt-note">${GU('mrt_note')}</div>
                 <button class="mrt-quit" onclick="mrtQuit()">${GU('mrt_quit')}</button>
             `;
@@ -868,16 +881,20 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
                 mrtState.right++;
                 const sc = document.getElementById('mrtScore');
                 if (sc) sc.textContent = '✅ ' + mrtState.right + ' / ' + mrtData.length;
+                const rf = document.getElementById('mrtRef');
+                if (rf) rf.innerHTML = QRefInner(q[0]);
                 setTimeout(() => {
                     mrtState.over = false;
                     mrtState.i++;
                     if (mrtState.i >= mrtData.length) mrtFinish(true);
                     else mrtLoadQuestion();
-                }, 900);
+                }, 1500);
             } else {
                 btns[sel].classList.add('wrong');
                 btns[q[5]].classList.add('correct');
-                setTimeout(() => mrtFinish(false), 1500);
+                const rf = document.getElementById('mrtRef');
+                if (rf) rf.innerHTML = QRefInner(q[0]);
+                setTimeout(() => mrtFinish(false), 2200);
             }
         }
 
@@ -894,12 +911,17 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
                 try { localStorage.setItem(MRT_KEY, String(cur + 1)); } catch (e) {}
             }
             if (passed) celebrate(GU('cele_win_t'), GU('mrt_done', { s: right, t: total }));
+            // Din ke saare sawalon ka hawala — "Hawala" par tap karke poora hisab dekha ja sakta hai
+            const dayRefs = mrtData.map(q => QRefInner(q[0])).filter(Boolean);
             mrtResultPaint = () => {
                 let nextBtn = '';
                 if (passed && cur < MRT.length) nextBtn = `<button class="mrt-btn" onclick="initMrt(${cur + 1})">${GU('next_day', { n: cur + 1 })}</button><br>`;
                 const msg = passed
                     ? (cur < MRT.length ? GU('res_win_msg', { n: cur, m: cur + 1 }) : GU('res_all'))
                     : (quit ? GU('res_quit_msg', { n: right }) : GU('res_lose_msg', { n: (mrtState ? mrtState.i + 1 : total) }));
+                const refBlock = dayRefs.length
+                    ? `<details class="mrt-refs"><summary>${GU('hawala')} (${dayRefs.length})</summary>${dayRefs.map(r => `<div class="mrt-ref">${r}</div>`).join('')}</details>`
+                    : '';
                 document.getElementById('mrt').innerHTML = `
                 <div class="mrt-result">
                     <h2>${passed ? GU('res_win') : (quit ? GU('res_quit') : GU('res_lose'))}</h2>
@@ -907,10 +929,48 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
                     <p style="color:#aaa; margin-bottom:15px;">${msg}</p>
                     ${nextBtn}
                     <button class="mrt-btn" onclick="initMrt(${cur})">${GU('again')}</button>
+                    ${refBlock}
                 </div>
             `;
             };
             mrtResultPaint();
+        }
+
+        // ==========================================
+        // HAWALA (دلیل) — games-refs.js
+        // ==========================================
+        // Har sawal ka jawab kis ayat / kis kitab se hai. Key = sawal ka bilkul wahi Roman
+        // jumla. Jis sawal ki koi kitabi sanad nahi, wahan khaali rehta hai — jhoothi sanad
+        // nahi. Kitabon ke arabi naam har zubaan par wahi rehte hain, sirf "Hawala" badalta hai.
+        function qrefNorm(s) {
+            return String(s == null ? '' : s)
+                .replace(/[\u064B-\u0652\u0670\u0640]/g, '')
+                .replace(/[’‘`´]/g, "'")
+                .replace(/[“”]/g, '"')
+                .replace(/[؟?]/g, '?')
+                .replace(/\s+/g, ' ')
+                .trim()
+                .toLowerCase();
+        }
+        let QREF_IDX = null;
+        function QREF(roman) {
+            const R = window.FQ_QREF;
+            if (!R) return '';
+            if (R[roman]) return R[roman];
+            if (!QREF_IDX) {
+                QREF_IDX = {};
+                for (const k in R) if (Object.prototype.hasOwnProperty.call(R, k)) QREF_IDX[qrefNorm(k)] = R[k];
+            }
+            return QREF_IDX[qrefNorm(roman)] || '';
+        }
+        function QRefInner(roman) {
+            var v = QREF(roman);
+            if (!v) return '';
+            return '<b>' + GU('hawala') + ':</b> <span class="ref-ar" dir="rtl">' + v + '</span>';
+        }
+        function QRefHtml(roman, cls) {
+            var s = QRefInner(roman);
+            return s ? '<div class="' + (cls || 'mrt-ref') + '">' + s + '</div>' : '';
         }
 
         // ==========================================
@@ -1013,6 +1073,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
                 <div class="sahaba-story">
                     <h3>📖 ${GT(q.name)}</h3>
                     <p>${GT(q.story)}</p>
+                    ${QRefHtml(q.q, 'sahaba-ref')}
                     <button class="btn-primary" onclick="sahabaNext()">${GU('sh_next')}</button>
                 </div>
             `;
