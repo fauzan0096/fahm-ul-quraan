@@ -111,9 +111,10 @@
 //       Hajj) chaar nayi zubaanoN mein poore hain.
 // v112: ARKAN — arkan.js ke chhote labels (✅ Read / ☐ Mark this section as read / progress / pichla-agla /
 //       wapas / theme) aur hero ki "Aap ki pesh raft" line bhi nayi 4 zubaanoN mein (ARKAN_UI).
-// v127: TAJWEED — Arbi zubaan chunne par wazahat bhi Naskh (Amiri) font mein aur RTL, aur <html lang>
-//       sahi set hota hai.
-const CACHE_NAME = 'quran-ustad-auto-v127';
+// v128: ASMA-UL-HUSNA — naya asma-lang.js: 99 naamon ka matlab मराठी / العربية / Français / Español mein
+//       (tarteeb se). Naam ke Arabi alfaaz wahi rehte hain, sirf matlab badalta hai; search bhi nayi
+//       zubaan par chalti hai aur Arbi matlab RTL mein dikhta hai.
+const CACHE_NAME = 'quran-ustad-auto-v128';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -152,6 +153,7 @@ const ASSETS = [
     './games.html',
     './games-lang.js',
     './asma.html',
+    './asma-lang.js',
     './arabic-grammar.html',
     './quran.html',
     './privacy.html',
