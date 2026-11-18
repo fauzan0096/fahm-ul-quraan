@@ -5073,6 +5073,838 @@ window.SEERAT_LANG = {
           ["630", "El reparto en Yirana"]
         ]
       ]
+    },
+
+    /* ═══════════════ DAY 28 — Ghazwa-e-Tabuk ═══════════════ */
+    28: {
+      mr: [
+        "तबूकचे युद्ध — शेवटचे युद्ध",
+        "तबूक",
+        "रजब हिजरी ९ (ऑक्टोबर इ.स. ६३०)",
+        "तबूकची तयारी, कठीण परिस्थिती आणि युद्ध न करता परतीची घटना समजून घेणे.",
+        "हजरत उस्मान (र.अ.) यांनी मोकळ्या हाताने दिले. हे अल्लाह! आम्हालाही तुझ्या मार्गात देण्याची तौफीक दे. आमीन.",
+        [
+          "हिजरी ९",
+          "सुमारे ३०,००० सैन्य",
+          "उस्मान (र.अ.) यांचे मोठे दान",
+          "कठोर उकाडा",
+          "युद्ध झाले नाही",
+          "तीन सत्यवादी सहाबांची तौबा"
+        ],
+        [
+          ["🌡️ पार्श्वभूमी",
+           "शामकडे रोमन/गस्सानींच्या जमावाची बातमी (सीरत; इब्न साद). कठोर उकाडा, फळांचा हंगाम आणि तंगी; म्हणून «जैशुल-उसरा» (कुरआन ९:११७ «साअतुल-उसरा»). संख्या सुमारे ३०,००० (अर-रहीकुल-मख्तूम; सीरत). अली (र.अ.) यांना मदिन्यात ठेवले: «तुम्ही माझ्यासाठी तसे आहात जसे मूसा (अ.स.) यांच्यासाठी हारून (अ.स.) होते» (सहीह बुखारी ४४१६; सहीह मुस्लिम २४०४).",
+           ""],
+          ["💰 कुर्बानी",
+           "अबू बक्र (र.अ.) आपला सर्व माल घेऊन आले: «अल्लाह व त्याचा रसूल पुरेसे आहेत»; उमर (र.अ.) अर्धा माल घेऊन आले (सुनन अबी दाऊद १६७८; तिर्मिझी ३६७५, अल्बानी: हसन). उस्मान (र.अ.): ३०० उंट व एक हजार दिनार; «आजनंतर उस्मानला कोणतेही कर्म हानी करणार नाही» (तिर्मिझी ३६९९–३७०१, अल्बानी: हसन). सूचना: अब्दुर्रहमान बिन औफ (र.अ.) यांचे २०० औकिया व स्त्रियांच्या दागिन्यांचा तपशील वाकिदी/इब्न साद (जईफ) मधून आहे, सहीह हदीसमध्ये नाही.",
+           ""],
+          ["😢 मागे राहिलेले",
+           "खऱ्या गरिबांकडे स्वारी नव्हती, ते रडत परत गेले (अत-तौबा ९:९२); अबू मूसा (र.अ.) यांना नंतर उंट मिळाले (सहीह बुखारी ४४१५). मुनाफिकांनी सबबी सांगितल्या. तीन सत्यवादी सहाबा: काब बिन मालिक, मरारा बिन रबीअ व हिलाल बिन उमय्या (र.अ.) यांनी विनाकारण मागे राहणे कबूल केले; ५० दिवसांचा बहिष्कार; नंतर तौबा स्वीकारली (अत-तौबा ९:११८) (सहीह बुखारी ४४१८; सहीह मुस्लिम २७६९).",
+           ""],
+          ["🏜️ प्रवास",
+           "तंगी, एका उंटावर अनेक जण, पाण्याची कमतरता. हिज्र (समूद) मधून जाताना मार्गदर्शन: रडत जा, डोके झाकून घ्या (सहीह बुखारी ४४१९–४४२०). अबू झर (र.अ.) यांच्या पायी चालण्याच्या व «अल्लाह अबू झरवर दया करो» या रिवायतीच्या सनदेवर चर्चा आहे (इब्न इशाक/हाकिम), आणि पावसाची घटनाही सीरतमधून आहे.",
+           ""],
+          ["🏰 तबूकमध्ये",
+           "रोमन सैन्य समोर आले नाही (अर-रहीकुल-मख्तूम). मुक्काम सुमारे २० दिवस (सुनन अबी दाऊद १२३५, अल्बानी: सहीह). ऐलाचा हाकीम युहन्ना बिन रुबा यांनी भेटवस्तू दिल्या आणि जिझिया घेऊन तह केला (सहीह बुखारी १४८१; तपशील सीरत); जर्बा व अजरुहसोबतचा तह सीरतची रिवायत आहे. सुधारणा: मस्जिदे-जिरार (अत-तौबा ९:१०७–११०) चा विध्वंस तबूकमध्ये नाही, परतीच्या वेळी झी अवानजवळ झाला; निघण्याच्या वेळी नबी ﷺ म्हणाले होते «परतीवर» (सीरत; तफसीर इब्न कसीर).",
+           ""],
+          ["🏘️ परती",
+           "«मदिन्यात काही लोक असे आहेत की तुम्ही ज्या दरीतून गेलात तिथे ते तुमच्यासोबत होते; त्यांना सबबीने रोखले होते» (सहीह बुखारी ४४२३).",
+           ""],
+          ["🎯 बोध",
+           "कठीण वेळी माल व जिवाने दीनाची साथ द्या; अल्लाहवर भरवसा ठेवा.",
+           ""]
+        ],
+        [
+          ["तबूकचे युद्ध कोणत्या वर्षी झाले?", ["हिजरी ८", "हिजरी ९", "हिजरी १०"]],
+          ["सर्वात मोठे दान कोणी दिले?", ["अबू बक्र (र.अ.)", "उमर (र.अ.)", "उस्मान (र.अ.)"]],
+          ["रोमन सैन्याचे काय झाले?", ["युद्ध झाले", "समोर आले नाही", "तह झाला"]]
+        ],
+        [
+          ["इ.स. ६३०", "रोमन बातमी"],
+          ["इ.स. ६३०", "मालाची जमवाजमव"],
+          ["इ.स. ६३०", "तबूकचा प्रवास व सुमारे २० दिवस मुक्काम"],
+          ["इ.स. ६३०", "परतीवर मस्जिदे-जिरारचा विध्वंस"]
+        ]
+      ],
+      ar: [
+        "غزوة تبوك — الغزوة الأخيرة",
+        "تبوك",
+        "رجب السنة التاسعة (أكتوبر 630)",
+        "فهم استعداد تبوك، وشدة الأحوال، والرجوع دون قتال.",
+        "أنفق عثمان رضي الله عنه بسخاء. اللهم وفقنا للإنفاق في سبيلك. آمين.",
+        [
+          "السنة التاسعة",
+          "نحو ثلاثين ألفًا",
+          "إنفاق عثمان رضي الله عنه العظيم",
+          "شدة الحر",
+          "لم يكن قتال",
+          "توبة ثلاثة من صادقي الصحابة"
+        ],
+        [
+          ["🌡️ الخلفية",
+           "خبر تجمّع الروم والغساسنة نحو الشام (سيرة؛ ابن سعد). وحر شديد، وأوان ثمار، وضيق؛ ولذلك «جيش العسرة» (القرآن 9:117 «ساعة العسرة»). والعدد نحو ثلاثين ألفًا (الرحيق المختوم؛ سيرة). واستخلف عليًّا رضي الله عنه على المدينة: «أنت مني بمنزلة هارون من موسى» (صحيح البخاري 4416؛ صحيح مسلم 2404).",
+           ""],
+          ["💰 التضحية",
+           "جاء أبو بكر رضي الله عنه بماله كله وقال: «حسبي الله ورسوله»؛ وجاء عمر رضي الله عنه بنصف ماله (سنن أبي داود 1678؛ الترمذي 3675، الألباني: حسن). وعثمان رضي الله عنه: ثلاثمئة بعير وألف دينار؛ «ما ضرّ عثمان ما عمل بعد اليوم» (الترمذي 3699–3701، الألباني: حسن). تنبيه: تفصيل مئتي أوقية لعبد الرحمن بن عوف رضي الله عنه وحُليّ النساء من الواقدي وابن سعد (ضعيف)، وليس في حديث صحيح.",
+           ""],
+          ["😢 المتخلفون",
+           "لم يكن عند الفقراء الصادقين ظهر، فرجعوا يبكون (التوبة 9:92)؛ وحصل أبو موسى رضي الله عنه على إبل بعد ذلك (صحيح البخاري 4415). واعتذر المنافقون بأعذار. وأما الثلاثة الصادقون: كعب بن مالك ومرارة بن الربيع وهلال بن أمية رضي الله عنهم فاعترفوا بالتخلف بلا عذر؛ فقوطعوا خمسين يومًا؛ ثم تِيب عليهم (التوبة 9:118) (صحيح البخاري 4418؛ صحيح مسلم 2769).",
+           ""],
+          ["🏜️ السفر",
+           "ضيق، وعلى البعير الواحد عدة نفر، وقلة ماء. ولما مرّوا بالحِجر (ثمود) قال: «لا تدخلوا إلا باكين، وغطّوا رؤوسكم» (صحيح البخاري 4419–4420). وأما مَشْي أبي ذر رضي الله عنه وقول «رحم الله أبا ذر» ففي إسناده كلام (ابن إسحاق/الحاكم)، وكذلك قصة المطر من السيرة.",
+           ""],
+          ["🏰 في تبوك",
+           "لم يظهر للروم جيش (الرحيق المختوم). والإقامة نحو عشرين يومًا (سنن أبي داود 1235، الألباني: صحيح). وصالح يوحنا بن رؤبة عامل أيلة على الجزية وأهدى (صحيح البخاري 1481؛ والتفصيل في السيرة)؛ وصلح جرباء وأذرح من روايات السيرة. تصحيح: هدم مسجد الضرار (التوبة 9:107–110) لم يكن في تبوك، بل عند ذي أوان في الرجوع؛ وقد قال ﷺ عند الخروج: «حين نرجع» (سيرة؛ تفسير ابن كثير).",
+           ""],
+          ["🏘️ الرجوع",
+           "«إن بالمدينة أقوامًا ما سرتم مسيرًا ولا قطعتم واديًا إلا كانوا معكم، حبسهم العذر» (صحيح البخاري 4423).",
+           ""],
+          ["🎯 العبرة",
+           "في الشدائد ناصر الدين بالمال والنفس؛ وتوكل على الله.",
+           ""]
+        ],
+        [
+          ["في أي سنة كانت تبوك؟", ["الثامنة", "التاسعة", "العاشرة"]],
+          ["من كان أكبر المنفقين؟", ["أبو بكر رضي الله عنه", "عمر رضي الله عنه", "عثمان رضي الله عنه"]],
+          ["ماذا حدث لجيش الروم؟", ["وقع قتال", "لم يظهر", "وقع صلح"]]
+        ],
+        [
+          ["630", "خبر الروم"],
+          ["630", "تجهيز المال"],
+          ["630", "سفر تبوك والإقامة نحو عشرين يومًا"],
+          ["630", "هدم مسجد الضرار في الرجوع"]
+        ]
+      ],
+      fr: [
+        "L'expédition de Taboûk — la dernière expédition",
+        "Taboûk",
+        "Rajab de l'an 9 (octobre 630)",
+        "Comprendre les préparatifs de Taboûk, la dureté des conditions et le retour sans combat.",
+        "'Uthmân (qu'Allah l'agrée) dépensa largement. Ô Allah ! Accorde-nous de dépenser dans Ta voie. Âmîn.",
+        [
+          "An 9",
+          "Environ 30 000 hommes",
+          "La grande dépense de 'Uthmân (qu'Allah l'agrée)",
+          "Une chaleur extrême",
+          "Pas de combat",
+          "Le repentir de trois véridiques Compagnons"
+        ],
+        [
+          ["🌡️ Le contexte",
+           "La nouvelle d'un rassemblement des Byzantins et des Ghassânides vers le Châm (Sîra ; Ibn Sa'd). Chaleur intense, saison des fruits et gêne ; d'où « l'armée de la difficulté » (Coran 9:117 « l'heure de la difficulté »). Le nombre : environ 30 000 (Ar-Rahîq al-Makhtûm ; Sîra). Il laissa 'Alî (qu'Allah l'agrée) à Médine : « Tu es pour moi ce que Hâroûn fut pour Mûsâ. » (Sahih al-Bukhari : 4416 ; Sahih Muslim : 2404)",
+           ""],
+          ["💰 Le sacrifice",
+           "Abou Bakr (qu'Allah l'agrée) vint avec tous ses biens : « Allah et Son Messager me suffisent » ; 'Umar (qu'Allah l'agrée) vint avec la moitié (Sunan Abi Dawud : 1678 ; Tirmidhi 3675, al-Albani : hasan). 'Uthmân (qu'Allah l'agrée) : trois cents chameaux et mille dinars ; « Ce qu'a fait 'Uthmân aujourd'hui ne lui nuira plus » (Tirmidhi 3699-3701, al-Albani : hasan). Remarque : le détail des deux cents ouqiyya de 'Abd ar-Rahmân ibn 'Awf (qu'Allah l'agrée) et des bijoux des femmes vient d'al-Wâqidî et d'Ibn Sa'd (faible), non d'un hadith authentique.",
+           ""],
+          ["😢 Ceux qui restèrent",
+           "Les pauvres véridiques n'avaient pas de monture et revinrent en pleurant (at-Tawba 9:92) ; Abou Moûsâ (qu'Allah l'agrée) obtint ensuite des chameaux (Sahih al-Bukhari : 4415). Les hypocrites présentèrent des excuses. Quant aux trois véridiques : Ka'b ibn Mâlik, Marâra ibn ar-Rabî' et Hilâl ibn Oumayya (qu'Allah les agrée), ils reconnurent leur absence sans excuse ; ils furent boycottés cinquante jours ; puis leur repentir fut accepté (at-Tawba 9:118) (Sahih al-Bukhari : 4418 ; Sahih Muslim : 2769).",
+           ""],
+          ["🏜️ Le voyage",
+           "La gêne, plusieurs hommes sur un seul chameau, le manque d'eau. En passant par al-Hijr (Thamoud) : « N'entrez qu'en pleurant, et couvrez-vous la tête » (Sahih al-Bukhari : 4419-4420). Le récit de la marche d'Abou Dharr (qu'Allah l'agrée) et de « Qu'Allah fasse miséricorde à Abou Dharr » a une chaîne discutée (Ibn Ishâq/al-Hâkim), et l'épisode de la pluie vient de la Sîra.",
+           ""],
+          ["🏰 À Taboûk",
+           "Aucune armée byzantine ne se présenta (Ar-Rahîq al-Makhtûm). Le séjour dura environ vingt jours (Sunan Abi Dawud : 1235, al-Albani : sahih). Youhannâ ibn Rou'ba, gouverneur d'Ayla, offrit des présents et conclut la paix contre la jizya (Sahih al-Bukhari : 1481 ; détails dans la Sîra) ; la paix avec Jarbâ' et Adhrouh vient des récits de Sîra. Correction : la démolition de la mosquée du tort (at-Tawba 9:107-110) n'eut pas lieu à Taboûk, mais au retour près de Dhî Awân ; au départ, il ﷺ avait dit « au retour » (Sîra ; tafsîr d'Ibn Kathîr).",
+           ""],
+          ["🏘️ Le retour",
+           "« Il y a à Médine des gens tels que, chaque fois que vous avez marché ou traversé une vallée, ils étaient avec vous ; seule l'excuse les a retenus. » (Sahih al-Bukhari : 4423)",
+           ""],
+          ["🎯 La leçon",
+           "Dans l'épreuve, soutiens la religion par tes biens et ta personne ; et fais confiance à Allah.",
+           ""]
+        ],
+        [
+          ["En quelle année eut lieu Taboûk ?", ["An 8", "An 9", "An 10"]],
+          ["Qui fit la plus grande dépense ?", ["Abou Bakr (qu'Allah l'agrée)", "'Umar (qu'Allah l'agrée)", "'Uthmân (qu'Allah l'agrée)"]],
+          ["Qu'advint-il de l'armée byzantine ?", ["Il y eut un combat", "Elle ne se présenta pas", "Une paix fut conclue"]]
+        ],
+        [
+          ["630", "La nouvelle des Byzantins"],
+          ["630", "La collecte des biens"],
+          ["630", "Le voyage de Taboûk et un séjour d'environ vingt jours"],
+          ["630", "La démolition de la mosquée du tort au retour"]
+        ]
+      ],
+      es: [
+        "La expedición de Tabuk: la última expedición",
+        "Tabuk",
+        "Rayab del año 9 (octubre de 630)",
+        "Comprender los preparativos de Tabuk, la dureza de las condiciones y el regreso sin combate.",
+        "Uzman (que Alá esté complacido con él) gastó con generosidad. ¡Oh Alá! Concédenos gastar en Tu camino. Amín.",
+        [
+          "Año 9",
+          "Unos 30 000 hombres",
+          "El gran gasto de Uzman (que Alá esté complacido con él)",
+          "Un calor extremo",
+          "No hubo combate",
+          "El arrepentimiento de tres Compañeros veraces"
+        ],
+        [
+          ["🌡️ El contexto",
+           "La noticia de una reunión de bizantinos y gasaníes hacia el Sham (Sira; Ibn Sad). Calor intenso, temporada de frutos y estrechez; de ahí «el ejército de la dificultad» (Corán 9:117). El número: unos 30 000 (Ar-Rahiq al-Majtum; Sira). Dejó a Ali (que Alá esté complacido con él) en Medina: «Tú eres para mí lo que Harun fue para Musa.» (Sahih al-Bujari: 4416; Sahih Muslim: 2404)",
+           ""],
+          ["💰 El sacrificio",
+           "Abu Bakr (que Alá esté complacido con él) vino con todos sus bienes: «Alá y Su Mensajero me bastan»; Umar (que Alá esté complacido con él) con la mitad (Sunan Abi Dawud: 1678; Tirmidhi 3675, al-Albani: hasan). Uzman (que Alá esté complacido con él): trescientos camellos y mil dinares; «Lo que Uzman ha hecho hoy no le perjudicará más» (Tirmidhi 3699-3701, al-Albani: hasan). Nota: el detalle de las doscientas uquiyyas de Abd ar-Rahman ibn Awf (que Alá esté complacido con él) y las joyas de las mujeres viene de al-Waqidi e Ibn Sad (débil), no de un hadiz auténtico.",
+           ""],
+          ["😢 Los que se quedaron",
+           "Los pobres veraces no tenían montura y volvieron llorando (at-Tawba 9:92); Abu Musa (que Alá esté complacido con él) obtuvo camellos después (Sahih al-Bujari: 4415). Los hipócritas presentaron excusas. Los tres veraces: Kab ibn Malik, Marara ibn ar-Rabi y Hilal ibn Umayya (que Alá esté complacido con ellos) reconocieron su ausencia sin excusa; fueron boicoteados cincuenta días; luego su arrepentimiento fue aceptado (at-Tawba 9:118) (Sahih al-Bujari: 4418; Sahih Muslim: 2769).",
+           ""],
+          ["🏜️ El viaje",
+           "Estrechez, varios hombres en un solo camello y falta de agua. Al pasar por al-Hiyir (Zamud): «No entréis sino llorando, y cubríos la cabeza» (Sahih al-Bujari: 4419-4420). El relato de la marcha de Abu Zarr (que Alá esté complacido con él) y de «Que Alá tenga misericordia de Abu Zarr» tiene cadena discutida (Ibn Ishaq/al-Hakim), y el episodio de la lluvia viene de la Sira.",
+           ""],
+          ["🏰 En Tabuk",
+           "No apareció ejército bizantino (Ar-Rahiq al-Majtum). La estancia duró unos veinte días (Sunan Abi Dawud: 1235, al-Albani: sahih). Yuhanna ibn Ru'ba, gobernador de Ayla, ofreció regalos y pactó la paz a cambio de la yizia (Sahih al-Bujari: 1481; detalles en la Sira); la paz con Yarba y Azruh viene de relatos de Sira. Corrección: la demolición de la mezquita del daño (at-Tawba 9:107-110) no fue en Tabuk, sino a la vuelta, cerca de Zi Awan; al salir, él ﷺ había dicho «a la vuelta» (Sira; tafsir de Ibn Kazir).",
+           ""],
+          ["🏘️ El regreso",
+           "«Hay en Medina gentes tales que, cada vez que marchasteis o cruzasteis un valle, estaban con vosotros; solo la excusa los retuvo.» (Sahih al-Bujari: 4423)",
+           ""],
+          ["🎯 La lección",
+           "En la dificultad, sostén la religión con tus bienes y tu persona; y confía en Alá.",
+           ""]
+        ],
+        [
+          ["¿En qué año fue Tabuk?", ["Año 8", "Año 9", "Año 10"]],
+          ["¿Quién hizo el mayor gasto?", ["Abu Bakr (que Alá esté complacido con él)", "Umar (que Alá esté complacido con él)", "Uzman (que Alá esté complacido con él)"]],
+          ["¿Qué ocurrió con el ejército bizantino?", ["Hubo combate", "No apareció", "Se pactó la paz"]]
+        ],
+        [
+          ["630", "La noticia de los bizantinos"],
+          ["630", "La reunión de bienes"],
+          ["630", "El viaje a Tabuk y una estancia de unos veinte días"],
+          ["630", "La demolición de la mezquita del daño a la vuelta"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 29 — Hajjatul-Wida ═══════════════ */
+    29: {
+      mr: [
+        "हज्जतुल-विदा — शेवटचा खुतबा",
+        "अरफातचे मैदान",
+        "झुलकदा–झुलहिज्जा हिजरी १० (मार्च इ.स. ६३२) — मदिन्याहून प्रयाण झुलकदाचे शेवटचे पाच दिवस (सहीह बुखारी १५४५); अरफा शुक्रवारी (सहीह बुखारी ४५)",
+        "हज्जतुल-विदाची घटना, शेवटचा खुतबा आणि दीन पूर्ण झाल्याची घोषणा समजून घेणे.",
+        "«हे अल्लाह! साक्षी राहा» — ही आमचीही जबाबदारी आहे; ही अनामत पुढे पोहोचवणे. हे अल्लाह! आम्हाला त्याची तौफीक दे. आमीन.",
+        [
+          "हिजरी १०",
+          "एक लाखाहून अधिक (संख्येत मतभेद)",
+          "अरफातचा खुतबा",
+          "अल-माइदा ५:३",
+          "अल्लाहच्या ग्रंथाला धरून राहणे",
+          "हज्जतुल-विदा"
+        ],
+        [
+          ["🕋 विचार",
+           "हिजरतीनंतर हाच एकमेव हज होता (सहीह बुखारी १७७८). हाजींची कोणतीही सहीह संख्या नाही; जाबिर (र.अ.): दृष्टीच्या हद्दीपर्यंत लोकच लोक (सहीह मुस्लिम १२१८). मते: ९० हजार, सुमारे ११४ हजार, १२४ हजार, १४४ हजार (सीरत). «माझ्याकडून आपली मनासिक शिका, कदाचित या वर्षानंतर मी हज करू शकणार नाही» (सहीह मुस्लिम १२९७). मतभेद: आप ﷺ यांचा हज इफ्राद होता, तमत्तो की किरान? (सहीह बुखारी १५६१, १६९१; सहीह मुस्लिम १२११); इब्नुल-कय्यिमने किरानला प्राधान्य दिले (झादुल-मआद).",
+           ""],
+          ["📢 अरफातचा खुतबा",
+           "९ झुलहिज्जाला वादी-ए-उरनामध्ये (सहीह मुस्लिम १२१८): जाहिलियतची प्रत्येक गोष्ट माझ्या पायांखाली; जाहिलियतचे रक्त व व्याज (अब्बास (र.अ.) यांचे व्याज) संपुष्टात; स्त्रियांबद्दल अल्लाहचे भय ठेवा (सहीह मुस्लिम १२१८). «तुमचे रक्त, माल आणि मान हराम आहेत» (सहीह बुखारी ६७, १७३९, मिनाच्या खुतब्यात; «हजर असलेल्याने गैरहजराला पोहोचवावे»). रबीआ बिन उमय्या यांनी मोठ्या आवाजात दोहराव केल्याची गोष्ट सीरत (इब्न इशाक) ची रिवायत आहे. स्पष्टीकरण: «शेवटचा खुतबा» अनेक ठिकाणांचा (अरफा, मिना) व अनेक रिवायतींचा संग्रह आहे, एक संपूर्ण सहीह मतन नाही.",
+           ""],
+          ["📖 दीन पूर्ण झाल्याची आयत",
+           "«आज मी तुमच्यासाठी तुमचा दीन पूर्ण केला» (अल-माइदा ५:३), अरफाच्या दिवशी, शुक्रवारी (सहीह बुखारी ४५, ४६०६). सुधारणा: अबू बक्र (र.अ.) यांनी या आयतीवर रडल्याची सहीह सनद मिळत नाही; त्यांचे रडणे «बंद्याला पर्याय दिला गेला» या खुतब्यावर आहे (सहीह बुखारी ३६५४).",
+           ""],
+          ["🤲 शेवटची वसीयत",
+           "«मी तुमच्यात अशी गोष्ट सोडत आहे की जर ती घट्ट धरून राहिलात तर कधीही मार्गभ्रष्ट होणार नाही: अल्लाहचा ग्रंथ» (सहीह मुस्लिम १२१८). «ग्रंथ व सुन्नत» ही रिवायत मुवत्ता (बलागन्) व मुस्तद्रकमध्ये आहे; मुहद्दिसांनी तिच्या सनदेवर चर्चा केली आहे, काहींनी शवाहिदांमुळे मजबूत म्हटले. «अहले-बैत» ची वसीयत गदीरे-खुम येथे आहे (सहीह मुस्लिम २४०८), अरफावर नाही. नंतर विचारले: «माझ्याबद्दल काय सांगाल?» सहाबांनी म्हटले: «तुम्ही पोहोचवले»; आप ﷺ यांनी बोट आकाशाकडे उचलून तीन वेळा म्हटले: «हे अल्लाह! साक्षी राहा» (सहीह मुस्लिम १२१८).",
+           ""],
+          ["💔 शेवटचा दिवस",
+           "सूरह अन-नस्र उतरली; उमर व इब्न अब्बास (र.अ.) यांनी निधनाची जवळीक ओळखली (सहीह बुखारी ४९७०). मतभेद: तिचे अवतरण मिनामध्ये अय्यामे-तशरीकमध्ये सांगितले जाते (बैहकी; सनदेवर चर्चा).",
+           ""],
+          ["🎯 बोध",
+           "शेवटचा खुतबा ही एक वसीयत आहे: हक्क, स्त्रिया, जीव, माल, मान, ग्रंथ व सुन्नत.",
+           ""]
+        ],
+        [
+          ["हज्जतुल-विदा कोणत्या वर्षी झाला?", ["हिजरी ९", "हिजरी १०", "हिजरी ११"]],
+          ["अरफाच्या दिवशी कोणती आयत उतरली?", ["आज मी तुमचा दीन पूर्ण केला", "आम्ही तुम्हाला स्पष्ट विजय दिला", "जेव्हा अल्लाहची मदत येईल"]],
+          ["खुतब्यात घट्ट धरून ठेवण्याची कोणती गोष्ट सांगितली?", ["माल व संतती", "अल्लाहचा ग्रंथ (व सुन्नत)", "जग व परलोक"]]
+        ],
+        [
+          ["इ.स. ६३२", "हजचा विचार"],
+          ["इ.स. ६३२", "९ झुलहिज्जाचा खुतबा"],
+          ["इ.स. ६३२", "दीन पूर्ण झाल्याची आयत"],
+          ["इ.स. ६३२", "मिनाचा खुतबा"]
+        ]
+      ],
+      ar: [
+        "حجة الوداع — الخطبة الأخيرة",
+        "ميدان عرفة",
+        "ذو القعدة–ذو الحجة السنة العاشرة (مارس 632) — الخروج من المدينة في آخر خمس من ذي القعدة (صحيح البخاري 1545)؛ وعرفة يوم الجمعة (صحيح البخاري 45)",
+        "فهم حجة الوداع، والخطبة الأخيرة، وإعلان كمال الدين.",
+        "«اللهم اشهد» — وهي مسؤوليتنا أيضًا: تبليغ هذه الأمانة. اللهم وفقنا لذلك. آمين.",
+        [
+          "السنة العاشرة",
+          "أكثر من مئة ألف (وفي العدد خلاف)",
+          "خطبة عرفة",
+          "المائدة 5:3",
+          "التمسك بكتاب الله",
+          "حجة الوداع"
+        ],
+        [
+          ["🕋 القصد",
+           "كان هذا حجه الوحيد بعد الهجرة (صحيح البخاري 1778). ولا يُعرف عدد الحجاج على وجه الصحة؛ قال جابر رضي الله عنه: الناس ما يبلغهم البصر (صحيح مسلم 1218). والأقوال: تسعون ألفًا، نحو 114 ألفًا، 124 ألفًا، 144 ألفًا (سيرة). «خذوا عني مناسككم، فلعلي لا أحج بعد عامي هذا» (صحيح مسلم 1297). والخلاف: هل كان حجه ﷺ إفرادًا أو تمتعًا أو قرانًا؟ (صحيح البخاري 1561، 1691؛ صحيح مسلم 1211)؛ ورجّح ابن القيم القران (زاد المعاد).",
+           ""],
+          ["📢 خطبة عرفة",
+           "في وادي عرنة يوم 9 ذي الحجة (صحيح مسلم 1218): كل أمر جاهلية تحت قدمي؛ ودم الجاهلية ورباها (ربا العباس رضي الله عنه) موضوع؛ واتقوا الله في النساء (صحيح مسلم 1218). «إن دماءكم وأموالكم وأعراضكم حرام عليكم» (صحيح البخاري 67، 1739، في خطبة منى؛ «فليبلغ الشاهد الغائب»). وإعادة ربيعة بن أمية بصوت عالٍ من روايات السيرة (ابن إسحاق). توضيح: «الخطبة الأخيرة» مجموع مواضع (عرفة ومنى) وروايات، لا متنًا واحدًا صحيحًا كاملًا.",
+           ""],
+          ["📖 آية كمال الدين",
+           "«اليوم أكملت لكم دينكم» (المائدة 5:3)، يوم عرفة، يوم الجمعة (صحيح البخاري 45، 4606). تصحيح: لا يثبت بسند صحيح بكاء أبي بكر رضي الله عنه على هذه الآية؛ وإنما بكى على خطبة «خُيّر عبد بين الدنيا وبين ما عند الله» (صحيح البخاري 3654).",
+           ""],
+          ["🤲 الوصية الأخيرة",
+           "«إني قد تركت فيكم ما إن أخذتم به لن تضلوا: كتاب الله» (صحيح مسلم 1218). ورواية «الكتاب والسنة» في الموطأ (بلاغًا) والمستدرك؛ وقد تكلم المحدثون في إسنادها، وقواها بعضهم بالشواهد. ووصية «أهل البيت» في غدير خم (صحيح مسلم 2408)، لا في عرفة. ثم سأل: «ماذا تقولون فيّ؟» قالوا: «بلغت»؛ فرفع إصبعه إلى السماء وقال ثلاثًا: «اللهم اشهد» (صحيح مسلم 1218).",
+           ""],
+          ["💔 اليوم الأخير",
+           "نزلت سورة النصر؛ وفهم عمر وابن عباس رضي الله عنهما قرب الأجل (صحيح البخاري 4970). والخلاف: يُذكر نزولها بمنى في أيام التشريق (البيهقي؛ وفي الإسناد كلام).",
+           ""],
+          ["🎯 العبرة",
+           "الخطبة الأخيرة وصية: الحقوق، والنساء، والنفس، والمال، والعرض، والكتاب والسنة.",
+           ""]
+        ],
+        [
+          ["في أي سنة كانت حجة الوداع؟", ["التاسعة", "العاشرة", "الحادية عشرة"]],
+          ["أي آية نزلت يوم عرفة؟", ["اليوم أكملت لكم دينكم", "إنا فتحنا لك فتحًا مبينًا", "إذا جاء نصر الله"]],
+          ["بماذا أوصى بالتمسك في الخطبة؟", ["المال والولد", "كتاب الله (والسنة)", "الدنيا والآخرة"]]
+        ],
+        [
+          ["632", "قصد الحج"],
+          ["632", "خطبة يوم 9 ذي الحجة"],
+          ["632", "آية كمال الدين"],
+          ["632", "خطبة منى"]
+        ]
+      ],
+      fr: [
+        "Le pèlerinage d'adieu — le dernier sermon",
+        "La plaine d'Arafa",
+        "Dhou al-qi'da – dhou al-hijja de l'an 10 (mars 632) — départ de Médine les cinq derniers jours de dhou al-qi'da (Sahih al-Bukhari : 1545) ; Arafa un vendredi (Sahih al-Bukhari : 45)",
+        "Comprendre le pèlerinage d'adieu, le dernier sermon et l'annonce de la perfection de la religion.",
+        "« Ô Allah, sois témoin » — c'est aussi notre responsabilité : transmettre ce dépôt. Ô Allah ! Accorde-nous cela. Âmîn.",
+        [
+          "An 10",
+          "Plus de cent mille (nombre discuté)",
+          "Le sermon d'Arafa",
+          "Al-Mâ'ida 5:3",
+          "S'attacher au Livre d'Allah",
+          "Le pèlerinage d'adieu"
+        ],
+        [
+          ["🕋 L'intention",
+           "Ce fut son seul pèlerinage après l'émigration (Sahih al-Bukhari : 1778). Le nombre des pèlerins n'est pas connu avec certitude ; Jâbir (qu'Allah l'agrée) dit : les gens à perte de vue (Sahih Muslim : 1218). Les avis : 90 000, environ 114 000, 124 000, 144 000 (Sîra). « Apprenez de moi vos rites ; peut-être ne ferai-je plus de pèlerinage après cette année. » (Sahih Muslim : 1297). Divergence : son pèlerinage fut-il ifrâd, tamattu' ou qirân ? (Sahih al-Bukhari : 1561, 1691 ; Sahih Muslim : 1211) ; Ibn al-Qayyim préféra le qirân (Zâd al-Ma'âd).",
+           ""],
+          ["📢 Le sermon d'Arafa",
+           "Dans la vallée de 'Ourna le 9 dhou al-hijja (Sahih Muslim : 1218) : tout ce qui relève de l'ignorance est sous mes pieds ; le sang et l'usure de l'ignorance (l'usure d'al-'Abbâs, qu'Allah l'agrée) sont abolis ; craignez Allah au sujet des femmes (Sahih Muslim : 1218). « Vos sangs, vos biens et vos honneurs sont sacrés » (Sahih al-Bukhari : 67, 1739, dans le sermon de Minâ ; « que le présent informe l'absent »). La répétition à voix haute par Rabî'a ibn Oumayya vient des récits de Sîra (Ibn Ishâq). Précision : le « dernier sermon » est un ensemble de lieux (Arafa et Minâ) et de récits, non un seul texte authentique complet.",
+           ""],
+          ["📖 Le verset de la perfection",
+           "« Aujourd'hui J'ai parachevé pour vous votre religion » (al-Mâ'ida 5:3), le jour d'Arafa, un vendredi (Sahih al-Bukhari : 45, 4606). Correction : les larmes d'Abou Bakr (qu'Allah l'agrée) sur ce verset ne sont pas établies par une chaîne authentique ; il pleura sur le sermon « un serviteur a été mis au choix » (Sahih al-Bukhari : 3654).",
+           ""],
+          ["🤲 La dernière recommandation",
+           "« Je vous ai laissé ce qui, si vous vous y tenez fermement, ne vous égarera jamais : le Livre d'Allah. » (Sahih Muslim : 1218). Le récit « le Livre et la Sunna » se trouve dans le Muwatta' (balâghan) et al-Moustadrak ; les spécialistes ont discuté sa chaîne, certains l'ont renforcée par des témoignages. La recommandation concernant « les gens de la maison » eut lieu à Ghadîr Khoum (Sahih Muslim : 2408), non à Arafa. Puis il demanda : « Que direz-vous de moi ? » Ils dirent : « Tu as transmis. » Il leva le doigt vers le ciel et dit trois fois : « Ô Allah, sois témoin. » (Sahih Muslim : 1218)",
+           ""],
+          ["💔 Le dernier jour",
+           "Sourate an-Nasr descendit ; 'Umar et Ibn 'Abbâs (qu'Allah les agrée) comprirent la proximité de la mort (Sahih al-Bukhari : 4970). Divergence : on rapporte sa révélation à Minâ durant les jours de Tachrîq (al-Bayhaqî ; chaîne discutée).",
+           ""],
+          ["🎯 La leçon",
+           "Le dernier sermon est une recommandation : les droits, les femmes, la vie, les biens, l'honneur, le Livre et la Sunna.",
+           ""]
+        ],
+        [
+          ["En quelle année eut lieu le pèlerinage d'adieu ?", ["An 9", "An 10", "An 11"]],
+          ["Quel verset descendit le jour d'Arafa ?", ["Aujourd'hui J'ai parachevé votre religion", "Nous t'avons accordé une victoire éclatante", "Quand vient le secours d'Allah"]],
+          ["À quoi recommanda-t-il de s'attacher ?", ["Aux biens et aux enfants", "Au Livre d'Allah (et à la Sunna)", "À la vie et à l'au-delà"]]
+        ],
+        [
+          ["632", "L'intention du pèlerinage"],
+          ["632", "Le sermon du 9 dhou al-hijja"],
+          ["632", "Le verset de la perfection"],
+          ["632", "Le sermon de Minâ"]
+        ]
+      ],
+      es: [
+        "La peregrinación de despedida: el último sermón",
+        "La llanura de Arafa",
+        "Du l-qi'da a du l-hiyya del año 10 (marzo de 632); salida de Medina los cinco últimos días de du l-qi'da (Sahih al-Bujari: 1545); Arafa un viernes (Sahih al-Bujari: 45)",
+        "Comprender la peregrinación de despedida, el último sermón y el anuncio de la perfección de la religión.",
+        "«¡Oh Alá, sé testigo!» Es también nuestra responsabilidad: transmitir este depósito. ¡Oh Alá! Concédenoslo. Amín.",
+        [
+          "Año 10",
+          "Más de cien mil (número discutido)",
+          "El sermón de Arafa",
+          "Al-Maida 5:3",
+          "Aferrarse al Libro de Alá",
+          "La peregrinación de despedida"
+        ],
+        [
+          ["🕋 La intención",
+           "Fue su única peregrinación tras la emigración (Sahih al-Bujari: 1778). El número de peregrinos no se conoce con certeza; Yabir (que Alá esté complacido con él) dijo: la gente hasta donde alcanza la vista (Sahih Muslim: 1218). Las opiniones: 90 000, unos 114 000, 124 000, 144 000 (Sira). «Aprended de mí vuestros ritos; quizá no vuelva a peregrinar después de este año.» (Sahih Muslim: 1297). Discrepancia: ¿su peregrinación fue ifrad, tamattu o qiran? (Sahih al-Bujari: 1561, 1691; Sahih Muslim: 1211); Ibn al-Qayyim prefirió el qiran (Zad al-Maad).",
+           ""],
+          ["📢 El sermón de Arafa",
+           "En el valle de Urna el 9 de du l-hiyya (Sahih Muslim: 1218): todo lo de la ignorancia está bajo mis pies; la sangre y la usura de la ignorancia (la usura de al-Abbas, que Alá esté complacido con él) quedan abolidas; temed a Alá respecto a las mujeres (Sahih Muslim: 1218). «Vuestras sangres, bienes y honores son sagrados» (Sahih al-Bujari: 67, 1739, en el sermón de Mina; «que el presente informe al ausente»). La repetición en voz alta por Rabia ibn Umayya viene de relatos de Sira (Ibn Ishaq). Precisión: el «último sermón» es un conjunto de lugares (Arafa y Mina) y de relatos, no un solo texto auténtico completo.",
+           ""],
+          ["📖 La aleya de la perfección",
+           "«Hoy he perfeccionado para vosotros vuestra religión» (al-Maida 5:3), el día de Arafa, un viernes (Sahih al-Bujari: 45, 4606). Corrección: el llanto de Abu Bakr (que Alá esté complacido con él) por esta aleya no está probado con cadena auténtica; lloró por el sermón «un siervo fue puesto a elegir» (Sahih al-Bujari: 3654).",
+           ""],
+          ["🤲 La última recomendación",
+           "«Os he dejado aquello que, si os aferráis a ello con firmeza, nunca os extraviaréis: el Libro de Alá.» (Sahih Muslim: 1218). El relato «el Libro y la Sunna» está en el Muwatta (balagan) y al-Mustadrak; los expertos discutieron su cadena y algunos la reforzaron con testimonios. La recomendación sobre «la gente de la casa» fue en Gadir Jum (Sahih Muslim: 2408), no en Arafa. Luego preguntó: «¿Qué diréis de mí?» Dijeron: «Has transmitido.» Levantó el dedo al cielo y dijo tres veces: «¡Oh Alá, sé testigo!» (Sahih Muslim: 1218)",
+           ""],
+          ["💔 El último día",
+           "Descendió la sura an-Nasr; Umar e Ibn Abbas (que Alá esté complacido con ellos) comprendieron la cercanía del fin (Sahih al-Bujari: 4970). Discrepancia: se menciona su revelación en Mina durante los días de Tashriq (al-Bayhaqi; cadena discutida).",
+           ""],
+          ["🎯 La lección",
+           "El último sermón es una recomendación: los derechos, las mujeres, la vida, los bienes, el honor, el Libro y la Sunna.",
+           ""]
+        ],
+        [
+          ["¿En qué año fue la peregrinación de despedida?", ["Año 9", "Año 10", "Año 11"]],
+          ["¿Qué aleya descendió el día de Arafa?", ["Hoy he perfeccionado vuestra religión", "Te hemos dado una victoria clara", "Cuando llegue el auxilio de Alá"]],
+          ["¿A qué recomendó aferrarse?", ["A los bienes y los hijos", "Al Libro de Alá (y la Sunna)", "A la vida y el más allá"]]
+        ],
+        [
+          ["632", "La intención de la peregrinación"],
+          ["632", "El sermón del 9 de du l-hiyya"],
+          ["632", "La aleya de la perfección"],
+          ["632", "El sermón de Mina"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 30 — Wisal-e-Nabawi ﷺ ═══════════════ */
+    30: {
+      mr: [
+        "नबी ﷺ यांचे निधन — रफीक-ए-आला यांची भेट",
+        "मदिना",
+        "सोमवार, रबीउल-अव्वल हिजरी ११ (जून इ.स. ६३२) — प्रसिद्ध मत: १२ रबीउल-अव्वल; तारखेत मतभेद पाहा",
+        "नबी ﷺ यांचे शेवटचे दिवस, निधन आणि सहाबांच्या दुःखाची घटना समजून घेणे.",
+        "जेव्हा आप ﷺ यांनी «अर-रफीकुल-आला» म्हटले तेव्हा मने तुटली. हे अल्लाह! जन्नतमध्ये त्यांची साथ नशीबात दे. आमीन.",
+        [
+          "हिजरी ११, सोमवार (१२ रबीउल-अव्वल प्रसिद्ध मत)",
+          "वय वर्षे ६३ (सहीह मुस्लिम २३४८–२३४९)",
+          "शेवटची नमाज़ अबू बक्र (र.अ.) यांनी पढवली",
+          "«अल्लाहुम्मर-रफीकुल-आला»",
+          "आयशा (र.अ.) यांच्या कक्षेत दफन"
+        ],
+        [
+          ["📅 निधनाच्या तारखेत मतभेद",
+           "अरफा शुक्रवारी होता (सहीह बुखारी ४५). जर झुलहिज्जा, मुहर्रम व सफर प्रत्येकी २९ किंवा ३० दिवस मानले तर रबीउल-अव्वलची पहिली तारीख रविवारपासून बुधवारपर्यंत येते, आणि या हिशोबाने १२ रबीउल-अव्वल सोमवार होत नाही. विद्वानांनी (फतहुल-बारी) यावर सूचना केली; मते १, २ व १२ तारखेची आहेत. प्रसिद्ध मत १२ रबीउल-अव्वल, सोमवार, पण त्यात मतभेद आहे.",
+           ""],
+          ["💔 आजार",
+           "डोकेदुखी व तीव्र ताप (सहीह बुखारी ५६६६); पत्नींच्या परवानगीने आयशा (र.अ.) यांच्या कक्षेत (सहीह बुखारी १९८); «माझ्यावर सात न उघडलेल्या मशकांचे पाणी ओता» (सहीह बुखारी १९८); अबू बक्र (र.अ.) यांना इमामतीचा हुकूम (सहीह बुखारी ६६४). आजार सुमारे १३ दिवस (अर-रहीकुल-मख्तूम; मते १०–१४).",
+           ""],
+          ["🕌 शेवटची नमाज़",
+           "थोडे हलके वाटल्यावर दोन माणसांच्या आधाराने मस्जिदीत आले (सहीह बुखारी ७१२–७१३). मतभेद: आयशा (र.अ.) यांनी एकाचे नाव अब्बास (र.अ.) सांगितले, दुसऱ्याचे नाही; इब्न अब्बास (र.अ.) म्हणाले ते अली (र.अ.) होते (सहीह बुखारी १९८, ६६५). अबू बक्र (र.अ.) मागे हटू लागले तेव्हा आप ﷺ यांनी थांबवले आणि त्यांच्या शेजारी बसले; अबू बक्र (र.अ.) नबी ﷺ यांचे अनुकरण करत आणि लोक अबू बक्र (र.अ.) यांचे (सहीह बुखारी ७१३). मतभेद: काही रिवायतींमध्ये नबी ﷺ यांनी बसून अबू बक्र (र.अ.) यांच्या मागे नमाज़ पढली (तिर्मिझी ३६२–३६३); विद्वानांनी ती वेगवेगळ्या नमाजांवर लावली (फतहुल-बारी). सोमवारी फजर: कक्षाचा पडदा उघडला, हसले, आणि अबू बक्र (र.अ.) मागे हटले तेव्हा खुणेने «नमाज़ पूर्ण करा» सांगून पडदा सोडला (सहीह बुखारी ६८०–६८१; सहीह मुस्लिम ४१९).",
+           ""],
+          ["🚪 वसीयती",
+           "«अल्लाह यहुदी व ख्रिश्चनांवर शाप करो, त्यांनी आपल्या नबींच्या कबरी मस्जिदी बनवल्या» (सहीह बुखारी ४३५, ४३६); «जझीरतुल-अरबमधून मुश्रिकांना काढून टाका» (सहीह बुखारी ३०५३; सहीह मुस्लिम १६३७); «नमाज़ आणि आपल्या अधीन लोकांची (काळजी घ्या)» (सुनन अबी दाऊद ५१५६, अल्बानी: सहीह); अबू बक्र (र.अ.) यांच्या दाराशिवाय मस्जिदीचे सर्व दरवाजे बंद करा (सहीह बुखारी ४६७); «अल्लाहने एका बंद्याला पर्याय दिला» हा खुतबा, ज्यावर अबू बक्र (र.अ.) रडले (सहीह बुखारी ४६६, ३६५४); अन्सारांबद्दल वसीयत (सहीह बुखारी ३७९९). वारसा: न दिनार न दिरहम (सहीह मुस्लिम १६३५).",
+           ""],
+          ["💔 शेवटचे क्षण",
+           "आयशा (र.अ.) यांच्या छातीवर टेकले; अब्दुर्रहमान बिन अबी बक्र (र.अ.) यांच्याकडे ताजी मिस्वाक होती; आयशा (र.अ.) यांनी ती चावून मऊ केली आणि आप ﷺ यांनी दात स्वच्छ केले; पाण्यात हात बुडवून चेहरा पुसला; «ला इलाहा इल्लल्लाह, मृत्यूच्या मोठ्या कठीणी आहेत»; नंतर हात उचलला: «अल्लाहुम्मगफिर ली वरहम्नी व अल्हिक्नी बिर-रफीकिल-आला»; हात पडला (सहीह बुखारी ४४४९, ४४४०; सहीह मुस्लिम २४४४). पर्याय दिल्याचा उल्लेख: सहीह बुखारी ४४३५–४४३७.",
+           ""],
+          ["😢 सहाबांचे दुःख",
+           "आयशा (र.अ.): माझ्या कक्षेत, माझ्या पाळीच्या दिवशी, माझ्या छाती व गळ्याच्या दरम्यान (सहीह बुखारी ४४४६). फातिमा (र.अ.): «वडिलांच्या खेदाने! रबच्या हाकेला लब्बैक म्हटले; वडिलांच्या खेदाने! जन्नतुल-फिरदौस ज्यांचे ठिकाण आहे» (सहीह बुखारी ४४६२). उमर (र.अ.) यांनी निधन नाकारले; अबू बक्र (र.अ.) यांनी चेहरा उघडला, चुंबन दिले, «अल्लाह तुमच्यावर दोन मृत्यू एकत्र करणार नाही»; नंतर खुतबा दिला: जो मुहम्मद ﷺ ची उपासना करत होता तो गेला, आणि जो अल्लाहची उपासना करतो तो जिवंत आहे; आले-इमरान ३:१४४ वाचली (सहीह बुखारी ३६६७–३६६८). अझ-झुमर ३९:३० वाचणे सीरत (इब्न हिशाम) मधून आहे. उमर (र.अ.) सावरले.",
+           ""],
+          ["🕌 दफन",
+           "स्नान: अली, फझल, कुसम, उसामा व शक्रान (र.अ.) (सुनन अबी दाऊद, इब्न माजा; काही मार्ग हसन); कपड्यांत स्नानाची घटना (अबू दाऊद ३१४१, अल्बानी: हसन). तीन पांढरी सुहुली वस्त्रे, न शर्ट न पगडी (सहीह बुखारी १२६४; सहीह मुस्लिम ९४१). सहाबांनी गटागटाने इमामाशिवाय नमाज़ पढली (इब्न माजा १६२८, अल्बानी: जईफ; सीरतमध्ये प्रसिद्ध). जिथे निधन झाले तिथेच दफन (तिर्मिझी १०१८, अल्बानी: सहीह); मंगळवारच्या रात्री (मुस्नद अहमद; सीरत).",
+           ""],
+          ["🌟 अल्लाहची साक्ष",
+           "अत-तौबा ९:१२८ — तुमच्यातच एक रसूल आला, तुमचे त्रास त्यांना जड वाटतात, तुमच्या भल्याची तीव्र इच्छा, मोमिनांवर अत्यंत वात्सल्य व दया.",
+           ""],
+          ["🎯 बोध",
+           "सुन्नतीवर चला, खरे प्रेम ठेवा आणि जन्नतमध्ये साथीची दुआ करा.",
+           ""]
+        ],
+        [
+          ["निधन कोणत्या हिजरी वर्षी झाले?", ["हिजरी १०", "हिजरी ११", "हिजरी १२"]],
+          ["शेवटची नमाज़ कोणी पढवली?", ["अली (र.अ.)", "अबू बक्र (र.अ.)", "उमर (र.अ.)"]],
+          ["शेवटची दुआ कोणती होती?", ["«अल्लाहुम्मर-रफीकुल-आला»", "«अल्लाहुम्मगफिर ली»", "«रब्बना आतिना»"]]
+        ],
+        [
+          ["इ.स. ६३२", "आजार"],
+          ["इ.स. ६३२", "मस्जिदीत शेवटची नमाज़"],
+          ["इ.स. ६३२", "निधन"],
+          ["इ.स. ६३२", "दफन"]
+        ]
+      ],
+      ar: [
+        "وفاة النبي ﷺ — لقاء الرفيق الأعلى",
+        "المدينة",
+        "الاثنين، ربيع الأول السنة الحادية عشرة (يونيو 632) — المشهور: 12 ربيع الأول؛ وانظر الخلاف في التاريخ",
+        "فهم أيام النبي ﷺ الأخيرة، ووفاته، وحزن الصحابة.",
+        "لما قال ﷺ «الرفيق الأعلى» انكسرت القلوب. اللهم ارزقنا صحبته في الجنة. آمين.",
+        [
+          "السنة الحادية عشرة، الاثنين (والمشهور 12 ربيع الأول)",
+          "عمره الشريف 63 سنة (صحيح مسلم 2348–2349)",
+          "آخر صلاة أمّهم فيها أبو بكر رضي الله عنه",
+          "«اللهم الرفيق الأعلى»",
+          "دُفن في حجرة عائشة رضي الله عنها"
+        ],
+        [
+          ["📅 الخلاف في تاريخ الوفاة",
+           "كان عرفة يوم الجمعة (صحيح البخاري 45). ولو جُعل ذو الحجة والمحرم وصفر تسعة وعشرين أو ثلاثين لكلٍّ، لكان أول ربيع الأول بين الأحد والأربعاء، وعلى هذا الحساب لا يكون 12 ربيع الأول يوم الاثنين. وقد نبه العلماء على ذلك (فتح الباري)؛ والأقوال: الأول والثاني والثاني عشر. والمشهور الثاني عشر يوم الاثنين، وفيه خلاف.",
+           ""],
+          ["💔 المرض",
+           "صداع وحمّ شديد (صحيح البخاري 5666)؛ وفي حجرة عائشة رضي الله عنها بإذن أزواجه (صحيح البخاري 198)؛ «صبّوا عليّ من سبع قرب لم تُحلَّ أوكيتهن» (صحيح البخاري 198)؛ وأمر أبا بكر رضي الله عنه بالإمامة (صحيح البخاري 664). والمرض نحو ثلاثة عشر يومًا (الرحيق المختوم؛ والأقوال 10–14).",
+           ""],
+          ["🕌 الصلاة الأخيرة",
+           "لما وجد خفة خرج بين رجلين إلى المسجد (صحيح البخاري 712–713). والخلاف: ذكرت عائشة رضي الله عنها اسم العباس رضي الله عنه لأحدهما ولم تذكر الآخر؛ وقال ابن عباس رضي الله عنه: هو علي رضي الله عنه (صحيح البخاري 198، 665). وتأخر أبو بكر رضي الله عنه فأمره ﷺ أن يثبت وجلس إلى جانبه؛ فكان أبو بكر رضي الله عنه يقتدي بالنبي ﷺ والناس يقتدون بأبي بكر (صحيح البخاري 713). والخلاف: في بعض الروايات صلى ﷺ قاعدًا خلف أبي بكر رضي الله عنه (الترمذي 362–363)؛ وحملها العلماء على صلاتين مختلفتين (فتح الباري). وفي فجر الاثنين: كشف ستر الحجرة وتبسم، وتأخر أبو بكر رضي الله عنه فأشار إليه ﷺ أن يتمّ الصلاة وأرخى الستر (صحيح البخاري 680–681؛ صحيح مسلم 419).",
+           ""],
+          ["🚪 الوصايا",
+           "«لعن الله اليهود والنصارى، اتخذوا قبور أنبيائهم مساجد» (صحيح البخاري 435، 436)؛ «أخرجوا المشركين من جزيرة العرب» (صحيح البخاري 3053؛ صحيح مسلم 1637)؛ «الصلاة وما ملكت أيمانكم» (سنن أبي داود 5156، الألباني: صحيح)؛ «سدّوا كل الأبواب إلا باب أبي بكر» (صحيح البخاري 467)؛ وخطبة «إن الله خيّر عبدًا»، وبكى عندها أبو بكر رضي الله عنه (صحيح البخاري 466، 3654)؛ والوصية بالأنصار (صحيح البخاري 3799). والتركة: لا دينار ولا درهم (صحيح مسلم 1635).",
+           ""],
+          ["💔 اللحظات الأخيرة",
+           "أسند ظهره إلى صدر عائشة رضي الله عنها؛ وكان عند عبد الرحمن بن أبي بكر رضي الله عنه سواك رطب؛ فمضغته عائشة رضي الله عنها ونظّف ﷺ أسنانه؛ ثم أدخل يده في الماء ومسح وجهه؛ وقال: «لا إله إلا الله، إن للموت سكرات»؛ ثم رفع يده: «اللهم اغفر لي وارحمني وألحقني بالرفيق الأعلى»؛ فسقطت يده (صحيح البخاري 4449، 4440؛ صحيح مسلم 2444). وذكر التخيير: صحيح البخاري 4435–4437.",
+           ""],
+          ["😢 حزن الصحابة",
+           "عائشة رضي الله عنها: في حجرتي، في يومي، بين سحري ونحري (صحيح البخاري 4446). فاطمة رضي الله عنها: «واكرباه لكرب أباه! أجاب ربًّا دعاه؛ واكرباه لكرب أباه! جنة الفردوس مأواه» (صحيح البخاري 4462). وأنكر عمر رضي الله عنه الوفاة؛ فكشف أبو بكر رضي الله عنه وجهه وقبّله وقال: «لا يجمع الله عليك موتتين»؛ ثم خطب: من كان يعبد محمدًا ﷺ فقد مات، ومن كان يعبد الله فهو حي؛ وقرأ آل عمران 3:144 (صحيح البخاري 3667–3668). وقراءة الزمر 39:30 من السيرة (ابن هشام). فسكن عمر رضي الله عنه.",
+           ""],
+          ["🕌 الدفن",
+           "الغسل: علي والفضل وقثم وأسامة وشقران رضي الله عنهم (سنن أبي داود، ابن ماجه؛ وبعض الطرق حسن)؛ والغسل في الثياب (أبو داود 3141، الألباني: حسن). ثلاثة أثواب سحولية بيض، لا قميص ولا عمامة (صحيح البخاري 1264؛ صحيح مسلم 941). وصلّى عليه الصحابة أفواجًا بلا إمام (ابن ماجه 1628، الألباني: ضعيف؛ ومشهور في السيرة). ودُفن حيث توفي (الترمذي 1018، الألباني: صحيح)؛ ليلة الأربعاء (مسند أحمد؛ سيرة).",
+           ""],
+          ["🌟 شهادة الله",
+           "التوبة 9:128 — لقد جاءكم رسول من أنفسكم، عزيز عليه ما عنتم، حريص عليكم، بالمؤمنين رءوف رحيم.",
+           ""],
+          ["🎯 العبرة",
+           "اتبع السنة، وأحبب محبة صادقة، واسأل الله صحبته في الجنة.",
+           ""]
+        ],
+        [
+          ["في أي سنة هجرية كانت الوفاة؟", ["العاشرة", "الحادية عشرة", "الثانية عشرة"]],
+          ["من أمّ الصلاة الأخيرة؟", ["علي رضي الله عنه", "أبو بكر رضي الله عنه", "عمر رضي الله عنه"]],
+          ["ما الدعاء الأخير؟", ["«اللهم الرفيق الأعلى»", "«اللهم اغفر لي»", "«ربنا آتنا»"]]
+        ],
+        [
+          ["632", "المرض"],
+          ["632", "الصلاة الأخيرة في المسجد"],
+          ["632", "الوفاة"],
+          ["632", "الدفن"]
+        ]
+      ],
+      fr: [
+        "La mort du Prophète ﷺ — la rencontre du Compagnon suprême",
+        "Médine",
+        "Lundi, rabî' al-awwal de l'an 11 (juin 632) — avis célèbre : 12 rabî' al-awwal ; voir la divergence de date",
+        "Comprendre les derniers jours du Prophète ﷺ, sa mort et la douleur des Compagnons.",
+        "Quand il ﷺ dit « ar-Rafîq al-A'lâ », les cœurs se brisèrent. Ô Allah ! Accorde-nous sa compagnie au Paradis. Âmîn.",
+        [
+          "An 11, un lundi (12 rabî' al-awwal selon l'avis célèbre)",
+          "Son âge béni : 63 ans (Sahih Muslim : 2348-2349)",
+          "La dernière prière fut dirigée par Abou Bakr (qu'Allah l'agrée)",
+          "« Allâhumma ar-Rafîq al-A'lâ »",
+          "Enterré dans la chambre de 'Â'icha (qu'Allah l'agrée)"
+        ],
+        [
+          ["📅 Divergence sur la date",
+           "Arafa tomba un vendredi (Sahih al-Bukhari : 45). Si dhou al-hijja, mouharram et safar font chacun 29 ou 30 jours, le 1er rabî' al-awwal tombe entre le dimanche et le mercredi, et selon ce calcul le 12 rabî' al-awwal n'est pas un lundi. Les savants l'ont signalé (Fath al-Bârî) ; les avis sont le 1er, le 2 et le 12. L'avis célèbre est le 12, un lundi, mais il est discuté.",
+           ""],
+          ["💔 La maladie",
+           "Maux de tête et forte fièvre (Sahih al-Bukhari : 5666) ; dans la chambre de 'Â'icha (qu'Allah l'agrée) avec la permission de ses épouses (Sahih al-Bukhari : 198) ; « Versez sur moi sept outres dont les liens n'ont pas été défaits » (Sahih al-Bukhari : 198) ; il ordonna à Abou Bakr (qu'Allah l'agrée) de diriger la prière (Sahih al-Bukhari : 664). La maladie dura environ treize jours (Ar-Rahîq al-Makhtûm ; avis de 10 à 14).",
+           ""],
+          ["🕌 La dernière prière",
+           "Se sentant un peu mieux, il sortit soutenu par deux hommes vers la mosquée (Sahih al-Bukhari : 712-713). Divergence : 'Â'icha (qu'Allah l'agrée) nomma al-'Abbâs (qu'Allah l'agrée) pour l'un des deux et pas l'autre ; Ibn 'Abbâs (qu'Allah l'agrée) dit que c'était 'Alî (qu'Allah l'agrée) (Sahih al-Bukhari : 198, 665). Abou Bakr (qu'Allah l'agrée) recula, mais il ﷺ l'en empêcha et s'assit à côté de lui ; Abou Bakr suivait le Prophète ﷺ et les gens suivaient Abou Bakr (Sahih al-Bukhari : 713). Divergence : dans certains récits, le Prophète ﷺ pria assis derrière Abou Bakr (qu'Allah l'agrée) (Tirmidhi 362-363) ; les savants les ont rapportés à deux prières différentes (Fath al-Bârî). À l'aube du lundi : il souleva le rideau de la chambre, sourit, et comme Abou Bakr reculait, il lui fit signe de terminer la prière et laissa retomber le rideau (Sahih al-Bukhari : 680-681 ; Sahih Muslim : 419).",
+           ""],
+          ["🚪 Les recommandations",
+           "« Qu'Allah maudisse les Juifs et les chrétiens : ils ont pris les tombes de leurs prophètes pour lieux de culte » (Sahih al-Bukhari : 435, 436) ; « Expulsez les polythéistes de la péninsule arabique » (Sahih al-Bukhari : 3053 ; Sahih Muslim : 1637) ; « La prière et ce que possèdent vos mains » (Sunan Abi Dawud : 5156, al-Albani : sahih) ; « Fermez toutes les portes sauf celle d'Abou Bakr » (Sahih al-Bukhari : 467) ; le sermon « Allah a mis un serviteur au choix », sur lequel Abou Bakr (qu'Allah l'agrée) pleura (Sahih al-Bukhari : 466, 3654) ; la recommandation au sujet des Ansâr (Sahih al-Bukhari : 3799). Héritage : ni dinar ni dirham (Sahih Muslim : 1635).",
+           ""],
+          ["💔 Les derniers instants",
+           "Il s'appuya contre la poitrine de 'Â'icha (qu'Allah l'agrée) ; 'Abd ar-Rahmân ibn Abî Bakr (qu'Allah l'agrée) avait un siwâk frais ; 'Â'icha le mâcha pour l'amollir et il ﷺ se nettoya les dents ; il plongea la main dans l'eau et passa sur son visage ; « Lâ ilâha illallâh, la mort a de grandes agonies » ; puis il leva la main : « Allâhumma-ghfir lî warhamnî wa alhiqnî bir-Rafîq al-A'lâ » ; et la main retomba (Sahih al-Bukhari : 4449, 4440 ; Sahih Muslim : 2444). Le récit du choix : Sahih al-Bukhari : 4435-4437.",
+           ""],
+          ["😢 La douleur des Compagnons",
+           "'Â'icha (qu'Allah l'agrée) : dans ma chambre, mon jour, entre ma poitrine et ma gorge (Sahih al-Bukhari : 4446). Fâtima (qu'Allah l'agrée) : « Ô douleur de mon père ! Il a répondu à l'appel de son Seigneur ; ô douleur de mon père ! Le Paradis d'al-Firdaws est sa demeure » (Sahih al-Bukhari : 4462). 'Umar (qu'Allah l'agrée) nia la mort ; Abou Bakr (qu'Allah l'agrée) découvrit le visage, l'embrassa et dit : « Allah ne réunira pas sur toi deux morts » ; puis il prononça un sermon : qui adorait Mouhammad ﷺ, il est mort ; qui adore Allah, Il est vivant ; et il récita Âl 'Imrân 3:144 (Sahih al-Bukhari : 3667-3668). La récitation d'az-Zoumar 39:30 vient de la Sîra (Ibn Hichâm). 'Umar se calma.",
+           ""],
+          ["🕌 L'enterrement",
+           "Le lavage : 'Alî, al-Fadl, Qoutham, Ousâma et Chaqrân (qu'Allah les agrée) (Sunan Abi Dawud, Ibn Mâjah ; certaines chaînes hasan) ; le lavage dans ses vêtements (Abou Dawud 3141, al-Albani : hasan). Trois pièces de tissu blanc de Sahoul, sans chemise ni turban (Sahih al-Bukhari : 1264 ; Sahih Muslim : 941). Les Compagnons prièrent en groupes sans imam (Ibn Mâjah 1628, al-Albani : faible ; célèbre dans la Sîra). Il fut enterré là où il mourut (Tirmidhi 1018, al-Albani : sahih) ; la nuit du mardi (Mousnad Ahmad ; Sîra).",
+           ""],
+          ["🌟 Le témoignage d'Allah",
+           "At-Tawba 9:128 — Un Messager est venu à vous, issu de vous ; ce qui vous pèse lui pèse ; il est plein d'ardeur pour vous, et envers les croyants plein de bonté et de miséricorde.",
+           ""],
+          ["🎯 La leçon",
+           "Suis la Sunna, aime d'un amour sincère, et demande la compagnie du Prophète ﷺ au Paradis.",
+           ""]
+        ],
+        [
+          ["En quelle année hégirienne eut lieu la mort ?", ["An 10", "An 11", "An 12"]],
+          ["Qui dirigea la dernière prière ?", ["'Alî (qu'Allah l'agrée)", "Abou Bakr (qu'Allah l'agrée)", "'Umar (qu'Allah l'agrée)"]],
+          ["Quelle fut la dernière invocation ?", ["« Allâhumma ar-Rafîq al-A'lâ »", "« Allâhumma-ghfir lî »", "« Rabbanâ âtinâ »"]]
+        ],
+        [
+          ["632", "La maladie"],
+          ["632", "La dernière prière à la mosquée"],
+          ["632", "La mort"],
+          ["632", "L'enterrement"]
+        ]
+      ],
+      es: [
+        "El fallecimiento del Profeta ﷺ: el encuentro con el Compañero Supremo",
+        "Medina",
+        "Lunes, rabi al-awwal del año 11 (junio de 632); opinión famosa: 12 de rabi al-awwal; véase la discrepancia de fecha",
+        "Comprender los últimos días del Profeta ﷺ, su fallecimiento y el dolor de los Compañeros.",
+        "Cuando ﷺ dijo «ar-Rafiq al-A'la», los corazones se rompieron. ¡Oh Alá! Concédenos su compañía en el Paraíso. Amín.",
+        [
+          "Año 11, un lunes (12 de rabi al-awwal según la opinión famosa)",
+          "Su edad bendita: 63 años (Sahih Muslim: 2348-2349)",
+          "La última oración la dirigió Abu Bakr (que Alá esté complacido con él)",
+          "«Aláhumma ar-Rafiq al-A'la»",
+          "Enterrado en la habitación de Aisha (que Alá esté complacido con ella)"
+        ],
+        [
+          ["📅 Discrepancia sobre la fecha",
+           "Arafa fue un viernes (Sahih al-Bujari: 45). Si du l-hiyya, Muharram y safar tienen cada uno 29 o 30 días, el 1 de rabi al-awwal cae entre el domingo y el miércoles, y según ese cálculo el 12 de rabi al-awwal no es lunes. Los sabios lo señalaron (Fath al-Bari); las opiniones son el 1, el 2 y el 12. La opinión famosa es el 12, un lunes, pero es discutida.",
+           ""],
+          ["💔 La enfermedad",
+           "Dolor de cabeza y fiebre intensa (Sahih al-Bujari: 5666); en la habitación de Aisha (que Alá esté complacido con ella) con permiso de sus esposas (Sahih al-Bujari: 198); «Echadme agua de siete odres cuyos atados no se hayan desatado» (Sahih al-Bujari: 198); ordenó a Abu Bakr (que Alá esté complacido con él) dirigir la oración (Sahih al-Bujari: 664). La enfermedad duró unos trece días (Ar-Rahiq al-Majtum; opiniones de 10 a 14).",
+           ""],
+          ["🕌 La última oración",
+           "Al sentirse algo mejor, salió apoyado en dos hombres hacia la mezquita (Sahih al-Bujari: 712-713). Discrepancia: Aisha (que Alá esté complacido con ella) nombró a al-Abbas (que Alá esté complacido con él) para uno de los dos y no para el otro; Ibn Abbas (que Alá esté complacido con él) dijo que era Ali (que Alá esté complacido con él) (Sahih al-Bujari: 198, 665). Abu Bakr (que Alá esté complacido con él) retrocedió, pero él ﷺ se lo impidió y se sentó a su lado; Abu Bakr seguía al Profeta ﷺ y la gente seguía a Abu Bakr (Sahih al-Bujari: 713). Discrepancia: en algunos relatos el Profeta ﷺ rezó sentado detrás de Abu Bakr (que Alá esté complacido con él) (Tirmidhi 362-363); los sabios los refirieron a dos oraciones distintas (Fath al-Bari). En el alba del lunes: levantó la cortina de la habitación, sonrió, y como Abu Bakr retrocedía, le indicó que completara la oración y dejó caer la cortina (Sahih al-Bujari: 680-681; Sahih Muslim: 419).",
+           ""],
+          ["🚪 Las recomendaciones",
+           "«Que Alá maldiga a judíos y cristianos: tomaron las tumbas de sus profetas como lugares de culto» (Sahih al-Bujari: 435, 436); «Expulsad a los idólatras de la península arábiga» (Sahih al-Bujari: 3053; Sahih Muslim: 1637); «La oración y lo que poseen vuestras manos» (Sunan Abi Dawud: 5156, al-Albani: sahih); «Cerrad todas las puertas salvo la de Abu Bakr» (Sahih al-Bujari: 467); el sermón «Alá puso a un siervo a elegir», ante el cual Abu Bakr (que Alá esté complacido con él) lloró (Sahih al-Bujari: 466, 3654); la recomendación sobre los Ansar (Sahih al-Bujari: 3799). Herencia: ni dinar ni dirham (Sahih Muslim: 1635).",
+           ""],
+          ["💔 Los últimos instantes",
+           "Se apoyó en el pecho de Aisha (que Alá esté complacido con ella); Abd ar-Rahman ibn Abi Bakr (que Alá esté complacido con él) tenía un siwak fresco; Aisha lo masticó para ablandarlo y él ﷺ se limpió los dientes; metió la mano en el agua y se pasó por el rostro; «La ilaha illa Alá, la muerte tiene grandes agonías»; luego levantó la mano: «Aláhumma-ghfir li warhamni wa alhiqni bir-Rafiq al-A'la»; y la mano cayó (Sahih al-Bujari: 4449, 4440; Sahih Muslim: 2444). El relato de la elección: Sahih al-Bujari: 4435-4437.",
+           ""],
+          ["😢 El dolor de los Compañeros",
+           "Aisha (que Alá esté complacido con ella): en mi habitación, en mi día, entre mi pecho y mi garganta (Sahih al-Bujari: 4446). Fatima (que Alá esté complacido con ella): «¡Ay, la pena de mi padre! Respondió a la llamada de su Señor; ¡ay, la pena de mi padre! El Paraíso de al-Firdaws es su morada» (Sahih al-Bujari: 4462). Umar (que Alá esté complacido con él) negó la muerte; Abu Bakr (que Alá esté complacido con él) descubrió el rostro, lo besó y dijo: «Alá no reunirá en ti dos muertes»; luego pronunció un sermón: quien adoraba a Muhámmad ﷺ, ha muerto; quien adora a Alá, Él está vivo; y recitó Al Imran 3:144 (Sahih al-Bujari: 3667-3668). La recitación de az-Zumar 39:30 viene de la Sira (Ibn Hisham). Umar se serenó.",
+           ""],
+          ["🕌 El entierro",
+           "El lavado: Ali, al-Fadl, Qusam, Usama y Shaqran (que Alá esté complacido con ellos) (Sunan Abi Dawud, Ibn Maya; algunas cadenas hasan); el lavado con su ropa (Abu Dawud 3141, al-Albani: hasan). Tres telas blancas de Sahul, sin camisa ni turbante (Sahih al-Bujari: 1264; Sahih Muslim: 941). Los Compañeros rezaron en grupos sin imán (Ibn Maya 1628, al-Albani: débil; famoso en la Sira). Fue enterrado donde murió (Tirmidhi 1018, al-Albani: sahih); la noche del martes (Musnad Ahmad; Sira).",
+           ""],
+          ["🌟 El testimonio de Alá",
+           "At-Tawba 9:128: Os ha llegado un Mensajero de entre vosotros; le pesa lo que os aflige, se afana por vosotros y es con los creyentes compasivo y misericordioso.",
+           ""],
+          ["🎯 La lección",
+           "Sigue la Sunna, ama con amor sincero y pide la compañía del Profeta ﷺ en el Paraíso.",
+           ""]
+        ],
+        [
+          ["¿En qué año hiyri falleció?", ["Año 10", "Año 11", "Año 12"]],
+          ["¿Quién dirigió la última oración?", ["Ali (que Alá esté complacido con él)", "Abu Bakr (que Alá esté complacido con él)", "Umar (que Alá esté complacido con él)"]],
+          ["¿Cuál fue la última súplica?", ["«Aláhumma ar-Rafiq al-A'la»", "«Aláhumma-ghfir li»", "«Rabbana atina»"]]
+        ],
+        [
+          ["632", "La enfermedad"],
+          ["632", "La última oración en la mezquita"],
+          ["632", "El fallecimiento"],
+          ["632", "El entierro"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 31 — Shamail 1: qad, rang, chehra ═══════════════ */
+    31: {
+      mr: [
+        "नबवी शमाइल (१) — उंची, रंग आणि तेजस्वी चेहरा",
+        "मक्का व मदिना",
+        "सहाबांची प्रत्यक्ष साक्ष",
+        "इमाम तिर्मिझी (र.अ.) यांच्या «अश-शमाइल अल-मुहम्मदिया» मधून फक्त त्या रिवायती वाचणे ज्यांना अल्लामा अल्बानी (र.अ.) यांनी सहीह म्हटले, जेणेकरून नबी ﷺ उंची, रंग व चेहऱ्यात कसे होते हे कळेल.",
+        "हे अल्लाह! आम्हाला आपल्या नबी ﷺ यांच्यावर खरे प्रेम आणि त्यांच्या सुन्नतींवर चालण्याची तौफीक दे. आणि आपल्या डोळ्यांनी त्यांचे दर्शन नशीबात दे. आमीन.",
+        [
+          "मध्यम उंची, न उंच न ठेंगणे",
+          "चेहरा चंद्रासारखा तेजस्वी",
+          "खांद्यांमध्ये रुंदी",
+          "डोके मोठे, तळवे मांसल",
+          "चालताना जोराने, थोडे पुढे झुकून",
+          "फक्त सहीह रिवायती (अल्बानी)"
+        ],
+        [
+          ["📖 शमाइल काय आहेत? आणि आमचा नियम काय",
+           "«शमाइल» हे शमीला याचे अनेकवचन आहे, म्हणजे नबी ﷺ यांचे बाह्य रूप, सवयी व आचार. इमाम तिर्मिझी (र.अ.) (मृत्यू २७९ हि.) यांनी या विषयावर «अश-शमाइल अल-मुहम्मदिया» लिहिले. आम्ही मक्तबा शामिलातून «मुख्तसरुश-शमाइल» (अल्लामा अल्बानी यांचे तहकीक) उघडले, ज्यात प्रत्येक हदीवर दर्जा लिहिला आहे. या धड्यात व पुढच्या तीन दिवसांत फक्त त्या हदीसी घेतल्या आहेत ज्यांवर «सहीह» लिहिले आहे; जईफ व हसन रिवायती समाविष्ट केलेल्या नाहीत.",
+           "स्रोत: मुख्तसरुश-शमाइल अल-मुहम्मदिया, तहकीक अल्बानी (मक्तबा शामिला, किताब क्र. ७००)"],
+          ["⚠️ हिंद बिन अबी हाला (र.अ.) यांची लांब रिवायत का नाही?",
+           "नबी ﷺ यांच्या हुल्याची एक फार प्रसिद्ध लांब रिवायत हजरत हिंद बिन अबी हाला (र.अ.) यांच्या नावाने सांगितली जाते («फख्मन मुफखमन यतलअलउ वज्हुहु...»). अल्लामा अल्बानी (र.अ.) यांनी «मुख्तसरुश-शमाइल» मध्ये तिला «जईफ जिद्दन» (फार कमजोर) म्हटले आहे (हदीस क्र. ६, पृ. १८), म्हणून आम्ही ती या अभ्यासक्रमात घेतली नाही. त्याचप्रमाणे इब्न अब्बास (र.अ.) यांच्याकडून «दातांतून प्रकाश निघणे» ही रिवायतही जईफ जिद्दन आहे (हदीस क्र. १३, पृ. २९).",
+           "स्रोत: मुख्तसरुश-शमाइल, हदीस ६ (पृ. १८) व हदीस १३ (पृ. २९)"],
+          ["🧍 उंची व शरीर",
+           "सहीह रिवायतींनुसार नबी ﷺ मध्यम उंचीचे होते; न फार उंच, न ठेंगणे. शरीर सुंदर, दोन्ही खांद्यांमध्ये रुंदी, डोके मोठे, तळवे व पाय मांसल होते, आणि छातीपासून नाभीपर्यंत केसांची बारीक रेषा होती. चालताना शक्तीने थोडे पुढे झुकून चालत, जणू उंचीवरून उतरत आहेत.",
+           "स्रोत: अश-शमाइल हदीस १, २, ३, ४ (पृ. १३–१५)"],
+          ["🌕 रंग व चेहरा",
+           "सहाबांनी तेजस्वी चेहऱ्याची चंद्राशी तुलना केली; जाबिर बिन समरा (र.अ.) यांनी चांदण्या रात्री आप ﷺ यांना व चंद्राला पाहून म्हटले की आप ﷺ मला चंद्रापेक्षाही सुंदर वाटले. बरा (र.अ.) यांना विचारले गेले की चेहरा तलवारीसारखा होता का? ते म्हणाले: नाही, चंद्रासारखा होता. रंगाबद्दल अनस (र.अ.) यांनी «अस्मरुल-लौन» (गव्हाळ) म्हटले, तर अबू हुरैरा (र.अ.) व अबू तुफैल (र.अ.) यांनी «अब्यद» (गोरा, तेजस्वी) सांगितले. या सहीह रिवायतींमध्ये विद्वान असे एकत्र करतात की रंग तेजस्वी व स्वच्छ होता, प्रवास व ऊनामुळे हलकी लालसर/गव्हाळ छटा होती; न चुन्यासारखा पांढरा, न गडद गव्हाळ.",
+           "स्रोत: अश-शमाइल हदीस २, ८, ९, १०, १२ (पृ. १३–२७)"],
+          ["⚖️ रिवायतींमधील मतभेद व त्यांचा मेळ",
+           "पहिले: आयुष्य — अनस (र.अ.) यांच्या रिवायतीत (अश-शमाइल हदीस १; सहीह मुस्लिम २३४७) चाळिशीत नबुव्वत, मक्केत १० व मदिन्यात १० वर्षे, आणि निधन साठीत; बहुसंख्यांच्या मते मक्केत १३ वर्षे (सहीह बुखारी ३८५१) व निधन ६३ व्या वर्षी (सहीह मुस्लिम २३४९). विद्वानांनी अनस (र.अ.) यांची रिवायत अंदाज किंवा हिशोबातील कमतरता मानली. दुसरे: रंग — अनस (र.अ.) यांच्या एका रिवायतीत «अझहरुल-लौन» म्हणजे तेजस्वी रंग (सहीह मुस्लिम २३३०) व दुसरीत «अस्मर»; अबू हुरैरा (र.अ.) «चांदीसारखा» व अबू तुफैल (र.अ.) «गोरा सुंदर» म्हणतात. विद्वान एकत्र करतात: तेजस्वी स्वच्छ रंग ज्यात ऊन व प्रवासामुळे हलकी लालसर छटा येते; न चुन्यासारखा पांढरा, न गडद गव्हाळ. तिसरे: «अश्कलुल-ऐन» (सहीह मुस्लिम २३३९) चा अर्थ: लांब भेगेचा डोळा (सिमाकची तफसीर) किंवा डोळ्याच्या पांढऱ्यात लाल धागे; बहुतेक विद्वानांनी (काजी इयाज, नववी) दुसऱ्या अर्थाला प्राधान्य दिले.",
+           "स्रोत: अश-शमाइल हदीस १, २; सहीह बुखारी ३८५१; सहीह मुस्लिम २३३०, २३३९, २३४७, २३४९"]
+        ],
+        [
+          ["अनस (र.अ.)", "अनस (र.अ.) म्हणतात: रसूलुल्लाह ﷺ न फार उंच होते न ठेंगणे, न पूर्णपणे चुन्यासारखे पांढरे, न गडद गव्हाळ, न पूर्ण गुंगुरलेले व न पूर्ण सरळ केसांचे. चाळिशीच्या वयात अल्लाहने त्यांना नबी केले; मक्केत दहा वर्षे व मदिन्यात दहा वर्षे राहिले; नंतर (अनस (र.अ.) यांच्या या रिवायतीनुसार) साठ वर्षांच्या शेवटी अल्लाहने त्यांचे निधन केले, आणि त्यांच्या डोक्यात व दाढीत वीस केसही पांढरे नव्हते.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १, पृ. १३ — अल्बानी: सहीह"],
+          ["अनस (र.अ.)", "अनस (र.अ.): रसूलुल्लाह ﷺ मध्यम उंचीचे होते, न उंच न ठेंगणे, शरीर सुंदर होते, केस न जास्त गुंगुरलेले न पूर्ण सरळ, रंग गव्हाळ होता, आणि चालताना ते थोडे पुढे झुकून चालत.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. २, पृ. १३ — अल्बानी: सहीह"],
+          ["बरा बिन आझिब (र.अ.)", "बरा (र.अ.): रसूलुल्लाह ﷺ मध्यम उंचीचे होते, दोन्ही खांद्यांमध्ये रुंदी होती, दाट केस कानाच्या पाळीपर्यंत होते, आप ﷺ यांनी लाल जोडा परिधान केला होता; मी आप ﷺ यांच्यापेक्षा सुंदर काहीही कधी पाहिले नाही.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ३, पृ. १४ — अल्बानी: सहीह"],
+          ["अली (र.अ.)", "अली (र.अ.): नबी ﷺ न फार उंच होते न ठेंगणे; तळवे व पाय मांसल, डोके मोठे, सांध्यांची हाडे मोठी व मजबूत, छातीपासून नाभीपर्यंत केसांची लांब बारीक रेषा होती; चालताना इतक्या जोराने चालत जणू उंचीवरून उतरत आहेत; मी आप ﷺ यांच्यापूर्वी व नंतर आप ﷺ यांच्यासारखा कोणीही पाहिले नाही.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ४, पृ. १५ — अल्बानी: सहीह"],
+          ["जाबिर बिन समरा (र.अ.)", "जाबिर बिन समरा (र.अ.): रसूलुल्लाह ﷺ यांचे तेजस्वी तोंड रुंद होते, डोळ्यांची भेग लांब होती, आणि टाचांवर मांस कमी होते. (वर्णनकर्ता सिमाक (र.अ.) यांच्याकडून या तीनही शब्दांची हीच तफसीर आली आहे.)", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ७, पृ. २६ — अल्बानी: सहीह"],
+          ["जाबिर बिन समरा (र.अ.)", "जाबिर बिन समरा (र.अ.): मी चांदण्या रात्री रसूलुल्लाह ﷺ यांना पाहिले, आप ﷺ यांनी लाल जोडा परिधान केला होता; मी कधी आप ﷺ यांना पाहत होतो कधी चंद्राला, तर आप ﷺ मला चंद्रापेक्षाही सुंदर वाटले.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ८, पृ. २६ — अल्बानी: सहीह"],
+          ["बरा बिन आझिब (र.अ.)", "एका माणसाने बरा (र.अ.) यांना विचारले: रसूलुल्लाह ﷺ यांचा चेहरा तलवारीसारखा होता का? ते म्हणाले: नाही, तर चंद्रासारखा होता.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ९, पृ. २६ — अल्बानी: सहीह"],
+          ["अबू हुरैरा (र.अ.)", "अबू हुरैरा (र.अ.): रसूलुल्लाह ﷺ असे तेजस्वी गोरे होते जणू चांदीतून घडवले गेले आहेत, आणि केस मऊ व हलके वळणदार होते.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १०, पृ. २७ — अल्बानी: सहीह"],
+          ["जाबिर बिन अब्दुल्लाह (र.अ.)", "जाबिर बिन अब्दुल्लाह (र.अ.): रसूलुल्लाह ﷺ म्हणाले: माझ्यासमोर नबी सादर केले गेले; मूसा (अ.स.) सडपातळ शरीराचे होते जणू शनूआ टोळीच्या लोकांपैकी; ईसा बिन मरियम (अ.स.) यांच्याशी सर्वाधिक साम्य मला उर्वा बिन मसऊद यांच्यात आढळले; इब्राहीम (अ.स.) यांच्याशी सर्वाधिक साम्य तुमच्या साथीदाराचे (म्हणजे स्वतः आप ﷺ) आहे; आणि जिब्राईल (अ.स.) यांच्याशी सर्वाधिक साम्य दिह्या (कल्बी (र.अ.)) यांचे आहे.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ११, पृ. २७ — अल्बानी: सहीह"],
+          ["अबू तुफैल आमिर बिन वासिला (र.अ.)", "अबू तुफैल (र.अ.): मी नबी ﷺ यांना पाहिले आहे आणि (आता) पृथ्वीवर माझ्याशिवाय कोणीही उरले नाही ज्याने आप ﷺ यांना पाहिले असेल. मी म्हटले: मला आप ﷺ यांचे हुल्ये सांगा. ते म्हणाले: आप ﷺ गोरे, आकर्षक (तेजस्वी) आणि मध्यम शरीराचे होते.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १२, पृ. २७ — अल्बानी: सहीह"]
+        ],
+        [
+          "शमाइल अल-मुहम्मदिया, इमाम तिर्मिझी (र.अ.) — मुख्तसरुश-शमाइल, तहकीक अल्लामा अल्बानी: हदीस १, २, ३, ४, ७, ८, ९, १०, ११, १२ (सर्वांवर «सहीह»)",
+          "जईफ ठरवलेल्या रिवायती (समाविष्ट नाहीत): हदीस ५ (जईफ), हदीस ६ हिंद बिन अबी हाला (र.अ.) (जईफ जिद्दन), हदीस १३ (जईफ जिद्दन)",
+          "मतभेदाच्या टिपेसाठी अधिक संदर्भ: सहीह बुखारी ३८५१; सहीह मुस्लिम २३३०, २३३९, २३४७, २३४९"
+        ],
+        [
+          ["नबी ﷺ यांच्या चेहऱ्याची बरा (र.अ.) यांनी कोणाशी तुलना केली?", ["तलवारीशी", "चंद्राशी", "सूर्याशी"]],
+          ["हिंद बिन अबी हाला (र.अ.) यांच्या लांब रिवायतीवर अल्बानी यांचा हुकूम काय?", ["सहीह", "हसन", "जईफ जिद्दन"]],
+          ["शेवटी नबी ﷺ यांना पाहणारे व हुल्ये सांगणारे सहाबी कोण?", ["अबू तुफैल (र.अ.)", "अनस (र.अ.)", "जाबिर (र.अ.)"]]
+        ],
+        []
+      ],
+      ar: [
+        "الشمائل النبوية (١) — القد واللون والوجه الأزهر",
+        "مكة والمدينة",
+        "شهادة الصحابة رضي الله عنهم عن معاينة",
+        "أن نقرأ من «الشمائل المحمدية» للإمام الترمذي رحمه الله فقط ما حكم عليه العلامة الألباني رحمه الله بالصحة، لنعلم كيف كان النبي ﷺ في قده ولونه ووجهه.",
+        "اللهم ارزقنا محبة صادقة لنبيك ﷺ واتباع سنته، وارزقنا النظر إلى وجهه الشريف. آمين.",
+        [
+          "ربعة، ليس بالطويل ولا بالقصير",
+          "وجهه كالقمر في الإشراق",
+          "بعيد ما بين المنكبين",
+          "ضخم الرأس، شثن الكفين",
+          "إذا مشى تكفأ من صبب",
+          "الأحاديث الصحيحة فقط (الألباني)"
+        ],
+        [
+          ["📖 ما هي الشمائل؟ وما الأصل الذي التزمناه",
+           "«الشمائل» جمع شميلة، وهي هيئته الظاهرة ﷺ وعاداته وأخلاقه. وقد ألّف الإمام الترمذي رحمه الله (ت 279هـ) في هذا الباب «الشمائل المحمدية». وقد فتحنا من المكتبة الشاملة «مختصر الشمائل» (تحقيق العلامة الألباني) وفيه درجة كل حديث. وفي هذا الدرس والأيام الثلاثة التالية أُخذت فقط الأحاديث المكتوب عليها «صحيح»، ولم تُدرج الروايات الضعيفة أو الحسنة.",
+           "المصدر: مختصر الشمائل المحمدية، تحقيق الألباني (المكتبة الشاملة، كتاب رقم 700)"],
+          ["⚠️ لماذا لم تُدرج رواية هند بن أبي هالة الطويلة؟",
+           "تُروى في صفته ﷺ رواية طويلة مشهورة عن هند بن أبي هالة رضي الله عنه («فخمًا مفخمًا يتلألأ وجهه...»). وقد حكم عليها العلامة الألباني في «مختصر الشمائل» بأنها «ضعيف جدًّا» (حديث رقم 6، ص 18)، فلذلك لم نُدرجها في هذا الدرس. وكذلك رواية «النور من أسنانه» عن ابن عباس رضي الله عنه ضعيف جدًّا أيضًا (حديث رقم 13، ص 29).",
+           "المصدر: مختصر الشمائل، حديث 6 (ص 18) وحديث 13 (ص 29)"],
+          ["🧍 القد والجسم",
+           "في الروايات الصحيحة كان النبي ﷺ ربعة، لا طويلًا ولا قصيرًا. وكان حسن الجسم، بعيد ما بين المنكبين، ضخم الرأس، شثن الكفين والقدمين، وبين صدره وسرته شعر رقيق يجري كالخط. وكان إذا مشى مشى بقوة وتكفؤًا كأنما ينحط من صبب.",
+           "المصدر: الشمائل حديث 1، 2، 3، 4 (ص 13–15)"],
+          ["🌕 اللون والوجه",
+           "شبّه الصحابة رضي الله عنهم وجهه الشريف بالقمر؛ وقال جابر بن سمرة رضي الله عنه وقد نظر إليه ﷺ وإلى القمر في ليلة مقمرة: إنه كان أحسن عندي من القمر. وسُئل البراء رضي الله عنه: أكان وجهه مثل السيف؟ قال: لا، بل مثل القمر. وأما اللون فقال أنس رضي الله عنه: «أسمر اللون»، وقال أبو هريرة وأبو الطفيل رضي الله عنهما: «أبيض» (مشرق). ويجمع العلماء بين هذه الصحاح بأن اللون كان مشرقًا صافيًا، وفيه حمرة أو سمرة خفيفة من السفر والشمس؛ لا كالجص أبيض، ولا أدهم غامقًا.",
+           "المصدر: الشمائل حديث 2، 8، 9، 10، 12 (ص 13–27)"],
+          ["⚖️ الخلاف بين الروايات والجمع بينها",
+           "أولًا: العمر — في رواية أنس (الشمائل حديث 1؛ صحيح مسلم 2347) أنه بُعث على رأس أربعين، وأقام بمكة عشرًا وبالمدينة عشرًا، وتوفي على رأس ستين؛ وعند الجمهور أقام بمكة ثلاث عشرة (صحيح البخاري 3851) وتوفي على رأس ثلاث وستين (صحيح مسلم 2349). وحمل العلماء رواية أنس على التقدير أو النقص في الحساب. ثانيًا: اللون — في رواية لأنس «أزهر اللون» أي مشرق (صحيح مسلم 2330)، وفي أخرى «أسمر»؛ وقال أبو هريرة «كأنما صيغ من فضة»، وأبو الطفيل «أبيض مليح». ويجمع العلماء: لون مشرق صافٍ تعتريه حمرة خفيفة من الشمس والسفر؛ لا كالجص ولا أدهم. ثالثًا: «أشكل العين» (صحيح مسلم 2339): طويل شق العين (تفسير سماك) أو عروق حمر في بياضها؛ ورجّح أكثر العلماء (القاضي عياض والنووي) المعنى الثاني.",
+           "المصدر: الشمائل حديث 1، 2؛ صحيح البخاري 3851؛ صحيح مسلم 2330، 2339، 2347، 2349"]
+        ],
+        [
+          ["أنس رضي الله عنه", "قال أنس رضي الله عنه: لم يكن رسول الله ﷺ بالطويل البائن ولا بالقصير، ولا بالأبيض الأمهق ولا بالآدم، ولا بالجعد القطط ولا بالسبط. بعثه الله على رأس أربعين سنة، فأقام بمكة عشرًا وبالمدينة عشرًا، وتوفاه الله (في هذه الرواية) على رأس ستين، وليس في رأسه ولحيته عشرون شعرة بيضاء.", "الشمائل المحمدية، حديث رقم 1، ص 13 — الألباني: صحيح"],
+          ["أنس رضي الله عنه", "قال أنس رضي الله عنه: كان رسول الله ﷺ ربعة، ليس بالطويل ولا بالقصير، حسن الجسم، وكان شعره ليس بجعد ولا سبط، أسمر اللون، وإذا مشى تكفأ.", "الشمائل المحمدية، حديث رقم 2، ص 13 — الألباني: صحيح"],
+          ["البراء بن عازب رضي الله عنه", "قال البراء رضي الله عنه: كان رسول الله ﷺ رجلًا مربوعًا، بعيد ما بين المنكبين، عظيم الجمة إلى شحمة أذنيه، عليه حلة حمراء، ما رأيت شيئًا قط أحسن منه.", "الشمائل المحمدية، حديث رقم 3، ص 14 — الألباني: صحيح"],
+          ["علي رضي الله عنه", "قال علي رضي الله عنه: لم يكن النبي ﷺ بالطويل ولا بالقصير، شثن الكفين والقدمين، ضخم الرأس، ضخم الكراديس، طويل المسربة؛ وإذا مشى تكفأ تكفؤًا كأنما ينحط من صبب؛ لم أر قبله ولا بعده مثله ﷺ.", "الشمائل المحمدية، حديث رقم 4، ص 15 — الألباني: صحيح"],
+          ["جابر بن سمرة رضي الله عنه", "قال جابر بن سمرة رضي الله عنه: كان رسول الله ﷺ ضليع الفم، أشكل العين، منهوس العقب. (وهذا تفسير الراوي سماك لهذه الألفاظ الثلاثة.)", "الشمائل المحمدية، حديث رقم 7، ص 26 — الألباني: صحيح"],
+          ["جابر بن سمرة رضي الله عنه", "قال جابر بن سمرة رضي الله عنه: رأيت رسول الله ﷺ في ليلة إضحيان وعليه حلة حمراء، فجعلت أنظر إليه وإلى القمر، فلهو عندي أحسن من القمر.", "الشمائل المحمدية، حديث رقم 8، ص 26 — الألباني: صحيح"],
+          ["البراء بن عازب رضي الله عنه", "سأل رجل البراء رضي الله عنه: أكان وجه رسول الله ﷺ مثل السيف؟ قال: لا، بل مثل القمر.", "الشمائل المحمدية، حديث رقم 9، ص 26 — الألباني: صحيح"],
+          ["أبو هريرة رضي الله عنه", "قال أبو هريرة رضي الله عنه: كان رسول الله ﷺ أبيض كأنما صيغ من فضة، رجل الشعر.", "الشمائل المحمدية، حديث رقم 10، ص 27 — الألباني: صحيح"],
+          ["جابر بن عبد الله رضي الله عنه", "قال جابر بن عبد الله رضي الله عنه: قال رسول الله ﷺ: عُرض عليّ الأنبياء؛ فإذا موسى عليه السلام ضرب من الرجال كأنه من رجال شنوءة، ورأيت عيسى بن مريم عليه السلام فإذا أقرب من رأيت به شبهًا عروة بن مسعود، ورأيت إبراهيم عليه السلام فإذا أقرب من رأيت به شبهًا صاحبكم (يعني نفسه)، ورأيت جبريل عليه السلام فإذا أقرب من رأيت به شبهًا دحية.", "الشمائل المحمدية، حديث رقم 11، ص 27 — الألباني: صحيح"],
+          ["أبو الطفيل عامر بن واثلة رضي الله عنه", "قال أبو الطفيل رضي الله عنه: رأيت النبي ﷺ وما بقي على وجه الأرض أحد رآه غيري. قلت: صفه لي. قال: كان أبيض مليحًا مقصدًا.", "الشمائل المحمدية، حديث رقم 12، ص 27 — الألباني: صحيح"]
+        ],
+        [
+          "الشمائل المحمدية للإمام الترمذي — مختصر الشمائل، تحقيق العلامة الألباني: الأحاديث 1، 2، 3، 4، 7، 8، 9، 10، 11، 12 (كلها «صحيح»)",
+          "الروايات المحكوم عليها بالضعف (لم تُدرج): حديث 5 (ضعيف)، حديث 6 لهند بن أبي هالة (ضعيف جدًّا)، حديث 13 (ضعيف جدًّا)",
+          "لمزيد من المراجع في ملاحظة الخلاف: صحيح البخاري 3851؛ صحيح مسلم 2330، 2339، 2347، 2349"
+        ],
+        [
+          ["بمن شبّه البراء رضي الله عنه وجه النبي ﷺ؟", ["بالسيف", "بالقمر", "بالشمس"]],
+          ["ما حكم الألباني على رواية هند بن أبي هالة الطويلة؟", ["صحيح", "حسن", "ضعيف جدًّا"]],
+          ["من آخر من رأى النبي ﷺ ووصف هيئته؟", ["أبو الطفيل رضي الله عنه", "أنس رضي الله عنه", "جابر رضي الله عنه"]]
+        ],
+        []
+      ],
+      fr: [
+        "Les Shamâ'il du Prophète (1) — la taille, le teint et le visage radieux",
+        "La Mecque et Médine",
+        "Le témoignage oculaire des Compagnons",
+        "Lire, dans « Ach-Chamâ'il al-Muhammadiyya » de l'imam at-Tirmidhi, uniquement les récits jugés authentiques par Allama al-Albani, afin de savoir comment le Prophète ﷺ était de taille, de teint et de visage.",
+        "Ô Allah ! Accorde-nous un amour sincère pour Ton Prophète ﷺ et la force de suivre sa sunna, et accorde-nous de le contempler de nos yeux. Âmîn.",
+        [
+          "De taille moyenne, ni grand ni petit",
+          "Un visage éclatant comme la lune",
+          "Les épaules larges",
+          "La tête grande, les paumes charnues",
+          "Il marchait avec force, légèrement penché",
+          "Seuls les hadiths authentiques (al-Albani)"
+        ],
+        [
+          ["📖 Que sont les Shamâ'il ? Et notre règle",
+           "« Ach-Chamâ'il » est le pluriel de chamîla : son apparence extérieure ﷺ, ses habitudes et son caractère. L'imam at-Tirmidhi (mort en 279 H) composa sur ce sujet « Ach-Chamâ'il al-Muhammadiyya ». Nous avons ouvert dans la Maktaba Chamila le « Moukhtasar ach-Chamâ'il » (édité par Allama al-Albani), où le degré de chaque hadith est indiqué. Dans cette leçon et les trois suivantes, seuls les hadiths marqués « sahih » ont été retenus ; les récits faibles ou hasan n'y figurent pas.",
+           "Source : Moukhtasar ach-Chamâ'il al-Muhammadiyya, éd. al-Albani (Maktaba Chamila, livre n° 700)"],
+          ["⚠️ Pourquoi le long récit de Hind ibn Abî Hâla n'est-il pas inclus ?",
+           "Un long récit très célèbre sur la description du Prophète ﷺ est rapporté sous le nom de Hind ibn Abî Hâla (qu'Allah l'agrée) (« fakhman moufkhama, yatala'la'ou wajhouhou... »). Allama al-Albani l'a jugé « da'îf jiddan » (très faible) dans le « Moukhtasar ach-Chamâ'il » (hadith n° 6, p. 18) ; nous ne l'avons donc pas inclus. De même, le récit d'Ibn 'Abbâs sur « la lumière sortant de ses dents » est très faible (hadith n° 13, p. 29).",
+           "Source : Moukhtasar ach-Chamâ'il, hadith 6 (p. 18) et hadith 13 (p. 29)"],
+          ["🧍 La taille et le corps",
+           "Selon les récits authentiques, le Prophète ﷺ était de taille moyenne, ni très grand ni petit. Son corps était beau, ses épaules larges, sa tête grande, ses paumes et ses pieds charnus, et un fin duvet descendait de sa poitrine jusqu'au nombril. En marchant, il avançait avec force, légèrement penché en avant, comme s'il descendait d'une pente.",
+           "Source : Ach-Chamâ'il, hadiths 1, 2, 3, 4 (p. 13-15)"],
+          ["🌕 Le teint et le visage",
+           "Les Compagnons comparèrent son visage béni à la lune ; Jâbir ibn Samoura, l'ayant regardé ﷺ puis la lune par une nuit claire, dit qu'il était à ses yeux plus beau que la lune. On demanda à al-Barâ' : son visage était-il comme une épée ? Il dit : non, comme la lune. Pour le teint, Anas dit « asmar » (teint clair légèrement hâlé), tandis qu'Abou Hourayra et Abou at-Toufayl dirent « abyad » (clair, lumineux). Les savants concilient ces récits authentiques : le teint était clair et pur, avec une légère rougeur ou hâle dû aux voyages et au soleil ; ni blanc comme la chaux, ni brun foncé.",
+           "Source : Ach-Chamâ'il, hadiths 2, 8, 9, 10, 12 (p. 13-27)"],
+          ["⚖️ La divergence des récits et leur conciliation",
+           "Premièrement : l'âge — dans le récit d'Anas (Ach-Chamâ'il hadith 1 ; Sahih Muslim 2347), il fut envoyé à quarante ans, resta dix ans à La Mecque et dix à Médine, et mourut à soixante ans ; pour la majorité, il resta treize ans à La Mecque (Sahih al-Bukhari 3851) et mourut à soixante-trois ans (Sahih Muslim 2349). Les savants ont rapporté le récit d'Anas à une estimation ou à un manque dans le calcul. Deuxièmement : le teint — un récit d'Anas dit « azhar al-lawn » (teint éclatant) (Sahih Muslim 2330), un autre « asmar » ; Abou Hourayra dit « comme façonné d'argent » et Abou at-Toufayl « clair et beau ». Les savants concilient : un teint clair et pur avec une légère rougeur due au soleil et aux voyages. Troisièmement : « achkal al-'ayn » (Sahih Muslim 2339) signifie : l'œil fendu longuement (selon Simâk) ou des veines rouges dans le blanc de l'œil ; la plupart des savants (al-Qâdî 'Iyâd, an-Nawawî) ont préféré le second sens.",
+           "Source : Ach-Chamâ'il hadiths 1, 2 ; Sahih al-Bukhari 3851 ; Sahih Muslim 2330, 2339, 2347, 2349"]
+        ],
+        [
+          ["Anas (qu'Allah l'agrée)", "Anas (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ n'était ni très grand ni petit, ni blanc comme la chaux ni brun foncé, ni aux cheveux très crépus ni tout à fait lisses. Allah l'envoya à quarante ans ; il resta dix ans à La Mecque et dix ans à Médine ; puis Allah le rappela (selon ce récit) à soixante ans, et il n'y avait pas vingt cheveux blancs dans sa tête et sa barbe.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 1, p. 13 — al-Albani : sahih"],
+          ["Anas (qu'Allah l'agrée)", "Anas (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ était de taille moyenne, ni grand ni petit ; son corps était beau ; ses cheveux n'étaient ni très crépus ni lisses ; son teint était clair légèrement hâlé ; et quand il marchait, il se penchait légèrement en avant.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 2, p. 13 — al-Albani : sahih"],
+          ["Al-Barâ' ibn 'Âzib (qu'Allah l'agrée)", "Al-Barâ' (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ était de taille moyenne, les épaules larges, les cheveux abondants jusqu'au lobe de l'oreille ; il portait un habit rouge ; je n'ai jamais rien vu de plus beau que lui.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 3, p. 14 — al-Albani : sahih"],
+          ["'Alî (qu'Allah l'agrée)", "'Alî (qu'Allah l'agrée) dit : Le Prophète ﷺ n'était ni grand ni petit ; ses paumes et ses pieds étaient charnus, sa tête grande, ses articulations fortes ; un fin duvet descendait de sa poitrine jusqu'au nombril ; quand il marchait, il avançait avec une telle force qu'on eût dit qu'il descendait d'une pente ; je n'ai jamais vu, avant ni après lui, quelqu'un comme lui ﷺ.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 4, p. 15 — al-Albani : sahih"],
+          ["Jâbir ibn Samoura (qu'Allah l'agrée)", "Jâbir ibn Samoura (qu'Allah l'agrée) dit : La bouche du Messager d'Allah ﷺ était large, ses yeux fendus longuement, et ses talons peu charnus. (C'est l'explication que le transmetteur Simâk a donnée de ces trois termes.)", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 7, p. 26 — al-Albani : sahih"],
+          ["Jâbir ibn Samoura (qu'Allah l'agrée)", "Jâbir ibn Samoura (qu'Allah l'agrée) dit : J'ai vu le Messager d'Allah ﷺ par une nuit claire, portant un habit rouge ; je me mis à le regarder puis à regarder la lune, et il était à mes yeux plus beau que la lune.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 8, p. 26 — al-Albani : sahih"],
+          ["Al-Barâ' ibn 'Âzib (qu'Allah l'agrée)", "Un homme demanda à al-Barâ' (qu'Allah l'agrée) : Le visage du Messager d'Allah ﷺ était-il comme une épée ? Il dit : Non, il était comme la lune.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 9, p. 26 — al-Albani : sahih"],
+          ["Abou Hourayra (qu'Allah l'agrée)", "Abou Hourayra (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ était d'un blanc lumineux, comme s'il avait été façonné d'argent, et ses cheveux étaient souples et légèrement ondulés.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 10, p. 27 — al-Albani : sahih"],
+          ["Jâbir ibn 'Abdillâh (qu'Allah l'agrée)", "Jâbir ibn 'Abdillâh (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ dit : On m'a présenté les prophètes ; Mûsâ (paix sur lui) était de constitution fine, comme s'il était des gens de la tribu de Chanou'a ; 'Issâ ibn Maryam (paix sur lui) : le plus ressemblant que j'aie vu est 'Ourwa ibn Mas'oûd ; Ibrâhîm (paix sur lui) : le plus ressemblant est votre compagnon (c'est-à-dire lui-même) ; et Jibrîl (paix sur lui) : le plus ressemblant est Dihya (al-Kalbî).", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 11, p. 27 — al-Albani : sahih"],
+          ["Abou at-Toufayl 'Âmir ibn Wâthila (qu'Allah l'agrée)", "Abou at-Toufayl (qu'Allah l'agrée) dit : J'ai vu le Prophète ﷺ, et il ne reste plus sur la terre personne qui l'ait vu excepté moi. Je dis : décris-le-moi. Il dit : Il était clair de teint, beau et de taille moyenne.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 12, p. 27 — al-Albani : sahih"]
+        ],
+        [
+          "Ach-Chamâ'il al-Muhammadiyya de l'imam at-Tirmidhi — Moukhtasar ach-Chamâ'il, éd. Allama al-Albani : hadiths 1, 2, 3, 4, 7, 8, 9, 10, 11, 12 (tous « sahih »)",
+          "Récits jugés faibles (non inclus) : hadith 5 (faible), hadith 6 de Hind ibn Abî Hâla (très faible), hadith 13 (très faible)",
+          "Autres références pour la note sur la divergence : Sahih al-Bukhari 3851 ; Sahih Muslim 2330, 2339, 2347, 2349"
+        ],
+        [
+          ["À quoi al-Barâ' (qu'Allah l'agrée) compara-t-il le visage du Prophète ﷺ ?", ["À une épée", "À la lune", "Au soleil"]],
+          ["Quel est le jugement d'al-Albani sur le long récit de Hind ibn Abî Hâla ?", ["Sahih", "Hasan", "Très faible"]],
+          ["Qui fut le dernier Compagnon à avoir vu le Prophète ﷺ et à décrire sa personne ?", ["Abou at-Toufayl (qu'Allah l'agrée)", "Anas (qu'Allah l'agrée)", "Jâbir (qu'Allah l'agrée)"]]
+        ],
+        []
+      ],
+      es: [
+        "Los Shamail del Profeta (1): la estatura, el color y el rostro radiante",
+        "La Meca y Medina",
+        "El testimonio directo de los Compañeros",
+        "Leer, de «Ash-Shamail al-Muhammadiyya» del imán at-Tirmidhi, solo los relatos que Allama al-Albani declaró auténticos, para saber cómo era el Profeta ﷺ en estatura, color y rostro.",
+        "¡Oh Alá! Concédenos un amor sincero por Tu Profeta ﷺ y la fuerza de seguir su sunna, y concédenos contemplarlo con nuestros ojos. Amín.",
+        [
+          "De estatura media, ni alto ni bajo",
+          "Un rostro radiante como la luna",
+          "Los hombros anchos",
+          "La cabeza grande, las palmas carnosas",
+          "Caminaba con fuerza, ligeramente inclinado",
+          "Solo los hadices auténticos (al-Albani)"
+        ],
+        [
+          ["📖 ¿Qué son los Shamail? Y nuestra regla",
+           "«Ash-Shamail» es el plural de shamila: su apariencia exterior ﷺ, sus costumbres y su carácter. El imán at-Tirmidhi (m. 279 H) compuso sobre este tema «Ash-Shamail al-Muhammadiyya». Abrimos en la Maktaba Shamila el «Mujtasar ash-Shamail» (editado por Allama al-Albani), donde consta el grado de cada hadiz. En esta lección y en las tres siguientes solo se tomaron los hadices marcados «sahih»; no se incluyeron los relatos débiles ni los hasan.",
+           "Fuente: Mujtasar ash-Shamail al-Muhammadiyya, ed. al-Albani (Maktaba Shamila, libro n.º 700)"],
+          ["⚠️ ¿Por qué no se incluye el largo relato de Hind ibn Abi Hala?",
+           "Un relato muy famoso sobre la descripción del Profeta ﷺ se transmite a nombre de Hind ibn Abi Hala (que Alá esté complacido con él) («fajman mujmama, yatala'la'u wayhuhu...»). Allama al-Albani lo calificó de «da'if yiddan» (muy débil) en el «Mujtasar ash-Shamail» (hadiz n.º 6, p. 18), por eso no lo incluimos en este curso. Igualmente, el relato de Ibn Abbas sobre «la luz que salía de sus dientes» es muy débil (hadiz n.º 13, p. 29).",
+           "Fuente: Mujtasar ash-Shamail, hadiz 6 (p. 18) y hadiz 13 (p. 29)"],
+          ["🧍 La estatura y el cuerpo",
+           "Según los relatos auténticos, el Profeta ﷺ era de estatura media, ni muy alto ni bajo. Su cuerpo era hermoso, los hombros anchos, la cabeza grande, las palmas y los pies carnosos, y un vello fino descendía del pecho hasta el ombligo. Al caminar avanzaba con fuerza, ligeramente inclinado hacia delante, como si bajara de una cuesta.",
+           "Fuente: Ash-Shamail, hadices 1, 2, 3, 4 (p. 13-15)"],
+          ["🌕 El color y el rostro",
+           "Los Compañeros compararon su rostro bendito con la luna; Yabir ibn Samura, mirándolo ﷺ y luego a la luna en una noche clara, dijo que era para él más hermoso que la luna. Se preguntó a al-Bara: ¿era su rostro como una espada? Dijo: no, como la luna. Sobre el color, Anas dijo «asmar» (claro con leve moreno), mientras que Abu Hurayra y Abu at-Tufayl dijeron «abyad» (claro, luminoso). Los sabios concilian estos relatos auténticos: el color era claro y puro, con un leve rubor o moreno por los viajes y el sol; ni blanco como la cal, ni moreno oscuro.",
+           "Fuente: Ash-Shamail, hadices 2, 8, 9, 10, 12 (p. 13-27)"],
+          ["⚖️ La discrepancia de los relatos y su conciliación",
+           "Primero: la edad — en el relato de Anas (Ash-Shamail hadiz 1; Sahih Muslim 2347) fue enviado a los cuarenta, permaneció diez años en La Meca y diez en Medina, y murió a los sesenta; para la mayoría permaneció trece años en La Meca (Sahih al-Bujari 3851) y murió a los sesenta y tres (Sahih Muslim 2349). Los sabios refirieron el relato de Anas a una estimación o a una falta en el cálculo. Segundo: el color — un relato de Anas dice «azhar al-lawn» (color radiante) (Sahih Muslim 2330), otro «asmar»; Abu Hurayra dice «como forjado en plata» y Abu at-Tufayl «claro y hermoso». Los sabios concilian: color claro y puro con leve rubor por el sol y los viajes. Tercero: «ashkal al-ayn» (Sahih Muslim 2339) significa: ojo de hendidura larga (según Simak) o venas rojas en el blanco del ojo; la mayoría de los sabios (al-Qadi Iyad, an-Nawawi) prefirieron el segundo sentido.",
+           "Fuente: Ash-Shamail hadices 1, 2; Sahih al-Bujari 3851; Sahih Muslim 2330, 2339, 2347, 2349"]
+        ],
+        [
+          ["Anas (que Alá esté complacido con él)", "Anas (que Alá esté complacido con él) dijo: El Mensajero de Alá ﷺ no era muy alto ni bajo, ni blanco como la cal ni moreno oscuro, ni de cabello muy rizado ni completamente liso. Alá lo envió a los cuarenta años; permaneció diez años en La Meca y diez en Medina; luego Alá lo llamó (según este relato) a los sesenta, y no había veinte cabellos blancos en su cabeza y su barba.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 1, p. 13; al-Albani: sahih"],
+          ["Anas (que Alá esté complacido con él)", "Anas (que Alá esté complacido con él) dijo: El Mensajero de Alá ﷺ era de estatura media, ni alto ni bajo; su cuerpo era hermoso; su cabello no era muy rizado ni liso; su color era claro con leve moreno; y al caminar se inclinaba ligeramente hacia delante.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 2, p. 13; al-Albani: sahih"],
+          ["Al-Bara ibn Azib (que Alá esté complacido con él)", "Al-Bara (que Alá esté complacido con él) dijo: El Mensajero de Alá ﷺ era de estatura media, los hombros anchos, el cabello abundante hasta el lóbulo de la oreja; llevaba un traje rojo; nunca vi nada más hermoso que él.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 3, p. 14; al-Albani: sahih"],
+          ["Ali (que Alá esté complacido con él)", "Ali (que Alá esté complacido con él) dijo: El Profeta ﷺ no era alto ni bajo; sus palmas y pies eran carnosos, la cabeza grande, las articulaciones fuertes; un vello fino descendía del pecho hasta el ombligo; al caminar avanzaba con tal fuerza que parecía bajar de una cuesta; nunca vi antes ni después a alguien como él ﷺ.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 4, p. 15; al-Albani: sahih"],
+          ["Yabir ibn Samura (que Alá esté complacido con él)", "Yabir ibn Samura (que Alá esté complacido con él) dijo: La boca del Mensajero de Alá ﷺ era ancha, sus ojos de hendidura larga, y sus talones poco carnosos. (Esta es la explicación que el transmisor Simak dio de estos tres términos.)", "Ash-Shamail al-Muhammadiyya, hadiz n.º 7, p. 26; al-Albani: sahih"],
+          ["Yabir ibn Samura (que Alá esté complacido con él)", "Yabir ibn Samura (que Alá esté complacido con él) dijo: Vi al Mensajero de Alá ﷺ en una noche clara, llevando un traje rojo; me puse a mirarlo y luego a la luna, y él era para mí más hermoso que la luna.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 8, p. 26; al-Albani: sahih"],
+          ["Al-Bara ibn Azib (que Alá esté complacido con él)", "Un hombre preguntó a al-Bara (que Alá esté complacido con él): ¿Era el rostro del Mensajero de Alá ﷺ como una espada? Dijo: No, era como la luna.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 9, p. 26; al-Albani: sahih"],
+          ["Abu Hurayra (que Alá esté complacido con él)", "Abu Hurayra (que Alá esté complacido con él) dijo: El Mensajero de Alá ﷺ era de un blanco luminoso, como si hubiera sido forjado en plata, y su cabello era suave y ligeramente ondulado.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 10, p. 27; al-Albani: sahih"],
+          ["Yabir ibn Abdalah (que Alá esté complacido con él)", "Yabir ibn Abdalah (que Alá esté complacido con él) dijo: El Mensajero de Alá ﷺ dijo: Me fueron presentados los profetas; Musa (la paz sea con él) era de constitución delgada, como si fuera de la tribu de Shanua; a Isa ibn Maryam (la paz sea con él) el más parecido que vi fue Urwa ibn Masud; a Ibrahim (la paz sea con él) el más parecido es vuestro compañero (es decir, él mismo); y a Yibril (la paz sea con él) el más parecido es Dihya (al-Kalbi).", "Ash-Shamail al-Muhammadiyya, hadiz n.º 11, p. 27; al-Albani: sahih"],
+          ["Abu at-Tufayl Amir ibn Wazila (que Alá esté complacido con él)", "Abu at-Tufayl (que Alá esté complacido con él) dijo: Vi al Profeta ﷺ, y no queda en la faz de la tierra nadie que lo haya visto sino yo. Dije: descríbemelo. Dijo: Era de tez clara, hermoso y de cuerpo medio.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 12, p. 27; al-Albani: sahih"]
+        ],
+        [
+          "Ash-Shamail al-Muhammadiyya del imán at-Tirmidhi; Mujtasar ash-Shamail, ed. Allama al-Albani: hadices 1, 2, 3, 4, 7, 8, 9, 10, 11, 12 (todos «sahih»)",
+          "Relatos declarados débiles (no incluidos): hadiz 5 (débil), hadiz 6 de Hind ibn Abi Hala (muy débil), hadiz 13 (muy débil)",
+          "Otras referencias para la nota sobre la discrepancia: Sahih al-Bujari 3851; Sahih Muslim 2330, 2339, 2347, 2349"
+        ],
+        [
+          ["¿A qué comparó al-Bara (que Alá esté complacido con él) el rostro del Profeta ﷺ?", ["A una espada", "A la luna", "Al sol"]],
+          ["¿Cuál es el juicio de al-Albani sobre el largo relato de Hind ibn Abi Hala?", ["Sahih", "Hasan", "Muy débil"]],
+          ["¿Quién fue el último Compañero en ver al Profeta ﷺ y describir su persona?", ["Abu at-Tufayl (que Alá esté complacido con él)", "Anas (que Alá esté complacido con él)", "Yabir (que Alá esté complacido con él)"]]
+        ],
+        []
+      ]
     }
 
   }
