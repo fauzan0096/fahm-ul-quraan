@@ -127,7 +127,9 @@
 //       kisi file mein na ho wahan English (kabhi khaali/undefined nahi).
 // v133: GAMES — nasheed ke paigham (file na mile / phone ne block kiya) aur "⏹ Roko" pill bhi nayi
 //       4 zubaanoN mein (games-extra.js ka naya FQX; purani 4 par bilkul wahi Roman matn).
-const CACHE_NAME = 'quran-ustad-auto-v133';
+// v134: GAMES — namaz ke auqaat ke chhote jawab (Fajr / Zuhr / Asr / Maghrib / Isha) aur "Yusuf"
+//       bhi 4 nayi zubaanoN mein (ye alag options ke tor par KBC aur Emoji mein aate hain).
+const CACHE_NAME = 'quran-ustad-auto-v134';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
