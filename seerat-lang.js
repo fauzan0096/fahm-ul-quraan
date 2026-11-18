@@ -5905,6 +5905,662 @@ window.SEERAT_LANG = {
         ],
         []
       ]
+    },
+
+    /* ═══════════════ DAY 32 — Shamail 2: baal, daarhi, safedi ═══════════════ */
+    32: {
+      mr: [
+        "नबवी शमाइल (२) — केस, दाढी आणि पांढरे केस",
+        "मक्का व मदिना",
+        "सहाबांची प्रत्यक्ष साक्ष",
+        "नबी ﷺ यांच्या केसांची लांबी, भांग आणि म्हातारपणातील पांढऱ्यांबद्दल फक्त सहीह रिवायती जाणून घेणे.",
+        "नबी ﷺ यांना आखिरतच्या चिंतेने पांढरे केले; आपण जगाच्या चिंतेत किती गुंतलेले राहतो. हे अल्लाह! आमच्या मनातही आखिरतची चिंता टाक. आमीन.",
+        [
+          "केस कानाच्या अर्ध्या भागापर्यंत",
+          "एकदा चार वेण्या",
+          "आधी केस सोडले, नंतर भांग काढली",
+          "पांढरे केस फार कमी (चौदा ते वीसचे अंदाज)",
+          "तेल लावल्यावर पांढरे दिसत नसे",
+          "«मला हूदने म्हातारा केले»"
+        ],
+        [
+          ["💇 केसांची लांबी आणि भांग",
+           "अनस (र.अ.) यांच्यानुसार आप ﷺ यांचे केस कानाच्या अर्ध्या भागापर्यंत होते. उम्मे हानी (र.अ.) यांनी एकदा आप ﷺ यांना पाहिले तेव्हा केसांच्या चार वेण्या होत्या. इब्न अब्बास (र.अ.) सांगतात की आधी आप ﷺ केस (कपाळावर) सोडून देत, आणि मुश्रिक भांग काढत; ज्या बाबतींत हुकूम उतरलेला नव्हता त्यात आप ﷺ अहले-किताबची सहमत आवडत, नंतर आप ﷺ यांनी भांग काढण्यास सुरुवात केली.",
+           "स्रोत: अश-शमाइल हदीस २१ (पृ. ३३), २३ (पृ. ३५), २४ (पृ. ३५)"],
+          ["🤍 पांढरे केस किती होते?",
+           "सहाबांचे अंदाज वेगवेगळे आहेत, पण सर्व यावर एकमत आहेत की ते फार कमी होते: अनस (र.अ.) यांनी चौदा पांढरे केस मोजले, इब्न उमर (र.अ.) यांनी सुमारे वीस सांगितले, आणि अनस (र.अ.) यांच्या एका रिवायतीत आहे की डोक्यात व दाढीत वीसही नव्हते. जाबिर बिन समरा (र.अ.) यांच्यानुसार तेल लावल्यावर पांढरे दिसतच नसे. अबू रमसा (र.अ.) यांनी केसांवर पांढरे पाहिले जे लालसर होते.",
+           "स्रोत: अश-शमाइल हदीस १ (पृ. १३), ३१ (पृ. ३८), ३२ (पृ. ३८), ३३ (पृ. ३९), ३६ (पृ. ४०)"],
+          ["🎨 खिजाबचा मुद्दा",
+           "अनस (र.अ.) यांना विचारले गेले की नबी ﷺ यांनी खिजाब लावला का? ते म्हणाले: आप ﷺ त्या मर्यादेपर्यंत पोहोचलेच नव्हते, कानशिलांमध्ये काही पांढरे होते; मात्र अबू बक्र (र.अ.) यांनी मेंदी व कतमने खिजाब लावला. या बाबतीत काही दुसऱ्या रिवायतीही आहेत; इमाम तिर्मिझी (र.अ.) यांनी अबू रमसा (र.अ.) यांच्या रिवायतीनंतर लिहिले की या बाबतीत सहीह रिवायती याच आहेत की आप ﷺ म्हातारपणाच्या मर्यादेपर्यंत पोहोचले नव्हते.",
+           "स्रोत: अश-शमाइल हदीस ३० (पृ. ३७), आणि इमाम तिर्मिझी (र.अ.) यांचे बोलणे हदीस ३७ (पृ. ४१) नंतर"],
+          ["📖 «हूदच्या सूरतीने मला म्हातारा केले»",
+           "अबू बक्र (र.अ.) यांनी विनंती केली: हे अल्लाहच्या रसूल! तुम्हाला म्हातारपण आले. आप ﷺ म्हणाले: मला हूद, अल-वाकिआ, अल-मुर्सलात, अम्म यतसाअलून आणि इजश-शम्सु कुव्विरत यांनी म्हातारा केले. या सूरतींमध्ये कयामत व अल्लाहच्या अज़ाबाचे वर्णन आहे; म्हणजे आखिरतच्या चिंतेने आप ﷺ यांना पांढरे केले.",
+           "स्रोत: अश-शमाइल हदीस ३४ (पृ. ३९)"],
+          ["⚖️ रिवायतींमधील मतभेदाचा मेळ",
+           "केसांची लांबी: कानाची पाळी, अर्धे कान आणि खांद्यांपर्यंत — तीनही वर्णन आली आहेत (सहीह मुस्लिम २३३८, २३३७; सहीह बुखारी ५९०१–५९०३); विद्वान ती वेगवेगळ्या वेळांवर लावतात, म्हणजे केस वाढले तेव्हा खांद्यांपर्यंत आणि कापले तेव्हा कानांपर्यंत. खिजाब: अनस (र.अ.) यांनी नबी ﷺ यांना खिजाब लावताना पाहिले नाही (सहीह मुस्लिम २३४१), तर अबू रमसा (र.अ.) यांच्या रिवायतीच्या काही मार्गांत लालसरपणासह «मेंदीने रंगवलेले» हे शब्दही येतात (सुनन अबी दाऊद ४२०६); इब्न उमर (र.अ.) यांनी पिवळा रंग लावण्याचा उल्लेख केला (सहीह बुखारी १६६). विद्वानांचा मेळ: आप ﷺ यांनी कधीतरी रंगवले आणि अनस (र.अ.) यांनी पाहिले नाही, किंवा पांढरे केस इतके कमी होते की खिजाबची गरजच नव्हती (फतहुल-बारी).",
+           "स्रोत: सहीह मुस्लिम २३३७, २३३८, २३४१; सहीह बुखारी १६६, ५९०१–५९०३; सुनन अबी दाऊद ४२०६"]
+        ],
+        [
+          ["नबी ﷺ यांचे केस कुठपर्यंत होते (अनस (र.अ.) यांची रिवायत)?", ["खांद्यांपर्यंत", "कानाच्या अर्ध्या भागापर्यंत", "कमरेपर्यंत"]],
+          ["कोणत्या सूरतींनी आप ﷺ यांना म्हातारा केले?", ["हूद, अल-वाकिआ इ.", "यासीन व रहमान", "फक्त फातिहा"]],
+          ["अनस (र.अ.) यांनी किती पांढरे केस मोजले?", ["चौदा", "शंभर", "तीन"]]
+        ],
+        [],
+        [
+          "अश-शमाइल अल-मुहम्मदिया (अल्बानी यांचे मुख्तसर): हदीस २१, २३, २४, ३०, ३१, ३२, ३३, ३४, ३६ (सर्वांवर «सहीह»)",
+          "खिजाबच्या बाबतीत इमाम तिर्मिझी (र.अ.) यांचे बोलणे: हदीस ३७ नंतर, पृ. ४१",
+          "समाविष्ट नाही (जईफ): हदीस २६ (डोक्यात तेल व दाढीत कंगव्याची अधिकता), हदीस २९, हदीस ३९",
+          "मतभेदाच्या मेळासाठी अधिक संदर्भ: सहीह मुस्लिम २३३७, २३३८, २३४१; सहीह बुखारी १६६, ५९०१–५९०३; सुनन अबी दाऊद ४२०६"
+        ],
+        [
+          ["अनस (र.अ.)", "अनस (र.अ.): रसूलुल्लाह ﷺ यांचे केस कानाच्या अर्ध्या भागापर्यंत होते.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. २१, पृ. ३३ — अल्बानी: सहीह"],
+          ["उम्मे हानी बिंत अबी तालिब (र.अ.)", "उम्मे हानी (र.अ.): रसूलुल्लाह ﷺ एकदा मक्केत आले तेव्हा आप ﷺ यांच्या (डोक्याच्या) केसांच्या चार वेण्या होत्या.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. २३, पृ. ३५ — अल्बानी: सहीह"],
+          ["अब्दुल्लाह बिन अब्बास (र.अ.)", "इब्न अब्बास (र.अ.): रसूलुल्लाह ﷺ आपले केस (कपाळावर) सोडून देत, मुश्रिक भांग काढत आणि अहले-किताब केस सोडत; आणि ज्या बाबतीत हुकूम नव्हता त्यात आप ﷺ अहले-किताबची सहमत आवडत, नंतर रसूलुल्लाह ﷺ यांनी भांग काढण्यास सुरुवात केली.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. २४, पृ. ३५ — अल्बानी: सहीह"],
+          ["अनस (र.अ.) (कतादाच्या प्रश्नावर)", "कतादा (र.अ.) यांनी अनस (र.अ.) यांना विचारले: रसूलुल्लाह ﷺ यांनी खिजाब लावला का? ते म्हणाले: आप ﷺ त्या मर्यादेपर्यंत पोहोचलेच नव्हते, कानशिलांमध्ये काही पांढरे होते; मात्र अबू बक्र (र.अ.) यांनी मेंदी व कतमने खिजाब लावला.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ३०, पृ. ३७ — अल्बानी: सहीह"],
+          ["अनस (र.अ.)", "अनस (र.अ.): मी रसूलुल्लाह ﷺ यांच्या डोक्यात व दाढीत फक्त चौदा पांढरे केस मोजले.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ३१, पृ. ३८ — अल्बानी: सहीह"],
+          ["जाबिर बिन समरा (र.अ.)", "जाबिर बिन समरा (र.अ.): जेव्हा आप ﷺ डोक्यात तेल लावत तेव्हा पांढरे दिसत नसे, आणि जेव्हा लावत नसत तेव्हा थोडे पांढरे दिसे.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ३२, पृ. ३८ — अल्बानी: सहीह"],
+          ["अब्दुल्लाह बिन उमर (र.अ.)", "इब्न उमर (र.अ.): रसूलुल्लाह ﷺ यांचे पांढरे केस सुमारे वीस होते.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ३३, पृ. ३९ — अल्बानी: सहीह"],
+          ["अब्दुल्लाह बिन अब्बास (र.अ.)", "इब्न अब्बास (र.अ.): अबू बक्र (र.अ.) यांनी विनंती केली: हे अल्लाहच्या रसूल! तुम्हाला म्हातारपण आले. आप ﷺ म्हणाले: मला हूद, अल-वाकिआ, अल-मुर्सलात, अम्म यतसाअलून आणि इजश-शम्सु कुव्विरत यांनी म्हातारा केले.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ३४, पृ. ३९ — अल्बानी: सहीह"],
+          ["अबू रमसा तैमी (र.अ.)", "अबू रमसा (र.अ.) (आपल्या मुलासोबत आले, आप ﷺ यांना पाहून म्हणाले): हे अल्लाहचे नबी आहेत; आप ﷺ यांनी दोन हिरव्या चादरी परिधान केल्या होत्या, केसांवर पांढरे आले होते, आणि ते पांढरे लालसर होते. (हदीचा संबंधित भाग)", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ३६, पृ. ४० — अल्बानी: सहीह"]
+        ]
+      ],
+      ar: [
+        "الشمائل النبوية (٢) — الشعر واللحية والشيب",
+        "مكة والمدينة",
+        "شهادة الصحابة رضي الله عنهم عن معاينة",
+        "معرفة طول شعر النبي ﷺ وفرقه والشيب في شيبه، من الأحاديث الصحيحة فقط.",
+        "شيّبت فكرة الآخرة النبي ﷺ، ونحن غارقون في هموم الدنيا. اللهم ألقِ في قلوبنا فكرة الآخرة. آمين.",
+        [
+          "الشعر إلى نصف الأذنين",
+          "أربع غدائر مرة واحدة",
+          "أولًا أرسل شعره ثم فرق",
+          "الشيب قليل جدًّا (تقديرات 14 إلى 20)",
+          "إذا دهن شعره لم يُرَ الشيب",
+          "«شيّبتني هود»"
+        ],
+        [
+          ["💇 طول الشعر والفرق",
+           "عن أنس رضي الله عنه أن شعره ﷺ كان إلى نصف أذنيه. ورأت أم هانئ رضي الله عنها النبي ﷺ مرة وله أربع غدائر. ويخبر ابن عباس رضي الله عنه أنه ﷺ كان يسدل شعره، وكان المشركون يفرقون، وكان يحب موافقة أهل الكتاب فيما لم يُؤمر فيه بشيء، ثم فرق ﷺ رأسه.",
+           "المصدر: الشمائل حديث 21 (ص 33)، 23 (ص 35)، 24 (ص 35)"],
+          ["🤍 كم كان الشيب؟",
+           "تقديرات الصحابة مختلفة، لكنهم اتفقوا على أنه قليل جدًّا: عدّ أنس رضي الله عنه أربع عشرة شعرة بيضاء، وقال ابن عمر رضي الله عنه نحو عشرين، وفي رواية لأنس أنه لم يكن في رأسه ولحيته عشرون. وعند جابر بن سمرة رضي الله عنه أنه إذا دهن رأسه لم يُرَ من الشيب شيء. ورأى أبو رمثة رضي الله عنه في شعره شيبًا فيه حمرة.",
+           "المصدر: الشمائل حديث 1 (ص 13)، 31 (ص 38)، 32 (ص 38)، 33 (ص 39)، 36 (ص 40)"],
+          ["🎨 مسألة الخضاب",
+           "سُئل أنس رضي الله عنه: هل خضب النبي ﷺ؟ قال: لم يبلغ ذلك، إنما كان شيبًا في صدغيه؛ ولكن أبا بكر رضي الله عنه خضب بالحناء والكتم. وفي الباب روايات أخرى؛ وقد كتب الإمام الترمذي رحمه الله بعد رواية أبي رمثة أن الأحاديث الصحيحة في الباب هي أن النبي ﷺ لم يبلغ حدّ الشيب.",
+           "المصدر: الشمائل حديث 30 (ص 37)، وكلام الإمام الترمذي بعد حديث 37 (ص 41)"],
+          ["📖 «شيّبتني هود»",
+           "قال أبو بكر رضي الله عنه: يا رسول الله، قد شبت. فقال ﷺ: شيّبتني هود والواقعة والمرسلات وعمّ يتساءلون وإذا الشمس كوّرت. وهذه السور فيها ذكر القيامة وعذاب الله؛ أي أن فكر الآخرة شيّبه ﷺ.",
+           "المصدر: الشمائل حديث 34 (ص 39)"],
+          ["⚖️ الجمع بين اختلاف الروايات",
+           "طول الشعر: إلى شحمة الأذن، وإلى نصف الأذنين، وإلى المنكبين — ثلاث صفات وردت (صحيح مسلم 2338، 2337؛ صحيح البخاري 5901–5903)؛ ويحملها العلماء على أوقات مختلفة: إذا طال الشعر بلغ المنكبين، وإذا قصّره بلغ الأذنين. والخضاب: لم يرَ أنس رضي الله عنه النبي ﷺ يخضب (صحيح مسلم 2341)، وفي بعض طرق رواية أبي رمثة لفظ «مخضوبًا بالحناء» مع الحمرة (سنن أبي داود 4206)؛ وذكر ابن عمر رضي الله عنه الصفرة (صحيح البخاري 166). وجمع العلماء: أنه ﷺ خضب أحيانًا ولم يره أنس، أو أن الشيب كان قليلًا لا يحتاج إلى خضاب (فتح الباري).",
+           "المصدر: صحيح مسلم 2337، 2338، 2341؛ صحيح البخاري 166، 5901–5903؛ سنن أبي داود 4206"]
+        ],
+        [
+          ["إلى أين كان شعر النبي ﷺ (رواية أنس)؟", ["إلى المنكبين", "إلى نصف الأذنين", "إلى الظهر"]],
+          ["أي سور شيّبت النبي ﷺ؟", ["هود والواقعة وغيرهما", "يس والرحمن", "الفاتحة فقط"]],
+          ["كم عدّ أنس رضي الله عنه من الشعر الأبيض؟", ["أربع عشرة", "مئة", "ثلاثًا"]]
+        ],
+        [],
+        [
+          "الشمائل المحمدية (مختصر الألباني): الأحاديث 21، 23، 24، 30، 31، 32، 33، 34، 36 (كلها «صحيح»)",
+          "كلام الإمام الترمذي في باب الخضاب: بعد حديث 37، ص 41",
+          "لم تُدرج (ضعيف): حديث 26 (كثرة دهن الرأس وترجيل اللحية)، حديث 29، حديث 39",
+          "لمزيد من المراجع في الجمع بين الاختلاف: صحيح مسلم 2337، 2338، 2341؛ صحيح البخاري 166، 5901–5903؛ سنن أبي داود 4206"
+        ],
+        [
+          ["أنس رضي الله عنه", "قال أنس رضي الله عنه: كان شعر رسول الله ﷺ إلى نصف أذنيه.", "الشمائل المحمدية، حديث رقم 21، ص 33 — الألباني: صحيح"],
+          ["أم هانئ بنت أبي طالب رضي الله عنها", "قالت أم هانئ رضي الله عنها: قدم رسول الله ﷺ مكة قدمة وله أربع غدائر.", "الشمائل المحمدية، حديث رقم 23، ص 35 — الألباني: صحيح"],
+          ["عبد الله بن عباس رضي الله عنه", "قال ابن عباس رضي الله عنه: كان رسول الله ﷺ يسدل شعره، وكان المشركون يفرقون رؤوسهم، وكان أهل الكتاب يسدلون، وكان يحب موافقة أهل الكتاب فيما لم يُؤمر فيه بشيء، ثم فرق رسول الله ﷺ رأسه.", "الشمائل المحمدية، حديث رقم 24، ص 35 — الألباني: صحيح"],
+          ["أنس رضي الله عنه (على سؤال قتادة)", "سأل قتادةُ أنسًا رضي الله عنه: هل خضب رسول الله ﷺ؟ قال: لم يبلغ ذلك، إنما كان شيبًا في صدغيه؛ ولكن أبا بكر رضي الله عنه خضب بالحناء والكتم.", "الشمائل المحمدية، حديث رقم 30، ص 37 — الألباني: صحيح"],
+          ["أنس رضي الله عنه", "قال أنس رضي الله عنه: ما عددت في رأس رسول الله ﷺ ولحيته إلا أربع عشرة شعرة بيضاء.", "الشمائل المحمدية، حديث رقم 31، ص 38 — الألباني: صحيح"],
+          ["جابر بن سمرة رضي الله عنه", "قال جابر بن سمرة رضي الله عنه: كان إذا دهن رأسه لم يُرَ منه شيب، وإذا لم يدهن رؤي منه شيء.", "الشمائل المحمدية، حديث رقم 32، ص 38 — الألباني: صحيح"],
+          ["عبد الله بن عمر رضي الله عنه", "قال ابن عمر رضي الله عنه: إنما كان شيب رسول الله ﷺ نحوًا من عشرين شعرة بيضاء.", "الشمائل المحمدية، حديث رقم 33، ص 39 — الألباني: صحيح"],
+          ["عبد الله بن عباس رضي الله عنه", "قال ابن عباس رضي الله عنه: قال أبو بكر: يا رسول الله، قد شبت. قال: شيّبتني هود والواقعة والمرسلات وعمّ يتساءلون وإذا الشمس كوّرت.", "الشمائل المحمدية، حديث رقم 34، ص 39 — الألباني: صحيح"],
+          ["أبو رمثة تيمي رضي الله عنه", "قال أبو رمثة رضي الله عنه (جاء مع ابنه، فلما رآه قال): هذا نبي الله ﷺ، وعليه ثوبان أخضران، وله شعر قد علاه الشيب، وشيبه أحمر. (الجزء المتعلق من الحديث)", "الشمائل المحمدية، حديث رقم 36، ص 40 — الألباني: صحيح"]
+        ]
+      ],
+      fr: [
+        "Les Shamâ'il (2) — les cheveux, la barbe et les cheveux blancs",
+        "La Mecque et Médine",
+        "Le témoignage oculaire des Compagnons",
+        "Connaître, d'après les seuls hadiths authentiques, la longueur des cheveux du Prophète ﷺ, sa raie et les cheveux blancs de sa vieillesse.",
+        "La pensée de l'au-delà blanchit le Prophète ﷺ, alors que nous sommes absorbés par les soucis du monde. Ô Allah ! Mets dans nos cœurs la pensée de l'au-delà. Âmîn.",
+        [
+          "Les cheveux jusqu'à la moitié des oreilles",
+          "Quatre mèches une fois",
+          "D'abord il laissait ses cheveux, puis fit une raie",
+          "Très peu de cheveux blancs (estimations de 14 à 20)",
+          "Après l'huile, le blanc ne se voyait pas",
+          "« Hûd m'a fait vieillir »"
+        ],
+        [
+          ["💇 Longueur des cheveux et raie",
+           "Selon Anas (qu'Allah l'agrée), ses cheveux ﷺ atteignaient la moitié des oreilles. Oumm Hâni' (qu'Allah l'agrée) le vit une fois ﷺ avec quatre mèches. Ibn 'Abbâs (qu'Allah l'agrée) rapporte qu'il ﷺ laissait d'abord retomber ses cheveux, que les polythéistes faisaient une raie, et qu'il aimait suivre les gens du Livre en ce qui n'avait pas fait l'objet d'un ordre ; puis il ﷺ fit une raie.",
+           "Source : Ach-Chamâ'il hadith 21 (p. 33), 23 (p. 35), 24 (p. 35)"],
+          ["🤍 Combien de cheveux blancs ?",
+           "Les estimations des Compagnons diffèrent, mais tous s'accordent sur leur petit nombre : Anas (qu'Allah l'agrée) en compta quatorze, Ibn 'Umar (qu'Allah l'agrée) dit environ vingt, et un récit d'Anas dit qu'il n'y en avait pas vingt dans sa tête et sa barbe. Selon Jâbir ibn Samoura (qu'Allah l'agrée), quand il oignait sa tête, le blanc ne se voyait pas. Abou Ramtha (qu'Allah l'agrée) vit des cheveux blancs tirant sur le roux.",
+           "Source : Ach-Chamâ'il hadith 1 (p. 13), 31 (p. 38), 32 (p. 38), 33 (p. 39), 36 (p. 40)"],
+          ["🎨 La question du khidâb (teinture)",
+           "On demanda à Anas (qu'Allah l'agrée) : le Prophète ﷺ s'est-il teint les cheveux ? Il dit : il n'en était pas arrivé là ; il n'y avait que quelques cheveux blancs à ses tempes ; en revanche Abou Bakr (qu'Allah l'agrée) se teignit au henné et au katam. D'autres récits existent sur ce chapitre ; l'imam at-Tirmidhi a écrit après le récit d'Abou Ramtha que les hadiths authentiques en la matière indiquent que le Prophète ﷺ n'atteignit pas le stade de la vieillesse blanche.",
+           "Source : Ach-Chamâ'il hadith 30 (p. 37), et la parole de l'imam at-Tirmidhi après le hadith 37 (p. 41)"],
+          ["📖 « Hûd m'a fait vieillir »",
+           "Abou Bakr (qu'Allah l'agrée) dit : Ô Messager d'Allah, tu as vieilli. Il ﷺ dit : Hûd, al-Wâqi'a, al-Moursalât, 'Amma yatasâ'aloun et Idha ach-chamsou kouwwirat m'ont fait vieillir. Ces sourates parlent de la Résurrection et du châtiment d'Allah ; c'est la pensée de l'au-delà qui l'a blanchi ﷺ.",
+           "Source : Ach-Chamâ'il hadith 34 (p. 39)"],
+          ["⚖️ Conciliation des divergences",
+           "Longueur des cheveux : jusqu'au lobe de l'oreille, jusqu'à la moitié des oreilles et jusqu'aux épaules — trois descriptions sont venues (Sahih Muslim 2338, 2337 ; Sahih al-Bukhari 5901-5903) ; les savants les rapportent à des moments différents : quand les cheveux poussaient ils atteignaient les épaules, et quand il les coupait ils atteignaient les oreilles. Teinture : Anas (qu'Allah l'agrée) ne vit pas le Prophète ﷺ se teindre (Sahih Muslim 2341), tandis que certaines chaînes du récit d'Abou Ramtha mentionnent « teint au henné » avec du roux (Sunan Abi Dawud 4206) ; Ibn 'Umar (qu'Allah l'agrée) mentionna le jaune (Sahih al-Bukhari 166). Conciliation des savants : il ﷺ se teignit parfois et Anas ne le vit pas, ou les cheveux blancs étaient si peu nombreux qu'il n'avait pas besoin de teinture (Fath al-Bârî).",
+           "Source : Sahih Muslim 2337, 2338, 2341 ; Sahih al-Bukhari 166, 5901-5903 ; Sunan Abi Dawud 4206"]
+        ],
+        [
+          ["Jusqu'où allaient les cheveux du Prophète ﷺ (récit d'Anas) ?", ["Jusqu'aux épaules", "Jusqu'à la moitié des oreilles", "Jusqu'au dos"]],
+          ["Quelles sourates firent vieillir le Prophète ﷺ ?", ["Hûd, al-Wâqi'a, etc.", "Yâ-Sîn et ar-Rahmân", "Al-Fâtiha seulement"]],
+          ["Combien de cheveux blancs Anas (qu'Allah l'agrée) compta-t-il ?", ["Quatorze", "Cent", "Trois"]]
+        ],
+        [],
+        [
+          "Ach-Chamâ'il al-Muhammadiyya (abrégé d'al-Albani) : hadiths 21, 23, 24, 30, 31, 32, 33, 34, 36 (tous « sahih »)",
+          "La parole de l'imam at-Tirmidhi sur le chapitre de la teinture : après le hadith 37, p. 41",
+          "Non inclus (faibles) : hadith 26 (abondance d'huile sur la tête et peigne de la barbe), hadith 29, hadith 39",
+          "Autres références pour la conciliation : Sahih Muslim 2337, 2338, 2341 ; Sahih al-Bukhari 166, 5901-5903 ; Sunan Abi Dawud 4206"
+        ],
+        [
+          ["Anas (qu'Allah l'agrée)", "Anas (qu'Allah l'agrée) dit : Les cheveux du Messager d'Allah ﷺ atteignaient la moitié de ses oreilles.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 21, p. 33 — al-Albani : sahih"],
+          ["Oumm Hâni' bint Abî Tâlib (qu'Allah l'agrée)", "Oumm Hâni' (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ vint à La Mecque une fois et il avait quatre mèches.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 23, p. 35 — al-Albani : sahih"],
+          ["'Abdoullah ibn 'Abbâs (qu'Allah l'agrée)", "Ibn 'Abbâs (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ laissait retomber ses cheveux, les polythéistes faisaient une raie, et les gens du Livre laissaient leurs cheveux ; et il aimait suivre les gens du Livre en ce qui n'avait pas fait l'objet d'un ordre ; puis le Messager d'Allah ﷺ fit une raie.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 24, p. 35 — al-Albani : sahih"],
+          ["Anas (qu'Allah l'agrée) (à la question de Qatâda)", "Qatâda demanda à Anas (qu'Allah l'agrée) : Le Messager d'Allah ﷺ s'est-il teint ? Il dit : Il n'en était pas arrivé là ; il n'y avait que des cheveux blancs à ses tempes ; en revanche Abou Bakr (qu'Allah l'agrée) se teignit au henné et au katam.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 30, p. 37 — al-Albani : sahih"],
+          ["Anas (qu'Allah l'agrée)", "Anas (qu'Allah l'agrée) dit : Je n'ai compté dans la tête et la barbe du Messager d'Allah ﷺ que quatorze cheveux blancs.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 31, p. 38 — al-Albani : sahih"],
+          ["Jâbir ibn Samoura (qu'Allah l'agrée)", "Jâbir ibn Samoura (qu'Allah l'agrée) dit : Quand il oignait sa tête, on ne voyait aucun cheveu blanc, et quand il ne l'oignait pas, on en voyait quelques-uns.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 32, p. 38 — al-Albani : sahih"],
+          ["'Abdoullah ibn 'Umar (qu'Allah l'agrée)", "Ibn 'Umar (qu'Allah l'agrée) dit : Les cheveux blancs du Messager d'Allah ﷺ étaient environ vingt.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 33, p. 39 — al-Albani : sahih"],
+          ["'Abdoullah ibn 'Abbâs (qu'Allah l'agrée)", "Ibn 'Abbâs (qu'Allah l'agrée) dit : Abou Bakr dit : Ô Messager d'Allah, tu as vieilli. Il dit : Hûd, al-Wâqi'a, al-Moursalât, 'Amma yatasâ'aloun et Idha ach-chamsou kouwwirat m'ont fait vieillir.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 34, p. 39 — al-Albani : sahih"],
+          ["Abou Ramtha at-Taymî (qu'Allah l'agrée)", "Abou Ramtha (qu'Allah l'agrée) dit (venu avec son fils, et l'ayant vu) : C'est le prophète d'Allah ﷺ ; il portait deux pièces vertes ; ses cheveux étaient atteints de blanc, et ce blanc tirait sur le rouge. (Partie concernée du hadith)", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 36, p. 40 — al-Albani : sahih"]
+        ]
+      ],
+      es: [
+        "Los Shamail (2): el cabello, la barba y las canas",
+        "La Meca y Medina",
+        "El testimonio directo de los Compañeros",
+        "Conocer, solo por los hadices auténticos, la longitud del cabello del Profeta ﷺ, su raya y las canas de su vejez.",
+        "El pensamiento del más allá encaneció al Profeta ﷺ, mientras nosotros estamos absortos en las preocupaciones del mundo. ¡Oh Alá! Pon en nuestros corazones el pensamiento del más allá. Amín.",
+        [
+          "El cabello hasta la mitad de las orejas",
+          "Cuatro mechones una vez",
+          "Primero dejaba el cabello, luego hizo raya",
+          "Muy pocas canas (estimaciones de 14 a 20)",
+          "Con aceite no se veían las canas",
+          "«Hud me hizo envejecer»"
+        ],
+        [
+          ["💇 Longitud del cabello y raya",
+           "Según Anas (que Alá esté complacido con él), su cabello ﷺ llegaba a la mitad de las orejas. Umm Hani (que Alá esté complacido con ella) lo vio ﷺ una vez con cuatro mechones. Ibn Abbas (que Alá esté complacido con él) cuenta que él ﷺ dejaba caer primero su cabello, que los idólatras se hacían raya, y que amaba seguir a la gente del Libro en lo que no había sido objeto de una orden; luego él ﷺ se hizo raya.",
+           "Fuente: Ash-Shamail hadiz 21 (p. 33), 23 (p. 35), 24 (p. 35)"],
+          ["🤍 ¿Cuántas canas había?",
+           "Las estimaciones de los Compañeros difieren, pero todos coinciden en que eran muy pocas: Anas (que Alá esté complacido con él) contó catorce, Ibn Umar (que Alá esté complacido con él) dijo unas veinte, y un relato de Anas dice que no había veinte en su cabeza y barba. Según Yabir ibn Samura (que Alá esté complacido con él), cuando se ponía aceite en la cabeza no se veían canas. Abu Ramza (que Alá esté complacido con él) vio canas que tiraban a rojo.",
+           "Fuente: Ash-Shamail hadiz 1 (p. 13), 31 (p. 38), 32 (p. 38), 33 (p. 39), 36 (p. 40)"],
+          ["🎨 La cuestión del jidab (tinte)",
+           "Se preguntó a Anas (que Alá esté complacido con él): ¿se tiñó el Profeta ﷺ? Dijo: no llegó a eso; solo había algunas canas en sus sienes; pero Abu Bakr (que Alá esté complacido con él) se tiñó con henna y katam. Hay otros relatos en este capítulo; el imán at-Tirmidhi escribió tras el relato de Abu Ramza que los hadices auténticos en la materia son que el Profeta ﷺ no llegó a la etapa de la vejez.",
+           "Fuente: Ash-Shamail hadiz 30 (p. 37), y la palabra del imán at-Tirmidhi tras el hadiz 37 (p. 41)"],
+          ["📖 «Hud me hizo envejecer»",
+           "Abu Bakr (que Alá esté complacido con él) dijo: ¡Oh Mensajero de Alá, has envejecido! Él ﷺ dijo: Hud, al-Waqi'a, al-Mursalat, Amma yatasa'alun e Idha ash-shamsu kuwwirat me hicieron envejecer. Estas suras hablan de la Resurrección y del castigo de Alá; es decir, el pensamiento del más allá lo encaneció ﷺ.",
+           "Fuente: Ash-Shamail hadiz 34 (p. 39)"],
+          ["⚖️ Conciliación de las discrepancias",
+           "Longitud del cabello: hasta el lóbulo de la oreja, hasta la mitad de las orejas y hasta los hombros; tres descripciones han llegado (Sahih Muslim 2338, 2337; Sahih al-Bujari 5901-5903); los sabios las refieren a momentos distintos: cuando el cabello crecía llegaba a los hombros, y cuando lo cortaba llegaba a las orejas. Tinte: Anas (que Alá esté complacido con él) no vio al Profeta ﷺ teñirse (Sahih Muslim 2341), mientras que algunas cadenas del relato de Abu Ramza mencionan «teñido con henna» con rojo (Sunan Abi Dawud 4206); Ibn Umar (que Alá esté complacido con él) mencionó el amarillo (Sahih al-Bujari 166). Conciliación de los sabios: él ﷺ se tiñó a veces y Anas no lo vio, o las canas eran tan pocas que no necesitaba tinte (Fath al-Bari).",
+           "Fuente: Sahih Muslim 2337, 2338, 2341; Sahih al-Bujari 166, 5901-5903; Sunan Abi Dawud 4206"]
+        ],
+        [
+          ["¿Hasta dónde llegaba el cabello del Profeta ﷺ (relato de Anas)?", ["Hasta los hombros", "Hasta la mitad de las orejas", "Hasta la espalda"]],
+          ["¿Qué suras hicieron envejecer al Profeta ﷺ?", ["Hud, al-Waqi'a, etc.", "Ya-Sin y ar-Rahman", "Solo al-Fatiha"]],
+          ["¿Cuántas canas contó Anas (que Alá esté complacido con él)?", ["Catorce", "Cien", "Tres"]]
+        ],
+        [],
+        [
+          "Ash-Shamail al-Muhammadiyya (resumen de al-Albani): hadices 21, 23, 24, 30, 31, 32, 33, 34, 36 (todos «sahih»)",
+          "La palabra del imán at-Tirmidhi sobre el capítulo del tinte: tras el hadiz 37, p. 41",
+          "No incluidos (débiles): hadiz 26 (abundancia de aceite en la cabeza y peine de la barba), hadiz 29, hadiz 39",
+          "Otras referencias para la conciliación: Sahih Muslim 2337, 2338, 2341; Sahih al-Bujari 166, 5901-5903; Sunan Abi Dawud 4206"
+        ],
+        [
+          ["Anas (que Alá esté complacido con él)", "Anas (que Alá esté complacido con él) dijo: El cabello del Mensajero de Alá ﷺ llegaba a la mitad de sus orejas.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 21, p. 33; al-Albani: sahih"],
+          ["Umm Hani bint Abi Talib (que Alá esté complacido con ella)", "Umm Hani (que Alá esté complacido con ella) dijo: El Mensajero de Alá ﷺ vino a La Meca una vez y tenía cuatro mechones.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 23, p. 35; al-Albani: sahih"],
+          ["Abdalah ibn Abbas (que Alá esté complacido con él)", "Ibn Abbas (que Alá esté complacido con él) dijo: El Mensajero de Alá ﷺ dejaba caer su cabello, los idólatras se hacían raya, y la gente del Libro dejaba su cabello; y amaba seguir a la gente del Libro en lo que no había sido objeto de una orden; luego el Mensajero de Alá ﷺ se hizo raya.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 24, p. 35; al-Albani: sahih"],
+          ["Anas (que Alá esté complacido con él) (ante la pregunta de Qatada)", "Qatada preguntó a Anas (que Alá esté complacido con él): ¿Se tiñó el Mensajero de Alá ﷺ? Dijo: No llegó a eso; solo había canas en sus sienes; pero Abu Bakr (que Alá esté complacido con él) se tiñó con henna y katam.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 30, p. 37; al-Albani: sahih"],
+          ["Anas (que Alá esté complacido con él)", "Anas (que Alá esté complacido con él) dijo: No conté en la cabeza y la barba del Mensajero de Alá ﷺ sino catorce cabellos blancos.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 31, p. 38; al-Albani: sahih"],
+          ["Yabir ibn Samura (que Alá esté complacido con él)", "Yabir ibn Samura (que Alá esté complacido con él) dijo: Cuando se ponía aceite en la cabeza no se veían canas, y cuando no lo hacía se veían algunas.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 32, p. 38; al-Albani: sahih"],
+          ["Abdalah ibn Umar (que Alá esté complacido con él)", "Ibn Umar (que Alá esté complacido con él) dijo: Las canas del Mensajero de Alá ﷺ eran unas veinte.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 33, p. 39; al-Albani: sahih"],
+          ["Abdalah ibn Abbas (que Alá esté complacido con él)", "Ibn Abbas (que Alá esté complacido con él) dijo: Abu Bakr dijo: ¡Oh Mensajero de Alá, has envejecido! Dijo: Hud, al-Waqi'a, al-Mursalat, Amma yatasa'alun e Idha ash-shamsu kuwwirat me hicieron envejecer.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 34, p. 39; al-Albani: sahih"],
+          ["Abu Ramza at-Taymi (que Alá esté complacido con él)", "Abu Ramza (que Alá esté complacido con él) dijo (llegó con su hijo y, al verlo, dijo): Este es el profeta de Alá ﷺ; llevaba dos prendas verdes; su cabello tenía canas, y esas canas tiraban a rojo. (Parte correspondiente del hadiz)", "Ash-Shamail al-Muhammadiyya, hadiz n.º 36, p. 40; al-Albani: sahih"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 33 — Shamail 3: mohr-e-nubuwwat, libaas ═══════════════ */
+    33: {
+      mr: [
+        "नबवी शमाइल (३) — मोहरे-नबुव्वत, वस्त्र आणि शृंगार",
+        "मदिना मुनव्वरा",
+        "सहाबांची प्रत्यक्ष साक्ष",
+        "मोहरे-नबुव्वतच्या सहीह रिवायती, नबी ﷺ यांना आवडणारे वस्त्र आणि शृंगाराची सुन्नत (कंगवा, सुरमा, नवीन कपडा) जाणून घेणे.",
+        "हे अल्लाह! वस्त्र व शृंगारात नबी ﷺ यांची साधेपणा व सुन्नत आत्मसात करण्याची तौफीक दे, आणि प्रत्येक नव्या नेमातीबद्दल कृतज्ञता व्यक्त करणारे बनव. आमीन.",
+        [
+          "मोहरे-नबुव्वत दोन्ही खांद्यांमध्ये",
+          "कबुतराच्या अंड्यासारखी उठीव गाठ",
+          "कमीज सर्वात आवडते वस्त्र",
+          "उजव्या बाजूने सुरुवात",
+          "असमदचा सुरमा सर्वोत्तम",
+          "नवीन कपडा परिधान करण्याची दुआ"
+        ],
+        [
+          ["🔖 मोहरे-नबुव्वत काय होते?",
+           "दोन्ही खांद्यांमध्ये पाठीवर एक खूण होती जिला मोहरे-नबुव्वत म्हणतात. साइब बिन यझीद (र.अ.) यांनी तिला «झरुल-हजला» (हजलाची गाठ) सारखे सांगितले, जाबिर बिन समरा (र.अ.) यांनी कबुतराच्या अंड्यासारखी लालसर गाठ सांगितली, आणि अबू झैद (र.अ.) म्हणाले की ते एकत्र आलेले काही केस होते. ही वर्णने सहाबांनी आपापल्या पद्धतीने सांगितली.",
+           "स्रोत: अश-शमाइल हदीस १४ (पृ. २९), १५ (पृ. ३०), १७ (पृ. ३०)"],
+          ["👕 आवडते वस्त्र",
+           "उम्मे सलमा (र.अ.) सांगतात की नबी ﷺ यांना वस्त्रांत सर्वात जास्त कमीज आवडत असे. मुआविया बिन कर्रा (र.अ.) आपल्या वडिलांकडून सांगतात की बैअतीच्या वेळी आप ﷺ यांच्या कमीजचे बटण उघडे होते; त्यांनी गळ्यात हात घालून मोहरे-नबुव्वतला स्पर्श केला. जेव्हा आप ﷺ नवीन कपडा परिधान करत तेव्हा त्याचे नाव घेऊन अल्लाहची स्तुती व भल्याची दुआ करत.",
+           "स्रोत: अश-शमाइल हदीस ४६ (पृ. ४५), ४८ (पृ. ४६), ५० (पृ. ४७)"],
+          ["🪮 कंगवा आणि सुरमा",
+           "आयशा (र.अ.) सांगतात की नबी ﷺ पवित्रता, कंगवा करणे आणि पादत्राणे परिधान करणे यात उजव्या बाजूने सुरुवात आवडत, आणि त्या हैदच्या अवस्थेतही आप ﷺ यांच्या डोक्यात कंगवा करत. आप ﷺ म्हणाले: तुमच्या सुरम्यांमध्ये सर्वोत्तम असमद आहे, तो दृष्टी तेजस्वी करतो आणि पापण्यांचे केस उगवतो.",
+           "स्रोत: अश-शमाइल हदीस २५, २७ (पृ. ३६), ४४ (पृ. ४४)"],
+          ["⚖️ मोहराचे स्थान आणि «हजला» चा अर्थ",
+           "मोहराचे स्थान: साइब (र.अ.) यांच्या रिवायतीत दोन्ही खांद्यांमध्ये (सहीह बुखारी १९०; सहीह मुस्लिम २३४५), तर अब्दुल्लाह बिन सरजस (र.अ.) यांच्यानुसार डाव्या खांद्याच्या हाडाजवळ, व्रणांसारखे एकत्र तीळ (सहीह मुस्लिम २३४६); विद्वान एकत्र करतात: खांद्यांमध्ये, डाव्या खांद्याच्या अधिक जवळ. «हजला» चा अर्थ: नववधूचा पडदा किंवा कमान (तिची गाठ), किंवा चकोर पक्षी (त्याच्या अंड्यांसारखी); विद्वानांनी दोन्ही मते नमूद केली आहेत.",
+           "स्रोत: अश-शमाइल हदीस १४, १५; सहीह बुखारी १९०; सहीह मुस्लिम २३४४–२३४६"],
+          ["➕ वस्त्र व शृंगाराच्या अधिक सहीह रिवायती",
+           "आवडता कपडा «हिबरा» (रेषांची यमनी चादर) (सहीह बुखारी ५८१३; सहीह मुस्लिम २०७९); «पांढरे कपडे परिधान करा, हे तुमच्या सर्वोत्तम कपड्यांपैकी आहेत» (सुनन अबी दाऊद ३८७८; तिर्मिझी ९९४); मक्केच्या विजयाच्या दिवशी काळी पगडी (सहीह मुस्लिम १३५८); सुगंध नाकारत नसे (सहीह बुखारी २५८२); चांदीची अंगठी ज्यावर «मुहम्मदुर रसूलुल्लाह» कोरलेले होते (सहीह बुखारी ५८७२; सहीह मुस्लिम २०९२). असमदबद्दल «केस उगवतो» याचा अर्थ पापण्या.",
+           "स्रोत: सहीह बुखारी ५८१३, २५८२, ५८७२; सहीह मुस्लिम २०७९, १३५८, २०९२; सुनन अबी दाऊद ३८७८; तिर्मिझी ९९४"]
+        ],
+        [
+          ["मोहरे-नबुव्वत कुठे होते?", ["दोन्ही खांद्यांमध्ये", "हातावर", "कपाळावर"]],
+          ["वस्त्रांत नबी ﷺ यांना सर्वात जास्त काय आवडत होते?", ["पगडी", "कमीज", "चादर"]],
+          ["सुरम्यांमध्ये सर्वोत्तम कोणता सांगितला?", ["असमद", "काजळ", "मेंदी"]]
+        ],
+        [],
+        [
+          "अश-शमाइल अल-मुहम्मदिया (अल्बानी यांचे मुख्तसर): हदीस १४, १५, १७, २५, २७, ४४, ४६, ४८, ५० (सर्वांवर «सहीह»)",
+          "समाविष्ट नाही (जईफ): हदीस २६, ४७ (कमीजची बाही)",
+          "अधिक संदर्भ: सहीह बुखारी १९०, ५८१३, २५८२, ५८७२; सहीह मुस्लिम २३४५, २३४६, २०७९, १३५८, २०९२; सुनन अबी दाऊद ३८७८; तिर्मिझी ९९४"
+        ],
+        [
+          ["साइब बिन यझीद (र.अ.)", "साइब बिन यझीद (र.अ.): माझी मावशी मला नबी ﷺ यांच्याकडे घेऊन गेली आणि म्हणाली: हे अल्लाहच्या रसूल! माझा भाचा आजारी आहे. आप ﷺ यांनी माझ्या डोक्यावर हात फिरवला आणि बरकतीची दुआ केली; नंतर वुजू केले आणि मी आपल्या वुजूचे (उरलेले) पाणी प्यालो; नंतर आप ﷺ यांच्या पाठीमागे उभे राहून दोन्ही खांद्यांमधील मोहरे-नबुव्वत पाहिले, ते हजलाच्या गाठीसारखे होते.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १४, पृ. २९ — अल्बानी: सहीह"],
+          ["जाबिर बिन समरा (र.अ.)", "जाबिर बिन समरा (र.अ.): मी रसूलुल्लाह ﷺ यांच्या दोन्ही खांद्यांमधील मोहरे-नबुव्वत पाहिले; ती कबुतराच्या अंड्यासारखी लालसर उठीव गाठ होती.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १५, पृ. ३० — अल्बानी: सहीह"],
+          ["अबू झैद अम्र बिन अख्तब (र.अ.)", "अबू झैद (र.अ.): रसूलुल्लाह ﷺ मला म्हणाले: अबू झैद! माझ्या जवळ ये आणि माझ्या पाठीवर हात फिरव. मी आप ﷺ यांच्या पाठीवर हात फिरवला आणि माझी बोटे मोहरे-नबुव्वतवर पडली. (विचारले गेले) मोहर काय होती? ते म्हणाले: एकत्र आलेले काही केस.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १७, पृ. ३० — अल्बानी: सहीह"],
+          ["आयशा (र.अ.)", "आयशा (र.अ.): मी हैदच्या अवस्थेत रसूलुल्लाह ﷺ यांच्या डोक्यात कंगवा करत असे.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. २५, पृ. ३६ — अल्बानी: सहीह"],
+          ["आयशा (र.अ.)", "आयशा (र.अ.): रसूलुल्लाह ﷺ पवित्रता करणे, कंगवा करणे आणि पादत्राणे परिधान करणे यात उजव्या बाजूने सुरुवात करणे आवडत.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. २७, पृ. ३६ — अल्बानी: सहीह"],
+          ["अब्दुल्लाह बिन अब्बास (र.अ.)", "इब्न अब्बास (र.अ.): रसूलुल्लाह ﷺ म्हणाले: तुमच्या सुरम्यांमध्ये सर्वोत्तम असमद आहे, तो दृष्टी तेजस्वी करतो आणि (पापण्यांचे) केस उगवतो.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ४४, पृ. ४४ — अल्बानी: सहीह"],
+          ["उम्मे सलमा (र.अ.)", "उम्मे सलमा (र.अ.): रसूलुल्लाह ﷺ यांना परिधान करण्याच्या कपड्यांत सर्वात जास्त कमीज आवडत असे.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ४६, पृ. ४५ — अल्बानी: सहीह"],
+          ["मुआविया बिन कर्रा (र.अ.) आपल्या वडिलांकडून", "कर्रा (र.अ.): मी मुझैनाच्या एका गटासोबत बैअतीसाठी रसूलुल्लाह ﷺ यांच्याकडे आलो; आप ﷺ यांच्या कमीजचे बटण उघडे होते; मी माझा हात आप ﷺ यांच्या गळ्यात घातला आणि मोहरे-नबुव्वतला स्पर्श केला.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ४८, पृ. ४६ — अल्बानी: सहीह"],
+          ["अबू सईद खुद्री (र.अ.)", "अबू सईद (र.अ.): रसूलुल्लाह ﷺ जेव्हा नवीन कपडा परिधान करत तेव्हा त्याचे नाव घेत (पगडी, कमीज किंवा चादर), नंतर म्हणत: हे अल्लाह! तुझ्याचसाठी सर्व स्तुती आहे की तू मला हे परिधान केले; मी तुझ्याकडे त्याचे भले आणि ज्या उद्देशासाठी ते बनवले त्याचे भले मागतो, आणि त्याच्या वाईटापासून व ज्या उद्देशासाठी ते बनवले त्याच्या वाईटापासून तुझी पनाह मागतो.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. ५०, पृ. ४७ — अल्बानी: सहीह"]
+        ]
+      ],
+      ar: [
+        "الشمائل النبوية (٣) — خاتم النبوة واللباس والزينة",
+        "المدينة المنورة",
+        "شهادة الصحابة رضي الله عنهم عن معاينة",
+        "معرفة الروايات الصحيحة في خاتم النبوة، ولباس النبي ﷺ المفضل، وسنة الزينة (الترجل والكحل والثوب الجديد).",
+        "اللهم وفقنا لاقتناء سمت النبي ﷺ في اللباس والزينة، واجعلنا من الشاكرين لكل نعمة جديدة. آمين.",
+        [
+          "خاتم النبوة بين الكتفين",
+          "غدة حمراء مثل بيضة الحمامة",
+          "القميص أحب الثياب إليه",
+          "البدء باليمين",
+          "الإثمد خير الأكحال",
+          "دعاء لبس الثوب الجديد"
+        ],
+        [
+          ["🔖 ما هو خاتم النبوة؟",
+           "كان في ظهره ﷺ بين كتفيه علامة تُسمى خاتم النبوة. ووصفه السائب بن يزيد رضي الله عنه بأنه «مثل زر الحجلة»، وقال جابر بن سمرة رضي الله عنه: غدة حمراء مثل بيضة الحمامة، وقال أبو زيد رضي الله عنه: شعرات مجتمعات. فهذه أوصاف عبّر عنها الصحابة كلٌّ بأسلوبه.",
+           "المصدر: الشمائل حديث 14 (ص 29)، 15 (ص 30)، 17 (ص 30)"],
+          ["👕 اللباس المفضل",
+           "تقول أم سلمة رضي الله عنها: كان أحب الثياب إلى النبي ﷺ يلبسه القميص. ويروي معاوية بن قرة عن أبيه رضي الله عنهما أنه جاء مع رهط من مزينة للبيعة وقميص النبي ﷺ مطلق الزر، فأدخل يده في جيبه فمسّ خاتم النبوة. وكان ﷺ إذا استجد ثوبًا سماه باسمه وحمد الله ودعا بالخير.",
+           "المصدر: الشمائل حديث 46 (ص 45)، 48 (ص 46)، 50 (ص 47)"],
+          ["🪮 الترجل والكحل",
+           "تقول عائشة رضي الله عنها: كان النبي ﷺ يحب التيمن في طهوره وترجله وانتعاله، وكانت ترجّل رأسه وهو في حال الحيض. وقال ﷺ: «إن خير أكحالكم الإثمد، يجلو البصر وينبت الشعر».",
+           "المصدر: الشمائل حديث 25، 27 (ص 36)، 44 (ص 44)"],
+          ["⚖️ موضع الخاتم ومعنى «الحجلة»",
+           "الموضع: في رواية السائب رضي الله عنه بين الكتفين (صحيح البخاري 190؛ صحيح مسلم 2345)، وعند عبد الله بن سرجس رضي الله عنه عند ناغض كتفه اليسرى، كالخيلان مجتمعة (صحيح مسلم 2346)؛ ويجمع العلماء: بين الكتفين، وأقرب إلى الكتف الأيسر. ومعنى «الحجلة»: ستر العروس أو قبتها (زرها)، أو طائر الحجل (مثل بيضه)؛ وذكر العلماء القولين.",
+           "المصدر: الشمائل حديث 14، 15؛ صحيح البخاري 190؛ صحيح مسلم 2344–2346"],
+          ["➕ مزيد من الصحاح في اللباس والزينة",
+           "أحب الثياب إليه «الحبرة» (برد يماني مخطط) (صحيح البخاري 5813؛ صحيح مسلم 2079)؛ «البسوا البياض، فإنها من خير ثيابكم» (سنن أبي داود 3878؛ الترمذي 994)؛ عمامة سوداء يوم الفتح (صحيح مسلم 1358)؛ لا يرد الطيب (صحيح البخاري 2582)؛ خاتم فضة نقشه «محمد رسول الله» (صحيح البخاري 5872؛ صحيح مسلم 2092). وقوله في الإثمد «ينبت الشعر» يعني شعر الأهداب.",
+           "المصدر: صحيح البخاري 5813، 2582، 5872؛ صحيح مسلم 2079، 1358، 2092؛ سنن أبي داود 3878؛ الترمذي 994"]
+        ],
+        [
+          ["أين كان خاتم النبوة؟", ["بين الكتفين", "على اليد", "على الجبهة"]],
+          ["ما أحب الثياب إلى النبي ﷺ؟", ["العمامة", "القميص", "الرداء"]],
+          ["ما خير الأكحال كما في الحديث؟", ["الإثمد", "الكحل الأسود", "الحناء"]]
+        ],
+        [],
+        [
+          "الشمائل المحمدية (مختصر الألباني): الأحاديث 14، 15، 17، 25، 27، 44، 46، 48، 50 (كلها «صحيح»)",
+          "لم تُدرج (ضعيف): حديث 26، 47 (كم القميص)",
+          "مراجع أخرى: صحيح البخاري 190، 5813، 2582، 5872؛ صحيح مسلم 2345، 2346، 2079، 1358، 2092؛ سنن أبي داود 3878؛ الترمذي 994"
+        ],
+        [
+          ["السائب بن يزيد رضي الله عنه", "قال السائب بن يزيد رضي الله عنه: ذهبت بي خالتي إلى النبي ﷺ فقالت: يا رسول الله، إن ابن أختي وجع. فمسح رأسي ودعا لي بالبركة، ثم توضأ فشربت من وضوئه، وقمت خلف ظهره فنظرت إلى الخاتم بين كتفيه فإذا هو مثل زر الحجلة.", "الشمائل المحمدية، حديث رقم 14، ص 29 — الألباني: صحيح"],
+          ["جابر بن سمرة رضي الله عنه", "قال جابر بن سمرة رضي الله عنه: رأيت الخاتم بين كتفي رسول الله ﷺ غدة حمراء مثل بيضة الحمامة.", "الشمائل المحمدية، حديث رقم 15، ص 30 — الألباني: صحيح"],
+          ["أبو زيد عمرو بن أخطب رضي الله عنه", "قال أبو زيد رضي الله عنه: قال لي رسول الله ﷺ: «يا أبا زيد، ادنُ مني فامسح ظهري». فمسحت ظهره فوقعَتْ أصابعي على الخاتم. قلت: وما الخاتم؟ قال: شعرات مجتمعات.", "الشمائل المحمدية، حديث رقم 17، ص 30 — الألباني: صحيح"],
+          ["عائشة رضي الله عنها", "قالت عائشة رضي الله عنها: كنت أرجّل رأس رسول الله ﷺ وأنا حائض.", "الشمائل المحمدية، حديث رقم 25، ص 36 — الألباني: صحيح"],
+          ["عائشة رضي الله عنها", "قالت عائشة رضي الله عنها: إن كان رسول الله ﷺ ليحب التيمن في طهوره إذا تطهر، وفي ترجله إذا ترجل، وفي انتعاله إذا انتعل.", "الشمائل المحمدية، حديث رقم 27، ص 36 — الألباني: صحيح"],
+          ["عبد الله بن عباس رضي الله عنه", "قال ابن عباس رضي الله عنه: قال رسول الله ﷺ: «إن خير أكحالكم الإثمد، يجلو البصر وينبت الشعر».", "الشمائل المحمدية، حديث رقم 44، ص 44 — الألباني: صحيح"],
+          ["أم سلمة رضي الله عنها", "قالت أم سلمة رضي الله عنها: كان أحب الثياب إلى رسول الله ﷺ يلبسه القميص.", "الشمائل المحمدية، حديث رقم 46، ص 45 — الألباني: صحيح"],
+          ["معاوية بن قرة رضي الله عنه عن أبيه", "قال قرة رضي الله عنه: أتيت رسول الله ﷺ في رهط من مزينة لنبايعه، وإن قميصه لمطلق الزر؛ فأدخلت يدي في جيب قميصه فمسست الخاتم.", "الشمائل المحمدية، حديث رقم 48، ص 46 — الألباني: صحيح"],
+          ["أبو سعيد الخدري رضي الله عنه", "قال أبو سعيد رضي الله عنه: كان رسول الله ﷺ إذا استجد ثوبًا سماه باسمه (عمامة أو قميصًا أو رداءً) ثم يقول: «اللهم لك الحمد كما كسوتنيه، أسألك خيره وخير ما صُنع له، وأعوذ بك من شره وشر ما صُنع له».", "الشمائل المحمدية، حديث رقم 50، ص 47 — الألباني: صحيح"]
+        ]
+      ],
+      fr: [
+        "Les Shamâ'il (3) — le sceau de la prophétie, le vêtement et la parure",
+        "Médine",
+        "Le témoignage oculaire des Compagnons",
+        "Connaître les récits authentiques sur le sceau de la prophétie, le vêtement préféré du Prophète ﷺ et la sunna de la parure (peigne, khôl, vêtement neuf).",
+        "Ô Allah ! Accorde-nous d'adopter la simplicité et la sunna du Prophète ﷺ dans le vêtement et la parure, et fais de nous des reconnaissants pour chaque nouveau bienfait. Âmîn.",
+        [
+          "Le sceau entre les deux épaules",
+          "Une grosseur rougeâtre comme un œuf de colombe",
+          "La chemise est son vêtement préféré",
+          "Commencer par la droite",
+          "L'ithmid est le meilleur khôl",
+          "L'invocation en mettant un vêtement neuf"
+        ],
+        [
+          ["🔖 Qu'est-ce que le sceau de la prophétie ?",
+           "Il y avait sur son dos ﷺ, entre les deux épaules, une marque appelée le sceau de la prophétie. As-Sâ'ib ibn Yazîd (qu'Allah l'agrée) le décrivit comme « le bouton d'une haggla », Jâbir ibn Samoura (qu'Allah l'agrée) dit : une grosseur rougeâtre comme un œuf de colombe, et Abou Zayd (qu'Allah l'agrée) dit : quelques poils réunis. Ce sont des descriptions que chaque Compagnon a exprimées à sa manière.",
+           "Source : Ach-Chamâ'il hadith 14 (p. 29), 15 (p. 30), 17 (p. 30)"],
+          ["👕 Le vêtement préféré",
+           "Oumm Salama (qu'Allah l'agrée) dit : le vêtement que le Prophète ﷺ aimait le plus porter était la chemise. Mou'âwiya ibn Qarra rapporte de son père (qu'Allah les agrée) qu'il vint avec un groupe de Mouzayna pour prêter serment, que le bouton de la chemise du Prophète ﷺ était détaché, et qu'il mit la main dans son col et toucha le sceau. Quand il ﷺ mettait un vêtement neuf, il le nommait, louait Allah et invoquait le bien.",
+           "Source : Ach-Chamâ'il hadith 46 (p. 45), 48 (p. 46), 50 (p. 47)"],
+          ["🪮 Le peigne et le khôl",
+           "Â'icha (qu'Allah l'agrée) dit : le Prophète ﷺ aimait commencer par la droite pour la purification, le peignage et la chaussure ; et elle peignait sa tête ﷺ même en état de menstrues. Il ﷺ dit : « Le meilleur de vos khôls est l'ithmid : il éclaircit la vue et fait pousser les cils. »",
+           "Source : Ach-Chamâ'il hadith 25, 27 (p. 36), 44 (p. 44)"],
+          ["⚖️ L'emplacement du sceau et le sens de « haggla »",
+           "L'emplacement : dans le récit d'as-Sâ'ib (qu'Allah l'agrée) entre les deux épaules (Sahih al-Bukhari 190 ; Sahih Muslim 2345), tandis que selon 'Abdoullah ibn Sarjis (qu'Allah l'agrée) il était près de l'os de l'épaule gauche, comme des grains de beauté réunis (Sahih Muslim 2346) ; les savants concilient : entre les deux épaules, plus près de l'épaule gauche. Le sens de « haggla » : le rideau ou le dôme de la mariée (son bouton), ou le perdreau (semblable à son œuf) ; les savants citent les deux avis.",
+           "Source : Ach-Chamâ'il hadith 14, 15 ; Sahih al-Bukhari 190 ; Sahih Muslim 2344-2346"],
+          ["➕ D'autres récits authentiques sur le vêtement et la parure",
+           "Son vêtement préféré était la « hibra » (étoffe yéménite rayée) (Sahih al-Bukhari 5813 ; Sahih Muslim 2079) ; « Portez du blanc, c'est parmi vos meilleurs vêtements » (Sunan Abi Dawud 3878 ; Tirmidhi 994) ; un turban noir le jour de la conquête (Sahih Muslim 1358) ; il ne refusait pas le parfum (Sahih al-Bukhari 2582) ; une bague d'argent portant « Mouhammad, Messager d'Allah » (Sahih al-Bukhari 5872 ; Sahih Muslim 2092). Dans le hadith sur l'ithmid, « fait pousser les poils » désigne les cils.",
+           "Source : Sahih al-Bukhari 5813, 2582, 5872 ; Sahih Muslim 2079, 1358, 2092 ; Sunan Abi Dawud 3878 ; Tirmidhi 994"]
+        ],
+        [
+          ["Où se trouvait le sceau de la prophétie ?", ["Entre les deux épaules", "Sur la main", "Sur le front"]],
+          ["Quel vêtement le Prophète ﷺ aimait-il le plus ?", ["Le turban", "La chemise", "Le manteau"]],
+          ["Quel est le meilleur khôl selon le hadith ?", ["L'ithmid", "Le khôl noir", "Le henné"]]
+        ],
+        [],
+        [
+          "Ach-Chamâ'il al-Muhammadiyya (abrégé d'al-Albani) : hadiths 14, 15, 17, 25, 27, 44, 46, 48, 50 (tous « sahih »)",
+          "Non inclus (faibles) : hadith 26, 47 (la manche de la chemise)",
+          "Autres références : Sahih al-Bukhari 190, 5813, 2582, 5872 ; Sahih Muslim 2345, 2346, 2079, 1358, 2092 ; Sunan Abi Dawud 3878 ; Tirmidhi 994"
+        ],
+        [
+          ["As-Sâ'ib ibn Yazîd (qu'Allah l'agrée)", "As-Sâ'ib ibn Yazîd (qu'Allah l'agrée) dit : Ma tante m'emmena chez le Prophète ﷺ et dit : Ô Messager d'Allah, mon neveu est malade. Il passa la main sur ma tête, invoqua la bénédiction pour moi, puis fit ses ablutions ; je bus de son eau d'ablutions, et me tenant derrière son dos, je regardai le sceau entre ses deux épaules : il était comme le bouton d'une haggla.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 14, p. 29 — al-Albani : sahih"],
+          ["Jâbir ibn Samoura (qu'Allah l'agrée)", "Jâbir ibn Samoura (qu'Allah l'agrée) dit : J'ai vu le sceau entre les deux épaules du Messager d'Allah ﷺ : une grosseur rougeâtre comme un œuf de colombe.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 15, p. 30 — al-Albani : sahih"],
+          ["Abou Zayd 'Amr ibn Akhtab (qu'Allah l'agrée)", "Abou Zayd (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ me dit : « Abou Zayd, approche-toi de moi et passe la main sur mon dos. » Je passai la main sur son dos et mes doigts tombèrent sur le sceau. On demanda : qu'était le sceau ? Il dit : quelques poils réunis.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 17, p. 30 — al-Albani : sahih"],
+          ["'Â'icha (qu'Allah l'agrée)", "'Â'icha (qu'Allah l'agrée) dit : Je peignais la tête du Messager d'Allah ﷺ alors que j'étais en état de menstrues.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 25, p. 36 — al-Albani : sahih"],
+          ["'Â'icha (qu'Allah l'agrée)", "'Â'icha (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ aimait commencer par la droite pour sa purification, son peignage et sa chaussure.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 27, p. 36 — al-Albani : sahih"],
+          ["'Abdoullah ibn 'Abbâs (qu'Allah l'agrée)", "Ibn 'Abbâs (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ dit : « Le meilleur de vos khôls est l'ithmid : il éclaircit la vue et fait pousser les cils. »", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 44, p. 44 — al-Albani : sahih"],
+          ["Oumm Salama (qu'Allah l'agrée)", "Oumm Salama (qu'Allah l'agrée) dit : Le vêtement que le Messager d'Allah ﷺ aimait le plus porter était la chemise.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 46, p. 45 — al-Albani : sahih"],
+          ["Mou'âwiya ibn Qarra (qu'Allah l'agrée), de son père", "Qarra (qu'Allah l'agrée) dit : Je vins au Messager d'Allah ﷺ avec un groupe de Mouzayna pour lui prêter serment ; le bouton de sa chemise était détaché ; je mis ma main dans le col de sa chemise et touchai le sceau.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 48, p. 46 — al-Albani : sahih"],
+          ["Abou Sa'îd al-Khoudrî (qu'Allah l'agrée)", "Abou Sa'îd (qu'Allah l'agrée) dit : Quand le Messager d'Allah ﷺ mettait un vêtement neuf, il le nommait (turban, chemise ou manteau) puis disait : « Ô Allah, à Toi la louange comme Tu m'en as vêtu ; je Te demande son bien et le bien pour lequel il a été fait, et je me réfugie auprès de Toi contre son mal et le mal pour lequel il a été fait. »", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 50, p. 47 — al-Albani : sahih"]
+        ]
+      ],
+      es: [
+        "Los Shamail (3): el sello de la profecía, la vestimenta y el adorno",
+        "Medina",
+        "El testimonio directo de los Compañeros",
+        "Conocer los relatos auténticos sobre el sello de la profecía, la vestimenta preferida del Profeta ﷺ y la sunna del adorno (peine, kohl, ropa nueva).",
+        "¡Oh Alá! Concédenos adoptar la sencillez y la sunna del Profeta ﷺ en la vestimenta y el adorno, y haz de nosotros agradecidos por cada nuevo bien. Amín.",
+        [
+          "El sello entre los dos hombros",
+          "Una protuberancia rojiza como un huevo de paloma",
+          "La camisa es su prenda preferida",
+          "Comenzar por la derecha",
+          "El itmid es el mejor kohl",
+          "La súplica al ponerse ropa nueva"
+        ],
+        [
+          ["🔖 ¿Qué es el sello de la profecía?",
+           "Había en su espalda ﷺ, entre los dos hombros, una marca llamada el sello de la profecía. As-Saib ibn Yazid (que Alá esté complacido con él) lo describió como «el botón de una hayla»; Yabir ibn Samura (que Alá esté complacido con él) dijo: una protuberancia rojiza como un huevo de paloma; y Abu Zayd (que Alá esté complacido con él) dijo: unos pocos pelos reunidos. Son descripciones que cada Compañero expresó a su manera.",
+           "Fuente: Ash-Shamail hadiz 14 (p. 29), 15 (p. 30), 17 (p. 30)"],
+          ["👕 La vestimenta preferida",
+           "Umm Salama (que Alá esté complacido con ella) dice: la prenda que el Profeta ﷺ amaba más llevar era la camisa. Muawiya ibn Qarra transmite de su padre (que Alá esté complacido con ellos) que vino con un grupo de Muzayna para jurar fidelidad, que el botón de la camisa del Profeta ﷺ estaba suelto, y que metió la mano en su cuello y tocó el sello. Cuando ﷺ se ponía una prenda nueva, la nombraba, alababa a Alá y pedía el bien.",
+           "Fuente: Ash-Shamail hadiz 46 (p. 45), 48 (p. 46), 50 (p. 47)"],
+          ["🪮 El peine y el kohl",
+           "Aisha (que Alá esté complacido con ella) dice: el Profeta ﷺ amaba comenzar por la derecha en la purificación, el peinado y el calzado; y ella peinaba su cabeza ﷺ incluso estando menstruando. Él ﷺ dijo: «El mejor de vuestros kohles es el itmid: aclara la vista y hace crecer las pestañas.»",
+           "Fuente: Ash-Shamail hadiz 25, 27 (p. 36), 44 (p. 44)"],
+          ["⚖️ El lugar del sello y el significado de «hayla»",
+           "El lugar: en el relato de as-Saib (que Alá esté complacido con él) entre los dos hombros (Sahih al-Bujari 190; Sahih Muslim 2345), mientras que según Abdalah ibn Sarjis (que Alá esté complacido con él) estaba junto al hueso del hombro izquierdo, como lunares reunidos (Sahih Muslim 2346); los sabios concilian: entre los dos hombros, más cerca del izquierdo. El significado de «hayla»: el velo o la cúpula de la novia (su botón), o el ave perdiz (semejante a su huevo); los sabios citan ambas opiniones.",
+           "Fuente: Ash-Shamail hadiz 14, 15; Sahih al-Bujari 190; Sahih Muslim 2344-2346"],
+          ["➕ Más relatos auténticos sobre la vestimenta y el adorno",
+           "Su prenda preferida era la «hibra» (tela yemení rayada) (Sahih al-Bujari 5813; Sahih Muslim 2079); «Vestid de blanco, pues está entre vuestras mejores ropas» (Sunan Abi Dawud 3878; Tirmidhi 994); un turbante negro el día de la conquista (Sahih Muslim 1358); no rechazaba el perfume (Sahih al-Bujari 2582); un anillo de plata con «Muhámmad, Mensajero de Alá» (Sahih al-Bujari 5872; Sahih Muslim 2092). En el hadiz del itmid, «hace crecer el pelo» se refiere a las pestañas.",
+           "Fuente: Sahih al-Bujari 5813, 2582, 5872; Sahih Muslim 2079, 1358, 2092; Sunan Abi Dawud 3878; Tirmidhi 994"]
+        ],
+        [
+          ["¿Dónde estaba el sello de la profecía?", ["Entre los dos hombros", "En la mano", "En la frente"]],
+          ["¿Qué prenda amaba más el Profeta ﷺ?", ["El turbante", "La camisa", "El manto"]],
+          ["¿Cuál es el mejor kohl según el hadiz?", ["El itmid", "El kohl negro", "La henna"]]
+        ],
+        [],
+        [
+          "Ash-Shamail al-Muhammadiyya (resumen de al-Albani): hadices 14, 15, 17, 25, 27, 44, 46, 48, 50 (todos «sahih»)",
+          "No incluidos (débiles): hadiz 26, 47 (la manga de la camisa)",
+          "Otras referencias: Sahih al-Bujari 190, 5813, 2582, 5872; Sahih Muslim 2345, 2346, 2079, 1358, 2092; Sunan Abi Dawud 3878; Tirmidhi 994"
+        ],
+        [
+          ["As-Saib ibn Yazid (que Alá esté complacido con él)", "As-Saib ibn Yazid (que Alá esté complacido con él) dijo: Mi tía me llevó al Profeta ﷺ y dijo: ¡Oh Mensajero de Alá, mi sobrino está enfermo! Pasó la mano por mi cabeza, suplicó bendición para mí, luego hizo el wudu; yo bebí de su agua de wudu y, poniéndome detrás de su espalda, miré el sello entre sus dos hombros: era como el botón de una hayla.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 14, p. 29; al-Albani: sahih"],
+          ["Yabir ibn Samura (que Alá esté complacido con él)", "Yabir ibn Samura (que Alá esté complacido con él) dijo: Vi el sello entre los dos hombros del Mensajero de Alá ﷺ: una protuberancia rojiza como un huevo de paloma.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 15, p. 30; al-Albani: sahih"],
+          ["Abu Zayd Amr ibn Ajtab (que Alá esté complacido con él)", "Abu Zayd (que Alá esté complacido con él) dijo: El Mensajero de Alá ﷺ me dijo: «¡Abu Zayd! Acércate a mí y pasa la mano por mi espalda.» Pasé la mano por su espalda y mis dedos cayeron sobre el sello. Se preguntó: ¿qué era el sello? Dijo: unos pocos pelos reunidos.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 17, p. 30; al-Albani: sahih"],
+          ["Aisha (que Alá esté complacido con ella)", "Aisha (que Alá esté complacido con ella) dijo: Peinaba la cabeza del Mensajero de Alá ﷺ estando yo menstruando.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 25, p. 36; al-Albani: sahih"],
+          ["Aisha (que Alá esté complacido con ella)", "Aisha (que Alá esté complacido con ella) dijo: El Mensajero de Alá ﷺ amaba comenzar por la derecha en su purificación, su peinado y su calzado.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 27, p. 36; al-Albani: sahih"],
+          ["Abdalah ibn Abbas (que Alá esté complacido con él)", "Ibn Abbas (que Alá esté complacido con él) dijo: El Mensajero de Alá ﷺ dijo: «El mejor de vuestros kohles es el itmid: aclara la vista y hace crecer las pestañas.»", "Ash-Shamail al-Muhammadiyya, hadiz n.º 44, p. 44; al-Albani: sahih"],
+          ["Umm Salama (que Alá esté complacido con ella)", "Umm Salama (que Alá esté complacido con ella) dijo: La prenda que el Mensajero de Alá ﷺ amaba más llevar era la camisa.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 46, p. 45; al-Albani: sahih"],
+          ["Muawiya ibn Qarra (que Alá esté complacido con él), de su padre", "Qarra (que Alá esté complacido con él) dijo: Vine al Mensajero de Alá ﷺ con un grupo de Muzayna para jurarle fidelidad; el botón de su camisa estaba suelto; metí mi mano en el cuello de su camisa y toqué el sello.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 48, p. 46; al-Albani: sahih"],
+          ["Abu Said al-Judri (que Alá esté complacido con él)", "Abu Said (que Alá esté complacido con él) dijo: Cuando el Mensajero de Alá ﷺ se ponía una prenda nueva, la nombraba (turbante, camisa o manto) y luego decía: «¡Oh Alá! A Ti la alabanza por habérmela vestido; Te pido su bien y el bien para el que fue hecha, y me refugio en Ti de su mal y del mal para el que fue hecha.»", "Ash-Shamail al-Muhammadiyya, hadiz n.º 50, p. 47; al-Albani: sahih"]
+        ]
+      ]
+    },
+
+    /* ═══════════════ DAY 34 — Shamail 4: guftagu, muskurahat, mazah ═══════════════ */
+    34: {
+      mr: [
+        "नबवी शमाइल (४) — संवाद, स्मित आणि विनोद",
+        "मदिना मुनव्वरा",
+        "सहाबांची प्रत्यक्ष साक्ष",
+        "नबी ﷺ कसे बोलत, कसे हसत आणि मुलांशी व सहाबांशी कसा आनंदी स्वभावाचा व्यवहार करत हे जाणून घेणे.",
+        "हे अल्लाह! मऊ बोलणे, चांगले आचरण आणि हसत्या चेहऱ्याच्या सुन्नतीवर चालण्याची तौफीक दे. मोमिन बंधूला हसून भेटणेही सदका आहे. आमीन.",
+        [
+          "स्पष्ट, थांबून संवाद",
+          "महत्त्वाचे बोलणे तीन वेळा दोहरावणे",
+          "सर्वाधिक हसणारे",
+          "सामान्यतः स्मित, कधीतरी दात दिसणे",
+          "मुलांशी प्रेमळ विनोद",
+          "विनोदातही सत्य"
+        ],
+        [
+          ["🗣️ संवादाची पद्धत",
+           "आयशा (र.अ.) सांगतात की आप ﷺ वेगाने सलग बोलत नव्हते, तर स्पष्ट, वेगवेगळ्या शब्दांत बोलत की बसलेल्याला ते लक्षात राहत. अनस (र.अ.) यांच्यानुसार आप ﷺ बोलणे तीन वेळा दोहरवत जेणेकरून समजले जाईल.",
+           "स्रोत: अश-शमाइल हदीस १९१ (पृ. ११९), १९२ (पृ. ११९)"],
+          ["🙂 स्मित",
+           "अब्दुल्लाह बिन हारिस बिन जुझअ (र.अ.) म्हणतात की मी रसूलुल्लाह ﷺ यांच्यापेक्षा जास्त हसणारा कोणी पाहिला नाही. जरीर बिन अब्दुल्लाह (र.अ.) म्हणतात की मी मुस्लिम झाल्यापासून आप ﷺ यांनी मला (भेटण्यापासून) कधी रोखले नाही आणि जेव्हाही मला पाहिले तेव्हा हसले. अबू झर (र.अ.) यांनीही आप ﷺ यांना असे हसताना पाहिले की दात दिसले.",
+           "स्रोत: अश-शमाइल हदीस १९४ (पृ. १२०), १९५ (पृ. १२१), १९६ (पृ. १२१)"],
+          ["🐦 विनोदातही सत्य",
+           "अनस (र.अ.) सांगतात की नबी ﷺ आमच्यात मिसळून जात, इतके की माझ्या लहान भावाला म्हणत: «अबू उमैर! नुगैर (चिमणी)चे काय झाले?» आणि एकदा अनस (र.अ.) यांना प्रेमाने «अरे दोन कानांच्या!» असेही म्हटले. आप ﷺ यांचा विनोद प्रेम व मायेचा होता, खोटेपणाचा व मन दुखावण्याचा नाही.",
+           "स्रोत: अश-शमाइल हदीस २०० (पृ. १२४), २०१ (पृ. १२५)"],
+          ["⚖️ स्मित व हसण्यातील फरक",
+           "आयशा (र.अ.) सांगतात की मी आप ﷺ यांना कधीही असे उघडपणे हसताना पाहिले नाही की घसा दिसला; आप ﷺ फक्त हसत (सहीह बुखारी ४८२८, ६०९२; सहीह मुस्लिम ८९९). म्हणून दात दिसणारे हसणे कधीतरीचे होते (सहीह मुस्लिम १८७, इब्न मसऊद (र.अ.); सहीह मुस्लिम २४१२, साद (र.अ.)). «नवाजिझ» या शब्दाच्या अर्थाबद्दल मते आहेत: शेवटचे दात किंवा पुढचे दात.",
+           "स्रोत: अश-शमाइल हदीस १९५; सहीह बुखारी ४८२८, ६०९२; सहीह मुस्लिम १८७, २४१२, ८९९"],
+          ["➕ विनोद व आचाराच्या अधिक सहीह रिवायती",
+           "अनस (र.अ.): मी दहा वर्षे सेवा केली, आप ﷺ यांनी मला कधीही «उफ» सुद्धा म्हटले नाही (सहीह बुखारी ६०३८; सहीह मुस्लिम २३०९). «मी विनोद करतो पण सत्यच बोलतो» (तिर्मिझी १९९०). लोकांना हसवण्यासाठी खोटे बोलणाऱ्यासाठी नाशाची भीती (सुनन अबी दाऊद ४९९०; तिर्मिझी ३३१५). स्पष्टीकरण: «स्मित हे सदका आहे» ही हदीस मोमिन बंधूचे चेहरा पाहून हसण्याबद्दल आहे (तिर्मिझी १९५६).",
+           "स्रोत: सहीह बुखारी ६०३८; सहीह मुस्लिम २३०९; तिर्मिझी १९९०, ३३१५, १९५६; सुनन अबी दाऊद ४९९०"]
+        ],
+        [
+          ["नबी ﷺ महत्त्वाचे बोलणे किती वेळा दोहरवत?", ["एक", "तीन", "सात"]],
+          ["अब्दुल्लाह बिन हारिस (र.अ.) यांनी कशाबद्दल म्हटले की आप ﷺ सर्वाधिक होते?", ["हसण्यात", "झोपण्यात", "चालण्यात"]],
+          ["अनस (र.अ.) यांच्या लहान भावाची कुन्यत काय होती?", ["अबू उमैर", "अबू झैद", "अबू झर"]]
+        ],
+        [],
+        [
+          "अश-शमाइल अल-मुहम्मदिया (अल्बानी यांचे मुख्तसर): हदीस १९१, १९२, १९४, १९५, १९६, २००, २०१ (सर्वांवर «सहीह»)",
+          "समाविष्ट नाही (जईफ): हदीस १९३ (पोटरी व हसण्याचे वर्णन), हदीस १९९",
+          "या धड्यानंतर अभ्यासक्रम पूर्ण: सीरत (दिवस १–३०) + शमाइल (दिवस ३१–३४)",
+          "अधिक संदर्भ: सहीह बुखारी ४८२८, ६०९२, ६०३८; सहीह मुस्लिम ८९९, १८७, २४१२, २३०९; तिर्मिझी १९९०, ३३१५, १९५६; सुनन अबी दाऊद ४९९०"
+        ],
+        [
+          ["आयशा (र.अ.)", "आयशा (र.अ.): रसूलुल्लाह ﷺ तुमच्यासारखे वेगाने सलग बोलत नव्हते, तर स्पष्ट व वेगवेगळे (फासल) बोलत की जवळ बसलेला ते लक्षात ठेवत.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १९१, पृ. ११९ — अल्बानी: सहीह"],
+          ["अनस बिन मालिक (र.अ.)", "अनस (र.अ.): रसूलुल्लाह ﷺ बोलणे तीन वेळा दोहरवत जेणेकरून त्यांच्याकडून समजले जाईल.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १९२, पृ. ११९ — अल्बानी: सहीह"],
+          ["अब्दुल्लाह बिन हारिस बिन जुझअ (र.अ.)", "अब्दुल्लाह बिन हारिस (र.अ.): मी रसूलुल्लाह ﷺ यांच्यापेक्षा जास्त हसणारा कोणी पाहिला नाही.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १९४, पृ. १२० — अल्बानी: सहीह"],
+          ["जरीर बिन अब्दुल्लाह (र.अ.)", "जरीर (र.अ.): मी मुस्लिम झाल्यापासून रसूलुल्लाह ﷺ यांनी मला (भेटण्यापासून) रोखले नाही आणि जेव्हाही मला पाहिले तेव्हा हसले. (एका रिवायतीत «तबस्सुम» आहे.)", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १९६, पृ. १२१ — अल्बानी: सहीह"],
+          ["अबू झर गफारी (र.अ.) (उद्धरण)", "अबू झर (र.अ.) (जन्नतमध्ये सर्वात आधी जाणाऱ्या व जहन्नममधून शेवटी बाहेर पडणाऱ्या व्यक्तीची हदीस सांगितल्यानंतर): मी रसूलुल्लाह ﷺ यांना (हे ऐकून) असे हसताना पाहिले की आप ﷺ यांचे दात दिसले.", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. १९५, पृ. १२१ — अल्बानी: सहीह"],
+          ["अनस बिन मालिक (र.अ.)", "अनस (र.अ.): रसूलुल्लाह ﷺ आमच्यात मिसळून जात, इतके की माझ्या लहान भावाला म्हणत: अबू उमैर! नुगैर (चिमणी)चे काय झाले?", "अश-शमाइल अल-मुहम्मदिया, हदीस क्र. २०१, पृ. १२५ — अल्बानी: सहीह"]
+        ]
+      ],
+      ar: [
+        "الشمائل النبوية (٤) — الحديث والتبسم والمزاح",
+        "المدينة المنورة",
+        "شهادة الصحابة رضي الله عنهم عن معاينة",
+        "معرفة كيف كان النبي ﷺ يتكلم ويتبسم، وكيف كان يلاطف الأطفال والصحابة رضي الله عنهم.",
+        "اللهم وفقنا لسنة لين الكلام وحسن الخلق وطلاقة الوجه؛ وملاقاة الأخ بابتسامة صدقة. آمين.",
+        [
+          "كلام واضح متمهل",
+          "تكرار الكلام المهم ثلاثًا",
+          "أكثر الناس تبسمًا",
+          "غالبًا تبسم، وأحيانًا تبدو النواجذ",
+          "مزاح حنون مع الأطفال",
+          "صدق في المزاح أيضًا"
+        ],
+        [
+          ["🗣️ أسلوب الحديث",
+           "تقول عائشة رضي الله عنها: لم يكن ﷺ يسرد الكلام سردًا متتابعًا سريعًا، بل كان يتكلم بكلام بيّن فصل يفهمه من جلس إليه. وعن أنس رضي الله عنه أنه كان يعيد الكلمة ثلاثًا لتعقل عنه.",
+           "المصدر: الشمائل حديث 191 (ص 119)، 192 (ص 119)"],
+          ["🙂 التبسم",
+           "يقول عبد الله بن حارث بن جزء رضي الله عنه: ما رأيت أحدًا أكثر تبسمًا من رسول الله ﷺ. ويقول جرير بن عبد الله رضي الله عنه: ما حجبني رسول الله ﷺ منذ أسلمت، ولا رآني إلا ضحك (وفي رواية: تبسم). ورأى أبو ذر رضي الله عنه النبي ﷺ يضحك حتى بدت نواجذه.",
+           "المصدر: الشمائل حديث 194 (ص 120)، 195 (ص 121)، 196 (ص 121)"],
+          ["🐦 صدق في المزاح",
+           "يخبر أنس رضي الله عنه أن النبي ﷺ كان يخالطهم حتى يقول لأخ صغير له: «يا أبا عمير، ما فعل النغير؟» وقال لأنس رضي الله عنه مرة مداعبًا: «يا ذا الأذنين». وكان مزاحه ﷺ مزاح محبة ورحمة، لا كذبًا ولا إيذاءً.",
+           "المصدر: الشمائل حديث 200 (ص 124)، 201 (ص 125)"],
+          ["⚖️ الفرق بين التبسم والضحك",
+           "تقول عائشة رضي الله عنها: ما رأيت رسول الله ﷺ مستجمعًا ضاحكًا حتى أرى منه لهواته، إنما كان يتبسم (صحيح البخاري 4828، 6092؛ صحيح مسلم 899). فالضحك الذي تبدو فيه النواجذ كان أحيانًا (صحيح مسلم 187 عن ابن مسعود؛ 2412 عن سعد رضي الله عنهما). وفي معنى «النواجذ» أقوال: آخر الأضراس أو الأسنان الأمامية.",
+           "المصدر: الشمائل حديث 195؛ صحيح البخاري 4828، 6092؛ صحيح مسلم 187، 2412، 899"],
+          ["➕ مزيد من الصحاح في المزاح والخلق",
+           "أنس رضي الله عنه: خدمت عشر سنين فما قال لي ﷺ «أف» قط (صحيح البخاري 6038؛ صحيح مسلم 2309). «إني لأمزح ولا أقول إلا حقًّا» (الترمذي 1990). والوعيد لمن يكذب ليضحك الناس (سنن أبي داود 4990؛ الترمذي 3315). توضيح: حديث «تبسمك في وجه أخيك صدقة» في التبسم في وجه الأخ (الترمذي 1956).",
+           "المصدر: صحيح البخاري 6038؛ صحيح مسلم 2309؛ الترمذي 1990، 3315، 1956؛ سنن أبي داود 4990"]
+        ],
+        [
+          ["كم مرة كان النبي ﷺ يعيد الكلام المهم؟", ["مرة", "ثلاثًا", "سبعًا"]],
+          ["في أي شيء قال عبد الله بن حارث رضي الله عنه إنه كان الأكثر؟", ["في التبسم", "في النوم", "في المشي"]],
+          ["ما كنية أخي أنس رضي الله عنه الصغير؟", ["أبو عمير", "أبو زيد", "أبو ذر"]]
+        ],
+        [],
+        [
+          "الشمائل المحمدية (مختصر الألباني): الأحاديث 191، 192، 194، 195، 196، 200، 201 (كلها «صحيح»)",
+          "لم تُدرج (ضعيف): حديث 193 (ذكر الساق والضحك)، حديث 199",
+          "بهذا الدرس يكتمل المنهج: السيرة (1–30) والشمائل (31–34)",
+          "مراجع أخرى: صحيح البخاري 4828، 6092، 6038؛ صحيح مسلم 899، 187، 2412، 2309؛ الترمذي 1990، 3315، 1956؛ سنن أبي داود 4990"
+        ],
+        [
+          ["عائشة رضي الله عنها", "قالت عائشة رضي الله عنها: ما كان رسول الله ﷺ يسرد كسردكم هذا، ولكنه كان يتكلم بكلام بيّن فصل يحفظه من جلس إليه.", "الشمائل المحمدية، حديث رقم 191، ص 119 — الألباني: صحيح"],
+          ["أنس بن مالك رضي الله عنه", "قال أنس رضي الله عنه: كان رسول الله ﷺ يعيد الكلمة ثلاثًا لتعقل عنه.", "الشمائل المحمدية، حديث رقم 192، ص 119 — الألباني: صحيح"],
+          ["عبد الله بن حارث بن جزء رضي الله عنه", "قال عبد الله بن حارث رضي الله عنه: ما رأيت أحدًا أكثر تبسمًا من رسول الله ﷺ.", "الشمائل المحمدية، حديث رقم 194، ص 120 — الألباني: صحيح"],
+          ["جرير بن عبد الله رضي الله عنه", "قال جرير رضي الله عنه: ما حجبني رسول الله ﷺ منذ أسلمت، ولا رآني إلا ضحك. (وفي رواية: تبسم.)", "الشمائل المحمدية، حديث رقم 196، ص 121 — الألباني: صحيح"],
+          ["أبو ذر الغفاري رضي الله عنه (اقتباس)", "قال أبو ذر رضي الله عنه (بعد ذكر حديث أول من يدخل الجنة وآخر من يخرج من النار): فلقد رأيت رسول الله ﷺ ضحك حتى بدت نواجذه.", "الشمائل المحمدية، حديث رقم 195، ص 121 — الألباني: صحيح"],
+          ["أنس بن مالك رضي الله عنه", "قال أنس رضي الله عنه: إن كان رسول الله ﷺ ليخالطنا حتى يقول لأخ لي صغير: يا أبا عمير، ما فعل النغير؟", "الشمائل المحمدية، حديث رقم 201، ص 125 — الألباني: صحيح"]
+        ]
+      ],
+      fr: [
+        "Les Shamâ'il (4) — la parole, le sourire et l'humour",
+        "Médine",
+        "Le témoignage oculaire des Compagnons",
+        "Savoir comment le Prophète ﷺ parlait, souriait et plaisantait avec les enfants et les Compagnons.",
+        "Ô Allah ! Accorde-nous la sunna de la douceur de parole, du beau caractère et du visage souriant ; saluer un frère avec un sourire est une aumône. Âmîn.",
+        [
+          "Une parole claire et posée",
+          "Répéter trois fois ce qui est important",
+          "Le plus souriant des hommes",
+          "Souvent un sourire, parfois les molaires visibles",
+          "Une plaisanterie affectueuse avec les enfants",
+          "La vérité même dans la plaisanterie"
+        ],
+        [
+          ["🗣️ La manière de parler",
+           "Â'icha (qu'Allah l'agrée) dit : le Prophète ﷺ ne débitait pas ses paroles d'un trait comme vous, mais il parlait d'une parole claire et distincte que retenait celui qui était assis près de lui. Selon Anas (qu'Allah l'agrée), il répétait trois fois pour être bien compris.",
+           "Source : Ach-Chamâ'il hadith 191 (p. 119), 192 (p. 119)"],
+          ["🙂 Le sourire",
+           "Abdoullah ibn Hârith ibn Jaz' (qu'Allah l'agrée) dit : je n'ai vu personne plus souriant que le Messager d'Allah ﷺ. Jarîr ibn 'Abdillâh (qu'Allah l'agrée) dit : depuis que je suis musulman, il ne m'a jamais refusé sa porte et ne m'a jamais vu sans sourire. Abou Dharr (qu'Allah l'agrée) le vit rire au point que ses molaires apparurent.",
+           "Source : Ach-Chamâ'il hadith 194 (p. 120), 195 (p. 121), 196 (p. 121)"],
+          ["🐦 La vérité dans la plaisanterie",
+           "Anas (qu'Allah l'agrée) rapporte que le Prophète ﷺ se mêlait à eux au point de dire à son petit frère : « Abou 'Oumayr, qu'a fait le noughayr (l'oiseau) ? » Et il dit une fois à Anas avec affection : « Ô toi aux deux oreilles ! » Sa plaisanterie était affection et miséricorde, non mensonge ni blessure.",
+           "Source : Ach-Chamâ'il hadith 200 (p. 124), 201 (p. 125)"],
+          ["⚖️ La différence entre sourire et rire",
+           "Â'icha (qu'Allah l'agrée) dit : je n'ai jamais vu le Messager d'Allah ﷺ rire aux éclats au point de voir son gosier ; il souriait seulement (Sahih al-Bukhari 4828, 6092 ; Sahih Muslim 899). Le rire où apparaissent les molaires était donc occasionnel (Sahih Muslim 187 d'après Ibn Mas'oûd ; 2412 d'après Sa'd). Le mot « nawâjidh » a plusieurs sens : les dernières molaires ou les dents de devant.",
+           "Source : Ach-Chamâ'il hadith 195 ; Sahih al-Bukhari 4828, 6092 ; Sahih Muslim 187, 2412, 899"],
+          ["➕ D'autres récits authentiques sur l'humour et le caractère",
+           "Anas (qu'Allah l'agrée) : j'ai servi dix ans et il ﷺ ne m'a jamais dit « ouf » (Sahih al-Bukhari 6038 ; Sahih Muslim 2309). « Je plaisante, mais je ne dis que la vérité. » (Tirmidhi 1990). La menace pour celui qui ment afin de faire rire les gens (Sunan Abi Dawud 4990 ; Tirmidhi 3315). Précision : le hadith « ton sourire à ton frère est une aumône » concerne le sourire au visage du frère (Tirmidhi 1956).",
+           "Source : Sahih al-Bukhari 6038 ; Sahih Muslim 2309 ; Tirmidhi 1990, 3315, 1956 ; Sunan Abi Dawud 4990"]
+        ],
+        [
+          ["Combien de fois le Prophète ﷺ répétait-il une parole importante ?", ["Une fois", "Trois fois", "Sept fois"]],
+          ["En quoi 'Abdoullah ibn Hârith (qu'Allah l'agrée) le dit-il le plus ?", ["En sourire", "En sommeil", "En marche"]],
+          ["Quel était le surnom du petit frère d'Anas (qu'Allah l'agrée) ?", ["Abou 'Oumayr", "Abou Zayd", "Abou Dharr"]]
+        ],
+        [],
+        [
+          "Ach-Chamâ'il al-Muhammadiyya (abrégé d'al-Albani) : hadiths 191, 192, 194, 195, 196, 200, 201 (tous « sahih »)",
+          "Non inclus (faibles) : hadith 193 (mention du tibia et du rire), hadith 199",
+          "Avec cette leçon, le programme est complet : Sîra (1-30) et Shamâ'il (31-34)",
+          "Autres références : Sahih al-Bukhari 4828, 6092, 6038 ; Sahih Muslim 899, 187, 2412, 2309 ; Tirmidhi 1990, 3315, 1956 ; Sunan Abi Dawud 4990"
+        ],
+        [
+          ["'Â'icha (qu'Allah l'agrée)", "'Â'icha (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ ne débitait pas ses paroles d'un trait comme vous ; il parlait d'une parole claire et distincte que retenait celui qui était assis près de lui.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 191, p. 119 — al-Albani : sahih"],
+          ["Anas ibn Mâlik (qu'Allah l'agrée)", "Anas (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ répétait la parole trois fois pour être bien compris.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 192, p. 119 — al-Albani : sahih"],
+          ["'Abdoullah ibn Hârith ibn Jaz' (qu'Allah l'agrée)", "'Abdoullah ibn Hârith (qu'Allah l'agrée) dit : Je n'ai vu personne plus souriant que le Messager d'Allah ﷺ.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 194, p. 120 — al-Albani : sahih"],
+          ["Jarîr ibn 'Abdillâh (qu'Allah l'agrée)", "Jarîr (qu'Allah l'agrée) dit : Depuis que je suis musulman, le Messager d'Allah ﷺ ne m'a pas refusé sa porte, et chaque fois qu'il me voyait, il souriait. (Dans un récit : il souriait légèrement.)", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 196, p. 121 — al-Albani : sahih"],
+          ["Abou Dharr al-Ghifârî (qu'Allah l'agrée) (citation)", "Abou Dharr (qu'Allah l'agrée) dit (après le hadith sur le premier à entrer au Paradis et le dernier à sortir de l'Enfer) : J'ai vu le Messager d'Allah ﷺ rire au point que ses molaires apparurent.", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 195, p. 121 — al-Albani : sahih"],
+          ["Anas ibn Mâlik (qu'Allah l'agrée)", "Anas (qu'Allah l'agrée) dit : Le Messager d'Allah ﷺ se mêlait à nous au point de dire à mon petit frère : « Abou 'Oumayr, qu'a fait le noughayr ? »", "Ach-Chamâ'il al-Muhammadiyya, hadith n° 201, p. 125 — al-Albani : sahih"]
+        ]
+      ],
+      es: [
+        "Los Shamail (4): la palabra, la sonrisa y el humor",
+        "Medina",
+        "El testimonio directo de los Compañeros",
+        "Saber cómo hablaba el Profeta ﷺ, cómo sonreía y cómo bromeaba con los niños y los Compañeros.",
+        "¡Oh Alá! Concédenos la sunna de la palabra suave, el buen carácter y el rostro sonriente; saludar a un hermano con una sonrisa es una limosna. Amín.",
+        [
+          "Una palabra clara y pausada",
+          "Repetir tres veces lo importante",
+          "El más sonriente de los hombres",
+          "Sonrisa habitual, a veces los molares visibles",
+          "Bromas cariñosas con los niños",
+          "La verdad incluso al bromear"
+        ],
+        [
+          ["🗣️ La manera de hablar",
+           "Aisha (que Alá esté complacido con ella) dice: el Profeta ﷺ no soltaba las palabras de corrido como vosotros, sino que hablaba con una palabra clara y distinta que recordaba quien estaba sentado junto a él. Según Anas (que Alá esté complacido con él), repetía tres veces para ser comprendido.",
+           "Fuente: Ash-Shamail hadiz 191 (p. 119), 192 (p. 119)"],
+          ["🙂 La sonrisa",
+           "Abdalah ibn Hariz ibn Yaz (que Alá esté complacido con él) dice: no vi a nadie más sonriente que el Mensajero de Alá ﷺ. Yarir ibn Abdalah (que Alá esté complacido con él) dice: desde que soy musulmán, nunca me negó su puerta y nunca me vio sin sonreír. Abu Zarr (que Alá esté complacido con él) lo vio reír hasta que se le vieron los molares.",
+           "Fuente: Ash-Shamail hadiz 194 (p. 120), 195 (p. 121), 196 (p. 121)"],
+          ["🐦 La verdad en la broma",
+           "Anas (que Alá esté complacido con él) cuenta que el Profeta ﷺ se mezclaba con ellos hasta decir a su hermanito: «¡Abu Umayr, qué fue del nugayr (el pajarito)?» Y dijo una vez a Anas con cariño: «¡Oh el de las dos orejas!» Su broma era cariño y misericordia, no mentira ni herida.",
+           "Fuente: Ash-Shamail hadiz 200 (p. 124), 201 (p. 125)"],
+          ["⚖️ La diferencia entre sonreír y reír",
+           "Aisha (que Alá esté complacido con ella) dice: nunca vi al Mensajero de Alá ﷺ reír a carcajadas hasta verle la garganta; solo sonreía (Sahih al-Bujari 4828, 6092; Sahih Muslim 899). Así pues, la risa en la que se ven los molares era ocasional (Sahih Muslim 187 de Ibn Masud; 2412 de Sad). La palabra «nawayiz» tiene varias interpretaciones: los últimos molares o los dientes delanteros.",
+           "Fuente: Ash-Shamail hadiz 195; Sahih al-Bujari 4828, 6092; Sahih Muslim 187, 2412, 899"],
+          ["➕ Más relatos auténticos sobre el humor y el carácter",
+           "Anas (que Alá esté complacido con él): serví diez años y él ﷺ nunca me dijo «uf» (Sahih al-Bujari 6038; Sahih Muslim 2309). «Bromeo, pero no digo sino la verdad.» (Tirmidhi 1990). La advertencia para quien miente para hacer reír a la gente (Sunan Abi Dawud 4990; Tirmidhi 3315). Precisión: el hadiz «tu sonrisa a tu hermano es una limosna» se refiere a sonreír al rostro del hermano (Tirmidhi 1956).",
+           "Fuente: Sahih al-Bujari 6038; Sahih Muslim 2309; Tirmidhi 1990, 3315, 1956; Sunan Abi Dawud 4990"]
+        ],
+        [
+          ["¿Cuántas veces repetía el Profeta ﷺ una palabra importante?", ["Una vez", "Tres veces", "Siete veces"]],
+          ["¿En qué dijo Abdalah ibn Hariz (que Alá esté complacido con él) que era el más?", ["En sonreír", "En dormir", "En caminar"]],
+          ["¿Cuál era la kunya del hermanito de Anas (que Alá esté complacido con él)?", ["Abu Umayr", "Abu Zayd", "Abu Zarr"]]
+        ],
+        [],
+        [
+          "Ash-Shamail al-Muhammadiyya (resumen de al-Albani): hadices 191, 192, 194, 195, 196, 200, 201 (todos «sahih»)",
+          "No incluidos (débiles): hadiz 193 (mención de la pantorrilla y la risa), hadiz 199",
+          "Con esta lección el programa queda completo: Sira (1-30) y Shamail (31-34)",
+          "Otras referencias: Sahih al-Bujari 4828, 6092, 6038; Sahih Muslim 899, 187, 2412, 2309; Tirmidhi 1990, 3315, 1956; Sunan Abi Dawud 4990"
+        ],
+        [
+          ["Aisha (que Alá esté complacido con ella)", "Aisha (que Alá esté complacido con ella) dijo: El Mensajero de Alá ﷺ no soltaba las palabras de corrido como vosotros; hablaba con una palabra clara y distinta que recordaba quien estaba sentado junto a él.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 191, p. 119; al-Albani: sahih"],
+          ["Anas ibn Malik (que Alá esté complacido con él)", "Anas (que Alá esté complacido con él) dijo: El Mensajero de Alá ﷺ repetía la palabra tres veces para ser comprendido.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 192, p. 119; al-Albani: sahih"],
+          ["Abdalah ibn Hariz ibn Yaz (que Alá esté complacido con él)", "Abdalah ibn Hariz (que Alá esté complacido con él) dijo: No vi a nadie más sonriente que el Mensajero de Alá ﷺ.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 194, p. 120; al-Albani: sahih"],
+          ["Yarir ibn Abdalah (que Alá esté complacido con él)", "Yarir (que Alá esté complacido con él) dijo: Desde que soy musulmán, el Mensajero de Alá ﷺ no me negó su puerta, y cada vez que me veía, sonreía. (En un relato: sonreía levemente.)", "Ash-Shamail al-Muhammadiyya, hadiz n.º 196, p. 121; al-Albani: sahih"],
+          ["Abu Zarr al-Gifari (que Alá esté complacido con él) (cita)", "Abu Zarr (que Alá esté complacido con él) dijo (tras el hadiz sobre el primero en entrar al Paraíso y el último en salir del Infierno): Vi al Mensajero de Alá ﷺ reír hasta que se le vieron los molares.", "Ash-Shamail al-Muhammadiyya, hadiz n.º 195, p. 121; al-Albani: sahih"],
+          ["Anas ibn Malik (que Alá esté complacido con él)", "Anas (que Alá esté complacido con él) dijo: El Mensajero de Alá ﷺ se mezclaba con nosotros hasta decir a mi hermanito: «¡Abu Umayr, qué fue del nugayr?»", "Ash-Shamail al-Muhammadiyya, hadiz n.º 201, p. 125; al-Albani: sahih"]
+        ]
+      ]
     }
 
   }
