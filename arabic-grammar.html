@@ -33,7 +33,11 @@
     /* ---- Zubaan ke hisaab se font/direction (sirf content, header nahi) ---- */
     html[data-mlang="u"] main { direction: rtl; text-align: right; font-family: 'Noto Nastaliq Urdu', 'Amiri', serif; }
     html[data-mlang="hi"] main, html[data-mlang="hi"] .opt-btn, html[data-mlang="hi"] .back-btn, html[data-mlang="hi"] .next-day-btn, html[data-mlang="hi"] .submit-exam { font-family: 'Noto Sans Devanagari', 'Figtree', system-ui, sans-serif; }
-    html[data-mlang="ro"] main, html[data-mlang="en"] main, html[data-mlang="hi"] main { direction: ltr; text-align: left; }
+    html[data-mlang="ro"] main, html[data-mlang="en"] main, html[data-mlang="hi"] main,
+    html[data-mlang="mr"] main, html[data-mlang="ar"] main, html[data-mlang="fr"] main, html[data-mlang="es"] main { direction: ltr; text-align: left; }
+    html[data-mlang="mr"] main, html[data-mlang="mr"] .opt-btn, html[data-mlang="mr"] .back-btn, html[data-mlang="mr"] .next-day-btn, html[data-mlang="mr"] .submit-exam { font-family: 'Noto Sans Devanagari', 'Figtree', system-ui, sans-serif; }
+    html[data-mlang="mr"] .day-header h2 { font-family: 'Noto Sans Devanagari', serif; font-size: 20px; }
+    html[data-mlang="ar"] .day-header h2, html[data-mlang="fr"] .day-header h2, html[data-mlang="es"] .day-header h2 { font-family: 'Figtree', 'Amiri', serif; font-size: 21px; }
     html[data-mlang="u"] .opt-btn, html[data-mlang="u"] .back-btn, html[data-mlang="u"] .next-day-btn, html[data-mlang="u"] .submit-exam { font-family: 'Noto Nastaliq Urdu', 'Amiri', serif; }
 
     /* ---- Arabic alfaz (har zubaan mein ek jaisa) ---- */
@@ -268,7 +272,69 @@
         num: { s: 'Singular', d: 'Dual', p: 'Plural' }, gen: { m: 'Masc.', f: 'Fem.' }, per: { 3: 'Ghaib (3rd)', 2: 'Hazir (2nd)', 1: 'Mutakallim (1st)' }, perN: { 3: 'Ghaib (3rd person)', 2: 'Hazir (2nd person)', 1: 'Mutakallim (1st person)' }
       }
     };
-    const lang = () => { try { const v = QSLang.get(); return UI[v] ? v : 'u'; } catch (e) { return 'u'; } };
+    /* Nayi 4 zubaanein: page ke labels (UI). Course ka matn abhi English par girta hai
+       (grammar-lang.js aane tak) — Urdu par nahi, taake samajh mein aaye. */
+    UI.mr = {
+      title: 'नह्व व सर्फ — ३० दिवसांचा प्रवास', h1: '📖 नह्व व सर्फ',
+      admin: '🔒 सध्या फक्त अ‍ॅडमिनला दिसते (रिव्ह्यू मोड — सर्व दिवस खुले आहेत)',
+      journey: '📍 तुमचा प्रवास', daysOf: (a, b) => a + ' / ' + b + ' दिवस',
+      dayWord: 'दिवस', sarf: 'सर्फ', nahw: 'नह्व',
+      gSarf: 'सर्फ — शब्दाची रचना (दिवस १–१५)', gNahw: 'नह्व — वाक्याची रचना (दिवस १६–३०)',
+      back: '← मागे', goal: '🎯 उद्दिष्ट:', facts: '💡 लक्षात ठेवण्याच्या गोष्टी', refl: '🤲 धडा',
+      exam: n => '📝 परीक्षा — ' + n + ' प्रश्न', examSub: 'सर्व प्रश्नांची उत्तरे द्या, नंतर "जमा करा" दाबा',
+      submit: '✅ परीक्षा जमा करा', next: d => 'पुढील दिवस (दिवस ' + d + ') →', prev: '← मागील', allDone: '🎉 सर्व दिवस पूर्ण — मागे', allDone2: '🎉 सर्व दिवस पूर्ण — मागे जा',
+      pass: (s, t) => '🎉 अभिनंदन! तुम्ही ' + s + '/' + t + ' बरोबर केले.', passSub: (d, xp) => 'दिवस ' + d + ' पूर्ण! +' + xp + ' XP',
+      fail: (s, t) => '😢 तुम्ही ' + s + '/' + t + ' बरोबर केले.', failSub: 'पास होण्यासाठी कमीत कमी २ बरोबर उत्तरे लागतात. पुन्हा प्रयत्न करा.',
+      retry: '🔄 पुन्हा प्रयत्न करा', hdr: ['#', 'सीगा', 'अरबी', 'अर्थ'],
+      letters: ['अ', 'ब', 'क', 'ड'], right: 'बरोबर उत्तर',
+      num: { s: 'वाहिद', d: 'तसनिया', p: 'जमा' }, gen: { m: 'मुझक्कर', f: 'मुअन्नस' }, per: { 3: 'गायब', 2: 'हाजिर', 1: 'मुतकल्लिम' }, perN: { 3: 'गायब', 2: 'हाजिर', 1: 'मुतकल्लिम' }
+    };
+    UI.ar = {
+      title: 'النحو والصرف — رحلة 30 يومًا', h1: '📖 النحو والصرف',
+      admin: '🔒 يظهر حاليًا للمشرف فقط (وضع المراجعة — كل الأيام مفتوحة)',
+      journey: '📍 رحلتك', daysOf: (a, b) => a + ' / ' + b + ' يومًا',
+      dayWord: 'اليوم', sarf: 'الصرف', nahw: 'النحو',
+      gSarf: 'الصرف — بناء الكلمة (الأيام 1–15)', gNahw: 'النحو — بناء الجملة (الأيام 16–30)',
+      back: '→ رجوع', goal: '🎯 الهدف:', facts: '💡 أمور تُحفظ', refl: '🤲 الدرس',
+      exam: n => '📝 اختبار — ' + n + ' أسئلة', examSub: 'أجب عن كل الأسئلة ثم اضغط «إرسال»',
+      submit: '✅ إرسال الاختبار', next: d => 'اليوم التالي (اليوم ' + d + ') ←', prev: '→ السابق', allDone: '🎉 اكتملت كل الأيام — رجوع', allDone2: '🎉 اكتملت كل الأيام — ارجع',
+      pass: (s, t) => '🎉 مبارك! أجبت إجابة صحيحة على ' + s + '/' + t + '.', passSub: (d, xp) => 'أكملت اليوم ' + d + '! +' + xp + ' XP',
+      fail: (s, t) => '😢 أجبت إجابة صحيحة على ' + s + '/' + t + '.', failSub: 'تحتاج إلى إجابتين صحيحتين على الأقل للنجاح. حاول مرة أخرى.',
+      retry: '🔄 حاول مرة أخرى', hdr: ['#', 'الصيغة', 'العربية', 'المعنى'],
+      letters: ['أ', 'ب', 'ج', 'د'], right: 'الجواب الصحيح',
+      num: { s: 'مفرد', d: 'مثنى', p: 'جمع' }, gen: { m: 'مذكر', f: 'مؤنث' }, per: { 3: 'غائب', 2: 'حاضر', 1: 'متكلم' }, perN: { 3: 'غائب', 2: 'حاضر', 1: 'متكلم' }
+    };
+    UI.fr = {
+      title: 'Nahw wa Sarf — un parcours de 30 jours', h1: '📖 Nahw wa Sarf',
+      admin: '🔒 Visible pour l\u2019admin seulement (mode révision — tous les jours ouverts)',
+      journey: '📍 Votre parcours', daysOf: (a, b) => a + ' / ' + b + ' jours',
+      dayWord: 'Jour', sarf: 'Sarf', nahw: 'Nahw',
+      gSarf: 'Sarf — la formation du mot (jours 1–15)', gNahw: 'Nahw — la structure de la phrase (jours 16–30)',
+      back: '← Retour', goal: '🎯 But :', facts: '💡 Points à retenir', refl: '🤲 Leçon',
+      exam: n => '📝 Quiz — ' + n + ' questions', examSub: 'Répondez à toutes les questions, puis appuyez sur « Envoyer »',
+      submit: '✅ Envoyer le quiz', next: d => 'Jour suivant (jour ' + d + ') →', prev: '← Précédent', allDone: '🎉 Tous les jours terminés — retour', allDone2: '🎉 Tous les jours terminés — revenir',
+      pass: (s, t) => '🎉 Félicitations ! Vous avez ' + s + '/' + t + ' bonnes réponses.', passSub: (d, xp) => 'Jour ' + d + ' terminé ! +' + xp + ' XP',
+      fail: (s, t) => '😢 Vous avez ' + s + '/' + t + ' bonnes réponses.', failSub: 'Il faut au moins 2 bonnes réponses pour réussir. Réessayez.',
+      retry: '🔄 Réessayer', hdr: ['#', 'Forme', 'Arabe', 'Sens'],
+      letters: ['A', 'B', 'C', 'D'], right: 'Bonne réponse',
+      num: { s: 'Singulier', d: 'Duel', p: 'Pluriel' }, gen: { m: 'Masc.', f: 'Fém.' }, per: { 3: 'Absent (3e)', 2: 'Présent (2e)', 1: 'Locuteur (1re)' }, perN: { 3: 'Ghayb (3e personne)', 2: 'Hâdir (2e personne)', 1: 'Moutakallim (1re personne)' }
+    };
+    UI.es = {
+      title: 'Nahw wa Sarf: un recorrido de 30 días', h1: '📖 Nahw wa Sarf',
+      admin: '🔒 Visible solo para el admin (modo revisión: todos los días abiertos)',
+      journey: '📍 Tu recorrido', daysOf: (a, b) => a + ' / ' + b + ' días',
+      dayWord: 'Día', sarf: 'Sarf', nahw: 'Nahw',
+      gSarf: 'Sarf: la formación de la palabra (días 1-15)', gNahw: 'Nahw: la estructura de la frase (días 16-30)',
+      back: '← Atrás', goal: '🎯 Objetivo:', facts: '💡 Puntos para recordar', refl: '🤲 Lección',
+      exam: n => '📝 Cuestionario: ' + n + ' preguntas', examSub: 'Responde todas las preguntas y pulsa «Enviar»',
+      submit: '✅ Enviar el cuestionario', next: d => 'Día siguiente (día ' + d + ') →', prev: '← Anterior', allDone: '🎉 Todos los días completados: atrás', allDone2: '🎉 Todos los días completados: volver',
+      pass: (s, t) => '🎉 ¡Enhorabuena! Has acertado ' + s + '/' + t + '.', passSub: (d, xp) => '¡Día ' + d + ' completado! +' + xp + ' XP',
+      fail: (s, t) => '😢 Has acertado ' + s + '/' + t + '.', failSub: 'Necesitas al menos 2 respuestas correctas para aprobar. Inténtalo otra vez.',
+      retry: '🔄 Intentar otra vez', hdr: ['#', 'Forma', 'Árabe', 'Significado'],
+      letters: ['A', 'B', 'C', 'D'], right: 'Respuesta correcta',
+      num: { s: 'Singular', d: 'Dual', p: 'Plural' }, gen: { m: 'Masc.', f: 'Fem.' }, per: { 3: 'Ausente (3.ª)', 2: 'Presente (2.ª)', 1: 'Hablante (1.ª)' }, perN: { 3: 'Gaib (3.ª persona)', 2: 'Hadir (2.ª persona)', 1: 'Mutakallim (1.ª persona)' }
+    };
+    const lang = () => { try { const v = QSLang.get(); return UI[v] ? v : (v && v !== 'u' ? 'en' : 'u'); } catch (e) { return 'u'; } };
     const T = () => UI[lang()];
 
     // ============ Helpers ============
@@ -276,9 +342,9 @@
     // {{Arabic}} -> <span class="ar">…</span> (Arabic hamesha ek hi font/direction mein)
     const fmt = s => esc(s).replace(/\{\{(.*?)\}\}/g, '<span class="ar" lang="ar" dir="rtl">$1</span>');
     const plain = s => String(s).replace(/\{\{(.*?)\}\}/g, '$1');
-    const tx = d => d.t[lang()] || d.t.u;
+    const tx = d => d.t[lang()] || d.t.en || d.t.u;
     const dirAttr = () => lang() === 'u' ? 'rtl' : 'ltr';
-    const langAttr = () => ({ u: 'ur', ro: 'ur-Latn', hi: 'hi', en: 'en' })[lang()];
+    const langAttr = () => ({ u: 'ur', ro: 'ur-Latn', hi: 'hi', en: 'en', mr: 'mr', ar: 'ar', fr: 'fr', es: 'es' })[lang()];
 
     // ============ Progress storage ============
     function courseKey() { return 'p_' + (localStorage.getItem('activeProfile') || 'guest') + '_arabicCourse'; }
@@ -304,7 +370,8 @@
     function cardHTML(d) {
       const t = T(), x = tx(d), prog = courseLoad();
       const isDone = prog.completed.includes(d.day), score = prog.scores[d.day];
-      const sub = lang() === 'u' ? '<div class="day-sub en">' + esc(d.sub) + '</div>' : '<div class="day-sub rtl" lang="ur">' + fmt(d.t.u.title) + '</div>';
+      const sub = lang() === 'u' ? '<div class="day-sub en">' + esc(d.sub) + '</div>'
+        : (UI[lang()] && lang() !== 'ro' && lang() !== 'hi' && lang() !== 'en' ? '<div class="day-sub en">' + fmt(d.t.en.title) + '</div>' : '<div class="day-sub rtl" lang="ur">' + fmt(d.t.u.title) + '</div>');
       return '<button type="button" class="day-card ' + d.type + (isDone ? ' completed' : '') + '" onclick="openDay(' + d.day + ')">' +
         '<div class="day-top"><div class="day-emoji" aria-hidden="true">' + d.emoji + '</div>' + (isDone ? '<div class="day-badge" aria-label="done">✓</div>' : '') + '</div>' +
         '<div class="day-label">' + esc(t.dayWord) + ' ' + d.day + ' • ' + esc(d.type === 'sarf' ? t.sarf : t.nahw) + '</div>' +
@@ -357,7 +424,8 @@
 
     function renderDetail() {
       const d = currentDay, t = T(), x = tx(d), prog = courseLoad(), isDone = prog.completed.includes(d.day);
-      const sub = lang() === 'u' ? '<div class="sub en">' + esc(d.sub) + '</div>' : '<div class="sub rtl" lang="ur">' + fmt(d.t.u.title) + '</div>';
+      const sub = lang() === 'u' ? '<div class="sub en">' + esc(d.sub) + '</div>'
+        : (UI[lang()] && lang() !== 'ro' && lang() !== 'hi' && lang() !== 'en' ? '<div class="sub">' + fmt(d.t.en.title) + '</div>' : '<div class="sub rtl" lang="ur">' + fmt(d.t.u.title) + '</div>');
       let html = '<div class="day-header ' + (d.type === 'nahw' ? 'nahw-h' : '') + '">' +
         '<div class="label">' + esc(t.dayWord) + ' ' + d.day + ' • ' + (d.type === 'sarf' ? '🔤 ' + esc(t.sarf) : '📖 ' + esc(t.nahw)) + '</div>' +
         '<h2>' + d.emoji + ' ' + fmt(x.title) + '</h2>' + sub + '</div>' +
