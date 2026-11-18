@@ -52,15 +52,17 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 **Nahw-Sarf (chal raha hai):** `grammar-lang.js` — 30 din ke **unwan aur maqsad** chaar zubaanoN mein (page ke button/labels aur `arabic-grammar.html` ke andar hi). Ab tak `grammar-lang.js` mein sirf title/goal hain; **sabaq ka poora matn (sections, keyFacts, reflection, quiz)** abhi English par girta hai — Urdu par nahi, taake samajh mein aaye. Woh aage jodna ho to bas `grammar-lang.js` mein us din ki `sections` waghairah likh dein.
 
-**Games (mukammal — UI + sawal + jawab + kahaniyan):** `games-extra.js` mein page ke **saare button, label aur jumle** (Maratib-e-Ilm ka day-select aur ladder, lifelines, "pakka hai?", natije, celebration, Sahaba/Memory/Emoji ke score aur messages, Bazm-e-Fahm ke parde, alert/confirm) aur **Memory ke card ke matlab** hain. Sawal-jawab ka matn paanch alag files mein hai (har file `window.FQ_GAMES_TR` mein `{mr,ar,fr,es}` entries daalti hai, key = **bilkul wahi Roman jumla** jo `games.html`/`games-lang.js` mein hai):
+**Games (mukammal — UI + sawal + jawab + kahaniyan):** `games-extra.js` mein page ke **saare button, label aur jumle** (Maratib-e-Ilm ka day-select, natije, celebration, Sahaba/Memory/Emoji ke score aur messages, Bazm-e-Fahm ke parde, alert/confirm) aur **Memory ke card ke matlab** hain. Sawal-jawab ka matn paanch alag files mein hai (har file `window.FQ_GAMES_TR` mein `{mr,ar,fr,es}` entries daalti hai, key = **bilkul wahi Roman jumla** jo `games.html`/`games-lang.js` mein hai):
 
-- `games-tr.js` — naam, jagah, surah, mahina, aam jawab (`Musa (AS)`, `Makkah`, `Ramzan`, `Haan`, `Pehla` …) — yehi KBC/Sahaba/Emoji teeno ke options mein kaam aate hain.
-- `games-tr-kbc.js` — **Maratib-e-Ilm ke 30 din × 10 sawal** (300 sawal + unke options).
+- `games-tr.js` — naam, jagah, surah, mahina, aam jawab (`Musa (AS)`, `Makkah`, `Ramzan`, `Haan`, `Pehla` …) — yehi Maratib/Sahaba/Emoji teeno ke options mein kaam aate hain.
+- `games-tr-maratib.js` — **Maratib-e-Ilm ke 30 din × 10 sawal** (300 sawal + unke options).
 - `games-tr-sahaba.js` — Sahaba ke 50 sawal aur 50 naam.
 - `games-tr-stories.js` — Sahaba ki **50 kahaniyan** (poore paragraph).
 - `games-tr-emoji.js` — Emoji quiz ke sawal aur jawab.
 
 `games-extra.js` ka `GT()` nayi zubaan par pehle in files mein dekhta hai, na mile to purana `GT()` (Urdu/Hindi/English) — yaani **kabhi khaali ya `undefined` nahi**. Purani 4 zubaanein bilkul pehle jaisi hain. Arabi lafz (card ka `اللہ`, `ﷺ`, ayat ka hissa) wahi rehte hain — sirf matlab badalta hai. Bazm-e-Fahm ke lafz ka matlab `course-lang.js` se aata hai (`u_mr` / `t_mr` …).
+
+**Maratib-e-Ilm ek sada quiz hai (v139):** pehle ye game ek TV quiz show (KBC / "kaun banega crorepati") ke andaaz mein tha — inaam ki seedhi, safe darje, 50:50, hazireen ki raay, saathi se mashwara, ustad se rujoo, sawal tabdeel, "pakka jawab?" aur stars. **Wo poora andaaz hata diya gaya** (kisi mashhoor show ka format istemal karna theek nahi tha). Ab: **30 din × 10 sawal**, aasani se mushkil ki taraf, sahi jawab = agla sawal, galat = din dobara, **6/10 = din mukammal** aur agla din khul jata hai. Andar ke naam bhi saaf kar diye (`kbc*` → `mrt*`), file ka naam `games-tr-maratib.js`. Purani progress (`…_kbcUnlockedDay` / ab `…_maratibUnlockedDay`) ek baar apne aap nayi key mein chali jaati hai.
 
 **Zubaan badalne ki lag (v138):** `app.js` ka engine ab — (1) har (zubaan, jumla) ka tarjuma ek hi baar nikalta hai (memo), (2) `paint()` ek waqt mein ek hi baar chalta hai, (3) apne hi DOM badlaav par MutationObserver dobara poora page nahi ghoomta, (4) zubaan badalte waqt ek pal ke liye saari CSS transition/animation band (`html.fq-lang`), (5) `games.html` ka refresh agle task mein. Naya service worker aane par app khud ek baar reload ho jaati hai.
 
@@ -68,7 +70,7 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 
 **Chhoti chhoti jagahen (v135):** `tools-lang.js` aur `ui-extra.js` — Tasbeeh (tile ki "SubhanAllah • shuru karein" line, zikr ke matlab, Aaj/Kul/Round, Peechhe/Zero/Vibration/Awaaz/Screen on, saare paigham), **Namaz ka Hisaab** (panel, mahine ka report, mahine/haftay ke naam, azan ki awaazein, calendar alarm), **Qibla Finder**, install popup, backup, exam, admin panel, certificate, onboarding aur Quran page ke jumle. Number/naam wale jumle `pat` (regex + `$1`) se badalte hain — `app.js` ka engine nayi zubaan par pehle `dict`, phir `pat`, phir purani 4 zubaanoN ka `D`/`PAT` dekhta hai. **course-lang.js** ab harkaat (zabar/zer/pesh) ke bagair bhi lafz milaata hai, is liye koi lafz English par nahi girta (pehle `بَعُوضَة` jaisa lafz `mosquito` dikha sakta tha). `quran.html` ke lafz-tip mein bhi ab chuni hui zubaan ka matlab aata hai.
 
-**Tarjuma ab yahan mukammal hai:** UI + **Games (UI + 300 KBC sawal + Sahaba ke sawal/kahaniyan + Emoji quiz)** + course ke 900 lafz + 138 duaein + Arkan ke paanchon page + Seerat ke 34 din + Tajweed ke 38 qawaid + Asma ke 99 naam + Tasbeeh/Namaz/Qibla ke saare jumle.
+**Tarjuma ab yahan mukammal hai:** UI + **Games (UI + 300 Maratib-e-Ilm sawal + Sahaba ke sawal/kahaniyan + Emoji quiz)** + course ke 900 lafz + 138 duaein + Arkan ke paanchon page + Seerat ke 34 din + Tajweed ke 38 qawaid + Asma ke 99 naam + Tasbeeh/Namaz/Qibla ke saare jumle.
 
 **Course ke lafz (mukammal):** `course-lang.js` — **Day 1–90, saare 900 lafz** ka matlab + mashq ki tafseel chaar zubaanoN mein (मराठी · العربية · Français · Español). Har entry `"عربی لفظ"` se judi hai; yeh file `courseData` mein `u_mr/u_ar/u_fr/u_es` aur `t_mr/t_ar/t_fr/t_es` bhar deti hai, phir `QSLang.pick()` khud chuni hui zubaan uthata hai. Lafz harkaat (zabar/zer/pesh) ke bagair bhi mil jaata hai, is liye koi lafz English par nahi girta. Kisi lafz ka tarjuma theek karna ho to sirf usi entry ko badlein — baaki par asar nahi. Share image mein dono. 👤 alag-alag naam ki alag profile (har ki apni history)
 
@@ -146,7 +148,7 @@ Basic / Intermediate / High qawaid, misaalon ke saath — har misaal Qari ki awa
 Azan app band hone par bhi bajne ke liye. **Phone/screen par koi lock nahi lagta** (device-admin ka purana code hata diya gaya). Dekhein `android/README.md` (GitHub Actions se APK banta hai).
 
 ### 🎮 Games (`games.html`)
-🏆 KBC · ⭐ Sahaba · 🧠 Memory · 😀 Emoji · 🎓 **Bazm-e-Fahm** (ab isi page ke andar, alag file nahi; purana `bazm.html` link sirf redirect hai) — sound effects ke saath. Header ka **🎵 button** har game mein nasheed chalata/rokta hai (`nasheed.mp3` chahiye).
+🪜 **Maratib-e-Ilm** · ⭐ Sahaba · 🧠 Memory · 😀 Emoji · 🎓 **Bazm-e-Fahm** (ab isi page ke andar, alag file nahi; purana `bazm.html` link sirf redirect hai) — sound effects ke saath. Header ka **🎵 button** har game mein nasheed chalata/rokta hai (`nasheed.mp3` chahiye).
 - Maratib-e-Ilm = **30 din × 10 sawal**; day-list mein poore 30 din dikhte hain (khule 🔓 / band 🔒), jeetne par agla din khulta hai.
 - Zubaan: UI, Memory ke matlab **aur sawal-jawab-kahaniyan** — sab 8 zubaanoN mein (`games-lang.js` + `games-extra.js` + `games-tr*.js`).
 
@@ -207,7 +209,7 @@ Dhyan dein:
 ├── dua.html         # 119 masnoon duaein
 ├── tajweed.html     # 38 tajweed qawaid + hawala
 ├── asma.html        # 99 Asma-ul-Husna
-├── games.html       # KBC, Sahaba, Memory, Emoji, Bazm-e-Fahm
+├── games.html       # Maratib-e-Ilm, Sahaba, Memory, Emoji, Bazm-e-Fahm
 ├── privacy.html / terms.html / kill.html
 ├── manifest.json    # PWA manifest (icons, screenshots, shortcuts)
 ├── sw.js            # Service worker (offline, sync, push)
@@ -244,7 +246,24 @@ Dhyan dein:
 | `asma-lang.js` | Asma-ul-Husna ke 99 naam |
 | `grammar-lang.js` | Nahw-Sarf ke 30 din (unwan + maqsad) |
 | `games-extra.js` | Games ka UI + Memory ke matlab + `GT/GU/GM` |
-| `games-tr.js` … `games-tr-emoji.js` | Games ke sawal, jawab aur kahaniyan (5 files) |
+| `games-tr.js` … `games-tr-emoji.js` | Games ke sawal, jawab aur kahaniyan (5 files: `games-tr`, `games-tr-maratib`, `games-tr-sahaba`, `games-tr-stories`, `games-tr-emoji`) |
+
+## ⚖️ Copyright — kya kisi aur ka hai, aur kya nahi
+
+App ka **apna** (Fahm-ul-Quran ka) hissa: saara code, design, icons, illustration (`make_nature_ambience.py` se banayi gayi background awaaz bhi), paanch zubaanoN ke tarjume, islahat, aur **games ke saare sawal** — ye sab apne likhe hue hain, kisi kitab/app/show se naqal nahi.
+
+**Teesri cheezein** (sirf istemal hoti hain, un par haq nahi):
+
+| Cheez | Kahan se | Haq kiska |
+|---|---|---|
+| Quran ka text, tarjuma (Junagarhi), tafseer, word-by-word audio | quran.com | mutarjim / nashir (publisher) |
+| Qari ki ayat ki recording | everyayah.com | unke apne usool |
+| Fonts (Amiri, Noto Nastaliq Urdu, Noto Sans Devanagari, Figtree, Playfair Display, Aref Ruqaa, Scheherazade New) | Google Fonts | OFL / Apache (istemal ki ijazat wali open licence) |
+| Hadith ka arabi matn (Riyadh-us-Saliheen, Kutub-e-Sittah) | classical matn | aam taur par aam-mal (public domain); hawala har jagah diya gaya hai |
+
+**Jo theek nahi tha aur hata diya gaya:** Maratib-e-Ilm pehle ek mashhoor TV quiz show (KBC / "kaun banega crorepati") ke **format** par tha — inaam ki seedhi, safe/mahefooz darje, 50:50, hazireen ki raay, saathi se mashwara, ustad se rujoo, sawal tabdeel aur "pakka jawab?". Kisi jaani-pehchani show ka format istemal karna **copyright aur trademark** dono ka masla ban sakta hai. Is liye wo poora andaaz **hata diya gaya** (v139) aur ab ye ek sada quiz hai.
+
+Agar aap kisi cheez ke haqdaar hain aur aitraaz hai, to [gormefauzan@gmail.com](mailto:gormefauzan@gmail.com) — hum foran hata denge. Tafseel app ke `privacy.html` ke hissa **8** mein bhi likhi hai.
 
 ## 🚀 GitHub Pages par Live Karein
 

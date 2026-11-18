@@ -729,14 +729,14 @@
     document.addEventListener('pointerdown', getCtx, { once: true });
 
     // ---------- hooks: har game ka jawab ----------
-    wrap('kbcAnswer', function (orig, args) {
+    wrap('mrtAnswer', function (orig, args) {
         let ok = null;
-        try { ok = (args[0] === kbcData[kbcState.qIndex][5]); } catch (e) {}
+        try { ok = (args[0] === mrtData[mrtState.i][5]); } catch (e) {}
         const r = orig.apply(this, args);
         reaction(ok);
         return r;
     });
-    wrap('kbcFinish', function (orig, args) {
+    wrap('mrtFinish', function (orig, args) {
         if (!args[0]) sfx.over();      // haar par udaas awaaz (jeet par celebrate() fanfare bajata hai)
         return orig.apply(this, args);
     });
@@ -796,10 +796,10 @@
     // Zubaan: nayi 4 zubaanoN par games-extra.js ka FQX, warna wahi Roman matn (pehle jaisa)
     function TN(k, d) { try { return (window.FQX ? FQX(k, d) : d) || d; } catch (e) { return d; } }
     function getAudio() {
-        let a = document.getElementById('kbcNasheed');
+        let a = document.getElementById('mrtNasheed');
         if (!a) {
             a = document.createElement('audio');
-            a.id = 'kbcNasheed';
+            a.id = 'mrtNasheed';
             a.loop = true;
             a.preload = 'none';
             a.src = 'nature-ambience.mp3';
@@ -867,8 +867,8 @@
         start();
     };
 
-    // KBC dobara ban'ne par button/label theek rahe
-    wrap('initKBC', function (orig, args) {
+    // Maratib-e-Ilm dobara ban'ne par button/label theek rahe
+    wrap('initMrt', function (orig, args) {
         const r = orig.apply(this, args);
         syncNasheedBtn();
         return r;
@@ -891,7 +891,7 @@
     // 🛠 Data fix: kuch sawalon mein sahi jawab string ("0") likha hai, number banao
     // ==========================================================
     try {
-        KBC.forEach(function (day) {
+        MRT.forEach(function (day) {
             day.forEach(function (q) { if (typeof q[5] === 'string') q[5] = parseInt(q[5], 10); });
         });
     } catch (e) {}

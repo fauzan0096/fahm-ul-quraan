@@ -13,7 +13,7 @@
     <script src="ui-extra.js"></script>
     <script src="games-lang.js"></script>
     <script src="games-tr.js"></script>
-    <script src="games-tr-kbc.js"></script>
+    <script src="games-tr-maratib.js"></script>
     <script src="games-tr-sahaba.js"></script>
     <script src="games-tr-stories.js"></script>
     <script src="games-tr-emoji.js"></script>
@@ -23,7 +23,7 @@
     <script src="tools.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #0F4C3A; --secondary: #D4AF37; --bg: #F4F7F6; --card-bg: #fff; --text: #333; --text-light: #666; --border: #ddd; --kbc-bg: #0b3a2c; --kbc-gold: #D9B65A; --kbc-blue: #0F4C3A; }
+        :root { --primary: #0F4C3A; --secondary: #D4AF37; --bg: #F4F7F6; --card-bg: #fff; --text: #333; --text-light: #666; --border: #ddd; --mrt-bg: #0b3a2c; --mrt-gold: #D9B65A; }
         [data-theme="dark"] { --primary: #1a1a2e; --secondary: #6ee7b7; --bg: #0f0f23; --card-bg: #1e1e36; --text: #eee; --text-light: #aaa; --border: #333; }
         * { box-sizing: border-box; margin: 0; padding: 0; transition: background 0.3s, color 0.3s; }
         body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); padding-bottom: 30px; }
@@ -53,41 +53,28 @@
         .cele-card button { background: #D4AF37; color: #000; border: none; padding: 10px 26px; border-radius: 22px; font-weight: bold; font-size: 15px; cursor: pointer; }
         @keyframes celePop { from { transform: scale(.2); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 
-        #kbc { background: var(--kbc-bg); border-radius: 15px; padding: 20px; margin-bottom: 20px; min-height: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); position: relative; overflow: hidden; }
-        #kbc::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 0%, rgba(217,182,90,0.15), transparent 60%); pointer-events: none; }
-        .kbc-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; position: relative; z-index: 1; color: var(--kbc-gold); font-weight: bold; font-size: 13px; gap: 8px; }
-        .kbc-day { background: rgba(217,182,90,0.2); padding: 5px 12px; border-radius: 15px; }
-        .kbc-dayprog { background: rgba(217,182,90,0.12); padding: 5px 10px; border-radius: 15px; font-size: 11.5px; white-space: nowrap; }
-        .kbc-day option { background: #0b3a2c; color: #fff; }
-        .kbc-prize { background: rgba(217,182,90,0.2); padding: 5px 12px; border-radius: 15px; }
-        .kbc-qnum { text-align: center; color: #aaa; font-size: 12px; margin-bottom: 10px; position: relative; z-index: 1; }
-        .kbc-qnum b { color: var(--kbc-gold); }
-        .kbc-question { color: #fff; font-size: 17px; font-weight: 600; text-align: center; padding: 20px 15px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid rgba(217,182,90,0.3); margin-bottom: 20px; min-height: 80px; display: flex; align-items: center; justify-content: center; line-height: 1.5; position: relative; z-index: 1; }
-        .kbc-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; position: relative; z-index: 1; }
-        .kbc-opt { background: linear-gradient(135deg, #14614A, #0F4C3A); color: #fff; border: 2px solid #2f7a60; padding: 12px 10px; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; text-align: left; display: flex; gap: 8px; align-items: center; }
-        .kbc-opt b { color: var(--kbc-gold); font-weight: bold; }
-        .kbc-opt.correct { background: linear-gradient(135deg, #1a5c2a, #0c3c1a); border-color: #2ea14a; }
-        .kbc-opt.wrong { background: linear-gradient(135deg, #5c1a1a, #3c0c0c); border-color: #a12e2e; }
-        .kbc-opt.sel { border-color: var(--kbc-gold); background: rgba(217,182,90,0.22); }
-        .kbc-confirm { display: flex; gap: 8px; margin-top: 12px; position: relative; z-index: 1; }
-        .kbc-confirm button { flex: 1; padding: 11px 8px; border-radius: 14px; font-weight: bold; font-size: 13px; cursor: pointer; border: 1px solid var(--kbc-gold); background: transparent; color: var(--kbc-gold); }
-        .kbc-confirm button.yes { background: var(--kbc-gold); color: #000; }
-        .kbc-quit { display: block; margin: 14px auto 0; background: transparent; border: 1px solid rgba(255,255,255,.3); color: #ddd; padding: 8px 16px; border-radius: 16px; font-size: 12px; cursor: pointer; position: relative; z-index: 1; }
-        .kbc-note { text-align: center; color: #aaa; font-size: 11px; margin-top: 8px; position: relative; z-index: 1; }
-        .kbc-opt.disabled { opacity: 0.4; cursor: not-allowed; }
-        .kbc-lifelines { display: flex; justify-content: center; gap: 8px; margin-top: 15px; position: relative; z-index: 1; flex-wrap: wrap; }
-        .kbc-life { background: rgba(217,182,90,0.15); color: var(--kbc-gold); border: 1px solid var(--kbc-gold); padding: 8px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; cursor: pointer; }
-        .kbc-life:disabled { opacity: 0.3; cursor: not-allowed; }
-        .kbc-life.on { background: var(--kbc-gold); color: #000; }
-        .kbc-result { text-align: center; padding: 25px 15px; color: #fff; position: relative; z-index: 1; }
-        .kbc-result h2 { color: var(--kbc-gold); margin-bottom: 15px; font-size: 22px; }
-        .kbc-result .prize { font-size: 28px; color: #4ade80; font-weight: bold; margin: 15px 0; }
-        .kbc-btn { background: linear-gradient(135deg, var(--kbc-gold), #B8923A); color: #000; border: none; padding: 12px 25px; border-radius: 25px; font-weight: bold; font-size: 15px; cursor: pointer; margin-top: 10px; }
-        .kbc-ladder { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 20px; position: relative; z-index: 1; }
-        .kbc-ladder span { background: rgba(255,255,255,0.08); color: #aaa; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; }
-        .kbc-ladder span.active { background: var(--kbc-gold); color: #000; }
-        .kbc-ladder span.safe { border: 1px solid var(--kbc-gold); color: var(--kbc-gold); }
-        .kbc-ladder span.done { background: rgba(74,222,128,0.25); color: #4ade80; }
+        /* ===== Maratib-e-Ilm — 30 din × 10 sawal (sada quiz: koi inaam ki seedhi, koi lifeline nahi) ===== */
+        #mrt { background: var(--mrt-bg); border-radius: 15px; padding: 20px; margin-bottom: 20px; min-height: 420px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); position: relative; overflow: hidden; }
+        #mrt::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 0%, rgba(217,182,90,0.10), transparent 60%); pointer-events: none; }
+        .mrt-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; position: relative; z-index: 1; color: var(--mrt-gold); font-weight: bold; font-size: 13px; gap: 8px; }
+        .mrt-day { background: rgba(217,182,90,0.2); padding: 5px 12px; border-radius: 15px; }
+        .mrt-day option { background: #0b3a2c; color: #fff; }
+        .mrt-dayprog { background: rgba(217,182,90,0.12); padding: 5px 10px; border-radius: 15px; font-size: 11.5px; white-space: nowrap; }
+        .mrt-score { background: rgba(217,182,90,0.2); padding: 5px 12px; border-radius: 15px; white-space: nowrap; }
+        .mrt-qnum { text-align: center; color: #aaa; font-size: 12px; margin-bottom: 10px; position: relative; z-index: 1; }
+        .mrt-qnum b { color: var(--mrt-gold); }
+        .mrt-question { color: #fff; font-size: 17px; font-weight: 600; text-align: center; padding: 20px 15px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid rgba(217,182,90,0.3); margin-bottom: 20px; min-height: 80px; display: flex; align-items: center; justify-content: center; line-height: 1.5; position: relative; z-index: 1; }
+        .mrt-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; position: relative; z-index: 1; }
+        .mrt-opt { background: linear-gradient(135deg, #14614A, #0F4C3A); color: #fff; border: 2px solid #2f7a60; padding: 12px 10px; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; text-align: left; display: flex; gap: 8px; align-items: center; }
+        .mrt-opt b { color: var(--mrt-gold); font-weight: bold; }
+        .mrt-opt.correct { background: linear-gradient(135deg, #1a5c2a, #0c3c1a); border-color: #2ea14a; }
+        .mrt-opt.wrong { background: linear-gradient(135deg, #5c1a1a, #3c0c0c); border-color: #a12e2e; }
+        .mrt-result { text-align: center; padding: 25px 15px; color: #fff; position: relative; z-index: 1; }
+        .mrt-result h2 { color: var(--mrt-gold); margin-bottom: 15px; font-size: 22px; }
+        .mrt-result .sc { font-size: 26px; color: #4ade80; font-weight: bold; margin: 15px 0; }
+        .mrt-btn { background: linear-gradient(135deg, var(--mrt-gold), #B8923A); color: #000; border: none; padding: 12px 25px; border-radius: 25px; font-weight: bold; font-size: 15px; cursor: pointer; margin-top: 10px; }
+        .mrt-quit { display: block; margin: 14px auto 0; background: transparent; border: 1px solid rgba(255,255,255,.3); color: #ddd; padding: 8px 16px; border-radius: 16px; font-size: 12px; cursor: pointer; position: relative; z-index: 1; }
+        .mrt-note { text-align: center; color: #aaa; font-size: 11px; margin-top: 8px; position: relative; z-index: 1; }
 
         .sahaba-box { background: var(--card-bg); padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--secondary); }
         .sahaba-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
@@ -132,8 +119,8 @@ html[data-mlang="hi"] body,html[data-mlang="hi"] button,html[data-mlang="hi"] se
 html[data-mlang="mr"] body,html[data-mlang="mr"] button,html[data-mlang="mr"] select{font-family:'Noto Sans Devanagari','Poppins',sans-serif}
 html[data-mlang="ar"] body,html[data-mlang="ar"] button,html[data-mlang="ar"] select{font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;line-height:1.9}
 .mem-card .tr{font-size:12px;line-height:1.4;direction:ltr}
-html[data-mlang="ar"] .mem-card .tr,html[data-mlang="ar"] .sahaba-q,html[data-mlang="ar"] .sahaba-story p,html[data-mlang="ar"] .kbc-question{direction:rtl;text-align:right}
-html[data-mlang="ar"] .kbc-question,html[data-mlang="ar"] .kbc-opt{text-align:right}
+html[data-mlang="ar"] .mem-card .tr,html[data-mlang="ar"] .sahaba-q,html[data-mlang="ar"] .sahaba-story p,html[data-mlang="ar"] .mrt-question{direction:rtl;text-align:right}
+html[data-mlang="ar"] .mrt-question,html[data-mlang="ar"] .mrt-opt{text-align:right}
 html[data-mlang="u"] .main-nav{direction:rtl}
 html[data-mlang="ar"] .main-nav{direction:rtl}
 #deeniNotice{font-family:inherit}
@@ -215,14 +202,14 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
         </div>
     </header>
     <div class="main-nav">
-        <button class="nav-btn active" onclick="switchGame('kbc', this)" data-g="n_kbc">🪜 Maratib-e-Ilm</button>
+        <button class="nav-btn active" onclick="switchGame('mrt', this)" data-g="n_mrt">🪜 Maratib-e-Ilm</button>
         <button class="nav-btn" onclick="switchGame('sahaba', this)" data-g="n_sahaba">⭐ Sahaba</button>
         <button class="nav-btn" onclick="switchGame('memory', this)" data-g="n_memory">🧠 Memory</button>
         <button class="nav-btn" onclick="switchGame('emoji', this)" data-g="n_emoji">😀 Emoji</button>
         <button class="nav-btn" onclick="switchGame('bazm', this)" data-g="n_bazm">🎓 Bazm-e-Fahm</button>
     </div>
     <div class="container">
-        <div id="kbc" class="game-section active"></div>
+        <div id="mrt" class="game-section active"></div>
         <div id="sahaba" class="game-section"></div>
         <div id="memory" class="game-section"></div>
         <div id="emoji" class="game-section"></div>
@@ -232,19 +219,9 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
         <section id="bz_vStart">
             <div class="bz-card">
                 <h2 data-g="bz_h">Bazm-e-Fahm</h2>
-                <p class="note" style="margin:0" data-lbh="gintro">Quran ke lafzon ke 15 sawal. Har 3 sawal ke baad ek <b>darja</b> pakka ho jaata hai. Galat jawab par aap pichla pakka darja ka XP rakhte hain. Koi paisa nahi, sirf <b>Ilm Points (XP)</b>.</p>
-                <div id="bz_tierList" style="margin-top:10px"></div>
+                <p class="note" style="margin:0" data-lbh="gintro">Quran ke lafzon ke 15 sawal. Har sawal ka apna XP hai — sawal mushkil hota jaata hai to XP bhi barhta hai. Galat jawab par round khatam, magar jo XP kamaya wo aapka. Koi paisa nahi, sirf <b>Ilm Points (XP)</b>.</p>
                 <div class="note" id="bz_poolNote" style="margin-top:8px"></div>
                 <button class="btn" id="bz_btnStart" data-g="bz_start">▶️ Shuru karein</button>
-            </div>
-            <div class="bz-card">
-                <h2 data-g="bz_madad_h">Madad ke 4 tareeqe (har ek sirf ek baar)</h2>
-                <div class="note" data-lbh="gmadad">
-                    ✂️ <b>Do Ghalat Hatayein</b>: 2 ghalat jawab hat jaate hain<br>
-                    👥 <b>Hazireen ki Raay</b>: andaza (asli log nahi, sirf mashwara)<br>
-                    📞 <b>Ustad se Rujoo</b>: ek asli ishara (padhne ka tareeqa / ayat ka hissa)<br>
-                    🔄 <b>Sawal Tabdeel</b>: naya sawal, usi darje ka
-                </div>
             </div>
             <p class="note" style="text-align:center" data-lbh="gnote">Ye game sirf seekhne mein madad ke liye hai. Deeni baatein mustanad ustad se seekhein.</p>
         </section>
@@ -256,14 +233,8 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
             <div class="bz-card" style="margin-top:10px">
                 <div class="q-prompt" id="bz_qPrompt"></div>
                 <div class="q-main" id="bz_qMain"></div>
-                <div class="q-hint hidden" id="bz_qHint"></div>
                 <div class="opts" id="bz_opts"></div>
-                <div class="confirm hidden" id="bz_confirm">
-                    <button class="btn gold" id="bz_btnYes" data-g="yes">Haan, jawab pakka hai</button>
-                    <button class="btn ghost" id="bz_btnNo" data-g="no">Dobara sochun</button>
-                </div>
-                <div class="lifes" id="bz_lifes"></div>
-                <button class="btn ghost" id="bz_btnQuit" style="margin-top:10px" data-g="bz_quit">🛑 Yahin Ruk Jayein (abhi tak ka XP le lein)</button>
+                <button class="btn ghost" id="bz_btnQuit" style="margin-top:10px" data-g="bz_quit">🛑 Round khatam karein</button>
             </div>
         </section>
     
@@ -283,7 +254,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
     </div>
 
     <!-- Background Nasheed (no music) -->
-    <audio id="kbcNasheed" loop preload="none">
+    <audio id="mrtNasheed" loop preload="none">
         <source src="nature-ambience.mp3" type="audio/mpeg">
     </audio>
 
@@ -375,7 +346,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
             document.getElementById(game).classList.add('active');
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
             if (btn) btn.classList.add('active');
-            if (game === 'kbc') initKBC();
+            if (game === 'mrt') initMrt();
             else if (game === 'sahaba') initSahaba();
             else if (game === 'memory') initMemory();
             else if (game === 'emoji') initEmoji();
@@ -387,7 +358,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
         // (sounds.js isko behtar version se replace kar deta hai)
         // ==========================================
         function toggleNasheed() {
-            const audio = document.getElementById('kbcNasheed');
+            const audio = document.getElementById('mrtNasheed');
             const btn = document.getElementById('nasheedBtn');
             if (!audio) return;
             if (audio.paused) {
@@ -409,7 +380,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
         // Har din ke andar difficulty 1→3 badhti hai
         // SAARE SAWALAT KITAB WA SUNNAT KE MUTABIQ — sirf muttafaq (bina ikhtilaf ke) sawal
         // ==========================================
-        const KBC = [
+        const MRT = [
         // ===== DAY 1 =====
         [
             ["Islam ke kitne arkaan hain?","3","5","7","10",1,1],
@@ -803,250 +774,143 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
         ];
 
         // ==========================================
-        // MARATIB-E-ILM: inaam = Stars (koi paisa nahi)
+        // MARATIB-E-ILM — 30 din × 10 sawal (sada quiz)
+        //   Har din 10 sawal, aasani se mushkil ki taraf.
+        //   Sahi jawab = agla sawal. Galat = din dobara.
+        //   6 ya zyada sahi = din mukammal, agla din khul jata hai.
+        //   (Koi inaam ki seedhi, lifeline ya "pakka jawab" wala tareeqa nahi.)
         // ==========================================
-        const PRIZES = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512];
-        const DARJA_IC = ['🌱', '📖', '💡', '🏅', '🌟'];   // har 2 sawal par ek darja
-        const DARJA_L = i => DARJA_IC[i] + ' ' + GU('tier' + i);
-        const PRIZE_LABELS = PRIZES.map((p, i) => `⭐ ${p}${i === 4 ? ' 🎯' : i === 9 ? ' 🏆' : ''}`);
+        const MRT_KEY = 'p_' + (localStorage.getItem('activeProfile') || 'p1') + '_maratibUnlockedDay';
+        // Purani saved progress ki chaabi (us waqt game ka doosra naam tha) — sirf ek baar padhi jaati hai,
+        // taake jab ye game sada quiz bana to kisi ka khula hua din band na ho jaye.
+        const MRT_LEGACY = 'p_' + (localStorage.getItem('activeProfile') || 'p1') + '_' + 'kbcUnlockedDay';
+        const MRT_PASS = 0.6;                     // 10 mein se 6 sahi = din mukammal
+        let mrtState = null;                      // { i, right, over }
+        let mrtData = null;                       // is din ke sawal
+        let mrtDayIdx = null;
+        let mrtResultPaint = null;
 
-        // ===== MARATIB-E-ILM STATE (purane naam kbc* andar rakhe hain taaki saved progress na tute) =====
-        let kbcState = null;
-        let kbcData = null;
-        const KBC_KEY = 'p_' + (localStorage.getItem('activeProfile') || 'p1') + '_kbcUnlockedDay';
-        let kbcDayIdx = null;
-        let kbcResultPaint = null;
-        function kbcUnlocked() {
-            if (localStorage.getItem('userRole') === 'admin') return KBC.length;   // admin ke liye saare din khule
-            const n = parseInt(localStorage.getItem(KBC_KEY), 10) || 1;
-            return Math.min(Math.max(n, 1), KBC.length);
+        function mrtUnlocked() {
+            if (localStorage.getItem('userRole') === 'admin') return MRT.length;   // admin ke liye saare din khule
+            let n = parseInt(localStorage.getItem(MRT_KEY), 10);
+            if (!n) {                                       // purani progress ek baar yahan le aao
+                n = parseInt(localStorage.getItem(MRT_LEGACY), 10) || 1;
+                try { localStorage.setItem(MRT_KEY, String(n)); } catch (e) {}
+            }
+            return Math.min(Math.max(n, 1), MRT.length);
         }
 
-        function initKBC(dayNum) {
-            const unlocked = kbcUnlocked();
-            if (typeof dayNum === 'number' && dayNum >= 1 && dayNum <= unlocked) kbcDayIdx = dayNum - 1;
-            else if (kbcDayIdx === null || kbcDayIdx >= unlocked) kbcDayIdx = unlocked - 1;
-            const dayIndex = kbcDayIdx;
-
-            // Sort by difficulty ascending — Q1 easy ... Q10 hard
-            kbcData = KBC[dayIndex].slice().sort((a, b) => (a[6] || 1) - (b[6] || 1));
-
-            kbcResultPaint = null;
-            kbcState = { qIndex: 0, used5050: false, usedAudience: false, usedPhone: false, usedSwap: false, currentPrize: 0, sel: -1 };
-
-            kbcShell();
-            renderLadder();
-            kbcLoadQuestion();
+        function initMrt(dayNum) {
+            const unlocked = mrtUnlocked();
+            if (typeof dayNum === 'number' && dayNum >= 1 && dayNum <= unlocked) mrtDayIdx = dayNum - 1;
+            else if (mrtDayIdx === null || mrtDayIdx >= unlocked) mrtDayIdx = unlocked - 1;
+            // Aasani se mushkil ki taraf
+            mrtData = MRT[mrtDayIdx].slice().sort((a, b) => (a[6] || 1) - (b[6] || 1));
+            mrtState = { i: 0, right: 0, over: false };
+            mrtResultPaint = null;
+            mrtShell();
+            mrtLoadQuestion();
         }
 
-        // Maratib-e-Ilm ka dhancha (zubaan badalne par state bacha kar dobara banta hai)
-        function kbcShell() {
-            const unlocked = kbcUnlocked(), dayIndex = kbcDayIdx;
+        // Dhancha (zubaan badalne par state bacha kar dobara banta hai)
+        function mrtShell() {
+            const unlocked = mrtUnlocked(), dayIndex = mrtDayIdx;
             // Poore 30 din list mein dikhte hain — khule din chune ja sakte hain, baaki par 🔒
             let dayOpts = '';
-            for (let d = 1; d <= KBC.length; d++) {
+            for (let d = 1; d <= MRT.length; d++) {
                 const lock = d > unlocked;
                 dayOpts += `<option value="${d}" ${d === dayIndex + 1 ? 'selected' : ''} ${lock ? 'disabled' : ''}>${lock ? '🔒 ' : ''}${GU('day', { n: d })}</option>`;
             }
-            const daySelect = `<select class="kbc-day" style="border:none;color:var(--kbc-gold);font-weight:bold;font-size:13px;background:transparent;" onchange="initKBC(parseInt(this.value,10))">${dayOpts}</select>`;
-            const dayProg = `<span class="kbc-dayprog">${GU('days_prog', { a: unlocked, b: KBC.length })}</span>`;
-            document.getElementById('kbc').innerHTML = `
-                <div class="kbc-top">
+            const daySelect = `<select class="mrt-day" style="border:none;color:var(--mrt-gold);font-weight:bold;font-size:13px;background:transparent;" onchange="initMrt(parseInt(this.value,10))">${dayOpts}</select>`;
+            document.getElementById('mrt').innerHTML = `
+                <div class="mrt-top">
                     ${daySelect}
-                    ${dayProg}
-                    <span class="kbc-prize" id="kbcPrizeDisplay">⭐ 0</span>
+                    <span class="mrt-dayprog">${GU('days_prog', { a: unlocked, b: MRT.length })}</span>
+                    <span class="mrt-score" id="mrtScore">✅ 0 / ${mrtData.length}</span>
                 </div>
-                <div class="kbc-qnum" id="kbcQNum"></div>
-                <div class="kbc-question" id="kbcQuestion"></div>
-                <div class="kbc-options" id="kbcOptions"></div>
-                <div class="kbc-confirm" id="kbcConfirm" style="display:none">
-                    <button class="yes" onclick="kbcConfirmYes()">${GU('yes')}</button>
-                    <button onclick="kbcConfirmNo()">${GU('no')}</button>
-                </div>
-                <div class="kbc-lifelines">
-                    <button class="kbc-life" id="life5050" onclick="kbc5050()">${GU('l5050')}</button>
-                    <button class="kbc-life" id="lifeAud" onclick="kbcAudience()">${GU('laud')}</button>
-                    <button class="kbc-life" id="lifePhone" onclick="kbcPhone()">${GU('lphone')}</button>
-                    <button class="kbc-life" id="lifeSwap" onclick="kbcSwap()">${GU('lswap')}</button>
-                </div>
-                <div class="kbc-ladder" id="kbcLadder"></div>
-                <div class="kbc-note">${GU('kbc_note')}</div>
-                <button class="kbc-quit" onclick="kbcQuit()">${GU('kbc_quit')}</button>
+                <div class="mrt-qnum" id="mrtQNum"></div>
+                <div class="mrt-question" id="mrtQuestion"></div>
+                <div class="mrt-options" id="mrtOptions"></div>
+                <div class="mrt-note">${GU('mrt_note')}</div>
+                <button class="mrt-quit" onclick="mrtQuit()">${GU('mrt_quit')}</button>
             `;
-            if (kbcState) {
-                if (kbcState.used5050) document.getElementById('life5050').disabled = true;
-                if (kbcState.usedAudience) document.getElementById('lifeAud').disabled = true;
-                if (kbcState.usedPhone) document.getElementById('lifePhone').disabled = true;
-                if (kbcState.usedSwap) document.getElementById('lifeSwap').disabled = true;
-            }
         }
 
-        function renderLadder() {
-            const ladder = document.getElementById('kbcLadder');
-            if (!ladder) return;
-            ladder.innerHTML = PRIZE_LABELS.map((p, i) => {
-                let cls = '';
-                if (i === 4 || i === 9) cls = 'safe';
-                return `<span class="${cls}" data-q="${i}">${p}</span>`;
-            }).join('');
-        }
-
-        function kbcLoadQuestion() {
-            if (!kbcState) return;
-            if (kbcState.qIndex >= kbcData.length) { kbcFinish(true); return; }
-            const q = kbcData[kbcState.qIndex];
-
-            document.getElementById('kbcQNum').innerHTML = GU('qnum', { n: kbcState.qIndex + 1, d: DARJA_L(Math.min(4, Math.floor(kbcState.qIndex / 2))) });
-            kbcState.sel = -1; const cf = document.getElementById('kbcConfirm'); if (cf) cf.style.display = 'none';
-            document.getElementById('kbcQuestion').innerText = GT(q[0]);
-
-            const opts = document.getElementById('kbcOptions');
+        function mrtLoadQuestion() {
+            if (!mrtState) return;
+            if (mrtState.i >= mrtData.length) { mrtFinish(true); return; }
+            const q = mrtData[mrtState.i];
+            document.getElementById('mrtQNum').innerHTML = GU('mrt_q', { n: mrtState.i + 1, t: mrtData.length });
+            document.getElementById('mrtQuestion').innerText = GT(q[0]);
+            const opts = document.getElementById('mrtOptions');
             const letters = ['A','B','C','D'];
             opts.innerHTML = '';
             for (let i = 0; i < 4; i++) {
                 const btn = document.createElement('button');
-                btn.className = 'kbc-opt';
+                btn.className = 'mrt-opt';
                 btn.innerHTML = `<b>${letters[i]}.</b> ${GT(q[i+1])}`;
-                btn.onclick = () => kbcSelect(i);
+                btn.onclick = () => mrtAnswer(i);
                 opts.appendChild(btn);
             }
-            if (kbcState.removedQ === kbcState.qIndex && kbcState.removed) kbcState.removed.forEach(i => { const b = opts.children[i]; if (b) { b.disabled = true; b.classList.add('disabled'); } });
-            document.getElementById('kbcPrizeDisplay').innerText = kbcState.currentPrize > 0 ? `⭐ ${kbcState.currentPrize}` : '⭐ 0';
-
-            document.querySelectorAll('.kbc-ladder span').forEach((s, i) => {
-                s.classList.remove('active', 'done');
-                if (i < kbcState.qIndex) s.classList.add('done');
-                if (i === kbcState.qIndex) s.classList.add('active');
-            });
+            const sc = document.getElementById('mrtScore');
+            if (sc) sc.textContent = '✅ ' + mrtState.right + ' / ' + mrtData.length;
         }
 
-        // Jawab chunne ke baad "pakka hai?" poochta hai
-        function kbcSelect(i) {
-            if (!kbcState) return;
-            const btns = document.querySelectorAll('.kbc-opt');
-            if (btns[i].disabled) return;
-            kbcState.sel = i;
-            btns.forEach((b, k) => b.classList.toggle('sel', k === i));
-            document.getElementById('kbcConfirm').style.display = 'flex';
-        }
-        function kbcConfirmYes() {
-            if (!kbcState || kbcState.sel < 0) return;
-            document.getElementById('kbcConfirm').style.display = 'none';
-            document.querySelectorAll('.kbc-opt').forEach(b => b.classList.remove('sel'));
-            kbcAnswer(kbcState.sel);
-        }
-        function kbcConfirmNo() {
-            if (!kbcState) return;
-            kbcState.sel = -1;
-            document.querySelectorAll('.kbc-opt').forEach(b => b.classList.remove('sel'));
-            document.getElementById('kbcConfirm').style.display = 'none';
-        }
-
-        // Sawal Tabdeel: usi mushkil-darje ka dusra sawal (kisi bhi din se, jo abhi is round mein nahi aaya)
-        function kbcSwap() {
-            if (!kbcState || kbcState.usedSwap) return;
-            const cur = kbcData[kbcState.qIndex];
-            const asked = new Set(kbcData.map(q => q[0]));
-            let pool = [];
-            KBC.forEach(day => day.forEach(q => { if ((q[6] || 1) === (cur[6] || 1) && !asked.has(q[0])) pool.push(q); }));
-            if (!pool.length) return;
-            kbcState.usedSwap = true;
-            kbcState.removedQ = -1;
-            document.getElementById('lifeSwap').disabled = true;
-            kbcData[kbcState.qIndex] = pool[Math.floor(Math.random() * pool.length)];
-            kbcLoadQuestion();
-        }
-
-        function kbcQuit() {
-            if (!kbcState) return;
-            if (confirm(GU('kbc_confirm_quit'))) kbcFinish(false, true);
-        }
-
-        function kbcAnswer(sel) {
-            const q = kbcData[kbcState.qIndex];
-            const correct = q[5];
-            const btns = document.querySelectorAll('.kbc-opt');
+        // Jawab seedha — koi "pakka hai?" poochh-tachh nahi
+        function mrtAnswer(sel) {
+            if (!mrtState || mrtState.over) return;
+            const q = mrtData[mrtState.i];
+            const btns = document.querySelectorAll('.mrt-opt');
             btns.forEach(b => b.disabled = true);
-
-            if (sel === correct) {
+            mrtState.over = true;
+            if (sel === q[5]) {
                 btns[sel].classList.add('correct');
-                kbcState.currentPrize = PRIZES[kbcState.qIndex];
-                document.getElementById('kbcPrizeDisplay').innerText = `⭐ ${kbcState.currentPrize}`;
+                mrtState.right++;
+                const sc = document.getElementById('mrtScore');
+                if (sc) sc.textContent = '✅ ' + mrtState.right + ' / ' + mrtData.length;
                 setTimeout(() => {
-                    kbcState.qIndex++;
-                    if (kbcState.qIndex >= kbcData.length) kbcFinish(true);
-                    else kbcLoadQuestion();
-                }, 1500);
+                    mrtState.over = false;
+                    mrtState.i++;
+                    if (mrtState.i >= mrtData.length) mrtFinish(true);
+                    else mrtLoadQuestion();
+                }, 900);
             } else {
                 btns[sel].classList.add('wrong');
-                btns[correct].classList.add('correct');
-                setTimeout(() => kbcFinish(false), 2200);
+                btns[q[5]].classList.add('correct');
+                setTimeout(() => mrtFinish(false), 1500);
             }
         }
 
-        function kbc5050() {
-            if (!kbcState || kbcState.used5050) return;
-            kbcState.used5050 = true;
-            document.getElementById('life5050').disabled = true;
-            const q = kbcData[kbcState.qIndex];
-            const correct = q[5];
-            const wrongs = [0,1,2,3].filter(i => i !== correct).sort(() => Math.random() - 0.5).slice(0, 2);
-            const btns = document.querySelectorAll('.kbc-opt');
-            kbcState.removed = wrongs; kbcState.removedQ = kbcState.qIndex;
-            wrongs.forEach(i => { btns[i].disabled = true; btns[i].classList.add('disabled'); if (kbcState.sel === i) kbcConfirmNo(); });
+        function mrtQuit() {
+            if (!mrtState || mrtState.over) { initMrt((mrtDayIdx || 0) + 1); return; }
+            mrtFinish(false, true);
         }
 
-        function kbcAudience() {
-            if (!kbcState || kbcState.usedAudience) return;
-            kbcState.usedAudience = true;
-            document.getElementById('lifeAud').disabled = true;
-            const q = kbcData[kbcState.qIndex];
-            const correct = q[5];
-            const percentages = [0,0,0,0];
-            let remaining = 100;
-            percentages[correct] = 40 + Math.floor(Math.random() * 30);
-            remaining -= percentages[correct];
-            [0,1,2,3].filter(i => i !== correct).forEach(i => {
-                const v = Math.floor(Math.random() * remaining / 2);
-                percentages[i] = v;
-                remaining -= v;
-            });
-            percentages[correct] += remaining;
-            const letters = ['A','B','C','D'];
-            alert(GU('aud_alert') + '\n' + percentages.map((p, i) => `${letters[i]}: ${p}%`).join('\n'));
-        }
-
-        function kbcPhone() {
-            if (!kbcState || kbcState.usedPhone) return;
-            kbcState.usedPhone = true;
-            document.getElementById('lifePhone').disabled = true;
-            const q = kbcData[kbcState.qIndex];
-            const letters = ['A','B','C','D'];
-            const correct = q[5];
-            let guess = correct;
-            if (Math.random() > 0.7) guess = [0,1,2,3].filter(i => i !== correct)[Math.floor(Math.random()*3)];
-            alert(GU('phone_alert', { l: letters[guess], a: GT(q[guess + 1]) }));
-        }
-
-        function kbcFinish(win, quit) {
-            const earned = win ? PRIZES[PRIZES.length-1] : (quit ? kbcState.currentPrize : (kbcState.qIndex >= 5 ? PRIZES[4] : 0));
-            const cur = kbcDayIdx + 1, qi = kbcState.qIndex;
-            if (win && cur < KBC.length && kbcUnlocked() < cur + 1) localStorage.setItem(KBC_KEY, String(cur + 1));
-            if (win) celebrate(GU('cele_win_t'), GU('cele_win_m', { n: cur, s: earned }));
-            kbcResultPaint = () => {
+        function mrtFinish(win, quit) {
+            const cur = (mrtDayIdx || 0) + 1, total = mrtData.length;
+            const right = mrtState ? mrtState.right : 0;
+            const passed = win || right >= Math.ceil(total * MRT_PASS);     // 6/10 ya zyada = din mukammal
+            if (passed && cur < MRT.length && mrtUnlocked() < cur + 1) {
+                try { localStorage.setItem(MRT_KEY, String(cur + 1)); } catch (e) {}
+            }
+            if (passed) celebrate(GU('cele_win_t'), GU('mrt_done', { s: right, t: total }));
+            mrtResultPaint = () => {
                 let nextBtn = '';
-                if (win && cur < KBC.length) nextBtn = `<button class="kbc-btn" onclick="initKBC(${cur + 1})">${GU('next_day', { n: cur + 1 })}</button><br>`;
-                document.getElementById('kbc').innerHTML = `
-                <div class="kbc-result">
-                    <h2>${win ? GU('res_win') : (quit ? GU('res_quit') : GU('res_lose'))}</h2>
-                    <div class="prize">⭐ ${earned}</div>
-                    <p style="color:#aaa; margin-bottom:15px;">${win ? (cur < KBC.length ? GU('res_win_msg', { n: cur, m: cur + 1 }) : GU('res_all')) : (quit ? GU('res_quit_msg', { n: qi }) : GU('res_lose_msg', { n: qi + 1 }))}</p>
+                if (passed && cur < MRT.length) nextBtn = `<button class="mrt-btn" onclick="initMrt(${cur + 1})">${GU('next_day', { n: cur + 1 })}</button><br>`;
+                const msg = passed
+                    ? (cur < MRT.length ? GU('res_win_msg', { n: cur, m: cur + 1 }) : GU('res_all'))
+                    : (quit ? GU('res_quit_msg', { n: right }) : GU('res_lose_msg', { n: (mrtState ? mrtState.i + 1 : total) }));
+                document.getElementById('mrt').innerHTML = `
+                <div class="mrt-result">
+                    <h2>${passed ? GU('res_win') : (quit ? GU('res_quit') : GU('res_lose'))}</h2>
+                    <div class="sc">✅ ${right} / ${total}</div>
+                    <p style="color:#aaa; margin-bottom:15px;">${msg}</p>
                     ${nextBtn}
-                    <button class="kbc-btn" onclick="initKBC(${cur})">${GU('again')}</button>
+                    <button class="mrt-btn" onclick="initMrt(${cur})">${GU('again')}</button>
                 </div>
             `;
             };
-            kbcResultPaint();
+            mrtResultPaint();
         }
 
         // ==========================================
@@ -1434,8 +1298,8 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
             const run = () => {
                 gRefreshQueued = false;
                 paintStatic();
-                if (kbcState && document.getElementById('kbcQuestion')) { kbcShell(); renderLadder(); kbcLoadQuestion(); }
-                else if (kbcResultPaint) kbcResultPaint();
+                if (mrtState && document.getElementById('mrtQuestion')) { mrtShell(); mrtLoadQuestion(); }
+                else if (mrtResultPaint) mrtResultPaint();
                 if (sahabaState) { const w = sahabaState.answered, sel = sahabaState.sel; sahabaRender(); if (w && sel != null && sahabaState.index < sahabaState.questions.length) sahabaAnswer(sel, true); }
                 if (memoryState) memoryRender();
                 if (emojiState) { const w = emojiState.answered, sel = emojiState.sel; emojiRender(); if (w && sel != null && emojiState.index < emojiState.questions.length) emojiAnswer(sel, true); }
@@ -1446,7 +1310,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
         if (window.QSLang) QSLang.onChange(gRefresh);
 
         // Start with Maratib-e-Ilm (ya purana link games.html#bazm)
-        initKBC();
+        initMrt();
         if (location.hash === '#bazm') {
             const bb = Array.from(document.querySelectorAll('.nav-btn')).find(x => (x.getAttribute('onclick') || '').indexOf("'bazm'") > -1);
             switchGame('bazm', bb);
@@ -1576,17 +1440,13 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
 
     // ---------- State ----------
     var S = null;
-    function reset() { used = {}; S = { i: 0, q: null, pick: -1, lifes: { fifty: 1, poll: 1, ustad: 1, swap: 1 }, hintOn: false, earned: 0, over: false }; }
-    function safeXP(i) { var done = Math.floor(i / 3) * 3; var s = 0; for (var k = 0; k < done; k++) s += PTS[k]; return s; }
+    function reset() { used = {}; S = { i: 0, q: null, pick: -1, earned: 0, over: false }; }
     function totalXP(i) { var s = 0; for (var k = 0; k < i; k++) s += PTS[k]; return s; }
 
     // ---------- UI: shuru ----------
     function drawStart() {
         buildPool();                       // taza progress ke hisaab se lafz (admin: poora course)
         showXP();
-        $('bz_tierList').innerHTML = TIERS.map(function (t, i) {
-            return '<div style="display:flex;justify-content:space-between;font-size:13.5px;padding:4px 0;border-bottom:1px solid var(--border)"><span>' + t.ic + ' ' + tn(i) + ' <small style="color:var(--light)">' + GU('tier_q', { a: i * 3 + 1, b: i * 3 + 3 }) + '</small></span><b>' + (PTS[i * 3] + PTS[i * 3 + 1] + PTS[i * 3 + 2]) + ' XP</b></div>';
-        }).join('');
         var n = pool.length;
         $('bz_poolNote').innerHTML = (profile ? '' : GU('login_warn')) + GU('pool', { d: maxDay, n: n }) +
             (profile && !isAdmin ? GU('capleft', { n: capLeft(), c: DAILY_CAP }) : '');
@@ -1599,7 +1459,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
     function show(id) { curView = id; ['bz_vStart', 'bz_vPlay', 'bz_vEnd'].forEach(function (v) { $(v).classList.toggle('hidden', v !== id); }); window.scrollTo(0, 0); }
     function next() {
         var level = Math.floor(S.i / 3);
-        S.q = build(level); S.pick = -1; S.hintOn = false; draw();
+        S.q = build(level); S.pick = -1; draw();
     }
     function draw() {
         var q = S.q, w = q.x.w, level = Math.floor(S.i / 3);
@@ -1613,58 +1473,20 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
         else if (q.type === 2) { prompt = GU('p2'); main = '<div class="big">' + esc(m.t) + '</div>' + (m.u ? '<div class="ur">' + esc(m.u) + '</div>' : ''); }
         else { prompt = GU('p3'); main = '<div class="big">' + esc(w.r) + '</div>'; }
         $('bz_qPrompt').textContent = prompt; $('bz_qMain').innerHTML = main;
-        var h = $('bz_qHint'); if (S.hintOn) { h.innerHTML = buildHint(q); h.classList.remove('hidden'); } else h.classList.add('hidden');
-        drawOpts(); drawLifes();
-        $('bz_confirm').classList.toggle('hidden', S.pick < 0);
+        drawOpts();
     }
     function drawOpts() {
         $('bz_opts').innerHTML = S.q.opts.map(function (o, k) {
             var body = o.ar ? '<span class="ar2">' + esc(o.ar) + '</span><small>' + esc(o.t) + '</small>'
                             : (function () { var mm = mean(o.w); return esc(mm.t) + (mm.u ? '<span class="ur2">' + esc(mm.u) + '</span>' : ''); })();
-            return '<button class="opt' + (S.pick === k ? ' sel' : '') + (o.gone ? ' gone' : '') + '" data-k="' + k + '"><span class="l">' + LETTERS[k] + '</span><span class="t">' + body + '</span>' + (o.poll != null ? '<span class="p">' + o.poll + '%</span>' : '') + '</button>';
+            return '<button class="opt' + (S.pick === k ? ' sel' : '') + (o.gone ? ' gone' : '') + '" data-k="' + k + '"><span class="l">' + LETTERS[k] + '</span><span class="t">' + body + '</span></button>';
         }).join('');
-    }
-    function drawLifes() {
-        var L = S.lifes, d = S.over;
-        $('bz_lifes').innerHTML =
-            '<button class="life" data-l="fifty" ' + (L.fifty && !d ? '' : 'disabled') + '>' + GU('l5050') + '</button>' +
-            '<button class="life" data-l="poll" ' + (L.poll && !d ? '' : 'disabled') + '>' + GU('laud') + '</button>' +
-            '<button class="life" data-l="ustad" ' + (L.ustad && !d ? '' : 'disabled') + '>' + GU('lustad') + '</button>' +
-            '<button class="life" data-l="swap" ' + (L.swap && !d ? '' : 'disabled') + '>' + GU('lswap') + '</button>';
-    }
-
-    function buildHint(q) {
-        var w = q.x.w, t2 = mean2(w), end = GL() === 'u' ? '۔' : '.';
-        return GU('hint', { a: esc(w.a), r: esc(w.r) }) + (w.m && q.type !== 1 ? end + '<br>' + GU('ayat_part') + '<span style="font-family:Amiri,serif;font-size:20px">' + esc(w.m) + '</span>' : end) +
-            (q.type !== 2 && t2 && t2 !== mean(w).t ? '<br>' + GU('other_mean') + esc(t2) : '');
-    }
-    // ---------- Madad ----------
-    function life(kind) {
-        if (S.over || !S.lifes[kind]) return;
-        var q = S.q, w = q.x.w;
-        if (kind === 'fifty') {
-            var wrong = shuffle(q.opts.map(function (o, k) { return k; }).filter(function (k) { return !q.opts[k].ok && !q.opts[k].gone; })).slice(0, 2);
-            wrong.forEach(function (k) { q.opts[k].gone = true; });
-            if (q.opts[S.pick] && q.opts[S.pick].gone) S.pick = -1;
-        } else if (kind === 'poll') {
-            var accuracy = [70, 62, 55, 48, 42][Math.floor(S.i / 3)] + rnd(10);       // andaza: mushkil sawal par kam bharosa
-            var live = q.opts.filter(function (o) { return !o.gone; }), left = 100 - accuracy;
-            var wrongs = live.filter(function (o) { return !o.ok; });
-            live.forEach(function (o) { o.poll = 0; });
-            q.opts.forEach(function (o) { if (o.ok) o.poll = accuracy; });
-            wrongs.forEach(function (o, k) { var v = k === wrongs.length - 1 ? left : Math.min(left, rnd(left + 1)); o.poll = v; left -= v; });
-        } else if (kind === 'ustad') {
-            S.hintOn = true;
-        } else if (kind === 'swap') {
-            S.lifes.swap = 0; used[q.x.w.a] = 1; next(); toast(GU('toast_new')); return;
-        }
-        S.lifes[kind] = 0; draw();
     }
 
     // ---------- Jawab ----------
     function answer() {
         var o = S.q.opts[S.pick], q = S.q;
-        S.over = true; drawLifes(); $('bz_confirm').classList.add('hidden');
+        S.over = true;
         document.querySelectorAll('#bazm .opt').forEach(function (b) {
             var k = +b.dataset.k; b.disabled = true;
             if (q.opts[k].ok) b.classList.add('ok'); else if (k === S.pick) b.classList.add('bad');
@@ -1674,7 +1496,6 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
             setTimeout(function () {
                 S.over = false;
                 if (S.i >= TOTAL) return finish('win');
-                if (S.i % 3 === 0) toast(GU('toast_tier', { t: tn(S.i / 3 - 1) }));
                 next();
             }, 1100);
         } else {
@@ -1689,7 +1510,7 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
         if (how === 'win') { base = totalXP(TOTAL) + WIN_BONUS; em = '🌟'; titleK = 'fin_win_t'; msgFn = function () { return GU('fin_win_m'); }; }
         else if (how === 'quit') { base = totalXP(S.i); em = '🛑'; titleK = 'fin_quit_t'; var nq = S.i; msgFn = function () { return GU('fin_quit_m', { n: nq }); }; }
         else {
-            base = safeXP(S.i); em = '💭'; titleK = 'fin_lose_t';
+            base = totalXP(S.i); em = '💭'; titleK = 'fin_lose_t';
             var c = S.q.opts.filter(function (o) { return o.ok; })[0], w = S.q.x.w;
             msgFn = function () { return '<b>' + esc(c.ar ? c.ar + ' (' + c.t + ')' : mean(c.w).t) + '</b><br>' + GU('fin_lose_m', { a: esc(w.a), r: esc(w.r), m: esc(mean(w).t) }); };
         }
@@ -1706,14 +1527,11 @@ html[data-mlang="ar"] .main-nav{direction:rtl}
     // ---------- Events ----------
     $('bz_btnStart').onclick = function () { reset(); show('bz_vPlay'); next(); };
     $('bz_btnAgain').onclick = function () { drawStart(); show('bz_vStart'); };
-    $('bz_btnQuit').onclick = function () { if (!S.over && confirm(GU('bz_confirm_quit'))) finish('quit'); };
-    $('bz_btnYes').onclick = function () { if (S.pick >= 0 && !S.over) answer(); };
-    $('bz_btnNo').onclick = function () { S.pick = -1; draw(); };
+    $('bz_btnQuit').onclick = function () { if (!S.over) finish('quit'); };
     $('bz_opts').onclick = function (e) {
         var b = e.target.closest('.opt'); if (!b || S.over) return;
-        S.pick = +b.dataset.k; drawOpts(); $('bz_confirm').classList.remove('hidden');
+        S.pick = +b.dataset.k; drawOpts(); answer();
     };
-    $('bz_lifes').onclick = function (e) { var b = e.target.closest('.life'); if (b && !b.disabled) life(b.dataset.l); };
 
     // games.html ke tab se khulne par (khel chal raha ho to wahin rehta hai)
     window.bazmRelang = function () {

@@ -150,7 +150,14 @@
 //   2) page (HTML) ab **NET PEHLE** (2.5s timeout), net na ho to cache se. Pehle cache-first tha.
 //      JS/CSS pehle jaisa: cache se foran + peeche se taaza. Offline bilkul pehle jaisa chalta hai.
 //   Bhaari cheezein (tasveerein, fonts, mp3) phir bhi purane cache se copy hoti hain — dobara download nahi.
-const CACHE_NAME = 'quran-ustad-auto-v138';
+// v139: MARATIB-E-ILM MUKAMMAL TAREEQE SE — "KBC / kaun banega crorepati" jaisa andaz (inaam ki
+//       seedhi, safe darje, 50:50, hazireen ki raay, saathi se mashwara, ustad se rujoo, sawal
+//       tabdeel, "pakka jawab?" aur stars) poora hata diya. Ab ye ek SADA QUIZ hai: 30 din × 10
+//       sawal, aasani se mushkil ki taraf, sahi = agla sawal, galat = din dobara, 6/10 = din mukammal
+//       aur agla din khulta hai. Andar ke naam bhi badal diye (kbc* -> mrt*), file ka naam
+//       games-tr-kbc.js -> games-tr-maratib.js. Purani progress (…_kbcUnlockedDay) ek baar
+//       apne aap nayi key mein chali jati hai, is liye kisi ka din dobara kholna nahi padta.
+const CACHE_NAME = 'quran-ustad-auto-v139';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -192,7 +199,7 @@ const ASSETS = [
     './games.html',
     './games-lang.js',
     './games-tr.js',
-    './games-tr-kbc.js',
+    './games-tr-maratib.js',
     './games-tr-sahaba.js',
     './games-tr-stories.js',
     './games-tr-emoji.js',

@@ -1,6 +1,6 @@
-/* games-tr-kbc.js — Maratib-e-Ilm (30 din × 10 sawal) ke SAWAL aur JAWAB
+/* games-tr-maratib.js — Maratib-e-Ilm (30 din × 10 sawal) ke SAWAL aur JAWAB
    मराठी / العربية / Français / Español mein.
-   Key = games.html ke KBC array ka bilkul wahi Roman jumla (sawal aur options).
+   Key = games.html ke MRT array ka bilkul wahi Roman jumla (sawal aur options).
    Jo lafz yahan na ho wahan English dikhta hai (games-extra.js ka GT()).
    ⚠️ Numbers ("5", "2.5%") ka tarjuma nahi hota — wo sab zubaanoN mein wahi rehte hain. */
 (function () {

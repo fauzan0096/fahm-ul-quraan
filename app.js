@@ -103,7 +103,7 @@
                 '--chip-bg:' + (dark ? 'rgba(255,255,255,.08)' : 'rgba(0,0,0,.05)') + ';' +
                 '--shadow:' + (dark ? '0 1px 2px rgba(0,0,0,.45),0 8px 24px rgba(0,0,0,.4)' : '0 1px 2px rgba(10,46,36,.08),0 8px 24px rgba(10,46,36,.10)') + ';' +
                 '--hdr-a:' + t.hdr[0] + ';--hdr-b:' + t.hdr[1] + ';--btn-a:' + t.btn[0] + ';--btn-b:' + t.btn[1] + ';--btn-text:' + t.btn[2] + ';' +
-                '--kbc-bg:' + c.pd + ';--kbc-gold:' + c.gb + ';' +
+                '--mrt-bg:' + c.pd + ';--mrt-gold:' + c.gb + ';' +
                 (t.pat ? '--star:' + t.pat + ';' : '') +
                 (t.deco ? 'background-image:' + t.deco + ';background-attachment:fixed;' : '') +
                 '}\n';
@@ -1314,7 +1314,6 @@ if (!window.QS_LITE) {
         'Talib': ['طالب', 'तालिब', 'Seeker'], 'Faahim': ['فاہم', 'फ़ाहिम', 'Understanding'],
         'Mutqin': ['متقن', 'मुत्क़िन', 'Proficient'], 'Mahir': ['ماہر', 'माहिर', 'Expert'],
         '10 • Darja:': ['10 • درجہ:', '10 • दर्जा:', '10 \u2022 Level:'],
-        'pakka darja (yahan tak ke stars mehfooz) • Stars sirf inaam ke nishan hain, koi paisa nahi': ['پکا درجہ (یہاں تک کے ستارے محفوظ) • ستارے صرف انعام کے نشان ہیں، کوئی پیسہ نہیں', 'पक्का दर्जा (यहाँ तक के सितारे महफ़ूज़) • सितारे सिर्फ़ इनाम के निशान हैं, कोई पैसा नहीं', 'locked level (stars up to here are safe) \u2022 Stars are only reward marks, not money'],
         'Mubarak Ho!': ['مبارک ہو!', 'मुबारक हो!', 'Congratulations!'],
         'Aap jeet gaye! Allah aap ko aur ilm de.': ['آپ جیت گئے! اللہ آپ کو اور علم دے۔', 'आप जीत गए! अल्लाह आपको और इल्म दे।', 'You won! May Allah grant you more knowledge.'],
         'Nasheed Off': ['نشید بند', 'नशीद बंद', 'Nasheed Off'], 'Nasheed': ['نشید', 'नशीद', 'Nasheed'],

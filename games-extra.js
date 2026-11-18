@@ -28,7 +28,7 @@
     },
     close: { mr: "बंद करा", ar: "إغلاق", fr: "Fermer", es: "Cerrar" },
 
-    n_kbc: { mr: "🪜 मरातिब-ए-इल्म", ar: "🪜 مراتب العلم", fr: "🪜 Maratib al-Ilm", es: "🪜 Maratib al-Ilm" },
+    n_mrt: { mr: "🪜 मरातिब-ए-इल्म", ar: "🪜 مراتب العلم", fr: "🪜 Maratib al-Ilm", es: "🪜 Maratib al-Ilm" },
     n_sahaba: { mr: "⭐ सहाबा", ar: "⭐ الصحابة", fr: "⭐ Compagnons", es: "⭐ Compañeros" },
     n_memory: { mr: "🧠 स्मरणशक्ती", ar: "🧠 الذاكرة", fr: "🧠 Mémoire", es: "🧠 Memoria" },
     n_emoji: { mr: "😀 इमोजी", ar: "😀 إيموجي", fr: "😀 Émoji", es: "😀 Emoji" },
@@ -47,42 +47,35 @@
       fr: "{a} jours sur {b} débloqués", es: "{a} de {b} días desbloqueados"
     },
 
-    yes: { mr: "होय, उत्तर पक्के", ar: "نعم، الجواب نهائي", fr: "Oui, réponse définitive", es: "Sí, respuesta definitiva" },
-    no: { mr: "पुन्हा विचार करू", ar: "دعني أفكر مرة أخرى", fr: "Je réfléchis encore", es: "Déjame pensarlo" },
+    yes: { mr: "होय", ar: "نعم", fr: "Oui", es: "Sí" },
+    no: { mr: "नाही", ar: "لا", fr: "Non", es: "No" },
     l5050: { mr: "✂️ दोन चुकीचे काढा", ar: "✂️ احذف إجابتين خاطئتين", fr: "✂️ Retirer deux mauvaises", es: "✂️ Quitar dos incorrectas" },
     laud: { mr: "👥 प्रेक्षकांचे मत", ar: "👥 رأي الجمهور", fr: "👥 Sondage du public", es: "👥 Voto del público" },
     lphone: { mr: "📞 मित्राचा सल्ला", ar: "📞 اسأل صديقًا", fr: "📞 Demander à un ami", es: "📞 Preguntar a un amigo" },
     lustad: { mr: "📞 उस्तादांना विचारा", ar: "📞 اسأل الأستاذ", fr: "📞 Demander au maître", es: "📞 Preguntar al maestro" },
     lswap: { mr: "🔄 प्रश्न बदला", ar: "🔄 تبديل السؤال", fr: "🔄 Changer la question", es: "🔄 Cambiar la pregunta" },
 
-    kbc_note: {
-      mr: "🎯 = पक्की पातळी (इथपर्यंतचे स्टार्स सुरक्षित) • स्टार्स फक्त बक्षिसाची खूण आहेत, पैसे नाहीत",
-      ar: "🎯 = درجة مضمونة (النجوم حتى هنا محفوظة) • النجوم مجرد علامات مكافأة، لا مال فيها",
-      fr: "🎯 = palier assuré (les étoiles jusqu'ici sont gardées) • Les étoiles ne sont qu'une récompense, pas d'argent",
-      es: "🎯 = nivel asegurado (las estrellas hasta aquí se conservan) • Las estrellas son solo una recompensa, no dinero"
+    /* ===== Maratib-e-Ilm (sada quiz) ===== */
+    mrt_q: {
+      mr: "प्रश्न <b>{n}</b> / {t}", ar: "سؤال <b>{n}</b> / {t}",
+      fr: "Question <b>{n}</b> / {t}", es: "Pregunta <b>{n}</b> / {t}"
     },
-    kbc_quit: {
-      mr: "🛑 येथेच थांबा (आतापर्यंतचे स्टार्स घ्या)", ar: "🛑 توقف هنا (خذ النجوم الحالية)",
-      fr: "🛑 Arrêter ici (garder les étoiles)", es: "🛑 Detente aquí (conserva tus estrellas)"
+    mrt_note: {
+      mr: "सही उत्तर → पुढील प्रश्न • चुकीचे उत्तर → दिवस पुन्हा • १० पैकी ६ बरोबर = दिवस पूर्ण",
+      ar: "إجابة صحيحة ← السؤال التالي • إجابة خاطئة ← أعد اليوم • ٦ من ١٠ = أُكمل اليوم",
+      fr: "Bonne réponse → question suivante • Mauvaise réponse → on refait le jour • 6 sur 10 = jour terminé",
+      es: "Respuesta correcta → siguiente pregunta • Respuesta incorrecta → repites el día • 6 de 10 = día completado"
     },
-    qnum: {
-      mr: "प्रश्न <b>{n}</b> / 10 &nbsp;•&nbsp; पातळी: <b>{d}</b>", ar: "سؤال <b>{n}</b> / 10 &nbsp;•&nbsp; الدرجة: <b>{d}</b>",
-      fr: "Question <b>{n}</b> / 10 &nbsp;•&nbsp; Niveau : <b>{d}</b>", es: "Pregunta <b>{n}</b> / 10 &nbsp;•&nbsp; Nivel: <b>{d}</b>"
+    mrt_quit: {
+      mr: "🛑 फेरी थांबवा", ar: "🛑 أوقف الجولة", fr: "🛑 Arrêter la manche", es: "🛑 Detener la ronda"
     },
-    kbc_confirm_quit: {
-      mr: "येथेच थांबायचे? आतापर्यंतचे स्टार्स मिळतील.", ar: "أتوقف هنا؟ ستحصل على النجوم حتى الآن.",
-      fr: "Arrêter ici ? Vous garderez les étoiles gagnées.", es: "¿Detenerse aquí? Conservarás las estrellas ganadas."
+    mrt_done: {
+      mr: "दिवस {s} पैकी {t} बरोबर — दिवस पूर्ण!",
+      ar: "أجبت عن {s} من {t} — أُكمل اليوم!",
+      fr: "Vous avez répondu à {s} sur {t} — jour terminé !",
+      es: "Respondiste {s} de {t}: ¡día completado!"
     },
-    aud_alert: {
-      mr: "👥 प्रेक्षकांचे मत (फक्त अंदाज, खरे लोक नाहीत):", ar: "👥 رأي الجمهور (تقدير فقط، ليسوا أناسًا حقيقيين):",
-      fr: "👥 Sondage du public (une estimation, pas de vraies personnes) :", es: "👥 Voto del público (solo una estimación, no personas reales):"
-    },
-    phone_alert: {
-      mr: "📞 मित्राचा सल्ला (अंदाज, पक्का नाही):\n«मला वाटते {l} — {a} बरोबर आहे»",
-      ar: "📞 نصيحة صديقك (تقدير، ليس يقينًا):\n«أظن أن {l} — {a} هو الصحيح»",
-      fr: "📞 Le conseil de ton ami (une estimation, pas une certitude) :\n« Je pense que {l} — {a} est correct »",
-      es: "📞 El consejo de tu amigo (una estimación, no una certeza):\n«Creo que {l} — {a} es correcto»"
-    },
+
     next_day: {
       mr: "➡️ पुढील दिवस (दिवस {n})", ar: "➡️ اليوم التالي (اليوم {n})",
       fr: "➡️ Jour suivant (Jour {n})", es: "➡️ Día siguiente (Día {n})"
@@ -147,10 +140,10 @@
 
     bz_h: { mr: "बज़्म-ए-फ़हम", ar: "بزم الفهم", fr: "Bazm al-Fahm", es: "Bazm al-Fahm" },
     bz_intro: {
-      mr: "क़ुरआनच्या शब्दांवर 15 प्रश्न. दर 3 प्रश्नांनंतर एक <b>पातळी</b> पक्की होते. चुकीच्या उत्तरावर तुमच्याकडे आधीच्या पक्क्या पातळीचे XP राहते. पैसे नाहीत, फक्त <b>इल्म पॉइंट्स (XP)</b>.",
-      ar: "15 سؤالًا عن كلمات القرآن. بعد كل 3 أسئلة تُثبَّت <b>درجة</b>. إذا أخطأت تحتفظ بنقاط XP للدرجة المضمونة السابقة. لا مال، فقط <b>نقاط العلم (XP)</b>.",
-      fr: "15 questions sur les mots du Coran. Tous les 3 questions, un <b>palier</b> est assuré. En cas de mauvaise réponse, vous gardez les XP du dernier palier assuré. Pas d'argent, seulement des <b>points de savoir (XP)</b>.",
-      es: "15 preguntas sobre palabras del Corán. Cada 3 preguntas se asegura un <b>nivel</b>. Si fallas, conservas los XP del último nivel asegurado. Sin dinero, solo <b>puntos de conocimiento (XP)</b>."
+      mr: "क़ुरआनच्या शब्दांवर 15 प्रश्न. प्रत्येक प्रश्नाचे स्वतःचे XP — प्रश्न कठीण होईल तसे XP वाढते. चुकीच्या उत्तराने फेरी थांबते, पण जमवलेले XP तुमचेच राहते. पैसे नाहीत, फक्त <b>इल्म पॉइंट्स (XP)</b>.",
+      ar: "15 سؤالًا عن كلمات القرآن. لكل سؤال نقاط XP خاصة به، وتزيد صعوبة السؤال فتزيد نقاطه. الإجابة الخاطئة تُنهي الجولة، لكن ما جمعته من XP يبقى لك. لا مال، فقط <b>نقاط العلم (XP)</b>.",
+      fr: "15 questions sur les mots du Coran. Chaque question a ses propres XP : plus elle est difficile, plus elle rapporte. Une mauvaise réponse arrête la manche, mais les XP gagnés restent à vous. Pas d'argent, seulement des <b>points de savoir (XP)</b>.",
+      es: "15 preguntas sobre palabras del Corán. Cada pregunta tiene sus propios XP: cuanto más difícil, más XP. Una respuesta incorrecta termina la ronda, pero los XP ganados son tuyos. Sin dinero, solo <b>puntos de conocimiento (XP)</b>."
     },
     bz_start: { mr: "▶️ सुरू करा", ar: "▶️ ابدأ", fr: "▶️ Commencer", es: "▶️ Empezar" },
     bz_madad_h: {
@@ -170,7 +163,7 @@
       es: "Este juego solo es una ayuda para aprender. Aprende los asuntos religiosos con un maestro cualificado."
     },
     bz_sawal: { mr: "प्रश्न", ar: "سؤال", fr: "Question", es: "Pregunta" },
-    bz_quit: { mr: "🛑 येथेच थांबा (आतापर्यंतचे XP घ्या)", ar: "🛑 توقف هنا (خذ نقاط XP الحالية)", fr: "🛑 Arrêter ici (garder les XP)", es: "🛑 Detente aquí (conserva tus XP)" },
+    bz_quit: { mr: "🛑 फेरी थांबवा", ar: "🛑 أوقف الجولة", fr: "🛑 Arrêter la manche", es: "🛑 Detener la ronda" },
     bz_again: { mr: "🔁 पुन्हा खेळा", ar: "🔁 العب مرة أخرى", fr: "🔁 Rejouer", es: "🔁 Jugar otra vez" },
     bz_back: { mr: "📚 धड्याकडे परत", ar: "📚 العودة إلى الدرس", fr: "📚 Retour à la leçon", es: "📚 Volver a la lección" },
 

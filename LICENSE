@@ -76,7 +76,23 @@ The **licensor** is the individual or entity offering these terms, and the **sof
 
 ----------------------------------------------------------------------------
 Note on third-party content (not covered by the licence above):
-The Quran text, translations, tafsir and recitation audio shown in the app are
-fetched from Quran.com / everyayah.com and remain the property of their
-respective owners and are subject to their own terms. Fonts are loaded from
-Google Fonts under their own licences.
+
+1. Quran text, Urdu translation (Muhammad Junagarhi), tafsir, and the
+   word-by-word audio in the Qur'an page are fetched from quran.com and remain
+   the property of their respective owners (translators / publishers). They are
+   used here for reading and learning only.
+
+2. Recitation audio of the Qur'an is served by everyayah.com and remains the
+   property of its owners and subject to their own terms.
+
+3. Fonts are loaded from Google Fonts under their own open licences
+   (SIL Open Font License / Apache License).
+
+4. What IS the copyright of this project (Fauzan Altaf Gorme): all of the code,
+   the design and icons, the generated background ambience
+   (make_nature_ambience.py), the translations and notes written for this app,
+   and every question used in the app's games. Those game questions are
+   original and are not copied from any television programme, book, website or
+   other application, and no televised quiz-show format (prize ladder, safe
+   levels, 50:50 and similar lifelines) is used in the app.
+

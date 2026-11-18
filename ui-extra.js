@@ -117,7 +117,6 @@
     'Nasheed': ['नशीद', 'النشيد', 'Nasheed', 'Nasheed'],
     'Mubarak Ho!': ['अभिनंदन!', 'مبارك!', 'Félicitations !', '¡Felicidades!'],
     'Aap jeet gaye! Allah aap ko aur ilm de.': ['तुम्ही जिंकलात! अल्लाह तुम्हाला अधिक ज्ञान देवो.', 'لقد فزت! زادك الله علمًا.', 'Vous avez gagné ! Qu’Allah vous accorde plus de savoir.', '¡Has ganado! Que Allah te aumente en conocimiento.'],
-    'pakka darja (yahan tak ke stars mehfooz) • Stars sirf inaam ke nishan hain, koi paisa nahi': ['पक्की पातळी (इथपर्यंतचे स्टार्स सुरक्षित) • स्टार्स फक्त बक्षिसाची खूण आहेत, पैसे नाहीत', 'درجة مضمونة (النجوم حتى هنا محفوظة) • النجوم مجرد علامات مكافأة، لا مال فيها', 'palier assuré (les étoiles jusqu’ici sont gardées) • Les étoiles ne sont qu’une récompense, pas d’argent', 'nivel asegurado (las estrellas hasta aquí se conservan) • Las estrellas son solo una recompensa, no dinero'],
     '10 • Darja:': ['१० • पातळी:', '١٠ • الدرجة:', '10 • Niveau :', '10 • Nivel:'],
     'Talib': ['विद्यार्थी', 'طالب', 'Étudiant', 'Estudiante'],
     'Faahim': ['समजणारा', 'فاهم', 'Comprenant', 'Comprensivo'],
