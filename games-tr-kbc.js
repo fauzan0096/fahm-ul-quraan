@@ -446,6 +446,11 @@
   Q("Do mulkon ke hakim the", "दोन देशांचे हाकिम होते", "كان حاكم بلدين", "Il gouvernait deux pays", "Gobernaba dos países");
   Q("Suraj ghuroob", "सूर्यास्त", "غروب الشمس", "Le coucher du soleil", "La puesta del sol");
   Q("Zawal", "ज़वाल (सूर्य मध्यान्हावरून ढळणे)", "الزوال", "Le zénith passé", "El cenit pasado");
+  Q("Fajr", "फज्र", "الفجر", "Fajr", "Fayr");
+  Q("Zuhr", "झुहर", "الظهر", "Dhuhr", "Dhuhr");
+  Q("Asr", "अस्र", "العصر", "Asr", "Asr");
+  Q("Maghrib", "मगरिब", "المغرب", "Maghrib", "Magrib");
+  Q("Isha", "इशा", "العشاء", "Isha", "Isha");
   Q("Ihram ke baad", "एहरामनंतर", "بعد الإحرام", "Après l’ihram", "Después del ihram");
   Q("Ihram se pehle", "एहरामपूर्वी", "قبل الإحرام", "Avant l’ihram", "Antes del ihram");
   Q("Tawaf ke baad", "तवाफनंतर", "بعد الطواف", "Après le tawaf", "Después del tawaf");

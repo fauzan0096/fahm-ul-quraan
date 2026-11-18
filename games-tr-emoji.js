@@ -133,6 +133,7 @@
   Q("Shuaib (AS)", "शुऐब (अ.स.)", "شعيب (ع)", "Chu’ayb (AS)", "Shuayb (AS)");
   Q("Idris (AS)", "इदरीस (अ.स.)", "إدريس (ع)", "Idris (AS)", "Idris (AS)");
   Q("Ilyas (AS)", "इल्यास (अ.स.)", "إلياس (ع)", "Ilyas (AS)", "Ilyas (AS)");
+  Q("Yusuf", "यूसुफ", "يوسف", "Yusuf", "Yusuf");
   Q("Hajra (AS)", "हाजरा (अ.स.)", "هاجر (ع)", "Hajar (AS)", "Hachar (AS)");
   Q("Asiya (AS)", "आसिया (अ.स.)", "آسية (ع)", "Asiya (AS)", "Asiya (AS)");
   Q("An-Najm", "अन-नज्म", "النجم", "An-Najm", "An-Naym");
