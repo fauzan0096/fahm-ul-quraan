@@ -179,7 +179,10 @@
 //       index.html ka APP_LINK ab asli chalta hua site pata (share/calendar sahi jagah khulta hai).
 // v144: ADMIN PASSWORD code mein seedha nahi — char-codes se banta hai (password wahi purana).
 //       Guest password saaf hi hai (sab ko dena hai). Login ka tareeqa bilkul waisa hi chalta hai.
-const CACHE_NAME = 'quran-ustad-auto-v144';
+// v145: AAM USER KE LIYE PASSWORD HATA DIYA — password khaali chhod kar sirf naam se login, aur
+//       sanad (certificate) mil jati hai. Admin sirf password daal kar andar aata hai; purana
+//       guest password bhi chalta rahega. Naya placeholder sab 8 zubaanoN mein.
+const CACHE_NAME = 'quran-ustad-auto-v145';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

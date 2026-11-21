@@ -362,7 +362,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             <label class="login-label">Aapka Pura Naam</label>
             <input type="text" id="fullNameInput" placeholder="Jaise: Mohammad Abdullah Khan" autocomplete="name" maxlength="40">
             <label class="login-label">Password</label>
-            <input type="password" id="passwordInput" placeholder="Password daalein" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false">
+            <input type="password" id="passwordInput" placeholder="Khaali chhodein (admin: password)" autocapitalize="off" autocorrect="off" autocomplete="current-password" spellcheck="false">
             <button onclick="handleLogin()">Login</button>
             <p id="loginError" style="color: #ff4d4d; margin-top: 10px; font-size: 13px;"></p>
             <button type="button" onclick="FQBackup.open()" style="background:transparent;color:var(--text-light);border:1.5px dashed var(--border);margin-top:6px;font-size:13px;padding:10px;">📂 Naye phone par? Backup se progress wapas laayein</button>
@@ -624,8 +624,13 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             const err = document.getElementById('loginError');
             const typed = cleanName(document.getElementById('fullNameInput').value);
             const pwd = document.getElementById('passwordInput').value.replace(/[\u200B-\u200F\u202A-\u202E\u2060\uFEFF\u00A0]/g, '').trim(); // copy-paste ke chhupe characters hatao
-            const role = pwd === ADMIN_PASSWORD ? 'admin' : (pwd.toLowerCase() === GUEST_PASSWORD ? 'guest' : null); // guest: phone ka auto Bada harf chalega
-            if (!role) { err.innerText = "❌ Galat Password!"; return; }
+            // Aam user: password ki zaroorat nahi — khaali chhod dein, sirf naam se andar aayein (sanad milegi).
+            // Admin: password daalein. (Purana guest password bhi chalta rahega.)
+            let role;
+            if (!pwd) role = 'guest';
+            else if (pwd === ADMIN_PASSWORD) role = 'admin';
+            else if (pwd.toLowerCase() === GUEST_PASSWORD) role = 'guest';
+            else { err.innerText = "❌ Galat Password!"; return; }
 
             let name;
             if (role === 'admin') {

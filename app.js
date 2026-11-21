@@ -1105,7 +1105,7 @@ if (!window.QS_LITE) {
         'Agla \u2192': ['اگلا \u2192', 'अगला \u2192', 'Next \u2192'],
         'Chalo shuru karein': ['چلیں شروع کریں', 'चलो शुरू करें', 'Let\u2019s begin'],
         'Jaise: Mohammad Abdullah Khan': ['مثلاً: Mohammad Abdullah Khan', 'जैसे: Mohammad Abdullah Khan', 'e.g. Mohammad Abdullah Khan'],
-        'Password daalein': ['پاس ورڈ درج کریں', 'पासवर्ड डालें', 'Enter password'],
+        'Khaali chhodein (admin: password)': ['خالی چھوڑیں (ایڈمن: پاس ورڈ)', 'ख़ाली छोड़ें (एडमिन: पासवर्ड)', 'Leave empty (admin: password)'],
         'Meaning ki zubaan badlein': ['معنی کی زبان بدلیں', 'मतलब की ज़बान बदलें', 'Change meaning language'],
         'Matlab ki zubaan': ['معنی کی زبان', 'मतलब की ज़बान', 'Meaning language'],
         'Theme': ['تھیم', 'थीम', 'Theme'],
