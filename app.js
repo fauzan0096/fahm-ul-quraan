@@ -1266,6 +1266,7 @@ if (!window.QS_LITE) {
         'jaise 500': ['مثلاً 500', 'जैसे 500', 'e.g. 500'], 'Apna target': ['اپنا ہدف', 'अपना टारगेट', 'Your target'],
         /* ---- Backup ---- */
         'Backup / Restore': ['بیک اپ / ریسٹور', 'बैकअप / रीस्टोर', 'Backup / Restore'],
+        'Galti batayein': ['غلطی بتائیں', 'ग़लती बताएँ', 'Report a mistake'],
         'Apna sara progress ek file mein save karein, aur nayi phone par wapas laayein.': ['اپنی ساری پروگریس ایک فائل میں محفوظ کریں، اور نئے فون پر واپس لائیں۔', 'अपनी सारी प्रोग्रेस एक फ़ाइल में सेव करें, और नए फ़ोन पर वापस लाएँ।', 'Save all your progress in one file and bring it back on a new phone.'],
         'Free hai, login ya server ki zaroorat nahi.': ['مفت ہے، لاگ اِن یا سرور کی ضرورت نہیں۔', 'मुफ़्त है, लॉग इन या सर्वर की ज़रूरत नहीं।', 'Free \u2014 no login or server needed.'],
         'Abhi tak backup nahi liya.': ['ابھی تک بیک اپ نہیں لیا۔', 'अभी तक बैकअप नहीं लिया।', 'No backup taken yet.'],

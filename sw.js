@@ -185,7 +185,9 @@
 // v146: SAFAAI — purane 5 chhote Arkan pages (kalima/namaz/zakat/roza/hajj) hata diye, unki
 //       jagah arkan-*.html hai; PWA install ki tasveerein ab offline cache mein bhi hain.
 //       Lambi zubaan (Français/Español) ke lambe lafz card se bahar na jayein (theme.css).
-const CACHE_NAME = 'quran-ustad-auto-v146';
+// v147: User menu mein "✉️ Galti batayein" — seedha email khulta hai (kaunsa lafz/dua/safha),
+//       taake aalim ki tasdeeq aur user ki islah aap tak pahunch sake. 8 zubaanoN mein.
+const CACHE_NAME = 'quran-ustad-auto-v147';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
