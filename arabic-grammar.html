@@ -348,18 +348,22 @@
     // Jitne din grammar-body-lang.js mein hain, us zubaan par wo din POORE usi zubaan mein
     // dikhte hain; baqi din English par chalte hain — is liye file dheere dheere bharti hai.
     (function () {
-      var X = window.GRAMMAR_LANG || {}, B = window.GRAMMAR_BODY_LANG || {};
+      var X = window.GRAMMAR_LANG || {}, B = window.GRAMMAR_BODY_LANG || {}, Q = window.GRAMMAR_QUIZ_LANG || {};
       var L = ['mr', 'ar', 'fr', 'es'];
       (window.GRAMMAR_COURSE || []).forEach(function (d) {
         L.forEach(function (g) {
           var en = d.t.en || {}, o = {};
           for (var k in en) o[k] = en[k];
-          var x = X[d.day] && X[d.day][g], b = B[d.day] && B[d.day][g];
+          var x = X[d.day] && X[d.day][g], b = B[d.day] && B[d.day][g], q = Q[d.day] && Q[d.day][g];
           if (x) { if (x.title) o.title = x.title; if (x.goal) o.goal = x.goal; }
           if (b) {
             if (b.sections && b.sections.length) o.sections = b.sections;
             if (b.keyFacts && b.keyFacts.length) o.keyFacts = b.keyFacts;
             if (b.reflection) o.reflection = b.reflection;
+          }
+          // Imtihan: sawal aur uski apni jawab-kunji (correct) dono saath hi lagte hain
+          if (q && q.quiz && q.quiz.length && q.correct && q.correct.length === q.quiz.length) {
+            o.quiz = q.quiz; o.correct = q.correct;
           }
           d.t[g] = o;
         });
@@ -465,7 +469,10 @@
 
     function shuffle(n) { const a = Array.from({ length: n }, (_, i) => i); for (let i = n - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
-    function newQuizState() { answers = {}; result = null; qOrder = currentDay.correct.map((_, qi) => shuffle(tx(currentDay).quiz[qi].opts.length)); }
+    // Jawab ki kunji: nayi zubaan ka apna imtihan ho (GRAMMAR_QUIZ_LANG) to uski kunji,
+    // warna purani (English/Urdu) — dono ka tarteeb apna apna hai, kuch gadrati nahi.
+    function CA() { const x = tx(currentDay); return (x && x.correct) || currentDay.correct; }
+    function newQuizState() { answers = {}; result = null; qOrder = CA().map((_, qi) => shuffle(tx(currentDay).quiz[qi].opts.length)); }
 
     function openDay(n, fromPop) {
       currentDay = COURSE.find(d => d.day === n);
@@ -541,30 +548,30 @@
     // language badalne par jawab/natija wapas lagao
     function reapply() {
       Object.keys(answers).forEach(qi => paintAnswer(+qi, answers[qi].oi));
-      const n = currentDay.correct.length;
+      const n = CA().length;
       if (Object.keys(answers).length === n && !result) document.getElementById('submitExam').disabled = false;
       if (result) showResult();
     }
     function paintAnswer(qi, oi) {
       const qEl = document.querySelector('.question[data-q="' + qi + '"]'); if (!qEl) return;
-      const ok = oi === currentDay.correct[qi];
+      const ok = oi === CA()[qi];
       qEl.querySelectorAll('.opt-btn').forEach(b => b.disabled = true);
       const clicked = qEl.querySelector('.opt-btn[data-o="' + oi + '"]');
       clicked.classList.add(ok ? 'correct' : 'wrong');
       clicked.querySelector('.mark').textContent = ok ? '✅' : '❌';
-      if (!ok) { const r = qEl.querySelector('.opt-btn[data-o="' + currentDay.correct[qi] + '"]'); r.classList.add('reveal'); r.querySelector('.mark').textContent = '✔'; r.setAttribute('aria-label', T().right); }
+      if (!ok) { const r = qEl.querySelector('.opt-btn[data-o="' + CA()[qi] + '"]'); r.classList.add('reveal'); r.querySelector('.mark').textContent = '✔'; r.setAttribute('aria-label', T().right); }
     }
     function answerQ(qi, oi) {
       if (answers[qi] !== undefined) return;
-      const ok = oi === currentDay.correct[qi];
+      const ok = oi === CA()[qi];
       answers[qi] = { oi, correct: ok };
       paintAnswer(qi, oi);
       if (window.QSSFX) { try { ok ? QSSFX.correct() : QSSFX.wrong(); } catch (e) {} }
-      if (Object.keys(answers).length === currentDay.correct.length) document.getElementById('submitExam').disabled = false;
+      if (Object.keys(answers).length === CA().length) document.getElementById('submitExam').disabled = false;
     }
 
     function submitExam() {
-      const total = currentDay.correct.length;
+      const total = CA().length;
       let score = 0; Object.values(answers).forEach(a => { if (a.correct) score++; });
       const pass = score >= 2;
       result = { score, total, pass };

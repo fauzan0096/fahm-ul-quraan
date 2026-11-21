@@ -1091,3 +1091,376 @@ window.GRAMMAR_BODY_LANG = {
     }
   }
 };
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   IMTIHAN (quiz) — नई चार zubaanein
+   Har din 3 sawal; `correct` batata hai kaunsa option sahi hai (0 se shuru).
+   Apni alag kunji is liye hai ke English/Urdu ke sawalon ka tarteeb alag hai —
+   ye dono saath hi lagte hain, warna sahi jawab galat ho jata.
+   Jis din yahan na ho, us din ka imtihan purane (English) par chalta hai.
+   ══════════════════════════════════════════════════════════════════════════ */
+window.GRAMMAR_QUIZ_LANG = {
+
+  /* ── DIN 1 — Sarf kya hai ── */
+  1: {
+    mr: {
+      correct: [0, 0, 1],
+      quiz: [
+        { q: "सर्फ कोणत्या गोष्टीचे शास्त्र आहे?", opts: ["शब्दाची रचना", "वाक्याची रचना", "अक्षरांचा उच्चार"] },
+        { q: "नह्व कोणत्या गोष्टीचे शास्त्र आहे?", opts: ["वाक्याची रचना", "शब्दाची रचना", "गुणवाचक शब्द"] },
+        { q: "मुळात (जड) सहसा किती अक्षरे असतात?", opts: ["दोन", "तीन", "चार"] }
+      ]
+    },
+    ar: {
+      correct: [0, 0, 1],
+      quiz: [
+        { q: "الصرف علمٌ يبحث في…", opts: ["بناء الكلمة", "تركيب الجملة", "مخارج الحروف"] },
+        { q: "النحو علمٌ يبحث في…", opts: ["تركيب الجملة", "بناء الكلمة", "الصفات"] },
+        { q: "أكثر الجذور تتكوّن من…", opts: ["حرفين", "ثلاثة أحرف", "أربعة أحرف"] }
+      ]
+    },
+    fr: {
+      correct: [0, 0, 1],
+      quiz: [
+        { q: "Le Sarf étudie…", opts: ["la formation du mot", "la structure de la phrase", "la prononciation"] },
+        { q: "Le Nahw étudie…", opts: ["la structure de la phrase", "la formation du mot", "les qualités"] },
+        { q: "Une racine a le plus souvent…", opts: ["deux lettres", "trois lettres", "quatre lettres"] }
+      ]
+    },
+    es: {
+      correct: [0, 0, 1],
+      quiz: [
+        { q: "El Sarf estudia…", opts: ["la formación de la palabra", "la estructura de la frase", "la pronunciación"] },
+        { q: "El Nahw estudia…", opts: ["la estructura de la frase", "la formación de la palabra", "las cualidades"] },
+        { q: "Una raíz tiene casi siempre…", opts: ["dos letras", "tres letras", "cuatro letras"] }
+      ]
+    }
+  },
+
+  /* ── DIN 2 — Kalima ki 3 qismein ── */
+  2: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "अरबीत शब्दाचे किती प्रकार आहेत?", opts: ["दोन", "तीन", "चार"] },
+        { q: "{{كِتَاب}} कोणत्या प्रकारचा शब्द आहे?", opts: ["नाम (इसम)", "क्रियापद (फिअल)", "अव्यय (हर्फ)"] },
+        { q: "{{فِي}} कोणत्या प्रकारचा शब्द आहे?", opts: ["नाम", "क्रियापद", "अव्यय"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "كم أقسام الكلمة في العربية؟", opts: ["قسمان", "ثلاثة", "أربعة"] },
+        { q: "{{كِتَاب}} أيُّ الأقسام؟", opts: ["اسم", "فعل", "حرف"] },
+        { q: "{{فِي}} أيُّ الأقسام؟", opts: ["اسم", "فعل", "حرف"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "Combien de catégories de mots en arabe ?", opts: ["Deux", "Trois", "Quatre"] },
+        { q: "{{كِتَاب}} appartient à…", opts: ["un nom (ism)", "un verbe (fi'l)", "une particule (harf)"] },
+        { q: "{{فِي}} est…", opts: ["un nom", "un verbe", "une particule"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "¿Cuántas clases de palabra hay en árabe?", opts: ["Dos", "Tres", "Cuatro"] },
+        { q: "{{كِتَاب}} es…", opts: ["un nombre (ism)", "un verbo (fi'l)", "una partícula (harf)"] },
+        { q: "{{فِي}} es…", opts: ["un nombre", "un verbo", "una partícula"] }
+      ]
+    }
+  },
+
+  /* ── DIN 3 — Jadhr ── */
+  3: {
+    mr: {
+      correct: [0, 1, 0],
+      quiz: [
+        { q: "{{ك ت ب}} पासून «लेखक» कोणता शब्द आहे?", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كِتَاب}}"] },
+        { q: "मूळ लिहिताना काय देत नाहीत?", opts: ["अक्षरे", "हरकत", "दोन्ही"] },
+        { q: "{{ع ل م}} चा अर्थ काय?", opts: ["ज्ञान", "लिहिणे", "ऐकणे"] }
+      ]
+    },
+    ar: {
+      correct: [0, 1, 0],
+      quiz: [
+        { q: "أيُّ كلمةٍ من {{ك ت ب}} بمعنى الكاتب؟", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كِتَاب}}"] },
+        { q: "الجذر يُكتب…", opts: ["بالحركات", "بلا حركات", "بالتنوين"] },
+        { q: "معنى {{ع ل م}}؟", opts: ["العلم", "الكتابة", "السمع"] }
+      ]
+    },
+    fr: {
+      correct: [0, 1, 0],
+      quiz: [
+        { q: "Quel mot de {{ك ت ب}} signifie « écrivain » ?", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كِتَاب}}"] },
+        { q: "La racine s'écrit…", opts: ["avec les voyelles", "sans voyelles", "avec tanwîn"] },
+        { q: "Que signifie {{ع ل م}} ?", opts: ["le savoir", "l'écriture", "l'ouïe"] }
+      ]
+    },
+    es: {
+      correct: [0, 1, 0],
+      quiz: [
+        { q: "¿Qué palabra de {{ك ت ب}} significa «escritor»?", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كِتَاب}}"] },
+        { q: "La raíz se escribe…", opts: ["con vocales", "sin vocales", "con tanwín"] },
+        { q: "¿Qué significa {{ع ل م}}?", opts: ["el saber", "la escritura", "el oído"] }
+      ]
+    }
+  },
+
+  /* ── DIN 4 — Wazn ── */
+  4: {
+    mr: {
+      correct: [0, 0, 2],
+      quiz: [
+        { q: "वजन दाखवताना मुळाच्या जागी कोणती अक्षरे घेतात?", opts: ["{{ف ع ل}}", "{{ا ب ج}}", "{{ك ت ب}}"] },
+        { q: "{{فَاعِل}} साच्यात {{ك ت ب}} घातल्यास काय बनते?", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كَتَبَ}}"] },
+        { q: "वजन म्हणजे काय?", opts: ["शब्दाचा अर्थ", "शब्दाची जात", "शब्दाचा साचा"] }
+      ]
+    },
+    ar: {
+      correct: [0, 0, 2],
+      quiz: [
+        { q: "في الوزن تُوضع {{ف ع ل}} مكان…", opts: ["حروف الجذر", "حروف الزيادة", "الحركات"] },
+        { q: "{{ك ت ب}} في وزن {{فَاعِل}} تُعطي…", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كَتَبَ}}"] },
+        { q: "الوزن هو…", opts: ["معنى الكلمة", "نوع الكلمة", "قالب الكلمة"] }
+      ]
+    },
+    fr: {
+      correct: [0, 0, 2],
+      quiz: [
+        { q: "Dans un schème, {{ف ع ل}} remplacent…", opts: ["les lettres de la racine", "les lettres ajoutées", "les voyelles"] },
+        { q: "{{ك ت ب}} dans le schème {{فَاعِل}} donne…", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كَتَبَ}}"] },
+        { q: "Le wazn est…", opts: ["le sens du mot", "la classe du mot", "le moule du mot"] }
+      ]
+    },
+    es: {
+      correct: [0, 0, 2],
+      quiz: [
+        { q: "En el molde, {{ف ع ل}} ocupan el lugar de…", opts: ["las letras de la raíz", "las letras añadidas", "las vocales"] },
+        { q: "{{ك ت ب}} en el molde {{فَاعِل}} da…", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كَتَبَ}}"] },
+        { q: "El wazn es…", opts: ["el sentido de la palabra", "la clase de palabra", "el molde de la palabra"] }
+      ]
+    }
+  },
+
+  /* ── DIN 5 — Maazi ki 14 sooratein ── */
+  5: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "माहीची (भूतकाळ) किती रूपे आहेत?", opts: ["सहा", "चौदा", "दहा"] },
+        { q: "{{كَتَبَ}} चा अर्थ काय?", opts: ["त्याने लिहिले", "तो लिहितो", "लिही!"] },
+        { q: "माही कोणता काळ दाखवते?", opts: ["भविष्यकाळ", "वर्तमानकाळ", "पूर्ण झालेला काळ"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "كم صيغةً للماضي؟", opts: ["ستّ", "أربع عشرة", "عشر"] },
+        { q: "معنى {{كَتَبَ}}؟", opts: ["كتب", "يكتب", "اكتب"] },
+        { q: "الماضي يدل على…", opts: ["الاستقبال", "الحال", "زمنٍ مضى"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "Combien de formes a le passé (mâdî) ?", opts: ["Six", "Quatorze", "Dix"] },
+        { q: "{{كَتَبَ}} signifie…", opts: ["il a écrit", "il écrit", "écris"] },
+        { q: "Le mâdî exprime…", opts: ["le futur", "le présent", "un temps passé"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "¿Cuántas formas tiene el pasado (mâdî)?", opts: ["Seis", "Catorce", "Diez"] },
+        { q: "{{كَتَبَ}} significa…", opts: ["escribió", "escribe", "escribe tú"] },
+        { q: "El mâdî expresa…", opts: ["el futuro", "el presente", "un tiempo pasado"] }
+      ]
+    }
+  },
+
+  /* ── DIN 6 — Mudari' ── */
+  6: {
+    mr: {
+      correct: [0, 0, 1],
+      quiz: [
+        { q: "मुदारे कोणते दोन काळ दाखवते?", opts: ["वर्तमान व भविष्य", "फक्त भूतकाळ", "फक्त भविष्य"] },
+        { q: "मुदारे सुरू होते…", opts: ["{{ي}} / {{ت}} / {{أ}} / {{ن}}", "{{س}} / {{ش}} / {{ص}}", "{{ب}} / {{م}} / {{و}}"] },
+        { q: "{{يَكْتُبُ}} चा अर्थ?", opts: ["त्याने लिहिले", "तो लिहितो", "लिही!"] }
+      ]
+    },
+    ar: {
+      correct: [0, 0, 1],
+      quiz: [
+        { q: "المضارع يدل على…", opts: ["الحال والاستقبال", "الماضي فقط", "الاستقبال فقط"] },
+        { q: "المضارع يبدأ بأحد أحرف…", opts: ["{{أَنَيْتُ}}", "{{سَأَلَ}}", "{{بِمَو}}"] },
+        { q: "معنى {{يَكْتُبُ}}؟", opts: ["كتب", "يكتب", "اكتب"] }
+      ]
+    },
+    fr: {
+      correct: [0, 0, 1],
+      quiz: [
+        { q: "Le mudâri' exprime…", opts: ["le présent et le futur", "seulement le passé", "seulement le futur"] },
+        { q: "Le mudâri' commence par…", opts: ["une lettre de {{أَنَيْتُ}}", "{{س}} ou {{ش}}", "{{ب}} ou {{م}}"] },
+        { q: "{{يَكْتُبُ}} signifie…", opts: ["il a écrit", "il écrit", "écris"] }
+      ]
+    },
+    es: {
+      correct: [0, 0, 1],
+      quiz: [
+        { q: "El mudâri' expresa…", opts: ["presente y futuro", "solo pasado", "solo futuro"] },
+        { q: "El mudâri' empieza por…", opts: ["una letra de {{أَنَيْتُ}}", "{{س}} o {{ش}}", "{{ب}} o {{م}}"] },
+        { q: "{{يَكْتُبُ}} significa…", opts: ["escribió", "escribe", "escribe tú"] }
+      ]
+    }
+  },
+
+  /* ── DIN 7 — Amr ── */
+  7: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "अम्रची किती रूपे आहेत?", opts: ["चौदा", "सहा", "तीन"] },
+        { q: "अम्र कोणासाठी असतो?", opts: ["हजर (समोरचा) व्यक्ती", "गैरहजर", "वक्ता स्वतः"] },
+        { q: "{{اُكْتُبْ}} चा अर्थ?", opts: ["त्याने लिहिले", "तो लिहितो", "लिही!"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "كم صيغةً للأمر؟", opts: ["أربع عشرة", "ستّ", "ثلاث"] },
+        { q: "الأمر يكون لـ…", opts: ["المخاطب", "الغائب", "المتكلّم"] },
+        { q: "معنى {{اُكْتُبْ}}؟", opts: ["كتب", "يكتب", "اكتب"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "Combien de formes a l'ordre (amr) ?", opts: ["Quatorze", "Six", "Trois"] },
+        { q: "L'amr s'adresse à…", opts: ["l'interlocuteur", "l'absent", "le locuteur"] },
+        { q: "{{اُكْتُبْ}} signifie…", opts: ["il a écrit", "il écrit", "écris !"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "¿Cuántas formas tiene el imperativo (amr)?", opts: ["Catorce", "Seis", "Tres"] },
+        { q: "El amr se dirige a…", opts: ["el interlocutor", "el ausente", "el hablante"] },
+        { q: "{{اُكْتُبْ}} significa…", opts: ["escribió", "escribe", "¡escribe!"] }
+      ]
+    }
+  },
+
+  /* ── DIN 8 — Nahi ── */
+  8: {
+    mr: {
+      correct: [0, 2, 0],
+      quiz: [
+        { q: "नही कोणत्या अक्षराने बनते?", opts: ["{{لَا}}", "{{لَمْ}}", "{{هَلْ}}"] },
+        { q: "{{لَا تَكْتُبْ}} चा अर्थ?", opts: ["लिही!", "त्याने लिहिले", "लिहू नको"] },
+        { q: "नहीत मुदारे कोणत्या अवस्थेत असते?", opts: ["जझ्म", "रफ", "नस्ब"] }
+      ]
+    },
+    ar: {
+      correct: [0, 2, 0],
+      quiz: [
+        { q: "النهي يكون بـ…", opts: ["{{لَا}}", "{{لَمْ}}", "{{هَلْ}}"] },
+        { q: "معنى {{لَا تَكْتُبْ}}؟", opts: ["اكتب", "كتب", "لا تكتب"] },
+        { q: "الفعل بعد {{لَا}} الناهية يكون…", opts: ["مجزومًا", "مرفوعًا", "منصوبًا"] }
+      ]
+    },
+    fr: {
+      correct: [0, 2, 0],
+      quiz: [
+        { q: "La défense (nahî) se forme avec…", opts: ["{{لَا}}", "{{لَمْ}}", "{{هَلْ}}"] },
+        { q: "{{لَا تَكْتُبْ}} signifie…", opts: ["écris", "il a écrit", "n'écris pas"] },
+        { q: "Après {{لَا}}, le verbe est…", opts: ["au jazm", "au raf'", "au nasb"] }
+      ]
+    },
+    es: {
+      correct: [0, 2, 0],
+      quiz: [
+        { q: "La prohibición (nahî) se forma con…", opts: ["{{لَا}}", "{{لَمْ}}", "{{هَلْ}}"] },
+        { q: "{{لَا تَكْتُبْ}} significa…", opts: ["escribe", "escribió", "no escribas"] },
+        { q: "Tras {{لَا}}, el verbo va…", opts: ["en yazm", "en raf'", "en nasb"] }
+      ]
+    }
+  },
+
+  /* ── DIN 9 — Chhe abwab (1-3) ── */
+  9: {
+    mr: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "{{نَصَرَ يَنْصُرُ}} मध्ये दुसऱ्या अक्षराची हरकत?", opts: ["पेश → पेश", "जबर → जेर", "जेर → जबर"] },
+        { q: "{{ضَرَبَ يَضْرِبُ}} कोणत्या बाबात आहे?", opts: ["नसर", "जर्ब", "फतह"] },
+        { q: "{{فَتَحَ يَفْتَحُ}} मध्ये हरकत?", opts: ["पेश → जेर", "जेर → जेर", "जबर → जबर"] }
+      ]
+    },
+    ar: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "حركة العين في {{نَصَرَ يَنْصُرُ}}؟", opts: ["ضمٌّ فيهما", "فتحٌ ثم كسر", "كسرٌ ثم فتح"] },
+        { q: "{{ضَرَبَ يَضْرِبُ}} في أيّ باب؟", opts: ["نصر", "ضرب", "فتح"] },
+        { q: "حركة العين في {{فَتَحَ يَفْتَحُ}}؟", opts: ["ضمٌّ ثم كسر", "كسرٌ فيهما", "فتحٌ فيهما"] }
+      ]
+    },
+    fr: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "Voyelle de la 2e lettre dans {{نَصَرَ يَنْصُرُ}} ?", opts: ["damme → damme", "fatha → kasra", "kasra → fatha"] },
+        { q: "{{ضَرَبَ يَضْرِبُ}} appartient à…", opts: ["nasr", "darb", "fath"] },
+        { q: "Voyelles de {{فَتَحَ يَفْتَحُ}} ?", opts: ["damme → kasra", "kasra → kasra", "fatha → fatha"] }
+      ]
+    },
+    es: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "Vocal de la 2.ª letra en {{نَصَرَ يَنْصُرُ}}?", opts: ["damma → damma", "fatha → kasra", "kasra → fatha"] },
+        { q: "{{ضَرَبَ يَضْرِبُ}} pertenece a…", opts: ["nasr", "darb", "fath"] },
+        { q: "Vocales de {{فَتَحَ يَفْتَحُ}}?", opts: ["damma → kasra", "kasra → kasra", "fatha → fatha"] }
+      ]
+    }
+  },
+
+  /* ── DIN 10 — Chhe abwab (4-6) ── */
+  10: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{عَلِمَ يَعْلَمُ}} कोणत्या बाबात आहे?", opts: ["करम", "समअ", "हसब"] },
+        { q: "{{كَرُمَ يَكْرُمُ}} मध्ये हरकत?", opts: ["पेश → पेश", "जबर → जेर", "जेर → जेर"] },
+        { q: "{{حَسِبَ يَحْسِبُ}} मध्ये हरकत?", opts: ["जबर → जबर", "पेश → पेश", "जेर → जेर"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{عَلِمَ يَعْلَمُ}} في أيّ باب؟", opts: ["كرم", "سمع", "حسب"] },
+        { q: "حركة العين في {{كَرُمَ يَكْرُمُ}}؟", opts: ["ضمٌّ فيهما", "فتحٌ ثم كسر", "كسرٌ فيهما"] },
+        { q: "حركة العين في {{حَسِبَ يَحْسِبُ}}؟", opts: ["فتحٌ فيهما", "ضمٌّ فيهما", "كسرٌ فيهما"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{عَلِمَ يَعْلَمُ}} appartient à…", opts: ["karam", "sama'", "hasab"] },
+        { q: "Voyelles de {{كَرُمَ يَكْرُمُ}} ?", opts: ["damme → damme", "fatha → kasra", "kasra → kasra"] },
+        { q: "Voyelles de {{حَسِبَ يَحْسِبُ}} ?", opts: ["fatha → fatha", "damme → damme", "kasra → kasra"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{عَلِمَ يَعْلَمُ}} pertenece a…", opts: ["karam", "sama'", "hasab"] },
+        { q: "Vocales de {{كَرُمَ يَكْرُمُ}}?", opts: ["damma → damma", "fatha → kasra", "kasra → kasra"] },
+        { q: "Vocales de {{حَسِبَ يَحْسِبُ}}?", opts: ["fatha → fatha", "damma → damma", "kasra → kasra"] }
+      ]
+    }
+  }
+
+  /* Agle dinon (11–30) ka imtihan bhi isi tarah jodte jayenge. */
+};
