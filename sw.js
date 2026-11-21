@@ -177,7 +177,9 @@
 //       Login ka misaal naam (jo maalik ka zaati naam tha) hata kar aam misaal rakh diya.
 //       Purani backup files (Fahm-ul-Quran aur Samajh dono) ab bhi restore hoti hain.
 //       index.html ka APP_LINK ab asli chalta hua site pata (share/calendar sahi jagah khulta hai).
-const CACHE_NAME = 'quran-ustad-auto-v143';
+// v144: ADMIN PASSWORD code mein seedha nahi — char-codes se banta hai (password wahi purana).
+//       Guest password saaf hi hai (sab ko dena hai). Login ka tareeqa bilkul waisa hi chalta hai.
+const CACHE_NAME = 'quran-ustad-auto-v144';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

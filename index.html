@@ -577,7 +577,11 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
     <script src="course-lang.js"></script>
     <script src="sunnat.js"></script>
     <script>
-        const ADMIN_PASSWORD = "Fauzan8087";
+        // Admin password — wahi purana password, magar code mein seedha lafz nahi (char-codes mein).
+        // Is tarah page ka source dekhne par password seedha nazar nahi aata. (Yaad rakhne ke liye:
+        // password wahi hai jo pehle tha — badla nahi hai.)
+        const ADMIN_PASSWORD = String.fromCharCode(70, 97, 117, 122, 97, 110, 56, 48, 56, 55);
+        // Guest password jaan-boojh kar saaf likha hai — ye sab ko dena hi hai
         const GUEST_PASSWORD = "quran123";
         const APP_LINK = "https://fauzan0096.github.io/fahm-ul-quraan/"; 
 
@@ -630,7 +634,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             } else {
                 name = typed;
                 if (!name) { err.innerText = "❌ Apna pura naam likhein!"; return; }
-                if (name.length < 3 || name.split(' ').length < 2) { err.innerText = "❌ Pehla aur aakhri naam dono likhein (jaise: Mohammad Fauzan)."; return; }
+                if (name.length < 3 || name.split(' ').length < 2) { err.innerText = "❌ Pehla aur aakhri naam dono likhein (jaise: Abdullah Khan)."; return; }
                 if (name.toLowerCase() === 'admin' || nameToId(name) === nameToId(ADMIN_DISPLAY_NAME)) { err.innerText = "❌ Ye naam allowed nahi hai, apna naam likhein."; return; }
             }
 
