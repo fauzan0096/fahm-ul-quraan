@@ -190,7 +190,10 @@
 // v148: NAHW-SARF KA SABAQ nayi 4 zubaanoN mein — nayi file grammar-body-lang.js.
 //       Us mein jitne din hain (abhi 1–5), un dinon ka poora matn (sections, keyFacts,
 //       reflection) us zubaan mein aata hai; baqi din English par chalte hain, kuch tootta nahi.
-const CACHE_NAME = 'quran-ustad-auto-v148';
+// v149: NAHW-SARF ke SAARE 30 din (15 Sarf + 15 Nahw) mr/ar/fr/es mein mukammal.
+//       Ab in 4 zubaanoN par Nahw-Sarf page par koi sabaq English mein nahi rehta
+//       (sirf imtihan ke sawal English mein hain — unke jawab number se jude hain).
+const CACHE_NAME = 'quran-ustad-auto-v149';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

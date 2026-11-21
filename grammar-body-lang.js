@@ -551,6 +551,543 @@ window.GRAMMAR_BODY_LANG = {
     }
   }
 
-  /* Agle din (16 se 30 = Nahw) yahan jodte jayenge — jaise hi koi din judta hai,
-     us zubaan par wo din poora usi zubaan mein dikhne lagta hai. */
+  /* ═══════════════ DIN 16 — Nahw kya hai ═══════════════ */
+  16: {
+    mr: {
+      sections: [
+        { h: "📖 नह्व म्हणजे काय?", p: "नह्व अरबी भाषेचे ते शास्त्र आहे ज्यात वाक्याची रचना, शब्दांचा क्रम आणि शेवटच्या अक्षराची हरकत (एराब) यांचा अभ्यास होतो. सोप्या शब्दांत — नह्व म्हणजे «वाक्याचा नकाशा»." },
+        { h: "🎯 का गरजेचे?", p: "एकच शब्द वाक्यात वेगळ्या जागी आल्यावर वेगळा अर्थ देतो. एराब ओळखल्यावर कोण कर्ता आहे, कोण कर्म — हे स्पष्ट होते." }
+      ],
+      keyFacts: ["सर्फ = शब्दाची रचना; नह्व = वाक्याची रचना.", "एराब = शेवटच्या अक्षराची हरकत.", "एराब न बदलता अर्थ बदलतो — म्हणून तो जरुरी."],
+      reflection: "एक लहान आयत घ्या आणि प्रत्येक शब्दाची वाक्यातील भूमिका सांगा."
+    },
+    ar: {
+      sections: [
+        { h: "📖 ما هو النحو؟", p: "النحو علمٌ يبحث في تركيب الجملة وترتيب الكلمات وحركة آخر الكلمة (الإعراب). وبعبارة بسيطة: النحو «خريطة الجملة»." },
+        { h: "🎯 لماذا هو ضروري؟", p: "الكلمة الواحدة يتغيّر معناها بتغيّر موقعها في الجملة، وبالإعراب يُعرف الفاعل من المفعول." }
+      ],
+      keyFacts: ["الصرف: بناء الكلمة، والنحو: بناء الجملة.", "الإعراب: حركة آخر الكلمة.", "تغيّر الإعراب يغيّر المعنى."],
+      reflection: "خذ آيةً قصيرة وبيّن وظيفة كل كلمة فيها."
+    },
+    fr: {
+      sections: [
+        { h: "📖 Qu'est-ce que le Nahw ?", p: "Le Nahw étudie la structure de la phrase, l'ordre des mots et la voyelle finale (i'râb). En bref : le Nahw est « la carte de la phrase »." },
+        { h: "🎯 Pourquoi est-ce nécessaire ?", p: "Un même mot change de sens selon sa place dans la phrase ; l'i'râb permet de distinguer le sujet de l'objet." }
+      ],
+      keyFacts: ["Sarf = le mot ; Nahw = la phrase.", "I'râb = voyelle de la dernière lettre.", "Changer l'i'râb change le sens."],
+      reflection: "Prends un verset court et indique la fonction de chaque mot."
+    },
+    es: {
+      sections: [
+        { h: "📖 ¿Qué es el Nahw?", p: "El Nahw estudia la estructura de la frase, el orden de las palabras y la vocal final (i'râb). En pocas palabras: el Nahw es «el mapa de la frase»." },
+        { h: "🎯 ¿Por qué es necesario?", p: "Una misma palabra cambia de sentido según su lugar en la frase; el i'râb distingue el sujeto del objeto." }
+      ],
+      keyFacts: ["Sarf = la palabra; Nahw = la frase.", "I'râb = vocal de la última letra.", "Cambiar el i'râb cambia el sentido."],
+      reflection: "Toma un versículo corto e indica la función de cada palabra."
+    }
+  },
+
+  /* ═══════════════ DIN 17 — I'rab ki 4 halatein ═══════════════ */
+  17: {
+    mr: {
+      sections: [
+        { h: "🎵 एराबच्या चार अवस्था", p: "{{رَفْع}} (पेश), {{نَصْب}} (जबर), {{جَرّ}} (जेर) आणि {{جَزْم}} (सुकून). नामाला तीन अवस्था (रफ, नस्ब, जर्र) आणि क्रियापदाला तीन (रफ, नस्ब, जझ्म)." },
+        { h: "📊 रफ, नस्ब, जर्र, जझ्म", p: "{{رَفْع}} चिन्ह: {{ـُ}} / {{ـٌ}} — कर्ता, मुब्तदा, खबर. {{نَصْب}}: {{ـَ}} / {{ـً}} — कर्म. {{جَرّ}}: {{ـِ}} — जर्रच्या अक्षरानंतर. {{جَزْم}}: {{ـْ}} — {{لَمْ}} नंतर." }
+      ],
+      keyFacts: ["चार अवस्था: रफ, नस्ब, जर्र, जझ्म.", "जर्र फक्त नामाला; जझ्म फक्त मुदारेला.", "एराब ओळखणे = वाक्यातील भूमिका ओळखणे."],
+      reflection: "{{اللَّهُ أَحَدٌ}} मधल्या दोन्ही शब्दांची एराब सांगा."
+    },
+    ar: {
+      sections: [
+        { h: "🎵 حالات الإعراب الأربع", p: "{{رَفْع}} (ضمة) و{{نَصْب}} (فتحة) و{{جَرّ}} (كسرة) و{{جَزْم}} (سكون). وللاسم ثلاث: رفع ونصب وجرّ، وللفعل ثلاث: رفع ونصب وجزم." },
+        { h: "📊 علاماتها", p: "الرفع: {{ـُ}} / {{ـٌ}}. النصب: {{ـَ}} / {{ـً}}. الجرّ: {{ـِ}} (بعد حرف جر أو إضافة). الجزم: {{ـْ}} (بعد {{لَمْ}})." }
+      ],
+      keyFacts: ["أربع حالات: رفع، نصب، جرّ، جزم.", "الجرّ للاسم، والجزم للمضارع.", "معرفة الإعراب = معرفة الوظيفة."],
+      reflection: "أعرب كلمتَي {{اللَّهُ أَحَدٌ}}."
+    },
+    fr: {
+      sections: [
+        { h: "🎵 Les quatre cas de l'i'râb", p: "{{رَفْع}} (damme), {{نَصْب}} (fatha), {{جَرّ}} (kasra), {{جَزْم}} (soukoun). Le nom a trois cas (raf', nasb, jarr) et le verbe trois (raf', nasb, jazm)." },
+        { h: "📊 Leurs signes", p: "Raf' : {{ـُ}} / {{ـٌ}}. Nasb : {{ـَ}} / {{ـً}}. Jarr : {{ـِ}} après une préposition ou une annexion. Jazm : {{ـْ}} après {{لَمْ}}." }
+      ],
+      keyFacts: ["Quatre cas : raf', nasb, jarr, jazm.", "Jarr pour le nom, jazm pour le mudâri'.", "Connaître l'i'râb, c'est connaître la fonction."],
+      reflection: "Analyse les deux mots de {{اللَّهُ أَحَدٌ}}."
+    },
+    es: {
+      sections: [
+        { h: "🎵 Los cuatro casos del i'râb", p: "{{رَفْع}} (damma), {{نَصْب}} (fatha), {{جَرّ}} (kasra), {{جَزْم}} (sukún). El nombre tiene tres casos (raf', nasb, yarr) y el verbo tres (raf', nasb, yazm)." },
+        { h: "📊 Sus signos", p: "Raf': {{ـُ}} / {{ـٌ}}. Nasb: {{ـَ}} / {{ـً}}. Yarr: {{ـِ}} tras preposición o anexión. Yazm: {{ـْ}} tras {{لَمْ}}." }
+      ],
+      keyFacts: ["Cuatro casos: raf', nasb, yarr, yazm.", "Yarr para el nombre, yazm para el mudâri'.", "Conocer el i'râb es conocer la función."],
+      reflection: "Analiza las dos palabras de {{اللَّهُ أَحَدٌ}}."
+    }
+  },
+
+  /* ═══════════════ DIN 18 — Jumla ismiyya ═══════════════ */
+  18: {
+    mr: {
+      sections: [
+        { h: "🏠 इस्मीय वाक्य (नामापासून सुरू)", p: "जे वाक्य नामाने सुरू होते ते {{جُمْلَة اسْمِيَّة}}. त्याचे दोन भाग: {{مُبْتَدَأ}} (ज्याच्याबद्दल बोलतात) आणि {{خَبَر}} (त्याची माहिती). दोन्ही रफमध्ये असतात." },
+        { h: "📖 उदाहरण", p: "{{اللَّهُ أَحَدٌ}} — «अल्लाह एक आहे». {{اللَّهُ}} = मुब्तदा (रफ), {{أَحَدٌ}} = खबर (रफ). खबर एक शब्द, वाक्यांश किंवा पूर्ण वाक्य असू शकते." }
+      ],
+      keyFacts: ["इस्मीय वाक्य = मुब्तदा + खबर.", "दोन्ही सामान्यतः रफमध्ये.", "खबर शब्द, वाक्यांश किंवा वाक्य असू शकते."],
+      reflection: "{{الْحَمْدُ لِلَّهِ}} मध्ये मुब्तदा व खबर ओळखा."
+    },
+    ar: {
+      sections: [
+        { h: "🏠 الجملة الاسمية", p: "ما بدأ باسمٍ يُسمّى جملةً اسمية، وعموداه {{مُبْتَدَأ}} و{{خَبَر}}. والمبتدأ مرفوع، والخبر مرفوع." },
+        { h: "📖 مثال", p: "{{اللَّهُ أَحَدٌ}}: {{اللَّهُ}} مبتدأ مرفوع، {{أَحَدٌ}} خبر مرفوع. والخبر قد يكون مفردًا أو جملةً أو شبه جملة." }
+      ],
+      keyFacts: ["الجملة الاسمية: مبتدأ + خبر.", "كلاهما مرفوع في الأصل.", "الخبر يكون مفردًا أو جملةً أو شبه جملة."],
+      reflection: "أعرب {{الْحَمْدُ لِلَّهِ}} وبيّن المبتدأ والخبر."
+    },
+    fr: {
+      sections: [
+        { h: "🏠 La phrase nominale", p: "Une phrase qui commence par un nom s'appelle {{جُمْلَة اسْمِيَّة}}. Ses deux piliers : le {{مُبْتَدَأ}} (ce dont on parle) et le {{خَبَر}} (l'information). Les deux sont au raf'." },
+        { h: "📖 Exemple", p: "{{اللَّهُ أَحَدٌ}} : {{اللَّهُ}} mubtada (raf'), {{أَحَدٌ}} khabar (raf'). Le khabar peut être un mot, un groupe ou une phrase." }
+      ],
+      keyFacts: ["Phrase nominale = mubtada + khabar.", "Les deux au raf' en principe.", "Le khabar peut être simple ou complexe."],
+      reflection: "Analyse {{الْحَمْدُ لِلَّهِ}} : où sont le mubtada et le khabar ?"
+    },
+    es: {
+      sections: [
+        { h: "🏠 La frase nominal", p: "La frase que empieza por un nombre se llama {{جُمْلَة اسْمِيَّة}}. Sus dos pilares: el {{مُبْتَدَأ}} (de lo que se habla) y el {{خَبَر}} (la información). Ambos van en raf'." },
+        { h: "📖 Ejemplo", p: "{{اللَّهُ أَحَدٌ}}: {{اللَّهُ}} mubtada (raf'), {{أَحَدٌ}} jabar (raf'). El jabar puede ser una palabra, un grupo o una frase." }
+      ],
+      keyFacts: ["Frase nominal = mubtada + jabar.", "Ambos en raf' por defecto.", "El jabar puede ser simple o complejo."],
+      reflection: "Analiza {{الْحَمْدُ لِلَّهِ}} y señala mubtada y jabar."
+    }
+  },
+
+  /* ═══════════════ DIN 19 — Jumla fi'liyya ═══════════════ */
+  19: {
+    mr: {
+      sections: [
+        { h: "🏃 क्रियापदीय वाक्य", p: "जे वाक्य क्रियापदाने सुरू होते ते {{جُمْلَة فِعْلِيَّة}}. क्रम: क्रियापद + कर्ता ({{فَاعِل}}) + कर्म ({{مَفْعُول بِهِ}}) — जर असेल तर. कर्ता नेहमी रफमध्ये, कर्म नस्बमध्ये." },
+        { h: "📖 उदाहरण", p: "{{كَتَبَ الطَّالِبُ الدَّرْسَ}} — «विद्यार्थ्याने धडा लिहिला». {{كَتَبَ}} = क्रियापद, {{الطَّالِبُ}} = कर्ता (रफ), {{الدَّرْسَ}} = कर्म (नस्ब)." }
+      ],
+      keyFacts: ["क्रियापदीय वाक्य = क्रियापद + कर्ता (+ कर्म).", "कर्ता रफ, कर्म नस्ब.", "कर्ता क्रियापदानंतर येतो (मराठीप्रमाणे नाही)."],
+      reflection: "{{خَلَقَ اللَّهُ السَّمَاوَاتِ}} मधले कर्ता व कर्म सांगा."
+    },
+    ar: {
+      sections: [
+        { h: "🏃 الجملة الفعلية", p: "ما بدأ بفعلٍ يُسمّى جملةً فعلية. وترتيبها: فعل + فاعل + مفعول به (إن وُجد). والفاعل مرفوع، والمفعول منصوب." },
+        { h: "📖 مثال", p: "{{كَتَبَ الطَّالِبُ الدَّرْسَ}}: {{كَتَبَ}} فعل، {{الطَّالِبُ}} فاعل مرفوع، {{الدَّرْسَ}} مفعول به منصوب." }
+      ],
+      keyFacts: ["الجملة الفعلية: فعل + فاعل (+ مفعول).", "الفاعل مرفوع دائمًا.", "الفعل يطابق الفاعل في التذكير والتأنيث."],
+      reflection: "أعرب {{خَلَقَ اللَّهُ السَّمَاوَاتِ}}."
+    },
+    fr: {
+      sections: [
+        { h: "🏃 La phrase verbale", p: "Une phrase qui commence par un verbe est une {{جُمْلَة فِعْلِيَّة}}. L'ordre : verbe + sujet ({{فَاعِل}}) + objet ({{مَفْعُول بِهِ}}) s'il y en a un. Le sujet est au raf', l'objet au nasb." },
+        { h: "📖 Exemple", p: "{{كَتَبَ الطَّالِبُ الدَّرْسَ}} : {{كَتَبَ}} verbe, {{الطَّالِبُ}} sujet (raf'), {{الدَّرْسَ}} objet (nasb)." }
+      ],
+      keyFacts: ["Phrase verbale : verbe + sujet (+ objet).", "Sujet au raf', objet au nasb.", "Le verbe s'accorde en genre avec le sujet."],
+      reflection: "Analyse {{خَلَقَ اللَّهُ السَّمَاوَاتِ}}."
+    },
+    es: {
+      sections: [
+        { h: "🏃 La frase verbal", p: "La frase que empieza por un verbo es {{جُمْلَة فِعْلِيَّة}}. El orden: verbo + sujeto ({{فَاعِل}}) + objeto ({{مَفْعُول بِهِ}}) si lo hay. El sujeto en raf', el objeto en nasb." },
+        { h: "📖 Ejemplo", p: "{{كَتَبَ الطَّالِبُ الدَّرْسَ}}: {{كَتَبَ}} verbo, {{الطَّالِبُ}} sujeto (raf'), {{الدَّرْسَ}} objeto (nasb)." }
+      ],
+      keyFacts: ["Frase verbal: verbo + sujeto (+ objeto).", "Sujeto en raf', objeto en nasb.", "El verbo concuerda en género con el sujeto."],
+      reflection: "Analiza {{خَلَقَ اللَّهُ السَّمَاوَاتِ}}."
+    }
+  },
+
+  /* ═══════════════ DIN 20 — Kana aur uski behnein ═══════════════ */
+  20: {
+    mr: {
+      sections: [
+        { h: "🔄 {{كَانَ}} आणि तिच्या बहिणी", p: "{{كَانَ}} (होते) इस्मीय वाक्यात येते आणि एराब बदलते: मुब्तदा रफमध्ये राहतो (त्याला {{اسْم كَانَ}} म्हणतात) पण खबर नस्बमध्ये जाते ({{خَبَر كَانَ}})." },
+        { h: "📖 उदाहरण", p: "{{كَانَ الطَّالِبُ مُجْتَهِدًا}} — «विद्यार्थी मेहनती होता». {{الطَّالِبُ}} = इस्म कान (रफ), {{مُجْتَهِدًا}} = खबर कान (नस्ब). बहिणी: {{أَصْبَحَ، أَظْهَرَ، صَارَ، لَيْسَ، مَا زَالَ}}." }
+      ],
+      keyFacts: ["{{كَانَ}} मुब्तदाचा रफ ठेवते, खबर नस्ब करते.", "बहिणी: {{أَصْبَحَ، صَارَ، لَيْسَ، مَا زَالَ}} इत्यादी.", "{{لَيْسَ}} नकारासाठी वापरते."],
+      reflection: "{{كَانَ اللَّهُ غَفُورًا}} मधले इस्म कान व खबर कान सांगा."
+    },
+    ar: {
+      sections: [
+        { h: "🔄 كان وأخواتها", p: "{{كَانَ}} تدخل على الجملة الاسمية فترفع المبتدأ ويُسمّى {{اسْم كَانَ}}، وتنصب الخبر ويُسمّى {{خَبَر كَانَ}}." },
+        { h: "📖 مثال", p: "{{كَانَ الطَّالِبُ مُجْتَهِدًا}}: {{الطَّالِبُ}} اسم كان مرفوع، {{مُجْتَهِدًا}} خبر كان منصوب. وأخواتها: {{أَصْبَحَ، أَظْهَرَ، صَارَ، لَيْسَ، مَا زَالَ}}." }
+      ],
+      keyFacts: ["كان ترفع الاسم وتنصب الخبر.", "أخواتها تعمل عملها.", "{{لَيْسَ}} للنفي."],
+      reflection: "أعرب {{كَانَ اللَّهُ غَفُورًا}}."
+    },
+    fr: {
+      sections: [
+        { h: "🔄 {{كَانَ}} et ses sœurs", p: "{{كَانَ}} entre dans la phrase nominale : elle laisse le mubtada au raf' ({{اسْم كَانَ}}) et met le khabar au nasb ({{خَبَر كَانَ}})." },
+        { h: "📖 Exemple", p: "{{كَانَ الطَّالِبُ مُجْتَهِدًا}} : {{الطَّالِبُ}} nom de kâna (raf'), {{مُجْتَهِدًا}} prédicat de kâna (nasb). Ses sœurs : {{أَصْبَحَ، صَارَ، لَيْسَ، مَا زَالَ}}." }
+      ],
+      keyFacts: ["Kâna : nom au raf', prédicat au nasb.", "Ses sœurs ont le même effet.", "{{لَيْسَ}} sert à nier."],
+      reflection: "Analyse {{كَانَ اللَّهُ غَفُورًا}}."
+    },
+    es: {
+      sections: [
+        { h: "🔄 {{كَانَ}} y sus hermanas", p: "{{كَانَ}} entra en la frase nominal: deja el mubtada en raf' ({{اسْم كَانَ}}) y pone el jabar en nasb ({{خَبَر كَانَ}})." },
+        { h: "📖 Ejemplo", p: "{{كَانَ الطَّالِبُ مُجْتَهِدًا}}: {{الطَّالِبُ}} nombre de kâna (raf'), {{مُجْتَهِدًا}} predicado de kâna (nasb). Sus hermanas: {{أَصْبَحَ، صَارَ، لَيْسَ، مَا زَالَ}}." }
+      ],
+      keyFacts: ["Kâna: nombre en raf', predicado en nasb.", "Sus hermanas actúan igual.", "{{لَيْسَ}} sirve para negar."],
+      reflection: "Analiza {{كَانَ اللَّهُ غَفُورًا}}."
+    }
+  }
+
+  /* ═══════════════ DIN 21 — Inna aur uski behnein ═══════════════ */
+  21: {
+    mr: {
+      sections: [
+        { h: "❗ {{إِنَّ}} आणि तिच्या बहिणी", p: "{{إِنَّ}} (निश्चयच {{إِنَّ}}) इस्मीय वाक्यात येते आणि उलट काम करते: मुब्तदा नस्बमध्ये जातो ({{اسْم إِنَّ}}) आणि खबर रफमध्ये राहतो ({{خَبَر إِنَّ}}). बहिणी: {{إِنَّ، أَنَّ، كَأَنَّ، لَكِنَّ، لَيْتَ، لَعَلَّ}}." },
+        { h: "📖 उदाहरण", p: "{{إِنَّ اللَّهَ غَفُورٌ}}: {{اللَّهَ}} = इस्म इन्न (नस्ब), {{غَفُورٌ}} = खबर इन्न (रफ). {{لَيْتَ}} इच्छा, {{لَعَلَّ}} आशा, {{كَأَنَّ}} तुलना, {{لَكِنَّ}} विरोध." }
+      ],
+      keyFacts: ["{{إِنَّ}} मुब्तदाला नस्ब देते, खबर रफ ठेवते.", "सहा बहिणी: इन्न, अन्न, कअन्न, लाकिन्न, लैत, लअल्ल.", "{{إِنَّ}} निश्चयासाठी, {{لَعَلَّ}} आशेसाठी."],
+      reflection: "{{إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ}} मधले इस्म व खबर सांगा."
+    },
+    ar: {
+      sections: [
+        { h: "❗ إنّ وأخواتها", p: "{{إِنَّ}} تدخل على الجملة الاسمية فتنصب المبتدأ ({{اسْم إِنَّ}}) وترفع الخبر ({{خَبَر إِنَّ}}) — عكس عمل كان. وأخواتها: {{إِنَّ، أَنَّ، كَأَنَّ، لَكِنَّ، لَيْتَ، لَعَلَّ}}." },
+        { h: "📖 مثال", p: "{{إِنَّ اللَّهَ غَفُورٌ}}: {{اللَّهَ}} اسم إنّ منصوب، {{غَفُورٌ}} خبر إنّ مرفوع. و{{لَيْتَ}} للتمنّي، {{لَعَلَّ}} للرجاء، {{كَأَنَّ}} للتشبيه." }
+      ],
+      keyFacts: ["إنّ وأخواتها تنصب الاسم وترفع الخبر.", "ستٌّ: إنّ، أنّ، كأنّ، لكنّ، ليت، لعلّ.", "لكلٍّ منها معنى زائد على التوكيد."],
+      reflection: "أعرب {{إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ}}."
+    },
+    fr: {
+      sections: [
+        { h: "❗ {{إِنَّ}} et ses sœurs", p: "{{إِنَّ}} fait l'inverse de kâna : elle met le mubtada au nasb ({{اسْم إِنَّ}}) et laisse le khabar au raf' ({{خَبَر إِنَّ}}). Ses sœurs : {{إِنَّ، أَنَّ، كَأَنَّ، لَكِنَّ، لَيْتَ، لَعَلَّ}}." },
+        { h: "📖 Exemple", p: "{{إِنَّ اللَّهَ غَفُورٌ}} : {{اللَّهَ}} nom de inna (nasb), {{غَفُورٌ}} prédicat (raf'). {{لَيْتَ}} = souhait, {{لَعَلَّ}} = espoir, {{كَأَنَّ}} = comparaison." }
+      ],
+      keyFacts: ["Inna : nom au nasb, prédicat au raf'.", "Six sœurs.", "Chacune ajoute un sens (souhait, espoir…)."],
+      reflection: "Analyse {{إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ}}."
+    },
+    es: {
+      sections: [
+        { h: "❗ {{إِنَّ}} y sus hermanas", p: "{{إِنَّ}} hace lo contrario de kâna: pone el mubtada en nasb ({{اسْم إِنَّ}}) y deja el jabar en raf' ({{خَبَر إِنَّ}}). Sus hermanas: {{إِنَّ، أَنَّ، كَأَنَّ، لَكِنَّ، لَيْتَ، لَعَلَّ}}." },
+        { h: "📖 Ejemplo", p: "{{إِنَّ اللَّهَ غَفُورٌ}}: {{اللَّهَ}} nombre de inna (nasb), {{غَفُورٌ}} predicado (raf'). {{لَيْتَ}} = deseo, {{لَعَلَّ}} = esperanza, {{كَأَنَّ}} = comparación." }
+      ],
+      keyFacts: ["Inna: nombre en nasb, predicado en raf'.", "Seis hermanas.", "Cada una añade un matiz (deseo, esperanza…)."],
+      reflection: "Analiza {{إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ}}."
+    }
+  },
+
+  /* ═══════════════ DIN 22 — Harf jarr (jarr ke huruf) ═══════════════ */
+  22: {
+    mr: {
+      sections: [
+        { h: "🔗 जर्रची अक्षरे", p: "नामाच्या आधी येऊन त्याला जर्र (जेर) देणारी अक्षरे — {{بِ}} (ने/साठी), {{لِ}} (साठी), {{فِي}} (मध्ये), {{مِنْ}} (पासून), {{إِلَى}} (कडे), {{عَلَى}} (वर), {{عَنْ}} (बद्दल), {{كَ}} (सारखे), {{رُبَّ}} (कधीकधी)." },
+        { h: "📖 उदाहरण", p: "{{فِي الْبَيْتِ}} — «घरात»: {{الْبَيْتِ}} जर्रमध्ये. {{بِسْمِ اللَّهِ}} — {{اللَّهِ}} जर्रमध्ये. जर्रच्या अक्षरानंतर नाम नेहमी जर्रमध्ये असते." }
+      ],
+      keyFacts: ["हर्फ जर्र नंतर नाम जर्रमध्ये.", "सर्वात जास्त वापरले: {{بِ، لِ، فِي، مِنْ، إِلَى}}.", "काही अक्षरे अर्थ बदलतात ({{مِنْ}} = पासून, {{فِي}} = मध्ये)."],
+      reflection: "{{بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ}} मधली जर्रची अक्षरे ओळखा."
+    },
+    ar: {
+      sections: [
+        { h: "🔗 حروف الجرّ", p: "حروفٌ تجرّ ما بعدها — {{بِ، لِ، فِي، مِنْ، إِلَى، عَلَى، عَنْ، كَ، رُبَّ}}. والاسم بعدها مجرور أبدًا." },
+        { h: "📖 مثال", p: "{{فِي الْبَيْتِ}}: {{الْبَيْتِ}} مجرور بالكسرة. {{بِسْمِ اللَّهِ}}: {{اللَّهِ}} مجرور. ولكل حرفٍ معنى: {{مِنْ}} للابتداء، {{إِلَى}} للانتهاء، {{عَلَى}} للاستعلاء." }
+      ],
+      keyFacts: ["بعد حرف الجرّ: اسم مجرور.", "أشهرها: {{بِ، لِ، فِي، مِنْ، إِلَى}}.", "لكل حرفٍ معنى خاصّ."],
+      reflection: "استخرج حروف الجرّ من {{بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ}}."
+    },
+    fr: {
+      sections: [
+        { h: "🔗 Les prépositions", p: "Des particules qui mettent le nom suivant au jarr — {{بِ، لِ، فِي، مِنْ، إِلَى، عَلَى، عَنْ، كَ، رُبَّ}}. Le nom après elles est toujours au jarr." },
+        { h: "📖 Exemple", p: "{{فِي الْبَيْتِ}} : {{الْبَيْتِ}} au jarr. {{بِسْمِ اللَّهِ}} : {{اللَّهِ}} au jarr. Chaque particule a son sens : {{مِنْ}} = origine, {{إِلَى}} = terme." }
+      ],
+      keyFacts: ["Après une préposition : nom au jarr.", "Les plus fréquentes : {{بِ، لِ، فِي، مِنْ، إِلَى}}.", "Chacune a un sens propre."],
+      reflection: "Relève les prépositions de {{بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ}}."
+    },
+    es: {
+      sections: [
+        { h: "🔗 Las preposiciones", p: "Partículas que ponen en yarr al nombre siguiente — {{بِ، لِ، فِي، مِنْ، إِلَى، عَلَى، عَنْ، كَ، رُبَّ}}. El nombre tras ellas va siempre en yarr." },
+        { h: "📖 Ejemplo", p: "{{فِي الْبَيْتِ}}: {{الْبَيْتِ}} en yarr. {{بِسْمِ اللَّهِ}}: {{اللَّهِ}} en yarr. Cada partícula tiene su sentido: {{مِنْ}} = origen, {{إِلَى}} = término." }
+      ],
+      keyFacts: ["Tras preposición: nombre en yarr.", "Las más frecuentes: {{بِ، لِ، فِي، مِنْ، إِلَى}}.", "Cada una tiene su matiz."],
+      reflection: "Saca las preposiciones de {{بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ}}."
+    }
+  },
+
+  /* ═══════════════ DIN 23 — Izafat (mudaf/mudaf ilayh) ═══════════════ */
+  23: {
+    mr: {
+      sections: [
+        { h: "➕ इजाफत काय आहे?", p: "दोन नामे जोडणे — पहिले ({{مُضَاف}}) दुसऱ्याचे ({{مُضَاف إِلَيْه}}) होते. मुदाफला {{ال}} नसते व तन्वीन नसते; मुदाफ इलैह नेहमी जर्रमध्ये असते." },
+        { h: "📖 उदाहरण", p: "{{كِتَابُ الطَّالِبِ}} — «विद्यार्थ्याचे पुस्तक». {{كِتَابُ}} = मुदाफ, {{الطَّالِبِ}} = मुदाफ इलैह (जर्र). {{بَابُ الْبَيْتِ}} — «घराचा दरवाजा»." }
+      ],
+      keyFacts: ["मुदाफ: {{ال}} आणि तन्वीन नाही.", "मुदाफ इलैह: नेहमी जर्र.", "इजाफत = «चा/ची/चे» संबंध."],
+      reflection: "{{بَابُ الْبَيْتِ}} मध्ये मुदाफ व मुदाफ इलैह ओळखा."
+    },
+    ar: {
+      sections: [
+        { h: "➕ الإضافة", p: "ضمُّ اسمٍ إلى اسمٍ: الأول {{مُضَاف}} والثاني {{مُضَاف إِلَيْه}}. والمضاف لا يدخله {{ال}} ولا التنوين، والمضاف إليه مجرورٌ دائمًا." },
+        { h: "📖 مثال", p: "{{كِتَابُ الطَّالِبِ}}: {{كِتَابُ}} مضاف، {{الطَّالِبِ}} مضاف إليه مجرور. {{بَابُ الْبَيْتِ}}: مضاف ومضاف إليه." }
+      ],
+      keyFacts: ["المضاف بلا {{ال}} وبلا تنوين.", "المضاف إليه مجرور.", "الإضافة تفيد التملّك أو التخصيص."],
+      reflection: "بيّن المضاف والمضاف إليه في {{بَابُ الْبَيْتِ}}."
+    },
+    fr: {
+      sections: [
+        { h: "➕ L'annexion (idâfa)", p: "Joindre deux noms : le premier est le {{مُضَاف}}, le second le {{مُضَاف إِلَيْه}}. Le mudâf n'a ni {{ال}} ni tanwîn ; le mudâf ilayh est toujours au jarr." },
+        { h: "📖 Exemple", p: "{{كِتَابُ الطَّالِبِ}} : « le livre de l'étudiant ». {{كِتَابُ}} = mudâf, {{الطَّالِبِ}} = mudâf ilayh (jarr)." }
+      ],
+      keyFacts: ["Mudâf : sans {{ال}} ni tanwîn.", "Mudâf ilayh : toujours au jarr.", "L'idâfa exprime la possession ou la précision."],
+      reflection: "Repère le mudâf et le mudâf ilayh dans {{بَابُ الْبَيْتِ}}."
+    },
+    es: {
+      sections: [
+        { h: "➕ La anexión (idâfa)", p: "Unir dos nombres: el primero es el {{مُضَاف}}, el segundo el {{مُضَاف إِلَيْه}}. El mudâf no lleva {{ال}} ni tanwín; el mudâf ilayh va siempre en yarr." },
+        { h: "📖 Ejemplo", p: "{{كِتَابُ الطَّالِبِ}}: «el libro del estudiante». {{كِتَابُ}} = mudâf, {{الطَّالِبِ}} = mudâf ilayh (yarr)." }
+      ],
+      keyFacts: ["Mudâf: sin {{ال}} ni tanwín.", "Mudâf ilayh: siempre en yarr.", "La idâfa expresa posesión o precisión."],
+      reflection: "Señala mudâf y mudâf ilayh en {{بَابُ الْبَيْتِ}}."
+    }
+  },
+
+  /* ═══════════════ DIN 24 — Na't aur Man'ut ═══════════════ */
+  24: {
+    mr: {
+      sections: [
+        { h: "🎨 विशेषण व विशेष्य", p: "विशेषण ({{نَعْت}} / {{صِفَة}}) विशेष्याची ({{مَنْعُوت}} / {{مَوْصُوف}}) माहिती सांगते. अरबीत विशेषण विशेष्यानंतर येते आणि त्याच्याशी एराब, लिंग व वचनात जुळते." },
+        { h: "📖 उदाहरण", p: "{{رَجُلٌ كَرِيمٌ}} — «उदार माणूस» (दोन्ही रफ, पुल्लिंग, एकवचन). {{امْرَأَةٌ كَرِيمَةٌ}} — स्त्रीलिंगात {{ـة}}. {{الرَّجُلُ الْكَرِيمُ}} — दोन्ही {{ال}} सह." }
+      ],
+      keyFacts: ["विशेषण विशेष्यानंतर येते.", "एराब, लिंग, वचन — तीनही जुळतात.", "विशेष्य {{ال}} असेल तर विशेषणही {{ال}}."],
+      reflection: "{{الْكِتَابُ الْجَدِيدُ}} मधले नअत व मनऊत सांगा."
+    },
+    ar: {
+      sections: [
+        { h: "🎨 النعت والمنعوت", p: "النعت (الصفة) يبيّن صفة المنعوت (الموصوف). ويتأخّر عنه، ويطابقه في الإعراب والتعريف والتنكير والتذكير والتأنيث والعدد." },
+        { h: "📖 مثال", p: "{{رَجُلٌ كَرِيمٌ}}: نعتٌ ومنعوتٌ مرفوعان. {{امْرَأَةٌ كَرِيمَةٌ}}: بالتأنيث. {{الرَّجُلُ الْكَرِيمُ}}: كلاهما معرّف." }
+      ],
+      keyFacts: ["النعت بعد المنعوت.", "يطابقه في أربعة: الإعراب، التعريف، النوع، العدد.", "النعت يوضّح ويخصّص."],
+      reflection: "بيّن النعت والمنعوت في {{الْكِتَابُ الْجَدِيدُ}}."
+    },
+    fr: {
+      sections: [
+        { h: "🎨 L'adjectif et le nom décrit", p: "Le {{نَعْت}} (adjectif) décrit le {{مَنْعُوت}} (nom décrit). Il vient après et s'accorde en i'râb, en genre et en nombre, et suit la présence de {{ال}}." },
+        { h: "📖 Exemple", p: "{{رَجُلٌ كَرِيمٌ}} (un homme généreux), {{امْرَأَةٌ كَرِيمَةٌ}} (une femme généreuse), {{الرَّجُلُ الْكَرِيمُ}} (l'homme généreux)." }
+      ],
+      keyFacts: ["L'adjectif suit le nom décrit.", "Accord en i'râb, genre, nombre.", "Même présence de {{ال}}."],
+      reflection: "Repère l'adjectif et le nom décrit dans {{الْكِتَابُ الْجَدِيدُ}}."
+    },
+    es: {
+      sections: [
+        { h: "🎨 El adjetivo y el sustantivo descrito", p: "El {{نَعْت}} (adjetivo) describe al {{مَنْعُوت}} (sustantivo). Va después y concuerda en i'râb, género y número, y lleva {{ال}} si la lleva el sustantivo." },
+        { h: "📖 Ejemplo", p: "{{رَجُلٌ كَرِيمٌ}} (hombre generoso), {{امْرَأَةٌ كَرِيمَةٌ}} (mujer generosa), {{الرَّجُلُ الْكَرِيمُ}} (el hombre generoso)." }
+      ],
+      keyFacts: ["El adjetivo va tras el sustantivo.", "Concuerda en i'râb, género y número.", "Misma presencia de {{ال}}."],
+      reflection: "Señala adjetivo y sustantivo en {{الْكِتَابُ الْجَدِيدُ}}."
+    }
+  },
+
+  /* ═══════════════ DIN 25 — Atf, Badal, Ta'keed ═══════════════ */
+  25: {
+    mr: {
+      sections: [
+        { h: "🔀 तीन अनुयायी शब्द", p: "{{عَطْف}} = जोडणी ({{وَ، فَ، ثُمَّ، أَوْ}} ने जोडलेला शब्द वरचा एराब घेतो), {{بَدَل}} = बदली (पहिल्याची जागा घेतो), {{تَأْكِيد}} = ठामपणा (वाढीव एकच शब्द — {{نَفْس، عَيْن، كُلّ، جَمِيع}})." },
+        { h: "📖 उदाहरण", p: "{{جَاءَ زَيْدٌ وَعَمْرٌو}} — दोघेही रफमध्ये. {{جَاءَ أَخُوكَ زَيْدٌ}} — {{زَيْدٌ}} बदली (बदल). {{جَاءَ الطُّلَّابُ كُلُّهُمْ}} — ठामपणा." }
+      ],
+      keyFacts: ["अनुयायी (तवाबी): नअत, अत्फ, बदल, ताअकीद.", "प्रत्येकजण पहिल्याचा एराब घेतो.", "{{كُلّ}} व {{جَمِيع}} ठामपणासाठी."],
+      reflection: "{{جَاءَ الْقَوْمُ أَجْمَعُونَ}} मधला शब्द कोणत्या प्रकारचा आहे?"
+    },
+    ar: {
+      sections: [
+        { h: "🔀 التوابع الثلاثة", p: "{{عَطْف}} (يُوصل بـ{{وَ، فَ، ثُمَّ، أَوْ}} فيأخذ إعراب ما قبله)، {{بَدَل}} (يحلّ محلّ ما قبله)، {{تَأْكِيد}} ({{نَفْس، عَيْن، كُلّ، جَمِيع}})." },
+        { h: "📖 مثال", p: "{{جَاءَ زَيْدٌ وَعَمْرٌو}}: كلاهما مرفوع. {{جَاءَ أَخُوكَ زَيْدٌ}}: {{زَيْدٌ}} بدل. {{جَاءَ الطُّلَّابُ كُلُّهُمْ}}: توكيد." }
+      ],
+      keyFacts: ["التوابع أربع: النعت، العطف، البدل، التوكيد.", "كلّها تتبع ما قبلها في الإعراب.", "{{كُلّ}} و{{جَمِيع}} للتوكيد."],
+      reflection: "ما نوع {{أَجْمَعُونَ}} في {{جَاءَ الْقَوْمُ أَجْمَعُونَ}}؟"
+    },
+    fr: {
+      sections: [
+        { h: "🔀 Les trois suivants", p: "{{عَطْف}} = coordination (avec {{وَ، فَ، ثُمَّ، أَوْ}}) qui prend le même i'râb ; {{بَدَل}} = substitut qui remplace le premier ; {{تَأْكِيد}} = renforcement ({{نَفْس، عَيْن، كُلّ، جَمِيع}})." },
+        { h: "📖 Exemple", p: "{{جَاءَ زَيْدٌ وَعَمْرٌو}} : tous deux au raf'. {{جَاءَ أَخُوكَ زَيْدٌ}} : {{زَيْدٌ}} badal. {{جَاءَ الطُّلَّابُ كُلُّهُمْ}} : renforcement." }
+      ],
+      keyFacts: ["Les suivants (tawâbi') : na't, atf, badal, ta'kîd.", "Ils suivent l'i'râb du premier.", "{{كُلّ}} et {{جَمِيع}} renforcent."],
+      reflection: "Quelle est la fonction de {{أَجْمَعُونَ}} dans {{جَاءَ الْقَوْمُ أَجْمَعُونَ}} ?"
+    },
+    es: {
+      sections: [
+        { h: "🔀 Los tres seguidores", p: "{{عَطْف}} = coordinación (con {{وَ، فَ، ثُمَّ، أَوْ}}) que toma el mismo i'râb; {{بَدَل}} = sustituto que reemplaza al primero; {{تَأْكِيد}} = refuerzo ({{نَفْس، عَيْن، كُلّ، جَمِيع}})." },
+        { h: "📖 Ejemplo", p: "{{جَاءَ زَيْدٌ وَعَمْرٌو}}: ambos en raf'. {{جَاءَ أَخُوكَ زَيْدٌ}}: {{زَيْدٌ}} badal. {{جَاءَ الطُّلَّابُ كُلُّهُمْ}}: refuerzo." }
+      ],
+      keyFacts: ["Los seguidores (tawâbi'): na't, atf, badal, ta'kîd.", "Siguen el i'râb del primero.", "{{كُلّ}} y {{جَمِيع}} refuerzan."],
+      reflection: "¿Qué función tiene {{أَجْمَعُونَ}} en {{جَاءَ الْقَوْمُ أَجْمَعُونَ}}?"
+    }
+  }
+
+  /* ═══════════════ DIN 26 — Mawsul aur Ishara ═══════════════ */
+  26: {
+    mr: {
+      sections: [
+        { h: "🔗 जोडणारी व दाखवणारी नामे", p: "{{اسْم مَوْصُول}} वाक्याला आधीच्या नामाशी जोडते — {{الَّذِي}} (पुल्लिंग एकवचन), {{الَّتِي}} (स्त्रीलिंग), {{الَّذِينَ}} (पुल्लिंग अनेकवचन), {{اللَّاتِي}} (स्त्रीलिंग अनेकवचन), {{مَنْ}} (समजुतीच्या प्राण्यांसाठी), {{مَا}} (बाकी साठी)." },
+        { h: "📖 दाखवणारी नामे", p: "{{هَذَا}} (हा), {{هَذِهِ}} (ही), {{ذَلِكَ}} (तो), {{تِلْكَ}} (ती), {{أُولَئِكَ}} (ते). ही सर्व {{ال}} सह येतात व त्यांच्यानंतरचा शब्द वर्णन करतो." }
+      ],
+      keyFacts: ["मौसूल = जोडणारे; इशारा = दाखवणारे.", "{{الَّذِي}} च्या नंतरचे वाक्य त्याला स्पष्ट करते.", "दोन्ही ज्ञानार्थक (मारिफा) नामे आहेत."],
+      reflection: "{{الَّذِي}} घेऊन एक वाक्य बनवा आणि त्याचा अर्थ सांगा."
+    },
+    ar: {
+      sections: [
+        { h: "🔗 الأسماء الموصولة وأسماء الإشارة", p: "الموصول يربط جملةً بما قبله — {{الَّذِي، الَّتِي، الَّذِينَ، اللَّاتِي، مَنْ، مَا}}. والإشارة تدلّ على معيّن — {{هَذَا، هَذِهِ، ذَلِكَ، تِلْكَ، أُولَئِكَ}}." },
+        { h: "📖 ملاحظة", p: "الموصول يحتاج جملةً بعده تُسمّى {{صِلَة المَوْصُول}}، وهي التي تبيّن معناه: {{الَّذِي يَكْتُبُ}} = الذي يكتب." }
+      ],
+      keyFacts: ["الموصول لا يتمّ معناه إلا بصلته.", "أسماء الإشارة للمفرد والمثنى والجمع.", "كلها معارف."],
+      reflection: "كوّن جملةً بـ{{الَّذِي}} وبيّن صلتها."
+    },
+    fr: {
+      sections: [
+        { h: "🔗 Relatifs et démonstratifs", p: "Le relatif relie une proposition à ce qui précède — {{الَّذِي، الَّتِي، الَّذِينَ، اللَّاتِي، مَنْ، مَا}}. Le démonstratif désigne — {{هَذَا، هَذِهِ، ذَلِكَ، تِلْكَ، أُولَئِكَ}}." },
+        { h: "📖 Remarque", p: "Le relatif a besoin d'une proposition appelée {{صِلَة المَوْصُول}} qui en précise le sens : {{الَّذِي يَكْتُبُ}} = celui qui écrit." }
+      ],
+      keyFacts: ["Le relatif ne se comprend qu'avec sa proposition.", "Les démonstratifs varient en nombre.", "Tous sont des noms définis."],
+      reflection: "Fais une phrase avec {{الَّذِي}} et indique sa subordonnée."
+    },
+    es: {
+      sections: [
+        { h: "🔗 Relativos y demostrativos", p: "El relativo une una frase a lo anterior — {{الَّذِي، الَّتِي، الَّذِينَ، اللَّاتِي، مَنْ، مَا}}. El demostrativo señala — {{هَذَا، هَذِهِ، ذَلِكَ، تِلْكَ، أُولَئِكَ}}." },
+        { h: "📖 Nota", p: "El relativo necesita una frase llamada {{صِلَة المَوْصُول}} que precisa su sentido: {{الَّذِي يَكْتُبُ}} = el que escribe." }
+      ],
+      keyFacts: ["El relativo se entiende con su frase.", "Los demostrativos varían en número.", "Todos son nombres definidos."],
+      reflection: "Haz una frase con {{الَّذِي}} e indica su subordinada."
+    }
+  },
+
+  /* ═══════════════ DIN 27 — Damair (sarvaname) ═══════════════ */
+  27: {
+    mr: {
+      sections: [
+        { h: "👤 वेगळे सर्वनाम (मुनफसिल)", p: "{{أَنَا}} (मी), {{نَحْنُ}} (आम्ही), {{أَنْتَ}} (तू, पु.), {{أَنْتِ}} (तू, स्त्री), {{هُوَ}} (तो), {{هِيَ}} (ती), {{هُمْ}} (ते), {{هُنَّ}} (त्या)." },
+        { h: "👤 जोडलेले सर्वनाम (मुत्तसिल)", p: "शब्दाच्या शेवटी जोडले जातात — {{ـهُ}} (त्याचा), {{ـهَا}} (तिचा), {{ـكَ}} (तुझा), {{ـنِي}} (मला), {{ـنَا}} (आम्हाला). उदा. {{كِتَابُهُ}} = त्याचे पुस्तक." }
+      ],
+      keyFacts: ["मुनफसिल = वेगळा शब्द; मुत्तसिल = जोडलेला.", "सर्वनाम नेहमी मारिफा (ज्ञात) असते.", "मुत्तसिल सर्वनाम जर्र किंवा नस्बमध्ये असते."],
+      reflection: "{{كِتَابِي}} व {{كِتَابُهُ}} यांचा फरक स्पष्ट करा."
+    },
+    ar: {
+      sections: [
+        { h: "👤 الضمائر المنفصلة", p: "{{أَنَا، نَحْنُ، أَنْتَ، أَنْتِ، هُوَ، هِيَ، هُمْ، هُنَّ}}. وتكون في محلّ رفع غالبًا." },
+        { h: "👤 الضمائر المتصلة", p: "تتصل بآخر الكلمة — {{ـهُ، ـهَا، ـكَ، ـنِي، ـنَا}}. نحو {{كِتَابُهُ}} (كتابه) و{{كِتَابِي}} (كتابي)." }
+      ],
+      keyFacts: ["المنفصل كلمة مستقلة، والمتصل لا يُنطق وحده.", "الضمير معرفة دائمًا.", "المتصل يأتي في محلّ جرّ أو نصب."],
+      reflection: "فرّق بين {{كِتَابِي}} و{{كِتَابُهُ}}."
+    },
+    fr: {
+      sections: [
+        { h: "👤 Les pronoms séparés", p: "{{أَنَا، نَحْنُ، أَنْتَ، أَنْتِ، هُوَ، هِيَ، هُمْ، هُنَّ}} — pronoms autonomes, généralement au raf'." },
+        { h: "👤 Les pronoms attachés", p: "Ils s'attachent à la fin du mot — {{ـهُ، ـهَا، ـكَ، ـنِي، ـنَا}} : {{كِتَابُهُ}} (son livre), {{كِتَابِي}} (mon livre)." }
+      ],
+      keyFacts: ["Séparé = mot autonome ; attaché = suffixe.", "Un pronom est toujours défini.", "L'attaché est au jarr ou au nasb."],
+      reflection: "Explique la différence entre {{كِتَابِي}} et {{كِتَابُهُ}}."
+    },
+    es: {
+      sections: [
+        { h: "👤 Los pronombres separados", p: "{{أَنَا، نَحْنُ، أَنْتَ، أَنْتِ، هُوَ، هِيَ، هُمْ، هُنَّ}} — pronombres autónomos, casi siempre en raf'." },
+        { h: "👤 Los pronombres unidos", p: "Se unen al final de la palabra — {{ـهُ، ـهَا، ـكَ، ـنِي، ـنَا}}: {{كِتَابُهُ}} (su libro), {{كِتَابِي}} (mi libro)." }
+      ],
+      keyFacts: ["Separado = palabra autónoma; unido = sufijo.", "El pronombre es siempre definido.", "El unido va en yarr o nasb."],
+      reflection: "Explica la diferencia entre {{كِتَابِي}} y {{كِتَابُهُ}}."
+    }
+  },
+
+  /* ═══════════════ DIN 28 — Haal aur Tamyeez ═══════════════ */
+  28: {
+    mr: {
+      sections: [
+        { h: "🎭 हाल (अवस्था)", p: "कर्ता किंवा कर्माची अवस्था सांगणारा नस्बमधला शब्द — {{جَاءَ زَيْدٌ رَاكِبًا}} («झैद स्वार होऊन आला»). प्रश्न: «कसा?»" },
+        { h: "🎭 तम्यीझ (स्पष्टता)", p: "एखाद्या अस्पष्ट गोष्टीची जात स्पष्ट करणारा नस्बमधला शब्द — {{اشْتَرَيْتُ رِطْلًا زَيْتًا}} («मी एक रतल तेल विकत घेतले»). प्रश्न: «काय?»" }
+      ],
+      keyFacts: ["हाल = अवस्था; तम्यीझ = जातीची स्पष्टता.", "दोन्ही नस्बमध्ये.", "हाल प्रश्न «कसा?», तम्यीझ प्रश्न «काय?»."],
+      reflection: "{{رَأَيْتُ الطَّالِبَ مُبْتَسِمًا}} मध्ये हाल कोणता?"
+    },
+    ar: {
+      sections: [
+        { h: "🎭 الحال", p: "اسمٌ منصوب يبيّن هيئة الفاعل أو المفعول — {{جَاءَ زَيْدٌ رَاكِبًا}}. والسؤال: كيف؟" },
+        { h: "🎭 التمييز", p: "اسمٌ منصوب يرفع الإبهام عن مقدارٍ أو جنس — {{اشْتَرَيْتُ رِطْلًا زَيْتًا}}. والسؤال: ماذا؟" }
+      ],
+      keyFacts: ["كلاهما منصوب.", "الحال يُسأل عنه بـ«كيف»، والتمييز بـ«ماذا».", "الحال قد يكون جملةً أو شبه جملة."],
+      reflection: "ما الحال في {{رَأَيْتُ الطَّالِبَ مُبْتَسِمًا}}؟"
+    },
+    fr: {
+      sections: [
+        { h: "🎭 Le hâl (état)", p: "Nom au nasb qui décrit l'état du sujet ou de l'objet — {{جَاءَ زَيْدٌ رَاكِبًا}} (Zayd vint à cheval). Question : « comment ? »" },
+        { h: "🎭 Le tamyîz (précision)", p: "Nom au nasb qui lève l'ambiguïté sur une quantité ou une espèce — {{اشْتَرَيْتُ رِطْلًا زَيْتًا}}. Question : « quoi ? »" }
+      ],
+      keyFacts: ["Les deux sont au nasb.", "Hâl → « comment ? » ; tamyîz → « quoi ? ».", "Le hâl peut être une phrase."],
+      reflection: "Quel est le hâl dans {{رَأَيْتُ الطَّالِبَ مُبْتَسِمًا}} ?"
+    },
+    es: {
+      sections: [
+        { h: "🎭 El hâl (estado)", p: "Nombre en nasb que describe el estado del sujeto o del objeto — {{جَاءَ زَيْدٌ رَاكِبًا}} (Zayd vino montado). Pregunta: «¿cómo?»" },
+        { h: "🎭 El tamyîz (precisión)", p: "Nombre en nasb que aclara una cantidad o una especie — {{اشْتَرَيْتُ رِطْلًا زَيْتًا}}. Pregunta: «¿qué?»" }
+      ],
+      keyFacts: ["Ambos van en nasb.", "Hâl → «¿cómo?»; tamyîz → «¿qué?».", "El hâl puede ser una frase."],
+      reflection: "¿Cuál es el hâl en {{رَأَيْتُ الطَّالِبَ مُبْتَسِمًا}}?"
+    }
+  },
+
+  /* ═══════════════ DIN 29 — Majrurat aur Majzumat ═══════════════ */
+  29: {
+    mr: {
+      sections: [
+        { h: "📊 जर्र होणारी नामे", p: "तीन ठिकाणे: (1) जर्रच्या अक्षरानंतर — {{فِي الْبَيْتِ}}, (2) मुदाफ इलैह — {{كِتَابُ الطَّالِبِ}}, (3) जर्रतील अनुयायी (नअत, अत्फ, बदल)." },
+        { h: "📊 जझ्म होणारी क्रियापदे", p: "मुदारे जझ्ममध्ये येते: {{لَمْ}} नंतर — {{لَمْ يَكْتُبْ}}, {{لَمَّا}} नंतर — {{لَمَّا يَذْهَبْ}}, आणि शर्तीच्या अक्षरानंतर — {{إِنْ تَذْهَبْ أَذْهَبْ}}." }
+      ],
+      keyFacts: ["जर्र: 3 ठिकाणे (हर्फ, इजाफत, अनुयायी).", "जझ्म: फक्त मुदारे.", "{{لَمْ}} नकार भूतकाळासाठी वापरतात."],
+      reflection: "{{لَمْ يَلِدْ وَلَمْ يُولَدْ}} मध्ये जझ्मची कारणे सांगा."
+    },
+    ar: {
+      sections: [
+        { h: "📊 المجرورات", p: "ثلاثة مواضع: (1) بعد حرف الجرّ — {{فِي الْبَيْتِ}}، (2) المضاف إليه — {{كِتَابُ الطَّالِبِ}}، (3) التابع المجرور (نعت، عطف، بدل)." },
+        { h: "📊 المجزومات", p: "المضارع يُجزم بـ{{لَمْ}} — {{لَمْ يَكْتُبْ}}، وبـ{{لَمَّا}} — {{لَمَّا يَذْهَبْ}}، وبأدوات الشرط — {{إِنْ تَذْهَبْ أَذْهَبْ}}." }
+      ],
+      keyFacts: ["الجرّ في ثلاثة مواضع.", "الجزم للمضارع فقط.", "{{لَمْ}} تنفي الماضي وتقلبه إلى مضارع مجزوم."],
+      reflection: "بيّن سبب الجزم في {{لَمْ يَلِدْ وَلَمْ يُولَدْ}}."
+    },
+    fr: {
+      sections: [
+        { h: "📊 Les noms au jarr", p: "Trois cas : (1) après une préposition — {{فِي الْبَيْتِ}} ; (2) complément d'annexion — {{كِتَابُ الطَّالِبِ}} ; (3) le suivant au jarr (na't, atf, badal)." },
+        { h: "📊 Les verbes au jazm", p: "Le mudâri' est au jazm après {{لَمْ}} — {{لَمْ يَكْتُبْ}} — après {{لَمَّا}}, et après les particules de condition — {{إِنْ تَذْهَبْ أَذْهَبْ}}." }
+      ],
+      keyFacts: ["Le jarr a trois causes.", "Le jazm ne concerne que le mudâri'.", "{{لَمْ}} nie le passé."],
+      reflection: "Explique le jazm dans {{لَمْ يَلِدْ وَلَمْ يُولَدْ}}."
+    },
+    es: {
+      sections: [
+        { h: "📊 Los nombres en yarr", p: "Tres casos: (1) tras preposición — {{فِي الْبَيْتِ}}; (2) complemento de anexión — {{كِتَابُ الطَّالِبِ}}; (3) el seguidor en yarr (na't, atf, badal)." },
+        { h: "📊 Los verbos en yazm", p: "El mudâri' va en yazm tras {{لَمْ}} — {{لَمْ يَكْتُبْ}} — tras {{لَمَّا}}, y tras partículas de condición — {{إِنْ تَذْهَبْ أَذْهَبْ}}." }
+      ],
+      keyFacts: ["El yarr tiene tres causas.", "El yazm solo afecta al mudâri'.", "{{لَمْ}} niega el pasado."],
+      reflection: "Explica el yazm en {{لَمْ يَلِدْ وَلَمْ يُولَدْ}}."
+    }
+  },
+
+  /* ═══════════════ DIN 30 — Nahw ka khulasa ═══════════════ */
+  30: {
+    mr: {
+      sections: [
+        { h: "🏆 15 दिवसांत काय शिकलो?", p: "नह्वची व्याख्या, एराबच्या 4 अवस्था, इस्मीय वाक्य (मुब्तदा-खबर), क्रियापदीय वाक्य (क्रियापद-कर्ता-कर्म), {{كَانَ}} व {{إِنَّ}} च्या बहिणी, जर्रची अक्षरे, इजाफत, विशेषण, अनुयायी, सर्वनाम, हाल, तम्यीझ, जर्र व जझ्म." },
+        { h: "🌱 पुढे काय?", p: "हे नियम रोज एक आयतावर लावा. एराब ओळखता आला की अर्थ स्वतः स्पष्ट होतो — शब्दकोशाची गरज कमी होते." }
+      ],
+      keyFacts: ["नह्व = वाक्याचा नकाशा; सर्फ = शब्दाची रचना.", "एराब ओळखणे हीच खरी किल्ली.", "सराव: रोज एक आयत."],
+      reflection: "आज एक आयत घ्या आणि प्रत्येक शब्दाची भूमिका व एराब सांगा."
+    },
+    ar: {
+      sections: [
+        { h: "🏆 ماذا تعلّمنا في خمسة عشر يومًا؟", p: "تعريف النحو، وحالات الإعراب الأربع، والجملة الاسمية (مبتدأ وخبر)، والجملة الفعلية (فعل وفاعل ومفعول)، وكان وأخواتها، وإنّ وأخواتها، وحروف الجرّ، والإضافة، والنعت، والتوابع، والضمائر، والحال، والتمييز، والمجرورات والمجزومات." },
+        { h: "🌱 الخطوة التالية", p: "طبّق هذه القواعد على آيةٍ كل يوم؛ فإذا عرفتَ الإعراب فهمتَ المعنى بلا معجم." }
+      ],
+      keyFacts: ["النحو خريطة الجملة، والصرف بناء الكلمة.", "الإعراب هو المفتاح.", "التمرين اليومي يثبّت القاعدة."],
+      reflection: "خذ آيةً اليوم وأعرب كل كلمة فيها إعرابًا مختصرًا."
+    },
+    fr: {
+      sections: [
+        { h: "🏆 Ce que nous avons appris en 15 jours", p: "La définition du Nahw, les quatre cas de l'i'râb, la phrase nominale (mubtada/khabar), la phrase verbale (verbe/sujet/objet), kâna et ses sœurs, inna et ses sœurs, les prépositions, l'annexion, l'adjectif, les suivants, les pronoms, le hâl, le tamyîz, les noms au jarr et les verbes au jazm." },
+        { h: "🌱 La suite", p: "Applique ces règles à un verset chaque jour : connaître l'i'râb suffit souvent à comprendre sans dictionnaire." }
+      ],
+      keyFacts: ["Nahw = carte de la phrase ; Sarf = formation du mot.", "L'i'râb est la clé.", "Un verset par jour suffit."],
+      reflection: "Prends un verset et donne l'i'râb de chaque mot."
+    },
+    es: {
+      sections: [
+        { h: "🏆 Lo que aprendimos en 15 días", p: "La definición del Nahw, los cuatro casos del i'râb, la frase nominal (mubtada/jabar), la frase verbal (verbo/sujeto/objeto), kâna y sus hermanas, inna y sus hermanas, las preposiciones, la anexión, el adjetivo, los seguidores, los pronombres, el hâl, el tamyîz, los nombres en yarr y los verbos en yazm." },
+        { h: "🌱 Lo siguiente", p: "Aplica estas reglas a un versículo cada día: con el i'râb muchas veces se entiende sin diccionario." }
+      ],
+      keyFacts: ["Nahw = mapa de la frase; Sarf = formación de la palabra.", "El i'râb es la llave.", "Un versículo al día basta."],
+      reflection: "Toma un versículo y da el i'râb de cada palabra."
+    }
+  }
 };
