@@ -2,7 +2,7 @@
   "id": "./index.html",
   "name": "Fahm-ul-Quran",
   "short_name": "Fahm-ul-Quran",
-  "description": "Quran ke 900 alfaz (90 din ka course), masnoon duaein, tajweed, 99 naam aur games — Urdu, Roman, Hindi aur English mein seekhein",
+  "description": "Quran ke 900 alfaz (90 din ka course), 138 masnoon duaein, tajweed, 99 naam, seerat, arkan aur games — 8 zubaanoN mein: اردو, Roman, हिंदी, English, मराठी, العربية, Français, Español",
   "lang": "ur",
   "dir": "rtl",
   "start_url": "./index.html",
@@ -182,7 +182,7 @@
     {
       "name": "Masnoon Duaein",
       "short_name": "Duaein",
-      "description": "119 duaein",
+      "description": "138 duaein",
       "url": "./dua.html",
       "icons": [
         {

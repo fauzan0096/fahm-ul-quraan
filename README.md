@@ -119,7 +119,7 @@ Ek hi button (`data-qs-lang` / `QSLang.cycle()`) 8 zubaanein ghoomta hai: **ار
 - Azan ke waqt set hon to **Maghrib ke baad** nayi tareekh. Chaand dekhne se farq ho sakta hai, isliye popup mein **−1 / +1 din** se khud theek kar sakte hain (yaad rehta hai).
 
 ### 🤲 Masnoon Duaein (`dua.html`)
-- **119 duaein**: Namaz (59), Subah-Sham Azkar, Roz marra (26, Hisnul Muslim), Mushkil & Pareshani, Bimari & Shifa, Sone se Pehle
+- **138 duaein**: Namaz (59), Subah-Sham Azkar, Roz marra (26, Hisnul Muslim), Mushkil & Pareshani, Bimari & Shifa, Sone se Pehle
 - Har dua: Arabic (line-wise) + Roman + Urdu tarjuma + tafseel + hawala
 - 🔍 Search (Urdu ya Roman)
 - **⭐ Favourites** — jo dua baar baar padhni ho, card ke ☆ par tap karein. Upar **⭐ Favourites** tab mein sab ek jagah milengi (search bhi chalta hai). Har profile ki apni favourites list.
@@ -134,7 +134,7 @@ Basic / Intermediate / High qawaid, misaalon ke saath — har misaal Qari ki awa
 - **📊 Mahine ka hisaab**: 5 boxes (Fajr–Isha) mein padhi/chhooti, % aur din-ba-din grid (box dabakar badal sakte hain). Sirf **is mahine + pichle mahine** ka data rakha jata hai. Mahine ke aakhri din Isha ke baad (ya naye mahine mein pehli baar kholne par) apne aap hisaab dikhta hai.
 - **🔊 Azan ki awaaz**: azan ka waqt aate hi (app khula ho to) apne aap, `azan-aksa.mp3` / `azan-sweet.mp3` / `azan-3.mp3` mein se chuni hui bajti hai (Settings mein badal sakte hain ya band). Phone kabhi-kabhi bina chhue awaaz rok deta hai.
 - **📅 Calendar alarm**: 2 mahine ke azan alarms ki `.ics` file (app band ho tab bhi phone bajata hai).
-- Har page ke `<head>` mein `<script src="namaz.js" defer></script>` chahiye (index aur games mein lag chuka hai).
+- Har page ke `<head>` mein `<script src="tools.js" defer></script>` chahiye (index aur games mein lag chuka hai).
 
 ### 📿 Tasbeeh (`tasbeeh.js`)
 - Home par **Azan** aur **Roz ki yaad** ke neeche ek tile — tap karte hi poori screen ka misbaha khulta hai.
@@ -208,7 +208,7 @@ Dhyan dein:
 .
 ├── index.html       # Sabaq, exam, login, shop, certificate (main app)
 ├── quran.html       # 114 surahein (Indo-Pak), tarjuma, audio
-├── dua.html         # 119 masnoon duaein
+├── dua.html         # 138 masnoon duaein
 ├── tajweed.html     # 38 tajweed qawaid + hawala
 ├── asma.html        # 99 Asma-ul-Husna
 ├── games.html       # Maratib-e-Ilm, Sahaba, Memory, Emoji, Bazm-e-Fahm
@@ -336,7 +336,7 @@ Login ke passwords `index.html` ke script mein (`ADMIN_PASSWORD`, `GUEST_PASSWOR
 
 ## Language system
 - `lang.js`: ek shared button Urdu → Roman → Hindi → English (`localStorage 'mlang'`). Games page bhi shamil (v83): sawal/options/kahaniyan/messages `games-lang.js` mein (GT/GU/GM); Bazm ke lafz `course.js` se.
-- `duaTr.js`: 119 duaon ka Roman/Hindi/English tarjuma + tafseel.
+- `dua.js`: 138 duaon ka Roman/Hindi/English tarjuma + tafseel.
 - Tajweed: har card mein hawala + 5 corrections (Madd Lazim misaal, Waqf ط/ج, Waqf misaal 2:2, Rasm misaal, English typo).
 - Tarjume kisi mustanad aalim/kitab se verify karwa lein.
 - Quran page: tafseer hata di; Arabic text se akela 'ش' token filter hota hai.

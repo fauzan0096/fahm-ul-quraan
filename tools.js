@@ -3,10 +3,10 @@
    (Is file mein: namaz.js, hijri.js, tasbeeh.js)
    ========================================================== */
 
-/* ───────────── namaz.js ───────────── */
-/* namaz.js — Fahm-ul-Quran
+/* ───────────── tools.js ───────────── */
+/* tools.js — Fahm-ul-Quran
    🕌 Azan ki awaaz   📋 Roz ek baar "poori namaz padhi?"   📅 Azan alarms (Calendar)
-   Install: har page ke <head> mein ek line:  <script src="namaz.js" defer></script>
+   Install: har page ke <head> mein ek line:  <script src="tools.js" defer></script>
    (Azan ke waqt koi screen/phone lock nahi lagta.) */
 (function () {
     'use strict';

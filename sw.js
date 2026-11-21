@@ -164,7 +164,10 @@
 //       Nahw-Sarf ke 30 dinon par bhi ab hawala (arabic-grammar.html: Ajrumiyya, Qatr al-Nada,
 //       al-Maqsud fi al-Sarf). Sunnat ke 3 hawale Sahih Bukhari/Muslim ke asl number se mila kar
 //       durust kiye (6313, 1239; Muslim 2165 hata kar 2593) — jhooti sanad kabhi nahi.
-const CACHE_NAME = 'quran-ustad-auto-v140';
+// v141: Chhoti ghaltiyan theek — manifest mein app ka tafseeli paigham ab 8 zubaanein aur
+//       138 duaein batata hai (pehle 4 zubaan / 119 likha tha), tools.js ke header mein purana
+//       naam "namaz.js" ki jagah "tools.js". Koi content nahi badla.
+const CACHE_NAME = 'quran-ustad-auto-v141';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
