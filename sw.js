@@ -187,7 +187,10 @@
 //       Lambi zubaan (Français/Español) ke lambe lafz card se bahar na jayein (theme.css).
 // v147: User menu mein "✉️ Galti batayein" — seedha email khulta hai (kaunsa lafz/dua/safha),
 //       taake aalim ki tasdeeq aur user ki islah aap tak pahunch sake. 8 zubaanoN mein.
-const CACHE_NAME = 'quran-ustad-auto-v147';
+// v148: NAHW-SARF KA SABAQ nayi 4 zubaanoN mein — nayi file grammar-body-lang.js.
+//       Us mein jitne din hain (abhi 1–5), un dinon ka poora matn (sections, keyFacts,
+//       reflection) us zubaan mein aata hai; baqi din English par chalte hain, kuch tootta nahi.
+const CACHE_NAME = 'quran-ustad-auto-v148';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -275,6 +278,7 @@ const ASSETS = [
     './arkan-i18n.js',
     './grammar-course.js',
     './grammar-lang.js',
+    './grammar-body-lang.js',
     './icons.js',
     // PWA install popup ki tasveerein — offline bhi dikhein
     './home-m.png',
