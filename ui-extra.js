@@ -16,7 +16,7 @@
   /* [मराठी, العربية, Français, Español] */
   var D = {
     /* ===== Install popup ===== */
-    'Fahm-ul-Quran app install karein': ['Fahm-ul-Quran अ‍ॅप इन्स्टॉल करा', 'ثبّت تطبيق Fahm-ul-Quran', 'Installez l’application Fahm-ul-Quran', 'Instala la app Fahm-ul-Quran'],
+    'Samajh app install karein': ['Samajh अ‍ॅप इन्स्टॉल करा', 'ثبّت تطبيق Samajh', 'Installez l’application Samajh', 'Instala la app Samajh'],
     'Home screen par app ki tarah kholein.': ['होम स्क्रीनवर अ‍ॅपसारखे उघडा.', 'افتحه من الشاشة الرئيسية كتطبيق.', 'Ouvrez-la depuis l’écran d’accueil comme une app.', 'Ábrela desde la pantalla de inicio como una app.'],
     'Ek tap mein khule, browser ki zaroorat nahi': ['एका टॅपमध्ये उघडते, ब्राउझरची गरज नाही', 'تفتح بضغطة واحدة، دون حاجة إلى المتصفح', 'S’ouvre en un geste, sans navigateur', 'Se abre con un toque, sin navegador'],
     'Internet ke baghair bhi chale': ['इंटरनेटशिवायही चालते', 'تعمل حتى دون إنترنت', 'Fonctionne même sans internet', 'Funciona incluso sin internet'],
@@ -66,7 +66,7 @@
     'jaise 45 — khali = score nahi likha jayega': ['उदा. ४५ — रिकामे = गुण लिहिले जाणार नाहीत', 'مثال ٤٥ — فارغ = لا تُكتب درجة', 'ex. 45 — vide = aucun score imprimé', 'p. ej. 45 — vacío = no se imprime puntuación'],
 
     /* ===== Onboarding ===== */
-    'Fahm-ul-Quran mein khush aamdeed': ['Fahm-ul-Quran मध्ये स्वागत आहे', 'مرحبًا بك في Fahm-ul-Quran', 'Bienvenue dans Fahm-ul-Quran', 'Bienvenido a Fahm-ul-Quran'],
+    'Samajh mein khush aamdeed': ['Samajh मध्ये स्वागत आहे', 'مرحبًا بك في Samajh', 'Bienvenue dans Samajh', 'Bienvenido a Samajh'],
     'Quran ke 900 lafz, namaz ki duaein, tajweed — sab ek jagah, aasan Urdu mein. Sirf 10 minute roz, 90 din mein poora course.': ['कुरआनचे ९०० शब्द, नमाजच्या दुआ, तजवीद — सर्व एकाच ठिकाणी, सोप्या भाषेत. रोज फक्त १० मिनिटे, ९० दिवसांत पूर्ण अभ्यासक्रम.', '٩٠٠ كلمة قرآنية وأدعية الصلاة والتجويد — كل ذلك في مكان واحد بلغة سهلة. ١٠ دقائق يوميًا فقط، والمنهج كامل في ٩٠ يومًا.', '900 mots du Coran, les invocations de la prière et le tajwid — tout au même endroit, en langage simple. 10 minutes par jour seulement, tout le parcours en 90 jours.', '900 palabras del Corán, las súplicas de la oración y el tajwid, todo en un solo lugar y en lenguaje sencillo. Solo 10 minutos al día y el curso completo en 90 días.'],
     'Roz 10 lafz, 90 din mein 900': ['रोज १० शब्द, ९० दिवसांत ९००', '١٠ كلمات يوميًا، ٩٠٠ في ٩٠ يومًا', '10 mots par jour, 900 en 90 jours', '10 palabras al día, 900 en 90 días'],
     'Har din 10 naye Quran ke alfaz. Har lafz ke saath mashq, tafseel, aur us ayat ka hawala jisme wo lafz aaya hai. Exam pass karke agla din kholein.': ['दररोज कुरआनचे १० नवीन शब्द. प्रत्येक शब्दासोबत सराव, तपशील आणि ज्या आयतीत तो शब्द आला आहे तिचा संदर्भ. परीक्षा उत्तीर्ण होऊन पुढील दिवस उघडा.', '١٠ كلمات قرآنية جديدة كل يوم، مع كل كلمة تدريب وتفصيل ومرجع الآية التي وردت فيها. اجتز الاختبار لتفتح اليوم التالي.', '10 nouveaux mots du Coran chaque jour. Pour chaque mot : entraînement, détails et la référence du verset où il apparaît. Réussissez l’examen pour débloquer le jour suivant.', '10 palabras nuevas del Corán cada día. Con cada palabra: práctica, detalles y la referencia del versículo donde aparece. Aprueba el examen para abrir el día siguiente.'],

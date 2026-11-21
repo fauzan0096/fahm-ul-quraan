@@ -1,5 +1,5 @@
 // ==========================================================
-// sounds.js — Fahm-ul-Quran ki SAARI awaazein ek file mein
+// sounds.js — Samajh ki SAARI awaazein ek file mein
 //  1) QARI   : Quran ki asli recording dhoondhna / download (QSQari)
 //  2) SPEECH : Suno / Roko button — Qari + phone ki awaaz (QSpeech)
 //  3) GAMES  : nasheed + sound effects (sirf games.html par chalta hai)
@@ -595,7 +595,7 @@
 
 // ───────────── 3) GAMES (nasheed + effects) ─────────────
 // ==========================================================
-// games-audio.js — Fahm-ul-Quran Games
+// games-audio.js — Samajh Games
 //  🎵 Nasheed (nature-ambience.mp3)   🔊 Sound effects (sahi / galat / jeet / game over)
 // Install: games.html ke <head> mein ek line:
 //   <script src="games-audio.js" defer></script>

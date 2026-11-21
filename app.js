@@ -200,7 +200,7 @@
 
 /* ───────────── app.js ───────────── */
 // ==========================================================
-// app.js — Fahm-ul-Quran ka shared UI ek file mein
+// app.js — Samajh ka shared UI ek file mein
 //  1) UI       : splash, text size (A-/A+), Aaj ki Ayat
 //  2) INSTALL  : install popup + service worker
 //  3) PROGRESS : levels, badges, share card (sirf index.html par chalta hai)
@@ -292,7 +292,7 @@ if (!window.QS_LITE) {
         sp.innerHTML =
             '<img src="icon-192.png" alt="">' +
             '<div class="bis">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>' +
-            '<div class="nm">Fahm-ul-Quran</div>' +
+            '<div class="nm">Samajh</div>' +
             '<div class="sub">Quran aur Duaa seekhein</div>';
         root.appendChild(sp); // body ka intezaar nahi — foran dikhe
 
@@ -395,8 +395,8 @@ if (!window.QS_LITE) {
             if (window.QSpeech) QSpeech.speak(a[0], { lang: 'ar', rate: 0.7, btn: this });
         };
         document.getElementById('dailyShare').onclick = function () {
-            var txt = a[0] + '\n\n' + tr + '\n\n(' + a[2] + ')\n\n- Fahm-ul-Quran';
-            if (navigator.share) navigator.share({ title: 'Fahm-ul-Quran', text: txt }).catch(function () {});
+            var txt = a[0] + '\n\n' + tr + '\n\n(' + a[2] + ')\n\n- Samajh';
+            if (navigator.share) navigator.share({ title: 'Samajh', text: txt }).catch(function () {});
             else if (navigator.clipboard) { navigator.clipboard.writeText(txt); if (window.showToast) showToast('📋 Copy ho gaya!'); }
         };
     }
@@ -513,7 +513,7 @@ if (!window.QS_LITE) {
         root.innerHTML =
             '<div class="qs-sheet">' +
               '<img class="qs-ico" src="icon-192.png" alt="">' +
-              '<h2 id="qsInstTitle">Fahm-ul-Quran app install karein</h2>' +
+              '<h2 id="qsInstTitle">Samajh app install karein</h2>' +
               '<p id="qsInstMsg">Home screen par app ki tarah kholein.</p>' +
               '<ul id="qsInstPerks">' +
                 '<li>⚡ Ek tap mein khule, browser ki zaroorat nahi</li>' +
@@ -864,7 +864,7 @@ if (!window.QS_LITE) {
         ctx.direction = 'ltr'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
         ctx.fillStyle = 'rgba(217,182,90,.5)'; ctx.fillRect(W / 2 - 90, H - 262, 180, 3);
         ctx.fillStyle = '#fff'; ctx.font = '700 66px Amiri, serif';
-        ctx.fillText('Fahm-ul-Quran', W / 2, H - 196);
+        ctx.fillText('Samajh', W / 2, H - 196);
         ctx.fillStyle = 'rgba(255,255,255,.75)'; ctx.font = '500 30px Figtree, system-ui, sans-serif';
         ctx.fillText('Quran aur Duaa seekhein', W / 2, H - 134);
     }
@@ -937,7 +937,7 @@ if (!window.QS_LITE) {
         if (!w) return;
         toast('🖼️ Tasveer ban rahi hai...');
         var c = await drawWord(w);
-        await shareCanvas(c, 'fahm-ul-quran-lafz.png', w.a + ' — ' + w.u);
+        await shareCanvas(c, 'samajh-lafz.png', w.a + ' — ' + w.u);
     }
 
     async function shareBadge(id) {
@@ -945,7 +945,7 @@ if (!window.QS_LITE) {
         if (!b) return;
         toast('🖼️ Tasveer ban rahi hai...');
         var c = await drawBadge(b);
-        await shareCanvas(c, 'fahm-ul-quran-badge.png', b.i + ' ' + b.n + ' — Fahm-ul-Quran');
+        await shareCanvas(c, 'samajh-badge.png', b.i + ' ' + b.n + ' — Samajh');
     }
 
     // ---------- Events ----------
@@ -1223,7 +1223,7 @@ if (!window.QS_LITE) {
         'Goal Mukammal!': ['ہدف مکمل!', 'लक्ष्य पूरा!', 'Goal complete!'],
         'Aaj 10 lafz padhein': ['آج 10 الفاظ پڑھیں', 'आज 10 शब्द पढ़ें', 'Read 10 words today'],
         /* ---- Install popup ---- */
-        'Fahm-ul-Quran app install karein': ['Fahm-ul-Quran ایپ انسٹال کریں', 'Fahm-ul-Quran ऐप इंस्टॉल करें', 'Install the Fahm-ul-Quran app'],
+        'Samajh app install karein': ['Samajh ایپ انسٹال کریں', 'Samajh ऐप इंस्टॉल करें', 'Install the Samajh app'],
         'Home screen par app ki tarah kholein.': ['ہوم اسکرین پر ایپ کی طرح کھولیں۔', 'होम स्क्रीन पर ऐप की तरह खोलें।', 'Open it like an app from your home screen.'],
         'Ek tap mein khule, browser ki zaroorat nahi': ['ایک ٹیپ میں کھلے، براؤزر کی ضرورت نہیں', 'एक टैप में खुले, ब्राउज़र की ज़रूरत नहीं', 'Opens in one tap, no browser needed'],
         'Internet ke baghair bhi chale': ['انٹرنیٹ کے بغیر بھی چلے', 'इंटरनेट के बग़ैर भी चले', 'Works even without internet'],
@@ -1302,7 +1302,7 @@ if (!window.QS_LITE) {
         'Share': ['شیئر', 'शेयर', 'Share'],
         'Certificate par chhapne wala naam': ['سرٹیفکیٹ پر چھپنے والا نام', 'सर्टिफ़िकेट पर छपने वाला नाम', 'Name to print on the certificate'],
         'jaise 45 — khali = score nahi likha jayega': ['مثلاً 45 — خالی = اسکور نہیں لکھا جائے گا', 'जैसे 45 — ख़ाली = स्कोर नहीं लिखा जाएगा', 'e.g. 45 \u2014 empty = no score printed'],
-        'Fahm-ul-Quran mein khush aamdeed': ['Fahm-ul-Quran میں خوش آمدید', 'Fahm-ul-Quran में ख़ुश आमदीद', 'Welcome to Fahm-ul-Quran'],
+        'Samajh mein khush aamdeed': ['Samajh میں خوش آمدید', 'Samajh में ख़ुश आमदीद', 'Welcome to Samajh'],
         'Quran ke 900 lafz, namaz ki duaein, tajweed — sab ek jagah, aasan Urdu mein. Sirf 10 minute roz, 90 din mein poora course.': ['قرآن کے 900 الفاظ، نماز کی دعائیں، تجوید — سب ایک جگہ، آسان اردو میں۔ صرف 10 منٹ روز، 90 دن میں پورا کورس۔', 'क़ुरआन के 900 शब्द, नमाज़ की दुआएँ, तजवीद — सब एक जगह, आसान उर्दू में। सिर्फ़ 10 मिनट रोज़, 90 दिन में पूरा कोर्स।', '900 Quranic words, prayer duas and tajweed \u2014 all in one place, in easy language. Just 10 minutes a day, a complete course in 90 days.'],
         'Roz 10 lafz, 90 din mein 900': ['روز 10 الفاظ، 90 دن میں 900', 'रोज़ 10 शब्द, 90 दिन में 900', '10 words a day, 900 in 90 days'],
         'Har din 10 naye Quran ke alfaz. Har lafz ke saath mashq, tafseel, aur us ayat ka hawala jisme wo lafz aaya hai. Exam pass karke agla din kholein.': ['ہر دن قرآن کے 10 نئے الفاظ۔ ہر لفظ کے ساتھ مشق، تفصیل، اور اس آیت کا حوالہ جس میں وہ لفظ آیا ہے۔ امتحان پاس کر کے اگلا دن کھولیں۔', 'हर दिन क़ुरआन के 10 नए शब्द। हर शब्द के साथ मश्क़, तफ़सील और उस आयत का हवाला जिसमें वह शब्द आया है। इम्तिहान पास करके अगला दिन खोलें।', '10 new Quranic words every day, each with practice, details and the ayah reference where it appears. Pass the exam to unlock the next day.'],
@@ -1423,10 +1423,10 @@ if (!window.QS_LITE) {
                'Alarm mein wahi waqt jayega jo upar boxes mein hai (location ke hisaab se har din ka asli waqt). Event ke naam mein waqt likha hota hai. Calendar app ki Settings mein notification <b>"event ke waqt par"</b> rakhein — kuch apps 10 min pehle bata deti hain. Calendar sirf notification deta hai, azan ki awaaz nahi.',
                'अलार्म में वही वक़्त जाएगा जो ऊपर बॉक्स में है (लोकेशन के हिसाब से हर दिन का असली वक़्त)। इवेंट के नाम में वक़्त लिखा होता है। कैलेंडर ऐप की सेटिंग्स में नोटिफ़िकेशन <b>"इवेंट के वक़्त पर"</b> रखें — कुछ ऐप्स 10 मिनट पहले बता देती हैं। कैलेंडर सिर्फ़ नोटिफ़िकेशन देता है, अज़ान की आवाज़ नहीं।',
                'The alarm uses the same times shown in the boxes above (the actual time for each day based on your location). The event name contains the time. In your Calendar app settings, set the notification to <b>"at time of event"</b> — some apps notify 10 minutes early. Calendar gives only a notification, not the sound of the Adhan.'],
-        nsn3: ['🔋 اگر اذان وقت پر نہ بجتی ہو تو فون کی سیٹنگز → بیٹری میں "Fahm-ul-Quran" کو <b>Unrestricted / Autostart</b> دیں (Xiaomi, Oppo, Vivo, Realme میں ضروری)۔',
-               '🔋 Agar azan waqt par na bajti ho to phone ki Settings → Battery mein "Fahm-ul-Quran" ko <b>Unrestricted / Autostart</b> dein (Xiaomi, Oppo, Vivo, Realme mein zaroori).',
-               '🔋 अगर अज़ान वक़्त पर न बजती हो तो फ़ोन की सेटिंग्स → बैटरी में "Fahm-ul-Quran" को <b>Unrestricted / Autostart</b> दें (Xiaomi, Oppo, Vivo, Realme में ज़रूरी)।',
-               '🔋 If the Adhan does not play on time, go to your phone Settings → Battery and give "Fahm-ul-Quran" <b>Unrestricted / Autostart</b> (needed on Xiaomi, Oppo, Vivo, Realme).'],
+        nsn3: ['🔋 اگر اذان وقت پر نہ بجتی ہو تو فون کی سیٹنگز → بیٹری میں "Samajh" کو <b>Unrestricted / Autostart</b> دیں (Xiaomi, Oppo, Vivo, Realme میں ضروری)۔',
+               '🔋 Agar azan waqt par na bajti ho to phone ki Settings → Battery mein "Samajh" ko <b>Unrestricted / Autostart</b> dein (Xiaomi, Oppo, Vivo, Realme mein zaroori).',
+               '🔋 अगर अज़ान वक़्त पर न बजती हो तो फ़ोन की सेटिंग्स → बैटरी में "Samajh" को <b>Unrestricted / Autostart</b> दें (Xiaomi, Oppo, Vivo, Realme में ज़रूरी)।',
+               '🔋 If the Adhan does not play on time, go to your phone Settings → Battery and give "Samajh" <b>Unrestricted / Autostart</b> (needed on Xiaomi, Oppo, Vivo, Realme).'],
         nsn4: ['ℹ️ ایپ بند ہو تب بھی یاد دلانے کے لیے اوپر والا <b>کیلنڈر الارم</b> لگائیں۔ ایپ بند ہونے پر اذان کی آواز کے لیے Android ایپ انسٹال کریں۔',
                'ℹ️ App band ho tab bhi yaad dilane ke liye upar wala <b>Calendar alarm</b> lagayein. App band hone par azan ki awaaz ke liye Android app install karein.',
                'ℹ️ ऐप बंद हो तब भी याद दिलाने के लिए ऊपर वाला <b>कैलेंडर अलार्म</b> लगाएँ। ऐप बंद होने पर अज़ान की आवाज़ के लिए Android ऐप इंस्टॉल करें।',
@@ -1616,7 +1616,7 @@ if (!window.QS_LITE) {
 
 /* ───────────── onboarding.js ───────────── */
 // ==========================================================
-// onboarding.js — Fahm-ul-Quran welcome slides (sirf pehli baar)
+// onboarding.js — Samajh welcome slides (sirf pehli baar)
 // Install: index.html ke <head> mein:
 //   <script src="onboarding.js"></script>
 // Use: login ke baad QSOnboarding.show() call karein
@@ -1632,7 +1632,7 @@ if (!window.QS_LITE) {
         {
             icon: 'بِسْمِ اللَّهِ',
             isArabic: true,
-            title: 'Fahm-ul-Quran mein khush aamdeed',
+            title: 'Samajh mein khush aamdeed',
             text: 'Quran ke 900 lafz, namaz ki duaein, tajweed — sab ek jagah, aasan Urdu mein. Sirf 10 minute roz, 90 din mein poora course.'
         },
         {
@@ -1875,7 +1875,7 @@ if (!window.QS_LITE) {
 (function () {
     'use strict';
 
-    var APP_ID = 'Fahm-ul-Quran';
+    var APP_ID = 'Samajh';
     var FORMAT = 1;
     // Ye keys backup mein nahi jaatin: login session, aur cache/andar ki cheezein
     var SKIP_EXACT = { isLoggedIn: 1, userRole: 1, userId: 1, activeProfile: 1 };
@@ -1943,7 +1943,7 @@ if (!window.QS_LITE) {
     function fileName() {
         var d = new Date();
         function p(n) { return (n < 10 ? '0' : '') + n; }
-        return 'Fahm-ul-Quran-backup-' + d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + '.json';
+        return 'Samajh-backup-' + d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + '.json';
     }
 
     function markBackedUp() { lsSet(LAST_KEY, String(Date.now())); }
@@ -1967,7 +1967,7 @@ if (!window.QS_LITE) {
             try {
                 var f = new File([blob], name, { type: 'application/json' });
                 if (navigator.canShare && navigator.canShare({ files: [f] })) {
-                    navigator.share({ files: [f], title: 'Fahm-ul-Quran backup' })
+                    navigator.share({ files: [f], title: 'Samajh backup' })
                         .then(function () { markBackedUp(); render(); })
                         .catch(function (e) { if (e && e.name !== 'AbortError') say('❌ Share nahi ho saka. "Download" try karein.', 'err'); });
                     return;
@@ -1996,8 +1996,9 @@ if (!window.QS_LITE) {
     function parseBackup(text) {
         var obj;
         try { obj = JSON.parse(text); } catch (e) { return { err: 'Ye file sahi backup nahi lagti (padhi nahi ja saki).' }; }
-        if (!obj || obj.app !== APP_ID || typeof obj.data !== 'object' || obj.data === null || Array.isArray(obj.data))
-            return { err: 'Ye Fahm-ul-Quran ki backup file nahi hai.' };
+        // Purane naam (Fahm-ul-Quran) se banayi hui backup file bhi chalti rahe — kisi ka backup zaya na ho
+        if (!obj || (obj.app !== APP_ID && obj.app !== 'Fahm-ul-Quran') || typeof obj.data !== 'object' || obj.data === null || Array.isArray(obj.data))
+            return { err: 'Ye Samajh ki backup file nahi hai.' };
         if (obj.format > FORMAT) return { err: 'Ye backup naye version ki hai. Pehle app update karein.' };
         var keys = Object.keys(obj.data);
         for (var i = 0; i < keys.length; i++) {

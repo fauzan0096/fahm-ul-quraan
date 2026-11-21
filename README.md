@@ -1,4 +1,4 @@
-# 📖 Fahm-ul-Quran
+# 📖 Samajh
 
 ## 🔀 v89 — merge (v88 + Qibla Finder) + Chautha Kalima
 - **v88** (Games 4-zubaan `games-lang.js`, exam fix, Arkan/course fixes) aur **v83** (Qibla Finder) ko base v82 ke saath three-way merge kiya; sirf `sw.js` mein takrao tha.
@@ -174,7 +174,7 @@ Azan app band hone par bhi bajne ke liye. **Phone/screen par koi lock nahi lagta
 
 ### 💾 Backup / Restore (`backup.js`)
 - **Free, bina login, bina server.** Dropdown (👤 naam) → **💾 Backup / Restore**, ya login screen par **📂 Naye phone par? Backup se progress wapas laayein**.
-- **⬇️ Backup file banayein** → `Fahm-ul-Quran-backup-YYYY-MM-DD.json` (sab profiles, XP, streak, exam, namaz hisaab, favourites, shop, theme). Android app mein seedha Downloads mein; share (WhatsApp/Drive) bhi chalta hai.
+- **⬇️ Backup file banayein** → `Samajh-backup-YYYY-MM-DD.json` (sab profiles, XP, streak, exam, namaz hisaab, favourites, shop, theme). Android app mein seedha Downloads mein; share (WhatsApp/Drive) bhi chalta hai.
 - **📂 Restore**: file chunein → tasdeeq → progress wapas. Backup wali profiles badal jaati hain, is phone ki baaki profiles safe rehti hain. Phir **usi naam** se login karein (profile id naam se banti hai).
 - File ka check (checksum) hota hai — adhoori/kharab/ghalat file reject.
 - Login session (`isLoggedIn`, `userRole`, `userId`, `activeProfile`) aur Qari ka cache backup mein nahi jaata.
@@ -253,7 +253,7 @@ Dhyan dein:
 
 ## ⚖️ Copyright — kya kisi aur ka hai, aur kya nahi
 
-App ka **apna** (Fahm-ul-Quran ka) hissa: saara code, design, icons, illustration (`make_nature_ambience.py` se banayi gayi background awaaz bhi), paanch zubaanoN ke tarjume, islahat, aur **games ke saare sawal** — ye sab apne likhe hue hain, kisi kitab/app/show se naqal nahi.
+App ka **apna** (Samajh ka) hissa: saara code, design, icons, illustration (`make_nature_ambience.py` se banayi gayi background awaaz bhi), paanch zubaanoN ke tarjume, islahat, aur **games ke saare sawal** — ye sab apne likhe hue hain, kisi kitab/app/show se naqal nahi.
 
 **Teesri cheezein** (sirf istemal hoti hain, un par haq nahi):
 

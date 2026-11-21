@@ -15,7 +15,7 @@
         android:allowBackup="false"
         android:enableOnBackInvokedCallback="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Fahm-ul-Quran"
+        android:label="Samajh"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="false">
 

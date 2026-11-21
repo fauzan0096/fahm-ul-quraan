@@ -1,4 +1,4 @@
-package com.quraanustad.app;
+package com.samajh.app;
 
 import android.content.Context;
 import android.content.SharedPreferences;

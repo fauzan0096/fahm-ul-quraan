@@ -1,4 +1,4 @@
-package com.quraanustad.app;
+package com.samajh.app;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

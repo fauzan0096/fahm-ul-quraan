@@ -29,14 +29,14 @@
 </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Fahm-ul-Quran - Complete Course</title>
+    <title>Samajh - Complete Course</title>
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
     <script src="app.js"></script>
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Fahm-ul-Quran">
+    <meta name="apple-mobile-web-app-title" content="Samajh">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <script src="tools.js" defer></script>
     <script src="sounds.js"></script>
@@ -357,8 +357,8 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
         <div class="login-box">
             <img class="login-logo" src="icon-192.png" alt="">
             <div class="login-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-            <h1 class="brand-name"><span class="bn-a">Fahm-ul-</span><span class="bn-b">Quran</span></h1>
-            <div class="login-sub">فهم القرآن</div>
+            <h1 class="brand-name"><span class="bn-a">Sa</span><span class="bn-b">majh</span></h1>
+            <div class="login-sub">سمجھ — رہبرِ قرآن</div>
             <label class="login-label">Aapka Pura Naam</label>
             <input type="text" id="fullNameInput" placeholder="Jaise: Mohammad Fauzan Raza" autocomplete="name" maxlength="40">
             <label class="login-label">Password</label>
@@ -373,7 +373,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
     <div id="mainApp" class="hidden">
         <header>
             <div class="header-top">
-                <div class="brand"><img class="brand-logo" src="icon-192.png" alt=""><h1 class="brand-name"><span class="bn-a">Fahm-ul-</span><span class="bn-b">Quran</span></h1></div>
+                <div class="brand"><img class="brand-logo" src="icon-192.png" alt=""><h1 class="brand-name"><span class="bn-a">Sa</span><span class="bn-b">majh</span></h1></div>
                 <div class="user-menu">
                     <button class="icon-btn user-chip" onclick="toggleUserMenu(event)"><i class="qi" data-qi="user" style="font-size:19px;margin-inline-end:6px"></i><span id="userChipName">ID</span><span id="userChipStk" class="stk-row"></span> ▾</button>
                     <div class="user-drop hidden" id="userDrop">
@@ -1187,12 +1187,12 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             const t = (document.getElementById('remindTime').value || '20:00').split(':');
             const now = new Date(), p = n => String(n).padStart(2, '0');
             const d = `${now.getFullYear()}${p(now.getMonth() + 1)}${p(now.getDate())}T${p(t[0])}${p(t[1])}00`;
-            const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Fahm-ul-Quran//UR', 'BEGIN:VEVENT',
+            const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Samajh//UR', 'BEGIN:VEVENT',
                 'UID:quraan-ustad-daily@' + (location.hostname || 'app'), 'DTSTAMP:' + d, 'DTSTART:' + d, 'DURATION:PT15M',
-                'RRULE:FREQ=DAILY', 'SUMMARY:📖 Fahm-ul-Quran — aaj ka sabaq', 'DESCRIPTION:Aaj ke 10 lafz padhein aur exam dein. ' + APP_LINK, 'URL:' + APP_LINK,
-                'BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:Fahm-ul-Quran — aaj ka sabaq', 'TRIGGER:PT0M', 'END:VALARM', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+                'RRULE:FREQ=DAILY', 'SUMMARY:📖 Samajh — aaj ka sabaq', 'DESCRIPTION:Aaj ke 10 lafz padhein aur exam dein. ' + APP_LINK, 'URL:' + APP_LINK,
+                'BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:Samajh — aaj ka sabaq', 'TRIGGER:PT0M', 'END:VALARM', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
             const a = document.createElement('a');
-            a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' })); a.download = 'Fahm-ul-Quran-Yaaddehani.ics';
+            a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' })); a.download = 'Samajh-Yaaddehani.ics';
             document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
             localStorage.setItem('remindTime', t.join(':'));
             showToast('🔔 File khol kar Calendar mein "Add" dabayein — roz ' + t.join(':') + ' par alarm bajega');
@@ -1674,7 +1674,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                 while (ctx.measureText(arabicName).width > maxAW && aSize > 18) { aSize -= 1; ctx.font = `700 ${aSize}px "Amiri", serif`; }
                 ctx.textBaseline = 'alphabetic'; ctx.fillText(arabicName, sx, 975); ctx.textBaseline = 'middle'; // line se neeche, saaf jagah
                 ctx.direction = 'ltr'; ctx.fillStyle = '#55645C'; ctx.font = '400 22px "Figtree", sans-serif';
-                ctx.fillText('Founder, Fahm-ul-Quran', sx, 1020);
+                ctx.fillText('Founder, Samajh', sx, 1020);
 
                 // Disclaimer (frame ke andar, Ref. No. ke neeche, left side)
                 ctx.direction = 'ltr'; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
@@ -1697,8 +1697,8 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                     try {
                         await navigator.share({
                             files: [file],
-                            title: 'Fahm-ul-Quran Certificate',
-                            text: 'Maine Fahm-ul-Quran ka course certificate hasil kar liya! Alhamdulillah.\n\nDownload Fahm-ul-Quran App:\n' + APP_LINK
+                            title: 'Samajh Certificate',
+                            text: 'Maine Samajh ka course certificate hasil kar liya! Alhamdulillah.\n\nDownload Samajh App:\n' + APP_LINK
                         });
                         showToast('📤 Certificate Share Ho Gaya!');
                     } catch (e) {
@@ -1880,10 +1880,10 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                 if (logoImg.complete && logoImg.naturalWidth > 0) {
                     ctx.drawImage(logoImg, 500, 1640, 80, 80);
                     ctx.fillStyle = '#FFFFFF'; ctx.font = '700 60px "Amiri", serif';
-                    ctx.fillText('Fahm-ul-Quran', 540, 1765);
+                    ctx.fillText('Samajh', 540, 1765);
                 } else {
                     ctx.fillStyle = '#FFFFFF'; ctx.font = '700 60px "Amiri", serif';
-                    ctx.fillText('Fahm-ul-Quran', 540, 1660);
+                    ctx.fillText('Samajh', 540, 1660);
                 }
                 
                 ctx.fillStyle = 'rgba(255,255,255,0.7)'; ctx.font = '500 30px "Figtree", sans-serif';
@@ -1897,8 +1897,8 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                         try {
                             await navigator.share({
                                 files: [file],
-                                title: 'Aaj ki Ayat - Fahm-ul-Quran',
-                                text: 'Aaj ka paigham: ' + tAyat + ' (' + currentAyat.ref + ')' + (currentSunnat ? '\n\n🌿 Aaj ki Sunnat: ' + (tSun ? tSun.ur : currentSunnat.ur) + ' (' + currentSunnat.ref + ')\n' + (tSun ? tSun.tip : currentSunnat.tip) : '') + '\n\nDownload Fahm-ul-Quran App:\n' + APP_LINK
+                                title: 'Aaj ki Ayat - Samajh',
+                                text: 'Aaj ka paigham: ' + tAyat + ' (' + currentAyat.ref + ')' + (currentSunnat ? '\n\n🌿 Aaj ki Sunnat: ' + (tSun ? tSun.ur : currentSunnat.ur) + ' (' + currentSunnat.ref + ')\n' + (tSun ? tSun.tip : currentSunnat.tip) : '') + '\n\nDownload Samajh App:\n' + APP_LINK
                             });
                             showToast('📤 Share Ho Gaya!');
                         } catch (e) {
@@ -1912,7 +1912,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
 
                 function triggerDownload(c) {
                     const link = document.createElement('a');
-                    link.download = 'Fahm-ul-Quran-Ayat.png';
+                    link.download = 'Samajh-Ayat.png';
                     link.href = c.toDataURL('image/png');
                     document.body.appendChild(link); link.click(); document.body.removeChild(link);
                     showToast('📥 Tasveer Download Ho Gayi!');

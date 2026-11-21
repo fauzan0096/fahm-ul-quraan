@@ -147,7 +147,7 @@ window.FQ_XLANG = {
       'Unlock': 'उघडा',
       'Goal Mukammal!': 'ध्येय पूर्ण!',
       'Aaj 10 lafz padhein': 'आज १० शब्द वाचा',
-      'Fahm-ul-Quran app install karein': 'Fahm-ul-Quran ॲप इन्स्टॉल करा',
+      'Samajh app install karein': 'Samajh ॲप इन्स्टॉल करा',
       'Home screen par app ki tarah kholein.': 'होम स्क्रीनवरून ॲपसारखे उघडा.',
       'Ek tap mein khule, browser ki zaroorat nahi': 'एका टॅपमध्ये उघडते, ब्राउझरची गरज नाही',
       'Internet ke baghair bhi chale': 'इंटरनेटशिवायही चालते',
@@ -210,7 +210,7 @@ window.FQ_XLANG = {
       asnote: '९९ नावांची तपशीलवार यादी तिर्मिझी आणि इब्न माजा यांच्या रिवायतींमध्ये येते (वालिद बिन मुस्लिम यांच्या मार्गाने). ही यादी नबी ﷺ यांचे शब्द आहे की एखाद्या रावीची भर आहे, यावर उलमांचे मतभेद आहेत, म्हणून इथे <b>प्रसिद्ध यादी</b> दिली आहे. अल्लाहची नावे ९९ पुरती मर्यादित नाहीत. «इहसा» (लक्षात ठेवणे) चे अर्थ उलमांनी मोजणे, लक्षात ठेवणे, समजणे आणि त्यानुसार आचरण करणे असेही सांगितले आहेत. काही नावे जोडीच्या रूपात येतात (जसे अल-मुइझ्झ / अल-मुझिल्ल, अन-नाफ़ि / अद-दर्र), एकटी नाहीत.',
       nsn1: 'अलार्ममध्ये वरच्या बॉक्समधला तोच वेळ जाईल (तुमचा स्वतःचा वेळ, रोज तोच). इव्हेंटच्या नावात वेळ लिहिलेला असतो. कॅलेंडर अ‍ॅपच्या सेटिंग्जमध्ये सूचना <b>«इव्हेंटच्या वेळी»</b> ठेवा — काही अ‍ॅप 10 मिनिटे आधी सांगतात. कॅलेंडर फक्त सूचना देते, अज़ानचा आवाज नाही.',
       nsn2: 'अलार्ममध्ये वरच्या बॉक्समधला तोच वेळ जाईल (लोकेशननुसार रोजचा खरा वेळ). इव्हेंटच्या नावात वेळ लिहिलेला असतो. कॅलेंडर अ‍ॅपच्या सेटिंग्जमध्ये सूचना <b>«इव्हेंटच्या वेळी»</b> ठेवा — काही अ‍ॅप 10 मिनिटे आधी सांगतात. कॅलेंडर फक्त सूचना देते, अज़ानचा आवाज नाही.',
-      nsn3: '🔋 अज़ान वेळेवर न वाजत असेल तर फोनच्या सेटिंग्ज → Battery मध्ये «Fahm-ul-Quran» ला <b>Unrestricted / Autostart</b> द्या (Xiaomi, Oppo, Vivo, Realme मध्ये आवश्यक).',
+      nsn3: '🔋 अज़ान वेळेवर न वाजत असेल तर फोनच्या सेटिंग्ज → Battery मध्ये «Samajh» ला <b>Unrestricted / Autostart</b> द्या (Xiaomi, Oppo, Vivo, Realme मध्ये आवश्यक).',
       nsn4: 'ℹ️ अ‍ॅप बंद असतानाही आठवण करून देण्यासाठी वरचा <b>Calendar alarm</b> लावा. अ‍ॅप बंद असताना अज़ानचा आवाज येण्यासाठी Android अ‍ॅप इन्स्टॉल करा.',
       fqbtip: 'टीप: फाइल WhatsApp «मला मेसेज» / Google Drive / ईमेलवर ठेवा. फोन बदलताना तीच फाइल रिस्टोर करा, नंतर <b>त्याच नावाने</b> लॉगिन करा.'
     }
@@ -347,7 +347,7 @@ window.FQ_XLANG = {
       'Unlock': 'افتح',
       'Goal Mukammal!': 'تم الهدف!',
       'Aaj 10 lafz padhein': 'اقرأ عشر كلمات اليوم',
-      'Fahm-ul-Quran app install karein': 'ثبّت تطبيق Fahm-ul-Quran',
+      'Samajh app install karein': 'ثبّت تطبيق Samajh',
       'Home screen par app ki tarah kholein.': 'افتحه من الشاشة الرئيسية كتطبيق.',
       'Ek tap mein khule, browser ki zaroorat nahi': 'يفتح بلمسة واحدة دون متصفح',
       'Internet ke baghair bhi chale': 'يعمل بدون إنترنت',
@@ -410,7 +410,7 @@ window.FQ_XLANG = {
       asnote: 'قائمة الأسماء التسعة والتسعين التفصيلية ترِد في روايتَي الترمذي وابن ماجه (من طريق الوليد بن مسلم). وللعلماء خلافٌ في أن هذه القائمة التفصيلية من ألفاظ النبي ﷺ أم أنها زيادة من بعض الرواة، لذلك أُثبتت هنا <b>القائمة المشهورة</b>. وأسماء الله ليست محصورة في تسعة وتسعين. وبيَّن العلماء أن معنى «الإحصاء» يشمل العدّ والحفظ والفهم والعمل بمقتضاها. وبعض الأسماء جاءت مثنى (كالمُعِزّ / المُذِلّ، والنافع / الضارّ) لا مفردة.',
       nsn1: 'سيُوضع في التنبيه نفس الوقت المكتوب في المربعات أعلاه (وقتك أنت، كل يوم هو نفسه). ويُكتب الوقت في اسم الحدث. اجعل الإشعار في إعدادات تطبيق التقويم على <b>«وقت الحدث»</b> — بعض التطبيقات تُنبّه قبل 10 دقائق. والتقويم يعطي إشعارًا فقط، لا صوت الأذان.',
       nsn2: 'سيُوضع في التنبيه نفس الوقت المكتوب في المربعات أعلاه (الوقت الحقيقي لكل يوم حسب الموقع). ويُكتب الوقت في اسم الحدث. اجعل الإشعار في إعدادات تطبيق التقويم على <b>«وقت الحدث»</b> — بعض التطبيقات تُنبّه قبل 10 دقائق. والتقويم يعطي إشعارًا فقط، لا صوت الأذان.',
-      nsn3: '🔋 إن لم يُرفع الأذان في وقته فاذهب إلى إعدادات الهاتف ← البطارية وأعطِ «Fahm-ul-Quran» وضع <b>Unrestricted / Autostart</b> (ضروري في Xiaomi وOppo وVivo وRealme).',
+      nsn3: '🔋 إن لم يُرفع الأذان في وقته فاذهب إلى إعدادات الهاتف ← البطارية وأعطِ «Samajh» وضع <b>Unrestricted / Autostart</b> (ضروري في Xiaomi وOppo وVivo وRealme).',
       nsn4: 'ℹ️ لتذكيرك حتى والتطبيق مغلق، اضبط <b>Calendar alarm</b> أعلاه. ولسماع صوت الأذان والتطبيق مغلق، ثبّت تطبيق Android.',
       fqbtip: 'نصيحة: احفظ الملف في واتساب «رسالة إلى نفسي» / Google Drive / البريد. وعند تغيير الهاتف استعِد الملف نفسه، ثم سجّل الدخول <b>بالاسم نفسه</b>.'
     }
@@ -548,7 +548,7 @@ window.FQ_XLANG = {
       'Unlock': 'Débloquer',
       'Goal Mukammal!': 'Objectif atteint !',
       'Aaj 10 lafz padhein': 'Lisez 10 mots aujourd\u2019hui',
-      'Fahm-ul-Quran app install karein': 'Installez l\u2019application Fahm-ul-Quran',
+      'Samajh app install karein': 'Installez l\u2019application Samajh',
       'Home screen par app ki tarah kholein.': 'Ouvrez-la comme une application depuis l\u2019écran d\u2019accueil.',
       'Ek tap mein khule, browser ki zaroorat nahi': 'S\u2019ouvre en un geste, sans navigateur',
       'Internet ke baghair bhi chale': 'Fonctionne même sans internet',
@@ -611,7 +611,7 @@ window.FQ_XLANG = {
       asnote: 'La liste détaillée des 99 noms figure dans les récits de Tirmidhi et d\u2019Ibn Majah (par la voie de Walid ibn Muslim). Les savants divergent : cette liste détaillée est-elle faite des paroles du Prophète ﷺ ou d\u2019un ajout d\u2019un narrateur ? C\u2019est pourquoi la <b>liste célèbre</b> est donnée ici. Les noms d\u2019Allah ne se limitent pas à 99. Les savants ont aussi expliqué que « ihsa » (les retenir) englobe les compter, les mémoriser, les comprendre et agir selon eux. Certains noms sont cités par paires (comme Al-Mu\u2019izz / Al-Mudhill, An-Nafi\u2019 / Ad-Darr), pas seuls.',
       nsn1: 'L\u2019alarme reprendra l\u2019heure indiquée dans les cases ci-dessus (votre propre heure, la même chaque jour). L\u2019heure figure dans le nom de l\u2019événement. Réglez la notification de l\u2019application Calendrier sur <b>« à l\u2019heure de l\u2019événement »</b> — certaines applications préviennent 10 min avant. Le calendrier ne donne qu\u2019une notification, pas l\u2019appel à la prière.',
       nsn2: 'L\u2019alarme reprendra l\u2019heure indiquée dans les cases ci-dessus (l\u2019heure réelle de chaque jour selon la position). L\u2019heure figure dans le nom de l\u2019événement. Réglez la notification de l\u2019application Calendrier sur <b>« à l\u2019heure de l\u2019événement »</b> — certaines applications préviennent 10 min avant. Le calendrier ne donne qu\u2019une notification, pas l\u2019appel à la prière.',
-      nsn3: '🔋 Si l\u2019adhan ne se déclenche pas à l\u2019heure, allez dans Réglages du téléphone → Batterie et accordez à « Fahm-ul-Quran » <b>Unrestricted / Autostart</b> (nécessaire sur Xiaomi, Oppo, Vivo, Realme).',
+      nsn3: '🔋 Si l\u2019adhan ne se déclenche pas à l\u2019heure, allez dans Réglages du téléphone → Batterie et accordez à « Samajh » <b>Unrestricted / Autostart</b> (nécessaire sur Xiaomi, Oppo, Vivo, Realme).',
       nsn4: 'ℹ️ Pour être rappelé même application fermée, utilisez le <b>Calendar alarm</b> ci-dessus. Pour entendre l\u2019adhan application fermée, installez l\u2019application Android.',
       fqbtip: 'Astuce : gardez le fichier dans WhatsApp « M\u2019envoyer un message » / Google Drive / e-mail. En changeant de téléphone, restaurez ce même fichier, puis connectez-vous avec <b>le même nom</b>.'
     }
@@ -749,7 +749,7 @@ window.FQ_XLANG = {
       'Unlock': 'Desbloquear',
       'Goal Mukammal!': '¡Meta cumplida!',
       'Aaj 10 lafz padhein': 'Lee 10 palabras hoy',
-      'Fahm-ul-Quran app install karein': 'Instala la app Fahm-ul-Quran',
+      'Samajh app install karein': 'Instala la app Samajh',
       'Home screen par app ki tarah kholein.': 'Ábrela como una app desde la pantalla de inicio.',
       'Ek tap mein khule, browser ki zaroorat nahi': 'Se abre con un toque, sin navegador',
       'Internet ke baghair bhi chale': 'Funciona sin internet',
@@ -812,7 +812,7 @@ window.FQ_XLANG = {
       asnote: 'La lista detallada de los 99 nombres aparece en las narraciones de Tirmidhi e Ibn Mayah (por la vía de Walid ibn Muslim). Los sabios discrepan sobre si esta lista detallada son palabras del Profeta ﷺ o un añadido de algún narrador, por eso aquí se da la <b>lista conocida</b>. Los nombres de Allah no se limitan a 99. Los sabios también explicaron que «ihsa» (retenerlos) incluye contarlos, memorizarlos, comprenderlos y actuar según ellos. Algunos nombres se citan en pareja (como Al-Muizz / Al-Mudhill, An-Nafi / Ad-Darr), no solos.',
       nsn1: 'La alarma usará la misma hora de las casillas de arriba (tu propia hora, la misma cada día). La hora figura en el nombre del evento. Pon la notificación de la app de Calendario en <b>«a la hora del evento»</b> — algunas apps avisan 10 min antes. El calendario solo da una notificación, no el sonido del adhan.',
       nsn2: 'La alarma usará la misma hora de las casillas de arriba (la hora real de cada día según la ubicación). La hora figura en el nombre del evento. Pon la notificación de la app de Calendario en <b>«a la hora del evento»</b> — algunas apps avisan 10 min antes. El calendario solo da una notificación, no el sonido del adhan.',
-      nsn3: '🔋 Si el adhan no suena a su hora, ve a Ajustes del teléfono → Batería y da a «Fahm-ul-Quran» <b>Unrestricted / Autostart</b> (necesario en Xiaomi, Oppo, Vivo, Realme).',
+      nsn3: '🔋 Si el adhan no suena a su hora, ve a Ajustes del teléfono → Batería y da a «Samajh» <b>Unrestricted / Autostart</b> (necesario en Xiaomi, Oppo, Vivo, Realme).',
       nsn4: 'ℹ️ Para que te recuerde incluso con la app cerrada, usa el <b>Calendar alarm</b> de arriba. Para oír el adhan con la app cerrada, instala la app de Android.',
       fqbtip: 'Consejo: guarda el archivo en WhatsApp «Mensaje a mí mismo» / Google Drive / correo. Al cambiar de teléfono, restaura ese mismo archivo y luego inicia sesión con <b>el mismo nombre</b>.'
     }
