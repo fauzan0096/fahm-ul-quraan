@@ -1462,5 +1462,724 @@ window.GRAMMAR_QUIZ_LANG = {
     }
   }
 
-  /* Agle dinon (11–30) ka imtihan bhi isi tarah jodte jayenge. */
+  /* ── DIN 11 — Ism fa'il / Ism maf'ul ── */
+  11: {
+    mr: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "कर्तृवाचक नामाचा साचा कोणता?", opts: ["{{فَاعِل}}", "{{مَفْعُول}}", "{{فَعَلَ}}"] },
+        { q: "«लिहिलेले» साठी कोणता शब्द?", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كَتَبَ}}"] },
+        { q: "{{عَالِم}} चा अर्थ?", opts: ["माहीत नसलेला", "लिहिणारा", "जाणणारा"] }
+      ]
+    },
+    ar: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "وزن اسم الفاعل من الثلاثي؟", opts: ["{{فَاعِل}}", "{{مَفْعُول}}", "{{فَعَلَ}}"] },
+        { q: "أيُّ كلمةٍ بمعنى «مكتوب»؟", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كَتَبَ}}"] },
+        { q: "معنى {{عَالِم}}؟", opts: ["جاهل", "كاتب", "عارف"] }
+      ]
+    },
+    fr: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "Schème du participe actif (trilitère) ?", opts: ["{{فَاعِل}}", "{{مَفْعُول}}", "{{فَعَلَ}}"] },
+        { q: "Quel mot signifie « écrit » ?", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كَتَبَ}}"] },
+        { q: "{{عَالِم}} signifie…", opts: ["ignorant", "écrivain", "savant"] }
+      ]
+    },
+    es: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "¿Molde del participio activo (trilitero)?", opts: ["{{فَاعِل}}", "{{مَفْعُول}}", "{{فَعَلَ}}"] },
+        { q: "¿Qué palabra significa «escrito»?", opts: ["{{كَاتِب}}", "{{مَكْتُوب}}", "{{كَتَبَ}}"] },
+        { q: "{{عَالِم}} significa…", opts: ["ignorante", "escritor", "sabio"] }
+      ]
+    }
+  },
+
+  /* ── DIN 12 — Zarf aur Aala ── */
+  12: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "जागा/वेळ दाखवणाऱ्या नामाचा साचा?", opts: ["{{مِفْعَال}}", "{{مَفْعَل}}", "{{فَاعِل}}"] },
+        { q: "{{مَسْجِد}} चा अर्थ?", opts: ["सजदा करण्याची जागा", "किल्ली", "झाडू"] },
+        { q: "{{مِفْتَاح}} कोणत्या प्रकारचे नाम आहे?", opts: ["जागा", "वेळ", "साधन"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "وزن اسم المكان والزمان؟", opts: ["{{مِفْعَال}}", "{{مَفْعَل}}", "{{فَاعِل}}"] },
+        { q: "معنى {{مَسْجِد}}؟", opts: ["موضع السجود", "المفتاح", "المكنسة"] },
+        { q: "{{مِفْتَاح}} اسم…", opts: ["مكان", "زمان", "آلة"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "Schème du nom de lieu/temps ?", opts: ["{{مِفْعَال}}", "{{مَفْعَل}}", "{{فَاعِل}}"] },
+        { q: "{{مَسْجِد}} signifie…", opts: ["lieu de prosternation", "clé", "balai"] },
+        { q: "{{مِفْتَاح}} est un nom de…", opts: ["lieu", "temps", "instrument"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "¿Molde del nombre de lugar/tiempo?", opts: ["{{مِفْعَال}}", "{{مَفْعَل}}", "{{فَاعِل}}"] },
+        { q: "{{مَسْجِد}} significa…", opts: ["lugar de postración", "llave", "escoba"] },
+        { q: "{{مِفْتَاح}} es nombre de…", opts: ["lugar", "tiempo", "instrumento"] }
+      ]
+    }
+  },
+
+  /* ── DIN 13 — Sifat mushabbaha / Ism tafzeel ── */
+  13: {
+    mr: {
+      correct: [2, 0, 1],
+      quiz: [
+        { q: "कायम गुण दाखवणारे नाम कोणत्या साच्यात येते?", opts: ["{{مَفْعُول}}", "{{أَفْعَل}}", "{{فَعِيل}}"] },
+        { q: "तुलना दाखवणारा साचा?", opts: ["{{أَفْعَل}}", "{{فَعِيل}}", "{{فَاعِل}}"] },
+        { q: "{{أَكْبَر}} चा अर्थ?", opts: ["लहान", "मोठा (अधिक)", "सारखा"] }
+      ]
+    },
+    ar: {
+      correct: [2, 0, 1],
+      quiz: [
+        { q: "وزن الصفة المشبَّهة؟", opts: ["{{مَفْعُول}}", "{{أَفْعَل}}", "{{فَعِيل}}"] },
+        { q: "وزن اسم التفضيل؟", opts: ["{{أَفْعَل}}", "{{فَعِيل}}", "{{فَاعِل}}"] },
+        { q: "معنى {{أَكْبَر}}؟", opts: ["أصغر", "أكبر", "مثل"] }
+      ]
+    },
+    fr: {
+      correct: [2, 0, 1],
+      quiz: [
+        { q: "Schème de l'adjectif permanent ?", opts: ["{{مَفْعُول}}", "{{أَفْعَل}}", "{{فَعِيل}}"] },
+        { q: "Schème du comparatif ?", opts: ["{{أَفْعَل}}", "{{فَعِيل}}", "{{فَاعِل}}"] },
+        { q: "{{أَكْبَر}} signifie…", opts: ["plus petit", "plus grand", "semblable"] }
+      ]
+    },
+    es: {
+      correct: [2, 0, 1],
+      quiz: [
+        { q: "¿Molde del adjetivo permanente?", opts: ["{{مَفْعُول}}", "{{أَفْعَل}}", "{{فَعِيل}}"] },
+        { q: "¿Molde del comparativo?", opts: ["{{أَفْعَل}}", "{{فَعِيل}}", "{{فَاعِل}}"] },
+        { q: "{{أَكْبَر}} significa…", opts: ["más pequeño", "más grande", "semejante"] }
+      ]
+    }
+  },
+
+  /* ── DIN 14 — Jama ── */
+  14: {
+    mr: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "पुल्लिंग सलग अनेकवचनाचे चिन्ह (मरफूअ)?", opts: ["{{ُونَ}}", "{{ِينَ}}", "{{َات}}"] },
+        { q: "स्त्रीलिंग सलग अनेकवचन?", opts: ["{{ُونَ}}", "{{ِينَ}}", "{{َات}}"] },
+        { q: "{{كُتُب}} कोणत्या प्रकारचे अनेकवचन आहे?", opts: ["सलग", "तुटके", "द्विवचन"] }
+      ]
+    },
+    ar: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "علامة جمع المذكر السالم في الرفع؟", opts: ["{{ُونَ}}", "{{ِينَ}}", "{{َات}}"] },
+        { q: "جمع المؤنث السالم؟", opts: ["{{ُونَ}}", "{{ِينَ}}", "{{َات}}"] },
+        { q: "{{كُتُب}} أيُّ جمع؟", opts: ["سالم", "تكسير", "مثنى"] }
+      ]
+    },
+    fr: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "Marque du pluriel masculin régulier au raf' ?", opts: ["{{ُونَ}}", "{{ِينَ}}", "{{َات}}"] },
+        { q: "Pluriel féminin régulier ?", opts: ["{{ُونَ}}", "{{ِينَ}}", "{{َات}}"] },
+        { q: "{{كُتُب}} est un pluriel…", opts: ["régulier", "brisé", "duel"] }
+      ]
+    },
+    es: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "¿Marca del plural masculino regular en raf'?", opts: ["{{ُونَ}}", "{{ِينَ}}", "{{َات}}"] },
+        { q: "¿Plural femenino regular?", opts: ["{{ُونَ}}", "{{ِينَ}}", "{{َات}}"] },
+        { q: "{{كُتُب}} es un plural…", opts: ["regular", "fracto", "dual"] }
+      ]
+    }
+  },
+
+  /* ── DIN 15 — Mazeed ── */
+  15: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{أَكْرَمَ يُكْرِمُ}} कोणत्या बाबात आहे?", opts: ["तफईल", "इफआल", "मुफाअला"] },
+        { q: "{{عَلَّمَ}} चा अर्थ?", opts: ["शिकवले", "शिकले", "जाणले"] },
+        { q: "{{تَعَلَّمَ}} कोणत्या बाबात आहे?", opts: ["इफआल", "इस्तिफआल", "तफऊल"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{أَكْرَمَ يُكْرِمُ}} في أيّ باب؟", opts: ["تفعيل", "إفعال", "مفاعلة"] },
+        { q: "معنى {{عَلَّمَ}}؟", opts: ["علَّم غيره", "تعلَّم", "عَلِمَ"] },
+        { q: "{{تَعَلَّمَ}} في أيّ باب؟", opts: ["إفعال", "استفعال", "تفعُّل"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{أَكْرَمَ يُكْرِمُ}} appartient à…", opts: ["taf'îl", "if'âl", "mufâ'ala"] },
+        { q: "{{عَلَّمَ}} signifie…", opts: ["il a enseigné", "il a appris", "il a su"] },
+        { q: "{{تَعَلَّمَ}} appartient à…", opts: ["if'âl", "istif'âl", "tafa''ul"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{أَكْرَمَ يُكْرِمُ}} pertenece a…", opts: ["taf'îl", "if'âl", "mufâ'ala"] },
+        { q: "{{عَلَّمَ}} significa…", opts: ["enseñó", "aprendió", "supo"] },
+        { q: "{{تَعَلَّمَ}} pertenece a…", opts: ["if'âl", "istif'âl", "tafa''ul"] }
+      ]
+    }
+  },
+
+  /* ── DIN 16 — Nahw kya hai ── */
+  16: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "नह्व म्हणजे काय?", opts: ["शब्दाची रचना", "वाक्याची रचना", "अक्षरांचा उच्चार"] },
+        { q: "एराब म्हणजे काय?", opts: ["शेवटच्या अक्षराची हरकत", "पहिल्या अक्षराची हरकत", "शब्दाचा अर्थ"] },
+        { q: "एराब न बदलता वाक्यात बदल केला तर…", opts: ["काहीच होत नाही", "फक्त लिहिताना फरक", "अर्थ बदलतो"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "النحو علمٌ يبحث في…", opts: ["بناء الكلمة", "تركيب الجملة", "مخارج الحروف"] },
+        { q: "الإعراب هو…", opts: ["حركة آخر الكلمة", "حركة أول الكلمة", "معنى الكلمة"] },
+        { q: "تغيّر الإعراب…", opts: ["لا يؤثّر", "يؤثّر في الكتابة فقط", "يغيّر المعنى"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "Le Nahw étudie…", opts: ["la formation du mot", "la structure de la phrase", "la prononciation"] },
+        { q: "L'i'râb est…", opts: ["la voyelle de la dernière lettre", "la voyelle de la 1re lettre", "le sens du mot"] },
+        { q: "Changer l'i'râb…", opts: ["ne change rien", "change seulement l'écriture", "change le sens"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "El Nahw estudia…", opts: ["la formación de la palabra", "la estructura de la frase", "la pronunciación"] },
+        { q: "El i'râb es…", opts: ["la vocal de la última letra", "la vocal de la 1.ª letra", "el sentido de la palabra"] },
+        { q: "Cambiar el i'râb…", opts: ["no cambia nada", "solo cambia la escritura", "cambia el sentido"] }
+      ]
+    }
+  },
+
+  /* ── DIN 17 — I'rab ki 4 halatein ── */
+  17: {
+    mr: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "एराबच्या किती अवस्था आहेत?", opts: ["चार", "तीन", "दोन"] },
+        { q: "जर्रचे चिन्ह कोणते?", opts: ["पेश", "जबर", "जेर"] },
+        { q: "जझ्म कोणत्या शब्दाला लागू होते?", opts: ["नामाला", "मुदारेला", "माहीला"] }
+      ]
+    },
+    ar: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "كم حالةً للإعراب؟", opts: ["أربع", "ثلاث", "اثنتان"] },
+        { q: "علامة الجرّ؟", opts: ["الضمة", "الفتحة", "الكسرة"] },
+        { q: "الجزم يكون في…", opts: ["الاسم", "المضارع", "الماضي"] }
+      ]
+    },
+    fr: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "Combien de cas d'i'râb ?", opts: ["Quatre", "Trois", "Deux"] },
+        { q: "Signe du jarr ?", opts: ["damme", "fatha", "kasra"] },
+        { q: "Le jazm concerne…", opts: ["le nom", "le mudâri'", "le mâdî"] }
+      ]
+    },
+    es: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "¿Cuántos casos de i'râb?", opts: ["Cuatro", "Tres", "Dos"] },
+        { q: "¿Signo del yarr?", opts: ["damma", "fatha", "kasra"] },
+        { q: "El yazm afecta a…", opts: ["el nombre", "el mudâri'", "el mâdî"] }
+      ]
+    }
+  },
+
+  /* ── DIN 18 — Jumla ismiyya ── */
+  18: {
+    mr: {
+      correct: [1, 2, 0],
+      quiz: [
+        { q: "इस्मीय वाक्याचे दोन भाग कोणते?", opts: ["कर्ता व कर्म", "मुब्तदा व खबर", "क्रियापद व कर्ता"] },
+        { q: "{{اللَّهُ أَحَدٌ}} मध्ये {{أَحَدٌ}} काय आहे?", opts: ["मुब्तदा", "कर्ता", "खबर"] },
+        { q: "मुब्तदा व खबर सामान्यतः कोणत्या एराबमध्ये?", opts: ["रफ", "नस्ब", "जर्र"] }
+      ]
+    },
+    ar: {
+      correct: [1, 2, 0],
+      quiz: [
+        { q: "ركنا الجملة الاسمية؟", opts: ["فاعل ومفعول", "مبتدأ وخبر", "فعل وفاعل"] },
+        { q: "{{اللَّهُ أَحَدٌ}}: {{أَحَدٌ}}…", opts: ["مبتدأ", "فاعل", "خبر"] },
+        { q: "المبتدأ والخبر حكمهما…", opts: ["الرفع", "النصب", "الجرّ"] }
+      ]
+    },
+    fr: {
+      correct: [1, 2, 0],
+      quiz: [
+        { q: "Les deux piliers de la phrase nominale ?", opts: ["sujet et objet", "mubtada et khabar", "verbe et sujet"] },
+        { q: "Dans {{اللَّهُ أَحَدٌ}}, {{أَحَدٌ}} est…", opts: ["mubtada", "sujet", "khabar"] },
+        { q: "Mubtada et khabar sont…", opts: ["au raf'", "au nasb", "au jarr"] }
+      ]
+    },
+    es: {
+      correct: [1, 2, 0],
+      quiz: [
+        { q: "¿Los dos pilares de la frase nominal?", opts: ["sujeto y objeto", "mubtada y jabar", "verbo y sujeto"] },
+        { q: "En {{اللَّهُ أَحَدٌ}}, {{أَحَدٌ}} es…", opts: ["mubtada", "sujeto", "jabar"] },
+        { q: "Mubtada y jabar van…", opts: ["en raf'", "en nasb", "en yarr"] }
+      ]
+    }
+  },
+
+  /* ── DIN 19 — Jumla fi'liyya ── */
+  19: {
+    mr: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "क्रियापदीय वाक्याचा क्रम?", opts: ["क्रियापद + कर्ता + कर्म", "कर्ता + क्रियापद", "कर्म + कर्ता"] },
+        { q: "कर्ता कोणत्या एराबमध्ये?", opts: ["नस्ब", "रफ", "जर्र"] },
+        { q: "{{الدَّرْسَ}} मध्ये एराब?", opts: ["रफ", "जर्र", "नस्ब"] }
+      ]
+    },
+    ar: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "ترتيب الجملة الفعلية؟", opts: ["فعل + فاعل + مفعول", "فاعل + فعل", "مفعول + فاعل"] },
+        { q: "الفاعل حكمه…", opts: ["النصب", "الرفع", "الجرّ"] },
+        { q: "{{الدَّرْسَ}} إعرابها…", opts: ["رفع", "جرّ", "نصب"] }
+      ]
+    },
+    fr: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "L'ordre de la phrase verbale ?", opts: ["verbe + sujet + objet", "sujet + verbe", "objet + sujet"] },
+        { q: "Le sujet est…", opts: ["au nasb", "au raf'", "au jarr"] },
+        { q: "{{الدَّرْسَ}} est…", opts: ["au raf'", "au jarr", "au nasb"] }
+      ]
+    },
+    es: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "¿El orden de la frase verbal?", opts: ["verbo + sujeto + objeto", "sujeto + verbo", "objeto + sujeto"] },
+        { q: "El sujeto va…", opts: ["en nasb", "en raf'", "en yarr"] },
+        { q: "{{الدَّرْسَ}} está…", opts: ["en raf'", "en yarr", "en nasb"] }
+      ]
+    }
+  },
+
+  /* ── DIN 20 — Kana ── */
+  20: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{كَانَ}} वाक्यात काय बदलते?", opts: ["काहीच नाही", "खबर नस्ब करते", "मुब्तदा नस्ब करते"] },
+        { q: "{{كَانَ الطَّالِبُ مُجْتَهِدًا}} मध्ये {{مُجْتَهِدًا}}?", opts: ["खबर कान (नस्ब)", "खबर (रफ)", "कर्ता"] },
+        { q: "खालीलपैकी {{كَانَ}} ची बहीण कोणती?", opts: ["{{إِنَّ}}", "{{لَعَلَّ}}", "{{لَيْسَ}}"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{كَانَ}} تعمل في الجملة…", opts: ["لا تعمل شيئًا", "ترفع الاسم وتنصب الخبر", "تنصب الاسم وترفع الخبر"] },
+        { q: "{{كَانَ الطَّالِبُ مُجْتَهِدًا}}: {{مُجْتَهِدًا}}…", opts: ["خبر كان منصوب", "خبر مرفوع", "فاعل"] },
+        { q: "أيُّها من أخوات {{كَانَ}}؟", opts: ["{{إِنَّ}}", "{{لَعَلَّ}}", "{{لَيْسَ}}"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{كَانَ}} dans la phrase…", opts: ["ne change rien", "laisse le nom au raf' et met le khabar au nasb", "met le nom au nasb"] },
+        { q: "{{كَانَ الطَّالِبُ مُجْتَهِدًا}} : {{مُجْتَهِدًا}} est…", opts: ["khabar de kâna (nasb)", "khabar (raf')", "sujet"] },
+        { q: "Laquelle est une sœur de {{كَانَ}} ?", opts: ["{{إِنَّ}}", "{{لَعَلَّ}}", "{{لَيْسَ}}"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{كَانَ}} en la frase…", opts: ["no cambia nada", "deja el nombre en raf' y pone el jabar en nasb", "pone el nombre en nasb"] },
+        { q: "{{كَانَ الطَّالِبُ مُجْتَهِدًا}}: {{مُجْتَهِدًا}} es…", opts: ["jabar de kâna (nasb)", "jabar (raf')", "sujeto"] },
+        { q: "¿Cuál es hermana de {{كَانَ}}?", opts: ["{{إِنَّ}}", "{{لَعَلَّ}}", "{{لَيْسَ}}"] }
+      ]
+    }
+  }
+
+  /* ── DIN 21 — Inna ── */
+  21: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{إِنَّ}} वाक्यात काय करते?", opts: ["खबर नस्ब करते", "मुब्तदा नस्ब व खबर रफ ठेवते", "काहीच नाही"] },
+        { q: "{{إِنَّ اللَّهَ غَفُورٌ}} मध्ये {{اللَّهَ}}?", opts: ["इस्म इन्न (नस्ब)", "मुब्तदा (रफ)", "कर्ता"] },
+        { q: "इच्छा दाखवण्यासाठी कोणते अक्षर?", opts: ["{{لَعَلَّ}}", "{{لَكِنَّ}}", "{{لَيْتَ}}"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{إِنَّ}} تعمل…", opts: ["تنصب الخبر", "تنصب الاسم وترفع الخبر", "لا تعمل شيئًا"] },
+        { q: "{{إِنَّ اللَّهَ غَفُورٌ}}: {{اللَّهَ}}…", opts: ["اسم إنّ منصوب", "مبتدأ مرفوع", "فاعل"] },
+        { q: "للتمنّي نستعمل…", opts: ["{{لَعَلَّ}}", "{{لَكِنَّ}}", "{{لَيْتَ}}"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{إِنَّ}} …", opts: ["met le khabar au nasb", "met le nom au nasb et garde le khabar au raf'", "ne change rien"] },
+        { q: "{{إِنَّ اللَّهَ غَفُورٌ}} : {{اللَّهَ}} est…", opts: ["nom de inna (nasb)", "mubtada (raf')", "sujet"] },
+        { q: "Pour le souhait on emploie…", opts: ["{{لَعَلَّ}}", "{{لَكِنَّ}}", "{{لَيْتَ}}"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "{{إِنَّ}} …", opts: ["pone el jabar en nasb", "pone el nombre en nasb y deja el jabar en raf'", "no cambia nada"] },
+        { q: "{{إِنَّ اللَّهَ غَفُورٌ}}: {{اللَّهَ}} es…", opts: ["nombre de inna (nasb)", "mubtada (raf')", "sujeto"] },
+        { q: "Para el deseo se usa…", opts: ["{{لَعَلَّ}}", "{{لَكِنَّ}}", "{{لَيْتَ}}"] }
+      ]
+    }
+  },
+
+  /* ── DIN 22 — Harf jarr ── */
+  22: {
+    mr: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "हर्फ जर्रनंतर नाम कोणत्या एराबमध्ये?", opts: ["जर्र", "रफ", "नस्ब"] },
+        { q: "«मध्ये» साठी कोणते अक्षर?", opts: ["{{مِنْ}}", "{{إِلَى}}", "{{فِي}}"] },
+        { q: "{{بِسْمِ اللَّهِ}} मध्ये {{اللَّهِ}}?", opts: ["रफ", "जर्र", "नस्ब"] }
+      ]
+    },
+    ar: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "بعد حرف الجرّ يكون الاسم…", opts: ["مجرورًا", "مرفوعًا", "منصوبًا"] },
+        { q: "أيُّ حرفٍ بمعنى «في»؟", opts: ["{{مِنْ}}", "{{إِلَى}}", "{{فِي}}"] },
+        { q: "{{بِسْمِ اللَّهِ}}: {{اللَّهِ}}…", opts: ["مرفوع", "مجرور", "منصوب"] }
+      ]
+    },
+    fr: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "Après une préposition, le nom est…", opts: ["au jarr", "au raf'", "au nasb"] },
+        { q: "Quelle particule signifie « dans » ?", opts: ["{{مِنْ}}", "{{إِلَى}}", "{{فِي}}"] },
+        { q: "{{بِسْمِ اللَّهِ}} : {{اللَّهِ}} est…", opts: ["au raf'", "au jarr", "au nasb"] }
+      ]
+    },
+    es: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "Tras una preposición el nombre va…", opts: ["en yarr", "en raf'", "en nasb"] },
+        { q: "¿Qué partícula significa «en»?", opts: ["{{مِنْ}}", "{{إِلَى}}", "{{فِي}}"] },
+        { q: "{{بِسْمِ اللَّهِ}}: {{اللَّهِ}} está…", opts: ["en raf'", "en yarr", "en nasb"] }
+      ]
+    }
+  },
+
+  /* ── DIN 23 — Izafat ── */
+  23: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "मुदाफला काय नसते?", opts: ["हरकत", "{{ال}} व तन्वीन", "अक्षरे"] },
+        { q: "मुदाफ इलैह कोणत्या एराबमध्ये?", opts: ["जर्र", "रफ", "नस्ब"] },
+        { q: "{{كِتَابُ الطَّالِبِ}} चा अर्थ?", opts: ["विद्यार्थ्याचे पुस्तक", "पुस्तकाचा विद्यार्थी", "पुस्तक व विद्यार्थी"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "المضاف لا يدخله…", opts: ["الحركات", "{{ال}} والتنوين", "الحروف"] },
+        { q: "المضاف إليه حكمه…", opts: ["الجرّ", "الرفع", "النصب"] },
+        { q: "{{كِتَابُ الطَّالِبِ}} معناها…", opts: ["كتاب الطالب", "الطالب الكتاب", "الكتاب والطالب"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "Le mudâf n'a pas…", opts: ["de voyelles", "{{ال}} ni tanwîn", "de lettres"] },
+        { q: "Le mudâf ilayh est…", opts: ["au jarr", "au raf'", "au nasb"] },
+        { q: "{{كِتَابُ الطَّالِبِ}} signifie…", opts: ["le livre de l'étudiant", "l'étudiant du livre", "le livre et l'étudiant"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "El mudâf no lleva…", opts: ["vocales", "{{ال}} ni tanwín", "letras"] },
+        { q: "El mudâf ilayh va…", opts: ["en yarr", "en raf'", "en nasb"] },
+        { q: "{{كِتَابُ الطَّالِبِ}} significa…", opts: ["el libro del estudiante", "el estudiante del libro", "el libro y el estudiante"] }
+      ]
+    }
+  },
+
+  /* ── DIN 24 — Na't ── */
+  24: {
+    mr: {
+      correct: [2, 0, 1],
+      quiz: [
+        { q: "विशेषण विशेष्याच्या कुठे येते?", opts: ["आधी", "कुठेही", "नंतर"] },
+        { q: "विशेषण कशात जुळते?", opts: ["एराब, लिंग, वचन", "फक्त अर्थ", "फक्त लिंग"] },
+        { q: "{{رَجُلٌ كَرِيمٌ}} मध्ये {{كَرِيمٌ}}?", opts: ["विशेष्य", "विशेषण", "क्रियापद"] }
+      ]
+    },
+    ar: {
+      correct: [2, 0, 1],
+      quiz: [
+        { q: "النعت يأتي…", opts: ["قبل المنعوت", "في أيّ موضع", "بعد المنعوت"] },
+        { q: "النعت يطابق المنعوت في…", opts: ["الإعراب والتعريف والنوع والعدد", "المعنى فقط", "النوع فقط"] },
+        { q: "{{رَجُلٌ كَرِيمٌ}}: {{كَرِيمٌ}}…", opts: ["منعوت", "نعت", "فعل"] }
+      ]
+    },
+    fr: {
+      correct: [2, 0, 1],
+      quiz: [
+        { q: "L'adjectif vient…", opts: ["avant le nom", "n'importe où", "après le nom"] },
+        { q: "L'adjectif s'accorde en…", opts: ["i'râb, définition, genre, nombre", "sens seulement", "genre seulement"] },
+        { q: "{{رَجُلٌ كَرِيمٌ}} : {{كَرِيمٌ}} est…", opts: ["le nom décrit", "l'adjectif", "un verbe"] }
+      ]
+    },
+    es: {
+      correct: [2, 0, 1],
+      quiz: [
+        { q: "El adjetivo va…", opts: ["antes del nombre", "en cualquier lugar", "después del nombre"] },
+        { q: "El adjetivo concuerda en…", opts: ["i'râb, definición, género, número", "solo el sentido", "solo el género"] },
+        { q: "{{رَجُلٌ كَرِيمٌ}}: {{كَرِيمٌ}} es…", opts: ["el descrito", "el adjetivo", "un verbo"] }
+      ]
+    }
+  },
+
+  /* ── DIN 25 — Atf / Badal / Ta'keed ── */
+  25: {
+    mr: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "अनुयायी शब्द कोणता एराब घेतो?", opts: ["पहिल्याचा", "नेहमी रफ", "नेहमी नस्ब"] },
+        { q: "{{كُلّ}} व {{جَمِيع}} कशासाठी?", opts: ["बदली", "ठामपणा (ताअकीद)", "जोडणी"] },
+        { q: "{{جَاءَ زَيْدٌ وَعَمْرٌو}} मध्ये {{عَمْرٌو}}?", opts: ["बदल", "ताअकीद", "मअतूफ (जोडलेला)"] }
+      ]
+    },
+    ar: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "التابع يأخذ إعراب…", opts: ["ما قبله", "الرفع دائمًا", "النصب دائمًا"] },
+        { q: "{{كُلّ}} و{{جَمِيع}} تكونان…", opts: ["بدلًا", "توكيدًا", "عطفًا"] },
+        { q: "{{جَاءَ زَيْدٌ وَعَمْرٌو}}: {{عَمْرٌو}}…", opts: ["بدل", "توكيد", "معطوف"] }
+      ]
+    },
+    fr: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "Le suivant prend l'i'râb…", opts: ["de ce qui le précède", "toujours raf'", "toujours nasb"] },
+        { q: "{{كُلّ}} et {{جَمِيع}} servent à…", opts: ["remplacer", "renforcer (ta'kîd)", "coordonner"] },
+        { q: "{{جَاءَ زَيْدٌ وَعَمْرٌو}} : {{عَمْرٌو}} est…", opts: ["badal", "ta'kîd", "ma'tûf (coordonné)"] }
+      ]
+    },
+    es: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "El seguidor toma el i'râb…", opts: ["del anterior", "siempre raf'", "siempre nasb"] },
+        { q: "{{كُلّ}} y {{جَمِيع}} sirven para…", opts: ["sustituir", "reforzar (ta'kîd)", "coordinar"] },
+        { q: "{{جَاءَ زَيْدٌ وَعَمْرٌو}}: {{عَمْرٌو}} es…", opts: ["badal", "ta'kîd", "ma'tûf (coordinado)"] }
+      ]
+    }
+  },
+
+  /* ── DIN 26 — Mawsul / Ishara ── */
+  26: {
+    mr: {
+      correct: [1, 2, 0],
+      quiz: [
+        { q: "स्त्रीलिंग एकवचनासाठी कोणते मौसूल?", opts: ["{{الَّذِي}}", "{{الَّتِي}}", "{{الَّذِينَ}}"] },
+        { q: "{{هَذَا}} चा अर्थ?", opts: ["ती", "तो", "हा"] },
+        { q: "मौसूलाला काय लागते?", opts: ["सिला (जोडणारे वाक्य)", "फक्त हरकत", "काहीच नाही"] }
+      ]
+    },
+    ar: {
+      correct: [1, 2, 0],
+      quiz: [
+        { q: "الموصول للمفردة المؤنثة؟", opts: ["{{الَّذِي}}", "{{الَّتِي}}", "{{الَّذِينَ}}"] },
+        { q: "معنى {{هَذَا}}؟", opts: ["تلك", "ذلك", "هذا"] },
+        { q: "الموصول يحتاج…", opts: ["صلةً بعده", "حركةً فقط", "لا شيء"] }
+      ]
+    },
+    fr: {
+      correct: [1, 2, 0],
+      quiz: [
+        { q: "Relatif du féminin singulier ?", opts: ["{{الَّذِي}}", "{{الَّتِي}}", "{{الَّذِينَ}}"] },
+        { q: "{{هَذَا}} signifie…", opts: ["celle-là", "celui-là", "celui-ci"] },
+        { q: "Le relatif a besoin…", opts: ["d'une proposition (sila)", "d'une voyelle", "de rien"] }
+      ]
+    },
+    es: {
+      correct: [1, 2, 0],
+      quiz: [
+        { q: "¿Relativo femenino singular?", opts: ["{{الَّذِي}}", "{{الَّتِي}}", "{{الَّذِينَ}}"] },
+        { q: "{{هَذَا}} significa…", opts: ["aquella", "aquel", "este"] },
+        { q: "El relativo necesita…", opts: ["una frase (sila)", "solo una vocal", "nada"] }
+      ]
+    }
+  },
+
+  /* ── DIN 27 — Damair ── */
+  27: {
+    mr: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "«मी» साठी सर्वनाम?", opts: ["{{أَنَا}}", "{{أَنْتَ}}", "{{هُوَ}}"] },
+        { q: "{{كِتَابِي}} चा अर्थ?", opts: ["त्याचे पुस्तक", "आमचे पुस्तक", "माझे पुस्तक"] },
+        { q: "{{ـهُ}} कोणत्या प्रकारचे सर्वनाम?", opts: ["मुनफसिल", "मुत्तसिल", "इशारा"] }
+      ]
+    },
+    ar: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "ضمير المتكلّم المفرد؟", opts: ["{{أَنَا}}", "{{أَنْتَ}}", "{{هُوَ}}"] },
+        { q: "معنى {{كِتَابِي}}؟", opts: ["كتابه", "كتابنا", "كتابي"] },
+        { q: "{{ـهُ}} ضمير…", opts: ["منفصل", "متصل", "إشارة"] }
+      ]
+    },
+    fr: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "Pronom de « je » ?", opts: ["{{أَنَا}}", "{{أَنْتَ}}", "{{هُوَ}}"] },
+        { q: "{{كِتَابِي}} signifie…", opts: ["son livre", "notre livre", "mon livre"] },
+        { q: "{{ـهُ}} est un pronom…", opts: ["séparé", "attaché", "démonstratif"] }
+      ]
+    },
+    es: {
+      correct: [0, 2, 1],
+      quiz: [
+        { q: "¿Pronombre de «yo»?", opts: ["{{أَنَا}}", "{{أَنْتَ}}", "{{هُوَ}}"] },
+        { q: "{{كِتَابِي}} significa…", opts: ["su libro", "nuestro libro", "mi libro"] },
+        { q: "{{ـهُ}} es pronombre…", opts: ["separado", "unido", "demostrativo"] }
+      ]
+    }
+  },
+
+  /* ── DIN 28 — Haal / Tamyeez ── */
+  28: {
+    mr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "हाल कोणत्या एराबमध्ये असतो?", opts: ["रफ", "नस्ब", "जर्र"] },
+        { q: "हाल कोणता प्रश्न विचारतो?", opts: ["«कसा?»", "«किती?»", "«कुठे?»"] },
+        { q: "तम्यीझ काय स्पष्ट करतो?", opts: ["कर्त्याची अवस्था", "क्रियापदाचा काळ", "अस्पष्ट गोष्टीची जात"] }
+      ]
+    },
+    ar: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "الحال حكمه…", opts: ["الرفع", "النصب", "الجرّ"] },
+        { q: "الحال جوابُ سؤال…", opts: ["كيف؟", "كم؟", "أين؟"] },
+        { q: "التمييز يرفع الإبهام عن…", opts: ["هيئة الفاعل", "زمن الفعل", "المقدار أو الجنس"] }
+      ]
+    },
+    fr: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "Le hâl est…", opts: ["au raf'", "au nasb", "au jarr"] },
+        { q: "Le hâl répond à « … »", opts: ["comment ?", "combien ?", "où ?"] },
+        { q: "Le tamyîz lève l'ambiguïté sur…", opts: ["l'état du sujet", "le temps du verbe", "la quantité ou l'espèce"] }
+      ]
+    },
+    es: {
+      correct: [1, 0, 2],
+      quiz: [
+        { q: "El hâl va…", opts: ["en raf'", "en nasb", "en yarr"] },
+        { q: "El hâl responde a « … »", opts: ["¿cómo?", "¿cuánto?", "¿dónde?"] },
+        { q: "El tamyîz aclara…", opts: ["el estado del sujeto", "el tiempo del verbo", "la cantidad o especie"] }
+      ]
+    }
+  },
+
+  /* ── DIN 29 — Majrurat / Majzumat ── */
+  29: {
+    mr: {
+      correct: [2, 1, 0],
+      quiz: [
+        { q: "जर्रची कारणे किती?", opts: ["दोन", "चार", "तीन"] },
+        { q: "{{لَمْ}} नंतर मुदारे कोणत्या अवस्थेत?", opts: ["रफ", "जझ्म", "नस्ब"] },
+        { q: "{{فِي الْبَيْتِ}} मध्ये जर्रचे कारण?", opts: ["हर्फ जर्र", "इजाफत", "अनुयायी"] }
+      ]
+    },
+    ar: {
+      correct: [2, 1, 0],
+      quiz: [
+        { q: "للمجرورات كم موضعًا؟", opts: ["موضعان", "أربعة", "ثلاثة"] },
+        { q: "المضارع بعد {{لَمْ}}…", opts: ["مرفوع", "مجزوم", "منصوب"] },
+        { q: "سبب الجرّ في {{فِي الْبَيْتِ}}؟", opts: ["حرف الجرّ", "الإضافة", "التبعية"] }
+      ]
+    },
+    fr: {
+      correct: [2, 1, 0],
+      quiz: [
+        { q: "Combien de causes du jarr ?", opts: ["Deux", "Quatre", "Trois"] },
+        { q: "Après {{لَمْ}}, le mudâri' est…", opts: ["au raf'", "au jazm", "au nasb"] },
+        { q: "La cause du jarr dans {{فِي الْبَيْتِ}} ?", opts: ["la préposition", "l'annexion", "la coordination"] }
+      ]
+    },
+    es: {
+      correct: [2, 1, 0],
+      quiz: [
+        { q: "¿Cuántas causas tiene el yarr?", opts: ["Dos", "Cuatro", "Tres"] },
+        { q: "Tras {{لَمْ}}, el mudâri' va…", opts: ["en raf'", "en yazm", "en nasb"] },
+        { q: "La causa del yarr en {{فِي الْبَيْتِ}}?", opts: ["la preposición", "la anexión", "la coordinación"] }
+      ]
+    }
+  },
+
+  /* ── DIN 30 — Khulasa ── */
+  30: {
+    mr: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "एराबच्या अवस्था किती?", opts: ["चार", "तीन", "सहा"] },
+        { q: "{{كَانَ}} च्या बहिणींपैकी कोणती नकारासाठी?", opts: ["{{أَصْبَحَ}}", "{{لَيْسَ}}", "{{صَارَ}}"] },
+        { q: "{{إِنَّ}} काय करते?", opts: ["खबर नस्ब करते", "काहीच नाही", "मुब्तदा नस्ब करते"] }
+      ]
+    },
+    ar: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "كم حالةً للإعراب؟", opts: ["أربع", "ثلاث", "ستّ"] },
+        { q: "أيُّ أخوات {{كَانَ}} للنفي؟", opts: ["{{أَصْبَحَ}}", "{{لَيْسَ}}", "{{صَارَ}}"] },
+        { q: "{{إِنَّ}} تعمل…", opts: ["تنصب الخبر", "لا تعمل شيئًا", "تنصب الاسم وترفع الخبر"] }
+      ]
+    },
+    fr: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "Combien de cas d'i'râb ?", opts: ["Quatre", "Trois", "Six"] },
+        { q: "Quelle sœur de {{كَانَ}} sert à nier ?", opts: ["{{أَصْبَحَ}}", "{{لَيْسَ}}", "{{صَارَ}}"] },
+        { q: "{{إِنَّ}} …", opts: ["met le khabar au nasb", "ne change rien", "met le nom au nasb et le khabar au raf'"] }
+      ]
+    },
+    es: {
+      correct: [0, 1, 2],
+      quiz: [
+        { q: "¿Cuántos casos de i'râb?", opts: ["Cuatro", "Tres", "Seis"] },
+        { q: "¿Qué hermana de {{كَانَ}} sirve para negar?", opts: ["{{أَصْبَحَ}}", "{{لَيْسَ}}", "{{صَارَ}}"] },
+        { q: "{{إِنَّ}} …", opts: ["pone el jabar en nasb", "no cambia nada", "pone el nombre en nasb y el jabar en raf'"] }
+      ]
+    }
+  }
 };
+

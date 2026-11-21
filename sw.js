@@ -193,7 +193,11 @@
 // v149: NAHW-SARF ke SAARE 30 din (15 Sarf + 15 Nahw) mr/ar/fr/es mein mukammal.
 //       Ab in 4 zubaanoN par Nahw-Sarf page par koi sabaq English mein nahi rehta
 //       (sirf imtihan ke sawal English mein hain — unke jawab number se jude hain).
-const CACHE_NAME = 'quran-ustad-auto-v149';
+// v150: NAHW-SARF ka IMTIHAN bhi ab mr/ar/fr/es mein — 30 din × 3 sawal, har sawal ki
+//       apni jawab-kunji (correct) ke saath. Nayi zubaan ka imtihan ho to uski kunji
+//       chalti hai (CA()), warna purani — is liye sahi jawab kabhi galat nahi hota.
+//       Yaani Nahw-Sarf ka poora safha in 4 zubaanoN mein mukammal hai.
+const CACHE_NAME = 'quran-ustad-auto-v150';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
