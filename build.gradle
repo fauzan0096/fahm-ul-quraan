@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.samajh.app'
+    namespace 'com.quranpath.app'
     compileSdk 36
 
     defaultConfig {
-        applicationId "com.samajh.app"
+        applicationId "com.quranpath.app"
         minSdk 29
         targetSdk 36
         // Play Store par har naye upload ke liye versionCode badhana zaroori hai (GitHub Actions mein apne aap run number)

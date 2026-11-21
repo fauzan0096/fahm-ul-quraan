@@ -1,4 +1,4 @@
-package com.samajh.app;
+package com.quranpath.app;
 
 import android.app.Activity;
 import android.content.ContentResolver;

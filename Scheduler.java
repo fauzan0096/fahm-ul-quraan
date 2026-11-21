@@ -1,4 +1,4 @@
-package com.samajh.app;
+package com.quranpath.app;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -17,7 +17,7 @@ import java.util.Calendar;
 /** Paanchon waqt ke exact alarm lagata hai (app band ho tab bhi bajte hain). */
 final class Scheduler {
 
-    static final String ACTION = "com.samajh.app.AZAN";
+    static final String ACTION = "com.quranpath.app.AZAN";
 
     private Scheduler() {}
 

@@ -1,4 +1,4 @@
-package com.samajh.app;
+package com.quranpath.app;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

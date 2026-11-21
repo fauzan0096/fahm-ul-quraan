@@ -1,4 +1,4 @@
-package com.samajh.app;
+package com.quranpath.app;
 
 import android.Manifest;
 import android.app.Activity;
@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
         s.setDatabaseEnabled(true);
         s.setGeolocationEnabled(true);
         s.setMediaPlaybackRequiresUserGesture(false);
-        s.setUserAgentString(s.getUserAgentString() + " SamajhApp/1");
+        s.setUserAgentString(s.getUserAgentString() + " QuranPathApp/1");
         web.addJavascriptInterface(bridge, "AndroidNS");
 
         final String host = Uri.parse(BuildConfig.APP_URL).getHost();

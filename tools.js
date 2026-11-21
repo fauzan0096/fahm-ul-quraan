@@ -4,7 +4,7 @@
    ========================================================== */
 
 /* ───────────── tools.js ───────────── */
-/* tools.js — Samajh
+/* tools.js — QuranPath
    🕌 Azan ki awaaz   📋 Roz ek baar "poori namaz padhi?"   📅 Azan alarms (Calendar)
    Install: har page ke <head> mein ek line:  <script src="tools.js" defer></script>
    (Azan ke waqt koi screen/phone lock nahi lagta.) */
@@ -351,7 +351,7 @@
         toast('📅 Waqt jama ho rahe hain...');
         return (useApi ? fetchMonthTimes(loc, monthsNeeded(dates)) : Promise.resolve(null)).then(function (map) {
             var now = Date.now(), n = 0, stamp = icsUTC(new Date());
-            var L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Samajh//Namaz//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', 'X-WR-CALNAME:Azan ke waqt'];
+            var L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//QuranPath//Namaz//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', 'X-WR-CALNAME:Azan ke waqt'];
             dates.forEach(function (base) {
                 var ds = dstr(base);
                 var t = (ds === todayS && T.date === todayS) ? T.t : ((map && map[ds]) || T.t);   // aaj ka = bilkul wahi jo app mein dikh raha hai
@@ -362,7 +362,7 @@
                     var e = new Date(s.getTime() + EVENT_MIN * 60000), at = fmt12(t[p.k]);
                     L.push('BEGIN:VEVENT', 'UID:ns-' + icsUTC(s) + '-' + p.k + '@quraan-ustad', 'DTSTAMP:' + stamp,
                         'DTSTART:' + icsUTC(s), 'DTEND:' + icsUTC(e), 'SUMMARY:🕌 ' + p.n + ' ki azan • ' + at,
-                        'DESCRIPTION:' + p.n + ' ka waqt ' + at + '. Namaz padhein phir Samajh kholein 🤲', 'TRANSP:TRANSPARENT',
+                        'DESCRIPTION:' + p.n + ' ka waqt ' + at + '. Namaz padhein phir QuranPath kholein 🤲', 'TRANSP:TRANSPARENT',
                         'BEGIN:VALARM', 'TRIGGER:PT0M', 'ACTION:DISPLAY', 'DESCRIPTION:' + p.n + ' ki azan ' + at, 'END:VALARM', 'END:VEVENT');
                     n++;
                 });
@@ -538,7 +538,7 @@
             (NATIVE ? '<div class="ns-sec">📱 ANDROID APP</div>' +
                 '<div class="ns-note" style="margin-top:0">✅ Azan app band ho tab bhi waqt par bajegi.</div>' +
                 '<button class="ns-btn ghost" data-a="ntest">🧪 Azan ka test</button>' : '') +
-            (NATIVE ? '<div class="ns-note" data-lbh="nsn3">🔋 Agar azan waqt par na bajti ho to phone ki Settings → Battery mein "Samajh" ko <b>Unrestricted / Autostart</b> dein (Xiaomi, Oppo, Vivo, Realme mein zaroori).</div>' : '<div class="ns-note" data-lbh="nsn4">ℹ️ App band ho tab bhi yaad dilane ke liye upar wala <b>Calendar alarm</b> lagayein. App band hone par azan ki awaaz ke liye Android app install karein.</div>') +
+            (NATIVE ? '<div class="ns-note" data-lbh="nsn3">🔋 Agar azan waqt par na bajti ho to phone ki Settings → Battery mein "QuranPath" ko <b>Unrestricted / Autostart</b> dein (Xiaomi, Oppo, Vivo, Realme mein zaroori).</div>' : '<div class="ns-note" data-lbh="nsn4">ℹ️ App band ho tab bhi yaad dilane ke liye upar wala <b>Calendar alarm</b> lagayein. App band hone par azan ki awaaz ke liye Android app install karein.</div>') +
             '</div></div>';
         var sc1 = panelEl.querySelector('.ns-body'); if (sc1) sc1.scrollTop = keep;
     }

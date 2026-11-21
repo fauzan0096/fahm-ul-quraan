@@ -59,7 +59,7 @@
 // v46: themes.js (kharidi theme har page par + 3 naye special themes), Bazm-e-Fahm games.html ke andar
 // v45: backup.js (Backup/Restore), offline audio (azan + nasheed, range support), offline Google Fonts, privacy.html cache
 // v44: Bazm-e-Fahm game games page mein jora (bazm.html)
-// v43: app ka naam badal kar Samajh (فهم القرآن)
+// v43: app ka naam badal kar QuranPath (فهم القرآن)
 // v42: certificate — jhoota 'Sanad ki jaanch' hata, 'Completion Certificate' naam, disclaimer
 // v41: onboarding.js (welcome slides, sirf pehli baar); games se Shab-e-Barat/Miraj ke sawal hataye
 // v40: ui.js + install.js + progress.js ek file (app.js) mein; QSSFX sounds.js mein
@@ -167,12 +167,17 @@
 // v141: Chhoti ghaltiyan theek — manifest mein app ka tafseeli paigham ab 8 zubaanein aur
 //       138 duaein batata hai (pehle 4 zubaan / 119 likha tha), tools.js ke header mein purana
 //       naam "namaz.js" ki jagah "tools.js". Koi content nahi badla.
-// v142: NAAM BADLA — app ka naam ab **Samajh** hai (pehle Fahm-ul-Quran, jo Play par pehle se
+// v142: NAAM BADLA — app ka naam ab **QuranPath** hai (pehle Fahm-ul-Quran, jo Play par pehle se
 //       ek mashhoor tafseer app ka naam hai). Har page ka title, header, login screen, share
 //       text, certificate, calendar, manifest (name/short_name), AndroidManifest ka label aur
 //       Android package (com.quraanustad.app -> com.samajh.app) badal diya. "Bazm-e-Fahm"
 //       (game ka naam) waisa hi hai. GitHub Pages ka purana link (…/fahm-ul-quraan/) wahi hai.
-const CACHE_NAME = 'quran-ustad-auto-v142';
+// v143: NAAM "Samajh" SE **QuranPath** — duniya bhar mein samajh aane wala naam. Sanad par
+//       "Founder, QuranPath" (koi zaati naam nahi). Android package -> com.quranpath.app.
+//       Login ka misaal naam (jo maalik ka zaati naam tha) hata kar aam misaal rakh diya.
+//       Purani backup files (Fahm-ul-Quran aur Samajh dono) ab bhi restore hoti hain.
+//       index.html ka APP_LINK ab asli chalta hua site pata (share/calendar sahi jagah khulta hai).
+const CACHE_NAME = 'quran-ustad-auto-v143';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -525,7 +530,7 @@ async function assetResponse(request) {
 function offlinePage() {
     const html = '<!DOCTYPE html><html lang="ur"><head><meta charset="utf-8">' +
         '<meta name="viewport" content="width=device-width,initial-scale=1">' +
-        '<title>Samajh</title><style>' +
+        '<title>QuranPath</title><style>' +
         'body{font-family:system-ui,sans-serif;background:#0A2E24;color:#F0E9D0;margin:0;' +
         'display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;text-align:center}' +
         'h1{font-size:20px;color:#D9B65A;margin:0 0 10px}p{font-size:15px;line-height:1.7;margin:0 0 18px;max-width:340px}' +
@@ -601,7 +606,7 @@ self.addEventListener('periodicsync', (e) => {
 self.addEventListener('push', (e) => {
     let d = {};
     try { d = e.data ? e.data.json() : {}; } catch (err) { d = { body: e.data ? e.data.text() : '' }; }
-    const title = d.title || 'Samajh';
+    const title = d.title || 'QuranPath';
     e.waitUntil(self.registration.showNotification(title, {
         body: d.body || 'Aaj ka sabaq aur ayat aapka intezar kar rahi hai 📖',
         icon: './icon-192.png',

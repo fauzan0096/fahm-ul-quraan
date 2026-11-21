@@ -1,5 +1,5 @@
 /* ==========================================================
-   icons.js — Samajh ka apna icon set (SVG, ek jaisa style)
+   icons.js — QuranPath ka apna icon set (SVG, ek jaisa style)
    • Emoji ki jagah saaf, har screen par ek jaise "duotone" icons: hara line + sunehri rang.
    • Istemaal:  <i class="qi" data-qi="quran"></i>   (size CSS se: font-size ya width/height)
    • Naya icon jodna ho to neeche ICONS mein ek entry; accent (sunehri) hissa class "a" se.

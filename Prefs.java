@@ -1,4 +1,4 @@
-package com.samajh.app;
+package com.quranpath.app;
 
 import android.content.Context;
 import android.content.SharedPreferences;
