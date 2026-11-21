@@ -113,3 +113,15 @@ header .header-controls { display: flex; align-items: center; }
 
 /* search box header se chipakta tha */
 header ~ .container > .search-box:first-child, header + .container > .search-box:first-child { margin-top: 12px; }
+
+
+/* ---------- v146: lambi zubaan (Français / Español / العربية) ke lafz design kharab na karein ---------- */
+/* French/Spanish mein lafz lambe hote hain — pehle wo card ya button se bahar nikal jate the */
+html { -webkit-text-size-adjust: 100%; }
+body { overflow-wrap: break-word; }
+/* tasveer/svg kabhi apne dabbe se bari na ho */
+img, svg, canvas, video { max-width: 100%; }
+/* flex ke andar text sahi se sikure ho (warna button ka text kata dikhta hai) */
+button, a.btn, .icon-btn, .nav-btn, .top-link-btn, .tile, .mini-tile { min-width: 0; }
+/* tap par bina zaroorat zor ka rang na aaye */
+a, button { -webkit-tap-highlight-color: rgba(0, 0, 0, .08); }

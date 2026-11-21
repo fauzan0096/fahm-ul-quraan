@@ -146,7 +146,7 @@ Basic / Intermediate / High qawaid, misaalon ke saath — har misaal Qari ki awa
 - Android app ke liye `VIBRATE` permission manifest mein hai.
 
 ### 📱 Android App (`android/`)
-Azan app band hone par bhi bajne ke liye. **Phone/screen par koi lock nahi lagta** (device-admin ka purana code hata diya gaya). Dekhein `android/README.md` (GitHub Actions se APK banta hai).
+Azan app band hone par bhi bajne ke liye. **Phone/screen par koi lock nahi lagta** (device-admin ka purana code hata diya gaya). Android ka saara code `app/src/main/` mein hai; har push par `.github/workflows/android.yml` se APK banta hai aur (keystore secrets set hon to) signed AAB.
 
 ### 🎮 Games (`games.html`)
 🪜 **Maratib-e-Ilm** · ⭐ Sahaba · 🧠 Memory · 😀 Emoji · 🎓 **Bazm-e-Fahm** (ab isi page ke andar, alag file nahi; purana `bazm.html` link sirf redirect hai) — sound effects ke saath. Header ka **🎵 button** har game mein nasheed chalata/rokta hai (`nasheed.mp3` chahiye).
@@ -216,17 +216,18 @@ Dhyan dein:
 ├── manifest.json    # PWA manifest (icons, screenshots, shortcuts)
 ├── sw.js            # Service worker (offline, sync, push)
 ├── theme.css
-├── 
+├── (bundle files)
 │   ├── app.js       # themes + UI/install/progress + language (lang) + welcome slides + backup
 │   ├── tools.js     # Namaz (azan, roz ka sawal, calendar) + Tasbeeh
 │   ├── sounds.js    # Saari awaazein: Qari + Suno/Roko + games ke effects/nasheed
 │   ├── course.js    # courseData (900 alfaz) + wordAyat (har lafz ki ayat)
 │   └── dua.js       # Duaon ka Roman/Hindi/English tarjuma
-├──            # azan-aksa/sweet/3.mp3, nature-ambience.mp3
-├──              # icon.png, icon-192.png, icon-maskable.png, signature.png, icons/, screenshots/
-├── android/         # Android wrapper (azan app band hone par bhi)
-├── tools/           # make_nature_ambience.py
-└── .github/workflows/android.yml
+├── azan-aksa.mp3 / azan-sweet.mp3 / azan-3.mp3 / nature-ambience.mp3   # web app ke liye
+├── icon*.png, signature.png, home-m.png …      # icons + install screenshots
+├── app/             # Android app module (Play Store ke liye) — java, manifest, res, assets
+├── build.gradle / settings.gradle / gradle.properties
+├── make_nature_ambience.py
+└── .github/workflows/android.yml   # CI: har push par APK + (keystore ho to) signed AAB
 ```
 
 > Purane file naam (themes.js, lang.js, namaz.js, courseData.js, ...) ab upar ki 5 bundle files ke andar hain; har bundle mein section ka header (`/* ───── naam.js ───── */`) laga hai.

@@ -1,0 +1,17 @@
+# Gradle / Android build ke nateeje (ye repo mein nahi jaane chahiye)
+build/
+app/build/
+.gradle/
+local.properties
+*.iml
+.idea/
+captures/
+
+# Keystore / password files — kabhi commit na karein
+*.jks
+*.keystore
+keystore.properties
+
+# OS ki faltu files
+.DS_Store
+Thumbs.db

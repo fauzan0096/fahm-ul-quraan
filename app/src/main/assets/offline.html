@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ur-Latn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>QuranPath</title>
+<style>
+    :root { --green:#0F4C3A; --gold:#D4AF37; }
+    * { box-sizing: border-box; }
+    body {
+        margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+        background: radial-gradient(120% 90% at 50% 0%, #14614A 0%, #0F4C3A 55%, #0A362A 100%);
+        color: #fff; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        padding: 24px; text-align: center; -webkit-tap-highlight-color: transparent;
+    }
+    .box { width: 100%; max-width: 380px; }
+    .ico { font-size: 52px; line-height: 1; margin-bottom: 6px; }
+    h1 { margin: 6px 0 2px; font-size: 26px; letter-spacing: .3px; }
+    .ur { font-size: 20px; color: var(--gold); margin: 0 0 18px; direction: rtl; font-family: "Noto Nastaliq Urdu", serif; }
+    p { margin: 0 0 10px; font-size: 14.5px; line-height: 1.7; color: #E8EFEC; }
+    p.small { font-size: 12.5px; color: #B9CCC4; }
+    button {
+        margin-top: 16px; width: 100%; border: 0; border-radius: 26px; padding: 14px 18px;
+        background: linear-gradient(135deg, var(--gold), #B8923A); color: #1b1b1b;
+        font-size: 15.5px; font-weight: 800; cursor: pointer;
+    }
+    button:active { transform: scale(.98); }
+    .note { margin-top: 14px; font-size: 12px; color: #9FB8AE; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="box">
+    <div class="ico">📡</div>
+    <h1>QuranPath</h1>
+    <div class="ur">قرآن کا راستہ</div>
+
+    <p><b>Internet se connection nahi bana.</b><br>
+       Internet on karke dobara koshish karein.</p>
+    <p class="small">Pehli baar app kholte waqt internet zaroori hai. Uske baad app offline bhi chalti hai.</p>
+
+    <button onclick="retry()">🔄 Dobara koshish karein</button>
+
+    <div class="note">
+        No internet connection — please connect and try again.<br>
+        انٹرنیٹ سے رابطہ نہیں ہو سکا — دوبارہ کوشش کریں۔<br>
+        इंटरनेट से कनेक्शन नहीं हुआ — फिर कोशिश करें।
+    </div>
+</div>
+<script>
+    function retry() {
+        // Wahi pata jo Android app kholta hai
+        location.replace('https://fauzan0096.github.io/fahm-ul-quraan/');
+    }
+</script>
+</body>
+</html>

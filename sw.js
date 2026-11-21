@@ -182,7 +182,10 @@
 // v145: AAM USER KE LIYE PASSWORD HATA DIYA — password khaali chhod kar sirf naam se login, aur
 //       sanad (certificate) mil jati hai. Admin sirf password daal kar andar aata hai; purana
 //       guest password bhi chalta rahega. Naya placeholder sab 8 zubaanoN mein.
-const CACHE_NAME = 'quran-ustad-auto-v145';
+// v146: SAFAAI — purane 5 chhote Arkan pages (kalima/namaz/zakat/roza/hajj) hata diye, unki
+//       jagah arkan-*.html hai; PWA install ki tasveerein ab offline cache mein bhi hain.
+//       Lambi zubaan (Français/Español) ke lambe lafz card se bahar na jayein (theme.css).
+const CACHE_NAME = 'quran-ustad-auto-v146';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
@@ -271,12 +274,12 @@ const ASSETS = [
     './grammar-course.js',
     './grammar-lang.js',
     './icons.js',
-    // purane chhote Arkan pages (root par) — ab inke paths bhi theek hain
-    './kalima.html',
-    './namaz.html',
-    './zakat.html',
-    './roza.html',
-    './hajj.html'
+    // PWA install popup ki tasveerein — offline bhi dikhein
+    './home-m.png',
+    './home-w.png',
+    './dua-m.png',
+    './tajweed-m.png',
+    './asma-m.png'
 ];
 
 // ===== INSTALL: sirf shell + fonts (~1 MB) — bhaari files activate ke baad, pichhe se =====

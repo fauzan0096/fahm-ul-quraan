@@ -1,0 +1,53 @@
+name: Android build
+
+# Push par APK (aur keystore set ho to signed AAB) ban kar Artifacts mein milta hai.
+# Play Console par .aab upload hoti hai — Artifacts se download kar lein.
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - name: Upload key (sirf agar secrets set hain)
+        if: ${{ secrets.KEYSTORE_B64 != '' }}
+        run: echo "${{ secrets.KEYSTORE_B64 }}" | base64 -d > "$RUNNER_TEMP/upload.jks"
+
+      - name: Debug APK banayein
+        run: gradle assembleDebug --no-daemon --stacktrace
+
+      - name: Release AAB banayein (signed)
+        if: ${{ secrets.KEYSTORE_B64 != '' }}
+        env:
+          KEYSTORE_FILE: ${{ runner.temp }}/upload.jks
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: gradle bundleRelease --no-daemon --stacktrace
+
+      - name: APK upload karein
+        uses: actions/upload-artifact@v4
+        with:
+          name: quranpath-apk
+          path: app/build/outputs/apk/debug/*.apk
+
+      - name: AAB upload karein
+        if: ${{ secrets.KEYSTORE_B64 != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: quranpath-aab
+          path: app/build/outputs/bundle/release/*.aab

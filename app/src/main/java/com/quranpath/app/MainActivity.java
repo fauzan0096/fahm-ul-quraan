@@ -22,6 +22,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceError;
 
 public class MainActivity extends Activity {
 
@@ -67,6 +68,14 @@ public class MainActivity extends Activity {
             @Override
             public void onPageFinished(WebView v, String url) {
                 updateBack();
+            }
+
+            /** Net na ho ya site na khule to khaali (safed) safhe ki jagah saaf paigham dikhao */
+            @Override
+            public void onReceivedError(WebView v, WebResourceRequest req, WebResourceError err) {
+                if (req != null && req.isForMainFrame()) {
+                    v.loadUrl("file:///android_asset/offline.html");
+                }
             }
 
             @Override
@@ -123,7 +132,7 @@ public class MainActivity extends Activity {
                     else if (mime.contains("calendar")) ext = ".ics";
                     else if (mime.contains("json")) ext = ".json";
                 }
-                String name = "quraan-ustad-" + System.currentTimeMillis() + ext;
+                String name = "quranpath-" + System.currentTimeMillis() + ext;
                 if (url.startsWith("data:")) {
                     bridge.saveDataUrl(url, name);
                 } else if (url.startsWith("blob:")) {
