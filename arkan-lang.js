@@ -5,9 +5,24 @@ var BOOK={"المغنی لابن قدامہ": ["Al-Mughni (Ibn Qudamah)", "अ�
 function LI(){var l=window.QSLang?QSLang.get():'u';var i={u:0,ro:1,hi:2,en:3}[l];return i==null?3:i;}
 function dg(s){return s.replace(/[\u06F0-\u06F9\u0660-\u0669]/g,function(c){var n=c.charCodeAt(0);return String(n>=0x06F0?n-0x06F0:n-0x0660);});}
 function plain(h){return h.replace(/<[^>]+>/g,'');}
-function ref(t,k){ // k: 0 ro,1 hi,2 en
-  t=dg(t).trim(); var m;
-  if((m=/^سورۃ\s+(.+?)(?:\s+(\d+:[\d\-–]+))?$/.exec(t))&&SUR[m[1]])return (k===1?'सूरह ':'Surah ')+SUR[m[1]][k]+(m[2]?' '+m[2]:'');
+/* Arabi (العربية) chuni ho to hawala asli Arabi imla mein — Urdu imla wale kitabon ke naam badal kar */
+var ARB={"صحیح بخاری":"صحيح البخاري","صحیح مسلم":"صحيح مسلم","سنن ابی داود":"سنن أبي داود","سنن ترمذی":"سنن الترمذي","سنن نسائی":"سنن النسائي","سنن ابن ماجہ":"سنن ابن ماجه","المغنی لابن قدامہ":"المغني لابن قدامة"};
+var SURA={"mr":"सूरह ","ar":"سورة ","fr":"Sourate ","es":"Sura "};
+/* Urdu ke arqam (۸) Arabi ke arqam (٨) mein — Arabi qari ko theek lagte hain */
+function dgAr(s){return s.replace(/[\u06F0-\u06F9]/g,function(c){return String.fromCharCode(c.charCodeAt(0)-0x06F0+0x0660);});}
+function arRef(t){
+  var m;
+  t=dgAr(t);
+  if((m=/^سورۃ\s+(.+?)(?:\s+(\d+:[\d\-–]+))?$/.exec(t)))return 'سورة '+m[1]+(m[2]?' '+m[2]:'');
+  for(var b in ARB){ if(t.indexOf(b)===0)return ARB[b]+t.slice(b.length); }
+  return t;
+}
+function ref(t,k,lang){ // k: 0 ro,1 hi,2 en ; lang = mr/ar/fr/es (na ho to purana tareeqa)
+  t=t.trim();
+  if(lang==='ar')return arRef(t);          // Arabi: asli Arabi hawala
+  if(lang==='mr')k=1;                      // Marathi: Devanagari (हिंदी wala column)
+  t=dg(t); var m;
+  if((m=/^سورۃ\s+(.+?)(?:\s+(\d+:[\d\-–]+))?$/.exec(t))&&SUR[m[1]])return (SURA[lang]||(k===1?'सूरह ':'Surah '))+SUR[m[1]][k]+(m[2]?' '+m[2]:'');
   for(var b in BOOK){ if(t.indexOf(b)===0){ var rest=t.slice(b.length).trim();
       rest=rest.replace(/\(([^)]*)\)/g,function(x,e){e=e.trim();return EXTRA[e]?'('+EXTRA[e][k]+')':x;});
       for(var e in EXTRA){ if(rest.indexOf(e)>-1&&!/\(/.test(rest.split(e)[0].slice(-1)))rest=rest.replace(e,EXTRA[e][k]); }
@@ -31,7 +46,7 @@ function apply(){
       else{ var t=TR[id]; if(!t)continue; out=t[k]; }
     }
     if(out.indexOf('⟦r⟧')>-1){ var refs=[],re=/<span class="ref">(.*?)<\/span>/g,mm; while((mm=re.exec(el.__o)))refs.push(plain(mm[1])); var n=0;
-      out=out.replace(/⟦r⟧/g,function(){return '<span class="ref">'+ref(refs[n++]||'',k)+'</span>';}); }
+      out=out.replace(/⟦r⟧/g,function(){return '<span class="ref">'+ref(refs[n++]||'',k,xc)+'</span>';}); }
     if(!isT)out=out.replace(/[\uFDFA\uFDFB]/g,function(c){return '<span class="sal">'+c+'</span>';});
     if(isT)el.textContent=out; else el.innerHTML=out;
   }
@@ -39,7 +54,7 @@ function apply(){
   for(i=0;i<els.length;i++){ var e2=els[i]; if(e2.__o===undefined)e2.__o=e2.innerHTML;
     if(l===0){e2.innerHTML=e2.__o;continue;}
     var refs2=[],re2=/<span class="ref">(.*?)<\/span>/g,m2; while((m2=re2.exec(e2.__o)))refs2.push(plain(m2[1]));
-    e2.innerHTML=refs2.map(function(r){return '<span class="ref">'+ref(r,k)+'</span>';}).join(''); }
+    e2.innerHTML=refs2.map(function(r){return '<span class="ref">'+ref(r,k,xc)+'</span>';}).join(''); }
   document.documentElement.setAttribute('lang',{u:'ur',ro:'ur-Latn',hi:'hi',en:'en',mr:'mr',ar:'ar',fr:'fr',es:'es'}[xc||['u','ro','hi','en'][l]]||'en');
 }
 function z(key,a,b){var X=window.ARKAN_Z,xc=XCUR();var s=(X&&X[key]&&xc&&X[key][xc])||Z[key][LI()];s=s.replace('%s',a);if(b!==undefined)s=s.replace('%g',b);return s;}

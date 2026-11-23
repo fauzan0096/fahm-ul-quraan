@@ -89,9 +89,10 @@
     document.head.appendChild(s);
   }
 
-  function arrowFix(lang) {   // wapsi ka teer: RTL mein →, LTR mein ←
+  function arrowFix(lang) {   // wapsi ka teer: RTL (اردو/العربية) mein →, LTR mein ←
     var b = document.querySelectorAll('header .icon-btn[href]');
-    for (var i = 0; i < b.length; i++) b[i].textContent = lang === 'u' ? '→' : '←';
+    var rtl = (lang === 'u' || lang === 'ar');
+    for (var i = 0; i < b.length; i++) b[i].textContent = rtl ? '→' : '←';
   }
   var XLANG = { mr: 1, ar: 1, fr: 1, es: 1 };
   function setDir(lang) {

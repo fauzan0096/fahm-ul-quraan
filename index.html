@@ -1198,7 +1198,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             const now = new Date(), p = n => String(n).padStart(2, '0');
             const d = `${now.getFullYear()}${p(now.getMonth() + 1)}${p(now.getDate())}T${p(t[0])}${p(t[1])}00`;
             const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//QuranPath//UR', 'BEGIN:VEVENT',
-                'UID:quraan-ustad-daily@' + (location.hostname || 'app'), 'DTSTAMP:' + d, 'DTSTART:' + d, 'DURATION:PT15M',
+                'UID:quranpath-daily@' + (location.hostname || 'app'), 'DTSTAMP:' + d, 'DTSTART:' + d, 'DURATION:PT15M',
                 'RRULE:FREQ=DAILY', 'SUMMARY:📖 QuranPath — aaj ka sabaq', 'DESCRIPTION:Aaj ke 10 lafz padhein aur exam dein. ' + APP_LINK, 'URL:' + APP_LINK,
                 'BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:QuranPath — aaj ka sabaq', 'TRIGGER:PT0M', 'END:VALARM', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
             const a = document.createElement('a');

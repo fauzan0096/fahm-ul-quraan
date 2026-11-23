@@ -38,7 +38,9 @@
     html[data-mlang="u"] main { direction: rtl; text-align: right; font-family: 'Noto Nastaliq Urdu', 'Amiri', serif; }
     html[data-mlang="hi"] main, html[data-mlang="hi"] .opt-btn, html[data-mlang="hi"] .back-btn, html[data-mlang="hi"] .next-day-btn, html[data-mlang="hi"] .submit-exam { font-family: 'Noto Sans Devanagari', 'Figtree', system-ui, sans-serif; }
     html[data-mlang="ro"] main, html[data-mlang="en"] main, html[data-mlang="hi"] main,
-    html[data-mlang="mr"] main, html[data-mlang="ar"] main, html[data-mlang="fr"] main, html[data-mlang="es"] main { direction: ltr; text-align: left; }
+    html[data-mlang="mr"] main, html[data-mlang="fr"] main, html[data-mlang="es"] main { direction: ltr; text-align: left; }
+    /* Arabi zubaan chuni ho to sabaq Arabi (Amiri, RTL) mein — LTR nahi */
+    html[data-mlang="ar"] main { direction: rtl; text-align: right; font-family: 'Amiri', 'Noto Naskh Arabic', serif; }
     html[data-mlang="mr"] main, html[data-mlang="mr"] .opt-btn, html[data-mlang="mr"] .back-btn, html[data-mlang="mr"] .next-day-btn, html[data-mlang="mr"] .submit-exam { font-family: 'Noto Sans Devanagari', 'Figtree', system-ui, sans-serif; }
     html[data-mlang="mr"] .day-header h2 { font-family: 'Noto Sans Devanagari', serif; font-size: 20px; }
     html[data-mlang="ar"] .day-header h2, html[data-mlang="fr"] .day-header h2, html[data-mlang="es"] .day-header h2 { font-family: 'Figtree', 'Amiri', serif; font-size: 21px; }

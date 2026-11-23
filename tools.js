@@ -360,7 +360,7 @@
                     var s = new Date(base.getFullYear(), base.getMonth(), base.getDate(), 0, m, 0, 0);
                     if (s.getTime() <= now) return;                                                  // guzra hua waqt nahi
                     var e = new Date(s.getTime() + EVENT_MIN * 60000), at = fmt12(t[p.k]);
-                    L.push('BEGIN:VEVENT', 'UID:ns-' + icsUTC(s) + '-' + p.k + '@quraan-ustad', 'DTSTAMP:' + stamp,
+                    L.push('BEGIN:VEVENT', 'UID:ns-' + icsUTC(s) + '-' + p.k + '@quranpath', 'DTSTAMP:' + stamp,
                         'DTSTART:' + icsUTC(s), 'DTEND:' + icsUTC(e), 'SUMMARY:🕌 ' + p.n + ' ki azan • ' + at,
                         'DESCRIPTION:' + p.n + ' ka waqt ' + at + '. Namaz padhein phir QuranPath kholein 🤲', 'TRANSP:TRANSPARENT',
                         'BEGIN:VALARM', 'TRIGGER:PT0M', 'ACTION:DISPLAY', 'DESCRIPTION:' + p.n + ' ki azan ' + at, 'END:VALARM', 'END:VEVENT');

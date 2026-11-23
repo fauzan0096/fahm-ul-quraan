@@ -210,3 +210,44 @@ html[data-mlang="ro"] header .header-top>a.icon-btn:first-child::before,html[dat
   .snav{flex-direction:column}
   .snav button{width:100%}
 }
+
+
+/* ===== v151: मराठी / Français / Español ka LTR layout =====
+   Pehle sirf Roman/हिंदी/English ke liye LTR tarteeb thi. Nayi zubaanoN par body ki disha
+   (dir=ltr, arkan-i18n.js se) to badal jati thi, magar bullets, patti ka kinara, table ka
+   pehla column, pichla/agla aur wapas ka teer — sab Urdu (RTL) wali jagah par hi rehte the.
+   Is liye ye teen zubaanein ab bilkul Roman/हिंदी jaisi saaf LTR tarteeb mein hain. */
+html[data-mlang="mr"] body,html[data-mlang="fr"] body,html[data-mlang="es"] body{direction:ltr;font-family:'Figtree','Amiri',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.75;font-size:16px}
+html[data-mlang="mr"] body{font-family:'Noto Sans Devanagari','Figtree','Amiri',system-ui,sans-serif;line-height:1.85}
+html[data-mlang="mr"] .sec p,html[data-mlang="fr"] .sec p,html[data-mlang="es"] .sec p{text-align:left}
+html[data-mlang="mr"] .hero h2,html[data-mlang="fr"] .hero h2,html[data-mlang="es"] .hero h2,
+html[data-mlang="mr"] header h1,html[data-mlang="fr"] header h1,html[data-mlang="es"] header h1{font-family:'Figtree','Amiri','Noto Sans Devanagari',sans-serif;line-height:1.35}
+html[data-mlang="mr"] .hero h2,html[data-mlang="mr"] header h1{font-family:'Noto Sans Devanagari','Amiri',sans-serif}
+html[data-mlang="mr"] .hero .sub,html[data-mlang="fr"] .hero .sub,html[data-mlang="es"] .hero .sub{line-height:1.6}
+html[data-mlang="mr"] .tr,html[data-mlang="fr"] .tr,html[data-mlang="es"] .tr{line-height:1.7}
+html[data-mlang="mr"] .lst li,html[data-mlang="fr"] .lst li,html[data-mlang="es"] .lst li,
+html[data-mlang="mr"] .nl li,html[data-mlang="fr"] .nl li,html[data-mlang="es"] .nl li{padding:3px 0 3px 36px;line-height:1.7}
+html[data-mlang="mr"] .lst li::before,html[data-mlang="fr"] .lst li::before,html[data-mlang="es"] .lst li::before{right:auto;left:4px}
+html[data-mlang="mr"] .nl li::before,html[data-mlang="fr"] .nl li::before,html[data-mlang="es"] .nl li::before{right:auto;left:0}
+html[data-mlang="mr"] .hd,html[data-mlang="fr"] .hd,html[data-mlang="es"] .hd{border-right:none;border-left:4px solid var(--gold,#B8923A)}
+html[data-mlang="mr"] td:first-child,html[data-mlang="fr"] td:first-child,html[data-mlang="es"] td:first-child{text-align:left}
+html[data-mlang="mr"] .ref,html[data-mlang="fr"] .ref,html[data-mlang="es"] .ref,
+html[data-mlang="mr"] .prog .row,html[data-mlang="fr"] .prog .row,html[data-mlang="es"] .prog .row{direction:ltr}
+html[data-mlang="mr"] .ar,html[data-mlang="fr"] .ar,html[data-mlang="es"] .ar,
+html[data-mlang="mr"] .hq,html[data-mlang="fr"] .hq,html[data-mlang="es"] .hq{direction:rtl}
+html[data-mlang="mr"] .zc input,html[data-mlang="fr"] .zc input,html[data-mlang="es"] .zc input{text-align:left}
+html[data-mlang="mr"] .zc select,html[data-mlang="fr"] .zc select,html[data-mlang="es"] .zc select{direction:ltr;font-family:inherit}
+html[data-mlang="mr"] .sec h2,html[data-mlang="fr"] .sec h2,html[data-mlang="es"] .sec h2{background:linear-gradient(260deg,var(--ak-gold-soft),transparent 85%)}
+html[data-mlang="mr"] .pcard .go,html[data-mlang="fr"] .pcard .go,html[data-mlang="es"] .pcard .go{display:inline-flex;transform:scaleX(-1)}
+html[data-mlang="mr"] .snav button,html[data-mlang="fr"] .snav button,html[data-mlang="es"] .snav button{text-align:left;align-items:flex-start}
+html[data-mlang="mr"] .snav button.nx,html[data-mlang="fr"] .snav button.nx,html[data-mlang="es"] .snav button.nx{text-align:right;align-items:flex-end}
+html[data-mlang="mr"] .snav button span,html[data-mlang="fr"] .snav button span,html[data-mlang="es"] .snav button span{direction:ltr;white-space:normal;overflow:visible;text-overflow:clip;line-height:1.7}
+html[data-mlang="mr"] .chips a,html[data-mlang="fr"] .chips a,html[data-mlang="es"] .chips a{line-height:1.9}
+html[data-mlang="fr"] .chips a,html[data-mlang="es"] .chips a{white-space:normal;text-align:center;max-width:240px}
+html[data-mlang="mr"] .pn a,html[data-mlang="fr"] .pn a,html[data-mlang="es"] .pn a{direction:ltr}
+html[data-mlang="mr"] .pcard .pt,html[data-mlang="fr"] .pcard .pt,html[data-mlang="es"] .pcard .pt,
+html[data-mlang="mr"] .pcard .ps,html[data-mlang="fr"] .pcard .ps,html[data-mlang="es"] .pcard .ps{line-height:1.5}
+html[data-mlang="mr"] header .header-top>a.icon-btn:first-child,html[data-mlang="fr"] header .header-top>a.icon-btn:first-child,html[data-mlang="es"] header .header-top>a.icon-btn:first-child{font-size:0}
+html[data-mlang="mr"] header .header-top>a.icon-btn:first-child::before,html[data-mlang="fr"] header .header-top>a.icon-btn:first-child::before,html[data-mlang="es"] header .header-top>a.icon-btn:first-child::before{content:"\2190";font-size:20px;line-height:1}
+/* French/Spanish ke lambe button label dabbe se bahar na nikle */
+html[data-mlang="fr"] .done,html[data-mlang="es"] .done,html[data-mlang="fr"] .snav button,html[data-mlang="es"] .snav button{white-space:normal;line-height:1.5;min-height:48px}

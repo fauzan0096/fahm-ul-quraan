@@ -197,7 +197,15 @@
 //       apni jawab-kunji (correct) ke saath. Nayi zubaan ka imtihan ho to uski kunji
 //       chalti hai (CA()), warna purani — is liye sahi jawab kabhi galat nahi hota.
 //       Yaani Nahw-Sarf ka poora safha in 4 zubaanoN mein mukammal hai.
-const CACHE_NAME = 'quran-ustad-auto-v150';
+// v151: ZUBAAN KI BAAQI GHALTIYAN — (1) Arkan pages ke HAWALE (صحیح بخاری ۸، سورۃ النساء ۴:۱۰۳)
+//       ab mr/ar/fr/es par bhi theek: Arabi par asli Arabi imla (صحيح البخاري، سورة النساء) aur
+//       Arabi arqam, Marathi par Devanagari, French/Spanish par "Sourate"/"Sura" — pehle sab
+//       English ("Sahih Bukhari, Surah") dikhta tha. (2) Arkan pages par mr/fr/es ka LTR layout:
+//       bullets, patti ka kinara, table ka pehla column, pichla/agla aur wapas ka teer — sab ab
+//       Roman/हिंदी jaisa saaf (arkan.css). (3) Arabi (RTL) par wapas ka teer ab → hi rehta hai.
+//       (4) Nahw-Sarf: Arabi zubaan par sabaq RTL/Amiri mein (pehle LTR tha).
+//       (5) Purane naam ki safai: calendar/ICS ki UID ab @quranpath (quraan-ustad nahi).
+const CACHE_NAME = 'quran-ustad-auto-v151';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';
