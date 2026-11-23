@@ -1230,12 +1230,26 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                 <div class="weak-chips">${list.slice(0, 12).map(w => `<span>${w.a}</span>`).join('')}</div>
                 <button class="exam-btn" onclick="startWeakRevision()">🔁 Dohrai shuru karein</button>`;
         }
+        // Dohrai ke qadam: galat lafz 3 din baad, phir sahi hone par 7, phir 21 din baad. Teen baar
+        // sahi yaad aa jaye to lafz dohrai se nikal jata hai (yaad pakki ho gayi).
+        const REV_DAYS = [3, 7, 21];
         function scheduleRevision(word, wrong) {
-            let due = {};
+            let due = {}, step = {};
             try { due = JSON.parse(localStorage.getItem(pk('revDue'))) || {}; } catch (e) {}
+            try { step = JSON.parse(localStorage.getItem(pk('revStep'))) || {}; } catch (e) {}
             const ds = Math.floor(Date.now() / 86400000);
-            if (wrong) due[word.a] = ds + 3; else delete due[word.a];
-            try { localStorage.setItem(pk('revDue'), JSON.stringify(due)); } catch (e) {}
+            if (wrong) {
+                const s = Math.min(step[word.a] || 0, REV_DAYS.length - 1);
+                step[word.a] = s; due[word.a] = ds + REV_DAYS[s];
+            } else if (due[word.a] != null) {              // dohrai mein sahi — agla qadam
+                const s = (step[word.a] || 0) + 1;
+                if (s >= REV_DAYS.length) { delete due[word.a]; delete step[word.a]; }
+                else { step[word.a] = s; due[word.a] = ds + REV_DAYS[s]; }
+            }
+            try {
+                localStorage.setItem(pk('revDue'), JSON.stringify(due));
+                localStorage.setItem(pk('revStep'), JSON.stringify(step));
+            } catch (e) {}
         }
         // Lafz talash: Arabi, Roman, Urdu/Hindi/English matlab — poore 900 alfaz mein
         function searchWords(q) {
