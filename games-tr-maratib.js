@@ -345,7 +345,7 @@
   Q("Imam Bukhari ka watan?", "इमाम बुखारी यांचे वतन?", "ما وطن الإمام البخاري؟", "Quel est le pays de l’imam al-Bukhari ?", "¿Cuál es la tierra del imam al-Bujari?");
   Q("Imam Muslim ka watan?", "इमाम मुस्लिम यांचे वतन?", "ما وطن الإمام مسلم؟", "Quel est le pays de l’imam Muslim ?", "¿Cuál es la tierra del imam Muslim?");
   Q("Imam Tirmidhi ka watan?", "इमाम तिर्मिजी यांचे वतन?", "ما وطن الإمام الترمذي؟", "Quel est le pays de l’imam at-Tirmidhi ?", "¿Cuál es la tierra del imam at-Tirmidi?");
-  Q("Sunan Ibn Majah ke muallif?", "सुनन इब्ने माजाचे लेखक?", "من مؤلف سنن ابن ماجه؟", "Qui est l’auteur des Sunan Ibn Majah ?", "¿Quién es el autor de los Sunan Ibn Mayah?");
+  Q("Sunan Ibn Majah ke muallif?", "सुनन इब्ने माजाचे लेखक?", "من مؤلف سنن ابن ماجه؟", "Qui est l’auteur des Sunan Ibn Majah ?", "¿Quién es el autor de los Sunan Ibn Majah?");
   Q("Sahifa-e-Sadiqa kis sahabi ki?", "सहीफा-ए-सादिका कोणत्या सहाबीची?", "صحيفة الصادقة لأي صحابي؟", "À quel compagnon appartient la Sahifa as-Sadiqa ?", "¿A qué compañero pertenece la Sahifa as-Sadiqa?");
   Q("Kutub-e-Sittah mein sab se pehle kaun si kitab shumar hoti hai?", "कुतुबे-सित्तामध्ये सर्वप्रथम कोणता ग्रंथ मोजला जातो?", "أي كتاب يُعد أولًا في الكتب الستة؟", "Quel livre est compté en premier parmi les six livres ?", "¿Qué libro se cuenta primero entre los seis libros?");
   Q("Kutub-e-Sittah mein kya Sunan Abu Dawud shamil hai?", "कुतुबे-सित्तामध्ये सुनन अबू दाऊद आहे का?", "هل سنن أبي داود من الكتب الستة؟", "Les Sunan Abi Dawud font-ils partie des six livres ?", "¿Los Sunan Abi Dawud forman parte de los seis libros?");

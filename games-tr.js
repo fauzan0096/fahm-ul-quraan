@@ -109,7 +109,7 @@ window.FQ_GAMES_TR = window.FQ_GAMES_TR || {};
   A("Imam Tirmidhi", "इमाम तिर्मिज़ी", "الإمام الترمذي", "Imam at-Tirmidhi", "Imam at-Tirmidi");
   A("Imam Abu Dawud", "इमाम अबू दाऊद", "الإمام أبو داود", "Imam Abu Dawud", "Imam Abu Dawud");
   A("Imam Nasai", "इमाम नसाई", "الإمام النسائي", "Imam an-Nasai", "Imam an-Nasai");
-  A("Imam Ibn Majah", "इमाम इब्ने माजा", "الإمام ابن ماجه", "Imam Ibn Majah", "Imam Ibn Mayah");
+  A("Imam Ibn Majah", "इमाम इब्ने माजा", "الإمام ابن ماجه", "Imam Ibn Majah", "Imam Ibn Majah");
   A("Imam Nawawi", "इमाम नववी", "الإمام النووي", "Imam an-Nawawi", "Imam an-Nawawi");
   A("Imam Ahmad bin Hanbal", "इमाम अहमद बिन हंबल", "الإمام أحمد بن حنبل", "Imam Ahmad ibn Hanbal", "Imam Ahmad ibn Hanbal");
   A("Muhammad bin Ismail", "मुहम्मद बिन इस्माईल", "محمد بن إسماعيل", "Muhammad ibn Ismail", "Muhammad ibn Ismail");
@@ -134,7 +134,7 @@ window.FQ_GAMES_TR = window.FQ_GAMES_TR || {};
   A("Tirmidhi", "तिर्मिज़ी", "الترمذي", "Tirmidhi", "Tirmidi");
   A("Bukhari aur Muslim", "बुख़ारी आणि मुस्लिम", "البخاري ومسلم", "Bukhari et Muslim", "Bujari y Muslim");
   A("Abu Dawud aur Tirmidhi", "अबू दाऊद आणि तिर्मिज़ी", "أبو داود والترمذي", "Abu Dawud et Tirmidhi", "Abu Dawud y Tirmidi");
-  A("Nasai aur Ibn Majah", "नसाई आणि इब्ने माजा", "النسائي وابن ماجه", "Nasai et Ibn Majah", "Nasai e Ibn Mayah");
+  A("Nasai aur Ibn Majah", "नसाई आणि इब्ने माजा", "النسائي وابن ماجه", "Nasai et Ibn Majah", "Nasai e Ibn Majah");
   A("Muwatta aur Musnad", "मुवत्ता आणि मुसनद", "الموطأ والمسند", "Muwatta et Musnad", "Muwatta y Musnad");
 
   /* --- Jagah --- */
