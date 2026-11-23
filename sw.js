@@ -197,6 +197,16 @@
 //       apni jawab-kunji (correct) ke saath. Nayi zubaan ka imtihan ho to uski kunji
 //       chalti hai (CA()), warna purani — is liye sahi jawab kabhi galat nahi hota.
 //       Yaani Nahw-Sarf ka poora safha in 4 zubaanoN mein mukammal hai.
+// v152: 8 KAAM — (1) CI workflow theek: secrets ko `if:` mein seedha use karna GitHub mana karta hai,
+//       is liye Android build kabhi shuru hi nahi hoti thi. (2) LAFZ TALASH: home par search box —
+//       Arabi, Roman, Urdu/Hindi/English matlab se 900 alfaz mein; nateeja tap karke wo din khulta hai.
+//       (3) DOHRAI (revision): galat hue lafz 3 din baad home par "Aaj ki dohrai" card mein aate hain.
+//       (4) PEHLE 3 DIN: home par sirf sabaq + ayat; baaqi tools "Aur tools dikhayein" se ya Day 4 par.
+//       (5) SHARE: 📤 share button lafz ke card par; findWord() maujood nahi tha to share kaam nahi karta tha.
+//       (6) ROZ KI YAAD: calendar ka link #aaj par — tap karne par seedha aaj ka sabaq khulta hai.
+//       (7) ARKAN: zubaan ka button ka tooltip (title) bhi chuni hui zubaan mein.
+//       (8) PRIVACY: section numbering theek (9 do dafa tha, ab 10). Calendar ka UID bhi @quranpath.
+const CACHE_NAME = 'quran-ustad-auto-v152';
 // v151: ZUBAAN KI BAAQI GHALTIYAN — (1) Arkan pages ke HAWALE (صحیح بخاری ۸، سورۃ النساء ۴:۱۰۳)
 //       ab mr/ar/fr/es par bhi theek: Arabi par asli Arabi imla (صحيح البخاري، سورة النساء) aur
 //       Arabi arqam, Marathi par Devanagari, French/Spanish par "Sourate"/"Sura" — pehle sab
@@ -205,7 +215,6 @@
 //       Roman/हिंदी jaisa saaf (arkan.css). (3) Arabi (RTL) par wapas ka teer ab → hi rehta hai.
 //       (4) Nahw-Sarf: Arabi zubaan par sabaq RTL/Amiri mein (pehle LTR tha).
 //       (5) Purane naam ki safai: calendar/ICS ki UID ab @quranpath (quraan-ustad nahi).
-const CACHE_NAME = 'quran-ustad-auto-v151';
 // Download ki hui ayat ki recordings (sounds.js) — ye cache kabhi delete nahi karna
 // Audio (azan + nasheed) aur fonts ke alag caches — ye bhi version badalne par delete nahi hote
 const AUDIO_CACHE = 'fq-audio-v1';

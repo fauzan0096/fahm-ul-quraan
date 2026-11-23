@@ -254,6 +254,20 @@
         .header-tools .icon-btn { width: 36px; height: 36px; font-size: 16px; }
         .dash { max-width: 760px; margin: 16px auto 0; padding: 0 16px; position: relative; z-index: 2; }
         .dash > * + * { margin-top: 14px; }
+        /* ===== v152: pehle 3 din sada home • lafz talash • dohrai card ===== */
+        main.dash.early .quick, main.dash.early .mini-row { display: none; }
+        .early-more { width: 100%; border: 1px dashed var(--secondary); background: rgba(184,146,58,.10); color: var(--text); border-radius: 14px; padding: 11px 14px; font: 600 13px 'Figtree', system-ui, sans-serif; cursor: pointer; }
+        .ws-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 12px 14px; }
+        .ws-head { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14.5px; color: var(--primary); }
+        .ws-head small { margin-inline-start: auto; font-size: 11.5px; font-weight: 600; color: var(--text-light); }
+        .ws-card input { width: 100%; margin-top: 8px; padding: 11px 13px; border-radius: 12px; border: 1.5px solid var(--border); background: var(--bg); color: var(--text); font: 500 14.5px 'Figtree', system-ui, sans-serif; }
+        .ws-out { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+        .ws-row { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; width: 100%; text-align: start; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 8px 10px; cursor: pointer; color: var(--text); font-family: inherit; }
+        .ws-ar { font-family: 'Amiri', serif; font-size: 19px; direction: rtl; }
+        .ws-mean { font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .ws-meta { font-size: 11.5px; color: var(--text-light); white-space: nowrap; }
+        .ws-none { font-size: 12.5px; color: var(--text-light); text-align: center; padding: 6px; }
+        .grid-container .card { position: relative; }
         .hero { background: var(--card-bg); border: 1px solid var(--border); border-radius: 20px; padding: 16px; box-shadow: var(--shadow); }
         .hero-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
         .hero-ic { width: 44px; height: 44px; flex: none; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; background: rgba(184,146,58,.18); }
@@ -432,6 +446,12 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                 <span class="ayat-go">›</span>
             </div>
 
+            <div class="ws-card" id="wsCard">
+                <div class="ws-head"><i class="qi" data-qi="quran"></i><b>Lafz talash</b><small>900 alfaz mein</small></div>
+                <input id="wsInput" type="search" placeholder="🔍 Lafz ya matlab likhein" autocomplete="off" aria-label="Lafz talash">
+                <div id="wsOut" class="ws-out"></div>
+            </div>
+
             <div class="mini-row">
                 <div id="namazCard"></div>
                 <div class="mini-tile" id="remindCard" title="Phone ke Calendar mein roz ka alarm lag jayega">
@@ -446,6 +466,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             </div>
 
             <div id="weakCard" class="tool-card hidden"></div>
+            <div id="revCard" class="tool-card hidden"></div>
             <div id="blockCard" class="tool-card hidden"></div>
 
             <div id="courseTab" class="view-section active">
@@ -865,7 +886,25 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             document.getElementById('udDelProfile').style.display = isAdm ? 'none' : '';
             renderProfileStickers();
             updateXPUI(); renderCourse(); updateStreak(); checkDailyGoal();
+            // v152: lafz talash ka box, «Sab dikhayein» ka button, aur #aaj (roz ki yaad-dehani ka seedha link)
+            var wi = document.getElementById('wsInput');
+            if (wi && !wi.__wired) { wi.__wired = 1; wi.addEventListener('input', renderWordSearch); }
+            applyEarlyMode();
+            if (location.hash === '#aaj') setTimeout(function () {
+                var t = document.getElementById('todayCard');
+                if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 500);
         }
+        // Share card (app.js ka shareWord) ke liye lafz dhoondhna — pehle ye function maujood hi nahi tha,
+        // is liye 📤 dabane par kuch nahi hota tha.
+        window.findWord = function (a) {
+            if (typeof courseData === 'undefined') return null;
+            for (var i = 0; i < courseData.length; i++) {
+                var ws = courseData[i].words || [];
+                for (var j = 0; j < ws.length; j++) if (ws[j].a === a) return ws[j];
+            }
+            return null;
+        };
 
         // Seerat course: seerat-lang.js (nayi 4 zubaanoN ka tarjuma) phir seerat.js — dono sirf tap karne par
         function openSeerat() {
@@ -916,6 +955,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                     const card = document.createElement('div');
                     card.className = 'card'; card.style.animationDelay = (index * 0.08) + 's'; 
                     card.innerHTML = `
+                        <button class="share-ico" data-share="${word.a}" aria-label="Share" title="Share">📤</button>
                         <div class="arabic" onclick="speakText('${word.a}', 'ar', this, '${word.m}')">${word.a}</div>
                         <div class="roman">${word.r}</div>
                         <div class="urdu ${lang==='u'?'':'lt'}" onclick="speakText('${pick(word,'u')}', 'ur', this)">${pick(word,'u')}</div>
@@ -925,7 +965,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
                     grid.appendChild(card);
                 });
                 grid.insertAdjacentHTML('afterbegin', ayatBulkBarHTML(todayData.words));
-                ayatRefreshButtons(grid); renderWeakCard(); renderBlockCard();
+                ayatRefreshButtons(grid); renderWeakCard(); renderRevCard(); renderBlockCard(); applyEarlyMode();
                 document.getElementById('startExamBtn').innerText = `📝 Day ${currentDay} Exam`;
                 document.getElementById('startExamBtn').classList.remove('hidden');
             }
@@ -1059,11 +1099,17 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             try { weak = JSON.parse(localStorage.getItem(pk('weakWords'))) || {}; } catch (e) {}
             document.querySelectorAll('.exam-q').forEach(q => {
                 const a = q.dataset.a; if (!a) return;
-                if (q.querySelector('[data-ok="true"]')) { if (weak[a]) { if (examMode === 'weak') delete weak[a]; else { weak[a]--; if (!weak[a]) delete weak[a]; } } }   // revision mein ek sahi jawab se lafz list se hat jata hai
+                const ok = !!q.querySelector('[data-ok="true"]');
+                if (ok) { if (weak[a]) { if (examMode === 'weak') delete weak[a]; else { weak[a]--; if (!weak[a]) delete weak[a]; } } }   // revision mein ek sahi jawab se lafz list se hat jata hai
                 else weak[a] = Math.min((weak[a] || 0) + 1, 5);
+                // v152: 3 din baad dohrai (sirf roz ke exam mein; dohrai exam mein sahi = dohrai se hat jaye)
+                if (examMode !== 'weak') { try { scheduleRevision({ a: a }, !ok); } catch (e) {} }
+                else if (ok) { try { scheduleRevision({ a: a }, false); } catch (e) {} }
             });
             try { localStorage.setItem(pk('weakWords'), JSON.stringify(weak)); } catch (e) {}
+            renderRevCard();
         }
+
 
         // Mushkil sawal: kamzor lafz + aakhri dinon ke (kam aane wale) lafz + lambe lafz; galat options meaning ki lambai mein milte-julte
         function buildHardQuestions(maxDay, count) {
@@ -1167,6 +1213,79 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             courseData.forEach(d => d.words.forEach(w => { if (weak[w.a] > 0 && !seen.has(w.a)) { seen.add(w.a); out.push({ w: w, n: weak[w.a] }); } }));
             return out.sort((p, q) => q.n - p.n);
         }
+        // ===== v152: Dohrai (revision) — jo lafz galat hue, unhein 3 din baad dobara dikhaayein =====
+        // Har lafz ka "kab" (din ka number) pk('revDue') mein: { a: dinNumber }. Galat jawab par +3 din,
+        // ek baar sahi hone par wahi list se hat jata hai (weakWords mein se bhi).
+        function renderRevCard() {
+            const el = document.getElementById('revCard'); if (!el) return;
+            const today = new Date(); const ds = Math.floor(today.getTime() / 86400000);
+            let due = {};
+            try { due = JSON.parse(localStorage.getItem(pk('revDue'))) || {}; } catch (e) {}
+            const list = [];
+            courseData.forEach(d => d.words.forEach(w => { if (due[w.a] != null && due[w.a] <= ds && !list.some(x => x.a === w.a)) list.push(w); }));
+            if (!list.length) { el.classList.add('hidden'); el.innerHTML = ''; return; }
+            el.classList.remove('hidden');
+            el.innerHTML = `<div class="tc-title">🔁 Aaj ki dohrai (${list.length})</div>
+                <div class="tc-sub">Ye lafz 3 din pehle galat hue the. Ek baar sahi yaad aaye to dohrai se hat jaate hain.</div>
+                <div class="weak-chips">${list.slice(0, 12).map(w => `<span>${w.a}</span>`).join('')}</div>
+                <button class="exam-btn" onclick="startWeakRevision()">🔁 Dohrai shuru karein</button>`;
+        }
+        function scheduleRevision(word, wrong) {
+            let due = {};
+            try { due = JSON.parse(localStorage.getItem(pk('revDue'))) || {}; } catch (e) {}
+            const ds = Math.floor(Date.now() / 86400000);
+            if (wrong) due[word.a] = ds + 3; else delete due[word.a];
+            try { localStorage.setItem(pk('revDue'), JSON.stringify(due)); } catch (e) {}
+        }
+        // Lafz talash: Arabi, Roman, Urdu/Hindi/English matlab — poore 900 alfaz mein
+        function searchWords(q) {
+            q = String(q || '').trim().toLowerCase();
+            if (q.length < 2) return [];
+            const lang = QSLang.get();
+            const bare = s => String(s || '').replace(/[\u064B-\u065F\u0670\u0640]/g, '').toLowerCase();
+            const qb = bare(q), out = [];
+            courseData.forEach(d => d.words.forEach(w => {
+                const meaning = [w.u, w.u_ro, w.u_hi, w.u_en, w.t, w.t_ro, w.t_hi, w.t_en, w.r].join(' ').toLowerCase();
+                const hit = bare(w.a).indexOf(qb) > -1 || String(w.r || '').toLowerCase().indexOf(q) > -1 || meaning.indexOf(q) > -1;
+                if (hit) out.push({ w: w, day: d.day, lang: lang });
+            }));
+            return out.slice(0, 30);
+        }
+        function renderWordSearch() {
+            const out = document.getElementById('wsOut'); if (!out) return;
+            const q = document.getElementById('wsInput').value;
+            const hits = searchWords(q);
+            if (String(q).trim().length < 2) { out.innerHTML = ''; return; }
+            if (!hits.length) { out.innerHTML = '<div class="ws-none">Koi lafz nahi mila</div>'; return; }
+            out.innerHTML = hits.map(h => `<button class="ws-row" onclick="goToWordDay(${h.day})">
+                    <span class="ws-ar">${h.w.a}</span>
+                    <span class="ws-mean">${pick(h.w, 'u')}</span>
+                    <span class="ws-meta">Day ${h.day}</span></button>`).join('') +
+                (hits.length >= 30 ? '<div class="ws-none">Pehle 30 nateeje</div>' : '');
+        }
+        function goToWordDay(day) {
+            if (userRole !== 'admin' && day > currentDay) { showToast('🔒 Ye din abhi khula nahi'); return; }
+            if (!isDayOpen(day)) { showToast('🔒 Pehle Silver Exam pass karein'); return; }
+            currentDay = day; localStorage.setItem(pk('currentDay'), day); renderCourse(); jumpTop();
+        }
+        // Pehle 3 din: home par sirf sabaq + ayat (baaqi tiles/tools Day 3 ke baad, ya "Sab dikhayein" se)
+        function applyEarlyMode() {
+            const main = document.querySelector('main.dash'); if (!main) return;
+            const showAll = localStorage.getItem(pk('showAllTools')) === '1';
+            const early = !showAll && currentDay <= 3 && userRole !== 'admin';
+            main.classList.toggle('early', early);
+            let btn = document.getElementById('earlyMoreBtn');
+            if (early) {
+                if (!btn) {
+                    btn = document.createElement('button'); btn.id = 'earlyMoreBtn'; btn.className = 'early-more';
+                    btn.textContent = 'Aur tools dikhayein ▾';
+                    btn.onclick = () => { localStorage.setItem(pk('showAllTools'), '1'); applyEarlyMode(); };
+                    document.getElementById('courseTab').before(btn);
+                }
+            } else if (btn) btn.remove();
+        }
+        function updateRevision(word, wrong) { scheduleRevision(word, wrong); renderRevCard(); }
+
         function renderWeakCard() {
             const el = document.getElementById('weakCard'); if (!el) return;
             const list = weakWordList();
@@ -1199,7 +1318,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             const d = `${now.getFullYear()}${p(now.getMonth() + 1)}${p(now.getDate())}T${p(t[0])}${p(t[1])}00`;
             const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//QuranPath//UR', 'BEGIN:VEVENT',
                 'UID:quranpath-daily@' + (location.hostname || 'app'), 'DTSTAMP:' + d, 'DTSTART:' + d, 'DURATION:PT15M',
-                'RRULE:FREQ=DAILY', 'SUMMARY:📖 QuranPath — aaj ka sabaq', 'DESCRIPTION:Aaj ke 10 lafz padhein aur exam dein. ' + APP_LINK, 'URL:' + APP_LINK,
+                'RRULE:FREQ=DAILY', 'SUMMARY:📖 QuranPath — aaj ka sabaq', 'DESCRIPTION:Aaj ke 10 lafz padhein aur exam dein. ' + APP_LINK, 'URL:' + APP_LINK + '#aaj',
                 'BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:QuranPath — aaj ka sabaq', 'TRIGGER:PT0M', 'END:VALARM', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
             const a = document.createElement('a');
             a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' })); a.download = 'QuranPath-Yaaddehani.ics';

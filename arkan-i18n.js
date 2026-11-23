@@ -93,6 +93,10 @@
     var b = document.querySelectorAll('header .icon-btn[href]');
     var rtl = (lang === 'u' || lang === 'ar');
     for (var i = 0; i < b.length; i++) b[i].textContent = rtl ? '→' : '←';
+    // v152: zubaan ke button ka tooltip (title) bhi uss zubaan mein — pehle English "Language" tha
+    var LT = { u: 'زبان', ro: 'Zubaan', hi: 'भाषा', en: 'Language', mr: 'भाषा', ar: 'اللغة', fr: 'Langue', es: 'Idioma' };
+    var lb = document.querySelectorAll('header .lang-btn');
+    for (var j = 0; j < lb.length; j++) { lb[j].setAttribute('title', LT[lang] || 'Language'); lb[j].setAttribute('aria-label', LT[lang] || 'Language'); }
   }
   var XLANG = { mr: 1, ar: 1, fr: 1, es: 1 };
   function setDir(lang) {

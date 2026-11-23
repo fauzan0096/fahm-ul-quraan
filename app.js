@@ -1572,7 +1572,7 @@ if (!window.QS_LITE) {
         try {
             var v = get(), l = LAB[v];
             var bs = document.querySelectorAll('[data-qs-lang]');
-            for (var i = 0; i < bs.length; i++) { bs[i].textContent = l; bs[i].setAttribute('aria-label', 'Zubaan: ' + l); }
+            for (var i = 0; i < bs.length; i++) { bs[i].textContent = l; bs[i].setAttribute('aria-label', 'Zubaan: ' + l); bs[i].setAttribute('title', l); }
             var ls = document.querySelectorAll('[data-lb]');
             for (var j = 0; j < ls.length; j++) { var x = t(ls[j].getAttribute('data-lb'), v); if (ls[j].textContent !== x) ls[j].textContent = x; }
             var hs = document.querySelectorAll('[data-lbh]');

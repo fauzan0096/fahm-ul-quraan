@@ -2,6 +2,10 @@ name: Android build
 
 # Push par APK (aur keystore set ho to signed AAB) ban kar Artifacts mein milta hai.
 # Play Console par .aab upload hoti hai — Artifacts se download kar lein.
+#
+# ⚠️ v152: `secrets` ko seedha `if:` mein istemal karna GitHub mana karta hai — pehle yahi
+#     likha tha, is liye ye workflow kabhi shuru hi nahi hui (koi build nahi bana). Ab secrets
+#     job ke `env` mein aate hain aur `if: env.KEYSTORE_B64 != ''` se check hote hain.
 
 on:
   push:
@@ -11,6 +15,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      KEYSTORE_B64: ${{ secrets.KEYSTORE_B64 }}
+      KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+      KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+      KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
 
@@ -24,19 +33,16 @@ jobs:
           gradle-version: '8.11.1'
 
       - name: Upload key (sirf agar secrets set hain)
-        if: ${{ secrets.KEYSTORE_B64 != '' }}
-        run: echo "${{ secrets.KEYSTORE_B64 }}" | base64 -d > "$RUNNER_TEMP/upload.jks"
+        if: env.KEYSTORE_B64 != ''
+        run: echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/upload.jks"
 
       - name: Debug APK banayein
         run: gradle assembleDebug --no-daemon --stacktrace
 
       - name: Release AAB banayein (signed)
-        if: ${{ secrets.KEYSTORE_B64 != '' }}
+        if: env.KEYSTORE_B64 != ''
         env:
           KEYSTORE_FILE: ${{ runner.temp }}/upload.jks
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: gradle bundleRelease --no-daemon --stacktrace
 
       - name: APK upload karein
@@ -46,7 +52,7 @@ jobs:
           path: app/build/outputs/apk/debug/*.apk
 
       - name: AAB upload karein
-        if: ${{ secrets.KEYSTORE_B64 != '' }}
+        if: env.KEYSTORE_B64 != ''
         uses: actions/upload-artifact@v4
         with:
           name: quranpath-aab
