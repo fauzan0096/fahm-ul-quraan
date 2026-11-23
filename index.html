@@ -1226,7 +1226,7 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
             if (!list.length) { el.classList.add('hidden'); el.innerHTML = ''; return; }
             el.classList.remove('hidden');
             el.innerHTML = `<div class="tc-title">🔁 Aaj ki dohrai (${list.length})</div>
-                <div class="tc-sub">Ye lafz 3 din pehle galat hue the. Ek baar sahi yaad aaye to dohrai se hat jaate hain.</div>
+                <div class="tc-sub">Ye lafz pehle galat hue the. Sahi yaad aane par agla dohrai 7 aur phir 21 din baad hoga.</div>
                 <div class="weak-chips">${list.slice(0, 12).map(w => `<span>${w.a}</span>`).join('')}</div>
                 <button class="exam-btn" onclick="startWeakRevision()">🔁 Dohrai shuru karein</button>`;
         }
@@ -1255,13 +1255,12 @@ body{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
         function searchWords(q) {
             q = String(q || '').trim().toLowerCase();
             if (q.length < 2) return [];
-            const lang = QSLang.get();
             const bare = s => String(s || '').replace(/[\u064B-\u065F\u0670\u0640]/g, '').toLowerCase();
             const qb = bare(q), out = [];
             courseData.forEach(d => d.words.forEach(w => {
                 const meaning = [w.u, w.u_ro, w.u_hi, w.u_en, w.t, w.t_ro, w.t_hi, w.t_en, w.r].join(' ').toLowerCase();
                 const hit = bare(w.a).indexOf(qb) > -1 || String(w.r || '').toLowerCase().indexOf(q) > -1 || meaning.indexOf(q) > -1;
-                if (hit) out.push({ w: w, day: d.day, lang: lang });
+                if (hit) out.push({ w: w, day: d.day });
             }));
             return out.slice(0, 30);
         }
